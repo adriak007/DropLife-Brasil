@@ -1,0 +1,3121 @@
+[
+  {
+    "municipio": "Adamantina",
+    "estado": "SP",
+    "curiosidade": "Localizada na Nova Alta Paulista, é conhecida como a 'Cidade das Acácias'. É um importante polo educacional e regional."
+  },
+  {
+    "municipio": "Adolfo",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Aguaí",
+    "estado": "SP",
+    "curiosidade": "Conhecida pela sua localização estratégica em importantes rodovias e pela forte agroindústria e produção de cerâmica."
+  },
+  {
+    "municipio": "Águas da Prata",
+    "estado": "SP",
+    "curiosidade": "Estância hidromineral na divisa com Minas Gerais, famosa por suas **fontes de águas com propriedades medicinais**."
+  },
+  {
+    "municipio": "Águas de Lindóia",
+    "estado": "SP",
+    "curiosidade": "Famosa estância hidromineral no Circuito das Águas, considerada a **capital termal do Brasil** devido à qualidade de suas águas."
+  },
+  {
+    "municipio": "Águas de Santa Bárbara",
+    "estado": "SP",
+    "curiosidade": "Conhecida pelas suas águas minerais e pelo grande balneário, sendo um destino de turismo de saúde e relaxamento."
+  },
+  {
+    "municipio": "Águas de São Pedro",
+    "estado": "SP",
+    "curiosidade": "O **menor município do estado em área territorial**. É uma estância hidromineral com águas sulfurosas, cloretadas e bicarbonatadas."
+  },
+  {
+    "municipio": "Agudos",
+    "estado": "SP",
+    "curiosidade": "Importante centro industrial e logístico, com forte presença de indústrias de bebidas e celulose."
+  },
+  {
+    "municipio": "Alambari",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Região Metropolitana de Sorocaba, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Alfredo Marcondes",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista, próxima a Presidente Prudente. Sua economia é agropecuária."
+  },
+  {
+    "municipio": "Altair",
+    "estado": "SP",
+    "curiosidade": "Município da região de Barretos, conhecida pela produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Altinópolis",
+    "estado": "SP",
+    "curiosidade": "Localizada na Serra da Canastra, conhecida pela produção de café e pelas suas paisagens montanhosas."
+  },
+  {
+    "municipio": "Alto Alegre",
+    "estado": "SP",
+    "curiosidade": "Município do Oeste, com economia baseada na agricultura e na pecuária."
+  },
+  {
+    "municipio": "Alumínio",
+    "estado": "SP",
+    "curiosidade": "O nome se deve à grande presença de uma **fábrica de alumínio**, que é a principal base econômica da cidade."
+  },
+  {
+    "municipio": "Álvares Florence",
+    "estado": "SP",
+    "curiosidade": "Município da região de Votuporanga, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Álvares Machado",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Presidente Prudente, conhecida pela agroindústria e serviços."
+  },
+  {
+    "municipio": "Álvaro de Carvalho",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Marília, com economia focada na agricultura."
+  },
+  {
+    "municipio": "Alvinlândia",
+    "estado": "SP",
+    "curiosidade": "Município da região de Marília, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Americana",
+    "estado": "SP",
+    "curiosidade": "Conhecida por ter sido colonizada por **imigrantes norte-americanos** que vieram após a Guerra Civil dos EUA. É um forte polo têxtil e de confecções."
+  },
+  {
+    "municipio": "Américo Brasiliense",
+    "estado": "SP",
+    "curiosidade": "Vizinha a Araraquara, conhecida pela forte agroindústria (cana-de-açúcar) e por sua localização central no estado."
+  },
+  {
+    "municipio": "Américo de Campos",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Amparo",
+    "estado": "SP",
+    "curiosidade": "Faz parte do Circuito das Águas Paulista. É uma estância hidromineral e um importante centro de produção de café e turismo rural."
+  },
+  {
+    "municipio": "Analândia",
+    "estado": "SP",
+    "curiosidade": "Conhecida por suas formações rochosas (como o **Morro do Cuscuzeiro**), sendo um destino popular para ecoturismo e escalada."
+  },
+  {
+    "municipio": "Andradina",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional do Oeste Paulista. Conhecida pela sua forte agropecuária (gado de corte) e pelo **Parque Aquático Acqualinda**."
+  },
+  {
+    "municipio": "Angatuba",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido pela agropecuária e pelo artesanato em palha de milho."
+  },
+  {
+    "municipio": "Anhembi",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê, o nome em Tupi significa 'pássaro ou morada do pássaro'. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "Anhumas",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Oeste Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Aparecida",
+    "estado": "SP",
+    "curiosidade": "Abriga o **Santuário Nacional de Nossa Senhora Aparecida**, padroeira do Brasil, sendo o maior centro de turismo religioso do país."
+  },
+  {
+    "municipio": "Aparecida d'Oeste",
+    "estado": "SP",
+    "curiosidade": "Município do Extremo Oeste, com base econômica na agricultura e pecuária."
+  },
+  {
+    "municipio": "Apiaí",
+    "estado": "SP",
+    "curiosidade": "Localizada no Sul do estado, conhecida por ser o **portal do Vale do Ribeira** e por suas cavernas e paisagens naturais."
+  },
+  {
+    "municipio": "Araçariguama",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Sorocaba, conhecido pelo seu centro industrial e logístico."
+  },
+  {
+    "municipio": "Araçatuba",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Noroeste Paulista. Conhecida pela forte **pecuária de corte** e por ser um polo universitário."
+  },
+  {
+    "municipio": "Araçoiaba da Serra",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Sorocaba. O nome, em Tupi, significa 'terra de pássaros amarelos'."
+  },
+  {
+    "municipio": "Aramina",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Nordeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Arandu",
+    "estado": "SP",
+    "curiosidade": "Município da região de Avaré, às margens da Represa Jurumirim, conhecido pelo turismo náutico."
+  },
+  {
+    "municipio": "Arapegua",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira, sua economia é baseada na agricultura e extrativismo."
+  },
+  {
+    "municipio": "Araraquara",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Morada do Sol'**. É um forte centro industrial, de serviços e universitário, com destaque para a área ferroviária e agroindústria."
+  },
+  {
+    "municipio": "Araras",
+    "estado": "SP",
+    "curiosidade": "Importante centro agrícola e industrial. Conhecida pela forte produção de **cana-de-açúcar** e indústrias de laticínios."
+  },
+  {
+    "municipio": "Arco-Íris",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Tupã, com economia baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Arealva",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens da Represa de Bariri, conhecida pela pesca e turismo de lazer."
+  },
+  {
+    "municipio": "Areias",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica no Vale do Paraíba, famosa por suas fazendas de café do período colonial e por seu patrimônio arquitetônico."
+  },
+  {
+    "municipio": "Areiópolis",
+    "estado": "SP",
+    "curiosidade": "Município da região de Botucatu, com economia baseada na agropecuária e na indústria."
+  },
+  {
+    "municipio": "Ariranha",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva, conhecido pela agricultura e agroindústria."
+  },
+  {
+    "municipio": "Artur Nogueira",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Campinas. Conhecida pela forte influência holandesa e pela produção de hortaliças."
+  },
+  {
+    "municipio": "Arujá",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, conhecido por seus condomínios de alto padrão e localização logística estratégica."
+  },
+  {
+    "municipio": "Aspásia",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Assis",
+    "estado": "SP",
+    "curiosidade": "Importante polo regional e universitário no Médio Paranapanema. Conhecida pela sua forte base em serviços e comércio."
+  },
+  {
+    "municipio": "Atibaia",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Morango'** e pela Pedra Grande, um ponto turístico para esportes radicais e com vista panorâmica."
+  },
+  {
+    "municipio": "Auriflama",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista. O nome significa 'chama de ouro', remetendo à busca por ouro no passado."
+  },
+  {
+    "municipio": "Avaí",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Bauru. O nome é de origem Tupi-Guarani, significando 'água forte'."
+  },
+  {
+    "municipio": "Avanhandava",
+    "estado": "SP",
+    "curiosidade": "Situada às margens do Rio Tietê, na região de Lins. Conhecida pela Usina Hidrelétrica de Três Irmãos."
+  },
+  {
+    "municipio": "Avaré",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Terra do Verde, da Água e do Sol'**. É um importante centro agropecuário e turístico, famoso pela **Represa de Jurumirim**."
+  },
+  {
+    "municipio": "Bady Bassitt",
+    "estado": "SP",
+    "curiosidade": "Vizinha a São José do Rio Preto, com economia baseada na indústria e serviços."
+  },
+  {
+    "municipio": "Balbinos",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Bauru, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Bálsamo",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, conhecido pela agricultura e agroindústria."
+  },
+  {
+    "municipio": "Bananal",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica do Vale do Paraíba, famosa por suas **fazendas de café do século XIX** e por manter intacto seu casario colonial."
+  },
+  {
+    "municipio": "Barão de Antonina",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, com economia baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Barbosa",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Araçatuba, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Bariri",
+    "estado": "SP",
+    "curiosidade": "Conhecida pela **Usina Hidrelétrica de Bariri** no Rio Tietê e pela produção de laticínios e doces."
+  },
+  {
+    "municipio": "Barra Bonita",
+    "estado": "SP",
+    "curiosidade": "Famosa pela **eclusa** que permite a navegação no Rio Tietê, sendo um importante ponto turístico náutico."
+  },
+  {
+    "municipio": "Barra do Chapéu",
+    "estado": "SP",
+    "curiosidade": "Município do Sul do estado, conhecido por suas paisagens montanhosas e forte presença de Mata Atlântica."
+  },
+  {
+    "municipio": "Barra do Turvo",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira, na divisa com o Paraná. Conhecida pelas belezas naturais e ecoturismo."
+  },
+  {
+    "municipio": "Barretos",
+    "estado": "SP",
+    "curiosidade": "Conhecida mundialmente como a **'Capital Nacional do Rodeio'**, sedia anualmente a maior festa do gênero da América Latina."
+  },
+  {
+    "municipio": "Barrinha",
+    "estado": "SP",
+    "curiosidade": "Município da região de Ribeirão Preto, com forte economia baseada na **cana-de-açúcar**."
+  },
+  {
+    "municipio": "Barueri",
+    "estado": "SP",
+    "curiosidade": "Importante centro financeiro e empresarial da Região Metropolitana de São Paulo, lar do famoso bairro de **Alphaville**."
+  },
+  {
+    "municipio": "Bastos",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital do Ovo'**, sendo o maior produtor de ovos do Brasil. Possui forte influência da colônia japonesa."
+  },
+  {
+    "municipio": "Batatais",
+    "estado": "SP",
+    "curiosidade": "Localizada na Alta Mogiana, conhecida pela sua forte agropecuária e pelo acervo de obras do artista plástico **Cândido Portinari**."
+  },
+  {
+    "municipio": "Bauru",
+    "estado": "SP",
+    "curiosidade": "Importante polo regional e universitário no Centro-Oeste Paulista. Famosa por dar nome ao sanduíche **'Bauru'** e por sua tradição ferroviária."
+  },
+  {
+    "municipio": "Bebedouro",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Laranja'** e do Agribusiness. Possui um parque aquático de grande porte."
+  },
+  {
+    "municipio": "Bento de Abreu",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Araçatuba, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Bernardino de Campos",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, com economia baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Bertioga",
+    "estado": "SP",
+    "curiosidade": "Município litorâneo, famoso pela **Praia da Enseada**, pelo **Forte São João** (o mais antigo do Brasil) e por abrigar aldeias indígenas."
+  },
+  {
+    "municipio": "Bilac",
+    "estado": "SP",
+    "curiosidade": "Homenagem ao poeta Olavo Bilac. Localizada na região de Araçatuba, com forte agricultura."
+  },
+  {
+    "municipio": "Birigui",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Latino-Americana do Calçado Infantil'**, sendo um polo de produção de calçados para crianças."
+  },
+  {
+    "municipio": "Biritiba Mirim",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de São Paulo, com forte economia na agricultura, especialmente na produção de **hortaliças**."
+  },
+  {
+    "municipio": "Boa Esperança do Sul",
+    "estado": "SP",
+    "curiosidade": "Município da região de Araraquara, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Bocaina",
+    "estado": "SP",
+    "curiosidade": "Conhecida pela produção de **cerâmica artística e industrial**, sendo um polo tradicional do setor."
+  },
+  {
+    "municipio": "Bofete",
+    "estado": "SP",
+    "curiosidade": "Famosa pelas **Cuestas de Botucatu**, formações rochosas que parecem castelos, ideais para trilhas e ecoturismo."
+  },
+  {
+    "municipio": "Boituva",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Paraquedismo'** e do Balonismo, devido ao grande número de saltos realizados em seu Centro Nacional de Paraquedismo."
+  },
+  {
+    "municipio": "Bom Jesus dos Perdões",
+    "estado": "SP",
+    "curiosidade": "Localizada na Serra da Mantiqueira. Conhecida pela produção de pêssego e pelo turismo religioso."
+  },
+  {
+    "municipio": "Bom Sucesso de Itararé",
+    "estado": "SP",
+    "curiosidade": "Município do Sul do estado, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Borá",
+    "estado": "SP",
+    "curiosidade": "Frequentemente citado como o **município de menor população do estado de São Paulo**, com menos de 1.000 habitantes."
+  },
+  {
+    "municipio": "Boracéia",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Jaú, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Borborema",
+    "estado": "SP",
+    "curiosidade": "Famosa pelo seu grande potencial em **pesca esportiva** no Rio Tietê e turismo náutico."
+  },
+  {
+    "municipio": "Botucatu",
+    "estado": "SP",
+    "curiosidade": "Importante polo universitário e de saúde. Conhecida pelas paisagens da **Cuesta** e pela produção de café e vinho."
+  },
+  {
+    "municipio": "Bragança Paulista",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Linguiça Artesanal'**. É um importante centro comercial e universitário na região bragantina."
+  },
+  {
+    "municipio": "Braúna",
+    "estado": "SP",
+    "curiosidade": "Município da região de Penápolis, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Brejo Alegre",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Birigui, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Brodowski",
+    "estado": "SP",
+    "curiosidade": "A cidade natal do pintor **Cândido Portinari**. Abriga o Museu Casa de Portinari, um importante patrimônio cultural."
+  },
+  {
+    "municipio": "Brotas",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital da Aventura'** no estado, sendo um polo de ecoturismo e esportes radicais como rafting e tirolesa."
+  },
+  {
+    "municipio": "Buri",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, com economia baseada na agropecuária e silvicultura."
+  },
+  {
+    "municipio": "Buritama",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê, conhecida pelo seu **Parque Turístico** e praias artificiais, sendo um destino de lazer."
+  },
+  {
+    "municipio": "Buritizal",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Franca, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Cabralia Paulista",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bauru, conhecido pela agricultura e pecuária."
+  },
+  {
+    "municipio": "Cabrera",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Campinas. Conhecida pela **Fazenda Cabreúva**, patrimônio histórico do ciclo do café."
+  },
+  {
+    "municipio": "Caçapava",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Paraíba, é um importante centro industrial e militar, com a presença de unidades do Exército."
+  },
+  {
+    "municipio": "Cachoeira Paulista",
+    "estado": "SP",
+    "curiosidade": "Abriga a sede da **Canção Nova**, um dos maiores centros de evangelização católica do país, atraindo grande turismo religioso."
+  },
+  {
+    "municipio": "Caconde",
+    "estado": "SP",
+    "curiosidade": "Estância climática na divisa com Minas Gerais, conhecida pela beleza de suas represas e montanhas, ideais para esportes aquáticos."
+  },
+  {
+    "municipio": "Cafelândia",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Lins, o nome remete ao antigo ciclo do café. Hoje, a economia é baseada na agropecuária e indústria."
+  },
+  {
+    "municipio": "Caiabu",
+    "estado": "SP",
+    "curiosidade": "Município do Oeste Paulista, com economia baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Caieiras",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo. Seu nome é derivado da antiga produção de cal (Caieiras) na região."
+  },
+  {
+    "municipio": "Caiuá",
+    "estado": "SP",
+    "curiosidade": "Localizada no Extremo Oeste Paulista, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Cajamar",
+    "estado": "SP",
+    "curiosidade": "Importante polo logístico e de armazenamento na Região Metropolitana de São Paulo, devido à sua localização próxima à Capital e grandes rodovias."
+  },
+  {
+    "municipio": "Cajati",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira. Sua economia é fortemente ligada à **mineração**, especialmente de apatita (para fertilizantes)."
+  },
+  {
+    "municipio": "Cajobi",
+    "estado": "SP",
+    "curiosidade": "Município da região de Barretos, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Cajuru",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Ribeirão Preto. O nome é de origem Tupi e significa 'boca da mata'."
+  },
+  {
+    "municipio": "Campina do Monte Alegre",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido por suas paisagens rurais e base agrícola."
+  },
+  {
+    "municipio": "Campinas",
+    "estado": "SP",
+    "curiosidade": "A **terceira cidade mais populosa do estado** e maior polo tecnológico da América Latina (Vale do Silício Brasileiro). É sede da Unicamp e de grandes empresas de tecnologia."
+  },
+  {
+    "municipio": "Campo Limpo Paulista",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Jundiaí, com economia baseada na indústria e serviços."
+  },
+  {
+    "municipio": "Campos do Jordão",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Suíça Brasileira'** devido ao seu clima frio, arquitetura alpina e alta gastronomia. É a cidade mais alta do Brasil em relação ao mar."
+  },
+  {
+    "municipio": "Cananéia",
+    "estado": "SP",
+    "curiosidade": "Cidade mais antiga do Brasil (1502, reivindicado). É um importante polo de ecoturismo, com rica vida marinha e abriga o **Parque Estadual da Ilha do Cardoso**."
+  },
+  {
+    "municipio": "Canas",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Vale do Paraíba, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Cândido Mota",
+    "estado": "SP",
+    "curiosidade": "Localizada no Médio Paranapanema, conhecida pela produção de **óleo de amendoim** e agroindústria."
+  },
+  {
+    "municipio": "Cândido Rodrigues",
+    "estado": "SP",
+    "curiosidade": "Município da região de Jaboticabal, com economia baseada na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Canitar",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Sudoeste Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Capão Bonito",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional do Sudoeste Paulista, conhecido pela sua grande área de **reflorestamento** e indústria madeireira."
+  },
+  {
+    "municipio": "Capela do Alto",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Sorocaba, conhecido pela agricultura e pecuária."
+  },
+  {
+    "municipio": "Capivari",
+    "estado": "SP",
+    "curiosidade": "Cidade natal do compositor **Antônio Carlos Jobim** (Tom Jobim). Sua economia é baseada na agroindústria e serviços."
+  },
+  {
+    "municipio": "Caraguatatuba",
+    "estado": "SP",
+    "curiosidade": "Um dos principais destinos turísticos do Litoral Norte, com praias muito procuradas e importante centro comercial."
+  },
+  {
+    "municipio": "Carapicuíba",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, conhecido por seu grande adensamento populacional e centros comerciais."
+  },
+  {
+    "municipio": "Cardoso",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de São José do Rio Preto, próxima a rios e represas, com potencial para turismo de pesca e lazer."
+  },
+  {
+    "municipio": "Casa Branca",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica da Mogiana, conhecida por seu patrimônio arquitetônico e por ter sido um importante polo do ciclo do café."
+  },
+  {
+    "municipio": "Cássia dos Coqueiros",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Ribeirão Preto, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Castilho",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Paraná, conhecida pela **Usina Hidrelétrica de Jupiá** e por suas praias fluviais."
+  },
+  {
+    "municipio": "Catanduva",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional e industrial no Noroeste Paulista. Conhecida pela forte presença de indústrias alimentícias e mecânicas."
+  },
+  {
+    "municipio": "Catiguá",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Cedral",
+    "estado": "SP",
+    "curiosidade": "Vizinha a São José do Rio Preto, com economia focada na agropecuária e indústria."
+  },
+  {
+    "municipio": "Cerqueira César",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido pela agropecuária e indústria."
+  },
+  {
+    "municipio": "Cerquilho",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Sorocaba, com economia baseada na agroindústria e serviços."
+  },
+  {
+    "municipio": "Cesário Lange",
+    "estado": "SP",
+    "curiosidade": "Conhecida pela grande comunidade da **Igreja Messiânica Mundial do Brasil**, que atrai visitantes de todo o país."
+  },
+  {
+    "municipio": "Charqueada",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Piracicaba, o nome remete ao antigo processo de conservação de carne (charque)."
+  },
+  {
+    "municipio": "Chavantes",
+    "estado": "SP",
+    "curiosidade": "Localizada na divisa com o Paraná, conhecida pela **Usina Hidrelétrica de Chavantes** e turismo de lazer."
+  },
+  {
+    "municipio": "Clementina",
+    "estado": "SP",
+    "curiosidade": "Município da região de Birigui, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Colina",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Cavalo'**, sendo um importante centro de criação e eventos equestres."
+  },
+  {
+    "municipio": "Colômbia",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Grande, na divisa com Minas Gerais, com grande potencial para turismo náutico."
+  },
+  {
+    "municipio": "Conchal",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas, conhecido pela agricultura, principalmente de frutas cítricas."
+  },
+  {
+    "municipio": "Conchas",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Botucatu, com economia baseada na agropecuária e serviços."
+  },
+  {
+    "municipio": "Cordeirópolis",
+    "estado": "SP",
+    "curiosidade": "Município da região de Limeira. É um polo importante na **produção de cerâmica e porcelana**."
+  },
+  {
+    "municipio": "Coroados",
+    "estado": "SP",
+    "curiosidade": "Município da região de Araçatuba, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Coronel Macedo",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Sudoeste Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Corumbataí",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Rio Claro, o nome, em Tupi, significa 'água turva'. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "Cosmópolis",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas. É um polo industrial e de serviços."
+  },
+  {
+    "municipio": "Cosmorama",
+    "estado": "SP",
+    "curiosidade": "Município da região de Votuporanga, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Cotia",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de São Paulo. Abriga o templo budista **Zu Lai** e a sede de grandes *reality shows*."
+  },
+  {
+    "municipio": "Cravinhos",
+    "estado": "SP",
+    "curiosidade": "Vizinha a Ribeirão Preto, conhecida pela forte agroindústria (cana-de-açúcar) e pelo setor de metalurgia."
+  },
+  {
+    "municipio": "Cristais Paulista",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Franca, conhecida pela produção de café e calçados."
+  },
+  {
+    "municipio": "Cruzália",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Médio Paranapanema, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Cruzeiro",
+    "estado": "SP",
+    "curiosidade": "Importante entroncamento rodoferroviário no Vale do Paraíba. Conhecida pela presença de indústrias metalúrgicas."
+  },
+  {
+    "municipio": "Cubatão",
+    "estado": "SP",
+    "curiosidade": "Importante polo industrial e petroquímico do Brasil, localizado na Baixada Santista. Conhecida pela recuperação ambiental de sua serra."
+  },
+  {
+    "municipio": "Cunha",
+    "estado": "SP",
+    "curiosidade": "Estância climática na Serra da Bocaina, famosa pela produção de **cerâmica artística** e pelo clima de montanha."
+  },
+  {
+    "municipio": "Descalvado",
+    "estado": "SP",
+    "curiosidade": "Conhecida pela forte produção de **frango de corte** e pela agroindústria."
+  },
+  {
+    "municipio": "Diadema",
+    "estado": "SP",
+    "curiosidade": "Município da Região do Grande ABC Paulista, com grande adensamento populacional e forte base industrial, especialmente no setor químico."
+  },
+  {
+    "municipio": "Dirce Reis",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Divinolândia",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de São João da Boa Vista, conhecida pela produção de café."
+  },
+  {
+    "municipio": "Dobrada",
+    "estado": "SP",
+    "curiosidade": "Município da região de Matão, com economia baseada na agricultura (principalmente cana-de-açúcar)."
+  },
+  {
+    "municipio": "Dois Córregos",
+    "estado": "SP",
+    "curiosidade": "Conhecida pela sua economia agroindustrial e pelo seu patrimônio arquitetônico do ciclo do café."
+  },
+  {
+    "municipio": "Dolcinópolis",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Dourado",
+    "estado": "SP",
+    "curiosidade": "Município da região de São Carlos, com economia baseada na agropecuária e indústria."
+  },
+  {
+    "municipio": "Dracena",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional da Nova Alta Paulista. Conhecida pela agropecuária, indústria de confecções e polo educacional."
+  },
+  {
+    "municipio": "Duartina",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Bauru, conhecida pela agropecuária e pela presença de rios e represas."
+  },
+  {
+    "municipio": "Dumont",
+    "estado": "SP",
+    "curiosidade": "Homenagem a Alberto Santos Dumont. Vizinha a Ribeirão Preto, com forte produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Echaporã",
+    "estado": "SP",
+    "curiosidade": "Município da região de Marília, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Eldorado",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira. Famosa pela **Caverna do Diabo** (Gruta da Tapagem), uma das maiores e mais visitadas do estado."
+  },
+  {
+    "municipio": "Elias Fausto",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Elisiário",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Catanduva, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Embaúba",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Embu das Artes",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital das Artes'** no estado, com forte tradição em artesanato, antiquários e uma famosa feira de arte aos fins de semana."
+  },
+  {
+    "municipio": "Embu-Guaçu",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, em área de manancial, com vocação para o ecoturismo."
+  },
+  {
+    "municipio": "Emilianópolis",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Oeste Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Engenheiro Coelho",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Campinas. É a sede do **Centro Universitário Adventista de São Paulo (UNASP)**, que atrai estudantes de todo o país."
+  },
+  {
+    "municipio": "Espírito Santo do Pinhal",
+    "estado": "SP",
+    "curiosidade": "Localizada na Serra da Mantiqueira, conhecida pela produção de **café de alta qualidade** (Cafés Especiais)."
+  },
+  {
+    "municipio": "Espírito Santo do Turvo",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Estiva Gerbi",
+    "estado": "SP",
+    "curiosidade": "Pequeno município vizinho a Mogi Guaçu, com economia focada na agricultura e indústria."
+  },
+  {
+    "municipio": "Estrela d'Oeste",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Estrela do Norte",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Oeste Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Euclides da Cunha Paulista",
+    "estado": "SP",
+    "curiosidade": "Localizada no Pontal do Paranapanema, uma região marcada por questões agrárias e intensa produção agrícola."
+  },
+  {
+    "municipio": "Fartura",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido pelas belezas naturais e pela Represa de Chavantes."
+  },
+  {
+    "municipio": "Fernando Prestes",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Jaboticabal, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Fernandópolis",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional do Noroeste Paulista. Conhecida pela agroindústria e por ser um polo universitário."
+  },
+  {
+    "municipio": "Ferraz de Vasconcelos",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo. É um centro de serviços e comércio."
+  },
+  {
+    "municipio": "Flora Rica",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Nova Alta Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Floreal",
+    "estado": "SP",
+    "curiosidade": "Município da região de Votuporanga, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Flórida Paulista",
+    "estado": "SP",
+    "curiosidade": "Localizada na Nova Alta Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Florínia",
+    "estado": "SP",
+    "curiosidade": "Município do Médio Paranapanema, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Franca",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Calçado Masculino'**. É também um importante polo de **café de alta qualidade** (Alta Mogiana)."
+  },
+  {
+    "municipio": "Francisco Morato",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, com grande adensamento populacional."
+  },
+  {
+    "municipio": "Franco da Rocha",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de São Paulo. Conhecida historicamente por abrigar um importante complexo hospitalar psiquiátrico."
+  },
+  {
+    "municipio": "Gabriel Monteiro",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Birigui, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Gália",
+    "estado": "SP",
+    "curiosidade": "Município da região de Marília, conhecido pela agropecuária e pela presença da **Reserva Ecológica de Gália** (Mata Atlântica interior)."
+  },
+  {
+    "municipio": "Garça",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Cereja'** e polo de indústrias de máquinas e café."
+  },
+  {
+    "municipio": "Gastão Vidigal",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Gavião Peixoto",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Araraquara. Abriga a principal unidade de produção e manutenção da **Embraer** (aeronaves de grande porte e defesa)."
+  },
+  {
+    "municipio": "General Salgado",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, conhecido pela agropecuária e indústria de transformação."
+  },
+  {
+    "municipio": "Getulina",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Lins, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Glicério",
+    "estado": "SP",
+    "curiosidade": "Município da região de Araçatuba, com base econômica na agricultura e pecuária."
+  },
+  {
+    "municipio": "Guaiçara",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê, na região de Lins. Conhecida pela Usina Hidrelétrica de Promissão."
+  },
+  {
+    "municipio": "Guaimbê",
+    "estado": "SP",
+    "curiosidade": "Município da região de Lins, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Guaíra",
+    "estado": "SP",
+    "curiosidade": "Importante centro agrícola e agroindustrial, com destaque para a produção de **cana-de-açúcar** e a presença de usinas."
+  },
+  {
+    "municipio": "Guapiaçu",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Guapiara",
+    "estado": "SP",
+    "curiosidade": "Localizada no Sul do estado, conhecida pelas suas belezas naturais e cavernas."
+  },
+  {
+    "municipio": "Guaraci",
+    "estado": "SP",
+    "curiosidade": "Município da região de Barretos, com economia baseada na agropecuária e cana-de-açúcar."
+  },
+  {
+    "municipio": "Guarani d'Oeste",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Guarantã",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bauru, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Guareí",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Sorocaba, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Guariba",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Ribeirão Preto. É um dos maiores centros de produção de **cana-de-açúcar** do estado."
+  },
+  {
+    "municipio": "Guarujá",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Pérola do Atlântico'**. Um dos mais famosos e movimentados balneários da Baixada Santista, com praias como Enseada e Pitangueiras."
+  },
+  {
+    "municipio": "Guarulhos",
+    "estado": "SP",
+    "curiosidade": "A **segunda cidade mais populosa do estado**. Abriga o **Aeroporto Internacional de São Paulo/Guarulhos (GRU)**, o maior do Brasil e da América do Sul."
+  },
+  {
+    "municipio": "Guatapará",
+    "estado": "SP",
+    "curiosidade": "Município da região de Ribeirão Preto, com forte economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Guzolândia",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Herculândia",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Tupã, conhecida pela agricultura e pecuária."
+  },
+  {
+    "municipio": "Holambra",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional das Flores'**. Possui forte colonização holandesa e realiza a maior exposição de flores da América Latina (Expoflora)."
+  },
+  {
+    "municipio": "Hortolândia",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas. É um polo industrial e de tecnologia em rápido desenvolvimento."
+  },
+  {
+    "municipio": "Iacanga",
+    "estado": "SP",
+    "curiosidade": "Famosa por sediar o festival de música **'Festival de Águas Claras'** nos anos 70 e 80. Localizada às margens do Rio Tietê."
+  },
+  {
+    "municipio": "Iacri",
+    "estado": "SP",
+    "curiosidade": "Localizada na Nova Alta Paulista, com forte presença de colônia japonesa e base econômica na agricultura."
+  },
+  {
+    "municipio": "Iaras",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido pela agropecuária e pela presença de uma usina hidrelétrica."
+  },
+  {
+    "municipio": "Ibaté",
+    "estado": "SP",
+    "curiosidade": "Vizinha a São Carlos, conhecida pelo seu forte setor agroindustrial e por ser sede da **Fazenda do Dourado**, um importante centro de pesquisa agrícola."
+  },
+  {
+    "municipio": "Ibirá",
+    "estado": "SP",
+    "curiosidade": "Estância hidromineral famosa por suas **águas oligominerais** e vanádicas, que são indicadas para tratamentos de saúde."
+  },
+  {
+    "municipio": "Ibirarema",
+    "estado": "SP",
+    "curiosidade": "Município do Médio Paranapanema, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Ibitinga",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Bordado e do Enxoval'**, sendo um grande polo de produção e comercialização de artigos de cama, mesa e banho."
+  },
+  {
+    "municipio": "Ibiúna",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Sorocaba, em área de manancial. Conhecida pela produção de **morango** e hortaliças."
+  },
+  {
+    "municipio": "Icém",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Grande, na divisa com Minas Gerais, conhecida por sua praia artificial e turismo náutico."
+  },
+  {
+    "municipio": "Iepê",
+    "estado": "SP",
+    "curiosidade": "Município do Pontal do Paranapanema. O nome em Tupi significa 'colina com árvores'."
+  },
+  {
+    "municipio": "Igaraçu do Tietê",
+    "estado": "SP",
+    "curiosidade": "Vizinha a Barra Bonita, também possui um sistema de **eclusas** no Rio Tietê, permitindo a navegação."
+  },
+  {
+    "municipio": "Igarapava",
+    "estado": "SP",
+    "curiosidade": "Localizada na divisa com Minas Gerais, às margens do Rio Grande. Importante centro de produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Igaratá",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Paraíba. Conhecida pela **Represa do Jaguari**, que propicia esportes náuticos e ecoturismo."
+  },
+  {
+    "municipio": "Iguape",
+    "estado": "SP",
+    "curiosidade": "Uma das **cidades mais antigas do Brasil**, fundada em 1537. Possui um rico centro histórico colonial e abriga o **Vale do Ribeira**."
+  },
+  {
+    "municipio": "Ilha Comprida",
+    "estado": "SP",
+    "curiosidade": "Município insular do Litoral Sul, com **mais de 70 km de praia ininterrupta** e grande área de preservação ambiental (APA)."
+  },
+  {
+    "municipio": "Ilha Solteira",
+    "estado": "SP",
+    "curiosidade": "Planejada e construída para abrigar a **Usina Hidrelétrica de Ilha Solteira**, uma das maiores do mundo. É um polo universitário."
+  },
+  {
+    "municipio": "Ilhabela",
+    "estado": "SP",
+    "curiosidade": "Município-arquipélago. Famosa por ser a **Capital Nacional da Vela** (navegação), suas praias, cachoeiras e o Parque Estadual."
+  },
+  {
+    "municipio": "Indaiatuba",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas. Consistentemente classificada entre as **melhores cidades para se viver** no Brasil, com alta qualidade de vida."
+  },
+  {
+    "municipio": "Indiana",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Oeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Inúbia Paulista",
+    "estado": "SP",
+    "curiosidade": "Localizada na Nova Alta Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Ipaussu",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido pela agropecuária e pela presença da **Represa de Ipaussu**."
+  },
+  {
+    "municipio": "Iperó",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Sorocaba. Abriga o **Centro Experimental Aramar**, onde o Brasil desenvolve seu programa nuclear."
+  },
+  {
+    "municipio": "Ipeúna",
+    "estado": "SP",
+    "curiosidade": "Município da região de Rio Claro, com economia baseada na agropecuária e silvicultura."
+  },
+  {
+    "municipio": "Ipiguá",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Iporanga",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira, é o principal acesso ao **PETAR** (Parque Estadual Turístico do Alto Ribeira), famoso por suas cavernas."
+  },
+  {
+    "municipio": "Ipuã",
+    "estado": "SP",
+    "curiosidade": "Município da região de Barretos, com forte economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Iracemápolis",
+    "estado": "SP",
+    "curiosidade": "Vizinha a Limeira, conhecida pela forte agroindústria (cana-de-açúcar) e por abrigar um centro de testes da Mercedes-Benz."
+  },
+  {
+    "municipio": "Irapuã",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Irapuru",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Nova Alta Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Itaberá",
+    "estado": "SP",
+    "curiosidade": "Localizada no Sudoeste Paulista, conhecida pela agricultura e silvicultura (reflorestamento)."
+  },
+  {
+    "municipio": "Itaí",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens da Represa Jurumirim, conhecida pelo turismo náutico e pela agropecuária."
+  },
+  {
+    "municipio": "Itajobi",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva, conhecido pela agricultura e indústria de transformação."
+  },
+  {
+    "municipio": "Itaju",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê, na região de Jaú. O nome em Tupi significa 'pedra tingida'."
+  },
+  {
+    "municipio": "Itanhaém",
+    "estado": "SP",
+    "curiosidade": "Uma das **cidades mais antigas do Brasil** (1532). Famosa pelo Convento Nossa Senhora da Conceição e pelas lendas da Cama de Anchieta."
+  },
+  {
+    "municipio": "Itaóca",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira, conhecida pela mineração e ecoturismo, com paisagens montanhosas."
+  },
+  {
+    "municipio": "Itapecerica da Serra",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo. Conhecida pelas áreas verdes, condomínios e atividades rurais."
+  },
+  {
+    "municipio": "Itapetininga",
+    "estado": "SP",
+    "curiosidade": "Importante polo regional do Sudoeste Paulista. Conhecida pela forte agropecuária e pela tradição de ser um centro de criação de gado."
+  },
+  {
+    "municipio": "Itapeva",
+    "estado": "SP",
+    "curiosidade": "Principal centro regional do Sudoeste Paulista. Conhecida pela produção de grãos e pela extração de minerais."
+  },
+  {
+    "municipio": "Itapevi",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, conhecido pelo forte setor industrial e pela sua localização logística."
+  },
+  {
+    "municipio": "Itapira",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Campinas. Conhecida pelo seu polo de agronegócio e pelo turismo rural."
+  },
+  {
+    "municipio": "Itapirapuã Paulista",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Sul do estado, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Itápolis",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Manga'**, sendo uma das maiores produtoras da fruta no país."
+  },
+  {
+    "municipio": "Itaporanga",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista. O nome em Tupi significa 'pedra bonita'. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "Itapuí",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê, na região de Jaú, conhecida pelo turismo fluvial."
+  },
+  {
+    "municipio": "Itapura",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Extremo Oeste, às margens do Rio Paraná. Conhecida pela Usina Hidrelétrica de Ilha Solteira."
+  },
+  {
+    "municipio": "Itaquaquecetuba",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, com um dos nomes mais longos do estado. Forte base industrial e comercial."
+  },
+  {
+    "municipio": "Itararé",
+    "estado": "SP",
+    "curiosidade": "Localizada na divisa com o Paraná. O nome em Tupi significa 'pedra que a água cavou' (cânions). Polo de extração de minerais."
+  },
+  {
+    "municipio": "Itariri",
+    "estado": "SP",
+    "curiosidade": "Município do Litoral Sul, conhecido por suas áreas verdes e pela agricultura de banana."
+  },
+  {
+    "municipio": "Itatiba",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Princesa da Colina'**. É um importante polo industrial e abriga o **Zoológico de Itatiba**, um dos maiores do país."
+  },
+  {
+    "municipio": "Itatinga",
+    "estado": "SP",
+    "curiosidade": "Município da região de Botucatu. O nome em Tupi significa 'pedra branca'."
+  },
+  {
+    "municipio": "Itirapina",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de São Carlos. Conhecida por sua área de cerrado e pela presença da **Fábrica de Locomotivas** (antiga GE)."
+  },
+  {
+    "municipio": "Itirapuã",
+    "estado": "SP",
+    "curiosidade": "Município da região de Franca, com economia baseada na produção de café."
+  },
+  {
+    "municipio": "Itobi",
+    "estado": "SP",
+    "curiosidade": "Município da região de São João da Boa Vista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Itu",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Cidade dos Exageros'** (devido aos objetos gigantes criados por um morador) e por seu rico patrimônio histórico-colonial."
+  },
+  {
+    "municipio": "Itupeva",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Jundiaí. Abriga grandes parques temáticos e aquáticos, como o **Wet'n Wild** e o **Hopi Hari**."
+  },
+  {
+    "municipio": "Ituverava",
+    "estado": "SP",
+    "curiosidade": "Importante centro agrícola no Nordeste Paulista. Conhecida pela produção de grãos e pela tradição universitária."
+  },
+  {
+    "municipio": "Jaborandi",
+    "estado": "SP",
+    "curiosidade": "Município da região de Barretos, com forte economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Jaboticabal",
+    "estado": "SP",
+    "curiosidade": "Importante polo universitário e de pesquisa agropecuária, sede da **UNESP/FCAV** (Faculdade de Ciências Agrárias e Veterinárias)."
+  },
+  {
+    "municipio": "Jacareí",
+    "estado": "SP",
+    "curiosidade": "Importante centro industrial no Vale do Paraíba, com destaque para o setor automotivo e o papel e celulose."
+  },
+  {
+    "municipio": "Jaci",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Jacupiranga",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira, conhecida pela mineração e por ser o portal de acesso a áreas de preservação ambiental."
+  },
+  {
+    "municipio": "Jaguariúna",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Campinas. Famosa por sediar grandes eventos musicais (rodeio) e por ser um polo tecnológico."
+  },
+  {
+    "municipio": "Jales",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional do Noroeste Paulista. Conhecida pela agropecuária e pelo forte setor de serviços e educacional."
+  },
+  {
+    "municipio": "Jambeiro",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Vale do Paraíba, conhecido pelas fazendas de café e pelo turismo rural."
+  },
+  {
+    "municipio": "Jandira",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, conhecido pelo seu centro industrial e logística."
+  },
+  {
+    "municipio": "Jardinópolis",
+    "estado": "SP",
+    "curiosidade": "Vizinha a Ribeirão Preto. Conhecida pela forte agropecuária e por ser a cidade natal do jornalista **Boris Casoy**."
+  },
+  {
+    "municipio": "Jarinu",
+    "estado": "SP",
+    "curiosidade": "Estância climática na Região de Campinas. Conhecida pela produção de **uva e morango** e por seu clima ameno."
+  },
+  {
+    "municipio": "Jaú",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital do Calçado Feminino'** e polo de confecções, sendo um dos maiores centros produtores de sapatos para mulheres do país."
+  },
+  {
+    "municipio": "Jeriquara",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Franca, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Joanópolis",
+    "estado": "SP",
+    "curiosidade": "Localizada na Serra da Mantiqueira. Conhecida pela lenda do **Lobisomem** e pela **Represa Jaguari**."
+  },
+  {
+    "municipio": "João Ramalho",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Médio Paranapanema, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "José Bonifácio",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, conhecido pela agropecuária e indústria de transformação."
+  },
+  {
+    "municipio": "Júlio Mesquita",
+    "estado": "SP",
+    "curiosidade": "Município da região de Marília, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Jundiaí",
+    "estado": "SP",
+    "curiosidade": "Importante centro logístico e industrial, conhecido como a **'Terra da Uva'**. Possui alta qualidade de vida e está entre os maiores PIBs do estado."
+  },
+  {
+    "municipio": "Junqueirópolis",
+    "estado": "SP",
+    "curiosidade": "Localizada na Nova Alta Paulista, com forte economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Juquiá",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira. O nome em Tupi significa 'rio do junco'. Conhecida pela produção de banana e palmito."
+  },
+  {
+    "municipio": "Juquitiba",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de São Paulo, em área de manancial. É um polo de ecoturismo e **rafting** no Rio Juquiá."
+  },
+  {
+    "municipio": "Lagoinha",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Vale do Paraíba, conhecido pelo turismo rural e pelas paisagens da Serra do Mar."
+  },
+  {
+    "municipio": "Laranjal Paulista",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital do Brinquedo'**, devido à forte presença de indústrias de brinquedos e artigos infantis."
+  },
+  {
+    "municipio": "Lavínia",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Lavrinhas",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Paraíba, na divisa com Minas Gerais. Conhecida pelas cachoeiras e ecoturismo."
+  },
+  {
+    "municipio": "Leme",
+    "estado": "SP",
+    "curiosidade": "Importante centro industrial e logístico, com destaque para o setor de metalurgia e produção de **vidro**."
+  },
+  {
+    "municipio": "Lençóis Paulista",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital do Livro'** por sediar a **Feira do Livro de Lençóis Paulista** (FLIP), uma das maiores do país, e polo agroindustrial."
+  },
+  {
+    "municipio": "Limeira",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Joia Folheada'** e um dos maiores produtores de **laranja** e suco de laranja do mundo. Polo de agronegócio."
+  },
+  {
+    "municipio": "Lindóia",
+    "estado": "SP",
+    "curiosidade": "Estância hidromineral do Circuito das Águas, famosa pela produção de **água mineral** e pelo seu balneário."
+  },
+  {
+    "municipio": "Lins",
+    "estado": "SP",
+    "curiosidade": "Importante polo regional e universitário no Centro-Oeste Paulista. Conhecida pela forte presença de empresas de alimentos e agroindústria."
+  },
+  {
+    "municipio": "Lorena",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica no Vale do Paraíba. É um importante centro educacional e militar, sede da **Escola de Engenharia da USP**."
+  },
+  {
+    "municipio": "Lourdes",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Louveira",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Jundiaí. Conhecida pela produção de **uva** e por ter um dos **maiores PIBs per capita do Brasil**."
+  },
+  {
+    "municipio": "Lucélia",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional da Nova Alta Paulista, com economia baseada na agropecuária e serviços."
+  },
+  {
+    "municipio": "Luiziânia",
+    "estado": "SP",
+    "curiosidade": "Município da região de Araçatuba, com economia baseada na agropecuária."
+  },
+  [
+  {
+    "municipio": "Macatuba",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê, na região de Lençóis Paulista. Conhecida pela indústria de papel e celulose."
+  },
+  {
+    "municipio": "Macaubal",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, conhecido pela agropecuária e pela presença de uma grande lagoa."
+  },
+  {
+    "municipio": "Macedônia",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Magda",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Mairinque",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Sorocaba. Importante entroncamento ferroviário histórico, conhecido pela **Estação Ferroviária de Mairinque**."
+  },
+  {
+    "municipio": "Mairiporã",
+    "estado": "SP",
+    "curiosidade": "Localizada na Serra da Cantareira, na Região Metropolitana de São Paulo. Conhecida pela **Represa de Paiva Castro** e pelo ecoturismo."
+  },
+  {
+    "municipio": "Manduri",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido pela agropecuária e pelo turismo rural."
+  },
+  {
+    "municipio": "Marabá Paulista",
+    "estado": "SP",
+    "curiosidade": "Localizada no Pontal do Paranapanema, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Maracaí",
+    "estado": "SP",
+    "curiosidade": "Município do Médio Paranapanema, conhecido pela forte agropecuária e presença de usinas de cana-de-açúcar."
+  },
+  {
+    "municipio": "Marapoama",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Catanduva, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Mariápolis",
+    "estado": "SP",
+    "curiosidade": "Localizada na Nova Alta Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Marília",
+    "estado": "SP",
+    "curiosidade": "Importante polo regional no Centro-Oeste Paulista. Conhecida como a **'Capital Nacional do Alimento'** por sua forte agroindústria e tecnologia em alimentos."
+  },
+  {
+    "municipio": "Marinópolis",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Martinópolis",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista, próxima a Presidente Prudente. Conhecida pela **Represa Laranja Doce** e turismo náutico."
+  },
+  {
+    "municipio": "Matão",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital dos Bordados'** e pelo forte polo agroindustrial, especialmente na produção de cítricos."
+  },
+  {
+    "municipio": "Mauá",
+    "estado": "SP",
+    "curiosidade": "Município da Região do Grande ABC Paulista. Importante polo industrial, com destaque para a **Refinaria de Capuava (RECAP)** e o setor químico."
+  },
+  {
+    "municipio": "Mendonça",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Meridiano",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Mesópolis",
+    "estado": "SP",
+    "curiosidade": "Localizada no Extremo Noroeste, às margens do Rio Grande, com potencial para turismo de lazer."
+  },
+  {
+    "municipio": "Miguelópolis",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Grande, na divisa com Minas Gerais. Conhecida pelo turismo náutico e a **Praia Artificial**."
+  },
+  {
+    "municipio": "Mineiros do Tietê",
+    "estado": "SP",
+    "curiosidade": "Município da região de Jaú, conhecido pela indústria de papel e celulose."
+  },
+  {
+    "municipio": "Mira Estrela",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Miracatu",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira. O nome em Tupi significa 'pássaro que chora'. Conhecida pela agricultura de banana."
+  },
+  {
+    "municipio": "Mirandópolis",
+    "estado": "SP",
+    "curiosidade": "Importante centro agrícola no Noroeste Paulista, conhecido pela presença de uma das maiores unidades prisionais do estado."
+  },
+  {
+    "municipio": "Mirante do Paranapanema",
+    "estado": "SP",
+    "curiosidade": "Localizada no Pontal do Paranapanema, com economia fortemente agrícola e presença de assentamentos rurais."
+  },
+  {
+    "municipio": "Mirassol",
+    "estado": "SP",
+    "curiosidade": "Vizinha a São José do Rio Preto, conhecida como a **'Capital do Móvel'** na região, com forte polo industrial moveleiro."
+  },
+  {
+    "municipio": "Mirassolândia",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Mococa",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica da Alta Mogiana. Conhecida pela forte tradição na **pecuária leiteira** e na produção de café."
+  },
+  {
+    "municipio": "Mogi das Cruzes",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional da Região Metropolitana de São Paulo. Conhecida como a **'Capital do Caqui'** e do agronegócio, com forte influência japonesa."
+  },
+  {
+    "municipio": "Mogi Guaçu",
+    "estado": "SP",
+    "curiosidade": "Importante polo industrial no Leste Paulista, com destaque para a produção de papel, celulose e indústrias de bebidas."
+  },
+  {
+    "municipio": "Mogi Mirim",
+    "estado": "SP",
+    "curiosidade": "Cidade vizinha a Mogi Guaçu, com forte base industrial e histórica. Abriga o **Centro de Treinamento do time Mogi Mirim Esporte Clube**."
+  },
+  {
+    "municipio": "Mombuca",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Piracicaba, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Monções",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Monte Alegre do Sul",
+    "estado": "SP",
+    "curiosidade": "Estância hidromineral do Circuito das Águas, com paisagens montanhosas e forte turismo rural."
+  },
+  {
+    "municipio": "Monte Alto",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Tomate de Mesa'**. É um importante centro agrícola e paleontológico (Museu Paleontológico)."
+  },
+  {
+    "municipio": "Monte Aprazível",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Noroeste Paulista, com economia baseada na agropecuária e serviços."
+  },
+  {
+    "municipio": "Monte Azul Paulista",
+    "estado": "SP",
+    "curiosidade": "Conhecida pela forte produção de **citricultura** e suco de laranja."
+  },
+  {
+    "municipio": "Monte Castelo",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Oeste Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Monte Mor",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas, com base industrial e agroindustrial."
+  },
+  {
+    "municipio": "Monteiro Lobato",
+    "estado": "SP",
+    "curiosidade": "Homenagem ao escritor, que se inspirou na região (Sítio do Pica-Pau Amarelo). Conhecida pelo turismo rural e de aventura."
+  },
+  {
+    "municipio": "Morro Agudo",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Ribeirão Preto, com forte economia baseada na **cana-de-açúcar** e agricultura."
+  },
+  {
+    "municipio": "Morungaba",
+    "estado": "SP",
+    "curiosidade": "Estância climática do Circuito das Águas, famosa pela produção de **doces caseiros** e artesanato."
+  },
+  {
+    "municipio": "Motuca",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Araraquara, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Murutinga do Sul",
+    "estado": "SP",
+    "curiosidade": "Município da região de Andradina, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Nantes",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Médio Paranapanema, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Narandiba",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista, próxima a Presidente Prudente, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Natividade da Serra",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Paraíba, em área de serra e manancial. Conhecida pela **Represa de Paraibuna** e ecoturismo."
+  },
+  {
+    "municipio": "Nazaré Paulista",
+    "estado": "SP",
+    "curiosidade": "Estância turística na Serra da Mantiqueira, famosa pela **Represa Atibainha**, que atrai praticantes de esportes náuticos."
+  },
+  {
+    "municipio": "Neves Paulista",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Nhandeara",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, conhecido pela agropecuária e indústria de transformação."
+  },
+  {
+    "municipio": "Nipoã",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com forte influência da **colônia japonesa** na agricultura."
+  },
+  {
+    "municipio": "Nova Aliança",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, conhecido pela agropecuária e cana-de-açúcar."
+  },
+  {
+    "municipio": "Nova Campina",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Sudoeste Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Nova Canaã Paulista",
+    "estado": "SP",
+    "curiosidade": "Localizada no Extremo Oeste, próxima ao Rio Paraná, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Nova Castilho",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Nova Europa",
+    "estado": "SP",
+    "curiosidade": "Município da região de Araraquara, com economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Nova Granada",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com economia baseada na agropecuária e indústria."
+  },
+  {
+    "municipio": "Nova Guataporanga",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Nova Alta Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Nova Odessa",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas. Fundada por imigrantes letões, hoje é um polo de **indústria têxtil** e metalurgia."
+  },
+  {
+    "municipio": "Nova Veneza",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de São José do Rio Preto, conhecido pela agricultura."
+  },
+  {
+    "municipio": "Novais",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Novo Horizonte",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Noroeste Paulista. Conhecida pela forte agroindústria e a produção de **cana-de-açúcar**."
+  },
+  {
+    "municipio": "Nuporanga",
+    "estado": "SP",
+    "curiosidade": "Município da região de Franca, com economia baseada na agropecuária e no café."
+  },
+  {
+    "municipio": "Ocauçu",
+    "estado": "SP",
+    "curiosidade": "Município da região de Marília, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Óleo",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Sudoeste Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Olímpia",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Turismo'** e a **'Orlando Brasileira'**. Abriga os parques aquáticos **Thermas dos Laranjais** e **Hot Beach**."
+  },
+  {
+    "municipio": "Onda Verde",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Oriente",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Marília, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Orindiúva",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Grande, conhecida pela Usina Hidrelétrica de Marimbondo e turismo náutico."
+  },
+  {
+    "municipio": "Orlândia",
+    "estado": "SP",
+    "curiosidade": "Importante centro agrícola no Nordeste Paulista. Conhecida pela produção de **soja** e milho."
+  },
+  {
+    "municipio": "Osasco",
+    "estado": "SP",
+    "curiosidade": "Importante centro financeiro, industrial e comercial da Região Metropolitana de São Paulo. Sede de grandes empresas e do **Banco Bradesco**."
+  },
+  {
+    "municipio": "Oscar Bressane",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Marília, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Osvaldo Cruz",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional na Nova Alta Paulista. Conhecida pela agropecuária e forte setor de serviços."
+  },
+  {
+    "municipio": "Ourinhos",
+    "estado": "SP",
+    "curiosidade": "Importante polo regional na divisa com o Paraná. Conhecida pela sua localização logística e pela forte agropecuária e serviços."
+  },
+  {
+    "municipio": "Ouro Verde",
+    "estado": "SP",
+    "curiosidade": "Município da Nova Alta Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Ouroeste",
+    "estado": "SP",
+    "curiosidade": "Localizada no Extremo Noroeste, conhecida pela agropecuária e pela presença do Rio Grande."
+  },
+  {
+    "municipio": "Pacaembu",
+    "estado": "SP",
+    "curiosidade": "Município da Nova Alta Paulista. O nome em Tupi significa 'paca' (animal). Conhecido pela agricultura."
+  },
+  {
+    "municipio": "Palestina",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, conhecido pela agropecuária e pela presença do Rio Tietê."
+  },
+  {
+    "municipio": "Palmares Paulista",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Palmital",
+    "estado": "SP",
+    "curiosidade": "Importante centro agrícola no Médio Paranapanema, com destaque para a produção de grãos e cana-de-açúcar."
+  },
+  {
+    "municipio": "Panorama",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Paraná, no Extremo Oeste. Conhecida pela sua **praia artificial** e turismo de lazer."
+  },
+  {
+    "municipio": "Paraguaçu Paulista",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Médio Paranapanema. Conhecida como a **'Estância Turística'** e polo de agropecuária."
+  },
+  {
+    "municipio": "Paraibuna",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica no Vale do Paraíba, em área de serra e manancial. Conhecida pela **Represa de Paraibuna** e turismo rural."
+  },
+  {
+    "municipio": "Paraíso",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Paranapanema",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens da **Represa Jurumirim**, com forte potencial para turismo náutico e ecoturismo."
+  },
+  {
+    "municipio": "Paranapuã",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Parapuã",
+    "estado": "SP",
+    "curiosidade": "Localizada na Nova Alta Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Pardinho",
+    "estado": "SP",
+    "curiosidade": "Município da região de Botucatu, conhecido pelas paisagens da Cuesta e pelo ecoturismo."
+  },
+  {
+    "municipio": "Parisi",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Patrocínio Paulista",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Franca, conhecida pela produção de café."
+  },
+  {
+    "municipio": "Paulicéia",
+    "estado": "SP",
+    "curiosidade": "Localizada no Extremo Oeste, às margens do Rio Paraná. Conhecida pela pesca e turismo de lazer."
+  },
+  {
+    "municipio": "Paulínia",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Petróleo'**. Abriga a **REPLAN**, a maior refinaria de petróleo da Petrobras no Brasil, e um grande complexo cinematográfico."
+  },
+  {
+    "municipio": "Paulistânia",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bauru, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Paulo de Faria",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Pederneiras",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê, conhecida pela Usina Hidrelétrica de Pederneiras e pelo setor industrial."
+  },
+  {
+    "municipio": "Pedra Bela",
+    "estado": "SP",
+    "curiosidade": "Município da Região Bragantina. Conhecida pela **Pedra Bela**, um monólito que atrai turistas e praticantes de esportes de aventura."
+  },
+  {
+    "municipio": "Pedranópolis",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Pedregulho",
+    "estado": "SP",
+    "curiosidade": "Localizada na divisa com Minas Gerais, conhecida pelo **Parque Estadual das Furnas do Bom Jesus** e suas cachoeiras."
+  },
+  {
+    "municipio": "Pedreira",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital da Porcelana e do Vidro'** no estado, sendo um polo de compras de artigos de decoração e utilidades domésticas."
+  },
+  {
+    "municipio": "Pedrinhas Paulista",
+    "estado": "SP",
+    "curiosidade": "Município do Médio Paranapanema, com forte influência da **colônia italiana** e economia baseada na agricultura."
+  },
+  {
+    "municipio": "Penápolis",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Noroeste Paulista. Conhecida pelo seu forte setor de serviços e comércio."
+  },
+  {
+    "municipio": "Pereira Barreto",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê e do Rio Paraná. Conhecida pela **Usina Hidrelétrica de Três Irmãos** e turismo náutico."
+  },
+  {
+    "municipio": "Pereiras",
+    "estado": "SP",
+    "curiosidade": "Município da região de Botucatu, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Peruíbe",
+    "estado": "SP",
+    "curiosidade": "Município do Litoral Sul. Conhecida pelas **praias com areias monazíticas** (radioativas), que atraem visitantes por suas supostas propriedades terapêuticas."
+  },
+  {
+    "municipio": "Piacatu",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Araçatuba, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Piedade",
+    "estado": "SP",
+    "curiosidade": "Importante centro agrícola no Sul do estado. Conhecida pela produção de **batata e hortaliças** e pelo seu clima de serra."
+  },
+  {
+    "municipio": "Pilar do Sul",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Sorocaba, conhecida pelo ecoturismo e suas áreas de Mata Atlântica."
+  },
+  {
+    "municipio": "Pindamonhangaba",
+    "estado": "SP",
+    "curiosidade": "Importante centro industrial no Vale do Paraíba, com destaque para as indústrias automotiva e de aço. O nome é de origem Tupi."
+  },
+  {
+    "municipio": "Pindorama",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva. Sede de um importante centro de pesquisa do agronegócio, o **Instituto Agronômico (IAC)**."
+  },
+  {
+    "municipio": "Pinhalzinho",
+    "estado": "SP",
+    "curiosidade": "Estância climática na Região Bragantina, conhecida pela produção de **morango** e pelo clima ameno."
+  },
+  {
+    "municipio": "Piquerobi",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista, próxima a Presidente Prudente, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Piquete",
+    "estado": "SP",
+    "curiosidade": "Localizada na Serra da Mantiqueira. Conhecida pela **Fábrica Presidente Vargas**, polo de produção de material bélico do Exército."
+  },
+  {
+    "municipio": "Piracaia",
+    "estado": "SP",
+    "curiosidade": "Estância turística na Serra da Mantiqueira, famosa pela **Represa de Jaguary** e pelo turismo de lazer e aventura."
+  },
+  {
+    "municipio": "Piracicaba",
+    "estado": "SP",
+    "curiosidade": "Importante polo industrial, agroindustrial e universitário. Conhecida pela **ESALQ/USP** (escola de agricultura) e pelo seu tradicional **Rio Piracicaba**."
+  },
+  {
+    "municipio": "Piraju",
+    "estado": "SP",
+    "curiosidade": "Estância turística no Sudoeste Paulista, conhecida pelo **Rio Paranapanema**, que propicia o **rafting** e esportes náuticos."
+  },
+  {
+    "municipio": "Pirajuba",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Ourinhos, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Pirangi",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bebedouro, com forte economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Pirapora do Bom Jesus",
+    "estado": "SP",
+    "curiosidade": "Conhecida pelo seu santuário religioso, que atrai grande número de romeiros, e pela localização às margens do Rio Tietê."
+  },
+  {
+    "municipio": "Pirapozinho",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista, próxima a Presidente Prudente. Conhecida pela agropecuária e indústria de confecções."
+  },
+  {
+    "municipio": "Pirassununga",
+    "estado": "SP",
+    "curiosidade": "Sede da **Academia da Força Aérea (AFA)** e do 13º Regimento de Cavalaria Mecanizado. Conhecida pela produção de cana-de-açúcar e cachaça."
+  },
+  {
+    "municipio": "Piratininga",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bauru. O nome é de origem Tupi e significa 'peixe seco'."
+  },
+  {
+    "municipio": "Pitangueiras",
+    "estado": "SP",
+    "curiosidade": "Município da região de Ribeirão Preto, com forte economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Planalto",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Platina",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Médio Paranapanema, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Poá",
+    "estado": "SP",
+    "curiosidade": "Estância hidromineral na Região Metropolitana de São Paulo. Conhecida pela **Exposição de Orquídeas** e pela indústria química."
+  },
+  {
+    "municipio": "Poloni",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Pompéia",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Marília, conhecida pela forte presença da **colônia japonesa** e pela agroindústria."
+  },
+  {
+    "municipio": "Pongaí",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Lins, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Pontal",
+    "estado": "SP",
+    "curiosidade": "Município da região de Ribeirão Preto, com forte economia baseada na **cana-de-açúcar**."
+  },
+  {
+    "municipio": "Pontalinda",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Populina",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Porangaba",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, com economia baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Porto Feliz",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica na Região Metropolitana de Sorocaba. Conhecida como o **'Berço das Monções'**, devido às expedições fluviais."
+  },
+  {
+    "municipio": "Porto Ferreira",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital da Cerâmica Artística e da Decoração'**, sendo um grande polo de compras para o setor."
+  },
+  {
+    "municipio": "Potim",
+    "estado": "SP",
+    "curiosidade": "Vizinha a Aparecida. Criada recentemente, sua economia está ligada ao turismo religioso da região."
+  },
+  {
+    "municipio": "Potirendaba",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com economia baseada na agropecuária e indústria."
+  },
+  {
+    "municipio": "Pracinha",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Nova Alta Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Pradópolis",
+    "estado": "SP",
+    "curiosidade": "Município da região de Ribeirão Preto, com forte economia baseada na **cana-de-açúcar** e usinas."
+  },
+  {
+    "municipio": "Praia Grande",
+    "estado": "SP",
+    "curiosidade": "Um dos principais e mais populosos balneários da Baixada Santista. Conhecida pela sua orla extensa e pela intensa atividade turística de verão."
+  },
+  {
+    "municipio": "Pratânia",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Botucatu, conhecido pelo ecoturismo e suas nascentes."
+  },
+  {
+    "municipio": "Presidente Alves",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bauru, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Presidente Bernardes",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista, conhecida pela agropecuária e pelo setor de serviços."
+  },
+  {
+    "municipio": "Presidente Epitácio",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Paraná. Estância turística famosa pelo seu **Pôr do Sol** e pela **Orla Fluvial**."
+  },
+  {
+    "municipio": "Presidente Prudente",
+    "estado": "SP",
+    "curiosidade": "A **principal cidade e polo regional do Oeste Paulista**. Importante centro universitário, comercial e de serviços."
+  },
+  {
+    "municipio": "Presidente Venceslau",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional do Oeste Paulista, conhecido pela agropecuária e por abrigar um complexo penitenciário."
+  },
+  {
+    "municipio": "Promissão",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê, conhecida pela **Usina Hidrelétrica de Promissão** e pela agricultura."
+  },
+  {
+    "municipio": "Quadra",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Sudoeste Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Quatá",
+    "estado": "SP",
+    "curiosidade": "Município do Médio Paranapanema, com forte economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Queiroz",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Tupã, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Queluz",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Paraíba, na divisa com o Rio de Janeiro. Cidade histórica com casarões coloniais."
+  },
+  {
+    "municipio": "Quintana",
+    "estado": "SP",
+    "curiosidade": "Município da região de Tupã, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Rafard",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Piracicaba, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Rancharia",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Oeste Paulista. Conhecida pela agropecuária e pela presença do **Parque Estadual de Várzeas do Rio Ivinhema**."
+  },
+  {
+    "municipio": "Redenção da Serra",
+    "estado": "SP",
+    "curiosidade": "Município do Vale do Paraíba. A antiga cidade foi submersa pela construção da **Represa de Paraibuna**, sendo reconstruída em um novo local."
+  },
+  {
+    "municipio": "Regente Feijó",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista, vizinha a Presidente Prudente, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Reginópolis",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bauru, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Registro",
+    "estado": "SP",
+    "curiosidade": "Principal polo do Vale do Ribeira. Conhecida por ser o **centro da colônia japonesa** na região e pela produção de chá e banana."
+  },
+  {
+    "municipio": "Restinga",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Franca, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Ribeira",
+    "estado": "SP",
+    "curiosidade": "Município do Sul do estado, na divisa com o Paraná. Conhecido pelas suas paisagens naturais e cavernas."
+  },
+  {
+    "municipio": "Ribeirão Bonito",
+    "estado": "SP",
+    "curiosidade": "Município da região de São Carlos, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Ribeirão Branco",
+    "estado": "SP",
+    "curiosidade": "Localizada no Sul do estado. Conhecida por suas paisagens montanhosas e forte presença de Mata Atlântica."
+  },
+  {
+    "municipio": "Ribeirão Corrente",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Franca, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Ribeirão do Sul",
+    "estado": "SP",
+    "curiosidade": "Município da região de Ourinhos, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Ribeirão dos Índios",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista, próxima ao Rio Paraná, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Ribeirão Grande",
+    "estado": "SP",
+    "curiosidade": "Município do Sul do estado, conhecido por suas belezas naturais e áreas de preservação."
+  },
+  {
+    "municipio": "Ribeirão Pires",
+    "estado": "SP",
+    "curiosidade": "Estância turística na Região Metropolitana de São Paulo. Conhecida pela **Represa Billings** e pelo seu clima de serra."
+  },
+  {
+    "municipio": "Ribeirão Preto",
+    "estado": "SP",
+    "curiosidade": "Um dos principais centros econômicos do interior de SP. Conhecida como a **'Capital Mundial do Agronegócio'** e da **Cerveja** (polo de grandes cervejarias)."
+  },
+  {
+    "municipio": "Rifaina",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Grande, na divisa com Minas Gerais. Estância turística famosa por suas praias fluviais e esportes náuticos."
+  },
+  {
+    "municipio": "Rincão",
+    "estado": "SP",
+    "curiosidade": "Município da região de Araraquara, com forte economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Rinópolis",
+    "estado": "SP",
+    "curiosidade": "Município da Nova Alta Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Rio Claro",
+    "estado": "SP",
+    "curiosidade": "Importante polo industrial e universitário no Centro-Sul Paulista. Conhecida pelo **Estudo do Clima** e pela **UNESP/IGCE** (Instituto de Geociências e Ciências Exatas)."
+  },
+  {
+    "municipio": "Rio das Pedras",
+    "estado": "SP",
+    "curiosidade": "Município da região de Piracicaba, com economia baseada na agropecuária e indústria."
+  },
+  {
+    "municipio": "Rio Grande da Serra",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Região Metropolitana de São Paulo, conhecido por seu clima de serra e pela área de Mata Atlântica."
+  },
+  {
+    "municipio": "Riolândia",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Grande, conhecida pelo turismo de lazer e pesca."
+  },
+  {
+    "municipio": "Riversul",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Rosana",
+    "estado": "SP",
+    "curiosidade": "Localizada no Extremo Oeste, no Pontal do Paranapanema. Conhecida pela **Usina Hidrelétrica de Rosana** e pela pesca no Rio Paraná."
+  },
+  {
+    "municipio": "Roseira",
+    "estado": "SP",
+    "curiosidade": "Município do Vale do Paraíba, próximo a Aparecida. É um ponto de passagem importante para romeiros."
+  },
+  {
+    "municipio": "Rubiácea",
+    "estado": "SP",
+    "curiosidade": "Município da região de Araçatuba, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Rubinéia",
+    "estado": "SP",
+    "curiosidade": "Localizada no Extremo Noroeste, às margens do Rio Paraná. Conhecida pelo turismo de pesca e lazer."
+  },
+  [
+  {
+    "municipio": "Sabino",
+    "estado": "SP",
+    "curiosidade": "Localizada às margens do Rio Tietê, na região de Lins. Conhecida pelo turismo de lazer e pesca."
+  },
+  {
+    "municipio": "Sagres",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Nova Alta Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Sales",
+    "estado": "SP",
+    "curiosidade": "Estância turística localizada às margens da **Represa de Promissão**, conhecida pela **Praia do Richelieu** e esportes náuticos."
+  },
+  {
+    "municipio": "Sales Oliveira",
+    "estado": "SP",
+    "curiosidade": "Município da região de Orlândia, com forte economia baseada na agropecuária e cana-de-açúcar."
+  },
+  {
+    "municipio": "Salesópolis",
+    "estado": "SP",
+    "curiosidade": "Localizada na Serra do Mar. Abriga a **Nascente do Rio Tietê**, que é um marco geográfico e turístico."
+  },
+  {
+    "municipio": "Salmourão",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Nova Alta Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Saltinho",
+    "estado": "SP",
+    "curiosidade": "Município da região de Piracicaba, conhecido pela agropecuária e indústria de transformação."
+  },
+  {
+    "municipio": "Salto",
+    "estado": "SP",
+    "curiosidade": "Conhecida pela imponente **Cachoeira do Salto**, no Rio Tietê, e pelo seu complexo turístico."
+  },
+  {
+    "municipio": "Salto de Pirapora",
+    "estado": "SP",
+    "curiosidade": "Localizada na Região Metropolitana de Sorocaba, conhecida pela mineração e indústria de cimento."
+  },
+  {
+    "municipio": "Salto Grande",
+    "estado": "SP",
+    "curiosidade": "Município na divisa com o Paraná, às margens do Rio Paranapanema. Conhecido pelo turismo de lazer e represas."
+  },
+  {
+    "municipio": "Santa Adélia",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva, com forte economia baseada na **cana-de-açúcar**."
+  },
+  {
+    "municipio": "Santa Albertina",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Santa Bárbara d'Oeste",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica da Região Metropolitana de Campinas. É considerada a **cidade-mãe dos imigrantes norte-americanos** no Brasil."
+  },
+  {
+    "municipio": "Santa Branca",
+    "estado": "SP",
+    "curiosidade": "Estância turística no Vale do Paraíba, conhecida pela **Represa de Santa Branca** e pelo turismo de lazer."
+  },
+  {
+    "municipio": "Santa Clara d'Oeste",
+    "estado": "SP",
+    "curiosidade": "Localizada no Extremo Noroeste, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Santa Cruz da Conceição",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Leme, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Santa Cruz da Esperança",
+    "estado": "SP",
+    "curiosidade": "Município da região de Ribeirão Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Santa Cruz das Palmeiras",
+    "estado": "SP",
+    "curiosidade": "Conhecida pela forte produção de **café** e pelo seu potencial agroindustrial."
+  },
+  {
+    "municipio": "Santa Cruz do Rio Pardo",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Sudoeste Paulista. Conhecida pela produção de **manga** e pela agropecuária."
+  },
+  {
+    "municipio": "Santa Ernestina",
+    "estado": "SP",
+    "curiosidade": "Município da região de Jaboticabal, com forte economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Santa Fé do Sul",
+    "estado": "SP",
+    "curiosidade": "Estância turística às margens do Rio Paraná. Famosa pelo **Terminal Turístico** e por ser um polo universitário na região."
+  },
+  {
+    "municipio": "Santa Gertrudes",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Cerâmica'**, sendo o maior polo produtor de pisos e revestimentos cerâmicos do Brasil."
+  },
+  {
+    "municipio": "Santa Isabel",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, em área de manancial. Conhecida por suas paisagens rurais e clima ameno."
+  },
+  {
+    "municipio": "Santa Lúcia",
+    "estado": "SP",
+    "curiosidade": "Município da região de Araraquara, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Santa Maria da Serra",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Piracicaba, conhecido pela tranquilidade e belezas naturais."
+  },
+  {
+    "municipio": "Santa Mercedes",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Nova Alta Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Santa Rita do Passa Quatro",
+    "estado": "SP",
+    "curiosidade": "Cidade natal do cantor **Zezé Di Camargo**. Conhecida pela **Fazenda Tamanduá**, importante área de preservação ambiental."
+  },
+  {
+    "municipio": "Santa Rita d'Oeste",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Santa Rosa de Viterbo",
+    "estado": "SP",
+    "curiosidade": "Município da região de Ribeirão Preto, com forte economia baseada na **cana-de-açúcar**."
+  },
+  {
+    "municipio": "Santa Salete",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Santana da Ponte Pensa",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Santana de Parnaíba",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica da Região Metropolitana de São Paulo. Possui um dos **centros históricos coloniais mais bem preservados** do estado."
+  },
+  {
+    "municipio": "Santo Anastácio",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional do Oeste Paulista, conhecido pela agropecuária e serviços."
+  },
+  {
+    "municipio": "Santo André",
+    "estado": "SP",
+    "curiosidade": "Um dos principais municípios do **Grande ABC Paulista**. Forte polo industrial e automotivo, com destaque para a área de tecnologia."
+  },
+  {
+    "municipio": "Santo Antônio da Alegria",
+    "estado": "SP",
+    "curiosidade": "Localizada na divisa com Minas Gerais, conhecida pelo turismo rural e paisagens montanhosas."
+  },
+  {
+    "municipio": "Santo Antônio de Posse",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Santo Antônio do Aracanguá",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Araçatuba, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Santo Antônio do Jardim",
+    "estado": "SP",
+    "curiosidade": "Estância climática na divisa com Minas Gerais, conhecida pelo clima ameno e turismo rural."
+  },
+  {
+    "municipio": "Santo Antônio do Pinhal",
+    "estado": "SP",
+    "curiosidade": "Estância climática na Serra da Mantiqueira, vizinha a Campos do Jordão. Famosa pelo ecoturismo e artesanato."
+  },
+  {
+    "municipio": "Santo Expedito",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista. Conhecida pelo **Santuário de Santo Expedito**, que atrai turismo religioso."
+  },
+  {
+    "municipio": "Santópolis do Aguapeí",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Araçatuba, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Santos",
+    "estado": "SP",
+    "curiosidade": "A **cidade portuária mais importante do Brasil** e da América Latina. Conhecida pelos **maiores jardins de praia do mundo** e pelo seu patrimônio histórico-cafeiro."
+  },
+  {
+    "municipio": "São Bento do Sapucaí",
+    "estado": "SP",
+    "curiosidade": "Estância climática na Serra da Mantiqueira. Famosa pela **Pedra do Baú** e pelo turismo de aventura e montanhismo."
+  },
+  {
+    "municipio": "São Bernardo do Campo",
+    "estado": "SP",
+    "curiosidade": "Principal polo do **Grande ABC Paulista**. Conhecida como o **Berço da Indústria Automobilística** brasileira (Mercedes-Benz, Volkswagen) e por sediar a **Represa Billings**."
+  },
+  {
+    "municipio": "São Caetano do Sul",
+    "estado": "SP",
+    "curiosidade": "Município do Grande ABC Paulista. Frequentemente classificada com o **maior IDH (Índice de Desenvolvimento Humano)** do Brasil, destacando-se em educação e saúde."
+  },
+  {
+    "municipio": "São Carlos",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Tecnologia'** e como o principal polo tecnológico do interior de SP. Sede da **USP** e da **UFSCar**."
+  },
+  {
+    "municipio": "São Francisco",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "São João da Boa Vista",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Leste Paulista. Conhecida pelo seu patrimônio arquitetônico e pela indústria de transformação."
+  },
+  {
+    "municipio": "São João das Duas Pontes",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "São João de Iracema",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "São João do Pau d'Alho",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Nova Alta Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "São Joaquim da Barra",
+    "estado": "SP",
+    "curiosidade": "Importante centro agrícola no Nordeste Paulista, conhecido pela produção de **grãos** e agroindústria."
+  },
+  {
+    "municipio": "São José da Bela Vista",
+    "estado": "SP",
+    "curiosidade": "Município da região de Franca, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "São José do Barreiro",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica no Vale do Paraíba, portal do **Parque Nacional da Serra da Bocaina**, com forte potencial de ecoturismo."
+  },
+  {
+    "municipio": "São José do Rio Pardo",
+    "estado": "SP",
+    "curiosidade": "Cidade natal do escritor **Euclides da Cunha**. Conhecida pela ponte de ferro e pela Casa de Cultura em sua homenagem."
+  },
+  {
+    "municipio": "São José do Rio Preto",
+    "estado": "SP",
+    "curiosidade": "A **principal cidade e polo regional do Noroeste Paulista**. Centro de serviços, saúde e comércio de altíssima relevância."
+  },
+  {
+    "municipio": "São José dos Campos",
+    "estado": "SP",
+    "curiosidade": "A **Capital Brasileira da Tecnologia e da Indústria Aeronáutica**. Sede do **ITA**, do **INPE**, da **Embraer** e de grandes indústrias aeroespaciais."
+  },
+  {
+    "municipio": "São Lourenço da Serra",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, conhecido por suas áreas rurais e clima ameno."
+  },
+  {
+    "municipio": "São Luís do Paraitinga",
+    "estado": "SP",
+    "curiosidade": "Estância turística histórica do Vale do Paraíba. Famosa pelo seu **Carnaval de Marchinhas** e pelo casario colonial preservado."
+  },
+  {
+    "municipio": "São Manuel",
+    "estado": "SP",
+    "curiosidade": "Localizada na região de Botucatu, conhecida pela agropecuária e pela lenda do **gigante Sabiá**."
+  },
+  {
+    "municipio": "São Miguel Arcanjo",
+    "estado": "SP",
+    "curiosidade": "Importante centro agrícola no Sudoeste Paulista. Conhecida pela produção de **batata** e por ser o portal do **Parque Estadual Carlos Botelho**."
+  },
+  {
+    "municipio": "São Paulo",
+    "estado": "SP",
+    "curiosidade": "A **cidade mais populosa do Brasil e da América do Sul**. O principal centro financeiro, cultural e gastronômico do país, conhecido por sua diversidade e intensa vida urbana."
+  },
+  {
+    "municipio": "São Pedro",
+    "estado": "SP",
+    "curiosidade": "Estância turística na Cuesta de Botucatu. Conhecida por seu balneário de águas sulfurosas e pelo **Parque do Cristo**."
+  },
+  {
+    "municipio": "São Pedro do Turvo",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "São Roque",
+    "estado": "SP",
+    "curiosidade": "Estância turística na Região Metropolitana de Sorocaba. Famosa pela **Rota do Vinho**, com diversas vinícolas, e pelo **Ski Mountain Park**."
+  },
+  {
+    "municipio": "São Sebastião",
+    "estado": "SP",
+    "curiosidade": "Um dos mais belos municípios do Litoral Norte. Famoso por praias como **Maresias** e por abrigar o maior terminal marítimo de petróleo do país."
+  },
+  {
+    "municipio": "São Sebastião da Grama",
+    "estado": "SP",
+    "curiosidade": "Localizada na Serra da Mantiqueira, conhecida pela produção de **café de alta qualidade** (Cafés Especiais)."
+  },
+  {
+    "municipio": "São Simão",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica da Mogiana. Conhecida por seu patrimônio arquitetônico e pela casa natal do escritor **Luís Carlos Prestes**."
+  },
+  {
+    "municipio": "Sarapuí",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Sorocaba, conhecido pela agropecuária e produção de pêssego."
+  },
+  {
+    "municipio": "Sarutaiá",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Sudoeste Paulista, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Sebastianópolis do Sul",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Serra Azul",
+    "estado": "SP",
+    "curiosidade": "Município da região de Ribeirão Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Serra Negra",
+    "estado": "SP",
+    "curiosidade": "Estância hidromineral do Circuito das Águas. Conhecida pelas **compras de lã e couro** e pelo seu clima de montanha."
+  },
+  {
+    "municipio": "Serrana",
+    "estado": "SP",
+    "curiosidade": "Município vizinho a Ribeirão Preto. Famosa por ter sido o local do **primeiro estudo de vacinação em massa** contra a COVID-19 no Brasil (Projeto S)."
+  },
+  {
+    "municipio": "Sertãozinho",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Mundial do Setor Sucroalcooleiro'**. É um polo de indústrias de bens de capital para usinas de açúcar e álcool."
+  },
+  {
+    "municipio": "Sete Barras",
+    "estado": "SP",
+    "curiosidade": "Localizada no Vale do Ribeira. Conhecida pela extração e processamento de **palmito juçara** e pela Mata Atlântica."
+  },
+  {
+    "municipio": "Severínia",
+    "estado": "SP",
+    "curiosidade": "Município da região de Olímpia. Conhecida pela forte economia baseada na **cana-de-açúcar**."
+  },
+  {
+    "municipio": "Silveiras",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica do Vale do Paraíba, na Serra da Bocaina. Conhecida por trilhas e turismo rural."
+  },
+  {
+    "municipio": "Socorro",
+    "estado": "SP",
+    "curiosidade": "Estância hidromineral e Capital da Aventura, conhecida pelo **turismo de aventura acessível** (para pessoas com deficiência) e pelos esportes radicais em rios."
+  },
+  {
+    "municipio": "Sorocaba",
+    "estado": "SP",
+    "curiosidade": "A **quarta cidade mais populosa do estado** e principal polo industrial e comercial do Sudoeste Paulista. Histórica pelo ciclo do tropeirismo."
+  },
+  {
+    "municipio": "Sud Mennucci",
+    "estado": "SP",
+    "curiosidade": "Localizada no Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Sumaré",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas. Importante centro industrial, com destaque para o setor automotivo e serviços."
+  },
+  {
+    "municipio": "Suzanápolis",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Suzano",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo. Conhecida pela forte presença da **indústria de papel e celulose** e pela grande colônia japonesa."
+  },
+  {
+    "municipio": "Tabapuã",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, conhecido pela criação de **gado Tabapuã** (raça zebuína)."
+  },
+  {
+    "municipio": "Tabatinga",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Bordado de Bolas'**, sendo o maior centro de produção de bolas e bonecos de tecido do Brasil."
+  },
+  {
+    "municipio": "Taboão da Serra",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, caracterizado por alta densidade populacional e forte comércio."
+  },
+  {
+    "municipio": "Taciba",
+    "estado": "SP",
+    "curiosidade": "Localizada no Oeste Paulista, próxima a Presidente Prudente, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Taguaí",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Taiaçu",
+    "estado": "SP",
+    "curiosidade": "Município da região de Jaboticabal, com economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Taiúva",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Catanduva, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Tambaú",
+    "estado": "SP",
+    "curiosidade": "Cidade natal do **Padre Donizetti Tavares de Lima**, que atrai turismo religioso devido a sua beatificação."
+  },
+  {
+    "municipio": "Tanabi",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Noroeste Paulista, conhecido pela agropecuária e indústria de transformação."
+  },
+  {
+    "municipio": "Tapiraí",
+    "estado": "SP",
+    "curiosidade": "Localizada na Serra de Paranapiacaba. Conhecida pela grande preservação de **Mata Atlântica** e ecoturismo."
+  },
+  {
+    "municipio": "Tapiratiba",
+    "estado": "SP",
+    "curiosidade": "Município da divisa com Minas Gerais, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Taquaral",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Jaboticabal, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Taquaritinga",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Agronegócio'** na região e por ser um polo de produção de **rosas**."
+  },
+  {
+    "municipio": "Taquarituba",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Sudoeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Taquarivaí",
+    "estado": "SP",
+    "curiosidade": "Município do Sul do estado, com economia baseada na agricultura e silvicultura."
+  },
+  {
+    "municipio": "Tarabai",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Oeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Tarumã",
+    "estado": "SP",
+    "curiosidade": "Município do Médio Paranapanema, conhecido pela agropecuária e indústria."
+  },
+  {
+    "municipio": "Tatuí",
+    "estado": "SP",
+    "curiosidade": "Conhecida como a **'Capital da Música'** no Brasil. Sede do **Conservatório Dramático e Musical 'Dr. Carlos de Campos'**, a maior escola de música da América Latina."
+  },
+  {
+    "municipio": "Taubaté",
+    "estado": "SP",
+    "curiosidade": "Importante polo industrial (automotivo, aeronáutico) e universitário no Vale do Paraíba. Cidade natal de **Monteiro Lobato**."
+  },
+  {
+    "municipio": "Tejupá",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Teodoro Sampaio",
+    "estado": "SP",
+    "curiosidade": "Localizada no Pontal do Paranapanema. Abriga o **Parque Estadual Morro do Diabo**, uma das maiores reservas de Mata Atlântica do interior."
+  },
+  {
+    "municipio": "Terra Roxa",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bebedouro, conhecido pela forte produção de **citrus** (laranja) e suco."
+  },
+  {
+    "municipio": "Tietê",
+    "estado": "SP",
+    "curiosidade": "Cidade histórica da Região Metropolitana de Sorocaba, conhecida pelo seu patrimônio arquitetônico e pela navegação no Rio Tietê."
+  },
+  {
+    "municipio": "Timburi",
+    "estado": "SP",
+    "curiosidade": "Município do Sudoeste Paulista, conhecido pela agropecuária e pelo turismo de lazer no Rio Paranapanema."
+  },
+  {
+    "municipio": "Torre de Pedra",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Região Metropolitana de Sorocaba, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Torrinha",
+    "estado": "SP",
+    "curiosidade": "Estância climática na Cuesta de Botucatu, conhecida por suas cachoeiras e ecoturismo."
+  },
+  {
+    "municipio": "Trabiju",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Araraquara, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Tremembé",
+    "estado": "SP",
+    "curiosidade": "Município do Vale do Paraíba. Conhecido pelo turismo religioso e por sediar um dos principais complexos penitenciários do estado."
+  },
+  {
+    "municipio": "Três Fronteiras",
+    "estado": "SP",
+    "curiosidade": "Localizada no Noroeste Paulista, na confluência dos rios Grande e Paraná (próximo à Três Fronteiras). Conhecida pelo turismo náutico."
+  },
+  {
+    "municipio": "Tuiuti",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da Região Bragantina, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Tupã",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional da Nova Alta Paulista. Conhecida pela forte presença da **colônia japonesa** e pela agroindústria."
+  },
+  {
+    "municipio": "Tupi Paulista",
+    "estado": "SP",
+    "curiosidade": "Localizada na Nova Alta Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Turiúba",
+    "estado": "SP",
+    "curiosidade": "Município da região de Araçatuba, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Turmalina",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Ubarana",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de São José do Rio Preto, com base econômica na agropecuária."
+  },
+  {
+    "municipio": "Ubatuba",
+    "estado": "SP",
+    "curiosidade": "Um dos principais destinos do Litoral Norte. Conhecida como a **'Capital do Surf'** e por ter **mais de 100 praias**."
+  },
+  {
+    "municipio": "Ubirajara",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bauru, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Uchoa",
+    "estado": "SP",
+    "curiosidade": "Município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "União Paulista",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com base econômica na agricultura."
+  },
+  {
+    "municipio": "Urânia",
+    "estado": "SP",
+    "curiosidade": "Município do Noroeste Paulista, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Uru",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de Bauru, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Urupês",
+    "estado": "SP",
+    "curiosidade": "Município da região de Catanduva, conhecido pela forte produção de **citrus** e agroindústria."
+  },
+  {
+    "municipio": "Valentim Gentil",
+    "estado": "SP",
+    "curiosidade": "Vizinha a Votuporanga, conhecida pela agropecuária e serviços."
+  },
+  {
+    "municipio": "Valinhos",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas. Conhecida como a **'Capital Nacional do Figo Roxo'** e pela tradicional Festa do Figo."
+  },
+  {
+    "municipio": "Valparaíso",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Noroeste Paulista, conhecido pela agropecuária."
+  },
+  {
+    "municipio": "Vargem",
+    "estado": "SP",
+    "curiosidade": "Localizada na divisa com Minas Gerais, conhecida pelo ecoturismo e suas nascentes."
+  },
+  {
+    "municipio": "Vargem Grande do Sul",
+    "estado": "SP",
+    "curiosidade": "Estância climática na divisa com Minas Gerais. Conhecida pelo clima ameno e pela agropecuária."
+  },
+  {
+    "municipio": "Vargem Grande Paulista",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de São Paulo, conhecido por suas chácaras e áreas verdes."
+  },
+  {
+    "municipio": "Várzea Paulista",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Jundiaí. Conhecida como a **'Capital das Orquídeas'** no estado, com forte cultivo da flor."
+  },
+  {
+    "municipio": "Vera Cruz",
+    "estado": "SP",
+    "curiosidade": "Município da região de Marília, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Vinhedo",
+    "estado": "SP",
+    "curiosidade": "Município da Região Metropolitana de Campinas. Abriga o parque temático **Hopi Hari** e é conhecida pela produção de **uva** e vinhos."
+  },
+  {
+    "municipio": "Viradouro",
+    "estado": "SP",
+    "curiosidade": "Município da região de Bebedouro, com forte economia baseada na **cana-de-açúcar**."
+  },
+  {
+    "municipio": "Vista Alegre do Alto",
+    "estado": "SP",
+    "curiosidade": "Município da região de Jaboticabal, com economia baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Vitória Brasil",
+    "estado": "SP",
+    "curiosidade": "Pequeno município do Noroeste Paulista, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Votorantim",
+    "estado": "SP",
+    "curiosidade": "Vizinha a Sorocaba. Conhecida por ser o berço do **Grupo Votorantim**, um dos maiores conglomerados industriais do país, com foco em cimento e mineração."
+  },
+  {
+    "municipio": "Votuporanga",
+    "estado": "SP",
+    "curiosidade": "Importante centro regional no Noroeste Paulista. Conhecida pelo forte setor de **confecções** e pela agropecuária."
+  },
+  {
+    "municipio": "Zacarias",
+    "estado": "SP",
+    "curiosidade": "Pequeno município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  }
+]
+]
+]

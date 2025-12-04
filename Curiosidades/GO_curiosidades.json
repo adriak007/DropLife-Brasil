@@ -1,0 +1,1871 @@
+[
+  {
+    "municipio": "Acauã",
+    "estado": "PI",
+    "curiosidade": "O nome é uma referência a uma ave de rapina da região. O município se destaca na caprinocultura e ovinocultura."
+  },
+  {
+    "municipio": "Agricolândia",
+    "estado": "PI",
+    "curiosidade": "Seu nome reflete a vocação para a agricultura. Destaca-se na produção de arroz e milho."
+  },
+  {
+    "municipio": "Água Branca",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional, conhecido pela agropecuária e pelo desenvolvimento de pequenos negócios."
+  },
+  {
+    "municipio": "Alagoinha do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome se refere a uma pequena lagoa. A economia é baseada na agricultura de subsistência e na pecuária."
+  },
+  {
+    "municipio": "Alegrete do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pelas festividades juninas e pela cultura local."
+  },
+  {
+    "municipio": "Alto Longá",
+    "estado": "PI",
+    "curiosidade": "Localizada às margens do Rio Longá, a cidade se destaca pela agricultura e pela criação de gado."
+  },
+  {
+    "municipio": "Altos",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e pela proximidade com a capital, Teresina."
+  },
+  {
+    "municipio": "Alvorada do Gurguéia",
+    "estado": "PI",
+    "curiosidade": "Localizada na bacia do Rio Gurguéia, a agricultura irrigada é uma atividade em crescimento."
+  },
+  {
+    "municipio": "Amarante",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica às margens do **Rio Parnaíba**, conhecida por sua arquitetura colonial e por ser um importante centro cultural."
+  },
+  {
+    "municipio": "Angical do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome remete à árvore Angico. A economia é baseada na agricultura e na pecuária."
+  },
+  {
+    "municipio": "Anísio de Abreu",
+    "estado": "PI",
+    "curiosidade": "Município com forte ligação com o **Parque Nacional Serra da Capivara** (proximidade), sendo uma área de riqueza arqueológica."
+  },
+  {
+    "municipio": "Antônio Almeida",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agropecuária e agricultura familiar."
+  },
+  {
+    "municipio": "Aroazes",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela pecuária e pela agricultura de subsistência."
+  },
+  {
+    "municipio": "Aroeiras do Itaim",
+    "estado": "PI",
+    "curiosidade": "Município relativamente jovem, emancipado em 2005. Seu nome é uma referência às árvores Aroeiras e ao Itaim (pedra)."
+  },
+  {
+    "municipio": "Arraial",
+    "estado": "PI",
+    "curiosidade": "A economia é baseada na agricultura e na criação de animais de pequeno porte."
+  },
+  {
+    "municipio": "Assunção do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte religiosidade e economia baseada na agricultura."
+  },
+  {
+    "municipio": "Avelino Lopes",
+    "estado": "PI",
+    "curiosidade": "Localizada no Sul do estado, possui forte base na agropecuária."
+  },
+  {
+    "municipio": "Baixa Grande do Ribeiro",
+    "estado": "PI",
+    "curiosidade": "Localizada na região de cerrados, é um dos **principais polos de produção de soja e grãos** do Piauí, com forte agronegócio."
+  },
+  {
+    "municipio": "Barra D'Alcântara",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura familiar e na pecuária."
+  },
+  {
+    "municipio": "Barras",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica, uma das mais antigas do Piauí. Conhecida pela cultura e pela produção artesanal."
+  },
+  {
+    "municipio": "Barreiras do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome se deve às formações de relevo (barreiras). A economia é baseada na agricultura."
+  },
+  {
+    "municipio": "Barro Duro",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Batalha",
+    "estado": "PI",
+    "curiosidade": "Importante centro de agropecuária, especialmente na produção de caju e derivados."
+  },
+  {
+    "municipio": "Bela Vista do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida por suas paisagens naturais e pela agricultura familiar."
+  },
+  {
+    "municipio": "Belém do Piauí",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Beneditinos",
+    "estado": "PI",
+    "curiosidade": "O nome remete à Ordem de São Bento. A economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Bertolínia",
+    "estado": "PI",
+    "curiosidade": "Localizada na região do Gurguéia, a economia é baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Betânia do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura de subsistência."
+  },
+  {
+    "municipio": "Boa Hora",
+    "estado": "PI",
+    "curiosidade": "O nome inspira otimismo. A economia local se apoia na agricultura familiar."
+  },
+  {
+    "municipio": "Bocaina",
+    "estado": "PI",
+    "curiosidade": "Localizada próxima à **Barragem de Bocaina**, que é um importante reservatório de água e ponto turístico local."
+  },
+  {
+    "municipio": "Bom Jesus",
+    "estado": "PI",
+    "curiosidade": "Considerada a **'Capital do Agronegócio'** do Piauí, sendo o principal polo de produção de **grãos (soja e milho)** do estado, no sul piauiense."
+  },
+  {
+    "municipio": "Bom Princípio do Piauí",
+    "estado": "PI",
+    "curiosidade": "Localizado próximo ao litoral, a economia é baseada na agricultura e pesca."
+  },
+  {
+    "municipio": "Bonfim do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária."
+  },
+  {
+    "municipio": "Boqueirão do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome é uma referência a uma abertura no relevo. A economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Brasileira",
+    "estado": "PI",
+    "curiosidade": "O nome é uma homenagem à pátria. A economia é baseada na agricultura de subsistência."
+  },
+  {
+    "municipio": "Brejo do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecido pela pecuária extensiva e pela agricultura."
+  },
+  {
+    "municipio": "Buriti dos Lopes",
+    "estado": "PI",
+    "curiosidade": "Próximo ao litoral, destaca-se na produção de caju e por ser um polo artesanal de redes e rendas."
+  },
+  {
+    "municipio": "Buriti dos Montes",
+    "estado": "PI",
+    "curiosidade": "O nome remete aos buritis nas áreas serranas. A economia é baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Cabeceiras do Piauí",
+    "estado": "PI",
+    "curiosidade": "Localizado na nascente de rios, possui forte base na agropecuária."
+  },
+  {
+    "municipio": "Cajueiro da Praia",
+    "estado": "PI",
+    "curiosidade": "Município litorâneo, abriga a **Praia de Barra Grande**, famosa por ser um ponto de **Kitesurf** e pelo ecoturismo marinho."
+  },
+  {
+    "municipio": "Cajazeiras do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome é uma referência às Cajazeiras. A economia é baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Caldazinha",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Campinas do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura."
+  },
+  {
+    "municipio": "Campo Alegre do Fidalgo",
+    "estado": "PI",
+    "curiosidade": "Conhecido pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Campo Grande do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária."
+  },
+  {
+    "municipio": "Campo Largo do Piauí",
+    "estado": "PI",
+    "curiosidade": "Localizado na região norte, destaca-se na agricultura."
+  },
+  {
+    "municipio": "Campo Maior",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica, palco da **Batalha do Jenipapo** (1823), evento crucial para a Independência do Brasil no Piauí. Conhecida pela pecuária e produção de carne de sol."
+  },
+  {
+    "municipio": "Canavieira",
+    "estado": "PI",
+    "curiosidade": "O nome é uma referência à cana-de-açúcar. A economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Canto do Buriti",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional, conhecido pela agropecuária e pelo artesanato em buriti."
+  },
+  {
+    "municipio": "Capitão de Campos",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "Capitão Gervásio Oliveira",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Caracol",
+    "estado": "PI",
+    "curiosidade": "Faz divisa com o Parque Nacional Serra da Capivara e possui cavernas e sítios arqueológicos em seu território."
+  },
+  {
+    "municipio": "Caraúbas do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome é uma referência às Caraúbas. A economia é baseada na agricultura."
+  },
+  {
+    "municipio": "Caridade do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido por ser um importante polo de **energia eólica** no estado."
+  },
+  {
+    "municipio": "Castelo do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida como a **'Terra da Castanha de Caju'**, sendo um grande produtor. Possui um rico patrimônio natural com trilhas e cachoeiras."
+  },
+  {
+    "municipio": "Caxingó",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Cocal",
+    "estado": "PI",
+    "curiosidade": "Destaca-se na produção de caju e por suas belezas naturais, com rios e cachoeiras."
+  },
+  {
+    "municipio": "Cocal de Telha",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e na produção de telhas artesanais."
+  },
+  {
+    "municipio": "Cocal dos Alves",
+    "estado": "PI",
+    "curiosidade": "Famoso nacionalmente por seu alto desempenho no **Enem e em olimpíadas de Matemática**, apesar da infraestrutura modesta, sendo um 'case' de sucesso educacional."
+  },
+  {
+    "municipio": "Coivaras",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Colônia do Gurguéia",
+    "estado": "PI",
+    "curiosidade": "Localizada no Sul do estado, possui forte base na agropecuária, especialmente na criação de gado."
+  },
+  {
+    "municipio": "Coronel José Dias",
+    "estado": "PI",
+    "curiosidade": "É o principal portal de entrada do **Parque Nacional Serra da Capivara**, Patrimônio Cultural da Humanidade pela UNESCO."
+  },
+  {
+    "municipio": "Corrente",
+    "estado": "PI",
+    "curiosidade": "Considerada a **'Capital do Sul do Piauí'**. É um importante centro de agropecuária, famoso pela **Exposição Agropecuária de Corrente (ExpoCorrente)**."
+  },
+  {
+    "municipio": "Cristalândia do Piauí",
+    "estado": "PI",
+    "curiosidade": "Localizada no cerrado, a economia é baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Currais",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e na produção de grãos."
+  },
+  {
+    "municipio": "Curralinhos",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Curimatá",
+    "estado": "PI",
+    "curiosidade": "O nome é uma referência a um tipo de peixe. A economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Currais Novos",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Demerval Lobão",
+    "estado": "PI",
+    "curiosidade": "Localizado na Região Metropolitana de Teresina, possui forte base na agropecuária."
+  },
+  {
+    "municipio": "Dirceu Arcoverde",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Dom Expedito Lopes",
+    "estado": "PI",
+    "curiosidade": "Conhecido pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Dom Inocêncio",
+    "estado": "PI",
+    "curiosidade": "Município com forte tradição religiosa e economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Elesbão Veloso",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional conhecido pela agricultura e pecuária."
+  },
+  {
+    "municipio": "Eliseu Martins",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na criação de gado."
+  },
+  {
+    "municipio": "Esperantina",
+    "estado": "PI",
+    "curiosidade": "Localizada às margens do Rio Longá, é conhecida pelas suas belezas naturais e pela **Festa do Bode** (caprinocultura)."
+  },
+  {
+    "municipio": "Fartura do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome expressa desejo de prosperidade na agricultura."
+  },
+  {
+    "municipio": "Flores do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Floresta do Piauí",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Fronteiras",
+    "estado": "PI",
+    "curiosidade": "Faz divisa com o estado do Ceará e é um importante centro de comércio e serviços na região."
+  },
+  {
+    "municipio": "Geminiano",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agricultura familiar."
+  },
+  {
+    "municipio": "Guadalupe",
+    "estado": "PI",
+    "curiosidade": "Localizada às margens do Rio Parnaíba. Abriga a **Usina Hidrelétrica de Boa Esperança**, uma das maiores do Nordeste, sendo um polo energético."
+  },
+  {
+    "municipio": "Guaribas",
+    "estado": "PI",
+    "curiosidade": "Faz parte da área de abrangência do **Parque Nacional Serra da Capivara**, com sítios arqueológicos em seu entorno."
+  },
+  [
+  {
+    "municipio": "Ipiranga do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária, com destaque para a produção de grãos e a pecuária extensiva."
+  },
+  {
+    "municipio": "Isaias Coelho",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Itainópolis",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela pecuária e pela produção de caju e castanha."
+  },
+  {
+    "municipio": "Itaueira",
+    "estado": "PI",
+    "curiosidade": "Localizada na bacia do Rio Parnaíba. A agricultura irrigada tem crescido na região, que possui solos férteis."
+  },
+  {
+    "municipio": "Jacobina do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela sua forte produção de **mandioca** e derivados, como a farinha."
+  },
+  {
+    "municipio": "Jaicós",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica, que já foi capital da Comarca do Piauí no período colonial. É um importante centro de agropecuária."
+  },
+  {
+    "municipio": "Jardim do Mulato",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Jatobá do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome remete à árvore Jatobá. A economia é baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Jerumenha",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica às margens do Rio Parnaíba, conhecida por suas antigas fazendas de gado e arquitetura colonial."
+  },
+  {
+    "municipio": "João Costa",
+    "estado": "PI",
+    "curiosidade": "Localizada próxima ao **Parque Nacional Serra da Capivara**, com potencial para o ecoturismo e a arqueologia."
+  },
+  {
+    "municipio": "Joaquim Pires",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e na produção de caju."
+  },
+  {
+    "municipio": "Joca Marques",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "José de Freitas",
+    "estado": "PI",
+    "curiosidade": "Conhecida pelo **Açude do Bezerro**, um grande reservatório de água que atrai turistas para lazer e pesca."
+  },
+  {
+    "municipio": "Juazeiro do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome remete à árvore Juazeiro, comum na caatinga. A economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Jurema",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura de subsistência e na pecuária."
+  },
+  {
+    "municipio": "Lagoa Alegre",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela sua lagoa natural, que é um ponto de referência e lazer para a população."
+  },
+  {
+    "municipio": "Lagoa de São Francisco",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária, com destaque para a criação de gado."
+  },
+  {
+    "municipio": "Lagoa do Barro do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida por ser um importante polo de **energia eólica** no Piauí, com diversos parques eólicos instalados."
+  },
+  {
+    "municipio": "Lagoa do Piauí",
+    "estado": "PI",
+    "curiosidade": "Localizada na Região Metropolitana de Teresina, possui forte base na agropecuária."
+  },
+  {
+    "municipio": "Lagoa do Sítio",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Lagoinha do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura."
+  },
+  {
+    "municipio": "Landri Sales",
+    "estado": "PI",
+    "curiosidade": "Localizada na bacia do Rio Gurguéia, a agricultura é uma atividade econômica importante."
+  },
+  {
+    "municipio": "Luís Correia",
+    "estado": "PI",
+    "curiosidade": "Principal município litorâneo do Piauí. Abriga as praias mais famosas, como **Atalaia e Coqueiro**, sendo o maior polo turístico de praia do estado."
+  },
+  {
+    "municipio": "Luzilândia",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional às margens do Rio Parnaíba. Conhecida pela pesca e pelo potencial para o turismo fluvial."
+  },
+  {
+    "municipio": "Madeiro",
+    "estado": "PI",
+    "curiosidade": "Localizada às margens do Rio Parnaíba, conhecida pela agropecuária."
+  },
+  {
+    "municipio": "Manoel Emídio",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Marcolândia",
+    "estado": "PI",
+    "curiosidade": "Conhecida por sediar o **maior polo gesseiro** do Piauí, com forte atividade de extração de gipsita e produção de gesso."
+  },
+  {
+    "municipio": "Marcos Parente",
+    "estado": "PI",
+    "curiosidade": "Localizada na bacia do Rio Gurguéia, destaca-se na pecuária e agricultura."
+  },
+  {
+    "municipio": "Massapê do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome remete a um tipo de solo fértil. A economia é baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Matias Olímpio",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "Miguel Alves",
+    "estado": "PI",
+    "curiosidade": "Localizada às margens do Rio Parnaíba, conhecida pela pesca e pela produção de caju."
+  },
+  {
+    "municipio": "Miguel Leão",
+    "estado": "PI",
+    "curiosidade": "É o **município com a menor população** do Piauí, com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Monsenhor Gil",
+    "estado": "PI",
+    "curiosidade": "Localizado próximo à Teresina, possui forte base na agropecuária."
+  },
+  {
+    "municipio": "Monsenhor Hipólito",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na criação de gado."
+  },
+  {
+    "municipio": "Monte Alegre do Piauí",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional do sul piauiense, conhecido pela agropecuária e pela proximidade com grandes áreas de cerrado."
+  },
+  {
+    "municipio": "Morro Cabeceira no Tempo",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pelas paisagens naturais de serra e pela agricultura."
+  },
+  {
+    "municipio": "Morro do Chapéu do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome é uma referência a uma formação rochosa peculiar. A economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Murici dos Portelas",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "Nazaré do Piauí",
+    "estado": "PI",
+    "curiosidade": "Localizada às margens do Rio Parnaíba, a economia é baseada na pesca e agricultura."
+  },
+  {
+    "municipio": "Nossa Senhora de Nazaré",
+    "estado": "PI",
+    "curiosidade": "Município com forte devoção religiosa e economia baseada na agricultura."
+  },
+  {
+    "municipio": "Nossa Senhora dos Remédios",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Nova Santa Rita",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Novo Oriente do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na criação de gado."
+  },
+  {
+    "municipio": "Novo Santo Antônio",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Oeiras",
+    "estado": "PI",
+    "curiosidade": "A **primeira capital do Piauí** (até 1852). Possui o **maior e mais bem preservado patrimônio histórico colonial** do estado, tombado pelo IPHAN."
+  },
+  {
+    "municipio": "Olho D'Água do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome remete a nascentes de água. A economia é baseada na agricultura."
+  },
+  {
+    "municipio": "Padre Marcos",
+    "estado": "PI",
+    "curiosidade": "O nome é uma homenagem a um importante religioso. A economia é baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Paes Landim",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária."
+  },
+  {
+    "municipio": "Pajeú do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Palmeira do Piauí",
+    "estado": "PI",
+    "curiosidade": "Localizada no sul do estado, a economia é baseada na agropecuária e no agronegócio de grãos."
+  },
+  {
+    "municipio": "Palmeirais",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela produção de **arroz** e pela presença de grandes fazendas de gado."
+  },
+  {
+    "municipio": "Passagem Franca do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome histórico remete a um ponto de travessia livre de rios. A economia é baseada na agricultura."
+  },
+  {
+    "municipio": "Pau D'Arco do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome é uma referência à árvore Pau D'Arco. A economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Parnaíba",
+    "estado": "PI",
+    "curiosidade": "A **segunda maior cidade do estado** e o principal polo urbano do litoral. É a porta de entrada para o **Delta do Parnaíba**, o único delta em mar aberto das Américas, e para o ecoturismo na região."
+  },
+  {
+    "municipio": "Pedro II",
+    "estado": "PI",
+    "curiosidade": "Conhecida como a **'Suíça Piauiense'** (pelo clima ameno) e a **'Capital Nacional da Opala'**, devido à única mina de opala do Brasil. Sedia o Festival de Inverno."
+  },
+  {
+    "municipio": "Pedro Laurentino",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Picos",
+    "estado": "PI",
+    "curiosidade": "Considerada a **'Capital do Mel'** do Piauí e um dos maiores centros de produção de mel do Brasil. É um importante polo comercial e universitário do interior."
+  },
+  {
+    "municipio": "Pimenteiras",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura."
+  },
+  {
+    "municipio": "Pio IX",
+    "estado": "PI",
+    "curiosidade": "O nome é uma homenagem ao Papa Pio IX. Faz divisa com o Ceará e possui forte base na agropecuária."
+  },
+  {
+    "municipio": "Piracuruca",
+    "estado": "PI",
+    "curiosidade": "Município histórico, porta de entrada para o **Parque Nacional de Sete Cidades**, conhecido por suas formações rochosas exóticas e sítios arqueológicos."
+  },
+  {
+    "municipio": "Piripiri",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional conhecido pela **produção de caju** e derivados. Sedia a **Universidade Estadual do Piauí (UESPI)**."
+  },
+  {
+    "municipio": "Porto",
+    "estado": "PI",
+    "curiosidade": "Localizado às margens do Rio Parnaíba, seu nome remete ao antigo porto fluvial que impulsionava a economia local."
+  },
+  {
+    "municipio": "Prata do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura familiar e na pecuária."
+  },
+  {
+    "municipio": "Queimada Nova",
+    "estado": "PI",
+    "curiosidade": "Conhecida por ser um importante polo de **energia solar e eólica**, aproveitando a alta incidência de sol e ventos da região."
+  },[
+  {
+    "municipio": "Redenção do Gurguéia",
+    "estado": "PI",
+    "curiosidade": "Localizada no Sul do estado, possui forte base na agropecuária e na produção de grãos."
+  },
+  {
+    "municipio": "Regeneração",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica às margens do Rio Parnaíba. Foi um importante centro comercial no passado, conhecida pela agropecuária."
+  },
+  {
+    "municipio": "Riacho Frio",
+    "estado": "PI",
+    "curiosidade": "O nome remete a um curso d'água de temperatura mais amena. A economia é baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Ribeira do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Ribeiro Gonçalves",
+    "estado": "PI",
+    "curiosidade": "Localizada na região de cerrados, é um importante polo do **agronegócio de grãos** (soja e milho) no Sul do Piauí."
+  },
+  {
+    "municipio": "Rio Grande do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "Santa Cruz do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela pecuária e agricultura."
+  },
+  {
+    "municipio": "Santa Filomena",
+    "estado": "PI",
+    "curiosidade": "Localizada na divisa com o Maranhão, é um importante centro de agropecuária e agronegócio de grãos no sul piauiense."
+  },
+  {
+    "municipio": "Santa Luz",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "Santa Rosa do Piauí",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Santana do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura."
+  },
+  {
+    "municipio": "Santo Antônio de Lisboa",
+    "estado": "PI",
+    "curiosidade": "O nome remete ao santo padroeiro. A economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Santo Antônio dos Milagres",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Santo Inácio do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária, com destaque para a criação de gado."
+  },
+  {
+    "municipio": "São Braz do Piauí",
+    "estado": "PI",
+    "curiosidade": "Faz parte da região do **Parque Nacional Serra da Capivara**, com potencial para o ecoturismo e a arqueologia."
+  },
+  {
+    "municipio": "São Félix do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "São Francisco de Assis do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte devoção a São Francisco de Assis, baseando sua economia na agropecuária."
+  },
+  {
+    "municipio": "São Francisco do Piauí",
+    "estado": "PI",
+    "curiosidade": "Localizado na bacia do Rio Parnaíba, a agricultura e a pesca são atividades importantes."
+  },
+  {
+    "municipio": "São Gonçalo do Gurguéia",
+    "estado": "PI",
+    "curiosidade": "Localizado no Sul do estado, a agricultura irrigada tem crescido na região do Rio Gurguéia."
+  },
+  {
+    "municipio": "São Gonçalo do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "São João da Canabrava",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "São João da Fronteira",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "São João da Serra",
+    "estado": "PI",
+    "curiosidade": "O nome faz referência à sua localização em área serrana. A economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "São João da Varjota",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "São João do Arraial",
+    "estado": "PI",
+    "curiosidade": "Localizado no Norte do estado, destaca-se na produção de caju e derivados."
+  },
+  {
+    "municipio": "São João do Piauí",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional conhecido por suas festas juninas e por estar próximo ao **Parque Nacional Serra da Capivara**."
+  },
+  {
+    "municipio": "São José do Divino",
+    "estado": "PI",
+    "curiosidade": "Município com forte devoção religiosa e economia baseada na agropecuária."
+  },
+  {
+    "municipio": "São José do Peixe",
+    "estado": "PI",
+    "curiosidade": "O nome remete à pesca. Localizada às margens do Rio Parnaíba."
+  },
+  {
+    "municipio": "São José do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura."
+  },
+  {
+    "municipio": "São Julião",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária, com destaque para a criação de gado."
+  },
+  {
+    "municipio": "São Lourenço do Piauí",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "São Luis do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "São Miguel da Baixa Grande",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "São Miguel do Fidalgo",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura."
+  },
+  {
+    "municipio": "São Miguel do Tapuio",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional. Conhecido pela pecuária e pela produção de queijos artesanais."
+  },
+  {
+    "municipio": "São Pedro do Piauí",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional, conhecido pela agropecuária e pelo comércio."
+  },
+  {
+    "municipio": "São Raimundo Nonato",
+    "estado": "PI",
+    "curiosidade": "Considerada a **'Capital Mundial da Pré-História'**. É a porta de entrada para o **Parque Nacional Serra da Capivara**, centro de pesquisa arqueológica de renome internacional."
+  },
+  {
+    "municipio": "Sebastião Barros",
+    "estado": "PI",
+    "curiosidade": "Localizado no sul piauiense, possui forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "Sebastião Leal",
+    "estado": "PI",
+    "curiosidade": "Município com forte base no **agronegócio de grãos** (soja e milho), contribuindo para a economia do Sul do Piauí."
+  },
+  {
+    "municipio": "Sigefredo Pacheco",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Simoes",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional conhecido pela pecuária e pela produção de caju."
+  },
+  {
+    "municipio": "Simplício Mendes",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional do Piauí, com forte base na agropecuária."
+  },
+  {
+    "municipio": "Socorro do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na criação de gado."
+  },
+  {
+    "municipio": "Sussuapara",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura familiar, com destaque para a produção de mel."
+  },
+  {
+    "municipio": "Tamboril do Piauí",
+    "estado": "PI",
+    "curiosidade": "O nome remete à árvore Tamboril. A economia é baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Tanque do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura."
+  },
+  {
+    "municipio": "Teresina",
+    "estado": "PI",
+    "curiosidade": "A **capital do Piauí** e a única capital do Nordeste que **não fica no litoral** (localizada na confluência dos rios Parnaíba e Poti). É o maior polo de comércio, serviços, saúde e educação do estado."
+  },
+  {
+    "municipio": "União",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional conhecido pela pecuária e pela produção de arroz, com terras férteis próximas ao Rio Parnaíba."
+  },
+  {
+    "municipio": "Uruçuí",
+    "estado": "PI",
+    "curiosidade": "Considerada a **'Capital do Agro'** do Piauí. É o maior polo do **agronegócio de grãos (soja e milho)** do estado, com forte desenvolvimento tecnológico na agricultura."
+  },
+  {
+    "municipio": "Valença do Piauí",
+    "estado": "PI",
+    "curiosidade": "Importante centro regional conhecido pela agropecuária e pelo comércio."
+  },
+  {
+    "municipio": "Várzea Branca",
+    "estado": "PI",
+    "curiosidade": "Município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Várzea Grande do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município conhecido pela pecuária e agricultura."
+  },
+  {
+    "municipio": "Vera Mendes",
+    "estado": "PI",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Vila Nova do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte base na agropecuária e agricultura."
+  },
+  {
+    "municipio": "Wall Ferraz",
+    "estado": "PI",
+    "curiosidade": "O nome homenageia um ex-prefeito de Teresina. A economia é baseada na agricultura familiar."
+  },
+  [
+  {
+    "municipio": "Damianópolis",
+    "estado": "GO",
+    "curiosidade": "Cidade tranquila situada em uma região de antigas rotas de tropeiros, preservando tradições rurais."
+  },
+  {
+    "municipio": "Damolândia",
+    "estado": "GO",
+    "curiosidade": "Conhecida por festas religiosas tradicionais e pela forte presença da cultura sertaneja."
+  },
+  {
+    "municipio": "Davinópolis",
+    "estado": "GO",
+    "curiosidade": "Cidade pequena que mantém viva a tradição das folias e celebrações comunitárias."
+  },
+  {
+    "municipio": "Diorama",
+    "estado": "GO",
+    "curiosidade": "Famosa pelas paisagens com formações rochosas e pelas festas típicas do interior goiano."
+  },
+  {
+    "municipio": "Divinópolis de Goiás",
+    "estado": "GO",
+    "curiosidade": "Local repleto de serras e trilhas; abriga comunidades históricas como o povoado de São José."
+  },
+  {
+    "municipio": "Doverlândia",
+    "estado": "GO",
+    "curiosidade": "Possui a maior caverna de arenito da América Latina, a Caverna Angélica–São Mateus."
+  },
+  {
+    "municipio": "Edealina",
+    "estado": "GO",
+    "curiosidade": "Cidade agrícola com festas tradicionais e forte identidade cultural rural."
+  },
+  {
+    "municipio": "Edéia",
+    "estado": "GO",
+    "curiosidade": "Importante polo agrícola e famosa pelos eventos de rodeio e festas típicas."
+  },
+  {
+    "municipio": "Estrela do Norte",
+    "estado": "GO",
+    "curiosidade": "Região marcada por rios e cachoeiras que atraem turistas para pesca e lazer."
+  },
+  {
+    "municipio": "Faina",
+    "estado": "GO",
+    "curiosidade": "Cidade com patrimônio natural preservado e rica presença de comunidades tradicionais."
+  },
+  {
+    "municipio": "Fazenda Nova",
+    "estado": "GO",
+    "curiosidade": "Cresceu ao redor de fazendas históricas e mantém festas culturais antigas."
+  },
+  {
+    "municipio": "Firminópolis",
+    "estado": "GO",
+    "curiosidade": "Famosa pela culinária goiana e por eventos religiosos que movimentam a cidade."
+  },
+  {
+    "municipio": "Flores de Goiás",
+    "estado": "GO",
+    "curiosidade": "Possui áreas naturais preservadas e comunidades quilombolas de grande importância cultural."
+  },
+  {
+    "municipio": "Formosa",
+    "estado": "GO",
+    "curiosidade": "Abriga o Salto do Itiquira, uma das maiores quedas d'água de fácil acesso do país."
+  },
+  {
+    "municipio": "Formoso",
+    "estado": "GO",
+    "curiosidade": "Rodeado por rios cristalinos, é destino de pesca e turismo ecológico."
+  },
+  {
+    "municipio": "Gameleira de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade jovem com vida comunitária intensa e festas tradicionais populares."
+  },
+  {
+    "municipio": "Goianápolis",
+    "estado": "GO",
+    "curiosidade": "Cidade natal de Leandro & Leonardo, marcada por forte tradição musical sertaneja."
+  },
+  {
+    "municipio": "Goiandira",
+    "estado": "GO",
+    "curiosidade": "Famosa por seus artistas que produzem quadros usando areia colorida da região."
+  },
+  {
+    "municipio": "Goianésia",
+    "estado": "GO",
+    "curiosidade": "Grande produtora de cana-de-açúcar e palco de um dos maiores carnavais do Centro-Oeste."
+  },
+  {
+    "municipio": "Goiânia",
+    "estado": "GO",
+    "curiosidade": "Capital com o maior conjunto de arquitetura Art Déco da América Latina."
+  },
+  {
+    "municipio": "Goianira",
+    "estado": "GO",
+    "curiosidade": "Importante polo de confecções, conhecida como 'capital do jeans' de Goiás."
+  },
+  {
+    "municipio": "Goiás",
+    "estado": "GO",
+    "curiosidade": "Antiga capital goiana, Patrimônio Mundial da UNESCO e berço da poetisa Cora Coralina."
+  },
+  {
+    "municipio": "Goiatuba",
+    "estado": "GO",
+    "curiosidade": "Polo agropecuário e cidade famosa pelos rodeios e festas tradicionais."
+  },
+  {
+    "municipio": "Gouvelândia",
+    "estado": "GO",
+    "curiosidade": "Cidade com forte produção agrícola e festas rurais muito tradicionais."
+  },
+  {
+    "municipio": "Guapó",
+    "estado": "GO",
+    "curiosidade": "Conhecida pelos doces caseiros e pelas festas de tradição católica."
+  },
+  {
+    "municipio": "Guaraíta",
+    "estado": "GO",
+    "curiosidade": "Cidade pequena com história ligada ao sertão goiano e tradições familiares fortes."
+  },
+  {
+    "municipio": "Guarani de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cercada por serras e rios, abriga cavernas e formações rochosas impressionantes."
+  },
+  {
+    "municipio": "Guarinos",
+    "estado": "GO",
+    "curiosidade": "Fundada por garimpeiros; ainda hoje existem histórias e lendas sobre minas antigas."
+  },
+  {
+    "municipio": "Heitoraí",
+    "estado": "GO",
+    "curiosidade": "Cidade rural conhecida por seus festivais religiosos e pela culinária local."
+  },
+  {
+    "municipio": "Hidrolândia",
+    "estado": "GO",
+    "curiosidade": "Capital da jabuticaba, realizando anualmente festas dedicadas à fruta."
+  },
+  {
+    "municipio": "Hidrolina",
+    "estado": "GO",
+    "curiosidade": "Região marcada por fazendas antigas e tradições familiares do interior goiano."
+  },
+  {
+    "municipio": "Iaciara",
+    "estado": "GO",
+    "curiosidade": "Situada em região montanhosa, conhecida por trilhas e festas culturais tradicionais."
+  },
+  {
+    "municipio": "Inaciolândia",
+    "estado": "GO",
+    "curiosidade": "Cidade voltada para agricultura e rodeios que movimentam o calendário local."
+  },
+  {
+    "municipio": "Indiara",
+    "estado": "GO",
+    "curiosidade": "Cresceu com a expansão agrícola e mantém tradições sertanejas fortes."
+  },
+  {
+    "municipio": "Inhumas",
+    "estado": "GO",
+    "curiosidade": "Famosa pelos doces caseiros e por tradições culturais mantidas há gerações."
+  },
+  {
+    "municipio": "Ipameri",
+    "estado": "GO",
+    "curiosidade": "Possui igrejas históricas e é conhecida por suas festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Ipiranga de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade jovem com forte presença da agricultura familiar."
+  },
+  {
+    "municipio": "Iporá",
+    "estado": "GO",
+    "curiosidade": "Lar de nascentes cristalinas e balneários naturais muito visitados."
+  },
+  {
+    "municipio": "Israelândia",
+    "estado": "GO",
+    "curiosidade": "Cidade tranquila marcada por histórias antigas de garimpo e mineração."
+  },
+  {
+    "municipio": "Itaberaí",
+    "estado": "GO",
+    "curiosidade": "Cidade histórica conhecida pela culinária típica e festas tradicionais."
+  },
+  {
+    "municipio": "Itaguari",
+    "estado": "GO",
+    "curiosidade": "Conhecida pela tranquilidade e pela produção rural familiar."
+  },
+  {
+    "municipio": "Itaguaru",
+    "estado": "GO",
+    "curiosidade": "Cidade com forte tradição religiosa e culinária típica goiana."
+  },
+  {
+    "municipio": "Itajá",
+    "estado": "GO",
+    "curiosidade": "Banhada pelo encontro dos rios Paranaíba e Aporé, é destino de pesca e lazer."
+  },
+  {
+    "municipio": "Itapaci",
+    "estado": "GO",
+    "curiosidade": "Tem forte cultura musical e grandes eventos sertanejos ao longo do ano."
+  },
+  {
+    "municipio": "Itapirapuã",
+    "estado": "GO",
+    "curiosidade": "Cidade cercada por morros e rios, ideal para quem busca natureza e vida simples."
+  },
+  {
+    "municipio": "Itapuranga",
+    "estado": "GO",
+    "curiosidade": "Conhecida pela grande Festa do Carro de Boi, tradição centenária."
+  },
+  {
+    "municipio": "Itarumã",
+    "estado": "GO",
+    "curiosidade": "Cidade ribeirinha muito procurada para pesca esportiva e turismo rural."
+  },
+  {
+    "municipio": "Itauçu",
+    "estado": "GO",
+    "curiosidade": "Famosa por tradições católicas e por sua culinária interiorana marcante."
+  },
+  {
+    "municipio": "Itumbiara",
+    "estado": "GO",
+    "curiosidade": "Importante polo econômico às margens do Rio Paranaíba e palco de eventos náuticos."
+  },
+  {
+    "municipio": "Ivolândia",
+    "estado": "GO",
+    "curiosidade": "Cidade do ciclo antigo da pecuária, com festas tradicionais que atravessam gerações."
+  },
+  {
+    "municipio": "Jandaia",
+    "estado": "GO",
+    "curiosidade": "Cidade com forte produção agrícola, especialmente soja e milho."
+  },
+  {
+    "municipio": "Jaraguá",
+    "estado": "GO",
+    "curiosidade": "Maior polo de confecção de moda do Centro-Oeste e destino de compras muito procurado."
+  },
+  {
+    "municipio": "Jataí",
+    "estado": "GO",
+    "curiosidade": "Gigante do agronegócio e lar de um dos maiores parques urbanos do Brasil, o Parque JK."
+  },
+  {
+    "municipio": "Jaupaci",
+    "estado": "GO",
+    "curiosidade": "Cidade pequena com festas religiosas tradicionais e ambiente rural preservado."
+  },
+  {
+    "municipio": "Jesúpolis",
+    "estado": "GO",
+    "curiosidade": "Famosa pelos eventos religiosos que atraem fiéis de várias partes do estado."
+  },
+  {
+    "municipio": "Joviânia",
+    "estado": "GO",
+    "curiosidade": "Estância hidrotermal procurada por turistas em busca de águas medicinais."
+  },
+  {
+    "municipio": "Jussara",
+    "estado": "GO",
+    "curiosidade": "Ponto tradicional de pesca no Vale do Araguaia e região de rica biodiversidade."
+  },
+  {
+    "municipio": "Lagoa Santa",
+    "estado": "GO",
+    "curiosidade": "Famosa pela lagoa de águas terapêuticas que atrai visitantes de todo o estado."
+  },
+  {
+    "municipio": "Leopoldo de Bulhões",
+    "estado": "GO",
+    "curiosidade": "Cidade ligada à antiga ferrovia, com patrimônio histórico preservado."
+  },
+  {
+    "municipio": "Luziânia",
+    "estado": "GO",
+    "curiosidade": "Uma das cidades mais antigas de Goiás, fundada no ciclo do ouro."
+  },
+  {
+    "municipio": "Mairipotaba",
+    "estado": "GO",
+    "curiosidade": "Cidade com festas rurais tradicionais e forte cultura sertaneja."
+  },
+  {
+    "municipio": "Mambaí",
+    "estado": "GO",
+    "curiosidade": "Destino de aventura com cavernas, cânions, cachoeiras e uma das maiores tirolesas do Brasil."
+  },
+  {
+    "municipio": "Mara Rosa",
+    "estado": "GO",
+    "curiosidade": "Produz alguns dos melhores tomates do estado e mantém tradições rurais fortes."
+  },
+  {
+    "municipio": "Marzagão",
+    "estado": "GO",
+    "curiosidade": "Cidade tranquila próxima às estâncias termais, com cultura interiorana bem preservada."
+  },
+  {
+    "municipio": "Matrinchã",
+    "estado": "GO",
+    "curiosidade": "Local tradicional para pesca de matrinchã e outras espécies do Araguaia."
+  },
+  {
+    "municipio": "Maurilândia",
+    "estado": "GO",
+    "curiosidade": "Cidade com forte presença agrícola e festas tradicionais de destaque regional."
+  },
+  {
+    "municipio": "Mimoso de Goiás",
+    "estado": "GO",
+    "curiosidade": "Abriga parte do Parque Nacional da Chapada dos Veadeiros e áreas naturais preservadas."
+  },
+  {
+    "municipio": "Minaçu",
+    "estado": "GO",
+    "curiosidade": "Cresceu ao redor da mineração e possui o Lago Serra da Mesa, um dos maiores lagos artificiais do mundo."
+  },
+  {
+    "municipio": "Mineiros",
+    "estado": "GO",
+    "curiosidade": "Entrada para o Parque Nacional das Emas e referência no agronegócio brasileiro."
+  },
+  {
+    "municipio": "Moiporá",
+    "estado": "GO",
+    "curiosidade": "Cidade rural com forte tradição de festas sertanejas e eventos religiosos."
+  },
+  {
+    "municipio": "Monte Alegre de Goiás",
+    "estado": "GO",
+    "curiosidade": "Possui cavernas e cachoeiras impressionantes, sendo destino de ecoturismo."
+  },
+  {
+    "municipio": "Montes Claros de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade marcada pelo sertão goiano e por festas tradicionais da região."
+  },
+  {
+    "municipio": "Montividiu",
+    "estado": "GO",
+    "curiosidade": "Gigante agrícola, com produção de grãos e eventos rurais importantes."
+  },
+  {
+    "municipio": "Montividiu do Norte",
+    "estado": "GO",
+    "curiosidade": "Cidade jovem com economia voltada para agricultura e pecuária."
+  },
+  {
+    "municipio": "Morrinhos",
+    "estado": "GO",
+    "curiosidade": "Conhecida pelas águas termais e por seu estádio apelidado de 'Ninho da Serpente'."
+  },
+  {
+    "municipio": "Morro Agudo de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade pequena com festas religiosas preservadas e forte cultura rural."
+  },
+  {
+    "municipio": "Mossâmedes",
+    "estado": "GO",
+    "curiosidade": "Próxima ao Parque Estadual da Serra Dourada, área com paisagens naturais únicas."
+  },
+  {
+    "municipio": "Mozarlândia",
+    "estado": "GO",
+    "curiosidade": "Forte polo avícola, conhecida nacionalmente pela produção de frango."
+  },
+  {
+    "municipio": "Mundo Novo",
+    "estado": "GO",
+    "curiosidade": "Região rural com tradições antigas e festas comunitárias que reúnem toda a cidade."
+  },
+  {
+    "municipio": "Mutunópolis",
+    "estado": "GO",
+    "curiosidade": "Cidade banhada por rios e córregos, ideal para pesca e lazer no interior."
+  },
+  [
+  {
+    "municipio": "Nazário",
+    "estado": "GO",
+    "curiosidade": "Cidade conhecida pela antiga tradição de bandas musicais e pelas festas religiosas que movimentam a comunidade."
+  },
+  {
+    "municipio": "Nerópolis",
+    "estado": "GO",
+    "curiosidade": "Famosa por sua indústria de doces e por ser uma das maiores produtoras de alho do Brasil."
+  },
+  {
+    "municipio": "Niquelândia",
+    "estado": "GO",
+    "curiosidade": "Abriga um dos maiores depósitos de níquel da América Latina e o imenso Lago Serra da Mesa."
+  },
+  {
+    "municipio": "Nova América",
+    "estado": "GO",
+    "curiosidade": "Cidade de tradição rural, com festas do interior e culinária típica forte."
+  },
+  {
+    "municipio": "Nova Aurora",
+    "estado": "GO",
+    "curiosidade": "Cresceu a partir de pequenas comunidades rurais e mantém forte identidade agrícola."
+  },
+  {
+    "municipio": "Nova Crixás",
+    "estado": "GO",
+    "curiosidade": "Grande produtora de gado e conhecida por paisagens típicas do sertão goiano."
+  },
+  {
+    "municipio": "Nova Glória",
+    "estado": "GO",
+    "curiosidade": "Cidade marcada por tradições religiosas e festas culturais que preservam a história local."
+  },
+  {
+    "municipio": "Nova Iguaçu de Goiás",
+    "estado": "GO",
+    "curiosidade": "Região de pequenas propriedades rurais e eventos comunitários tradicionais."
+  },
+  {
+    "municipio": "Nova Roma",
+    "estado": "GO",
+    "curiosidade": "Cercada por serras e rios, é conhecida por trilhas, cachoeiras e formações rochosas impressionantes."
+  },
+  {
+    "municipio": "Nova Veneza",
+    "estado": "GO",
+    "curiosidade": "Conhecida por sua festa italiana e por preservar elementos culturais trazidos pelos colonizadores."
+  },
+  {
+    "municipio": "Novo Brasil",
+    "estado": "GO",
+    "curiosidade": "Cidade com vida simples, marcada por festas sertanejas e tradições familiares."
+  },
+  {
+    "municipio": "Novo Gama",
+    "estado": "GO",
+    "curiosidade": "Uma das maiores cidades próximas ao Distrito Federal, com forte diversidade cultural."
+  },
+  {
+    "municipio": "Novo Planalto",
+    "estado": "GO",
+    "curiosidade": "Região tradicionalmente pecuária, com festas rurais que movem a comunidade."
+  },
+  {
+    "municipio": "Orizona",
+    "estado": "GO",
+    "curiosidade": "Famosa pela produção de rapadura, doces caseiros e festas tradicionais antigas."
+  },
+  {
+    "municipio": "Ouro Verde de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade tranquila com forte presença agrícola e tradições culturais preservadas."
+  },
+  {
+    "municipio": "Ouvidor",
+    "estado": "GO",
+    "curiosidade": "Cidade que cresceu com a mineração de fosfato e tradição industrial da região."
+  },
+  {
+    "municipio": "Padre Bernardo",
+    "estado": "GO",
+    "curiosidade": "Muito procurada por turistas de Brasília devido às cachoeiras e áreas naturais."
+  },
+  {
+    "municipio": "Palestina de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade marcada pela pecuária e por festas tradicionais do interior goiano."
+  },
+  {
+    "municipio": "Palmeiras de Goiás",
+    "estado": "GO",
+    "curiosidade": "Conhecida por rodeios e pela produção agrícola diversificada."
+  },
+  {
+    "municipio": "Palmelo",
+    "estado": "GO",
+    "curiosidade": "Menor município do estado, conhecido como centro espírita com forte tradição religiosa."
+  },
+  {
+    "municipio": "Palminópolis",
+    "estado": "GO",
+    "curiosidade": "Cidade típica do interior, com festas familiares e culinária caseira preservada."
+  },
+  {
+    "municipio": "Panamá",
+    "estado": "GO",
+    "curiosidade": "Cidade pequena que mantém viva a tradição de festas rurais e música sertaneja."
+  },
+  {
+    "municipio": "Paranaiguara",
+    "estado": "GO",
+    "curiosidade": "Banhada pelo lago de São Simão, é destino de pesca e esportes náuticos."
+  },
+  {
+    "municipio": "Paraúna",
+    "estado": "GO",
+    "curiosidade": "Abriga o Parque dos Pirineus Goianos e formações rochosas curiosas, como a Pedra da Santa."
+  },
+  {
+    "municipio": "Perolândia",
+    "estado": "GO",
+    "curiosidade": "Cidade agrícola marcada pela produção de soja e por eventos comunitários tradicionais."
+  },
+  {
+    "municipio": "Petrolina de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade culturalmente ativa, com danças, festivais e tradições religiosas antigas."
+  },
+  {
+    "municipio": "Pilar de Goiás",
+    "estado": "GO",
+    "curiosidade": "Uma das cidades mais antigas do estado, tombada como patrimônio por sua história ligada ao ciclo do ouro."
+  },
+  {
+    "municipio": "Piracanjuba",
+    "estado": "GO",
+    "curiosidade": "Capital goiana do leite e famosa por sua tradicional Festa do Queijo."
+  },
+  {
+    "municipio": "Piranhas",
+    "estado": "GO",
+    "curiosidade": "Tem forte cultura sertaneja e atividades ligadas à pesca no Rio Piranhas."
+  },
+  {
+    "municipio": "Pirenópolis",
+    "estado": "GO",
+    "curiosidade": "Destino turístico famoso por suas cavalhadas, cachoeiras e centro histórico colonial."
+  },
+  {
+    "municipio": "Pires do Rio",
+    "estado": "GO",
+    "curiosidade": "Cidade ligada à ferrovia e com acervo histórico preservado em museus e antigas estações."
+  },
+  {
+    "municipio": "Planaltina",
+    "estado": "GO",
+    "curiosidade": "Com forte ligação com Brasília, abriga comunidades tradicionais e áreas rurais preservadas."
+  },
+  {
+    "municipio": "Pontalina",
+    "estado": "GO",
+    "curiosidade": "Conhecida pela produção de doces caseiros e por festas de tradição católica."
+  },
+  {
+    "municipio": "Porangatu",
+    "estado": "GO",
+    "curiosidade": "Importante centro cultural do norte goiano, com festivais de música e teatro."
+  },
+  {
+    "municipio": "Porteirão",
+    "estado": "GO",
+    "curiosidade": "Cidade agrícola marcada pela produção de grãos e pela vida rural ativa."
+  },
+  {
+    "municipio": "Portelândia",
+    "estado": "GO",
+    "curiosidade": "Cresceu com o agronegócio e mantém tradições sertanejas muito presentes."
+  },
+  {
+    "municipio": "Posse",
+    "estado": "GO",
+    "curiosidade": "Ponto estratégico para viajantes e cidade marcada por festas tradicionais da região."
+  },
+  {
+    "municipio": "Professor Jamil",
+    "estado": "GO",
+    "curiosidade": "Cidade tranquila conhecida pelas águas termais e pela vida comunitária ativa."
+  },
+  {
+    "municipio": "Quirinópolis",
+    "estado": "GO",
+    "curiosidade": "Forte produtora de cana-de-açúcar e famosa pelo lago da Usina de São Simão."
+  },
+  {
+    "municipio": "Rialma",
+    "estado": "GO",
+    "curiosidade": "Cidade às margens do Rio das Almas, procurada para pesca e lazer."
+  },
+  {
+    "municipio": "Rianápolis",
+    "estado": "GO",
+    "curiosidade": "Cidade pequena com cultura rural forte e festas tradicionais de longa data."
+  },
+  {
+    "municipio": "Rio Quente",
+    "estado": "GO",
+    "curiosidade": "Lar do Hot Park e de águas naturalmente quentes que atraem turistas do mundo inteiro."
+  },
+  {
+    "municipio": "Rio Verde",
+    "estado": "GO",
+    "curiosidade": "Um dos maiores polos agrícolas do país, conhecida por agritechs e inovação no campo."
+  },
+  {
+    "municipio": "Rubiataba",
+    "estado": "GO",
+    "curiosidade": "Cidade planejada, famosa pela produção de móveis e por eventos tradicionais."
+  },
+  {
+    "municipio": "Sanclerlândia",
+    "estado": "GO",
+    "curiosidade": "Cidade rural com festas tradicionais e forte identidade comunitária."
+  },
+  {
+    "municipio": "Santa Bárbara de Goiás",
+    "estado": "GO",
+    "curiosidade": "Marcada por tradições católicas e festas de comunidade muito preservadas."
+  },
+  {
+    "municipio": "Santa Cruz de Goiás",
+    "estado": "GO",
+    "curiosidade": "Possui um dos centros históricos mais preservados do estado, com casas do século XIX."
+  },
+  {
+    "municipio": "Santa Fé de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade agropecuária com festas sertanejas que atraem visitantes de toda a região."
+  },
+  {
+    "municipio": "Santa Helena de Goiás",
+    "estado": "GO",
+    "curiosidade": "Importante produtora de etanol, milho e soja, conhecida pelo grande parque industrial."
+  },
+  {
+    "municipio": "Santa Isabel",
+    "estado": "GO",
+    "curiosidade": "Cidade com forte cultura familiar e festas religiosas antigas."
+  },
+  {
+    "municipio": "Santa Rita do Araguaia",
+    "estado": "GO",
+    "curiosidade": "Fronteira com Mato Grosso, famosa por festas sertanejas e vida rural ativa."
+  },
+  {
+    "municipio": "Santa Rita do Novo Destino",
+    "estado": "GO",
+    "curiosidade": "Cresceu a partir da agricultura familiar e mantém tradições locais preservadas."
+  },
+  {
+    "municipio": "Santa Rosa de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade rural com história ligada ao tropeirismo e à pecuária antiga."
+  },
+  {
+    "municipio": "Santa Tereza de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cercada por rios e serras, é destino de pesca e turismo rural."
+  },
+  {
+    "municipio": "Santa Terezinha de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade com forte cultura sertaneja e eventos tradicionais ao longo do ano."
+  },
+  {
+    "municipio": "Santo Antônio da Barra",
+    "estado": "GO",
+    "curiosidade": "Cidade agrícola marcada por festas rurais e tradições comunitárias."
+  },
+  {
+    "municipio": "Santo Antônio de Goiás",
+    "estado": "GO",
+    "curiosidade": "Sede da Embrapa Arroz e Feijão, referência nacional em pesquisa agrícola."
+  },
+  {
+    "municipio": "Santo Antônio do Descoberto",
+    "estado": "GO",
+    "curiosidade": "Destino religioso muito visitado, com santuário dedicado ao santo padroeiro."
+  },
+  {
+    "municipio": "São Domingos",
+    "estado": "GO",
+    "curiosidade": "Abriga parte da Serra Geral e cavernas impressionantes como a Terra Ronca."
+  },
+  {
+    "municipio": "São Francisco de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade histórica com tradições católicas e festas antigas preservadas."
+  },
+  {
+    "municipio": "São João da Paraúna",
+    "estado": "GO",
+    "curiosidade": "Cidade pequena com tradições familiares e vida comunitária forte."
+  },
+  {
+    "municipio": "São João d'Aliança",
+    "estado": "GO",
+    "curiosidade": "Porta de entrada alternativa para a Chapada dos Veadeiros, com muitas cachoeiras."
+  },
+  {
+    "municipio": "São Luís de Montes Belos",
+    "estado": "GO",
+    "curiosidade": "Polo educacional regional e conhecida pelos doces tradicionais."
+  },
+  {
+    "municipio": "São Luíz do Norte",
+    "estado": "GO",
+    "curiosidade": "Cidade marcada pelo sertão goiano e por tradições religiosas preservadas."
+  },
+  {
+    "municipio": "São Miguel do Araguaia",
+    "estado": "GO",
+    "curiosidade": "Famoso por suas praias no Araguaia durante a temporada de veraneio."
+  },
+  {
+    "municipio": "São Miguel do Passa Quatro",
+    "estado": "GO",
+    "curiosidade": "Cidade tranquila com festas religiosas e culinária típica goiana."
+  },
+  {
+    "municipio": "São Patrício",
+    "estado": "GO",
+    "curiosidade": "Cidade marcada pela produção rural e por eventos de tradição sertaneja."
+  },
+  {
+    "municipio": "São Simão",
+    "estado": "GO",
+    "curiosidade": "Possui um dos maiores lagos artificiais do mundo, referência para pesca e esportes náuticos."
+  },
+  {
+    "municipio": "Senador Canedo",
+    "estado": "GO",
+    "curiosidade": "Grande polo industrial ligado ao setor petroquímico e químico."
+  },
+  {
+    "municipio": "Serranópolis",
+    "estado": "GO",
+    "curiosidade": "Abriga pinturas rupestres e sítios arqueológicos com milhares de anos."
+  },
+  {
+    "municipio": "Silvânia",
+    "estado": "GO",
+    "curiosidade": "Tem uma das igrejas mais antigas de Goiás e tradição católica forte."
+  },
+  {
+    "municipio": "Simolândia",
+    "estado": "GO",
+    "curiosidade": "Cidade que mantém vivo o costume das festas rurais e do artesanato local."
+  },
+  {
+    "municipio": "Sítio d'Abadia",
+    "estado": "GO",
+    "curiosidade": "Conhecida por suas festas religiosas e pela hospitalidade típica do interior."
+  },
+  {
+    "municipio": "Taquaral de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade com forte identidade cultural e festas tradicionais preservadas."
+  },
+  {
+    "municipio": "Teresina de Goiás",
+    "estado": "GO",
+    "curiosidade": "Faz parte da região Kalunga, um dos maiores territórios quilombolas do Brasil."
+  },
+  {
+    "municipio": "Terezópolis de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade tranquila próxima à capital, com festas tradicionais e culinária típica."
+  },
+  {
+    "municipio": "Três Ranchos",
+    "estado": "GO",
+    "curiosidade": "Destino turístico famoso pelo Lago Azul, com águas cristalinas e esportes náuticos."
+  },
+  {
+    "municipio": "Trindade",
+    "estado": "GO",
+    "curiosidade": "Maior centro de peregrinação católica do Centro-Oeste, com milhões de visitantes anuais."
+  },
+  {
+    "municipio": "Trombas",
+    "estado": "GO",
+    "curiosidade": "Cidade marcada pelas lutas camponesas históricas e preservação cultural rural."
+  },
+  {
+    "municipio": "Turvânia",
+    "estado": "GO",
+    "curiosidade": "Cidade tranquila com tradições religiosas e festas sertanejas fortes."
+  },
+  {
+    "municipio": "Turvelândia",
+    "estado": "GO",
+    "curiosidade": "Produtora agrícola importante, especialmente de soja e milho."
+  },
+  {
+    "municipio": "Uirapuru",
+    "estado": "GO",
+    "curiosidade": "Contornada por rios e áreas naturais, é procurada para pesca e lazer."
+  },
+  {
+    "municipio": "Uruaçu",
+    "estado": "GO",
+    "curiosidade": "Famosa pelo Lago Serra da Mesa e pelo grande monumento ao Cristo Redentor."
+  },
+  {
+    "municipio": "Uruana",
+    "estado": "GO",
+    "curiosidade": "Capital goiana da melancia, com festival dedicado à fruta todos os anos."
+  },
+  {
+    "municipio": "Urutaí",
+    "estado": "GO",
+    "curiosidade": "Sede de uma das primeiras escolas agrícolas do Brasil, o IF Goiano."
+  },
+  {
+    "municipio": "Valparaíso de Goiás",
+    "estado": "GO",
+    "curiosidade": "Cidade-dormitório da capital federal, com grande diversidade populacional e cultural."
+  },
+  {
+    "municipio": "Varjão",
+    "estado": "GO",
+    "curiosidade": "Cidade marcada por festas tradicionais e pela vida rural ativa."
+  },
+  {
+    "municipio": "Vianópolis",
+    "estado": "GO",
+    "curiosidade": "Possui uma das estações ferroviárias mais antigas e bem preservadas do estado."
+  },
+  {
+    "municipio": "Vicentinópolis",
+    "estado": "GO",
+    "curiosidade": "Cidade agrícola com festas tradicionais familiares e cultura sertaneja forte."
+  },
+  {
+    "municipio": "Vila Boa",
+    "estado": "GO",
+    "curiosidade": "Região cercada por formações rochosas e rios, procurada por aventureiros."
+  },
+  {
+    "municipio": "Vila Propício",
+    "estado": "GO",
+    "curiosidade": "Conhecida por cavernas, grutas e belezas naturais pouco exploradas."
+  }
+]
+
+]
+
+]
+]
+]

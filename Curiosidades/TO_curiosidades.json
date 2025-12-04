@@ -1,0 +1,648 @@
+[
+  {
+    "municipio": "Abreulândia",
+    "estado": "TO",
+    "curiosidade": "Destaca-se pela produção agropecuária, especialmente na pecuária de corte, e possui um território cortado pelo Rio Tocantins."
+  },
+  {
+    "municipio": "Aguiarnópolis",
+    "estado": "TO",
+    "curiosidade": "Localizada no extremo norte, na região do Bico do Papagaio. Seu nome faz homenagem a um importante político da região. Tem forte ligação com o Rio Tocantins."
+  },
+  {
+    "municipio": "Aliança do Tocantins",
+    "estado": "TO",
+    "curiosidade": "É um município com economia voltada para o agronegócio e possui relevância estratégica por estar na rota da BR-153 (Belém-Brasília)."
+  },
+  {
+    "municipio": "Almas",
+    "estado": "TO",
+    "curiosidade": "Sua história está ligada ao ciclo do ouro. Possui um valioso patrimônio geológico e natural, com grutas, cavernas e o Sítio Arqueológico 'Serra das Almas'."
+  },
+  {
+    "municipio": "Alvorada",
+    "estado": "TO",
+    "curiosidade": "Município com forte atividade agropecuária e comércio diversificado. Está próxima à divisa com Goiás, sendo um importante corredor de passagem."
+  },
+  {
+    "municipio": "Ananás",
+    "estado": "TO",
+    "curiosidade": "Localizada no Bico do Papagaio, é conhecida por sua vocação agrícola e pecuária, sendo um polo regional na produção de grãos e carne."
+  },
+  {
+    "municipio": "Angico",
+    "estado": "TO",
+    "curiosidade": "Um município pequeno e de origem humilde, que se desmembrou de Wanderlândia. Sua economia baseia-se na agricultura familiar e pecuária de subsistência."
+  },
+  {
+    "municipio": "Aparecida do Rio Negro",
+    "estado": "TO",
+    "curiosidade": "Antiga comunidade Quilombola (Mumbuca), hoje é reconhecida pelo potencial turístico e ecológico na região central do estado, perto de Palmas."
+  },
+  {
+    "municipio": "Aragominas",
+    "estado": "TO",
+    "curiosidade": "Seu nome é uma junção de 'Araguaína' e 'Goiás', indicando sua origem. A economia está fortemente ligada à agropecuária."
+  },
+  {
+    "municipio": "Araguacema",
+    "estado": "TO",
+    "curiosidade": "Uma das cidades mais antigas, é famosa pelas belas praias de água doce formadas pelo Rio Araguaia, atraindo turistas principalmente em julho."
+  },
+  {
+    "municipio": "Araguaçu",
+    "estado": "TO",
+    "curiosidade": "Possui uma das maiores áreas rurais do estado e é considerada a capital do Gado de corte do Tocantins. Faz divisa com o Parque Nacional do Araguaia."
+  },
+  {
+    "municipio": "Araguaína",
+    "estado": "TO",
+    "curiosidade": "A 'Capital Econômica' do TO, é o maior polo logístico e comercial do Norte do estado, com uma das maiores Exposição Agropecuárias (Expoara) do Brasil."
+  },
+  {
+    "municipio": "Araguatins",
+    "estado": "TO",
+    "curiosidade": "Localizada na região do Bico do Papagaio, é um centro político e educacional importante da região, banhada pelos rios Araguaia e Tocantins."
+  },
+  {
+    "municipio": "Arapoema",
+    "estado": "TO",
+    "curiosidade": "Conhecida como 'Terra do Abacaxi', sua economia se destaca pela agricultura, especialmente o cultivo dessa fruta, e também pela pecuária."
+  },
+  {
+    "municipio": "Arraias",
+    "estado": "TO",
+    "curiosidade": "Município histórico com arquitetura colonial preservada. Abriga a Serra Geral e foi um importante centro minerador durante o ciclo do ouro."
+  },
+  {
+    "municipio": "Augustinópolis",
+    "estado": "TO",
+    "curiosidade": "É um centro médico e educacional importante no Bico do Papagaio. É considerada uma das cidades mais desenvolvidas da região norte do estado."
+  },
+  {
+    "municipio": "Aurora do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Possui belezas naturais notáveis, como cachoeiras e balneários, e faz parte da região da Serra Geral, sendo vizinha ao Parque Estadual do Jalapão."
+  },
+  {
+    "municipio": "Axixá do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Localizada às margens do Rio Tocantins, a cidade tem no seu nome uma homenagem ao peixe 'Axixá' (peixe-cachorro), abundante na região."
+  },
+  {
+    "municipio": "Babaçulândia",
+    "estado": "TO",
+    "curiosidade": "Seu nome deriva da palmeira babaçu, abundante na área. É famosa por suas praias de rio, especialmente a Praia da Ponta, visitada na temporada de verão."
+  },
+  {
+    "municipio": "Bandeirantes do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Sua formação está ligada à colonização e migração de trabalhadores do sul, daí o nome 'Bandeirantes'. É um município agrícola."
+  },
+  {
+    "municipio": "Barra do Ouro",
+    "estado": "TO",
+    "curiosidade": "O nome remete à atividade de mineração. Localizada na Serra do Ouro, a cidade é conhecida por suas formações rochosas e o potencial turístico da região."
+  },
+  {
+    "municipio": "Barrolândia",
+    "estado": "TO",
+    "curiosidade": "A cidade foi planejada e seu crescimento está atrelado à agropecuária. Possui a Usina Hidrelétrica Luiz Eduardo Magalhães nas proximidades."
+  },
+  {
+    "municipio": "Bernardo Sayão",
+    "estado": "TO",
+    "curiosidade": "Homenageia o engenheiro que liderou a construção da rodovia Belém-Brasília (BR-153). É um município de forte tradição agropecuária."
+  },
+  {
+    "municipio": "Bom Jesus do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Famosa pela vocação religiosa e forte presença da agricultura. É uma cidade em crescimento devido à sua localização estratégica na BR-153."
+  },
+  {
+    "municipio": "Brasilândia do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Teve seu desenvolvimento impulsionado pela construção de uma ponte sobre o Rio Tocantins, que melhorou o acesso à região central do estado."
+  },
+  {
+    "municipio": "Brejinho de Nazaré",
+    "estado": "TO",
+    "curiosidade": "Município conhecido pelas festividades tradicionais, como a Festa de Nossa Senhora de Nazaré, e por suas áreas de preservação ambiental (brejos)."
+  },
+  {
+    "municipio": "Buriti do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Seu nome vem da palmeira Buriti, abundante na área. Localizada no Bico do Papagaio, a cidade é um polo de agricultura familiar."
+  },
+  {
+    "municipio": "Cachoeirinha",
+    "estado": "TO",
+    "curiosidade": "O nome indica a presença de pequenas quedas d'água na região. É um município pequeno, com economia baseada na pecuária extensiva."
+  },
+  {
+    "municipio": "Cariri do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Localizada no sul do estado, é um centro de produção de grãos e faz parte da 'Nova Fronteira Agrícola' do Tocantins."
+  },
+  {
+    "municipio": "Carmolândia",
+    "estado": "TO",
+    "curiosidade": "Fica próxima a Araguaína, sendo um centro de apoio para o setor pecuário. É conhecida por ter uma das menores áreas territoriais do estado."
+  },
+  {
+    "municipio": "Carrasco Bonito",
+    "estado": "TO",
+    "curiosidade": "Sua curiosidade reside no nome singular. É uma cidade de forte presença agrícola e possui terras férteis no Bico do Papagaio."
+  },
+  {
+    "municipio": "Caseara",
+    "estado": "TO",
+    "curiosidade": "É o portal de entrada para o Parque Estadual do Cantão, uma das maiores áreas úmidas protegidas do planeta, na confluência do Araguaia e do Coco."
+  },
+  {
+    "municipio": "Centenário",
+    "estado": "TO",
+    "curiosidade": "O nome celebra os 100 anos da primeira missa celebrada na região. Possui atividades de mineração e pecuária como base econômica."
+  },
+  {
+    "municipio": "Chapada da Natividade",
+    "estado": "TO",
+    "curiosidade": "Seu nome indica a proximidade com Natividade e a localização em uma área de chapadas. É rica em história e potencial turístico."
+  },
+  {
+    "municipio": "Chapada de Areia",
+    "estado": "TO",
+    "curiosidade": "Conhecida pela sua localização em uma chapada com solo arenoso. Sua economia é rural, baseada na pecuária extensiva."
+  },
+  {
+    "municipio": "Colinas do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Localizada em um ponto de alto desenvolvimento na BR-153, é um importante centro de serviços e um dos principais polos de agroindústria e transporte do estado."
+  },
+  {
+    "municipio": "Colméia",
+    "estado": "TO",
+    "curiosidade": "Sua fundação se deu por famílias pioneiras vindas de diversas partes do país, formando um núcleo de trabalho, como uma 'colmeia'. É conhecida pela agropecuária."
+  },
+  {
+    "municipio": "Combinado",
+    "estado": "TO",
+    "curiosidade": "Localizado na Serra Geral, faz parte do Circuito das Serras e das Águas. Possui atrações naturais como cachoeiras e trilhas."
+  },
+  {
+    "municipio": "Conceição do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Possui forte tradição histórica, sendo um antigo centro de mineração. Preserva o patrimônio arquitetônico ligado ao ciclo do ouro."
+  },
+  {
+    "municipio": "Couto Magalhães",
+    "estado": "TO",
+    "curiosidade": "Nome em homenagem ao explorador José Vieira Couto de Magalhães. É um município de base agropecuária na região central do estado."
+  },
+  {
+    "municipio": "Cristalândia",
+    "estado": "TO",
+    "curiosidade": "Conhecida por ser o lar do Mosteiro de São João, um local de peregrinação religiosa. Também possui potencial ecoturístico com serras e grutas."
+  },
+  {
+    "municipio": "Crixás do Tocantins",
+    "estado": "TO",
+    "curiosidade": "O nome remete à etnia indígena 'Crixás' que habitava a região. Sua economia é baseada na pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Darcinópolis",
+    "estado": "TO",
+    "curiosidade": "Homenageia o político Darcio de Oliveira. Localizado no Bico do Papagaio, é um município de vocação agrícola e pecuária."
+  },
+  {
+    "municipio": "Dianópolis",
+    "estado": "TO",
+    "curiosidade": "Uma das maiores e mais antigas cidades, é conhecida pelas Serras de Dianópolis e pelas Lendas da Princesa Leolinda e do Morro do Calvário."
+  },
+  {
+    "municipio": "Divinópolis do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Seu nome significa 'cidade divina'. Fica na região central e sua economia é baseada no agronegócio e na exploração de minérios."
+  },
+  {
+    "municipio": "Dois Irmãos do Tocantins",
+    "estado": "TO",
+    "curiosidade": "O nome remete à união de duas comunidades que deram origem ao município. Possui atividade extrativista, especialmente do coco babaçu."
+  },
+  {
+    "municipio": "Dueré",
+    "estado": "TO",
+    "curiosidade": "Situa-se na divisa com a Ilha do Bananal. É um município de rica cultura indígena e conhecido por suas praias de rio na temporada de verão."
+  },
+  {
+    "municipio": "Esperantina",
+    "estado": "TO",
+    "curiosidade": "Localizada no Bico do Papagaio, é banhada pelos rios Tocantins e Araguaia. A economia está ligada à agropecuária e ao extrativismo."
+  },
+  {
+    "municipio": "Fátima",
+    "estado": "TO",
+    "curiosidade": "O nome remete à devoção religiosa de Nossa Senhora de Fátima. É um município de economia agropecuária no sul do estado."
+  },
+  {
+    "municipio": "Figueirópolis",
+    "estado": "TO",
+    "curiosidade": "Destaca-se pela alta produção de grãos, sendo um importante centro de agricultura mecanizada. Está na BR-153, próximo à divisa com Goiás."
+  },
+  {
+    "municipio": "Filadélfia",
+    "estado": "TO",
+    "curiosidade": "Uma das cidades mais antigas, com forte vocação agropecuária e turística. É famosa por suas praias de rio no Rio Tocantins."
+  },
+  {
+    "municipio": "Formoso do Araguaia",
+    "estado": "TO",
+    "curiosidade": "É o município mais extenso do Tocantins. Abriga a maior parte da Ilha do Bananal, maior ilha fluvial do mundo, e possui um dos maiores projetos de irrigação do arroz do país."
+  },
+  {
+    "municipio": "Goianorte",
+    "estado": "TO",
+    "curiosidade": "O nome faz alusão à sua origem, sendo um município do 'Norte de Goiás'. Sua economia é baseada principalmente na pecuária."
+  },
+  {
+    "municipio": "Goiatins",
+    "estado": "TO",
+    "curiosidade": "Localizada no nordeste, é conhecida pela Festa do Divino Espírito Santo e por estar próxima à Terra Indígena Krahô, possuindo forte intercâmbio cultural."
+  },
+  {
+    "municipio": "Guaraí",
+    "estado": "TO",
+    "curiosidade": "Um dos mais importantes centros logísticos e agrícolas do estado, situado na BR-153. É conhecido por ser um grande produtor de grãos."
+  },
+  {
+    "municipio": "Gurupi",
+    "estado": "TO",
+    "curiosidade": "Polo educacional e de saúde do sul do Tocantins, é famosa por sediar a tradicional e movimentada Exposição Agropecuária de Gurupi (ExpoGurupi)."
+  },
+  {
+    "municipio": "Ipueiras",
+    "estado": "TO",
+    "curiosidade": "O nome remete aos pequenos lagos (ipueiras) que se formam na região. É um município de pequeno porte, com economia ligada à pecuária."
+  },
+  {
+    "municipio": "Itacajá",
+    "estado": "TO",
+    "curiosidade": "Tem forte presença da cultura indígena Apinajé. Possui potencial para o ecoturismo e é conhecida pelas 'Festas de Touros' (vaquejadas)."
+  },
+  {
+    "municipio": "Itaguatins",
+    "estado": "TO",
+    "curiosidade": "Localizada no Bico do Papagaio, é banhada pelos rios Araguaia e Tocantins, o que a torna um ponto de destaque para o turismo de pesca e praias fluviais."
+  },
+  {
+    "municipio": "Itapiratins",
+    "estado": "TO",
+    "curiosidade": "O nome faz referência à sua localização em área de serras e rios ('Itá' = pedra/serra). Sua economia é voltada para a pecuária."
+  },
+  {
+    "municipio": "Itaporã do Tocantins",
+    "estado": "TO",
+    "curiosidade": "É conhecida pela paisagem composta por serras e pedreiras. O município está na região central, com economia focada no agronegócio."
+  },[
+  {
+    "municipio": "Jaú do Tocantins",
+    "estado": "TO",
+    "curiosidade": "O nome faz referência ao peixe Jaú, comum no Rio Tocantins. Sua economia baseia-se na agropecuária extensiva."
+  },
+  {
+    "municipio": "Juarina",
+    "estado": "TO",
+    "curiosidade": "Localizada às margens do Rio Tocantins, a cidade tem como principal atração suas praias de rio na época da seca. É um município agropecuário."
+  },
+  {
+    "municipio": "Lagoa da Confusão",
+    "estado": "TO",
+    "curiosidade": "Famosa pela grande produção de arroz e pelo ecoturismo. É o principal portal de entrada para o ecossistema da Ilha do Bananal e possui festivais de praia anuais."
+  },
+  {
+    "municipio": "Lagoa do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Fica na região do Jalapão, sendo um importante ponto de passagem para os fervedouros. É conhecida pela cultura de pesca e festas tradicionais."
+  },
+  {
+    "municipio": "Lajeado",
+    "estado": "TO",
+    "curiosidade": "Abriga o Parque Estadual do Lajeado, famoso pela Cachoeira do Lajeado (Cachoeira da Roncadeira), um importante ponto de ecoturismo próximo a Palmas."
+  },
+  {
+    "municipio": "Lavandeira",
+    "estado": "TO",
+    "curiosidade": "O nome vem da abundância de uma planta local (Lavandeira). É um município pequeno, com economia ligada à pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Lizarda",
+    "estado": "TO",
+    "curiosidade": "Possui um vasto território, englobando parte da Área de Proteção Ambiental do Jalapão, com potencial para ecoturismo e pesquisas ambientais."
+  },
+  {
+    "municipio": "Luzinópolis",
+    "estado": "TO",
+    "curiosidade": "Fica na região do Bico do Papagaio e sua economia é tradicionalmente baseada na agricultura familiar e pecuária."
+  },
+  {
+    "municipio": "Marianópolis do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Homenagem à Virgem Maria e à localização no Tocantins. É um município de vocação agropecuária na região central do estado."
+  },
+  {
+    "municipio": "Mateiros",
+    "estado": "TO",
+    "curiosidade": "Considerado o 'Coração do Jalapão'. Abriga as famosas Dunas, o Fervedouro do Ceiça e é o principal polo turístico do Parque Estadual do Jalapão."
+  },
+  {
+    "municipio": "Maurilândia do Tocantins",
+    "estado": "TO",
+    "curiosidade": "O nome é uma homenagem a um pioneiro da região. Sua economia está focada na produção de grãos e pecuária."
+  },
+  {
+    "municipio": "Miracema do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Foi a primeira capital provisória do estado do Tocantins após a sua criação, em 1989. É uma cidade histórica e culturalmente rica."
+  },
+  {
+    "municipio": "Miranorte",
+    "estado": "TO",
+    "curiosidade": "A cidade é um importante entroncamento rodoviário na BR-153 e centro de apoio para a atividade pecuária e frigorífica da região."
+  },
+  {
+    "municipio": "Monte do Carmo",
+    "estado": "TO",
+    "curiosidade": "Uma das cidades mais antigas, com rica herança cultural do ciclo do ouro. É famosa pela tradicional Festa de Nossa Senhora do Carmo."
+  },
+  {
+    "municipio": "Monte Santo do Tocantins",
+    "estado": "TO",
+    "curiosidade": "O nome remete a um monte que se destaca na paisagem, considerado sagrado pelos moradores. A economia é baseada na pecuária."
+  },
+  {
+    "municipio": "Muricilândia",
+    "estado": "TO",
+    "curiosidade": "O nome faz referência à fruta Murici, comum na vegetação local. É um município de base agropecuária no norte do estado."
+  },
+  {
+    "municipio": "Natividade",
+    "estado": "TO",
+    "curiosidade": "Sua fundação remonta ao século XVIII, sendo uma das cidades mais antigas do Tocantins (antigo Goiás). É tombada pelo IPHAN e famosa pela ourivesaria tradicional e pela Festa do Divino Espírito Santo."
+  },
+  {
+    "municipio": "Nova Olinda",
+    "estado": "TO",
+    "curiosidade": "Município agrícola e pecuário, localizado na região central do estado, conhecido por suas terras férteis."
+  },
+  {
+    "municipio": "Nova Rosalândia",
+    "estado": "TO",
+    "curiosidade": "Sua economia é impulsionada pela agricultura e pela criação de gado de corte. Está na rota da BR-153, facilitando o escoamento da produção."
+  },
+  {
+    "municipio": "Novo Acordo",
+    "estado": "TO",
+    "curiosidade": "É considerado um dos portais de entrada para o Parque Estadual do Jalapão, conhecido por suas cachoeiras e balneários naturais."
+  },
+  {
+    "municipio": "Novo Alegre",
+    "estado": "TO",
+    "curiosidade": "Localizado na Serra Geral, possui um clima mais ameno e potencial para o turismo ecológico devido às suas paisagens de serras e riachos."
+  },
+  {
+    "municipio": "Novo Jardim",
+    "estado": "TO",
+    "curiosidade": "Conhecido por suas belezas naturais, incluindo o Rio Palma e o potencial para o turismo de aventura e pesca esportiva."
+  },
+  {
+    "municipio": "Paraíso do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Um dos principais polos econômicos do estado, com forte presença de universidades e do agronegócio, sendo um centro regional de serviços."
+  },
+  {
+    "municipio": "Palmas",
+    "estado": "TO",
+    "curiosidade": "Capital do estado, é a única capital brasileira a nascer no século XX. Sua Praça dos Girassóis é a maior praça pública da América Latina."
+  },
+  {
+    "municipio": "Paranã",
+    "estado": "TO",
+    "curiosidade": "Uma das cidades mais antigas, situada às margens do Rio Paranã. Possui casario histórico e forte ligação com a pecuária extensiva."
+  },
+  {
+    "municipio": "Pau D'Arco",
+    "estado": "TO",
+    "curiosidade": "O nome deriva da árvore Pau D'Arco, abundante na região. Sua economia está ligada à pecuária e à agricultura."
+  },
+  {
+    "municipio": "Pedro Afonso",
+    "estado": "TO",
+    "curiosidade": "Importante polo agroindustrial, especialmente para a produção de açúcar e álcool. É um entroncamento hidroviário e rodoviário."
+  },
+  {
+    "municipio": "Peixe",
+    "estado": "TO",
+    "curiosidade": "Famosa pelas praias de rio, especialmente a Praia da Tartaruga. É um dos principais destinos turísticos às margens do Rio Tocantins."
+  },
+  {
+    "municipio": "Pequizeiro",
+    "estado": "TO",
+    "curiosidade": "O nome homenageia o fruto Pequi, típico do cerrado, abundante na região. Sua economia é rural, focada na agropecuária."
+  },
+  {
+    "municipio": "Pindorama do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Significa 'Terra das Palmeiras' em tupi-guarani. É um município de economia predominantemente agropecuária."
+  },
+  {
+    "municipio": "Piraquê",
+    "estado": "TO",
+    "curiosidade": "A cidade é conhecida pelas suas festas populares e pela produção de queijo e leite, sendo um polo regional de pecuária leiteira."
+  },
+  {
+    "municipio": "Pium",
+    "estado": "TO",
+    "curiosidade": "Portal de entrada para a Ilha do Bananal e o Parque Nacional do Araguaia. Conhecido por suas praias e pesca esportiva."
+  },
+  {
+    "municipio": "Ponte Alta do Bom Jesus",
+    "estado": "TO",
+    "curiosidade": "Localizada na Serra Geral, é um ponto de interesse para o ecoturismo, com cachoeiras e trilhas."
+  },
+  {
+    "municipio": "Ponte Alta do Tocantins",
+    "estado": "TO",
+    "curiosidade": "É o principal acesso ao Jalapão e abriga o famoso Morro da Pedra Furada, um dos cartões postais do ecoturismo tocantinense."
+  },
+  {
+    "municipio": "Porto Nacional",
+    "estado": "TO",
+    "curiosidade": "Cidade histórica, que foi capital do Norte de Goiás por um breve período. É um polo de agronegócio e possui a mais antiga catedral do estado."
+  },
+  {
+    "municipio": "Praia Norte",
+    "estado": "TO",
+    "curiosidade": "O nome é autoexplicativo: a cidade é famosa por suas praias de água doce no Rio Tocantins, que atraem turistas durante a temporada de seca."
+  },
+  {
+    "municipio": "Presidente Kennedy",
+    "estado": "TO",
+    "curiosidade": "Homenageia o ex-presidente americano John F. Kennedy. É um município agropecuário com terras férteis."
+  },
+  {
+    "municipio": "Pugmil",
+    "estado": "TO",
+    "curiosidade": "Sua economia é baseada na pecuária e agricultura. Localizada na região central, seu nome foi criado a partir da junção de nomes de pioneiros."
+  },
+  {
+    "municipio": "Recursolândia",
+    "estado": "TO",
+    "curiosidade": "Seu nome remete aos 'recursos' naturais e minerais da área. Possui uma vocação mista para a agropecuária e mineração."
+  },
+  {
+    "municipio": "Riachinho",
+    "estado": "TO",
+    "curiosidade": "O nome é uma diminutivo de riacho, indicando a presença de cursos d'água. É um município de base rural no Bico do Papagaio."
+  },
+  {
+    "municipio": "Rio da Conceição",
+    "estado": "TO",
+    "curiosidade": "Localizada na Serra Geral, a cidade é conhecida por suas belezas naturais e por ser um ponto de interesse para o ecoturismo."
+  },
+  {
+    "municipio": "Rio dos Bois",
+    "estado": "TO",
+    "curiosidade": "Seu nome é uma referência ao rio que atravessa a região, um importante eixo para a pecuária local."
+  },
+  {
+    "municipio": "Rio Sono",
+    "estado": "TO",
+    "curiosidade": "Abriga a Terra Indígena Xerente. O Rio Sono é um dos principais afluentes do Rio Tocantins na região, com potencial turístico."
+  },
+  {
+    "municipio": "Sampaio",
+    "estado": "TO",
+    "curiosidade": "Localizado no Bico do Papagaio, a cidade tem uma economia rural forte, com destaque para a produção de açaí."
+  },
+  {
+    "municipio": "Sandolândia",
+    "estado": "TO",
+    "curiosidade": "Homenagem ao pioneiro Sando. Município com vocação agropecuária, especialmente pecuária de corte."
+  },
+  {
+    "municipio": "Santa Fé do Araguaia",
+    "estado": "TO",
+    "curiosidade": "Um importante polo de agronegócio na região norte, conhecida pela produção de soja e milho. Faz parte do corredor da BR-153."
+  },
+  {
+    "municipio": "Santa Maria do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Possui uma forte ligação com a cultura do coco babaçu, que é a base do extrativismo local. Fica próxima ao Rio Tocantins."
+  },
+  {
+    "municipio": "Santa Rita do Tocantins",
+    "estado": "TO",
+    "curiosidade": "A cidade tem como destaque a produção de leite e derivados, sendo um município de pecuária leiteira na região central."
+  },
+  {
+    "municipio": "Santa Rosa do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Localizada às margens do Rio Tocantins, a cidade tem como principal atração suas praias fluviais durante a temporada de verão."
+  },
+  {
+    "municipio": "Santa Tereza do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Município que faz parte da área de abrangência do Jalapão, conhecido por suas paisagens típicas do cerrado e potencial ecoturístico."
+  },
+  {
+    "municipio": "Santa Terezinha do Tocantins",
+    "estado": "TO",
+    "curiosidade": "O nome remete à devoção de Santa Terezinha. É um município de vocação agropecuária no Bico do Papagaio."
+  },
+  {
+    "municipio": "São Bento do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Localizada no Bico do Papagaio, a cidade tem uma economia baseada na agropecuária e na pesca artesanal."
+  },
+  {
+    "municipio": "São Félix do Tocantins",
+    "estado": "TO",
+    "curiosidade": "É o portal principal para os atrativos mais famosos do Jalapão, como os Fervedouros e a Serra do Espírito Santo."
+  },
+  {
+    "municipio": "São Salvador do Tocantins",
+    "estado": "TO",
+    "curiosidade": "O nome remete ao padroeiro. Sua economia é predominantemente rural, com destaque para a pecuária de corte."
+  },
+  {
+    "municipio": "São Sebastião do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Localizada no extremo norte, no Bico do Papagaio, é um município que faz divisa com o Maranhão, tendo o Rio Tocantins como fronteira natural."
+  },
+  {
+    "municipio": "São Valério",
+    "estado": "TO",
+    "curiosidade": "Conhecido por suas paisagens serranas e potencial para o ecoturismo. Sua economia é baseada na pecuária e agricultura."
+  },
+  {
+    "municipio": "Silvanópolis",
+    "estado": "TO",
+    "curiosidade": "O nome homenageia o pioneiro Silva. É um município com forte base agropecuária na região central do estado."
+  },
+  {
+    "municipio": "Sítio Novo do Tocantins",
+    "estado": "TO",
+    "curiosidade": "Localizado no Bico do Papagaio, é um município de forte tradição na agricultura e pecuária familiar."
+  },
+  {
+    "municipio": "Sucupira",
+    "estado": "TO",
+    "curiosidade": "O nome vem da árvore Sucupira, comum na flora do cerrado. É um município pequeno, com economia baseada na pecuária."
+  },
+  {
+    "municipio": "Taguatinga",
+    "estado": "TO",
+    "curiosidade": "Uma das cidades mais antigas, é um importante centro histórico e geográfico na região sudeste. Abriga a Serra Geral e possui grutas e cavernas."
+  },
+  {
+    "municipio": "Taipas do Tocantins",
+    "estado": "TO",
+    "curiosidade": "O nome remete às construções antigas feitas com 'taipa'. Possui uma economia rural voltada para a pecuária e agricultura."
+  },
+  {
+    "municipio": "Talismã",
+    "estado": "TO",
+    "curiosidade": "O nome incomum atrai curiosidade. É um município que serve de entroncamento na BR-153, com base econômica no agronegócio."
+  },
+  {
+    "municipio": "Tocantínia",
+    "estado": "TO",
+    "curiosidade": "Conhecida por abrigar a Terra Indígena Xerente. Possui um forte intercâmbio cultural e atrai pesquisadores da área de etnografia."
+  },
+  {
+    "municipio": "Tocantinópolis",
+    "estado": "TO",
+    "curiosidade": "Importante centro regional no Bico do Papagaio. Foi palco de movimentos sociais e tem uma vocação mista para o comércio e o agronegócio."
+  },
+  {
+    "municipio": "Tupirama",
+    "estado": "TO",
+    "curiosidade": "O nome significa 'terra dos tupis'. Sua economia é baseada na pecuária e agricultura."
+  },
+  {
+    "municipio": "Tupiratins",
+    "estado": "TO",
+    "curiosidade": "Banhada pelo Rio Tocantins, a cidade é um ponto de interesse para o turismo de pesca e lazer nas praias fluviais durante o período de seca."
+  },
+  {
+    "municipio": "Wanderlândia",
+    "estado": "TO",
+    "curiosidade": "Localizada na BR-153, é um município de vocação agrícola e pecuária, servindo como polo de apoio logístico no norte do estado."
+  },
+  {
+    "municipio": "Xambioá",
+    "estado": "TO",
+    "curiosidade": "É a cidade mais conhecida por ter sido palco da Guerrilha do Araguaia (anos 70). Está às margens do Rio Araguaia, sendo um ponto turístico e histórico."
+  }
+]
+]

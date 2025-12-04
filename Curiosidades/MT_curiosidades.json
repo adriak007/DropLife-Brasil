@@ -1,0 +1,666 @@
+[
+  {
+    "municipio": "Acorizal",
+    "estado": "MT",
+    "curiosidade": "O município é cortado pela Estrada do Ouro e possui um forte patrimônio histórico ligado à mineração, sendo um dos mais antigos do estado."
+  },
+  {
+    "municipio": "Água Boa",
+    "estado": "MT",
+    "curiosidade": "Polo agrícola no Vale do Araguaia, com forte atuação em culturas como soja, milho e algodão. É conhecida pelas fazendas de gado e potencial para lazer em rios e cachoeiras."
+  },
+  {
+    "municipio": "Alta Floresta",
+    "estado": "MT",
+    "curiosidade": "Localizada na Amazônia Mato-Grossense, é um polo de ecoturismo e pesquisas científicas. Foi o primeiro município a ter a mineração de ouro ilegal totalmente erradicada no estado."
+  },
+  {
+    "municipio": "Alto Araguaia",
+    "estado": "MT",
+    "curiosidade": "Cidade tricentenária, na divisa com Goiás e Mato Grosso do Sul, é uma das poucas no mundo onde é possível observar o raro fenômeno da **'Pororoca'** no Rio Araguaia, devido ao encontro de águas."
+  },
+  {
+    "municipio": "Alto Boa Vista",
+    "estado": "MT",
+    "curiosidade": "Município do Nordeste Mato-Grossense, com vocação agropecuária, especialmente o cultivo de soja e arroz."
+  },
+  {
+    "municipio": "Alto Garças",
+    "estado": "MT",
+    "curiosidade": "Localizada na nascente do Rio Garças, é um importante centro da produção de grãos, com fazendas que datam dos projetos de colonização."
+  },
+  {
+    "municipio": "Alto Paraguai",
+    "estado": "MT",
+    "curiosidade": "Fica na região do Médio Norte, com economia baseada na pecuária e mineração de calcário. Possui belezas naturais, como cavernas e grutas."
+  },
+  {
+    "municipio": "Alto Taquari",
+    "estado": "MT",
+    "curiosidade": "Polo de agronegócio no Sudeste do estado, possui um dos maiores terminais rodoferroviários de transbordo de grãos da América Latina."
+  },
+  {
+    "municipio": "Apiacás",
+    "estado": "MT",
+    "curiosidade": "Localizada no Norte de MT, o nome é uma homenagem à etnia indígena Apiacá. É um município de expansão agropecuária e extrativismo madeireiro."
+  },
+  {
+    "municipio": "Araguaiana",
+    "estado": "MT",
+    "curiosidade": "Situada na bacia do Rio Araguaia, possui praias fluviais que atraem turistas durante a época da seca. Sua economia é rural, ligada à pecuária e pesca."
+  },
+  {
+    "municipio": "Araguainha",
+    "estado": "MT",
+    "curiosidade": "O município mais isolado e com a **menor população** de Mato Grosso. É conhecido por ter sido o local de impacto de um meteorito há milhões de anos, formando uma cratera circular."
+  },
+  {
+    "municipio": "Araputanga",
+    "estado": "MT",
+    "curiosidade": "O nome, de origem Tupi-Guarani, significa 'pau de flecha vermelha'. É um município do Sudoeste, com economia baseada na pecuária leiteira e corte."
+  },
+  {
+    "municipio": "Arenápolis",
+    "estado": "MT",
+    "curiosidade": "Surgiu de um projeto de colonização. Seu nome remete ao solo arenoso da região. A economia é baseada na pecuária e agricultura."
+  },
+  {
+    "municipio": "Aripuanã",
+    "estado": "MT",
+    "curiosidade": "Localizada no Noroeste, em plena Floresta Amazônica. É famosa pelo grande potencial hidrelétrico e pelas belezas naturais, como o **Salto das Andorinhas** (uma grande cachoeira)."
+  },
+  {
+    "municipio": "Barão de Melgaço",
+    "estado": "MT",
+    "curiosidade": "Um dos portões de entrada para o **Pantanal mato-grossense**, com forte potencial para o ecoturismo e a observação de fauna (especialmente a pesca e a observação de aves)."
+  },
+  {
+    "municipio": "Barra do Bugres",
+    "estado": "MT",
+    "curiosidade": "Conhecida pela Usina Hidrelétrica de Barra do Bugres. Sua economia é voltada para a agropecuária e indústria de açúcar e álcool."
+  },
+  {
+    "municipio": "Barra do Garças",
+    "estado": "MT",
+    "curiosidade": "Fica na confluência dos rios Garças e Araguaia. É famosa por abrigar um **'Discoporto'** (pista de pouso para OVNIs) e ser a 'Capital do Turismo' na região do Vale do Araguaia."
+  },
+  {
+    "municipio": "Bom Jesus do Araguaia",
+    "estado": "MT",
+    "curiosidade": "Município com forte vocação para o agronegócio, destacando-se na produção de soja, arroz e milho."
+  },
+  {
+    "municipio": "Brasnorte",
+    "estado": "MT",
+    "curiosidade": "O nome é uma fusão de 'Brasil' e 'Norte'. É um importante polo madeireiro e de expansão da pecuária na região Noroeste."
+  },
+  {
+    "municipio": "Cáceres",
+    "estado": "MT",
+    "curiosidade": "Conhecida como a 'Princesinha do Pantanal', é uma cidade histórica às margens do Rio Paraguai. Realiza o **Festival Internacional de Pesca Esportiva (FIPE)**, o maior do tipo no mundo."
+  },
+  {
+    "municipio": "Campinápolis",
+    "estado": "MT",
+    "curiosidade": "Possui uma das maiores áreas de Terras Indígenas (Xavante) do estado. Sua economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Campo Novo do Parecis",
+    "estado": "MT",
+    "curiosidade": "Um dos maiores polos de produção de grãos e sementes do país, com destaque para a soja, milho e girassol. É conhecido por suas vastas áreas de lavouras e por abrigar cachoeiras e balneários."
+  },
+  {
+    "municipio": "Campo Verde",
+    "estado": "MT",
+    "curiosidade": "Polo de algodão, soja e milho. Recebeu o apelido de 'Capital do Algodão' devido à alta produtividade e tecnologia empregada nas lavouras."
+  },
+  {
+    "municipio": "Campos de Júlio",
+    "estado": "MT",
+    "curiosidade": "Localizada no Oeste, faz divisa com Rondônia. Sua economia é totalmente voltada para o agronegócio, sendo um grande produtor de grãos."
+  },
+  {
+    "municipio": "Canabrava do Norte",
+    "estado": "MT",
+    "curiosidade": "O nome se deve à grande quantidade de canas selvagens. É um município do Norte com economia rural."
+  },
+  {
+    "municipio": "Canarana",
+    "estado": "MT",
+    "curiosidade": "Um importante centro de desenvolvimento agropecuário, resultado de projetos de colonização. Fica na região do Xingu, com forte presença da cultura indígena e da produção de grãos."
+  },
+  {
+    "municipio": "Carlinda",
+    "estado": "MT",
+    "curiosidade": "Município do Norte, com economia baseada na pecuária e extração madeireira. Surgiu do desmembramento de Alta Floresta."
+  },
+  {
+    "municipio": "Castanheira",
+    "estado": "MT",
+    "curiosidade": "Localizada no Noroeste, seu nome remete ao extrativismo de castanha-do-pará. Sua economia é baseada na pecuária e na agricultura."
+  },
+  {
+    "municipio": "Chapada dos Guimarães",
+    "estado": "MT",
+    "curiosidade": "Famosa por abrigar o **Parque Nacional da Chapada dos Guimarães**, com paredões de arenito, cachoeiras (como a Véu de Noiva) e cavernas. É o principal destino de ecoturismo do estado."
+  },
+  {
+    "municipio": "Cláudia",
+    "estado": "MT",
+    "curiosidade": "Localizada no Norte, sua economia é agropecuária, com destaque para a produção de soja e milho. Foi fundada por colonizadores do Sul do Brasil."
+  },
+  {
+    "municipio": "Cocalinho",
+    "estado": "MT",
+    "curiosidade": "Localizada às margens do Rio Araguaia, possui praias fluviais na época da seca. Sua economia é baseada na pecuária extensiva."
+  },
+  {
+    "municipio": "Colíder",
+    "estado": "MT",
+    "curiosidade": "Um dos grandes centros de desenvolvimento do Nortão, com economia baseada no agronegócio, madeireira e comércio."
+  },
+  {
+    "municipio": "Colniza",
+    "estado": "MT",
+    "curiosidade": "Localizada no Noroeste, é o município com a **maior área territorial** de Mato Grosso. Sua economia é marcada pela atividade madeireira e pecuária."
+  },
+  {
+    "municipio": "Comodoro",
+    "estado": "MT",
+    "curiosidade": "Fica na fronteira com Rondônia, sendo um ponto de transição e entreposto comercial na BR-364. Sua economia é forte na pecuária e extrativismo."
+  },
+  {
+    "municipio": "Confresa",
+    "estado": "MT",
+    "curiosidade": "Importante centro urbano no Vale do Araguaia, polo de serviços para a região Nordeste. Seu nome é a junção das palavras 'Colonizadora' e 'Fronteira'."
+  },
+  {
+    "municipio": "Conquista D'Oeste",
+    "estado": "MT",
+    "curiosidade": "O nome remete à ocupação da fronteira Oeste. Sua economia é baseada na pecuária e agricultura."
+  },
+  {
+    "municipio": "Cotriguaçu",
+    "estado": "MT",
+    "curiosidade": "Localizada no Noroeste, o nome é uma homenagem aos três rios que se unem na região (Rio Coti, Rio Grande e Rio Guarani). Sua economia é madeireira."
+  },
+  {
+    "municipio": "Cuiabá",
+    "estado": "MT",
+    "curiosidade": "Capital de Mato Grosso, é o **Centro Geodésico da América do Sul** (ponto equidistante dos oceanos Atlântico e Pacífico). É uma das cidades mais quentes do Brasil e porta de entrada para a Chapada e o Pantanal."
+  },
+  {
+    "municipio": "Curvelândia",
+    "estado": "MT",
+    "curiosidade": "O nome remete às curvas do terreno. É um município de vocação rural, com destaque para a pecuária e o extrativismo."
+  },
+  {
+    "municipio": "Denise",
+    "estado": "MT",
+    "curiosidade": "Localizada no Médio Norte, sua economia é baseada na pecuária de corte e leiteira, e na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Diamantino",
+    "estado": "MT",
+    "curiosidade": "Cidade histórica, seu nome se deve à descoberta de diamantes no Rio Paraguai no século XVIII. É um polo agroindustrial e sede de grandes fazendas de soja."
+  },
+  {
+    "municipio": "Dom Aquino",
+    "estado": "MT",
+    "curiosidade": "Homenagem ao Bispo Dom Aquino Correia. É conhecida pelo turismo em rios de águas cristalinas, como o Rio Cuiabazinho."
+  },
+  {
+    "municipio": "Feliz Natal",
+    "estado": "MT",
+    "curiosidade": "Recebeu esse nome incomum em homenagem a trabalhadores rurais que passaram o Natal na região, devido a riachos transbordados. Sua economia é agropecuária."
+  },
+  {
+    "municipio": "Figueirópolis D'Oeste",
+    "estado": "MT",
+    "curiosidade": "O nome remete às figueiras. É um município de vocação agropecuária no Oeste Mato-Grossense."
+  },
+  {
+    "municipio": "Gaúcha do Norte",
+    "estado": "MT",
+    "curiosidade": "Fundada por colonos do Rio Grande do Sul (daí o nome), é um município do Norte com forte expansão na produção de soja e algodão."
+  },
+  {
+    "municipio": "General Carneiro",
+    "estado": "MT",
+    "curiosidade": "Homenagem ao militar Antonio Ernesto de Carneiro. Sua economia é baseada na pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Glória D'Oeste",
+    "estado": "MT",
+    "curiosidade": "O nome remete à glória e à localização na fronteira Oeste. Sua economia é rural, baseada na pecuária e agricultura."
+  },
+  {
+    "municipio": "Guarantã do Norte",
+    "estado": "MT",
+    "curiosidade": "Um dos principais centros comerciais do Nortão, com economia diversificada em agronegócio, madeireira e mineração."
+  },
+  {
+    "municipio": "Guiratinga",
+    "estado": "MT",
+    "curiosidade": "Seu nome vem do Tupi ('serra branca'). É conhecida pela **Serra de São Vicente** e por ter sido um antigo polo de mineração de diamantes e manganês."
+  },
+  {
+    "municipio": "Indiavaí",
+    "estado": "MT",
+    "curiosidade": "O nome é uma referência a uma planta local. É um município de vocação agropecuária no Oeste."
+  },
+  {
+    "municipio": "Ipiranga do Norte",
+    "estado": "MT",
+    "curiosidade": "Município de colonização recente, no Norte, com economia baseada na produção de grãos (soja e milho)."
+  },
+  {
+    "municipio": "Itanhangá",
+    "estado": "MT",
+    "curiosidade": "O nome significa 'pedra suspensa' em Tupi. É um município do Norte com forte crescimento no agronegócio."
+  },
+  {
+    "municipio": "Itaúba",
+    "estado": "MT",
+    "curiosidade": "O nome é uma homenagem à madeira nobre Itaúba. Sua economia é baseada na madeireira e agropecuária."
+  },
+  {
+    "municipio": "Itiquira",
+    "estado": "MT",
+    "curiosidade": "Abriga o **Salto de Itiquira**, uma das maiores e mais belas quedas d'água do Cerrado, com cerca de 168 metros de altura."
+  },
+  [
+  {
+    "municipio": "Jaciara",
+    "estado": "MT",
+    "curiosidade": "Conhecida como a 'Capital do Ecoturismo de Aventura', é famosa por suas cachoeiras, corredeiras e pela prática de esportes radicais como *rafting* e *rapel*."
+  },
+  {
+    "municipio": "Jangada",
+    "estado": "MT",
+    "curiosidade": "O nome remete à embarcação de madeira (jangada), usada pelos antigos ribeirinhos no Rio Cuiabá. Sua economia é baseada na pecuária."
+  },
+  {
+    "municipio": "Jauru",
+    "estado": "MT",
+    "curiosidade": "Localizada no Oeste, sua economia é baseada na pecuária e na agricultura, sendo um centro regional de serviços."
+  },
+  {
+    "municipio": "Juara",
+    "estado": "MT",
+    "curiosidade": "Conhecida como a 'Capital do Gado', é o município com o maior rebanho bovino do estado e um dos maiores do Brasil, com uma forte cultura de pecuária extensiva."
+  },
+  {
+    "municipio": "Juína",
+    "estado": "MT",
+    "curiosidade": "Polo regional do Noroeste, sua economia é diversificada, com destaque para a mineração (diamantes) e a pecuária, além de ser um importante entroncamento rodoviário da região."
+  },
+  {
+    "municipio": "Juruena",
+    "estado": "MT",
+    "curiosidade": "O nome vem do rio que o banha. É um município da Amazônia Mato-Grossense, com economia baseada na pecuária e extrativismo madeireiro."
+  },
+  {
+    "municipio": "Juscimeira",
+    "estado": "MT",
+    "curiosidade": "Famosa pelas **águas termais** e balneários, sendo um destino popular de lazer e descanso no interior do estado."
+  },
+  {
+    "municipio": "Lambari D'Oeste",
+    "estado": "MT",
+    "curiosidade": "O nome é uma referência ao peixe lambari, comum nos rios da região. Sua economia é baseada na pecuária leiteira."
+  },
+  {
+    "municipio": "Lucas do Rio Verde",
+    "estado": "MT",
+    "curiosidade": "Um dos principais polos do agronegócio no Médio Norte. É referência em produção sustentável e uma das cidades com o maior PIB *per capita* agrícola do país."
+  },
+  {
+    "municipio": "Luciara",
+    "estado": "MT",
+    "curiosidade": "Localizada no Vale do Araguaia, possui praias de rio na época da seca. É um município de vocação rural, com destaque para a pecuária."
+  },
+  {
+    "municipio": "Marcelândia",
+    "estado": "MT",
+    "curiosidade": "O nome é uma homenagem ao pioneiro Marcelino Siqueira. É um polo madeireiro e de pecuária no Norte do estado."
+  },
+  {
+    "municipio": "Matupá",
+    "estado": "MT",
+    "curiosidade": "O nome, de origem Tupi, significa 'folha de palmeira'. É um importante centro comercial do Nortão, com economia baseada na agropecuária e comércio."
+  },
+  {
+    "municipio": "Mirassol D'Oeste",
+    "estado": "MT",
+    "curiosidade": "Conhecida pela pecuária e agricultura. O nome faz referência à beleza do sol nascente na área Oeste."
+  },
+  {
+    "municipio": "Nobres",
+    "estado": "MT",
+    "curiosidade": "Um dos principais destinos de ecoturismo do estado, famoso por suas **águas cristalinas** (Rio Salobro, Rio Claro) e pela gruta da **Lagoa Azul**, ideal para flutuação e mergulho."
+  },
+  {
+    "municipio": "Nortelândia",
+    "estado": "MT",
+    "curiosidade": "Antigo polo de garimpo de diamantes, sua economia atual é baseada na agropecuária e na mineração de calcário."
+  },
+  {
+    "municipio": "Nossa Senhora do Livramento",
+    "estado": "MT",
+    "curiosidade": "Cidade histórica próxima a Cuiabá, famosa pela produção de **doces caseiros** (doces de Livramento) e pela fé em Nossa Senhora do Livramento."
+  },
+  {
+    "municipio": "Nova Bandeirantes",
+    "estado": "MT",
+    "curiosidade": "O nome homenageia os colonizadores ('bandeirantes'). É um município de fronteira agrícola, com destaque para a pecuária e a extração madeireira."
+  },
+  {
+    "municipio": "Nova Brasilândia",
+    "estado": "MT",
+    "curiosidade": "Localizada no Vale do Rio Cuiabá, sua economia é baseada na pecuária e na produção de leite e derivados."
+  },
+  {
+    "municipio": "Nova Canaã do Norte",
+    "estado": "MT",
+    "curiosidade": "O nome remete à 'terra prometida'. É um município do Norte com economia baseada no extrativismo madeireiro e pecuária."
+  },
+  {
+    "municipio": "Nova Guarita",
+    "estado": "MT",
+    "curiosidade": "Localizada no Nortão, surgiu como um núcleo de colonização. Sua economia é agropecuária."
+  },
+  {
+    "municipio": "Nova Lacerda",
+    "estado": "MT",
+    "curiosidade": "Município de fronteira Oeste, com economia baseada na pecuária e na agricultura, especialmente o cultivo de grãos."
+  },
+  {
+    "municipio": "Nova Mutum",
+    "estado": "MT",
+    "curiosidade": "O nome vem da ave mutum, comum na região. É um dos principais polos de produção de grãos e biocombustíveis, com alto desenvolvimento e tecnologia no agronegócio."
+  },
+  {
+    "municipio": "Nova Olímpia",
+    "estado": "MT",
+    "curiosidade": "Conhecida pela produção de cana-de-açúcar, sendo um importante centro sucroalcooleiro do Médio Norte."
+  },
+  {
+    "municipio": "Nova Ubiratã",
+    "estado": "MT",
+    "curiosidade": "Um dos municípios com maior área plantada de soja no Brasil. Sua economia é quase inteiramente baseada no agronegócio de grãos."
+  },
+  {
+    "municipio": "Nova Xavantina",
+    "estado": "MT",
+    "curiosidade": "Localizada no Vale do Araguaia, é um polo de pesquisa biológica e agropecuária, sendo a porta de entrada para a Reserva Indígena Pimentel Barbosa."
+  },
+  {
+    "municipio": "Novo Horizonte do Norte",
+    "estado": "MT",
+    "curiosidade": "Surgiu de um projeto de colonização. Sua economia é baseada na pecuária e na agricultura familiar."
+  },
+  {
+    "municipio": "Novo Mundo",
+    "estado": "MT",
+    "curiosidade": "O nome simboliza a esperança dos colonos. É um município de vocação agropecuária no Nortão."
+  },
+  {
+    "municipio": "Novo São Joaquim",
+    "estado": "MT",
+    "curiosidade": "Localizado no Vale do Araguaia, é conhecido por suas fazendas de gado e potencial turístico em rios e cachoeiras."
+  },
+  {
+    "municipio": "Novo Tesouro",
+    "estado": "MT",
+    "curiosidade": "Seu nome remete à riqueza do solo para a agricultura. É um município de vocação rural."
+  },
+  {
+    "municipio": "Paranaíta",
+    "estado": "MT",
+    "curiosidade": "Localizada no Norte, é um município marcado pela atividade madeireira e agropecuária, fazendo divisa com o Pará."
+  },
+  {
+    "municipio": "Paranatinga",
+    "estado": "MT",
+    "curiosidade": "Município com um vasto território, com economia baseada na pecuária e agricultura. O nome vem do rio que o banha."
+  },
+  {
+    "municipio": "Pedra Preta",
+    "estado": "MT",
+    "curiosidade": "O nome se deve a uma formação rochosa escura na região. Sua economia é forte na agricultura e pecuária, sendo um polo de grãos."
+  },
+  {
+    "municipio": "Peixoto de Azevedo",
+    "estado": "MT",
+    "curiosidade": "Antigo polo de garimpo de ouro. Hoje, sua economia é baseada na pecuária, mas mantém viva a história da corrida do ouro na Amazônia."
+  },
+  {
+    "municipio": "Planalto da Serra",
+    "estado": "MT",
+    "curiosidade": "Localizada em uma área de planalto, sua economia é baseada na produção de grãos e pecuária."
+  },
+  {
+    "municipio": "Poconé",
+    "estado": "MT",
+    "curiosidade": "É considerada a 'Capital Mundial do Pantanal', sendo o ponto de partida da Estrada Transpantaneira, principal via de acesso ao Pantanal Norte para o ecoturismo e observação de fauna."
+  },
+  {
+    "municipio": "Pontal do Araguaia",
+    "estado": "MT",
+    "curiosidade": "Localizada na foz do Rio Garças no Rio Araguaia. É um município turístico, com belas praias fluviais durante o período de seca."
+  },
+  {
+    "municipio": "Ponte Branca",
+    "estado": "MT",
+    "curiosidade": "O nome se deve a uma ponte de madeira pintada de branco. Sua economia é baseada na pecuária e agricultura."
+  },
+  {
+    "municipio": "Pontes e Lacerda",
+    "estado": "MT",
+    "curiosidade": "Importante centro regional do Oeste, conhecido como 'Capital do Ouro' devido à intensa atividade de garimpo ilegal na região da Serra da Borda."
+  },
+  {
+    "municipio": "Porto Alegre do Norte",
+    "estado": "MT",
+    "curiosidade": "Localizada no Vale do Araguaia, é um município de vocação agropecuária, com forte pecuária de corte."
+  },
+  {
+    "municipio": "Porto dos Gaúchos",
+    "estado": "MT",
+    "curiosidade": "Fundado por gaúchos, é um importante polo madeireiro e agropecuário no Vale do Rio Arinos."
+  },
+  {
+    "municipio": "Porto Esperidião",
+    "estado": "MT",
+    "curiosidade": "Localizada no Pantanal, sua economia é baseada na pesca e na pecuária. É um importante ponto de apoio para o ecoturismo pantaneiro."
+  },
+  {
+    "municipio": "Porto Estrela",
+    "estado": "MT",
+    "curiosidade": "Município rural com economia baseada na pecuária extensiva, na região Oeste."
+  },
+  {
+    "municipio": "Poxoréu",
+    "estado": "MT",
+    "curiosidade": "Cidade histórica, é um antigo polo de mineração de diamantes. Possui um rico patrimônio cultural e está próxima à Chapada dos Guimarães."
+  },
+  {
+    "municipio": "Primavera do Leste",
+    "estado": "MT",
+    "curiosidade": "Um dos principais centros de agronegócio do Brasil, com alta tecnologia na produção de soja, milho e algodão. É conhecida por seu alto Índice de Desenvolvimento Humano (IDH)."
+  },
+  [
+  {
+    "municipio": "Ribeirão Cascalheira",
+    "estado": "MT",
+    "curiosidade": "Localizada no nordeste, sua economia é baseada na agropecuária. É conhecida por ter sido palco da 'Guerra do Fogo' e do conflito pela terra na região do Araguaia."
+  },
+  {
+    "municipio": "Ribeirãozinho",
+    "estado": "MT",
+    "curiosidade": "Município de pequeno porte, sua economia é baseada na pecuária e agricultura de subsistência, na região Sudeste."
+  },
+  {
+    "municipio": "Rio Branco",
+    "estado": "MT",
+    "curiosidade": "Localizada no Oeste, o nome vem do rio que corre na região. Sua economia é agropecuária."
+  },
+  {
+    "municipio": "Rondolândia",
+    "estado": "MT",
+    "curiosidade": "Município com o maior número de comunidades indígenas do estado. Sua economia é ligada à pecuária e à preservação de áreas da Amazônia."
+  },
+  {
+    "municipio": "Rondonópolis",
+    "estado": "MT",
+    "curiosidade": "O principal polo de agronegócio de MT e um dos maiores do Brasil, especialmente em soja e algodão. É um hub logístico fundamental, com o maior terminal rodoferroviário do estado."
+  },
+  {
+    "municipio": "Rosário Oeste",
+    "estado": "MT",
+    "curiosidade": "Cidade histórica, seu nome é uma homenagem à padroeira. Possui um rico patrimônio arquitetônico e é conhecida pelo balneário águas quentes."
+  },
+  {
+    "municipio": "Salto do Céu",
+    "estado": "MT",
+    "curiosidade": "O nome remete à cachoeira que é a principal atração turística. Sua economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Santa Carmem",
+    "estado": "MT",
+    "curiosidade": "Fundada por colonos do Sul. Sua economia é voltada para a produção de grãos, sendo um importante centro agrícola do Nortão."
+  },
+  {
+    "municipio": "Santa Cruz do Xingu",
+    "estado": "MT",
+    "curiosidade": "Localizada no Nordeste, faz divisa com o Pará. Sua economia é baseada na agropecuária, com forte presença de fazendas de gado."
+  },
+  {
+    "municipio": "Santa Rita do Trivelato",
+    "estado": "MT",
+    "curiosidade": "Um dos mais recentes municípios, com o **maior PIB *per capita* agrícola** do Brasil. Sua economia é totalmente voltada para o agronegócio de grãos, com alta produtividade."
+  },
+  {
+    "municipio": "Santo Afonso",
+    "estado": "MT",
+    "curiosidade": "Município de vocação rural, com destaque para a pecuária e agricultura. O nome é uma homenagem ao santo padroeiro."
+  },
+  {
+    "municipio": "Santo Antônio do Leste",
+    "estado": "MT",
+    "curiosidade": "Localizado na região Leste, sua economia é baseada na produção de grãos, sendo um município de fronteira agrícola."
+  },
+  {
+    "municipio": "Santo Antônio do Leverger",
+    "estado": "MT",
+    "curiosidade": "Cidade histórica, às margens do Rio Cuiabá. É o município natal do Marechal Rondon e serve como um dos portões de entrada para o Pantanal."
+  },
+  {
+    "municipio": "São Félix do Araguaia",
+    "estado": "MT",
+    "curiosidade": "Um dos principais acessos ao Rio Araguaia e à Ilha do Bananal. É conhecido pela atuação histórica do bispo Dom Pedro Casaldáliga, defensor dos povos indígenas e camponeses."
+  },
+  {
+    "municipio": "São José do Povo",
+    "estado": "MT",
+    "curiosidade": "Pequeno município com economia baseada na pecuária e agricultura. O nome é uma homenagem ao padroeiro."
+  },
+  {
+    "municipio": "São José do Rio Claro",
+    "estado": "MT",
+    "curiosidade": "O nome remete ao rio de águas claras. Sua economia é baseada na pecuária e na agricultura, sendo um polo de grãos."
+  },
+  {
+    "municipio": "São José do Xingu",
+    "estado": "MT",
+    "curiosidade": "Localizado na região Nordeste, sua economia é ligada à pecuária extensiva. Abriga grande parte da **Terra Indígena Xingu**."
+  },
+  {
+    "municipio": "São Pedro da Cipa",
+    "estado": "MT",
+    "curiosidade": "Localizada no Sul, é um município de vocação agropecuária, com destaque para a produção de leite e carne."
+  },
+  {
+    "municipio": "Sapezal",
+    "estado": "MT",
+    "curiosidade": "Um dos maiores produtores de algodão do Brasil. É um município de alta tecnologia agrícola, conhecido pelas grandes fazendas de grãos e fibra."
+  },
+  {
+    "municipio": "Serra Nova Dourada",
+    "estado": "MT",
+    "curiosidade": "Localizada na Serra do Roncador, sua economia é baseada na pecuária e agricultura. O nome remete à busca por ouro na região."
+  },
+  {
+    "municipio": "Sinop",
+    "estado": "MT",
+    "curiosidade": "Conhecida como a **'Capital do Nortão'**, é o maior polo de desenvolvimento, educação e serviços do Norte de MT. É um centro de tecnologia agroindustrial e madeireira."
+  },
+  {
+    "municipio": "Sorriso",
+    "estado": "MT",
+    "curiosidade": "Considerada a **'Capital Nacional do Agronegócio'** e a maior produtora individual de soja do mundo. Seu nome foi escolhido devido ao otimismo dos primeiros colonos."
+  },
+  {
+    "municipio": "Tabaporã",
+    "estado": "MT",
+    "curiosidade": "O nome, de origem Tupi, significa 'caminho bonito'. Sua economia é baseada na pecuária e extrativismo madeireiro."
+  },
+  {
+    "municipio": "Tangará da Serra",
+    "estado": "MT",
+    "curiosidade": "Um importante centro regional do Médio Norte, com economia diversificada em agronegócio e serviços. É conhecida pelo turismo de cachoeiras e balneários naturais."
+  },
+  {
+    "municipio": "Tapurah",
+    "estado": "MT",
+    "curiosidade": "Município de forte base agropecuária, com destaque para a produção de grãos. O nome é uma homenagem a uma comunidade indígena da região."
+  },
+  {
+    "municipio": "Terra Nova do Norte",
+    "estado": "MT",
+    "curiosidade": "Surgiu de um projeto de colonização. Sua economia é baseada na pecuária e extração madeireira no Nortão."
+  },
+  {
+    "municipio": "Tesouro",
+    "estado": "MT",
+    "curiosidade": "Cidade histórica, seu nome se deve à descoberta de diamantes na região no século XVIII."
+  },
+  {
+    "municipio": "Torixoréu",
+    "estado": "MT",
+    "curiosidade": "Faz divisa com Goiás. Sua economia é rural, baseada na pecuária e agricultura. O nome é uma referência a uma ave local."
+  },
+  {
+    "municipio": "União do Sul",
+    "estado": "MT",
+    "curiosidade": "Fundada por colonos do Sul do Brasil. Sua economia é baseada na pecuária e na produção de grãos."
+  },
+  {
+    "municipio": "Vale de São Domingos",
+    "estado": "MT",
+    "curiosidade": "Localizada no Oeste, sua economia é baseada na pecuária e agricultura. O nome é uma homenagem ao padroeiro."
+  },
+  {
+    "municipio": "Várzea Grande",
+    "estado": "MT",
+    "curiosidade": "Conhecida como 'Cidade Industrial', faz divisa com Cuiabá e abriga o principal aeroporto do estado (Marechal Rondon). É um importante polo de comércio e logística."
+  },
+  {
+    "municipio": "Vera",
+    "estado": "MT",
+    "curiosidade": "Município de vocação agropecuária no Nortão, com destaque para a produção de grãos e pecuária."
+  },
+  {
+    "municipio": "Vila Bela da Santíssima Trindade",
+    "estado": "MT",
+    "curiosidade": "Foi a **primeira capital de Mato Grosso** (antiga Capitania) e é um dos locais mais históricos do estado, com ruínas de casarões coloniais e forte influência da cultura negra e quilombola."
+  },
+  {
+    "municipio": "Vila Rica",
+    "estado": "MT",
+    "curiosidade": "Localizada no Nordeste, seu nome remete à antiga busca por minérios. Sua economia é baseada na pecuária e agricultura."
+  }
+]
+]
+]

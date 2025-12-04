@@ -1,0 +1,4259 @@
+[
+  {
+    "municipio": "Abadia dos Dourados",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelas tradições de romarias e pelo cultivo de abóbora que abastece boa parte da região."
+  },
+  {
+    "municipio": "Abaeté",
+    "estado": "MG",
+    "curiosidade": "Cidade ligada ao sertanejo raiz; o compositor Renato Teixeira viveu ali parte da infância."
+  },
+  {
+    "municipio": "Abre Campo",
+    "estado": "MG",
+    "curiosidade": "Famosa pela festa de Nossa Senhora da Penha, uma das mais antigas da Zona da Mata."
+  },
+  {
+    "municipio": "Acaiaca",
+    "estado": "MG",
+    "curiosidade": "Terra natal do jogador Geovanni, ex-Barcelona e seleção brasileira de base."
+  },
+  {
+    "municipio": "Açucena",
+    "estado": "MG",
+    "curiosidade": "Tem comunidades que preservam cantos e danças rurais seculares."
+  },
+  {
+    "municipio": "Água Boa",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida pela fabricação de queijos artesanais premiados."
+  },
+  {
+    "municipio": "Água Comprida",
+    "estado": "MG",
+    "curiosidade": "Um dos menores municípios do estado, famoso por pequenas propriedades que produzem milho de alta qualidade."
+  },
+  {
+    "municipio": "Aguanil",
+    "estado": "MG",
+    "curiosidade": "Celebra o tradicional Festival do Milho, mantendo vivas receitas rurais da região."
+  },
+  {
+    "municipio": "Águas Formosas",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela produção artesanal de farinha, feita em casas tradicionais de engenho."
+  },
+  {
+    "municipio": "Águas Vermelhas",
+    "estado": "MG",
+    "curiosidade": "Tem forte tradição em festas de vaquejada e música sertaneja."
+  },
+  {
+    "municipio": "Aimorés",
+    "estado": "MG",
+    "curiosidade": "Terra natal do escritor Roberto Drummond, autor de 'Hilda Furacão'."
+  },
+  {
+    "municipio": "Aiuruoca",
+    "estado": "MG",
+    "curiosidade": "Centro de ecoturismo com forte cultura esotérica e comunidades alternativas."
+  },
+  {
+    "municipio": "Alagoa",
+    "estado": "MG",
+    "curiosidade": "Produtora do famoso queijo Alagoa, reconhecido internacionalmente pela qualidade."
+  },
+  {
+    "municipio": "Albertina",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila famosa por vinhos artesanais produzidos por famílias locais."
+  },
+  {
+    "municipio": "Além Paraíba",
+    "estado": "MG",
+    "curiosidade": "Local onde funcionou a segunda ferrovia do Brasil, impulsionando o comércio no século XIX."
+  },
+  {
+    "municipio": "Alfenas",
+    "estado": "MG",
+    "curiosidade": "Conhecida por suas universidades e pela tradição em festas estudantis desde os anos 1970."
+  },
+  {
+    "municipio": "Alfredo Vasconcelos",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por tradições religiosas e procissões realizadas pelas famílias mais antigas."
+  },
+  {
+    "municipio": "Almenara",
+    "estado": "MG",
+    "curiosidade": "Grande referência cultural do Vale do Jequitinhonha, com artesanato em cerâmica muito valorizado."
+  },
+  {
+    "municipio": "Alpercata",
+    "estado": "MG",
+    "curiosidade": "Forte tradição de música caipira, com grupos familiares que se apresentam há gerações."
+  },
+  {
+    "municipio": "Alpinópolis",
+    "estado": "MG",
+    "curiosidade": "Chamada de 'Cidade Presépio' devido ao conjunto de morros iluminados em festas religiosas."
+  },
+  {
+    "municipio": "Alterosa",
+    "estado": "MG",
+    "curiosidade": "Produtora de queijos de casca lavada, um dos produtos mais premiados da região sul-mineira."
+  },
+  {
+    "municipio": "Alto Caparaó",
+    "estado": "MG",
+    "curiosidade": "Portal de acesso ao Pico da Bandeira e famosa por cafés especiais de altitude."
+  },
+  {
+    "municipio": "Alto Jequitibá",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por imigração presbiteriana, com arquitetura que lembra vilas europeias."
+  },
+  {
+    "municipio": "Alto Rio Doce",
+    "estado": "MG",
+    "curiosidade": "Famosa pelo 'Doce de Leite de Tacho', preparado em fogões tradicionais."
+  },
+  {
+    "municipio": "Alvarenga",
+    "estado": "MG",
+    "curiosidade": "Possui diversas comunidades que preservam cânticos e rezas rurais trazidas por colonos portugueses."
+  },
+  {
+    "municipio": "Alvinópolis",
+    "estado": "MG",
+    "curiosidade": "Cidade de fortes tradições musicais e berço de bandas históricas do interior mineiro."
+  },
+  {
+    "municipio": "Alvorada de Minas",
+    "estado": "MG",
+    "curiosidade": "Berço do famoso 'Jequitinhonha de raiz', com artesanato e música tradicional."
+  },
+  {
+    "municipio": "Amparo do Serra",
+    "estado": "MG",
+    "curiosidade": "Tem tradições de folia de reis e festivais rurais que passam de geração em geração."
+  },
+  {
+    "municipio": "Andradas",
+    "estado": "MG",
+    "curiosidade": "Capital do vinho em MG, com vinícolas centenárias e tradição italiana muito forte."
+  },
+  {
+    "municipio": "Andrelândia",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica com casarões preservados e festas folclóricas tradicionais do sul de Minas."
+  },
+  {
+    "municipio": "Angelândia",
+    "estado": "MG",
+    "curiosidade": "Região de forte produção de cachaça artesanal e festas rurais animadas."
+  },
+  {
+    "municipio": "Antônio Carlos",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte influência alemã, conhecida por cervejas artesanais e festas típicas."
+  },
+  {
+    "municipio": "Antônio Dias",
+    "estado": "MG",
+    "curiosidade": "Terra natal do poeta Carlos Drummond de Andrade, um dos maiores nomes da literatura brasileira."
+  },
+  {
+    "municipio": "Antônio Prado de Minas",
+    "estado": "MG",
+    "curiosidade": "Município pequeno que preserva tradições de corais religiosos e bandas de música desde o século XIX."
+  },
+  {
+    "municipio": "Araçaí",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelos doces artesanais e pela produção de goiabada cascão em tachos de cobre."
+  },
+  {
+    "municipio": "Aracitaba",
+    "estado": "MG",
+    "curiosidade": "Cidade onde festas religiosas mantêm cantorias em latim, tradição rara no interior mineiro."
+  },
+  {
+    "municipio": "Araçuaí",
+    "estado": "MG",
+    "curiosidade": "Berço de artistas do Vale do Jequitinhonha e grande referência em artesanato tradicional."
+  },
+  {
+    "municipio": "Araguari",
+    "estado": "MG",
+    "curiosidade": "Importante polo ferroviário e cenário de filmagens do clássico 'Como Era Gostoso o Meu Francês'."
+  },
+  {
+    "municipio": "Arantina",
+    "estado": "MG",
+    "curiosidade": "Conhecida por festas tradicionais com bandas centenárias e procissões históricas."
+  },
+  {
+    "municipio": "Araponga",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés premiados e sede de movimentos culturais ligados ao agroecoturismo."
+  },
+  {
+    "municipio": "Araporã",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por imensos canaviais e pela produção de etanol de alta escala."
+  },
+  {
+    "municipio": "Arapuá",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelas cavalgadas e pelo modo de vida rural preservado nas comunidades."
+  },
+  {
+    "municipio": "Araújos",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte tradição de queijeiros e produtores rurais familiares."
+  },
+  {
+    "municipio": "Araxá",
+    "estado": "MG",
+    "curiosidade": "Famosa por Dona Beja, figura histórica envolvida em lendas locais; também reconhecida por suas águas minerais."
+  },
+  {
+    "municipio": "Arceburgo",
+    "estado": "MG",
+    "curiosidade": "Cidade tradicional na produção de café e leite, com festas rurais muito antigas."
+  },
+  {
+    "municipio": "Arcos",
+    "estado": "MG",
+    "curiosidade": "Polo da música sertaneja mineira, com competições e festivais famosos."
+  },
+  {
+    "municipio": "Areado",
+    "estado": "MG",
+    "curiosidade": "Terra conhecida pela produção de doce de leite artesanal feito em pequenas fazendas familiares."
+  },
+  {
+    "municipio": "Argirita",
+    "estado": "MG",
+    "curiosidade": "Pequeno município famoso por festas tradicionais que envolvem música e culinária caseira."
+  },
+  {
+    "municipio": "Aricanduva",
+    "estado": "MG",
+    "curiosidade": "Cidade reconhecida por artesanato rural e festivais ligados à cultura camponesa."
+  },
+  {
+    "municipio": "Arinos",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela forte presença de cultura sertaneja e por tradições de viola caipira."
+  },
+  {
+    "municipio": "Astolfo Dutra",
+    "estado": "MG",
+    "curiosidade": "Ponto histórico do trem de ferro na região da Zona da Mata, com festas ferroviárias preservadas."
+  },
+  {
+    "municipio": "Ataléia",
+    "estado": "MG",
+    "curiosidade": "Cidade que abriga tradições antigas de Folia de Reis e cantorias de viola."
+  },
+  {
+    "municipio": "Augusto de Lima",
+    "estado": "MG",
+    "curiosidade": "Marcada por histórias de bandeirantes e pela produção de queijo artesanal."
+  },
+  {
+    "municipio": "Baependi",
+    "estado": "MG",
+    "curiosidade": "Sede da devoção a Nhá Chica, beata reconhecida pela Igreja, atraindo milhares de romeiros."
+  },
+  {
+    "municipio": "Baldim",
+    "estado": "MG",
+    "curiosidade": "Famosa pela produção artesanal de cachaças e licores."
+  },
+  {
+    "municipio": "Bambuí",
+    "estado": "MG",
+    "curiosidade": "Sede de escolas federais tradicionais e conhecida por festas agropecuárias centenárias."
+  },
+  {
+    "municipio": "Bandeira",
+    "estado": "MG",
+    "curiosidade": "Região de forte presença de comunidades tradicionais e artesãos de cerâmica."
+  },
+  {
+    "municipio": "Bandeira do Sul",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena que preserva festas de santos com procissões musicais."
+  },
+  {
+    "municipio": "Barão de Cocais",
+    "estado": "MG",
+    "curiosidade": "Lar do Santuário de São João Batista e de tradições de congados muito antigas."
+  },
+  {
+    "municipio": "Barão de Monte Alto",
+    "estado": "MG",
+    "curiosidade": "Cidade rural marcada por antigas fazendas do ciclo do café."
+  },
+  {
+    "municipio": "Barbacena",
+    "estado": "MG",
+    "curiosidade": "Famosa pela produção de rosas e pelo histórico 'Trem das Rosas'; já foi referência nacional na floricultura."
+  },
+  {
+    "municipio": "Barra Longa",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela cultura musical com bandas centenárias e corais tradicionais."
+  },
+  {
+    "municipio": "Barroso",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada pela produção de cimento e por festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Bela Vista de Minas",
+    "estado": "MG",
+    "curiosidade": "Tradição musical forte, especialmente bandas de coreto e grupos de seresta."
+  },
+  {
+    "municipio": "Belmiro Braga",
+    "estado": "MG",
+    "curiosidade": "Terra do poeta simbolista Alphonsus de Guimaraens, grande referência literária brasileira."
+  },
+  {
+    "municipio": "Belo Horizonte",
+    "estado": "MG",
+    "curiosidade": "Capital com uma das maiores cenas de botecos do mundo, considerada a 'capital dos bares'."
+  },
+  {
+    "municipio": "Belo Oriente",
+    "estado": "MG",
+    "curiosidade": "Cidade onde fica a usina de celulose da Cenibra, uma das maiores do mundo."
+  },
+  {
+    "municipio": "Belo Vale",
+    "estado": "MG",
+    "curiosidade": "Lar do Museu do Escravo, um dos acervos mais importantes sobre a história afro-brasileira."
+  },
+  {
+    "municipio": "Berilo",
+    "estado": "MG",
+    "curiosidade": "Reconhecida pelo artesanato feminino em bordados e bonecas tradicionais do Jequitinhonha."
+  },
+  {
+    "municipio": "Berizal",
+    "estado": "MG",
+    "curiosidade": "Município pequeno que preserva festas sertanejas e tradições de viola."
+  },
+  {
+    "municipio": "Bertópolis",
+    "estado": "MG",
+    "curiosidade": "Possui forte influência de povos indígenas maxacalis, com rituais e cantos preservados."
+  },
+  {
+    "municipio": "Betim",
+    "estado": "MG",
+    "curiosidade": "Importante polo automotivo brasileiro; sede da primeira fábrica da Fiat na América Latina."
+  },
+  {
+    "municipio": "Bias Fortes",
+    "estado": "MG",
+    "curiosidade": "Conhecida por tradições católicas e festas comunitárias preservadas."
+  },
+  {
+    "municipio": "Bicas",
+    "estado": "MG",
+    "curiosidade": "Tradicional em música e culinária; festas de rua com bandas centenárias são comuns."
+  },
+  {
+    "municipio": "Biquinhas",
+    "estado": "MG",
+    "curiosidade": "Famosa por águas naturais e pequenas propriedades agrícolas familiares."
+  },
+  {
+    "municipio": "Boa Esperança",
+    "estado": "MG",
+    "curiosidade": "Cidade imortalizada na música 'Serra da Boa Esperança', de Lamartine Babo."
+  },
+  {
+    "municipio": "Bocaina de Minas",
+    "estado": "MG",
+    "curiosidade": "Porta de entrada para o Parque Nacional do Itatiaia pelo lado mineiro."
+  },
+  {
+    "municipio": "Bocaiúva",
+    "estado": "MG",
+    "curiosidade": "Tradicional produtora de queijos e doces mineiros, com forte identidade cultural."
+  },
+  {
+    "municipio": "Bom Despacho",
+    "estado": "MG",
+    "curiosidade": "Pioneira em políticas públicas de paz e convivência comunitária."
+  },
+  {
+    "municipio": "Bom Jardim de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana conhecida por cachoeiras e tradições antigas de festas religiosas."
+  },
+  {
+    "municipio": "Bom Jesus da Penha",
+    "estado": "MG",
+    "curiosidade": "Possui uma das festas religiosas mais tradicionais da região, reunindo moradores há gerações."
+  },
+  {
+    "municipio": "Bom Jesus do Amparo",
+    "estado": "MG",
+    "curiosidade": "Local famoso por romarias e tradições religiosas fortes."
+  },
+  {
+    "municipio": "Bom Jesus do Galho",
+    "estado": "MG",
+    "curiosidade": "Região marcada pela produção de café e por festas rurais antigas."
+  },
+  {
+    "municipio": "Bom Repouso",
+    "estado": "MG",
+    "curiosidade": "Conhecida por morangos e por tradições religiosas de origem europeia."
+  },
+  {
+    "municipio": "Bom Sucesso",
+    "estado": "MG",
+    "curiosidade": "Referência na produção de queijos e doces mineiros premiados."
+  },
+  {
+    "municipio": "Bonfim",
+    "estado": "MG",
+    "curiosidade": "Possui uma das festas de Carnaval mais antigas de Minas, com marchinhas clássicas."
+  },
+  {
+    "municipio": "Bonfinópolis de Minas",
+    "estado": "MG",
+    "curiosidade": "Tradição forte em viola e música sertaneja raiz."
+  },
+  {
+    "municipio": "Bonito de Minas",
+    "estado": "MG",
+    "curiosidade": "Região com fauna preservada e tradições de comunidades sertanejas antigas."
+  },
+  {
+    "municipio": "Borda da Mata",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do tricô, famosa pela indústria têxtil artesanal."
+  },
+  {
+    "municipio": "Botelhos",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte vocação para festas religiosas e gastronomia rural."
+  },
+  {
+    "municipio": "Botumirim",
+    "estado": "MG",
+    "curiosidade": "Abriga formações rochosas únicas e tradições antigas de cantorias rurais."
+  },
+  {
+    "municipio": "Brás Pires",
+    "estado": "MG",
+    "curiosidade": "Produz doces e queijos tradicionais em pequenas propriedades."
+  },
+  {
+    "municipio": "Brasilândia de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade jovem com grande atividade agrícola e festas sertanejas."
+  },
+  {
+    "municipio": "Brasília de Minas",
+    "estado": "MG",
+    "curiosidade": "Berço de grandes músicos regionais, incluindo compositores de viola e bandas centenárias."
+  },
+  {
+    "municipio": "Brásópolis",
+    "estado": "MG",
+    "curiosidade": "Cidade natal do cientista César Lattes, um dos descobridores do méson pi."
+  },
+  {
+    "municipio": "Braúnas",
+    "estado": "MG",
+    "curiosidade": "Tradições antigas de Folia de Reis ainda são preservadas em suas comunidades."
+  },
+  {
+    "municipio": "Brumadinho",
+    "estado": "MG",
+    "curiosidade": "Abriga o Inhotim, um dos maiores museus de arte contemporânea a céu aberto do mundo."
+  },
+  {
+    "municipio": "Bueno Brandão",
+    "estado": "MG",
+    "curiosidade": "Conhecida por dezenas de cachoeiras e pelo turismo rural forte."
+  },
+  {
+    "municipio": "Buenópolis",
+    "estado": "MG",
+    "curiosidade": "Região ligada ao antigo ciclo ferroviário; festas de Folia de Reis são muito tradicionais."
+  },
+  {
+    "municipio": "Bugre",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila marcada por tradições rurais e culinária mineira caseira."
+  },
+  {
+    "municipio": "Buritis",
+    "estado": "MG",
+    "curiosidade": "Forte tradição em festas agropecuárias e música sertaneja raiz."
+  },
+  {
+    "municipio": "Buritizeiro",
+    "estado": "MG",
+    "curiosidade": "Região de história antiga ligada aos bandeirantes e ao ciclo do ouro."
+  },
+  {
+    "municipio": "Cabeceira Grande",
+    "estado": "MG",
+    "curiosidade": "Conhecida por festas rurais e culinária com influência goiana."
+  },
+  {
+    "municipio": "Cabo Verde",
+    "estado": "MG",
+    "curiosidade": "De forte colonização italiana, é famosa por vinhos caseiros e cafés premiados."
+  },
+  {
+    "municipio": "Cachoeira da Prata",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva tradições de Folia de Reis e festas agrícolas seculares."
+  },
+  {
+    "municipio": "Cachoeira de Minas",
+    "estado": "MG",
+    "curiosidade": "Produtora de café artesanal e famosa por doces mineiros tradicionais."
+  },
+  {
+    "municipio": "Cachoeira de Pajeú",
+    "estado": "MG",
+    "curiosidade": "Região marcada por tradições rurais e por antigas histórias de tropeiros."
+  },
+  {
+    "municipio": "Cachoeira Dourada",
+    "estado": "MG",
+    "curiosidade": "Possui fontes termais muito procuradas por visitantes."
+  },
+  {
+    "municipio": "Caetanópolis",
+    "estado": "MG",
+    "curiosidade": "Berço da indústria têxtil mineira e cidade com forte tradição de artesanato."
+  },
+  {
+    "municipio": "Caeté",
+    "estado": "MG",
+    "curiosidade": "Onde fica o Santuário de Nossa Senhora da Piedade, padroeira de Minas Gerais."
+  },
+  {
+    "municipio": "Caiana",
+    "estado": "MG",
+    "curiosidade": "Conserva bandas antigas e modos tradicionais de preparo de alimentos."
+  },
+  {
+    "municipio": "Cajuri",
+    "estado": "MG",
+    "curiosidade": "Famosa por sua boa culinária caseira e produção de queijos mineiros."
+  },
+  {
+    "municipio": "Caldas",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela produção de vinhos e pelas águas medicinais exploradas desde o século XIX."
+  },
+  {
+    "municipio": "Camacho",
+    "estado": "MG",
+    "curiosidade": "Tradições rurais permanecem fortes, com festas de colheita preservadas pelas famílias."
+  },
+  {
+    "municipio": "Camanducaia",
+    "estado": "MG",
+    "curiosidade": "Abriga Monte Verde, um dos destinos turísticos mais procurados do sudeste."
+  },
+  {
+    "municipio": "Cambuí",
+    "estado": "MG",
+    "curiosidade": "Cidade tradicional na música sertaneja e na produção de doces caseiros."
+  },
+  {
+    "municipio": "Cambuquira",
+    "estado": "MG",
+    "curiosidade": "Famosa pelas águas minerais consideradas medicinais desde o Império."
+  },
+  {
+    "municipio": "Campanário",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena conhecida por festas de reis e preservação da tradição violeira."
+  },
+  {
+    "municipio": "Campanha",
+    "estado": "MG",
+    "curiosidade": "Uma das cidades mais antigas do sul de MG, berço de políticos históricos brasileiros."
+  },
+  {
+    "municipio": "Campestre",
+    "estado": "MG",
+    "curiosidade": "Famosa pela produção de frutas e por festas agrícolas tradicionais."
+  },
+  {
+    "municipio": "Campina Verde",
+    "estado": "MG",
+    "curiosidade": "Conhecida por grandes festas de pecuária e competições de cavalgada."
+  },
+  {
+    "municipio": "Campo Azul",
+    "estado": "MG",
+    "curiosidade": "Tradições sertanejas e culinária local marcam as festas do município."
+  },
+  {
+    "municipio": "Campo Belo",
+    "estado": "MG",
+    "curiosidade": "Cidade de forte presença musical, berço de grandes bandas regionais."
+  },
+  {
+    "municipio": "Campo do Meio",
+    "estado": "MG",
+    "curiosidade": "Centro produtor de café e de festas rurais tradicionais da região."
+  },
+  {
+    "municipio": "Campo Florido",
+    "estado": "MG",
+    "curiosidade": "Importante produtora agrícola e famosa por festas comunitárias animadas."
+  },
+  {
+    "municipio": "Campos Altos",
+    "estado": "MG",
+    "curiosidade": "Cidade com fortes tradições católicas e festas centenárias preservadas."
+  },
+  {
+    "municipio": "Campos Gerais",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés especiais reconhecidos internacionalmente."
+  },
+  {
+    "municipio": "Cana Verde",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila marcada pela cultura sertaneja e festas religiosas."
+  },
+  {
+    "municipio": "Canaã",
+    "estado": "MG",
+    "curiosidade": "Recanto de tradições rurais com danças e cantos antigos preservados."
+  },
+  {
+    "municipio": "Canápolis",
+    "estado": "MG",
+    "curiosidade": "Famosa pela produção agrícola diversificada e por festas tradicionais."
+  },
+  {
+    "municipio": "Candeias",
+    "estado": "MG",
+    "curiosidade": "Produtora de cachaças premiadas e sede de festivais gastronômicos."
+  },
+  {
+    "municipio": "Canto do Rio",
+    "estado": "MG",
+    "curiosidade": "Região marcada pela cultura ribeirinha e por tradições de pescadores antigos."
+  },
+  {
+    "municipio": "Caparaó",
+    "estado": "MG",
+    "curiosidade": "Abriga o lado mineiro do Parque Nacional do Caparaó e produz cafés especiais."
+  },
+  {
+    "municipio": "Capela Nova",
+    "estado": "MG",
+    "curiosidade": "Tem forte tradição católica e festas locais muito preservadas."
+  },
+  {
+    "municipio": "Capelinha",
+    "estado": "MG",
+    "curiosidade": "Sede de um dos maiores festivais de música sertaneja de Minas, o 'Capelinha Rodeio Show'."
+  },
+  {
+    "municipio": "Capetinga",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por tradições rurais e produção de laticínios."
+  },
+  {
+    "municipio": "Capim Branco",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradição de folias de reis e grupos de canto antigos."
+  },
+  {
+    "municipio": "Capinópolis",
+    "estado": "MG",
+    "curiosidade": "Produtora agrícola com forte presença de festivais agropecuários."
+  },
+  {
+    "municipio": "Capitão Andrade",
+    "estado": "MG",
+    "curiosidade": "Reconhecida pelas tradições rurais e festas de família muito preservadas."
+  },
+  {
+    "municipio": "Capitão Enéas",
+    "estado": "MG",
+    "curiosidade": "Tem forte tradição sertaneja e laços culturais ligados ao norte de MG."
+  },
+  {
+    "municipio": "Capitólio",
+    "estado": "MG",
+    "curiosidade": "Famosa pelos cânions do Lago de Furnas e destino turístico dos mais procurados do Brasil."
+  },
+  {
+    "municipio": "Caputira",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva tradições de colheita e festas rurais seculares."
+  },
+  {
+    "municipio": "Caraí",
+    "estado": "MG",
+    "curiosidade": "Região conhecida pelo artesanato típico do Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Caranaíba",
+    "estado": "MG",
+    "curiosidade": "Famosa por festas religiosas tradicionais e culinária mineira autêntica."
+  },
+  {
+    "municipio": "Carandaí",
+    "estado": "MG",
+    "curiosidade": "Conhecida por seu queijo e doces artesanais feitos em tachos de cobre."
+  },
+  {
+    "municipio": "Carangola",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte tradição teatral e artística no interior mineiro."
+  },
+  {
+    "municipio": "Caratinga",
+    "estado": "MG",
+    "curiosidade": "Terra natal do cantor Agnaldo Timóteo e do cartunista Ziraldo."
+  },
+  {
+    "municipio": "Carbonita",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela produção de cachaças artesanais e festas rurais antigas."
+  },
+  {
+    "municipio": "Careaçu",
+    "estado": "MG",
+    "curiosidade": "Cidade que mantém viva a tradição de corais e bandas centenárias."
+  },
+  {
+    "municipio": "Carlos Chagas",
+    "estado": "MG",
+    "curiosidade": "Local marcado por histórias de tropeiros e produção de farinha artesanal."
+  },
+  {
+    "municipio": "Carmésia",
+    "estado": "MG",
+    "curiosidade": "Pequeno município que preserva celebrações religiosas e músicas rurais antigas."
+  },
+  {
+    "municipio": "Carmo da Cachoeira",
+    "estado": "MG",
+    "curiosidade": "Importante centro espiritualista com retiros e eventos meditativos."
+  },
+  {
+    "municipio": "Carmo da Mata",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelos doces de leite caseiros e festas tradicionais."
+  },
+  {
+    "municipio": "Carmo de Minas",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés especiais reconhecidos mundialmente."
+  },
+  {
+    "municipio": "Carmo do Cajuru",
+    "estado": "MG",
+    "curiosidade": "Famosa por peças religiosas feitas por artesãos locais."
+  },
+  {
+    "municipio": "Carmo do Paranaíba",
+    "estado": "MG",
+    "curiosidade": "Terra da tradicional música sertaneja mineira e palco de grandes festas agropecuárias."
+  },
+  {
+    "municipio": "Carmo do Rio Claro",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela Ilha do Pimenta e pela produção de artesanato em tear."
+  },
+  {
+    "municipio": "Carmópolis de Minas",
+    "estado": "MG",
+    "curiosidade": "Produtor de quitandas premiadas, especialmente rosquinhas e broas."
+  },
+  {
+    "municipio": "Carneirinho",
+    "estado": "MG",
+    "curiosidade": "Município de forte identidade rural, com festas sertanejas tradicionais."
+  },
+  {
+    "municipio": "Carrancas",
+    "estado": "MG",
+    "curiosidade": "Um dos destinos de cachoeiras mais famosos de MG e cenário de gravações de novelas."
+  },
+  {
+    "municipio": "Carvalhópolis",
+    "estado": "MG",
+    "curiosidade": "Famosa por doces e pela tradicional Festa do Carro de Boi."
+  },
+  {
+    "municipio": "Carvalhos",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila conhecida por trilhas antigas e retiros religiosos."
+  },
+  {
+    "municipio": "Casa Grande",
+    "estado": "MG",
+    "curiosidade": "Sede do Museu de Artes e Ofícios do Carvão, que preserva histórias do garimpo local."
+  },
+  {
+    "municipio": "Cascalho Rico",
+    "estado": "MG",
+    "curiosidade": "Conhecida por pedras preciosas encontradas na região desde o século XVIII."
+  },
+  {
+    "municipio": "Cássia",
+    "estado": "MG",
+    "curiosidade": "Local de peregrinação devido ao Santuário de Santa Rita de Cássia, um dos maiores do Brasil."
+  },
+  {
+    "municipio": "Cataguases",
+    "estado": "MG",
+    "curiosidade": "Referência nacional em cinema e literatura modernista; palco de filmes brasileiros clássicos."
+  },
+  {
+    "municipio": "Catas Altas",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica cercada pela Serra do Caraça, famosa pela Festa do Vinho."
+  },
+  {
+    "municipio": "Catas Altas da Noruega",
+    "estado": "MG",
+    "curiosidade": "Pequena e charmosa, conhecida por seu queijo artesanal e ambiente serrano."
+  },
+  {
+    "municipio": "Catuji",
+    "estado": "MG",
+    "curiosidade": "Cidade onde a música sertaneja raiz ainda reina em festas familiares."
+  },
+  {
+    "municipio": "Catuti",
+    "estado": "MG",
+    "curiosidade": "Forte presença cultural indígena e sertaneja, com festas regionais animadas."
+  },
+  {
+    "municipio": "Caxambu",
+    "estado": "MG",
+    "curiosidade": "Possui o maior complexo hidromineral do planeta, com águas de propriedades únicas."
+  },
+  {
+    "municipio": "Cedro do Abaeté",
+    "estado": "MG",
+    "curiosidade": "Lugar que mantém viva a tradição das congadas e folias rurais."
+  },
+  {
+    "municipio": "Central de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte presença de bandas de música e corais seculares."
+  },
+  {
+    "municipio": "Centralina",
+    "estado": "MG",
+    "curiosidade": "Famosa pela produção de alho e por festas agropecuárias tradicionais."
+  },
+  {
+    "municipio": "Chácara",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva culinária mineira autêntica e festas religiosas."
+  },
+  {
+    "municipio": "Chalé",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela agricultura familiar e festas rurais tradicionais."
+  },
+  {
+    "municipio": "Chapada do Norte",
+    "estado": "MG",
+    "curiosidade": "Ponto importante da cultura quilombola no Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Chapada Gaúcha",
+    "estado": "MG",
+    "curiosidade": "Cidade influenciada pela cultura gaúcha, com chimarrão, rodeios e tradições preservadas."
+  },
+  {
+    "municipio": "Chiador",
+    "estado": "MG",
+    "curiosidade": "Região com tradições de corais e bandas desde o século XIX."
+  },
+  {
+    "municipio": "Cipotânea",
+    "estado": "MG",
+    "curiosidade": "Famosa pelo artesanato de couro e produção de cachaça artesanal."
+  },
+  {
+    "municipio": "Claraval",
+    "estado": "MG",
+    "curiosidade": "Nasceu ao redor de um mosteiro cisterciense; destino de retiros e peregrinações."
+  },
+  {
+    "municipio": "Claro dos Poções",
+    "estado": "MG",
+    "curiosidade": "Tem forte tradição sertaneja e festas de laço e cavalgada."
+  },
+  {
+    "municipio": "Cláudio",
+    "estado": "MG",
+    "curiosidade": "Maior polo moveleiro artesanal de MG, com móveis feitos à mão reconhecidos nacionalmente."
+  },
+  {
+    "municipio": "Coimbra",
+    "estado": "MG",
+    "curiosidade": "Cidade universitária com grande influência da UFV e eventos culturais estudantis."
+  },
+  {
+    "municipio": "Coluna",
+    "estado": "MG",
+    "curiosidade": "Cidade rural famosa por festas religiosas e música caipira."
+  },
+  {
+    "municipio": "Comendador Gomes",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela pecuária de alta qualidade e produção de leite."
+  },
+  {
+    "municipio": "Comercinho",
+    "estado": "MG",
+    "curiosidade": "Cidade natal do cantor Euclydes da Cunha, conhecido na música sertaneja."
+  },
+  {
+    "municipio": "Conceição da Aparecida",
+    "estado": "MG",
+    "curiosidade": "Forte na produção de café e sede de festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Conceição da Barra de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica com tradições barrocas preservadas."
+  },
+  {
+    "municipio": "Conceição das Alagoas",
+    "estado": "MG",
+    "curiosidade": "Forte polo sucroalcooleiro, com usinas tradicionais na região."
+  },
+  {
+    "municipio": "Conceição das Pedras",
+    "estado": "MG",
+    "curiosidade": "Conhecida por festas religiosas e casarios antigos preservados."
+  },
+  {
+    "municipio": "Conceição de Ipanema",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por festas juninas e música caipira tradicional."
+  },
+  {
+    "municipio": "Conceição do Mato Dentro",
+    "estado": "MG",
+    "curiosidade": "Lar da Cachoeira do Tabuleiro, a maior de Minas e uma das maiores do Brasil."
+  },
+  {
+    "municipio": "Conceição do Pará",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva culinária mineira autêntica e festas comunitárias."
+  },
+  {
+    "municipio": "Conceição do Rio Verde",
+    "estado": "MG",
+    "curiosidade": "Famosa pelas águas terapêuticas e pelas tradicionais festas de inverno."
+  },
+  {
+    "municipio": "Conceição dos Ouros",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida por seu polo industrial têxtil e festas italianas."
+  },
+  {
+    "municipio": "Cônego Marinho",
+    "estado": "MG",
+    "curiosidade": "Região de forte identidade sertaneja, com música e tradições antigas preservadas."
+  },
+  {
+    "municipio": "Confins",
+    "estado": "MG",
+    "curiosidade": "Sede do principal aeroporto internacional do estado, mas também preserva tradições rurais fora da área urbana."
+  },
+  {
+    "municipio": "Congonhal",
+    "estado": "MG",
+    "curiosidade": "Famosa por produção agrícola familiar e doces caseiros muito conhecidos."
+  },
+  {
+    "municipio": "Congonhas",
+    "estado": "MG",
+    "curiosidade": "Patrimônio Mundial da UNESCO, com as obras-primas dos Profetas de Aleijadinho."
+  },
+  {
+    "municipio": "Conquista",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva festas tradicionais com música sertaneja raiz."
+  },
+  {
+    "municipio": "Conselheiro Lafaiete",
+    "estado": "MG",
+    "curiosidade": "Importante polo cultural e histórico da Estrada Real."
+  },
+  {
+    "municipio": "Conselheiro Pena",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte tradição ferroviária e música interiorana."
+  },
+  {
+    "municipio": "Consolação",
+    "estado": "MG",
+    "curiosidade": "Famosa por trilhas de montanha e clima serrano."
+  },
+  {
+    "municipio": "Contagem",
+    "estado": "MG",
+    "curiosidade": "Uma das primeiras cidades industriais de MG, famosa pelos parques e pela cena cultural urbana."
+  },
+  {
+    "municipio": "Coqueiral",
+    "estado": "MG",
+    "curiosidade": "Produtora de café e queijos caseiros muito apreciados."
+  },
+  {
+    "municipio": "Coração de Jesus",
+    "estado": "MG",
+    "curiosidade": "Celebra uma das festas religiosas mais tradicionais do norte mineiro."
+  },
+  {
+    "municipio": "Cordisburgo",
+    "estado": "MG",
+    "curiosidade": "Terra natal de Guimarães Rosa e abriga a famosa Gruta do Maquiné."
+  },
+  {
+    "municipio": "Cordislândia",
+    "estado": "MG",
+    "curiosidade": "Cidade rural conhecida por sua culinária típica e doces caseiros."
+  },
+  {
+    "municipio": "Corinto",
+    "estado": "MG",
+    "curiosidade": "Marco da Estrada Real e conhecida por festas tradicionais antigas."
+  },
+  {
+    "municipio": "Coroaci",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte presença de bandas de música e festas religiosas."
+  },
+  {
+    "municipio": "Coromandel",
+    "estado": "MG",
+    "curiosidade": "Até hoje rende achados de diamantes; foi palco de vários ciclos garimpeiros."
+  },
+  {
+    "municipio": "Coronel Fabriciano",
+    "estado": "MG",
+    "curiosidade": "Cidade ligada ao Vale do Aço, marcada por forte movimento cultural e esportivo."
+  },
+  {
+    "municipio": "Coronel Murta",
+    "estado": "MG",
+    "curiosidade": "Capital das pedras preciosas no Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Coronel Pacheco",
+    "estado": "MG",
+    "curiosidade": "Conhecida por festas familiares e tradições rurais."
+  },
+  {
+    "municipio": "Coronel Xavier Chaves",
+    "estado": "MG",
+    "curiosidade": "Abriga a cachaçaria mais antiga em funcionamento contínuo do Brasil."
+  },
+  {
+    "municipio": "Córrego Danta",
+    "estado": "MG",
+    "curiosidade": "Lugar onde tradições de reisados e congadas se mantiveram vivas."
+  },
+  {
+    "municipio": "Córrego do Bom Jesus",
+    "estado": "MG",
+    "curiosidade": "Cidade de clima serrano e influência de tradições católicas antigas."
+  },
+  {
+    "municipio": "Córrego Fundo",
+    "estado": "MG",
+    "curiosidade": "Conhecida por eventos comunitários e culinária típica do centro-oeste mineiro."
+  },
+  {
+    "municipio": "Córrego Novo",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena que mantém viva a tradição das bandas de música interioranas."
+  },
+  {
+    "municipio": "Couto de Magalhães de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica que preserva tradições do antigo ciclo do ouro e arquitetura colonial."
+  },
+  {
+    "municipio": "Crisólita",
+    "estado": "MG",
+    "curiosidade": "Região com forte cultura sertaneja, ligada a músicas e festas rurais."
+  },
+  {
+    "municipio": "Cristais",
+    "estado": "MG",
+    "curiosidade": "Famosa pela fabricação artesanal de selas e artigos de couro para cavalgadas."
+  },
+  {
+    "municipio": "Cristália",
+    "estado": "MG",
+    "curiosidade": "Cidade com cultura sertaneja preservada e culinária baseada em receitas antigas."
+  },
+  {
+    "municipio": "Cristiano Otoni",
+    "estado": "MG",
+    "curiosidade": "Possui festas religiosas tradicionais e artesanato rural artesanal."
+  },
+  {
+    "municipio": "Cristina",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés especiais e de doces premiados."
+  },
+  {
+    "municipio": "Crucilândia",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida por suas festas tradicionais e bandas centenárias."
+  },
+  {
+    "municipio": "Cruzeiro da Fortaleza",
+    "estado": "MG",
+    "curiosidade": "Região agrícola forte com festas religiosas muito preservadas."
+  },
+  {
+    "municipio": "Cruzília",
+    "estado": "MG",
+    "curiosidade": "Berço do tradicional queijo 'frescal', um dos mais consumidos do sul mineiro."
+  },
+  {
+    "municipio": "Cuparaque",
+    "estado": "MG",
+    "curiosidade": "Cidade nova que mantém tradições rurais e música sertaneja local."
+  },
+  {
+    "municipio": "Curral de Dentro",
+    "estado": "MG",
+    "curiosidade": "Marcada por histórias de tropeiros e festas com música raiz."
+  },
+  {
+    "municipio": "Curvelo",
+    "estado": "MG",
+    "curiosidade": "Sede do tradicional 'Forró de Curvelo', um dos maiores eventos musicais do estado."
+  },
+  [
+  {
+    "municipio": "Datas",
+    "estado": "MG",
+    "curiosidade": "Preserva tradições de congados que existem há mais de 150 anos, transmitidas por famílias inteiras."
+  },
+  {
+    "municipio": "Delfim Moreira",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelo clima frio e pelas fazendas históricas que produzem queijos artesanais desde o século XIX."
+  },
+  {
+    "municipio": "Delfinópolis",
+    "estado": "MG",
+    "curiosidade": "Famosa por mais de 120 cachoeiras catalogadas e por ter sido cenário de gravações de filmes nacionais."
+  },
+  {
+    "municipio": "Delta",
+    "estado": "MG",
+    "curiosidade": "Cidade jovem com tradição forte na produção de açúcar e etanol."
+  },
+  {
+    "municipio": "Descoberto",
+    "estado": "MG",
+    "curiosidade": "Realiza há décadas um dos carnavais de rua mais tradicionais da Zona da Mata."
+  },
+  {
+    "municipio": "Desterro de Entre Rios",
+    "estado": "MG",
+    "curiosidade": "Conserva casas coloniais e festas religiosas que remontam aos primeiros povoados mineiros."
+  },
+  {
+    "municipio": "Desterro do Melo",
+    "estado": "MG",
+    "curiosidade": "Conhecida por doces caseiros e pela Festa do Rosário, tradição de mais de 100 anos."
+  },
+  {
+    "municipio": "Diamantina",
+    "estado": "MG",
+    "curiosidade": "Cidade natal de Juscelino Kubitschek e famosa pelos 'Serenatas de Diamantina', patrimônio imaterial brasileiro."
+  },
+  {
+    "municipio": "Diogo de Vasconcelos",
+    "estado": "MG",
+    "curiosidade": "Lugar onde o toque de caixa e as bandas de coreto ainda animam festas tradicionais antigas."
+  },
+  {
+    "municipio": "Dionísio",
+    "estado": "MG",
+    "curiosidade": "Região com fazendas históricas de café que preservam arquitetura do século XIX."
+  },
+  {
+    "municipio": "Divinésia",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida por sua culinária rural e eventos comunitários antigos."
+  },
+  {
+    "municipio": "Divino",
+    "estado": "MG",
+    "curiosidade": "Terra de um dos carnavais mais tradicionais da região, com blocos que existem há décadas."
+  },
+  {
+    "municipio": "Divino das Laranjeiras",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por lendas de antigos garimpos e festas de violeiros."
+  },
+  {
+    "municipio": "Divinolândia de Minas",
+    "estado": "MG",
+    "curiosidade": "Possui tradições de Folia de Reis preservadas por grupos familiares."
+  },
+  {
+    "municipio": "Divinópolis",
+    "estado": "MG",
+    "curiosidade": "Berço de grandes estilistas e referência na moda mineira, famosa por sua indústria têxtil."
+  },
+  {
+    "municipio": "Divisa Alegre",
+    "estado": "MG",
+    "curiosidade": "Conhecida por feiras rurais e festas sertanejas tradicionais."
+  },
+  {
+    "municipio": "Divisa Nova",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés especiais e conhecida por festas típicas de colheita."
+  },
+  {
+    "municipio": "Divisópolis",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja com raízes culturais fortes em cantorias e folias religiosas."
+  },
+  {
+    "municipio": "Dom Bosco",
+    "estado": "MG",
+    "curiosidade": "Destaque na criação de gado e em festas tradicionais do campo."
+  },
+  {
+    "municipio": "Dom Cavati",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte influência musical de bandas interioranas antigas."
+  },
+  {
+    "municipio": "Dom Joaquim",
+    "estado": "MG",
+    "curiosidade": "Local que preserva documentos raros do período do ouro, incluindo mapas coloniais."
+  },
+  {
+    "municipio": "Dom Silvério",
+    "estado": "MG",
+    "curiosidade": "Possui tradições musicais e festas católicas seculares."
+  },
+  {
+    "municipio": "Dom Viçoso",
+    "estado": "MG",
+    "curiosidade": "Famosa pelos doces coloniais feitos em fogões de lenha tradicionais."
+  },
+  {
+    "municipio": "Dona Eusébia",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida por bandas de música e quadrilhas tradicionais nas festas juninas."
+  },
+  {
+    "municipio": "Dores de Campos",
+    "estado": "MG",
+    "curiosidade": "Capital da sela artesanal, reconhecida pela produção de artigos de couro."
+  },
+  {
+    "municipio": "Dores de Guanhães",
+    "estado": "MG",
+    "curiosidade": "Tradições de Folia de Reis e festas familiares são preservadas há gerações."
+  },
+  {
+    "municipio": "Dores do Indaiá",
+    "estado": "MG",
+    "curiosidade": "Realiza uma das festas de cavalgada mais antigas da região centro-oeste."
+  },
+  {
+    "municipio": "Dores do Turvo",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena que mantém tradições culinárias e festas locais de origem rural."
+  },
+  {
+    "municipio": "Doresópolis",
+    "estado": "MG",
+    "curiosidade": "Beira do Rio São Francisco, preservando cultura ribeirinha e eventos tradicionais."
+  },
+  {
+    "municipio": "Douradoquara",
+    "estado": "MG",
+    "curiosidade": "Terra de garimpos antigos e histórias ligadas ao ciclo do ouro."
+  },
+  {
+    "municipio": "Durandé",
+    "estado": "MG",
+    "curiosidade": "Região agrícola forte com tradições familiares preservadas em festas e culinária."
+  },
+  {
+    "municipio": "Elói Mendes",
+    "estado": "MG",
+    "curiosidade": "Cidade natal do famoso compositor sertanejo Pena Branca, da dupla Pena Branca & Xavantinho."
+  },
+  {
+    "municipio": "Engenheiro Caldas",
+    "estado": "MG",
+    "curiosidade": "Possui festas religiosas tradicionais com bandas centenárias."
+  },
+  {
+    "municipio": "Engenheiro Navarro",
+    "estado": "MG",
+    "curiosidade": "Cidade atravessada pela antiga Estrada de Ferro, preservando estações históricas."
+  },
+  {
+    "municipio": "Entre Folhas",
+    "estado": "MG",
+    "curiosidade": "Região rural forte com tradições de cantorias e culinária caseira."
+  },
+  {
+    "municipio": "Entre Rios de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade berço da raça de cavalo Campolina, apreciada em todo o Brasil."
+  },
+  {
+    "municipio": "Ervália",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelo festival de música alternativa 'Ervalia Rock', que acontece há décadas."
+  },
+  {
+    "municipio": "Esmeraldas",
+    "estado": "MG",
+    "curiosidade": "Possui comunidades tradicionais descendentes de antigos quilombos."
+  },
+  {
+    "municipio": "Espera Feliz",
+    "estado": "MG",
+    "curiosidade": "Uma das cidades mais ligadas ao café de altura, com vários produtores premiados."
+  },
+  {
+    "municipio": "Espinosa",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela Festa do Peão e pela tradição em cavalhadas."
+  },
+  {
+    "municipio": "Espírito Santo do Dourado",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana famosa por seus queijos e tradições artesanais."
+  },
+  {
+    "municipio": "Estiva",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do morango, com festival anual que atrai visitantes de todo o país."
+  },
+  {
+    "municipio": "Estrela Dalva",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por antigos rituais religiosos e tradições de comunidade."
+  },
+  {
+    "municipio": "Estrela do Indaiá",
+    "estado": "MG",
+    "curiosidade": "Tradições sertanejas e festas de cavalgada ainda são o coração cultural da cidade."
+  },
+  {
+    "municipio": "Estrela do Sul",
+    "estado": "MG",
+    "curiosidade": "Local de um dos maiores diamantes encontrados no Brasil: o Diamante Estrela do Sul, descoberto em 1853."
+  },
+  {
+    "municipio": "Eugenópolis",
+    "estado": "MG",
+    "curiosidade": "Conhecida por sua produção de leite e doces caseiros premiados."
+  },
+  {
+    "municipio": "Ewbank da Câmara",
+    "estado": "MG",
+    "curiosidade": "Cidade ferroviária histórica com tradições de bandas de música e festas religiosas."
+  },
+  {
+    "municipio": "Extrema",
+    "estado": "MG",
+    "curiosidade": "Referência nacional em ecoturismo e cidade pioneira em projetos ambientais de recuperação florestal."
+  },
+  {
+    "municipio": "Fama",
+    "estado": "MG",
+    "curiosidade": "Beira da Represa de Furnas, conhecida por sua vida tranquila e pescarias."
+  },
+  {
+    "municipio": "Faria Lemos",
+    "estado": "MG",
+    "curiosidade": "Local de colinas e vinhedos que produzem vinhos de altitude."
+  },
+  {
+    "municipio": "Felício dos Santos",
+    "estado": "MG",
+    "curiosidade": "Cidade com raízes quilombolas e festivais culturais importantes."
+  },
+  {
+    "municipio": "Felisburgo",
+    "estado": "MG",
+    "curiosidade": "Mantém tradições sertanejas e festas de raiz com violeiros locais."
+  },
+  {
+    "municipio": "Felixlândia",
+    "estado": "MG",
+    "curiosidade": "Conhecida por sua culinária típica e por eventos tradicionalíssimos de Folia de Reis."
+  },
+  {
+    "municipio": "Fernandes Tourinho",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por festas comunitárias e forte presença de bandas de música."
+  },
+  {
+    "municipio": "Ferros",
+    "estado": "MG",
+    "curiosidade": "Sua arquitetura preserva traços da era do ouro e da expansão ferroviária."
+  },
+  {
+    "municipio": "Fervedouro",
+    "estado": "MG",
+    "curiosidade": "Região rural forte com destaque para produção de hortaliças e festas de colheita."
+  },
+  {
+    "municipio": "Florestal",
+    "estado": "MG",
+    "curiosidade": "Sede da universidade UFV-CAF, grande referência em estudos ambientais."
+  },
+  {
+    "municipio": "Formiga",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida pelo tradicional Festival da Linguiça e por bandas centenárias."
+  },
+  {
+    "municipio": "Formoso",
+    "estado": "MG",
+    "curiosidade": "Região serrana com tradições sertanejas muito preservadas."
+  },
+  {
+    "municipio": "Fortaleza de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade com história ligada ao garimpo e ao ciclo do ouro, preservada em museus locais."
+  },
+  {
+    "municipio": "Fortuna de Minas",
+    "estado": "MG",
+    "curiosidade": "Local de festas rurais animadas e culinária mineira tradicional."
+  },
+  {
+    "municipio": "Francisco Badaró",
+    "estado": "MG",
+    "curiosidade": "Importante polo cultural do Vale do Jequitinhonha, berço de artistas e artesãos."
+  },
+  {
+    "municipio": "Francisco Dumont",
+    "estado": "MG",
+    "curiosidade": "Famoso por festas de Folia de Reis e histórias sertanejas."
+  },
+  {
+    "municipio": "Francisco Sá",
+    "estado": "MG",
+    "curiosidade": "Celebra uma das maiores vaquejadas do norte de Minas."
+  },
+  {
+    "municipio": "Franciscópolis",
+    "estado": "MG",
+    "curiosidade": "Cidade de cultura rural forte, com festivais de viola e culinária sertaneja."
+  },
+  {
+    "municipio": "Frei Gaspar",
+    "estado": "MG",
+    "curiosidade": "Região de antigas fazendas que preservam arquitetura do período colonial."
+  },
+  {
+    "municipio": "Frei Inocêncio",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila que mantém viva a tradição de bandas de música interioranas."
+  },
+  {
+    "municipio": "Frei Lagonegro",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela preservação da culinária caipira e festas religiosas."
+  },
+  {
+    "municipio": "Fronteira",
+    "estado": "MG",
+    "curiosidade": "Cidade banhada pelo Rio Grande, famosa pela pesca esportiva."
+  },
+  {
+    "municipio": "Fronteira dos Vales",
+    "estado": "MG",
+    "curiosidade": "Região marcada por tradições rurais e forte cultura sertaneja."
+  },
+  {
+    "municipio": "Fruta de Leite",
+    "estado": "MG",
+    "curiosidade": "Famosa por festas de cantorias e por tradições de toques de caixa."
+  },
+  {
+    "municipio": "Frutal",
+    "estado": "MG",
+    "curiosidade": "Cidade natal do cantor Gusttavo Lima e grande produtora agrícola."
+  },
+  {
+    "municipio": "Funilândia",
+    "estado": "MG",
+    "curiosidade": "Pequena e charmosa, conhecida por festas rurais e culinária local tradicional."
+  },
+  {
+    "municipio": "Galiléia",
+    "estado": "MG",
+    "curiosidade": "Cidade ribeirinha com tradições antigas de pescadores e música sertaneja."
+  },
+  {
+    "municipio": "Gameleiras",
+    "estado": "MG",
+    "curiosidade": "Região sertaneja com festas tradicionais e culinária forte em raízes locais."
+  },
+  {
+    "municipio": "Glaucilândia",
+    "estado": "MG",
+    "curiosidade": "Conhecida por sua hospitalidade e festas familiares de longa tradição."
+  },
+  {
+    "municipio": "Goiabeira",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por produção de frutas e por festas comunitárias."
+  },
+  {
+    "municipio": "Goianá",
+    "estado": "MG",
+    "curiosidade": "Próxima a antigas rotas de tropeiros e conhecida por festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Gonçalves",
+    "estado": "MG",
+    "curiosidade": "Destino turístico famoso por montanhas, clima frio e culinária artesanal."
+  },
+  {
+    "municipio": "Gonzaga",
+    "estado": "MG",
+    "curiosidade": "Cidade natal de Aécio Neves e marcada por tradição política forte."
+  },
+  {
+    "municipio": "Gouveia",
+    "estado": "MG",
+    "curiosidade": "Possui artesanato premiado e tradição de lapidação de pedras."
+  },
+  {
+    "municipio": "Governador Valadares",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelas histórias de emigração para os EUA e por ser referência em voo livre."
+  },
+  {
+    "municipio": "Grão Mogol",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica com ruas de pedra e tradições culturais que remontam ao período do garimpo."
+  },
+  {
+    "municipio": "Grupiara",
+    "estado": "MG",
+    "curiosidade": "Município pequeno de identidade rural forte e tradições comunitárias preservadas."
+  },
+  {
+    "municipio": "Guanhães",
+    "estado": "MG",
+    "curiosidade": "Importante centro cultural com festivais de música, teatro e dança."
+  },
+  {
+    "municipio": "Guapé",
+    "estado": "MG",
+    "curiosidade": "Muitas áreas do município estão submersas pela Represa de Furnas, criando ilhas e pontos turísticos únicos."
+  },
+  {
+    "municipio": "Guaraciaba",
+    "estado": "MG",
+    "curiosidade": "Cidade famosa por suas tradições religiosas, especialmente a Festa de Nossa Senhora Aparecida."
+  },
+  {
+    "municipio": "Guaraciama",
+    "estado": "MG",
+    "curiosidade": "Região tranquila com grande presença de tradições sertanejas e música regional."
+  },
+  {
+    "municipio": "Guaranésia",
+    "estado": "MG",
+    "curiosidade": "Famosa pela produção de café e por seu carnaval tradicional."
+  },
+  {
+    "municipio": "Guarani",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por festas do Rosário e tradições religiosas seculares."
+  },
+  {
+    "municipio": "Guarará",
+    "estado": "MG",
+    "curiosidade": "Possui tradições musicais antigas e festas juninas tradicionais."
+  },
+  {
+    "municipio": "Guarda-Mor",
+    "estado": "MG",
+    "curiosidade": "Famosa pela produção de queijo e por festas rurais animadas."
+  },
+  {
+    "municipio": "Guaxupé",
+    "estado": "MG",
+    "curiosidade": "Maior polo de café do Brasil e sede da Cooxupé, uma das maiores cooperativas do mundo."
+  },
+  {
+    "municipio": "Guidoval",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida por suas bandas de música e eventos culturais regionais."
+  },
+  {
+    "municipio": "Guimarânia",
+    "estado": "MG",
+    "curiosidade": "Região agrícola forte com festas de exposição agropecuária famosas."
+  },
+  {
+    "municipio": "Guiricema",
+    "estado": "MG",
+    "curiosidade": "Tradições rurais e festas culturais com música ao vivo fazem parte da identidade local."
+  },
+  {
+    "municipio": "Gurinhatã",
+    "estado": "MG",
+    "curiosidade": "Forte na agropecuária e conhecida por seu rodeio anual."
+  },
+  {
+    "municipio": "Heliodora",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana famosa por cafés de qualidade e retiros religiosos."
+  },
+  {
+    "municipio": "Iapu",
+    "estado": "MG",
+    "curiosidade": "Região marcada por tradições musicais e festas juninas antigas."
+  },
+  [
+  {
+    "municipio": "Ibertioga",
+    "estado": "MG",
+    "curiosidade": "Famosa por seus doces artesanais e pelo modo tradicional de preparo de queijo minas."
+  },
+  {
+    "municipio": "Ibiá",
+    "estado": "MG",
+    "curiosidade": "Importante produtora de leite e sede de indústrias que transformaram a economia local desde o século XX."
+  },
+  {
+    "municipio": "Ibiaí",
+    "estado": "MG",
+    "curiosidade": "Banho de cultura ribeirinha, com festivais de pesca e culinária típica às margens do São Francisco."
+  },
+  {
+    "municipio": "Ibiracatu",
+    "estado": "MG",
+    "curiosidade": "Comunidade de identidade sertaneja marcada pela música raiz e festas populares."
+  },
+  {
+    "municipio": "Ibiraci",
+    "estado": "MG",
+    "curiosidade": "Conhecida por cafés especiais e pela proximidade com o Lago de Furnas, atraindo pescadores e turistas."
+  },
+  {
+    "municipio": "Ibirité",
+    "estado": "MG",
+    "curiosidade": "Berço de artistas mineiros e dona de uma cena musical urbana muito forte."
+  },
+  {
+    "municipio": "Ibitiúra de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana com tradição em retiros espirituais e produção artesanal de mel."
+  },
+  {
+    "municipio": "Ibituruna",
+    "estado": "MG",
+    "curiosidade": "A pequena população preserva festas antigas de origem portuguesa com procissões e cantorias."
+  },
+  {
+    "municipio": "Icaraí de Minas",
+    "estado": "MG",
+    "curiosidade": "Cultura ribeirinha forte, com histórias de barqueiros e pescadores que passaram gerações."
+  },
+  {
+    "municipio": "Igarapé",
+    "estado": "MG",
+    "curiosidade": "Conhecida por retiros religiosos e pela tradicional Festa de Nossa Senhora das Neves."
+  },
+  {
+    "municipio": "Igaratinga",
+    "estado": "MG",
+    "curiosidade": "Capital mineira da cerâmica artesanal, com peças reconhecidas em todo o país."
+  },
+  {
+    "municipio": "Iguatama",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva lendas sobre antigos caminhos de tropeiros e reuniões de cantores de viola."
+  },
+  {
+    "municipio": "Ijaci",
+    "estado": "MG",
+    "curiosidade": "Conserva a tradição do 'Boi da Manta', folguedo típico de origem portuguesa."
+  },
+  {
+    "municipio": "Ilicínea",
+    "estado": "MG",
+    "curiosidade": "Possui bandas centenárias que tocam em festas religiosas e desfiles tradicionais."
+  },
+  {
+    "municipio": "Imbé de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com festas comunitárias antigas e culinária típica apreciada."
+  },
+  {
+    "municipio": "Inconfidentes",
+    "estado": "MG",
+    "curiosidade": "Conhecida nacionalmente pela produção de tricô artesanal e malharias."
+  },
+  {
+    "municipio": "Indaiabira",
+    "estado": "MG",
+    "curiosidade": "Tradição forte em festas sertanejas e encontros de violeiros."
+  },
+  {
+    "municipio": "Indianópolis",
+    "estado": "MG",
+    "curiosidade": "Sede de uma das maiores usinas hidrelétricas da região, com forte influência na economia local."
+  },
+  {
+    "municipio": "Ingaí",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana famosa por trilhas e por receitas tradicionais de bolos caseiros."
+  },
+  {
+    "municipio": "Inhapim",
+    "estado": "MG",
+    "curiosidade": "Conhecida por festivais de música gospel e eventos culturais familiares."
+  },
+  {
+    "municipio": "Inhaúma",
+    "estado": "MG",
+    "curiosidade": "Tradição em artesanato rural, especialmente em cestaria e peças de palha."
+  },
+  {
+    "municipio": "Inimutaba",
+    "estado": "MG",
+    "curiosidade": "Cidade famosa pela antiga fábrica de chapéus, que marcou gerações de moradores."
+  },
+  {
+    "municipio": "Ipaba",
+    "estado": "MG",
+    "curiosidade": "Sede de um dos maiores parques industriais do Vale do Aço."
+  },
+  {
+    "municipio": "Ipanema",
+    "estado": "MG",
+    "curiosidade": "Terra do boi Guiness 'Golias', um dos maiores bovinos já registrados no mundo."
+  },
+  {
+    "municipio": "Ipatinga",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada pela influência da Usiminas, com forte cena cultural e esportiva."
+  },
+  {
+    "municipio": "Ipiaçu",
+    "estado": "MG",
+    "curiosidade": "Região agrícola com festas tradicionais e cultura caipira preservada."
+  },
+  {
+    "municipio": "Ipuiúna",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelo artesanato de madeira e por festas religiosas antigas."
+  },
+  {
+    "municipio": "Iraí de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade famosa por águas minerais e fontes naturais exploradas historicamente."
+  },
+  {
+    "municipio": "Itabira",
+    "estado": "MG",
+    "curiosidade": "Cidade natal de Carlos Drummond de Andrade; muitos pontos da cidade homenageiam o poeta."
+  },
+  {
+    "municipio": "Itabirinha",
+    "estado": "MG",
+    "curiosidade": "Território marcado pela cultura do congado e festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Itabirito",
+    "estado": "MG",
+    "curiosidade": "Inventora do famoso pastel de angu, um dos patrimônios gastronômicos de MG."
+  },
+  {
+    "municipio": "Itacambira",
+    "estado": "MG",
+    "curiosidade": "Cidade que mantém viva a tradição de rezas cantadas e celebrações sertanejas."
+  },
+  {
+    "municipio": "Itacarambi",
+    "estado": "MG",
+    "curiosidade": "Vizinha ao Parque Nacional Cavernas do Peruaçu, um dos sítios arqueológicos mais importantes do Brasil."
+  },
+  {
+    "municipio": "Itaguara",
+    "estado": "MG",
+    "curiosidade": "Conhecida por doces artesanais e pela Festa do Rosário, muito tradicional."
+  },
+  {
+    "municipio": "Itaipé",
+    "estado": "MG",
+    "curiosidade": "Região de muita música caipira e bandas de coreto que atravessam gerações."
+  },
+  {
+    "municipio": "Itajubá",
+    "estado": "MG",
+    "curiosidade": "Referência nacional em engenharia; abriga um dos mais antigos institutos tecnológicos do país."
+  },
+  {
+    "municipio": "Itamarandiba",
+    "estado": "MG",
+    "curiosidade": "Um dos maiores produtores de eucalipto de MG, com forte patrimônio musical no congado."
+  },
+  {
+    "municipio": "Itamarati de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com festas religiosas e culinária mineira autêntica."
+  },
+  {
+    "municipio": "Itambacuri",
+    "estado": "MG",
+    "curiosidade": "Tem forte cultura evangélica e é conhecida por seus corais e festivais musicais."
+  },
+  {
+    "municipio": "Itambé do Mato Dentro",
+    "estado": "MG",
+    "curiosidade": "Possui trilhas históricas usadas por tropeiros durante o ciclo do ouro."
+  },
+  {
+    "municipio": "Itamogi",
+    "estado": "MG",
+    "curiosidade": "Cidade de imigração italiana, famosa por vinhos caseiros e festas típicas."
+  },
+  {
+    "municipio": "Itamonte",
+    "estado": "MG",
+    "curiosidade": "Abriga partes do Parque Nacional do Itatiaia e é destino de montanhismo."
+  },
+  {
+    "municipio": "Itanhandu",
+    "estado": "MG",
+    "curiosidade": "Berço de atletas de montanha e conhecida por chocolates artesanais."
+  },
+  {
+    "municipio": "Itanhomi",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por bandas musicais tradicionais e corais religiosos."
+  },
+  {
+    "municipio": "Itaobim",
+    "estado": "MG",
+    "curiosidade": "É chamada de 'Terra da Manga' pela enorme produção da fruta na região."
+  },
+  {
+    "municipio": "Itapagipe",
+    "estado": "MG",
+    "curiosidade": "Forte polo agropecuário e conhecida por seu tradicional rodeio anual."
+  },
+  {
+    "municipio": "Itapecerica",
+    "estado": "MG",
+    "curiosidade": "Uma das cidades com mais manifestações culturais vivas: congado, folia, teatro e corporações musicais."
+  },
+  {
+    "municipio": "Itapeva",
+    "estado": "MG",
+    "curiosidade": "Serrana e turística, conhecida por esportes de aventura e culinária caseira."
+  },
+  {
+    "municipio": "Itatiaiuçu",
+    "estado": "MG",
+    "curiosidade": "Forte presença da mineração, com tradições religiosas preservadas em distritos históricos."
+  },
+  {
+    "municipio": "Itaú de Minas",
+    "estado": "MG",
+    "curiosidade": "Cresceu ao redor de fábricas e tradições operárias que moldaram seu patrimônio cultural."
+  },
+  {
+    "municipio": "Itaúna",
+    "estado": "MG",
+    "curiosidade": "Reconhecida por seu carnaval de rua vibrante e por sua tradição musical."
+  },
+  {
+    "municipio": "Itaverava",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva conjuntos arquitetônicos coloniais e tradições do ciclo do ouro."
+  },
+  {
+    "municipio": "Itinga",
+    "estado": "MG",
+    "curiosidade": "Referência no artesanato em capim-dourado e palha, típico do Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Itueta",
+    "estado": "MG",
+    "curiosidade": "A antiga cidade foi realocada devido à construção da Usina de Aimorés, criando uma história única."
+  },
+  {
+    "municipio": "Ituiutaba",
+    "estado": "MG",
+    "curiosidade": "Berço de músicos sertanejos e conhecida por seu festival 'Zé do Periquito'."
+  },
+  {
+    "municipio": "Itumirim",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena marcada por tradições de fé e culinária rural."
+  },
+  {
+    "municipio": "Iturama",
+    "estado": "MG",
+    "curiosidade": "Conhecida como 'Capital Mineira do Rodeio', com eventos gigantescos todos os anos."
+  },
+  {
+    "municipio": "Itutinga",
+    "estado": "MG",
+    "curiosidade": "Possui usina hidrelétrica histórica e tradições rurais preservadas."
+  },
+  {
+    "municipio": "Jaboticatubas",
+    "estado": "MG",
+    "curiosidade": "Porta de entrada da Serra do Cipó, com cultura musical e culinária tradicionais."
+  },
+  {
+    "municipio": "Jacinto",
+    "estado": "MG",
+    "curiosidade": "Cidade banhada pelo rio Jequitinhonha, celebrada por seu artesanato regional."
+  },
+  {
+    "municipio": "Jacuí",
+    "estado": "MG",
+    "curiosidade": "Uma das cidades mais antigas de MG, com patrimônio cultural preservado e festas seculares."
+  },
+  {
+    "municipio": "Jacutinga",
+    "estado": "MG",
+    "curiosidade": "Capital nacional das malhas, famosa pela indústria têxtil."
+  },
+  {
+    "municipio": "Jaguaraçu",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte identidade rural e celebrações religiosas tradicionais."
+  },
+  {
+    "municipio": "Jaíba",
+    "estado": "MG",
+    "curiosidade": "Abriga um dos maiores projetos de irrigação agrícola da América Latina."
+  },
+  {
+    "municipio": "Jampruca",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja que preserva festivais de música raiz e de dança."
+  },
+  {
+    "municipio": "Janaúba",
+    "estado": "MG",
+    "curiosidade": "Famosa pela Festa do Galo, uma das mais conhecidas celebrações culturais do norte de Minas."
+  },
+  {
+    "municipio": "Januária",
+    "estado": "MG",
+    "curiosidade": "Capital da cachaça artesanal, com dezenas de alambiques tradicionais históricos."
+  },
+  {
+    "municipio": "Japaraíba",
+    "estado": "MG",
+    "curiosidade": "Cidade rural que mantém vivas tradições de danças e celebrações religiosas."
+  },
+  {
+    "municipio": "Japonvar",
+    "estado": "MG",
+    "curiosidade": "Forte presença sertaneja; cidade famosa pelo 'Japonvar Folia', festival de música local."
+  },
+  {
+    "municipio": "Jeceaba",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica ligada à expansão ferroviária e com casarios preservados."
+  },
+  {
+    "municipio": "Jenipapo de Minas",
+    "estado": "MG",
+    "curiosidade": "Referência em artesanato feminino do Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Jequeri",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por bandas musicais centenárias e pela tradicional Festa de São João."
+  },
+  {
+    "municipio": "Jequitaí",
+    "estado": "MG",
+    "curiosidade": "Citada na música 'O Ébrio', guarda histórias folclóricas sertanejas antigas."
+  },
+  {
+    "municipio": "Jequitibá",
+    "estado": "MG",
+    "curiosidade": "Capital do folclore mineiro, famosa por grupos de congado e catiras."
+  },
+  {
+    "municipio": "Jequitinhonha",
+    "estado": "MG",
+    "curiosidade": "Berço de artesãs famosas pelas bonecas de barro que são conhecidas internacionalmente."
+  },
+  {
+    "municipio": "Jesuânia",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana que preserva tradições antigas da culinária mineira e festas familiares."
+  },
+  {
+    "municipio": "Joaíma",
+    "estado": "MG",
+    "curiosidade": "Região com povos tradicionais e forte presença cultural indígena Pankararu."
+  },
+  {
+    "municipio": "Joanésia",
+    "estado": "MG",
+    "curiosidade": "Cidade rural conhecida por suas feiras de produtos artesanais."
+  },
+  {
+    "municipio": "João Monlevade",
+    "estado": "MG",
+    "curiosidade": "Cresceu ao redor da indústria siderúrgica e tem forte cenário musical de rock."
+  },
+  {
+    "municipio": "João Pinheiro",
+    "estado": "MG",
+    "curiosidade": "Maior município territorial de MG, com forte presença agropecuária."
+  },
+  {
+    "municipio": "Joaquim Felício",
+    "estado": "MG",
+    "curiosidade": "Região com montanhas históricas e lendas que remontam ao ciclo do ouro."
+  },
+  {
+    "municipio": "Jordânia",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte presença de música sertaneja e folguedos tradicionais."
+  },
+  {
+    "municipio": "José Gonçalves de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila do Vale do Jequitinhonha, marcada por artesanato e tradições musicais."
+  },
+  {
+    "municipio": "José Raydan",
+    "estado": "MG",
+    "curiosidade": "Cidade jovem que mantém vivas tradições rurais e festas comunitárias."
+  },
+  {
+    "municipio": "Josenópolis",
+    "estado": "MG",
+    "curiosidade": "Cultura sertaneja muito presente, com história ligada ao garimpo antigo."
+  },
+  {
+    "municipio": "Juatuba",
+    "estado": "MG",
+    "curiosidade": "Cidade industrial com crescimento rápido e tradições de festas religiosas."
+  },
+  {
+    "municipio": "Juiz de Fora",
+    "estado": "MG",
+    "curiosidade": "Berço de grandes artistas, intelectuais e da primeira usina elétrica de porte da América do Sul."
+  },
+  {
+    "municipio": "Juramento",
+    "estado": "MG",
+    "curiosidade": "Conhecida por suas tradições rurais e eventos de música raiz."
+  },
+  {
+    "municipio": "Juruaia",
+    "estado": "MG",
+    "curiosidade": "Capital da lingerie, referência nacional na produção de moda íntima."
+  },
+  {
+    "municipio": "Juvenília",
+    "estado": "MG",
+    "curiosidade": "Cidade de cultura sertaneja forte, com festas comunitárias tradicionais."
+  },
+  {
+    "municipio": "Ladainha",
+    "estado": "MG",
+    "curiosidade": "Importante polo de produção de café e local onde festas de colheita movimentam toda a cidade."
+  },
+  {
+    "municipio": "Lagamar",
+    "estado": "MG",
+    "curiosidade": "Conhecida por suas fontes naturais e tradições rurais com música sertaneja."
+  },
+  {
+    "municipio": "Lagoa da Prata",
+    "estado": "MG",
+    "curiosidade": "Industrial e culturalmente ativa, famosa por competições de ciclismo."
+  },
+  {
+    "municipio": "Lagoa dos Patos",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com festas tradicionais e culinária típica forte."
+  },
+  {
+    "municipio": "Lagoa Dourada",
+    "estado": "MG",
+    "curiosidade": "Capital brasileira do rocambole, doce que atrai turistas de todo o país."
+  },
+  {
+    "municipio": "Lagoa Formosa",
+    "estado": "MG",
+    "curiosidade": "Região conhecida por tradições de cavalhadas e festas rurais."
+  },
+  {
+    "municipio": "Lagoa Grande",
+    "estado": "MG",
+    "curiosidade": "Produtora de queijos tradicionais e conhecida por festas sertanejas animadas."
+  },
+  {
+    "municipio": "Lagoa Santa",
+    "estado": "MG",
+    "curiosidade": "Marco da paleontologia brasileira; abriga sítios onde foram descobertos fósseis humanos antigos."
+  },
+  {
+    "municipio": "Lajinha",
+    "estado": "MG",
+    "curiosidade": "Importante produtora de café e cidade de fortes tradições religiosas."
+  },
+  {
+    "municipio": "Lambari",
+    "estado": "MG",
+    "curiosidade": "Famosa pelas águas minerais engarrafadas desde o tempo do Império."
+  },
+  {
+    "municipio": "Lamim",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por corais religiosos e festivais culturais tradicionais."
+  },
+  {
+    "municipio": "Laranjal",
+    "estado": "MG",
+    "curiosidade": "Região de agricultura forte e festas comunitárias antigas."
+  },
+  {
+    "municipio": "Lassance",
+    "estado": "MG",
+    "curiosidade": "Local onde Carlos Chagas descobriu o protozoário causador da Doença de Chagas."
+  },
+  {
+    "municipio": "Lavras",
+    "estado": "MG",
+    "curiosidade": "Importante centro educacional e científico, com universidades reconhecidas nacionalmente."
+  },
+  {
+    "municipio": "Leandro Ferreira",
+    "estado": "MG",
+    "curiosidade": "Cidade natal do beato Padre Eustáquio, figura religiosa venerada na região."
+  },
+  {
+    "municipio": "Leme do Prado",
+    "estado": "MG",
+    "curiosidade": "Cidade famosa pelo artesanato feminino e pela produção de bonecas típicas."
+  },
+  {
+    "municipio": "Leopoldina",
+    "estado": "MG",
+    "curiosidade": "Importante centro histórico ligado ao ciclo do café e ao movimento literário."
+  },
+  {
+    "municipio": "Liberdade",
+    "estado": "MG",
+    "curiosidade": "Destino de montanhistas e peregrinos que visitam seus pontos serranos e festas religiosas."
+  },
+  {
+    "municipio": "Lima Duarte",
+    "estado": "MG",
+    "curiosidade": "Abriga o famoso Parque Estadual de Ibitipoca, um dos destinos naturais mais procurados do Brasil."
+  },
+  {
+    "municipio": "Limeira do Oeste",
+    "estado": "MG",
+    "curiosidade": "Município agrícola forte, conhecido por festas sertanejas e feiras de produtos locais."
+  },
+  {
+    "municipio": "Lontra",
+    "estado": "MG",
+    "curiosidade": "Cidade de raízes sertanejas, com lendas e histórias orais preservadas pelos mais antigos."
+  },
+  {
+    "municipio": "Luisburgo",
+    "estado": "MG",
+    "curiosidade": "Produtora de café de alta qualidade e cidade com tradições familiares muito preservadas."
+  },
+  {
+    "municipio": "Luislândia",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por festas sertanejas e celebrações comunitárias animadas."
+  },
+  {
+    "municipio": "Luminárias",
+    "estado": "MG",
+    "curiosidade": "Conhecida por cavernas e trilhas e por ser destino favorito de praticantes de trekking."
+  },
+  {
+    "municipio": "Luz",
+    "estado": "MG",
+    "curiosidade": "Cidade famosa por suas festas do Divino e por grupos de congado tradicionais."
+  },
+  [
+  {
+    "municipio": "Machacalis",
+    "estado": "MG",
+    "curiosidade": "Próxima de comunidades indígenas Maxakali, preservando tradições linguísticas e rituais únicos no país."
+  },
+  {
+    "municipio": "Machado",
+    "estado": "MG",
+    "curiosidade": "Importante produtora de café especial e sede de competições nacionais de qualidade do grão."
+  },
+  {
+    "municipio": "Madre de Deus de Minas",
+    "estado": "MG",
+    "curiosidade": "Possui muitas casas do século XIX e festas tradicionais preservadas pelas famílias mais antigas."
+  },
+  {
+    "municipio": "Malacacheta",
+    "estado": "MG",
+    "curiosidade": "Conhecida por seus violeiros e cantadores de música raiz, que mantêm tradições do Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Mamonas",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por tradições de folia e celebrações comunitárias históricas."
+  },
+  {
+    "municipio": "Manga",
+    "estado": "MG",
+    "curiosidade": "Destino turístico de pesca no Rio São Francisco e palco de festas ribeirinhas tradicionais."
+  },
+  {
+    "municipio": "Manhuaçu",
+    "estado": "MG",
+    "curiosidade": "Um dos maiores polos cafeeiros do Brasil e sede de festivais culturais tradicionais."
+  },
+  {
+    "municipio": "Manhumirim",
+    "estado": "MG",
+    "curiosidade": "Destino de peregrinação religiosa devido ao Santuário de Nossa Senhora da Conceição."
+  },
+  {
+    "municipio": "Mantena",
+    "estado": "MG",
+    "curiosidade": "Possui forte tradição de fábricas moveleiras e eventos de música gospel."
+  },
+  {
+    "municipio": "Mar de Espanha",
+    "estado": "MG",
+    "curiosidade": "Cidade com arquitetura colonial preservada e influências da antiga Estrada União e Indústria."
+  },
+  {
+    "municipio": "Maravilhas",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelas festas agropecuárias e pela produção de queijos premiados."
+  },
+  {
+    "municipio": "Maria da Fé",
+    "estado": "MG",
+    "curiosidade": "Cidade mais fria de MG e pioneira nacional na produção de azeite de oliva brasileiro."
+  },
+  {
+    "municipio": "Mariana",
+    "estado": "MG",
+    "curiosidade": "Primeira capital de Minas, repleta de igrejas barrocas e lar de importantes obras de Aleijadinho."
+  },
+  {
+    "municipio": "Marilac",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena que mantém grupos de canto coral e festas tradicionais de origem rural."
+  },
+  {
+    "municipio": "Mário Campos",
+    "estado": "MG",
+    "curiosidade": "Conhecida por hortas comunitárias e grande produção de flores ornamentais."
+  },
+  {
+    "municipio": "Maripá de Minas",
+    "estado": "MG",
+    "curiosidade": "Celebra festas religiosas antigas e possui tradições culinárias fortes, como queijos e doces caseiros."
+  },
+  {
+    "municipio": "Marliéria",
+    "estado": "MG",
+    "curiosidade": "Abriga parte do Parque Estadual do Rio Doce, uma das maiores áreas contínuas de Mata Atlântica de interior."
+  },
+  {
+    "municipio": "Marmelópolis",
+    "estado": "MG",
+    "curiosidade": "Muito procurada para esportes de montanha e trilhas que levam a mirantes impressionantes."
+  },
+  {
+    "municipio": "Martinho Campos",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte tradição em cavalgadas e festas de raiz voltadas ao campo."
+  },
+  {
+    "municipio": "Martins Soares",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelas plantações de café e pelos festivais comunitários animados."
+  },
+  {
+    "municipio": "Mata Verde",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva danças e costumes do sertão mineiro, incluindo desafios de viola."
+  },
+  {
+    "municipio": "Materlândia",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena com tradições religiosas intensas e festas que reúnem toda a população."
+  },
+  {
+    "municipio": "Mateus Leme",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelas feiras de artesanato e festivais culturais ao longo do ano."
+  },
+  {
+    "municipio": "Matias Barbosa",
+    "estado": "MG",
+    "curiosidade": "Importante marco da Estrada União e Indústria, a primeira rodovia pavimentada do Brasil."
+  },
+  {
+    "municipio": "Matias Cardoso",
+    "estado": "MG",
+    "curiosidade": "Um dos povoados mais antigos do Norte de Minas, com arquitetura histórica e tradições ribeirinhas."
+  },
+  {
+    "municipio": "Matipó",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola com produção forte de café e celebrações tradicionais da colheita."
+  },
+  {
+    "municipio": "Mato Verde",
+    "estado": "MG",
+    "curiosidade": "Conhecida por grupos de Folia de Reis que existem há mais de 100 anos."
+  },
+  {
+    "municipio": "Matozinhos",
+    "estado": "MG",
+    "curiosidade": "Abriga o sítio arqueológico da Lapa Vermelha, onde foi encontrado o fóssil humano 'Luzia'."
+  },
+  {
+    "municipio": "Matutina",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradições rurais preservadas e produção de queijos artesanais."
+  },
+  {
+    "municipio": "Medeiros",
+    "estado": "MG",
+    "curiosidade": "Famosa por paisagens montanhosas e por retiros espirituais tradicionais."
+  },
+  {
+    "municipio": "Medina",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por histórias de garimpo e festivais de música regional."
+  },
+  {
+    "municipio": "Mendes Pimentel",
+    "estado": "MG",
+    "curiosidade": "Local com tradições de danças antigas e festas religiosas que mantêm costumes seculares."
+  },
+  {
+    "municipio": "Mercês",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida por coretos, bandas musicais e tradições que remontam ao século XIX."
+  },
+  {
+    "municipio": "Mesquita",
+    "estado": "MG",
+    "curiosidade": "Possui forte cultura rural e festas tradicionais com música sertaneja raiz."
+  },
+  {
+    "municipio": "Minas Novas",
+    "estado": "MG",
+    "curiosidade": "Berço das famosas bonecas de cerâmica do Vale do Jequitinhonha, reconhecidas mundialmente."
+  },
+  {
+    "municipio": "Minduri",
+    "estado": "MG",
+    "curiosidade": "Tranquila e serrana, conhecida por cafés de qualidade e tradições religiosas."
+  },
+  {
+    "municipio": "Mirabela",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte presença de festas do Divino e grupos folclóricos."
+  },
+  {
+    "municipio": "Miradouro",
+    "estado": "MG",
+    "curiosidade": "Famosa por sua culinária caseira e por festivais gastronômicos familiares."
+  },
+  {
+    "municipio": "Miraí",
+    "estado": "MG",
+    "curiosidade": "Cidade natal do cantor Ataulfo Alves, um dos maiores compositores do samba."
+  },
+  {
+    "municipio": "Miravânia",
+    "estado": "MG",
+    "curiosidade": "Sertaneja e tranquila, preserva tradições de violeiros e contadores de histórias."
+  },
+  {
+    "municipio": "Moeda",
+    "estado": "MG",
+    "curiosidade": "Região de montanhas com trilhas históricas usadas por tropeiros e aventureiros."
+  },
+  {
+    "municipio": "Moema",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena com festas religiosas animadas e culinária típica forte."
+  },
+  {
+    "municipio": "Monjolos",
+    "estado": "MG",
+    "curiosidade": "Marca presença com tradições orais sertanejas e festas comunitárias."
+  },
+  {
+    "municipio": "Monsenhor Paulo",
+    "estado": "MG",
+    "curiosidade": "Região famosa por queijos coloniais e eventos rurais tradicionais."
+  },
+  {
+    "municipio": "Montalvânia",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida por sítios arqueológicos e inscrições rupestres pré-históricas."
+  },
+  {
+    "municipio": "Monte Alegre de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola forte e conhecida por festas de folclore tradicional."
+  },
+  {
+    "municipio": "Monte Azul",
+    "estado": "MG",
+    "curiosidade": "Possui tradições sertanejas fortes e é famosa por competições de vaquejada."
+  },
+  {
+    "municipio": "Monte Belo",
+    "estado": "MG",
+    "curiosidade": "Famosa por vinícolas artesanais e festas típicas italianas."
+  },
+  {
+    "municipio": "Monte Carmelo",
+    "estado": "MG",
+    "curiosidade": "Capital do café do Cerrado Mineiro, produz grãos premiados internacionalmente."
+  },
+  {
+    "municipio": "Monte Formoso",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por tradições familiares e festas sertanejas locais."
+  },
+  {
+    "municipio": "Monte Santo de Minas",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés de alta qualidade e famosa por retiros religiosos."
+  },
+  {
+    "municipio": "Monte Sião",
+    "estado": "MG",
+    "curiosidade": "Capital nacional da moda tricô, referência em confecção de malhas no Brasil."
+  },
+  {
+    "municipio": "Montes Claros",
+    "estado": "MG",
+    "curiosidade": "Maior polo cultural do Norte de Minas, berço de bandas, compositores e do famoso 'pequi'."
+  },
+  {
+    "municipio": "Montezuma",
+    "estado": "MG",
+    "curiosidade": "Cidade com águas termais naturais usadas para banhos desde o século passado."
+  },
+  {
+    "municipio": "Morada Nova de Minas",
+    "estado": "MG",
+    "curiosidade": "Banho de cultura ribeirinha, conhecida pelas praias de água doce da Represa de Três Marias."
+  },
+  {
+    "municipio": "Morro da Garça",
+    "estado": "MG",
+    "curiosidade": "Imortalizada em poemas de Guimarães Rosa; a montanha é símbolo da literatura mineira."
+  },
+  {
+    "municipio": "Morro do Pilar",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela tradicional fabricação artesanal de rapaduras e melados."
+  },
+  {
+    "municipio": "Munhoz",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana conhecida por paisagens naturais e festivais de música ao ar livre."
+  },
+  {
+    "municipio": "Muriaé",
+    "estado": "MG",
+    "curiosidade": "Centro cultural e econômico da Zona da Mata, com teatros, museus e gastronomia forte."
+  },
+  {
+    "municipio": "Mutum",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica famosa por suas igrejas coloniais e música sacra tradicional."
+  },
+  {
+    "municipio": "Muzambinho",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelo carnaval animado e pela tradição no ensino agrícola."
+  },
+  {
+    "municipio": "Nacip Raydan",
+    "estado": "MG",
+    "curiosidade": "Cidade jovem com festas sertanejas e cultura rural preservada."
+  },
+  {
+    "municipio": "Nanuque",
+    "estado": "MG",
+    "curiosidade": "Grande polo comercial do Nordeste mineiro, cercada por serras e trilhas históricas."
+  },
+  {
+    "municipio": "Naque",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada pela cultura do Rio Doce e festas ribeirinhas tradicionais."
+  },
+  {
+    "municipio": "Natalândia",
+    "estado": "MG",
+    "curiosidade": "Pequena e acolhedora, com festas comunitárias e cultura rural forte."
+  },
+  {
+    "municipio": "Natércia",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana com tradição de produção de derivados de leite e doces caseiros."
+  },
+  {
+    "municipio": "Nazareno",
+    "estado": "MG",
+    "curiosidade": "Famosa pela centenária Festa do Congo e artesanato afrodescendente."
+  },
+  {
+    "municipio": "Nepomuceno",
+    "estado": "MG",
+    "curiosidade": "Destaque nacional na produção de café e famosa por sua banda de música centenária."
+  },
+  {
+    "municipio": "Ninheira",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja conhecida por eventos culturais regionais e tradições familiares."
+  },
+  {
+    "municipio": "Nova Belém",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada pelo artesanato tradicional e festas religiosas locais."
+  },
+  {
+    "municipio": "Nova Era",
+    "estado": "MG",
+    "curiosidade": "Conhecida pela culinária de peixes e pela antiga mineração de ouro."
+  },
+  {
+    "municipio": "Nova Lima",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica da mineração; hoje famosa por seus clubes sociais e vinhos artesanais."
+  },
+  {
+    "municipio": "Nova Módica",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena com tradições de viola e festas comunitárias fortes."
+  },
+  {
+    "municipio": "Nova Ponte",
+    "estado": "MG",
+    "curiosidade": "A antiga cidade foi submersa pela represa, dando origem a um novo centro urbano."
+  },
+  {
+    "municipio": "Nova Porteirinha",
+    "estado": "MG",
+    "curiosidade": "Importante polo fruticultor e conhecida por suas plantações irrigadas."
+  },
+  {
+    "municipio": "Nova Resende",
+    "estado": "MG",
+    "curiosidade": "Destaque na produção de café especial e no artesanato em madeira."
+  },
+  {
+    "municipio": "Nova Serrana",
+    "estado": "MG",
+    "curiosidade": "Capital nacional do calçado esportivo, com centenas de fábricas no setor."
+  },
+  {
+    "municipio": "Novo Cruzeiro",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte presença cultural do Vale do Jequitinhonha e grande produção artesanal."
+  },
+  {
+    "municipio": "Novo Oriente de Minas",
+    "estado": "MG",
+    "curiosidade": "Região famosa por tradições sertanejas e festas comunitárias."
+  },
+  {
+    "municipio": "Novorizonte",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com cultura rural preservada e festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Olaria",
+    "estado": "MG",
+    "curiosidade": "Nome remete às antigas olarias que impulsionaram a economia local no século XIX."
+  },
+  {
+    "municipio": "Olhos-d'Água",
+    "estado": "MG",
+    "curiosidade": "Sede de sítios arqueológicos e cavernas pouco exploradas pela ciência."
+  },
+  {
+    "municipio": "Olímpio Noronha",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana famosa por paisagens naturais e clima agradável."
+  },
+  {
+    "municipio": "Oliveira",
+    "estado": "MG",
+    "curiosidade": "Cidade natal da atriz Fernanda Montenegro e tradicional em bandas de música."
+  },
+  {
+    "municipio": "Oliveira Fortes",
+    "estado": "MG",
+    "curiosidade": "Tradições antigas de festas do Rosário e celebrações rurais."
+  },
+  {
+    "municipio": "Onça de Pitangui",
+    "estado": "MG",
+    "curiosidade": "Cidade rural que preserva receitas antigas, como broas e biscoitos tradicionais."
+  },
+  {
+    "municipio": "Oratórios",
+    "estado": "MG",
+    "curiosidade": "Possui corais religiosos ativos desde o século XX e festas tradicionais importantes."
+  },
+  {
+    "municipio": "Orizânia",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena conhecida por festas familiares e tradições rurais."
+  },
+  {
+    "municipio": "Ouro Branco",
+    "estado": "MG",
+    "curiosidade": "Marco da Estrada Real; abriga o famoso Pico do Itacolomi e tradições mineiras antigas."
+  },
+  {
+    "municipio": "Ouro Fino",
+    "estado": "MG",
+    "curiosidade": "Terra do lendário 'Menino da Porteira', imortalizado na música sertaneja."
+  },
+  {
+    "municipio": "Ouro Preto",
+    "estado": "MG",
+    "curiosidade": "Primeira cidade brasileira reconhecida como Patrimônio Mundial pela UNESCO."
+  },
+  {
+    "municipio": "Ouro Verde de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com produção de queijos e artesanato típico."
+  },
+  {
+    "municipio": "Padre Carvalho",
+    "estado": "MG",
+    "curiosidade": "Região de tradições sertanejas preservadas e festas familiares antigas."
+  },
+  {
+    "municipio": "Padre Paraíso",
+    "estado": "MG",
+    "curiosidade": "Ponto central de culturas diversas do Vale do Jequitinhonha, com artesanato e música tradicionais."
+  },
+  {
+    "municipio": "Pai Pedro",
+    "estado": "MG",
+    "curiosidade": "Forte cultura sertaneja, com festas religiosas e encontros de violeiros."
+  },
+  {
+    "municipio": "Paineiras",
+    "estado": "MG",
+    "curiosidade": "Cidade próxima de áreas históricas da Estrada Real e festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Pains",
+    "estado": "MG",
+    "curiosidade": "Conhecida por cavernas calcárias e fósseis de grande importância arqueológica."
+  },
+  {
+    "municipio": "Paiva",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena com bandas musicais tradicionais e culinária típica."
+  },
+  {
+    "municipiculo": "Palma",
+    "estado": "MG",
+    "curiosidade": "Possui casarões históricos e fortes tradições religiosas preservadas há gerações."
+  },
+  {
+    "municipio": "Palmópolis",
+    "estado": "MG",
+    "curiosidade": "Região marcada pela música sertaneja e por festas comunitárias animadas."
+  },
+  {
+    "municipio": "Papagaios",
+    "estado": "MG",
+    "curiosidade": "Maior polo de produção de gesso de Minas Gerais, referência nacional no setor."
+  },
+  {
+    "municipio": "Pará de Minas",
+    "estado": "MG",
+    "curiosidade": "Berço de grandes artistas e famosa pela culinária típica e festas tradicionais."
+  },
+  {
+    "municipio": "Paracatu",
+    "estado": "MG",
+    "curiosidade": "Uma das cidades mais antigas de MG, com forte herança afro-brasileira e arquitetura colonial preservada."
+  },
+  {
+    "municipio": "Paraguaçu",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés especiais e conhecidíssima pelas quitandas tradicionais."
+  },
+  {
+    "municipio": "Paraisópolis",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana famosa por festas religiosas e pelo artesanato local."
+  },
+  {
+    "municipio": "Paraopeba",
+    "estado": "MG",
+    "curiosidade": "Possui tradição em bandas de música desde o século XIX e festas culturais fortes."
+  },
+  {
+    "municipio": "Passa Quatro",
+    "estado": "MG",
+    "curiosidade": "Famosa pelo trem turístico que percorre a Serra da Mantiqueira."
+  },
+  {
+    "municipio": "Passa Tempo",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida por sua forte cultura interiorana e festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Passabém",
+    "estado": "MG",
+    "curiosidade": "Pequena e charmosa, possui trilhas históricas e festas comunitárias."
+  },
+  {
+    "municipio": "Passos",
+    "estado": "MG",
+    "curiosidade": "Importante polo regional com gastronomia famosa, especialmente o doce de leite."
+  },
+  {
+    "municipio": "Patis",
+    "estado": "MG",
+    "curiosidade": "Sertaneja, preserva tradições musicais e festas familiares históricas."
+  },
+  {
+    "municipio": "Patos de Minas",
+    "estado": "MG",
+    "curiosidade": "Capital Nacional do Milho e famosa pela Fenamilho, um dos maiores eventos agropecuários do país."
+  },
+  {
+    "municipio": "Patrocínio",
+    "estado": "MG",
+    "curiosidade": "Centro do Cerrado Mineiro, referência mundial em cafés especiais."
+  },
+  {
+    "municipio": "Patrocínio do Muriaé",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradições familiares fortes e festas comunais de longa data."
+  },
+  {
+    "municipio": "Paula Cândido",
+    "estado": "MG",
+    "curiosidade": "Conhecida por seu queijo artesanal de sabor marcante e por festas tradicionais."
+  },
+  {
+    "municipio": "Paulistas",
+    "estado": "MG",
+    "curiosidade": "Localidade com história ligada ao ciclo do ouro e tradições culturais antigas."
+  },
+  {
+    "municipio": "Pavão",
+    "estado": "MG",
+    "curiosidade": "Região rica em artesanato de palha e tradições sertanejas."
+  },
+  {
+    "municipio": "Peçanha",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradições folclóricas fortes e festas religiosas antigas."
+  },
+  {
+    "municipio": "Pedra Azul",
+    "estado": "MG",
+    "curiosidade": "Famosa pela Pedra da Águia, um dos cartões-postais do Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Pedra Bonita",
+    "estado": "MG",
+    "curiosidade": "Região agrícola forte e conhecida por festas tradicionais de comunidade."
+  },
+  {
+    "municipio": "Pedra do Anta",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva musiquinhas tradicionais e festas familiares antigas."
+  },
+  {
+    "municipio": "Pedra do Indaiá",
+    "estado": "MG",
+    "curiosidade": "Local conhecido pela produção de quitandas e festividades religiosas."
+  },
+  {
+    "municipio": "Pedra Dourada",
+    "estado": "MG",
+    "curiosidade": "Serrana e tranquila, famosa por trilhas e mirantes naturais."
+  },
+  {
+    "municipio": "Pedralva",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradição em cafés especiais e festas típicas da Mantiqueira."
+  },
+  {
+    "municipio": "Pedras de Maria da Cruz",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelas lendas sertanejas sobre antigos garimpos e figuras folclóricas."
+  },
+  {
+    "municipio": "Pedro Leopoldo",
+    "estado": "MG",
+    "curiosidade": "Cidade natal de Chico Xavier e famosa por sítios arqueológicos importantes."
+  },
+  {
+    "municipio": "Pedro Teixeira",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana que preserva tradições religiosas e culinária mineira típica."
+  },
+  {
+    "municipio": "Pequeri",
+    "estado": "MG",
+    "curiosidade": "Muito conhecida por suas festas religiosas e bandas musicais."
+  },
+  {
+    "municipio": "Pequi",
+    "estado": "MG",
+    "curiosidade": "Como o nome diz, o pequi é o símbolo gastronômico e cultural do município."
+  },
+  {
+    "municipio": "Perdigão",
+    "estado": "MG",
+    "curiosidade": "Importante polo industrial de alimentos e conhecida por suas festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Perdizes",
+    "estado": "MG",
+    "curiosidade": "Região com sítios arqueológicos indígenas importantes e festas tradicionais."
+  },
+  {
+    "municipio": "Perdões",
+    "estado": "MG",
+    "curiosidade": "Cidade vibrante com carnaval famoso e tradições culturais fortes."
+  },
+  {
+    "municipio": "Periquito",
+    "estado": "MG",
+    "curiosidade": "Cidade jovem conhecida por festas sertanejas e cultura rural preservada."
+  },
+  {
+    "municipio": "Pescador",
+    "estado": "MG",
+    "curiosidade": "Região de forte identidade sertaneja, com tradições antigas de música e dança."
+  },
+  {
+    "municipio": "Piau",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada pela produção de queijos e doces caseiros tradicionais."
+  },
+  {
+    "municipio": "Piedade de Caratinga",
+    "estado": "MG",
+    "curiosidade": "Preserva tradições religiosas antigas e festas comunitárias de longa história."
+  },
+  {
+    "municipio": "Piedade de Ponte Nova",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena conhecida pela tranquilidade e por tradições familiares preservadas."
+  },
+  {
+    "municipio": "Piedade do Rio Grande",
+    "estado": "MG",
+    "curiosidade": "Possui pontes centenárias e tradições folclóricas fortes."
+  },
+  {
+    "municipio": "Piedade dos Gerais",
+    "estado": "MG",
+    "curiosidade": "Região de paisagens naturais e eventos culturais rurais tradicionais."
+  },
+  {
+    "municipio": "Pimenta",
+    "estado": "MG",
+    "curiosidade": "Cercada pela Represa de Furnas, famosa por suas praias de água doce."
+  },
+  {
+    "municipio": "Pingo-d'Água",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena com tradições religiosas e festas comunitárias fortes."
+  },
+  {
+    "municipio": "Pintópolis",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja onde eventos de música raiz são muito presentes."
+  },
+  {
+    "municipio": "Piracema",
+    "estado": "MG",
+    "curiosidade": "Possui tradições de música caipira e festas rurais preservadas."
+  },
+  {
+    "municipio": "Pirajuba",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola moderna, conhecida por eventos agropecuários regionais."
+  },
+  {
+    "municipio": "Piranga",
+    "estado": "MG",
+    "curiosidade": "Sede de uma das igrejas mais antigas de MG, com acervo artístico relevante."
+  },
+  {
+    "municipio": "Piranguçu",
+    "estado": "MG",
+    "curiosidade": "Conhecida por trilhas serranas e clima típico da Mantiqueira."
+  },
+  {
+    "municipio": "Piranguinho",
+    "estado": "MG",
+    "curiosidade": "Capital nacional do pé-de-moleque, famoso em todo o Brasil."
+  },
+  {
+    "municipio": "Pirapetinga",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com festas familiares tradicionais e fortes bandas musicais."
+  },
+  {
+    "municipio": "Pirapora",
+    "estado": "MG",
+    "curiosidade": "Famosa pelo Vapor Benjamim Guimarães, último barco a vapor em atividade no Brasil."
+  },
+  {
+    "municipio": "Piraúba",
+    "estado": "MG",
+    "curiosidade": "Conhecida por sua culinária rica e por grupos musicais tradicionais."
+  },
+  {
+    "municipio": "Pitangui",
+    "estado": "MG",
+    "curiosidade": "Uma das primeiras vilas do ciclo do ouro e cidade cheia de lendas coloniais."
+  },
+  {
+    "municipio": "Piumhi",
+    "estado": "MG",
+    "curiosidade": "Considerada 'Portal de Furnas', com forte tradição de artesanato regional."
+  },
+  {
+    "municipio": "Planura",
+    "estado": "MG",
+    "curiosidade": "Cidade à beira do Rio Grande, conhecida por pesca e esportes aquáticos."
+  },
+  {
+    "municipio": "Poço Fundo",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés especiais com destaque internacional."
+  },
+  {
+    "municipio": "Poços de Caldas",
+    "estado": "MG",
+    "curiosidade": "Famosa por suas águas termais e pelo teleférico que sobe até o Cristo Redentor local."
+  },
+  {
+    "municipio": "Pocrane",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradições sertanejas fortes e artesanato local marcante."
+  },
+  {
+    "municipio": "Pompéu",
+    "estado": "MG",
+    "curiosidade": "Local histórico ligado à família do escritor Guimarães Rosa e conhecido por festas rurais."
+  },
+  {
+    "municipio": "Ponte Nova",
+    "estado": "MG",
+    "curiosidade": "Importante polo gastronômico, famosa pelo 'frango com quiabo' e culinária mineira autêntica."
+  },
+  {
+    "municipio": "Ponto Chique",
+    "estado": "MG",
+    "curiosidade": "Cidade ribeirinha marcada pela cultura sertaneja e festas familiares."
+  },
+  {
+    "municipio": "Ponto dos Volantes",
+    "estado": "MG",
+    "curiosidade": "Região onde a cultura do Vale do Jequitinhonha é muito forte, com artesanato reconhecido."
+  },
+  {
+    "municipio": "Porteirinha",
+    "estado": "MG",
+    "curiosidade": "Porta de entrada do Parque Estadual da Serra Nova, com rica biodiversidade."
+  },
+  {
+    "municipio": "Porto Firme",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com tradições culinárias e festas de comunidade."
+  },
+  {
+    "municipio": "Poté",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada pela cultura do Jequitinhonha, com música, dança e artesanato típicos."
+  },
+  {
+    "municipio": "Pouso Alegre",
+    "estado": "MG",
+    "curiosidade": "Grande polo industrial e gastronômico, com forte influência italiana."
+  },
+  {
+    "municipio": "Pouso Alto",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana famosa por trilhas e por vistas panorâmicas da Mantiqueira."
+  },
+  {
+    "municipio": "Prados",
+    "estado": "MG",
+    "curiosidade": "Famosa por seu artesanato em madeira e por eventos musicais como a Semana da Música."
+  },
+  {
+    "municipio": "Prata",
+    "estado": "MG",
+    "curiosidade": "Uma das maiores áreas agrícolas do Triângulo Mineiro, com festas tradicionais de grande porte."
+  },
+  {
+    "municipio": "Pratápolis",
+    "estado": "MG",
+    "curiosidade": "Cidade conhecida por seus cafés de qualidade e tradições comunitárias."
+  },
+  {
+    "municipio": "Pratinha",
+    "estado": "MG",
+    "curiosidade": "Região rural preservada, com cultura sertaneja e festas familiares animadas."
+  },
+  {
+    "municipio": "Presidente Bernardes",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradições religiosas fortes e festivais comunitários antigos."
+  },
+  {
+    "municipio": "Presidente Juscelino",
+    "estado": "MG",
+    "curiosidade": "Homenageia o ex-presidente e mantém festas culturais ligadas à história de JK."
+  },
+  {
+    "municipio": "Presidente Kubitschek",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com tradições rurais e festas regionais."
+  },
+  {
+    "municipio": "Presidente Olegário",
+    "estado": "MG",
+    "curiosidade": "Famosa por festas de cavalgada e pela culinária com carne de sol."
+  },
+  {
+    "municipio": "Prudente de Morais",
+    "estado": "MG",
+    "curiosidade": "Local com tradição em bandas de música e festas religiosas históricas."
+  },
+  [
+  {
+    "municipio": "Quartel Geral",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradições religiosas antigas e festivais ligados ao Divino Espírito Santo."
+  },
+  {
+    "municipio": "Queluzito",
+    "estado": "MG",
+    "curiosidade": "Pequena e acolhedora, conserva casarões do século XIX e tradições de folia muito antigas."
+  },
+  {
+    "municipio": "Raposos",
+    "estado": "MG",
+    "curiosidade": "Ligada historicamente à mineração; abriga antigas estruturas de ouro das primeiras lavras coloniais."
+  },
+  {
+    "municipio": "Raul Soares",
+    "estado": "MG",
+    "curiosidade": "Conhecida por sua forte tradição carnavalesca e blocos centenários."
+  },
+  {
+    "municipio": "Recreio",
+    "estado": "MG",
+    "curiosidade": "Possui importante patrimônio ferroviário e festas culturais de grande relevância local."
+  },
+  {
+    "municipio": "Reduto",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés de qualidade e conhecida por festas rurais tradicionais."
+  },
+  {
+    "municipio": "Resende Costa",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do tear artesanal, famosa pela produção de peças em tear manual."
+  },
+  {
+    "municipio": "Resplendor",
+    "estado": "MG",
+    "curiosidade": "Banho do Rio Doce, destaca-se por trilhas, mirantes e tradições rurais."
+  },
+  {
+    "municipio": "Ressaquinha",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradições antigas de folguedos e encontros de violeiros."
+  },
+  {
+    "municipio": "Riachinho",
+    "estado": "MG",
+    "curiosidade": "Sertaneja e culturalmente rica, conhecida por festas familiares e música de raiz."
+  },
+  {
+    "municipio": "Riacho dos Machados",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por histórias de mineração e festas sertanejas tradicionais."
+  },
+  {
+    "municipio": "Ribeirão das Neves",
+    "estado": "MG",
+    "curiosidade": "Cidade de grande crescimento urbano e forte produção cultural periférica."
+  },
+  {
+    "municipio": "Ribeirão Vermelho",
+    "estado": "MG",
+    "curiosidade": "Cidade ferroviária tradicional, com estação histórica preservada."
+  },
+  {
+    "municipio": "Rio Acima",
+    "estado": "MG",
+    "curiosidade": "Abriga trechos preservados da Estrada Real e cachoeiras muito visitadas."
+  },
+  {
+    "municipio": "Rio Casca",
+    "estado": "MG",
+    "curiosidade": "Conhecida por festas religiosas seculares e pela culinária local."
+  },
+  {
+    "municipio": "Rio do Prado",
+    "estado": "MG",
+    "curiosidade": "Tradições sertanejas fortes, com encontros de violeiros e festas rurais."
+  },
+  {
+    "municipio": "Rio Doce",
+    "estado": "MG",
+    "curiosidade": "Cidade que cresceu ao redor da antiga Estrada de Ferro Vitória-Minas."
+  },
+  {
+    "municipio": "Rio Espera",
+    "estado": "MG",
+    "curiosidade": "Possui uma das matrizes mais antigas de Minas, com arte sacra importante."
+  },
+  {
+    "municipio": "Rio Manso",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com tradições religiosas e festas familiares preservadas."
+  },
+  {
+    "municipio": "Rio Novo",
+    "estado": "MG",
+    "curiosidade": "Ligada ao cinema: sediou um dos primeiros festivais mineiros na década de 1960."
+  },
+  {
+    "municipio": "Rio Paranaíba",
+    "estado": "MG",
+    "curiosidade": "Abriga parte da nascente do Rio Paranaíba, marco importante da bacia do Paraná."
+  },
+  {
+    "municipio": "Rio Pardo de Minas",
+    "estado": "MG",
+    "curiosidade": "Capital mineira da cachaça artesanal, com dezenas de alambiques tradicionais."
+  },
+  {
+    "municipio": "Rio Piracicaba",
+    "estado": "MG",
+    "curiosidade": "Lar de tradições antigas de congados, preservadas por famílias há séculos."
+  },
+  {
+    "municipio": "Rio Pomba",
+    "estado": "MG",
+    "curiosidade": "Cidade universitária com importante centro histórico e festas tradicionais."
+  },
+  {
+    "municipio": "Rio Preto",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelas águas transparentes e por trilhas que atraem turistas."
+  },
+  {
+    "municipio": "Rio Vermelho",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica marcada por tradições de canto coral e celebrações seculares."
+  },
+  {
+    "municipio": "Ritápolis",
+    "estado": "MG",
+    "curiosidade": "Cidade natal do inconfidente Alvarenga Peixoto, com forte herança histórica."
+  },
+  {
+    "municipio": "Rochedo de Minas",
+    "estado": "MG",
+    "curiosidade": "Tranquila e rural, preserva culinária casadeira e festas familiares."
+  },
+  {
+    "municipio": "Rodeiro",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do móvel; forte polo moveleiro reconhecido nacionalmente."
+  },
+  {
+    "municipio": "Romaria",
+    "estado": "MG",
+    "curiosidade": "Um dos maiores destinos de peregrinação religiosa do estado, com festas gigantescas."
+  },
+  {
+    "municipio": "Rosário da Limeira",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana procurada para turismo ecológico e trilhas."
+  },
+  {
+    "municipio": "Rubelita",
+    "estado": "MG",
+    "curiosidade": "Famosa pelo garimpo de pedras preciosas, especialmente a rubelita."
+  },
+  {
+    "municipio": "Rubim",
+    "estado": "MG",
+    "curiosidade": "Cidade com identidades culturais indígenas e sertanejas misturadas."
+  },
+  {
+    "municipio": "Sabará",
+    "estado": "MG",
+    "curiosidade": "Famosa pela gastronomia única, como a jabuticaba e o pastel de angu."
+  },
+  {
+    "municipio": "Sabinópolis",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte tradição de bandas e festas religiosas centenárias."
+  },
+  {
+    "municipio": "Sacramento",
+    "estado": "MG",
+    "curiosidade": "Terra do médium Eurípedes Barsanulfo e centro de peregrinação espiritual."
+  },
+  {
+    "municipio": "Salinas",
+    "estado": "MG",
+    "curiosidade": "Capital mundial da cachaça artesanal, com rótulos premiados internacionalmente."
+  },
+  {
+    "municipio": "Salto da Divisa",
+    "estado": "MG",
+    "curiosidade": "Banho do Rio Jequitinhonha e famosa por danças tradicionais da região."
+  },
+  {
+    "municipio": "Santa Bárbara",
+    "estado": "MG",
+    "curiosidade": "Cidade de arquitetura colonial preservada e portal de entrada para o Caraça."
+  },
+  {
+    "municipio": "Santa Bárbara do Leste",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com festas comunitárias fortes e tradição de música sertaneja."
+  },
+  {
+    "municipio": "Santa Bárbara do Monte Verde",
+    "estado": "MG",
+    "curiosidade": "Localizado em região serrana, preserva festas antigas de origem portuguesa."
+  },
+  {
+    "municipio": "Santa Bárbara do Tugúrio",
+    "estado": "MG",
+    "curiosidade": "Famosa por suas bandas de música e festas religiosas seculares."
+  },
+  {
+    "municipio": "Santa Cruz de Minas",
+    "estado": "MG",
+    "curiosidade": "Menor município do Brasil em área territorial, com apenas 3,5 km²."
+  },
+  {
+    "municipio": "Santa Cruz de Salinas",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja marcada por danças antigas e celebrações familiares."
+  },
+  {
+    "municipio": "Santa Cruz do Escalvado",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte ligação a antigas rotas ferroviárias mineiras."
+  },
+  {
+    "municipio": "Santa Efigênia de Minas",
+    "estado": "MG",
+    "curiosidade": "Conhecida por suas festas religiosas e tradições de canto coral."
+  },
+  {
+    "municipio": "Santa Fé de Minas",
+    "estado": "MG",
+    "curiosidade": "Região sertaneja com tradição de vaquejada e cavalgadas."
+  },
+  {
+    "municipio": "Santa Helena de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena com cultura rural preservada e artesanato típico."
+  },
+  {
+    "municipio": "Santa Juliana",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola com festas tradicionais e culinária regional forte."
+  },
+  {
+    "municipio": "Santa Luzia",
+    "estado": "MG",
+    "curiosidade": "Uma das cidades mais antigas de MG, famosa pelo conjunto arquitetônico barroco."
+  },
+  {
+    "municipio": "Santa Margarida",
+    "estado": "MG",
+    "curiosidade": "Conhecida por festas religiosas fortes e tradições familiares."
+  },
+  {
+    "municipio": "Santa Maria de Itabira",
+    "estado": "MG",
+    "curiosidade": "Cidade com fortes raízes culturais e corais religiosos tradicionais."
+  },
+  {
+    "municipio": "Santa Maria do Salto",
+    "estado": "MG",
+    "curiosidade": "Próxima de cachoeiras e áreas naturais procuradas para turismo ecológico."
+  },
+  {
+    "municipio": "Santa Maria do Suaçuí",
+    "estado": "MG",
+    "curiosidade": "Importante polo de música regional, com festivais de violeiros."
+  },
+  {
+    "municipio": "Santa Rita de Caldas",
+    "estado": "MG",
+    "curiosidade": "Cidade de fontes minerais e tradições religiosas antigas."
+  },
+  {
+    "municipio": "Santa Rita de Ibitipoca",
+    "estado": "MG",
+    "curiosidade": "Próxima ao Parque de Ibitipoca, famosa por pousadas e turismo ecológico."
+  },
+  {
+    "municipio": "Santa Rita de Jacutinga",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do rapel, famosa por dezenas de cachoeiras."
+  },
+  {
+    "municipio": "Santa Rita de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade de tradições rurais fortes, festas religiosas e culinária caseira."
+  },
+  {
+    "municipio": "Santa Rita do Itueto",
+    "estado": "MG",
+    "curiosidade": "Cidade tradicional com festas folclóricas preservadas."
+  },
+  {
+    "municipio": "Santa Rita do Sapucaí",
+    "estado": "MG",
+    "curiosidade": "Conhecida como 'Vale da Eletrônica', berço de startups de tecnologia."
+  },
+  {
+    "municipio": "Santa Rosa da Serra",
+    "estado": "MG",
+    "curiosidade": "Festas comunitárias e tradições religiosas marcam a identidade local."
+  },
+  {
+    "municipio": "Santa Vitória",
+    "estado": "MG",
+    "curiosidade": "Famosa por eventos agropecuários e pela produção rural forte."
+  },
+  {
+    "municipio": "Santana da Vargem",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés de altitude, ganhadora de concursos nacionais."
+  },
+  {
+    "municipio": "Santana de Cataguases",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradições de bandas musicais e festas históricas."
+  },
+  {
+    "municipio": "Santana de Pirapama",
+    "estado": "MG",
+    "curiosidade": "Porta de entrada para o Pico do Breu e a Serra do Cipó."
+  },
+  {
+    "municipio": "Santana do Deserto",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com arquitetura antiga e festas religiosas."
+  },
+  {
+    "municipio": "Santana do Garambéu",
+    "estado": "MG",
+    "curiosidade": "Pequena e tradicional, preserva culinária mineira e festas locais."
+  },
+  {
+    "municipio": "Santana do Jacaré",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola com festas comunitárias e tradições musicais."
+  },
+  {
+    "municipio": "Santana do Manhuaçu",
+    "estado": "MG",
+    "curiosidade": "Produtora de café e conhecida por festas do interior animadas."
+  },
+  {
+    "municipio": "Santana do Paraíso",
+    "estado": "MG",
+    "curiosidade": "Cidade jovem do Vale do Aço, com crescimento urbano acelerado."
+  },
+  {
+    "municipio": "Santana do Riacho",
+    "estado": "MG",
+    "curiosidade": "Sede de diversas trilhas da Serra do Cipó, muito procurada por aventureiros."
+  },
+  {
+    "municipio": "Santana dos Montes",
+    "estado": "MG",
+    "curiosidade": "Famosa por fazendas coloniais preservadas que hoje são pousadas históricas."
+  },
+  {
+    "municipio": "Santo Antônio do Amparo",
+    "estado": "MG",
+    "curiosidade": "Produtora de cafés de alta qualidade e com forte presença de feiras rurais."
+  },
+  {
+    "municipio": "Santo Antônio do Aventureiro",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com festas religiosas e culinária típica."
+  },
+  {
+    "municipio": "Santo Antônio do Grama",
+    "estado": "MG",
+    "curiosidade": "Possui tradições musicais antigas e preserva festas familiares importantes."
+  },
+  {
+    "municipio": "Santo Antônio do Itambé",
+    "estado": "MG",
+    "curiosidade": "Ponto de acesso à Serra do Espinhaço, com belas paisagens naturais."
+  },
+  {
+    "municipio": "Santo Antônio do Jacinto",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte cultura sertaneja, marcada por festas regionais."
+  },
+  {
+    "municipio": "Santo Antônio do Monte",
+    "estado": "MG",
+    "curiosidade": "Capital mineira dos fogos de artifício, referência nacional no setor."
+  },
+  {
+    "municipio": "Santo Antônio do Retiro",
+    "estado": "MG",
+    "curiosidade": "Sertaneja e culturalmente rica, com tradições musicais antigas."
+  },
+  {
+    "municipio": "Santo Antônio do Rio Abaixo",
+    "estado": "MG",
+    "curiosidade": "Cidade de patrimônio histórico preservado e festas religiosas."
+  },
+  {
+    "municipio": "Santo Hipólito",
+    "estado": "MG",
+    "curiosidade": "Citada em obras de Guimarães Rosa e famosa por tradições sertanejas."
+  },
+  {
+    "municipio": "Santos Dumont",
+    "estado": "MG",
+    "curiosidade": "Cidade natal de Alberto Santos Dumont, com museu dedicado à sua vida."
+  },
+  {
+    "municipio": "São Bento Abade",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelo turismo religioso e por artesanato típico."
+  },
+  {
+    "municipio": "São Brás do Suaçuí",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com culinária tradicional e festas familiares."
+  },
+  {
+    "municipio": "São Domingos das Dores",
+    "estado": "MG",
+    "curiosidade": "Possui tradições culturais fortes e festas religiosas marcantes."
+  },
+  {
+    "municipio": "São Domingos do Prata",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por candombe e congado, tradições afro-brasileiras seculares."
+  },
+  {
+    "municipio": "São Félix de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com produção agrícola e tradições culturais da região."
+  },
+  {
+    "municipio": "São Francisco",
+    "estado": "MG",
+    "curiosidade": "Conhecida como 'Princesinha do São Francisco', famosa pela culinária ribeirinha."
+  },
+  {
+    "municipio": "São Francisco de Paula",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana com festas religiosas tradicionais e culinária típica."
+  },
+  {
+    "municipio": "São Francisco de Sales",
+    "estado": "MG",
+    "curiosidade": "Cidade banhada pelo Rio Grande, conhecida por pesca e esportes aquáticos."
+  },
+  {
+    "municipio": "São Francisco do Glória",
+    "estado": "MG",
+    "curiosidade": "Cidade rural marcada por tradições religiosas e música regional."
+  },
+  {
+    "municipio": "São Geraldo",
+    "estado": "MG",
+    "curiosidade": "Possui tradições musicais fortes e festas familiares importantes."
+  },
+  {
+    "municipio": "São Geraldo da Piedade",
+    "estado": "MG",
+    "curiosidade": "Tranquila e rural, com artesanato e festas religiosas preservadas."
+  },
+  {
+    "municipio": "São Geraldo do Baixio",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja com cultura local marcada por música e festas tradicionais."
+  },
+  {
+    "municipio": "São Gonçalo do Abaeté",
+    "estado": "MG",
+    "curiosidade": "Famosa por obras literárias de Guimarães Rosa ambientadas na região."
+  },
+  {
+    "municipio": "São Gonçalo do Pará",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica ligada a antigas rotas de tropeiros."
+  },
+  {
+    "municipio": "São Gonçalo do Rio Abaixo",
+    "estado": "MG",
+    "curiosidade": "Importante polo cultural, com teatros, festivais e incentivo à música."
+  },
+  {
+    "municipio": "São Gonçalo do Rio Preto",
+    "estado": "MG",
+    "curiosidade": "Entrada para o Parque Estadual do Rio Preto, conhecido por paisagens incríveis."
+  },
+  {
+    "municipio": "São Gonçalo do Sapucaí",
+    "estado": "MG",
+    "curiosidade": "Cidade natal de Padre Vítor, figura religiosa muito venerada."
+  },
+  {
+    "municipio": "São Gotardo",
+    "estado": "MG",
+    "curiosidade": "Grande produtor de hortaliças e frutas de clima frio, referência nacional."
+  },
+  {
+    "municipio": "São João Batista do Glória",
+    "estado": "MG",
+    "curiosidade": "Cercada por cânions e cachoeiras, famosa pelo turismo ecológico."
+  },
+  {
+    "municipio": "São João da Lagoa",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja com tradições antigas de música e festas do Divino."
+  },
+  {
+    "municipio": "São João da Mata",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana conhecida por cafés especiais e quitandas típicas."
+  },
+  {
+    "municipio": "São João da Ponte",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do forró, com festas famosas em toda a região."
+  },
+  {
+    "municipio": "São João das Missões",
+    "estado": "MG",
+    "curiosidade": "Abriga aldeias Xakriabá, com forte presença de cultura indígena viva."
+  },
+  {
+    "municipio": "São João del-Rei",
+    "estado": "MG",
+    "curiosidade": "Uma das cidades históricas mais importantes do Brasil, repleta de igrejas, música sacra e patrimônio colonial."
+  },
+  {
+    "municipio": "São João do Manhuaçu",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com festas tradicionais e forte produção de café."
+  },
+  {
+    "municipio": "São João do Manteninha",
+    "estado": "MG",
+    "curiosidade": "Tradições familiares e festividades rurais são o forte da cidade."
+  },
+  {
+    "municipio": "São João do Oriente",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena com tradição de apresentações musicais comunitárias."
+  },
+  {
+    "municipio": "São João do Pacuí",
+    "estado": "MG",
+    "curiosidade": "Sertaneja e culturalmente rica, com danças e cantorias tradicionais."
+  },
+  {
+    "municipio": "São João do Paraíso",
+    "estado": "MG",
+    "curiosidade": "Conhecida por suas festas sertanejas e cultura musical forte."
+  },
+  {
+    "municipio": "São João Evangelista",
+    "estado": "MG",
+    "curiosidade": "Cidade universitária que preserva tradições culturais antigas."
+  },
+  {
+    "municipio": "São João Nepomuceno",
+    "estado": "MG",
+    "curiosidade": "Cidade natal de artistas, costureiras e músicos famosos da região."
+  },
+  {
+    "municipio": "São Joaquim de Bicas",
+    "estado": "MG",
+    "curiosidade": "Cidade em crescimento com forte presença cultural de grupos religiosos."
+  },
+  {
+    "municipio": "São José da Barra",
+    "estado": "MG",
+    "curiosidade": "Localizada às margens de Furnas, famosa por esportes aquáticos."
+  },
+  {
+    "municipio": "São José da Lapa",
+    "estado": "MG",
+    "curiosidade": "Cidade jovem com crescimento urbano rápido e cultura comunitária forte."
+  },
+  {
+    "municipio": "São José da Safira",
+    "estado": "MG",
+    "curiosidade": "Famosa por garimpos antigos de pedras preciosas."
+  },
+  {
+    "municipio": "São José da Varginha",
+    "estado": "MG",
+    "curiosidade": "Cidade com festas religiosas preservadas e culinária típica."
+  },
+  {
+    "municipio": "São José do Alegre",
+    "estado": "MG",
+    "curiosidade": "Conhecida por grupos de música regional e festas familiares animadas."
+  },
+  {
+    "municipio": "São José do Divino",
+    "estado": "MG",
+    "curiosidade": "Tradições sertanejas fortes e festas comunitárias fazem parte da identidade local."
+  },
+  {
+    "municipio": "São José do Goiabal",
+    "estado": "MG",
+    "curiosidade": "Cidade histórica ligada à mineração e a festas tradicionais antigas."
+  },
+  {
+    "municipio": "São José do Jacuri",
+    "estado": "MG",
+    "curiosidade": "Conhecida por grupos de Folia de Reis e festivais rurais."
+  },
+  {
+    "municipio": "São José do Mantimento",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola com tradições familiares preservadas."
+  },
+  {
+    "municipio": "São Lourenço",
+    "estado": "MG",
+    "curiosidade": "Uma das estâncias hidrominerais mais famosas do Brasil, referência em turismo de bem-estar."
+  },
+  {
+    "municipio": "São Miguel do Anta",
+    "estado": "MG",
+    "curiosidade": "Cidade rural, famosa por bandas musicais tradicionais."
+  },
+  {
+    "municipio": "São Pedro da União",
+    "estado": "MG",
+    "curiosidade": "Tradições italianas influenciam a culinária e as festas locais."
+  },
+  {
+    "municipio": "São Pedro do Suaçuí",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por tradições de Folia de Reis e cantorias sertanejas."
+  },
+  {
+    "municipio": "São Pedro dos Ferros",
+    "estado": "MG",
+    "curiosidade": "Mantém tradições musicais antigas e festas comunitárias."
+  },
+  {
+    "municipio": "São Romão",
+    "estado": "MG",
+    "curiosidade": "Famosa pela culinária ribeirinha e por festivais culturais tradicionais."
+  },
+  {
+    "municipio": "São Roque de Minas",
+    "estado": "MG",
+    "curiosidade": "Porta de entrada da Serra da Canastra, berço do famoso queijo canastra."
+  },
+  {
+    "municipio": "São Sebastião da Bela Vista",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana com festas religiosas e culinária mineira forte."
+  },
+  {
+    "municipio": "São Sebastião da Vargem Alegre",
+    "estado": "MG",
+    "curiosidade": "Tranquila e rural, marcada por tradições familiares e festas religiosas."
+  },
+  {
+    "municipio": "São Sebastião do Anta",
+    "estado": "MG",
+    "curiosidade": "Conhecida por grupos de música regional e festas comunitárias."
+  },
+  {
+    "municipio": "São Sebastião do Maranhão",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana marcada por tradições culturais do Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "São Sebastião do Oeste",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com festas familiares e culinária típica forte."
+  },
+  {
+    "municipio": "São Sebastião do Paraíso",
+    "estado": "MG",
+    "curiosidade": "Famosa internacionalmente pela produção de café e pelo artesanato em couro."
+  },
+  {
+    "municipio": "São Sebastião do Rio Preto",
+    "estado": "MG",
+    "curiosidade": "Pequena e charmosa, preserva tradições religiosas antigas."
+  },
+  {
+    "municipio": "São Sebastião do Rio Verde",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana conhecida por retiros, cafés e culinária típica."
+  },
+  {
+    "municipio": "São Thomé das Letras",
+    "estado": "MG",
+    "curiosidade": "Famosa por suas lendas místicas, cachoeiras e construções em quartzito."
+  },
+  {
+    "municipio": "São Tiago",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do biscoito, com festival dedicado à iguaria tradicional."
+  },
+  {
+    "municipio": "São Tomás de Aquino",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola com tradições religiosas e festas regionais."
+  },
+  {
+    "municipio": "São Vicente de Minas",
+    "estado": "MG",
+    "curiosidade": "Conhecida por cavalhadas, folguedos e música tradicional."
+  },
+  {
+    "municipio": "Sapucaí-Mirim",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana procurada para ecoturismo e trilhas da Mantiqueira."
+  },
+  {
+    "municipio": "Sardoá",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com tradições de cantigas, danças e festas familiares."
+  },
+  {
+    "municipio": "Sarzedo",
+    "estado": "MG",
+    "curiosidade": "Cidade jovem da Região Metropolitana, com crescimento urbano rápido e vida cultural ativa."
+  },
+  {
+    "municipio": "Sem-Peixe",
+    "estado": "MG",
+    "curiosidade": "Nome curioso que vem de histórias antigas sobre pescadores locais."
+  },
+  {
+    "municipio": "Senador Amaral",
+    "estado": "MG",
+    "curiosidade": "Uma das cidades mais altas de MG, famosa por clima frio e plantações de morango."
+  },
+  {
+    "municipio": "Senador Cortes",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena com festas históricas e vida comunitária muito preservada."
+  },
+  {
+    "municipio": "Senador Firmino",
+    "estado": "MG",
+    "curiosidade": "Conhecida por feiras rurais e culinária típica."
+  },
+  {
+    "municipio": "Senador José Bento",
+    "estado": "MG",
+    "curiosidade": "Serrana e tranquila, com tradição em produção familiar de queijos."
+  },
+  {
+    "municipio": "Senador Modestino Gonçalves",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada por festas sertanejas e cultura regional forte."
+  },
+  {
+    "municipio": "Senhora de Oliveira",
+    "estado": "MG",
+    "curiosidade": "Mantém tradições religiosas seculares e festivais de música sacra."
+  },
+  {
+    "municipio": "Senhora do Porto",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelas paisagens serranas e pela culinária típica."
+  },
+  {
+    "municipio": "Senhora dos Remédios",
+    "estado": "MG",
+    "curiosidade": "Cidade com festas religiosas tradicionais e bandas musicais antigas."
+  },
+  {
+    "municipio": "Sericita",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com festas familiares e tradições musicais preservadas."
+  },
+  {
+    "municipio": "Seritinga",
+    "estado": "MG",
+    "curiosidade": "Conhecida por retiros religiosos e belas paisagens serranas."
+  },
+  {
+    "municipio": "Serra Azul de Minas",
+    "estado": "MG",
+    "curiosidade": "Abriga parte da Serra do Espinhaço, com trilhas históricas e natureza exuberante."
+  },
+  {
+    "municipio": "Serra da Saudade",
+    "estado": "MG",
+    "curiosidade": "Menor município do Brasil em população, com menos de 1.000 habitantes."
+  },
+  {
+    "municipio": "Serra do Salitre",
+    "estado": "MG",
+    "curiosidade": "Grande produtora de café especial e de queijos premiados."
+  },
+  {
+    "municipio": "Serra dos Aimorés",
+    "estado": "MG",
+    "curiosidade": "Cercada por montanhas históricas relacionadas aos povos indígenas Aimorés."
+  },
+  {
+    "municipio": "Serrania",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana com festas religiosas tradicionais e culinária típica."
+  },
+  {
+    "municipio": "Serranópolis de Minas",
+    "estado": "MG",
+    "curiosidade": "Tem forte cultura sertaneja e festas de raiz muito importantes localmente."
+  },
+  {
+    "municipio": "Serranos",
+    "estado": "MG",
+    "curiosidade": "Tranquila e rural, conhecida por trilhas e paisagens montanhosas."
+  },
+  {
+    "municipio": "Serro",
+    "estado": "MG",
+    "curiosidade": "Berço do famoso queijo serro, patrimônio imaterial brasileiro."
+  },
+  {
+    "municipio": "Sete Lagoas",
+    "estado": "MG",
+    "curiosidade": "Cidade da música sertaneja e terra natal da banda Jota Quest."
+  },
+  {
+    "municipio": "Setubinha",
+    "estado": "MG",
+    "curiosidade": "Cidade com tradições fortes da cultura sertaneja mineira."
+  },
+  {
+    "municipio": "Silveirânia",
+    "estado": "MG",
+    "curiosidade": "Tranquila e marcada por festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Silvianópolis",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana com culinária típica e forte cultura interiorana."
+  },
+  {
+    "municipio": "Simão Pereira",
+    "estado": "MG",
+    "curiosidade": "Antigo entroncamento da Estrada União e Indústria, com história ligada ao transporte colonial."
+  },
+  {
+    "municipio": "Simonésia",
+    "estado": "MG",
+    "curiosidade": "Forte produtora de café e conhecida por festas tradicionais animadas."
+  },
+  {
+    "municipio": "Sobrália",
+    "estado": "MG",
+    "curiosidade": "Cidade marcada pela cultura rural e pelas festas familiares."
+  },
+  {
+    "municipio": "Soledade de Minas",
+    "estado": "MG",
+    "curiosidade": "Famosa pelo trem turístico que conecta a cidade a São Lourenço."
+  },
+  {
+    "municipio": "Tabuleiro",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com tradição em festas religiosas e culinária típica."
+  },
+  {
+    "municipio": "Taiobeiras",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do comércio de confecções, referência regional."
+  },
+  {
+    "municipio": "Taparuba",
+    "estado": "MG",
+    "curiosidade": "Cidade pequena com forte cultura rural e festas comunitárias."
+  },
+  {
+    "municipio": "Tapira",
+    "estado": "MG",
+    "curiosidade": "Sede de importantes minas de fosfato e de tradições industriais."
+  },
+  {
+    "municipio": "Tapiraí",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana conhecida por retiros e pela culinária típica mineira."
+  },
+  {
+    "municipio": "Taquaraçu de Minas",
+    "estado": "MG",
+    "curiosidade": "Próxima a trilhas ecológicas e refúgios naturais muito visitados."
+  },
+  {
+    "municipio": "Tarumirim",
+    "estado": "MG",
+    "curiosidade": "Famosa por cachoeiras e pela cultura rural rica em música regional."
+  },
+  {
+    "municipio": "Teixeiras",
+    "estado": "MG",
+    "curiosidade": "Grande produtora de café e sede de feiras agrícolas tradicionais."
+  },
+  {
+    "municipio": "Teófilo Otoni",
+    "estado": "MG",
+    "curiosidade": "Capital mundial das pedras preciosas, importante centro gemológico."
+  },
+  {
+    "municipio": "Timóteo",
+    "estado": "MG",
+    "curiosidade": "Cidade industrial do Vale do Aço e sede do Parque Estadual do Rio Doce."
+  },
+  {
+    "municipio": "Tiradentes",
+    "estado": "MG",
+    "curiosidade": "Um dos maiores centros gastronômicos e turísticos do Brasil, repleto de história colonial."
+  },
+  {
+    "municipio": "Tiros",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com forte tradição cultural e culinária caseira."
+  },
+  {
+    "municipio": "Tobias",
+    "estado": "MG",
+    "curiosidade": "Pequeno distrito histórico preservando tradições do ciclo do ouro."
+  },
+  {
+    "municipio": "Tocantins",
+    "estado": "MG",
+    "curiosidade": "Cidade com vida cultural ativa e forte presença de grupos musicais."
+  },
+  {
+    "municipio": "Tocos do Moji",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana conhecida por cafés especiais e festas tradicionais."
+  },
+  {
+    "municipio": "Toledo",
+    "estado": "MG",
+    "curiosidade": "Famosa por trilhas e mirantes da Serra da Mantiqueira."
+  },
+  {
+    "municipio": "Tombos",
+    "estado": "MG",
+    "curiosidade": "Lar da Cachoeira de Tombos e de um dos estádios mais curiosos do país, encostado numa rocha."
+  },
+  {
+    "municipio": "Três Corações",
+    "estado": "MG",
+    "curiosidade": "Cidade natal de Pelé e famosa por seu forte patrimônio cultural."
+  },
+  {
+    "municipio": "Três Marias",
+    "estado": "MG",
+    "curiosidade": "Cidade da represa de mesmo nome, um dos maiores lagos artificiais do Brasil."
+  },
+  {
+    "municipio": "Três Pontas",
+    "estado": "MG",
+    "curiosidade": "Terra de Milton Nascimento e uma das maiores produtoras de café do país."
+  },
+  {
+    "municipio": "Tumiritinga",
+    "estado": "MG",
+    "curiosidade": "Cidade ribeirinha marcada pela cultura do Rio Doce."
+  },
+  {
+    "municipio": "Tupaciguara",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola com forte tradição em festas sertanejas."
+  },
+  {
+    "municipio": "Turmalina",
+    "estado": "MG",
+    "curiosidade": "Berço de importantes artesãs do Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Turvolândia",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana com cafés especiais e culinária típica mineira."
+  },
+  {
+    "municipio": "Ubá",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do móvel e cidade natal do cantor Zé Ramalho por parte da família."
+  },
+  {
+    "municipio": "Ubaí",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja conhecida por tradições musicais e festas religiosas."
+  },
+  {
+    "municipio": "Ubaporanga",
+    "estado": "MG",
+    "curiosidade": "Tradição rural e festas comunitárias muito preservadas."
+  },
+  {
+    "municipio": "Uberaba",
+    "estado": "MG",
+    "curiosidade": "Capital do gado zebu e sede da maior exposição pecuária da América Latina."
+  },
+  {
+    "municipio": "Uberlândia",
+    "estado": "MG",
+    "curiosidade": "Maior polo tecnológico do interior de MG, com vida cultural vibrante."
+  },
+  {
+    "municipio": "Umburatiba",
+    "estado": "MG",
+    "curiosidade": "Cidade tranquila com tradições sertanejas e festas religiosas."
+  },
+  {
+    "municipio": "Unaí",
+    "estado": "MG",
+    "curiosidade": "Maior produtora de feijão do Brasil e polo agrário nacional."
+  },
+  {
+    "municipio": "União de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola com festas e tradições comunitárias preservadas."
+  },
+  {
+    "municipio": "Uruana de Minas",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com fortes tradições de música sertaneja."
+  },
+  {
+    "municipio": "Urucânia",
+    "estado": "MG",
+    "curiosidade": "Conhecida por festas religiosas e tradições familiares da Zona da Mata."
+  },
+  {
+    "municipio": "Urucuia",
+    "estado": "MG",
+    "curiosidade": "Cenário de obras de Guimarães Rosa, com forte cultura sertaneja."
+  },
+  {
+    "municipio": "Vargem Alegre",
+    "estado": "MG",
+    "curiosidade": "Cidade com forte tradição agrícola e festas rurais."
+  },
+  {
+    "municipio": "Vargem Bonita",
+    "estado": "MG",
+    "curiosidade": "Considerada a 'capital da Canastra', porta de entrada para trilhas e cachoeiras famosas."
+  },
+  {
+    "municipio": "Vargem Grande do Rio Pardo",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja marcada por música de raiz e festas familiares."
+  },
+  {
+    "municipio": "Varginha",
+    "estado": "MG",
+    "curiosidade": "Conhecida mundialmente pelo caso do ET de Varginha, que virou símbolo turístico."
+  },
+  {
+    "municipio": "Varjão de Minas",
+    "estado": "MG",
+    "curiosidade": "Município do agronegócio forte, com feiras e eventos agropecuários importantes."
+  },
+  {
+    "municipio": "Várzea da Palma",
+    "estado": "MG",
+    "curiosidade": "Cidade ribeirinha conhecida pela pesca e por tradições familiares antigas."
+  },
+  {
+    "municipio": "Varzelândia",
+    "estado": "MG",
+    "curiosidade": "Cidade sertaneja com tradições folclóricas e festas animadas."
+  },
+  {
+    "municipio": "Vazante",
+    "estado": "MG",
+    "curiosidade": "Maior produtora de zinco do Brasil e conhecida por grutas impressionantes."
+  },
+  {
+    "municipio": "Verdelândia",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com festas tradicionais e cultura sertaneja."
+  },
+  {
+    "municipio": "Veredinha",
+    "estado": "MG",
+    "curiosidade": "Conhecida pelo artesanato feminino do Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Veríssimo",
+    "estado": "MG",
+    "curiosidade": "Cidade agrícola com tradições sertanejas e festas comunitárias antigas."
+  },
+  {
+    "municipio": "Vermelho Novo",
+    "estado": "MG",
+    "curiosidade": "Forte cultura rural, com festivais religiosos antigos."
+  },
+  {
+    "municipio": "Vespasiano",
+    "estado": "MG",
+    "curiosidade": "Sede da Cidade do Galo, um dos maiores centros de treinamento da América Latina."
+  },
+  {
+    "municipio": "Viçosa",
+    "estado": "MG",
+    "curiosidade": "Cidade universitária da UFV, referência nacional em ciência e tecnologia."
+  },
+  {
+    "municipio": "Vieiras",
+    "estado": "MG",
+    "curiosidade": "Cidade rural com festas familiares tradicionais e culinária típica."
+  },
+  {
+    "municipio": "Virgem da Lapa",
+    "estado": "MG",
+    "curiosidade": "Sede de uma das maiores festas religiosas do Vale do Jequitinhonha."
+  },
+  {
+    "municipio": "Virgínia",
+    "estado": "MG",
+    "curiosidade": "Cidade serrana famosa por clima frio e turismo de montanha."
+  },
+  {
+    "municipio": "Virginópolis",
+    "estado": "MG",
+    "curiosidade": "Capital mineira do festival de aviões de modelismo."
+  },
+  {
+    "municipio": "Virgolândia",
+    "estado": "MG",
+    "curiosidade": "Cidade que preserva tradições tradicionais de folia e festas comunitárias."
+  },
+  {
+    "municipio": "Visconde do Rio Branco",
+    "estado": "MG",
+    "curiosidade": "Importante polo cultural e histórico com tradição em bandas de música."
+  },
+  {
+    "municipio": "Volta Grande",
+    "estado": "MG",
+    "curiosidade": "Cidade natal de Humberto Mauro, pioneiro do cinema brasileiro."
+  },
+  {
+    "municipio": "Wenceslau Braz",
+    "estado": "MG",
+    "curiosidade": "Cidade rural que preserva festas religiosas e culinária típica mineira."
+  }
+]
+
+]
+
+]
+
+]
+
+]

@@ -1,0 +1,920 @@
+[
+  {
+    "municipio": "Abaiara",
+    "estado": "CE",
+    "curiosidade": "Localizado no Cariri, possui forte influência da cultura sertaneja e religiosa. Economia simples baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Acarape",
+    "estado": "CE",
+    "curiosidade": "Município histórico ligado ao ciclo do açúcar e às antigas fazendas da região. Economia voltada ao cultivo de cana e pequenas indústrias."
+  },
+  {
+    "municipio": "Acaraú",
+    "estado": "CE",
+    "curiosidade": "Importante polo pesqueiro do litoral oeste, famoso por seu camarão. Cidade com forte cultura praieira e belas paisagens naturais."
+  },
+  {
+    "municipio": "Acopiara",
+    "estado": "CE",
+    "curiosidade": "Conhecida como 'Rainha do Algodão' no passado. Hoje se destaca pela agropecuária e pelas festas culturais."
+  },
+  {
+    "municipio": "Aiuaba",
+    "estado": "CE",
+    "curiosidade": "Sede da maior reserva ecológica de caatinga do Brasil. Região extremamente quente e seca, típica do sertão."
+  },
+  {
+    "municipio": "Alcântaras",
+    "estado": "CE",
+    "curiosidade": "Município serrano com clima ameno e paisagens belíssimas. Cultura interiorana preservada em festas e tradições."
+  },
+  {
+    "municipio": "Altaneira",
+    "estado": "CE",
+    "curiosidade": "Cidade do Cariri conhecida pelos esportes de bicicleta e trilhas. Cultura regional forte e comunidade acolhedora."
+  },
+  {
+    "municipio": "Alto Santo",
+    "estado": "CE",
+    "curiosidade": "Abriga o famoso Castanhão, maior açude do Ceará. Economia baseada na agricultura irrigada e na pesca."
+  },
+  {
+    "municipio": "Amontada",
+    "estado": "CE",
+    "curiosidade": "Onde fica Icaraí de Amontada (Icaraizinho), destino turístico internacional. Conhecida por ventos fortes ideais para kitesurf."
+  },
+  {
+    "municipio": "Antonina do Norte",
+    "estado": "CE",
+    "curiosidade": "Um dos menores municípios do estado. Cultura sertaneja simples, com forte religiosidade."
+  },
+  {
+    "municipio": "Apuiarés",
+    "estado": "CE",
+    "curiosidade": "Cidade banhada pelo Rio Curu, com grande produção agrícola. Comunidade muito ligada à vida rural."
+  },
+  {
+    "municipio": "Aquiraz",
+    "estado": "CE",
+    "curiosidade": "Primeira capital do Ceará e importante polo turístico. Abriga o Beach Park, um dos maiores parques aquáticos da América Latina."
+  },
+  {
+    "municipio": "Aracati",
+    "estado": "CE",
+    "curiosidade": "Cidade histórica com arquitetura colonial preservada. Abriga a famosa Praia de Canoa Quebrada, destino turístico mundial."
+  },
+  {
+    "municipio": "Aracoiaba",
+    "estado": "CE",
+    "curiosidade": "Município serrano com clima agradável. Agricultura e pequenas indústrias impulsionam a economia."
+  },
+  {
+    "municipio": "Ararendá",
+    "estado": "CE",
+    "curiosidade": "Cidade tranquila da região noroeste. Economia rural e forte identidade cultural familiar."
+  },
+  {
+    "municipio": "Araripe",
+    "estado": "CE",
+    "curiosidade": "Integra o Cariri cearense e possui sítios geológicos importantes. Região rica em cultura e tradições sertanejas."
+  },
+  {
+    "municipio": "Aratuba",
+    "estado": "CE",
+    "curiosidade": "Localizada no Maciço de Baturité, com clima frio e serrano. Possui um dos melhores climas do Ceará."
+  },
+  {
+    "municipio": "Arneiroz",
+    "estado": "CE",
+    "curiosidade": "Município sertanejo com história ligada ao ciclo do gado. Ambiente rural preservado e vida pacata."
+  },
+  {
+    "municipio": "Assaré",
+    "estado": "CE",
+    "curiosidade": "Terra natal de Patativa do Assaré, um dos maiores poetas nordestinos. Forte referência cultural e literária do estado."
+  },
+  {
+    "municipio": "Aurora",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana do Cariri, com rios e formações rochosas. Forte presença de tradições religiosas e rurais."
+  },
+  {
+    "municipio": "Baixio",
+    "estado": "CE",
+    "curiosidade": "Município pequeno do centro-sul cearense. Economia rural e forte comunidade agrícola."
+  },
+  {
+    "municipio": "Banabuiú",
+    "estado": "CE",
+    "curiosidade": "Conhecido pelo Açude Banabuiú, importante para a região. Economia baseada na agropecuária e pesca."
+  },
+  {
+    "municipio": "Barbalha",
+    "estado": "CE",
+    "curiosidade": "Famosa pela Festa de Santo Antônio, uma das maiores celebrações religiosas do país. Cidade histórica do Cariri."
+  },
+  {
+    "municipio": "Barreira",
+    "estado": "CE",
+    "curiosidade": "Município marcado pela agricultura e pela cultura popular. Comunidade simples e fortemente enraizada na vida rural."
+  },
+  {
+    "municipio": "Barro",
+    "estado": "CE",
+    "curiosidade": "Cidade do Cariri com cultura sertaneja marcada por vaquejadas e agricultura. Região com belas paisagens naturais."
+  },
+  {
+    "municipio": "Barroquinha",
+    "estado": "CE",
+    "curiosidade": "Município litorâneo com praias tranquilas e vila de pescadores. Próximo a Camocim, atrai turistas em busca de sossego."
+  },
+  {
+    "municipio": "Baturité",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana com clima frio e vegetação de mata atlântica. Teve grande importância histórica no Ceará colonial."
+  },
+  {
+    "municipio": "Beberibe",
+    "estado": "CE",
+    "curiosidade": "Abriga algumas das praias mais bonitas do país, como Morro Branco. Conhecida por falésias coloridas e turismo forte."
+  },
+  {
+    "municipio": "Bela Cruz",
+    "estado": "CE",
+    "curiosidade": "Cidade próxima ao litoral com forte produção agrícola. Cultura sertaneja e praieira convivem na região."
+  },
+  {
+    "municipio": "Boa Viagem",
+    "estado": "CE",
+    "curiosidade": "Município sertanejo de grande extensão territorial. Destaca-se pela pecuária e por tradições culturais preservadas."
+  },
+  {
+    "municipio": "Brejo Santo",
+    "estado": "CE",
+    "curiosidade": "Importante polo econômico do Cariri. Conhecida pela educação forte e pela cultura tradicional sertaneja."
+  },
+  {
+    "municipio": "Camocim",
+    "estado": "CE",
+    "curiosidade": "Cidade litorânea com praias extensas, dunas e lagoas. Importante polo pesqueiro e turístico do litoral oeste."
+  },
+  {
+    "municipio": "Campos Sales",
+    "estado": "CE",
+    "curiosidade": "Localizado no sertão do Cariri Oeste, possui clima seco e cultura rural forte. Região rica em formações rochosas."
+  },
+  {
+    "municipio": "Canindé",
+    "estado": "CE",
+    "curiosidade": "Um dos maiores centros de romaria do Brasil, dedicado a São Francisco. Recebe milhões de peregrinos todos os anos."
+  },
+  {
+    "municipio": "Capistrano",
+    "estado": "CE",
+    "curiosidade": "Município serrano ligado ao Maciço de Baturité. Clima agradável e cultura interiorana preservada."
+  },
+  {
+    "municipio": "Caridade",
+    "estado": "CE",
+    "curiosidade": "Cidade tranquila do sertão central, com economia agrícola. Tradições religiosas são fortes na comunidade."
+  },
+  {
+    "municipio": "Cariré",
+    "estado": "CE",
+    "curiosidade": "Localizado no norte cearense, com economia voltada à agricultura. Cultura sertaneja e festividades regionais muito presentes."
+  },
+  {
+    "municipio": "Caririaçu",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana do Cariri com clima ameno. Cultura rural e religiosa compõem a identidade local."
+  },
+  {
+    "municipio": "Cariús",
+    "estado": "CE",
+    "curiosidade": "Município do centro-sul com forte produção agrícola e pecuária. Região marcada por vales férteis."
+  },
+  {
+    "municipio": "Carnaubal",
+    "estado": "CE",
+    "curiosidade": "Município serrano da Ibiapaba, com clima frio e paisagens exuberantes. Forte potencial turístico."
+  },
+  {
+    "municipio": "Cascavel",
+    "estado": "CE",
+    "curiosidade": "Cidade próxima ao litoral, com destaque para a Praia de Águas Belas. Turismo e pesca impulsionam sua economia."
+  },
+  {
+    "municipio": "Catarina",
+    "estado": "CE",
+    "curiosidade": "Município sertanejo conhecido por temperaturas muito altas. Economia rural e cultura tradicional forte."
+  },
+  {
+    "municipio": "Catunda",
+    "estado": "CE",
+    "curiosidade": "Localizada na região norte, com economia baseada em agricultura. Cidade pacata com forte identidade rural."
+  },
+  {
+    "municipio": "Caucaia",
+    "estado": "CE",
+    "curiosidade": "Região metropolitana com belas praias como Cumbuco, destino de kitesurf. Cidade em forte expansão urbana e turística."
+  },
+  {
+    "municipio": "Cedro",
+    "estado": "CE",
+    "curiosidade": "Município do centro-sul, conhecido pela cultura agrícola. Possui tradições religiosas e sertanejas fortes."
+  },
+  {
+    "municipio": "Chaval",
+    "estado": "CE",
+    "curiosidade": "Cidade na divisa com o Piauí, cercada por formações rochosas únicas. Região pesqueira ligada ao Delta do Parnaíba."
+  },
+  {
+    "municipio": "Choró",
+    "estado": "CE",
+    "curiosidade": "Município do sertão central com forte produção rural. Cultura interiorana simples e preservada."
+  },
+  {
+    "municipio": "Chorozinho",
+    "estado": "CE",
+    "curiosidade": "Importante município cortado pela BR-116. Economia mista entre agricultura e pequenas indústrias."
+  },
+  {
+    "municipio": "Coreaú",
+    "estado": "CE",
+    "curiosidade": "Cidade do norte cearense conhecida por suas tradições religiosas. Região marcada por belas paisagens naturais."
+  },
+  {
+    "municipio": "Crateús",
+    "estado": "CE",
+    "curiosidade": "Importante polo regional do sertão oeste. Cidade de forte tradição histórica e cultural, com economia diversificada."
+  },
+  {
+    "municipio": "Crato",
+    "estado": "CE",
+    "curiosidade": "Uma das principais cidades do Cariri, com clima ameno e forte cultura regional. Abriga universidades e eventos tradicionais."
+  },
+  {
+    "municipio": "Croatá",
+    "estado": "CE",
+    "curiosidade": "Município serrano da Ibiapaba com clima frio. Rico em belezas naturais e atividades rurais."
+  },
+  {
+    "municipio": "Cruz",
+    "estado": "CE",
+    "curiosidade": "Onde fica a famosa Praia do Preá, conhecida mundialmente pelo kitesurf. Região turística em rápido crescimento."
+  },
+  {
+    "municipio": "Deputado Irapuan Pinheiro",
+    "estado": "CE",
+    "curiosidade": "Município pequeno do sertão, com economia rural e forte religiosidade. Comunidade simples e acolhedora."
+  },
+  {
+    "municipio": "Ererê",
+    "estado": "CE",
+    "curiosidade": "Município do Vale do Jaguaribe com economia baseada na agricultura e pecuária. Paisagens típicas do sertão."
+  },
+  {
+    "municipio": "Eusébio",
+    "estado": "CE",
+    "curiosidade": "Parte da Região Metropolitana de Fortaleza, com alto IDH. Sede de grandes empresas e forte expansão urbana."
+  },
+  {
+    "municipio": "Farias Brito",
+    "estado": "CE",
+    "curiosidade": "Cidade do Cariri conhecida pela produção de cal e por artistas regionais. Cultura sertaneja muito presente."
+  },
+  {
+    "municipio": "Forquilha",
+    "estado": "CE",
+    "curiosidade": "Localizado no norte, com economia baseada no comércio e agricultura. Destaca-se pela represa de mesmo nome."
+  },
+  {
+    "municipio": "Fortaleza",
+    "estado": "CE",
+    "curiosidade": "Capital do Ceará, famosa por praias como Iracema e Futuro. Um dos maiores destinos turísticos do Brasil, com cultura forte e vibrante."
+  },
+  {
+    "municipio": "Fortim",
+    "estado": "CE",
+    "curiosidade": "Município litorâneo com praias calmas e passeios de barco. Situado na foz do Rio Jaguaribe, é destino turístico em expansão."
+  },
+  {
+    "municipio": "Frecheirinha",
+    "estado": "CE",
+    "curiosidade": "Cidade do norte cearense conhecida pelo artesanato e tradições locais. Economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "General Sampaio",
+    "estado": "CE",
+    "curiosidade": "Município pequeno banhado pelo Rio Curu. Cultura rural e forte integração comunitária."
+  },
+  {
+    "municipio": "Graça",
+    "estado": "CE",
+    "curiosidade": "Localizada na região norte, com economia rural e cultura sertaneja. Conhecida por sua tranquilidade."
+  },
+  {
+    "municipio": "Granja",
+    "estado": "CE",
+    "curiosidade": "Cidade histórica, sede da antiga aristocracia cearense. Próxima a Camocim e rota de turismo ecológico."
+  },
+  {
+    "municipio": "Granjeiro",
+    "estado": "CE",
+    "curiosidade": "Um dos menores municípios do Ceará. Comunidade rural simples e acolhedora."
+  },
+  {
+    "municipio": "Groaíras",
+    "estado": "CE",
+    "curiosidade": "Município do norte com economia agrícola. Festas religiosas movimentam a comunidade."
+  },
+  {
+    "municipio": "Guaiúba",
+    "estado": "CE",
+    "curiosidade": "Parte da Região Metropolitana, com clima ameno e áreas verdes. Economia diversificada e crescimento urbano recente."
+  },
+  {
+    "municipio": "Guaraciaba do Norte",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana da Ibiapaba com clima frio e vistas belíssimas. Forte polo agrícola e turístico."
+  },
+  {
+    "municipio": "Guaramiranga",
+    "estado": "CE",
+    "curiosidade": "Conhecida como a 'Suíça Cearense', famosa pelo clima frio e pelo Festival de Jazz & Blues. Um dos principais destinos serranos do Nordeste."
+  },
+  {
+    "municipio": "Hidrolândia",
+    "estado": "CE",
+    "curiosidade": "Cidade do sertão com tradição no cultivo de melancia. Comunidade rural e clima quente característico."
+  },
+  {
+    "municipio": "Horizonte",
+    "estado": "CE",
+    "curiosidade": "Polo industrial importante da Região Metropolitana de Fortaleza. Cidade moderna e em crescimento acelerado."
+  },
+  {
+    "municipio": "Ibaretama",
+    "estado": "CE",
+    "curiosidade": "Município do sertão central, com economia baseada na pecuária. Cultura sertaneja muito marcada."
+  },
+  {
+    "municipio": "Ibiapina",
+    "estado": "CE",
+    "curiosidade": "Município serrano da Ibiapaba, com clima frio e agricultura forte. Paisagens montanhosas atraem visitantes."
+  },
+  {
+    "municipio": "Ibicuitinga",
+    "estado": "CE",
+    "curiosidade": "Cidade do Vale do Jaguaribe com forte foco em agricultura irrigada. Comunidade rural unida e tradicional."
+  },
+  {
+    "municipio": "Icapuí",
+    "estado": "CE",
+    "curiosidade": "Município mais oriental do estado, com praias preservadas e clima tranquilo. Famoso por iniciativas ambientais."
+  },
+  {
+    "municipio": "Icó",
+    "estado": "CE",
+    "curiosidade": "Uma das cidades históricas mais antigas do Ceará. Possui patrimônio arquitetônico único e importância cultural enorme."
+  },
+  {
+    "municipio": "Iguatu",
+    "estado": "CE",
+    "curiosidade": "Centro econômico do centro-sul, conhecida como 'Terra da Telha'. Importante polo comercial e educacional."
+  },
+  {
+    "municipio": "Independência",
+    "estado": "CE",
+    "curiosidade": "Município do sertão com grande extensão territorial. Economia rural e paisagens grandiosas de serra."
+  },
+  {
+    "municipio": "Ipaporanga",
+    "estado": "CE",
+    "curiosidade": "Cidade tranquila do sertão, com economia baseada na agropecuária. Cultura rural forte e estilo de vida simples."
+  },
+  {
+    "municipio": "Ipaumirim",
+    "estado": "CE",
+    "curiosidade": "Localizada no limite com a Paraíba, tem forte vocação agropecuária. Comunidade tradicional e acolhedora."
+  },
+  {
+    "municipio": "Ipu",
+    "estado": "CE",
+    "curiosidade": "Famosa pela Bica do Ipu, citada por José de Alencar em 'Iracema'. Cidade serrana com clima agradável e história literária."
+  },
+  {
+    "municipio": "Ipueiras",
+    "estado": "CE",
+    "curiosidade": "Município de grande área territorial, com serras e vales belíssimos. Forte tradição rural e cultural."
+  },
+  {
+    "municipio": "Iracema",
+    "estado": "CE",
+    "curiosidade": "Cidade sertaneja com forte tradição religiosa e cultural. O nome homenageia a personagem de José de Alencar."
+  },
+  {
+    "municipio": "Irauçuba",
+    "estado": "CE",
+    "curiosidade": "Conhecida por temperaturas altas e secas intensas. Cultura sertaneja forte e economia baseada em pecuária."
+  },
+  {
+    "municipio": "Itaitinga",
+    "estado": "CE",
+    "curiosidade": "Município da Região Metropolitana com forte presença industrial. Crescimento urbano acelerado em anos recentes."
+  },
+  {
+    "municipio": "Itapagé",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana com clima agradável. Economia baseada na fruticultura e agricultura."
+  },
+  {
+    "municipio": "Itapipoca",
+    "estado": "CE",
+    "curiosidade": "Conhecida como 'A Terra dos Três Climas': praia, sertão e serra. Uma das cidades mais importantes do norte do estado."
+  },
+  {
+    "municipio": "Itapiúna",
+    "estado": "CE",
+    "curiosidade": "Município serrano do Maciço de Baturité. Vegetação exuberante e clima agradável."
+  },
+  {
+    "municipio": "Itarema",
+    "estado": "CE",
+    "curiosidade": "Município litorâneo com forte cultura de pesca. Região com ventos fortes, ideal para esportes náuticos."
+  },
+  {
+    "municipio": "Itatira",
+    "estado": "CE",
+    "curiosidade": "Localizado no sertão central, com economia rural forte. Paisagens típicas da caatinga."
+  },
+  {
+    "municipio": "Jaguaretama",
+    "estado": "CE",
+    "curiosidade": "Município às margens do Rio Jaguaribe. Economia agrícola com forte produção de milho e feijão."
+  },
+  {
+    "municipio": "Jaguaribara",
+    "estado": "CE",
+    "curiosidade": "Cidade reconstruída devido ao Açude Castanhão. Novo planejamento urbano trouxe qualidade de vida à população."
+  },
+  {
+    "municipio": "Jaguaribe",
+    "estado": "CE",
+    "curiosidade": "Importante cidade da região do Vale do Jaguaribe. Forte polo agrícola e histórico."
+  },
+  {
+    "municipio": "Jaguaruana",
+    "estado": "CE",
+    "curiosidade": "Conhecida nacionalmente pela produção de redes artesanais. Cidade criativa com forte economia têxtil."
+  },
+  {
+    "municipio": "Jardim",
+    "estado": "CE",
+    "curiosidade": "Município do Cariri com paisagens serranas e cultura sertaneja tradicional. Forte presença religiosa."
+  },
+  {
+    "municipio": "Jati",
+    "estado": "CE",
+    "curiosidade": "Município estratégicamente importante por abrigar obras da transposição do Rio São Francisco. Economia rural e clima semiárido."
+  },
+  {
+    "municipio": "Jijoca de Jericoacoara",
+    "estado": "CE",
+    "curiosidade": "Onde fica Jericoacoara, uma das praias mais famosas do mundo. Destino turístico internacional com dunas, lagoas e pôr do sol icônico."
+  },
+  {
+    "municipio": "Juazeiro do Norte",
+    "estado": "CE",
+    "curiosidade": "Terra do Padre Cícero Romão, importante centro religioso e econômico do Cariri. Um dos maiores destinos de romaria do país."
+  },
+  {
+    "municipio": "Jucás",
+    "estado": "CE",
+    "curiosidade": "Município do centro-sul com economia agrícola e forte religiosidade. Festas tradicionais movimentam a região."
+  },
+  {
+    "municipio": "Lavras da Mangabeira",
+    "estado": "CE",
+    "curiosidade": "Cidade histórica do centro-sul, com forte tradição cultural e religiosa. Economia baseada na pecuária."
+  },
+  {
+    "municipio": "Limoeiro do Norte",
+    "estado": "CE",
+    "curiosidade": "Capital da fruticultura irrigada do Ceará. Grande polo educacional e agrícola do Vale do Jaguaribe."
+  },
+  {
+    "municipio": "Madalena",
+    "estado": "CE",
+    "curiosidade": "Município do sertão central com forte cultura rural. Economia baseada na pecuária e agricultura."
+  },
+  {
+    "municipio": "Maracanaú",
+    "estado": "CE",
+    "curiosidade": "Um dos maiores polos industriais do Norte-Nordeste. Cidade altamente urbanizada e estratégica para a economia do estado."
+  },
+  {
+    "municipio": "Maranguape",
+    "estado": "CE",
+    "curiosidade": "Terra do humorista Chico Anysio. Município serrano com clima agradável e forte expansão urbana."
+  },
+  {
+    "municipio": "Marco",
+    "estado": "CE",
+    "curiosidade": "Município com economia baseada na indústria moveleira. Forte polo de fabricação de móveis no estado."
+  },
+  {
+    "municipio": "Martinópole",
+    "estado": "CE",
+    "curiosidade": "Cidade do norte cearense com economia simples. Característica por sua tranquilidade e vida rural."
+  },
+  {
+    "municipio": "Massapê",
+    "estado": "CE",
+    "curiosidade": "Município tradicional do norte, ligado historicamente à família Gomes. Forte presença agrícola e cultural."
+  },
+  {
+    "municipio": "Mauriti",
+    "estado": "CE",
+    "curiosidade": "Município do Cariri com economia agrícola forte. Tradições populares e religiosas marcam o cotidiano."
+  },
+  {
+    "municipio": "Meruoca",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana com clima frio e belas paisagens. Um dos principais destinos de serra do Ceará."
+  },
+  {
+    "municipio": "Milagres",
+    "estado": "CE",
+    "curiosidade": "Município do Cariri, marcado por religiosidade e história. Economia rural e tradições culturais fortes."
+  },
+  {
+    "municipio": "Milhã",
+    "estado": "CE",
+    "curiosidade": "Cidade sertaneja com economia baseada na pecuária. Tradições religiosas e cultura sertaneja preservadas."
+  },
+  {
+    "municipio": "Miraíma",
+    "estado": "CE",
+    "curiosidade": "Município do norte com forte produção agrícola. Região de clima quente e cultura simples."
+  },
+  {
+    "municipio": "Missão Velha",
+    "estado": "CE",
+    "curiosidade": "Um dos municípios mais antigos do Cariri. Possui importantes sítios arqueológicos e cachoeiras naturais."
+  },
+  {
+    "municipio": "Mombaça",
+    "estado": "CE",
+    "curiosidade": "Cidade conhecida por sua vasta cultura sertaneja. Economia forte na pecuária e agricultura."
+  },
+  {
+    "municipio": "Monsenhor Tabosa",
+    "estado": "CE",
+    "curiosidade": "Município serrano com clima agradável. Conhecido por trilhas e paisagens naturais."
+  },
+  {
+    "municipio": "Morada Nova",
+    "estado": "CE",
+    "curiosidade": "Famosa pelas tradicionais vaquejadas e produção de couro. Forte economia agropecuária."
+  },
+  {
+    "municipio": "Moraújo",
+    "estado": "CE",
+    "curiosidade": "Cidade pequena da região norte, com economia agrícola. Comunidade acolhedora e vida simples."
+  },
+  {
+    "municipio": "Morrinhos",
+    "estado": "CE",
+    "curiosidade": "Município do norte com cultura fortemente ligada à agricultura. Região de clima semiárido típico."
+  },
+  {
+    "municipio": "Mucambo",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana próxima à Serra da Ibiapaba. Cultura regional forte e clima mais ameno."
+  },
+  {
+    "municipio": "Mulungu",
+    "estado": "CE",
+    "curiosidade": "Município serrano no Maciço de Baturité. Conhecido pelo clima frio e natureza preservada."
+  },
+  [
+  {
+    "municipio": "Nova Olinda",
+    "estado": "CE",
+    "curiosidade": "Importante polo cultural do Cariri, sede da Fundação Casa Grande. Conhecida pela forte produção artística e arqueológica."
+  },
+  {
+    "municipio": "Nova Russas",
+    "estado": "CE",
+    "curiosidade": "Situada na região noroeste, com economia baseada na agricultura. Cultura interiorana e festas religiosas são marcantes."
+  },
+  {
+    "municipio": "Novo Oriente",
+    "estado": "CE",
+    "curiosidade": "Município do sertão dos Inhamuns, com tradição na pecuária. Possui paisagens áridas e cultura sertaneja forte."
+  },
+  {
+    "municipio": "Ocara",
+    "estado": "CE",
+    "curiosidade": "Localizada no sertão central, destaca-se pela agricultura e cultura popular. Comunidade rural muito ativa."
+  },
+  {
+    "municipio": "Orós",
+       "estado": "CE",
+    "curiosidade": "Abriga o Açude Orós, um dos maiores do estado. Cidade eternizada na música 'Oroz' de Luiz Gonzaga."
+  },
+  {
+    "municipio": "Pacajus",
+    "estado": "CE",
+    "curiosidade": "Importante polo industrial da Região Metropolitana de Fortaleza. Cidade em forte crescimento urbano e econômico."
+  },
+  {
+    "municipio": "Pacatuba",
+    "estado": "CE",
+    "curiosidade": "Município serrano da RMF, com trilhas e áreas verdes preservadas. Forte ligação com o turismo ecológico."
+  },
+  {
+    "municipio": "Pacoti",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana com clima mais frio do estado. Famosa por cafés, mirantes e áreas de preservação ambiental."
+  },
+  {
+    "municipio": "Pacujá",
+    "estado": "CE",
+    "curiosidade": "Município pequeno no norte cearense. Economia baseada na agricultura e produção rural."
+  },
+  {
+    "municipio": "Palhano",
+    "estado": "CE",
+    "curiosidade": "Município do Vale do Jaguaribe com economia simples. Paisagens de caatinga predominam."
+  },
+  {
+    "municipio": "Palmácia",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana com clima ameno e natureza exuberante. Destino procurado para turismo de montanha."
+  },
+  {
+    "municipio": "Paracuru",
+    "estado": "CE",
+    "curiosidade": "Importante destino de kitesurf e praias paradisíacas. Forte tradição na pesca e artesanato."
+  },
+  {
+    "municipio": "Paraipaba",
+    "estado": "CE",
+    "curiosidade": "Sede da Praia da Lagoinha, uma das mais famosas do Ceará. Turismo e pesca impulsionam sua economia."
+  },
+  {
+    "municipio": "Parambu",
+    "estado": "CE",
+    "curiosidade": "Município sertanejo importante no polo pecuário. Cultura rural e festas populares são marcantes."
+  },
+  {
+    "municipio": "Paramoti",
+    "estado": "CE",
+    "curiosidade": "Localizado no sertão central, possui economia agrícola e clima semiárido. Comunidade forte e tradicional."
+  },
+  {
+    "municipio": "Pedra Branca",
+    "estado": "CE",
+    "curiosidade": "Município serrano dos Inhamuns, com clima mais ameno. Economia voltada à agricultura e pecuária."
+  },
+  {
+    "municipio": "Penaforte",
+    "estado": "CE",
+    "curiosidade": "Município na divisa com Pernambuco, marcado por cultura sertaneja. Economia simples e forte senso comunitário."
+  },
+  {
+    "municipio": "Pentecoste",
+    "estado": "CE",
+    "curiosidade": "Conhecida pela Barragem do General Sampaio. Forte tradição rural e economia baseada na pesca e agricultura."
+  },
+  {
+    "municipio": "Pereiro",
+    "estado": "CE",
+    "curiosidade": "Município serrano com clima mais frio. Conhecido pela cultura artesanal e agricultura."
+  },
+  {
+    "municipio": "Pindoretama",
+    "estado": "CE",
+    "curiosidade": "Famosa pela produção de rapadura artesanal. Cidade próxima ao litoral, com forte cultura rural."
+  },
+  {
+    "municipio": "Piquet Carneiro",
+    "estado": "CE",
+    "curiosidade": "Município do sertão central, com forte agropecuária. Comunidade marcada por tradições religiosas."
+  },
+  {
+    "municipio": "Pires Ferreira",
+    "estado": "CE",
+    "curiosidade": "Cidade pequena próxima à Ibiapaba. Economia simples e forte identidade interiorana."
+  },
+  {
+    "municipio": "Poranga",
+    "estado": "CE",
+    "curiosidade": "Município de serras e vales, com paisagens marcantes. Cultura sertaneja e economia rural predominam."
+  },
+  {
+    "municipio": "Porteiras",
+    "estado": "CE",
+    "curiosidade": "Município do Cariri, com serras e clima mais ameno. Região rica em tradições culturais."
+  },
+  {
+    "municipio": "Potengi",
+    "estado": "CE",
+    "curiosidade": "Cidade caririense marcada por tradições religiosas e festas populares. Economia voltada à pecuária."
+  },
+  {
+    "municipio": "Potiretama",
+    "estado": "CE",
+    "curiosidade": "Município pequeno no Vale do Jaguaribe. Cultura rural e economia agrícola predominam."
+  },
+  {
+    "municipio": "Quiterianópolis",
+    "estado": "CE",
+    "curiosidade": "Município sertanejo com forte criação de gado. Cultura tradicional e paisagens de caatinga."
+  },
+  {
+    "municipio": "Quixadá",
+    "estado": "CE",
+    "curiosidade": "Famosa pelas ‘monólitos’, formações rochosas únicas. Cidade universitária e polo de esportes radicais como voo livre."
+  },
+  {
+    "municipio": "Quixelô",
+    "estado": "CE",
+    "curiosidade": "Município vizinho de Iguatu, conhecido pela cultura sertaneja e economia rural forte."
+  },
+  {
+    "municipio": "Quixeramobim",
+    "estado": "CE",
+    "curiosidade": "Terra natal do Dragão do Mar e famosa pela arquitetura histórica. Importante polo industrial e agropecuário."
+  },
+  {
+    "municipio": "Quixeré",
+    "estado": "CE",
+    "curiosidade": "Município agrícola do Vale do Jaguaribe. Forte produção de frutas irrigadas."
+  },
+  {
+    "municipio": "Redenção",
+    "estado": "CE",
+    "curiosidade": "Primeira cidade da América Latina a libertar todos os escravizados. Sede da UNILAB e rica em história afro-brasileira."
+  },
+  {
+    "municipio": "Reriutaba",
+    "estado": "CE",
+    "curiosidade": "Município tranquilo da região norte, com economia rural. Festas religiosas são muito tradicionais."
+  },
+  {
+    "municipio": "Russas",
+    "estado": "CE",
+    "curiosidade": "Importante polo industrial e agrícola do Vale do Jaguaribe. Conhecida como 'Terra da Laranja'."
+  },
+  {
+    "municipio": "Saboeiro",
+    "estado": "CE",
+    "curiosidade": "Cidade sertaneja com forte presença da pecuária. Região árida e com clima típico do sertão."
+  },
+  {
+    "municipio": "Salitre",
+    "estado": "CE",
+    "curiosidade": "Ponto extremo oeste do Ceará, com fortes tradições sertanejas. Região marcada por altas temperaturas."
+  },
+  {
+    "municipio": "Santa Quitéria",
+    "estado": "CE",
+    "curiosidade": "Um dos maiores municípios em área do estado. Região serrana e sertaneja, com economia diversificada."
+  },
+  {
+    "municipio": "Santana do Acaraú",
+    "estado": "CE",
+    "curiosidade": "Município histórico do vale do Acaraú. Economia baseada na agricultura, pesca e pecuária."
+  },
+  {
+    "municipio": "Santana do Cariri",
+    "estado": "CE",
+    "curiosidade": "Reconhecida mundialmente por fósseis raros, como o pterossauro 'Santanaraptor'. Possui grande patrimônio paleontológico."
+  },
+  {
+    "municipio": "São Benedito",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana da Ibiapaba, com clima frio e forte turismo. Grande produtora de flores."
+  },
+  {
+    "municipio": "São Gonçalo do Amarante",
+    "estado": "CE",
+    "curiosidade": "Região industrial e portuária, sede do Complexo do Pecém. Uma das cidades que mais crescem no estado."
+  },
+  {
+    "municipio": "São João do Jaguaribe",
+    "estado": "CE",
+    "curiosidade": "Município pequeno do Vale do Jaguaribe, com economia agrícola. Comunidade pacata e tradicional."
+  },
+  {
+    "municipio": "São Luís do Curu",
+    "estado": "CE",
+    "curiosidade": "Cidade banhada pelo Rio Curu, com economia agrícola e clima quente. Cultura interiorana forte."
+  },
+  {
+    "municipio": "Senador Pompeu",
+    "estado": "CE",
+    "curiosidade": "Cidade marcada pelo 'Campo de Concentração' da seca de 1932. Grande importância histórica e cultural."
+  },
+  {
+    "municipio": "Senador Sá",
+    "estado": "CE",
+    "curiosidade": "Município pequeno da região norte, com vida rural tranquila. Economia baseada na agricultura."
+  },
+  {
+    "municipio": "Sobral",
+    "estado": "CE",
+    "curiosidade": "Uma das cidades mais importantes do estado, polo educacional e tecnológico. Famosa mundialmente pela confirmação da Teoria da Relatividade em 1919."
+  },
+  {
+    "municipio": "Solonópole",
+    "estado": "CE",
+    "curiosidade": "Município sertanejo com economia rural. Cultura forte ligada à pecuária e ao vaqueiro."
+  },
+  {
+    "municipio": "Tabuleiro do Norte",
+    "estado": "CE",
+    "curiosidade": "Importante polo agrícola do Vale do Jaguaribe. Forte produção de frutas irrigadas e melão."
+  },
+  {
+    "municipio": "Tamboril",
+    "estado": "CE",
+    "curiosidade": "Município sertanejo com forte tradição agropecuária. Nomeado por conta de uma árvore típica da região."
+  },
+  {
+    "municipio": "Tarrafas",
+    "estado": "CE",
+    "curiosidade": "Município do Cariri com economia rural. Paisagens de caatinga e cultura sertaneja marcantes."
+  },
+  {
+    "municipio": "Tauá",
+    "estado": "CE",
+    "curiosidade": "Importante polo dos Inhamuns. Conhecida por seu observatório astronômico e forte tradição agropecuária."
+  },
+  {
+    "municipio": "Tejuçuoca",
+    "estado": "CE",
+    "curiosidade": "Cidade tranquila com economia baseada em agricultura e pecuária. Forte identidade cultural interiorana."
+  },
+  {
+    "municipio": "Tianguá",
+    "estado": "CE",
+    "curiosidade": "Principal polo comercial da Serra da Ibiapaba. Região fria, turística e com forte produção agrícola."
+  },
+  {
+    "municipio": "Trairi",
+    "estado": "CE",
+    "curiosidade": "Município litorâneo com praias belíssimas como Flecheiras e Mundaú. Forte vocação turística."
+  },
+  {
+    "municipio": "Tururu",
+    "estado": "CE",
+    "curiosidade": "Município pequeno da região norte, com cultura rural e economia simples. Festas tradicionais movimentam a cidade."
+  },
+  {
+    "municipio": "Ubajara",
+    "estado": "CE",
+    "curiosidade": "Abriga o Parque Nacional de Ubajara, com grutas e teleférico famoso. Um dos destinos naturais mais importantes do estado."
+  },
+  {
+    "municipio": "Umari",
+    "estado": "CE",
+    "curiosidade": "Município do centro-sul com economia agrícola. Vida tranquila e forte tradição religiosa."
+  },
+  {
+    "municipio": "Umirim",
+    "estado": "CE",
+    "curiosidade": "Município do norte cearense com economia rural. Cultura sertaneja presente no cotidiano."
+  },
+  {
+    "municipio": "Uruburetama",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana com clima ameno. Forte ligação histórica com o período colonial."
+  },
+  {
+    "municipio": "Uruoca",
+    "estado": "CE",
+    "curiosidade": "Município próximo a Camocim, com cultura rural e economia simples. Comunidade acolhedora."
+  },
+  {
+    "municipio": "Varjota",
+    "estado": "CE",
+    "curiosidade": "Conhecida pelo açude Araras, um dos maiores do estado. Importante polo pesqueiro."
+  },
+  {
+    "municipio": "Várzea Alegre",
+    "estado": "CE",
+    "curiosidade": "Cidade do centro-sul com forte tradição musical e cultural. Berço de repentistas e artistas populares."
+  },
+  {
+    "municipio": "Viçosa do Ceará",
+    "estado": "CE",
+    "curiosidade": "Cidade serrana histórica, com clima agradável e arquitetura colonial. Importante polo turístico da serra."
+  }
+]
+
+]

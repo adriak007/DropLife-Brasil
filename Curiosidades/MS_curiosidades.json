@@ -1,0 +1,397 @@
+[
+  {
+    "municipio": "Água Clara",
+    "estado": "MS",
+    "curiosidade": "Conhecida pelas festas tradicionais e pela produção artesanal de doces regionais, muito apreciados pelos viajantes."
+  },
+  {
+    "municipio": "Alcinópolis",
+    "estado": "MS",
+    "curiosidade": "Possui sítios arqueológicos com pinturas rupestres de milhares de anos, sendo um dos mais importantes do Brasil."
+  },
+  {
+    "municipio": "Amambai",
+    "estado": "MS",
+    "curiosidade": "Tem forte presença Guarani-Kaiowá, com rituais, artesanato e músicas tradicionais preservadas pelas aldeias."
+  },
+  {
+    "municipio": "Anastácio",
+    "estado": "MS",
+    "curiosidade": "Famosa pela Festa de São Sebastião, que reúne cavalgadas, música típica e culinária pantaneira."
+  },
+  {
+    "municipio": "Anaurilândia",
+    "estado": "MS",
+    "curiosidade": "Surgiu como cidade planejada pela Companhia Viação São Paulo–Mato Grosso, preservando arquitetura peculiar."
+  },
+  {
+    "municipio": "Angélica",
+    "estado": "MS",
+    "curiosidade": "Celebra festas agropecuárias tradicionais e mantém viva a culinária típica baseada em peixes e carne de sol."
+  },
+  {
+    "municipio": "Antônio João",
+    "estado": "MS",
+    "curiosidade": "Cidade marcada por batalhas da Guerra do Paraguai e por tradições culturais trazidas por imigrantes."
+  },
+  {
+    "municipio": "Aparecida do Taboado",
+    "estado": "MS",
+    "curiosidade": "Reconhecida nacionalmente pelo Festival de Música Sertaneja de raiz, que revelou muitos artistas regionais."
+  },
+  {
+    "municipio": "Aquidauana",
+    "estado": "MS",
+    "curiosidade": "Considerada portal cultural do Pantanal, com forte influência indígena Terena e gastronomia típica."
+  },
+  {
+    "municipio": "Aral Moreira",
+    "estado": "MS",
+    "curiosidade": "Cidade de tradições fronteiriças, marcada pela mistura de sotaques e culinárias do Brasil e do Paraguai."
+  },
+  {
+    "municipio": "Bandeirantes",
+    "estado": "MS",
+    "curiosidade": "Conhecida por suas festas de laço comprido e práticas equestres tradicionais."
+  },
+  {
+    "municipio": "Bataguassu",
+    "estado": "MS",
+    "curiosidade": "Fundada por Armando Sales de Oliveira, a cidade preserva construções históricas e eventos culturais antigos."
+  },
+  {
+    "municipio": "Batayporã",
+    "estado": "MS",
+    "curiosidade": "Forte influência da imigração japonesa, que deixou marcas na agricultura e em festivais culturais locais."
+  },
+  {
+    "municipio": "Bela Vista",
+    "estado": "MS",
+    "curiosidade": "Cidade com grande tradição militar e festas fronteiriças que celebram a música paraguaia e brasileira."
+  },
+  {
+    "municipio": "Bodoquena",
+    "estado": "MS",
+    "curiosidade": "Famosa por cavernas e rios cristalinos, mas também conhecida pela criação de gado e cultura rural preservada."
+  },
+  {
+    "municipio": "Bonito",
+    "estado": "MS",
+    "curiosidade": "Um dos destinos turísticos mais famosos do mundo, com rios transparentes e práticas ecológicas premiadas."
+  },
+  {
+    "municipio": "Brasilândia",
+    "estado": "MS",
+    "curiosidade": "Cidade marcada por histórias de antigas fazendas e festas tradicionais de peão, muito presentes no calendário local."
+  },
+  {
+    "municipio": "Caarapó",
+    "estado": "MS",
+    "curiosidade": "Possui uma das maiores populações indígenas Guarani-Kaiowá do estado, com intensa preservação cultural."
+  },
+  {
+    "municipio": "Camapuã",
+    "estado": "MS",
+    "curiosidade": "Conhecida como terra dos boiadeiros, com tradição forte em comitivas e cantorias sertanejas."
+  },
+  {
+    "municipio": "Campo Grande",
+    "estado": "MS",
+    "curiosidade": "Capital que mistura influências indígenas, japonesas, árabes e sulistas. Cidade conhecida pelos festivais gastronômicos e pela vida cultural intensa."
+  },
+  {
+    "municipio": "Caracol",
+    "estado": "MS",
+    "curiosidade": "Região marcada por antigas rotas de tropeiros e por fazendas centenárias que preservam história e tradições pantaneiras."
+  },
+  {
+    "municipio": "Cassilândia",
+    "estado": "MS",
+    "curiosidade": "Celebra uma das maiores festas de rodeio da região Centro-Oeste, atraindo visitantes de vários estados."
+  },
+  {
+    "municipio": "Chapadão do Sul",
+    "estado": "MS",
+    "curiosidade": "Referência nacional em agricultura tecnológica, com grande presença de pesquisa e inovação agrícola."
+  },
+  {
+    "municipio": "Corguinho",
+    "estado": "MS",
+    "curiosidade": "Conhecida por lendas antigas e festas religiosas tradicionais, preservadas por gerações."
+  },
+  {
+    "municipio": "Coronel Sapucaia",
+    "estado": "MS",
+    "curiosidade": "Cidade de forte influência indígena e fronteiriça, marcada por tradições culturais misturadas."
+  },
+  {
+    "municipio": "Corumbá",
+    "estado": "MS",
+    "curiosidade": "Berço da cultura pantaneira e uma das cidades mais antigas do Centro-Oeste. Seu carnaval é um dos mais tradicionais do interior brasileiro."
+  },
+  {
+    "municipio": "Costa Rica",
+    "estado": "MS",
+    "curiosidade": "Recebe visitantes para esportes de aventura e festas tradicionais ligadas ao agronegócio."
+  },
+  {
+    "municipio": "Coxim",
+    "estado": "MS",
+    "curiosidade": "Conhecida pelo famoso peixe pintado na brasa e por eventos culturais que celebram a pesca artesanal."
+  },
+  {
+    "municipio": "Deodápolis",
+    "estado": "MS",
+    "curiosidade": "Cidade com forte identidade rural e festas que preservam danças e tradições culinárias antigas."
+  },
+  {
+    "municipio": "Dois Irmãos do Buriti",
+    "estado": "MS",
+    "curiosidade": "Centro cultural Terena, onde ritualísticas indígenas e festas comunitárias são amplamente preservadas."
+  },
+  {
+    "municipio": "Douradina",
+    "estado": "MS",
+    "curiosidade": "Famosa por rodeios e festivais sertanejos que movimentam a região anualmente."
+  },
+  {
+    "municipio": "Dourados",
+    "estado": "MS",
+    "curiosidade": "Segunda maior cidade do estado e conhecida pela mistura cultural intensa, principalmente indígenas, paraguaias e japonesas."
+  },
+  {
+    "municipio": "Eldorado",
+    "estado": "MS",
+    "curiosidade": "Celebra grandes festas agrícolas e mantém tradições de produção de leite e queijos artesanais."
+  },
+  {
+    "municipio": "Fátima do Sul",
+    "estado": "MS",
+    "curiosidade": "Cidade marcada por festas religiosas muito tradicionais e por forte presença de música sertaneja."
+  },
+  {
+    "municipio": "Figueirão",
+    "estado": "MS",
+    "curiosidade": "Região preservada com forte presença pantaneira. A cultura de comitivas e cavalgadas é muito valorizada."
+  },
+  {
+    "municipio": "Glória de Dourados",
+    "estado": "MS",
+    "curiosidade": "Tradições japonesas são muito presentes, principalmente na culinária e nos eventos culturais locais."
+  },
+  {
+    "municipio": "Guia Lopes da Laguna",
+    "estado": "MS",
+    "curiosidade": "Cidade histórica ligada à Guerra do Paraguai, com monumentos e relatos preservados."
+  },
+  {
+    "municipio": "Iguatemi",
+    "estado": "MS",
+    "curiosidade": "Fronteiriça, mistura culinária brasileira e paraguaia. Conhecida por pratos à base de carne e erva-mate."
+  },
+  {
+    "municipio": "Inocência",
+    "estado": "MS",
+    "curiosidade": "Cresceu com tradição agropecuária e preserva festas de viola e música raiz."
+  },
+  {
+    "municipio": "Itaporã",
+    "estado": "MS",
+    "curiosidade": "Conhecida pela produção de frango e pelas feiras gastronômicas que celebram culinária regional."
+  },
+  {
+    "municipio": "Itaquiraí",
+    "estado": "MS",
+    "curiosidade": "Colonizada por migrantes sulistas, mantém forte identidade rural e festas de tradição gaúcha."
+  },
+  {
+    "municipio": "Ivinhema",
+    "estado": "MS",
+    "curiosidade": "Tem festivais populares marcados por música e danças regionais. A pesca artesanal é muito valorizada."
+  },
+  {
+    "municipio": "Japorã",
+    "estado": "MS",
+    "curiosidade": "Cidade indígena Guarani-Kaiowá, com rituais e cantos tradicionais preservados desde gerações antigas."
+  },
+  {
+    "municipio": "Jaraguari",
+    "estado": "MS",
+    "curiosidade": "Famosa por festas rurais e tradições de comitivas que percorrem antigas rotas pantaneiras."
+  },
+  {
+    "municipio": "Jardim",
+    "estado": "MS",
+    "curiosidade": "Possui formações naturais importantes e uma cultura gastronômica baseada em peixes e carne de sol."
+  },
+  {
+    "municipio": "Jateí",
+    "estado": "MS",
+    "curiosidade": "Cidade tranquila, conhecida pela Festa do Peão e por tradições sertanejas muito presentes."
+  },
+  {
+    "municipio": "Juti",
+    "estado": "MS",
+    "curiosidade": "Tem forte influência indígena e preserva festivais culturais que misturam tradições regionais."
+  },
+  {
+    "municipio": "Ladário",
+    "estado": "MS",
+    "curiosidade": "Uma das cidades mais antigas de MS, ligada à história militar e às navegações pelo rio Paraguai."
+  },
+  {
+    "municipio": "Laguna Carapã",
+    "estado": "MS",
+    "curiosidade": "Famosa pela produção agrícola e por festas comunitárias tradicionais da cultura sulista."
+  },
+  {
+    "municipio": "Maracaju",
+    "estado": "MS",
+    "curiosidade": "Casa da famosa Festa da Linguiça, celebrada no Brasil inteiro. Evento atrai milhares todos os anos."
+  },
+  {
+    "municipio": "Miranda",
+    "estado": "MS",
+    "curiosidade": "Uma das cidades com maior influência indígena Terena, marcada por rituais culturais e arte tradicional."
+  },
+  {
+    "municipio": "Mundo Novo",
+    "estado": "MS",
+    "curiosidade": "Mistura costumes do Paraguai e do Brasil, principalmente na culinária e na música."
+  },
+  {
+    "municipio": "Naviraí",
+    "estado": "MS",
+    "curiosidade": "Importante polo agrícola e sede de festivais sertanejos conhecidos em toda a região sul-mato-grossense."
+  },
+  {
+    "municipio": "Nioaque",
+    "estado": "MS",
+    "curiosidade": "Cidade histórica ligada à Guerra do Paraguai e ao folclore pantaneiro."
+  },
+  {
+    "municipio": "Nova Alvorada do Sul",
+    "estado": "MS",
+    "curiosidade": "Forte cultura do agronegócio e festivais de música sertaneja fazem parte do calendário anual."
+  },
+  {
+    "municipio": "Nova Andradina",
+    "estado": "MS",
+    "curiosidade": "Conhecida como 'Capital do Vale do Ivinhema', possui vida cultural ativa e forte comunidade agropecuária."
+  },
+  {
+    "municipio": "Novo Horizonte do Sul",
+    "estado": "MS",
+    "curiosidade": "Região de tradições rurais fortes e eventos que valorizam a música sertaneja de raiz."
+  },
+  {
+    "municipio": "Paraíso das Águas",
+    "estado": "MS",
+    "curiosidade": "Município mais jovem do estado, conhecido por áreas naturais preservadas e cultura rural emergente."
+  },
+  {
+    "municipio": "Paranaíba",
+    "estado": "MS",
+    "curiosidade": "Uma das cidades mais antigas, famosa por festas tradicionais e música sertaneja raiz."
+  },
+  {
+    "municipio": "Paranhos",
+    "estado": "MS",
+    "curiosidade": "Região com forte presença Guarani e tradições culturais preservadas nas aldeias locais."
+  },
+  {
+    "municipio": "Pedro Gomes",
+    "estado": "MS",
+    "curiosidade": "Cidade com histórias ligadas a antigas rotas de comitivas e tradições pantaneiras preservadas."
+  },
+  {
+    "municipio": "Ponta Porã",
+    "estado": "MS",
+    "curiosidade": "Cidade-gêmea com Pedro Juan Caballero (Paraguai). Famosa pela música fronteiriça e pela mistura cultural."
+  },
+  {
+    "municipio": "Porto Murtinho",
+    "estado": "MS",
+    "curiosidade": "Importante centro de cultura pantaneira, com rituais tradicionais de pesca, pecuária e festas ribeirinhas."
+  },
+  {
+    "municipio": "Ribas do Rio Pardo",
+    "estado": "MS",
+    "curiosidade": "Conhecida por grandes propriedades rurais e por tradições de cavalgadas históricas."
+  },
+  {
+    "municipio": "Rio Brilhante",
+    "estado": "MS",
+    "curiosidade": "Cidade com festivais animados e tradição agrícola muito forte."
+  },
+  {
+    "municipio": "Rio Negro",
+    "estado": "MS",
+    "curiosidade": "Reconhecida pela 'Cavalgada da Integração', um dos maiores eventos equestres da região."
+  },
+  {
+    "municipio": "Rio Verde de Mato Grosso",
+    "estado": "MS",
+    "curiosidade": "Ponto tradicional de ecoturismo e cultura pantaneira, além de festas gastronômicas muito populares."
+  },
+  {
+    "municipio": "Rochedo",
+    "estado": "MS",
+    "curiosidade": "Cidade famosa pelas festas de comitiva e pela culinária pantaneira baseada em carne e peixe."
+  },
+  {
+    "municipio": "Santa Rita do Pardo",
+    "estado": "MS",
+    "curiosidade": "Comunidade que preserva histórias de antigos moradores rurais e festas tradicionais com música raiz."
+  },
+  {
+    "municipio": "São Gabriel do Oeste",
+    "estado": "MS",
+    "curiosidade": "Cidade com forte influência da imigração sulista e referência em carnes e produtos artesanais."
+  },
+  {
+    "municipio": "Selvíria",
+    "estado": "MS",
+    "curiosidade": "Conhecida por pesca esportiva e por oferecer uma culinária regional baseada em peixes de água doce."
+  },
+  {
+    "municipio": "Sete Quedas",
+    "estado": "MS",
+    "curiosidade": "Cidade fronteiriça influenciada pela cultura paraguaia e pela música sertaneja fronteiriça."
+  },
+  {
+    "municipio": "Sidrolândia",
+    "estado": "MS",
+    "curiosidade": "Outro grande centro Terena, onde rituais indígenas e tradições rurais convivem fortemente."
+  },
+  {
+    "municipio": "Sonora",
+    "estado": "MS",
+    "curiosidade": "Importante no setor madeireiro e conhecida por festas tradicionais da cultura sertaneja."
+  },
+  {
+    "municipio": "Tacuru",
+    "estado": "MS",
+    "curiosidade": "Com forte presença indígena, a cidade preserva danças e rituais tradicionais Guarani-Kaiowá."
+  },
+  {
+    "municipio": "Taquarussu",
+    "estado": "MS",
+    "curiosidade": "Cidade pequena com forte cultura de festas religiosas e celebrações de comunidade."
+  },
+  {
+    "municipio": "Terenos",
+    "estado": "MS",
+    "curiosidade": "Conhecida pela agricultura familiar e pela influência indígena e paraguaia em sua culinária e tradições."
+  },
+  {
+    "municipio": "Três Lagoas",
+    "estado": "MS",
+    "curiosidade": "Polo industrial gigantesco e cidade famosa por receber grandes eventos artísticos e esportivos."
+  },
+  {
+    "municipio": "Vicentina",
+    "estado": "MS",
+    "curiosidade": "Possui forte tradição rural e festas que celebram música sertaneja e cultura regional."
+  }
+]

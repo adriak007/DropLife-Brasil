@@ -1,0 +1,1073 @@
+[
+  {
+    "municipio": "Acauã",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela forte cultura sertaneja e por eventos que reúnem músicos e vaqueiros da região."
+  },
+  {
+    "municipio": "Agricolândia",
+    "estado": "PI",
+    "curiosidade": "Cidade marcada por festas populares e pela presença da cultura tradicional piauiense no artesanato e culinária."
+  },
+  {
+    "municipio": "Água Branca",
+    "estado": "PI",
+    "curiosidade": "Um dos municípios mais antigos do estado, com casarões históricos e tradição religiosa forte."
+  },
+  {
+    "municipio": "Alagoinha do Piauí",
+    "estado": "PI",
+    "curiosidade": "Famosa pelos festejos juninos e pela culinária típica baseada em milho e produtos da roça."
+  },
+  {
+    "municipio": "Alegrete do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade jovem com forte identidade rural e eventos comunitários que movimentam a população."
+  },
+  {
+    "municipio": "Alto Longá",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela produção agrícola e por tradições culturais preservadas há gerações."
+  },
+  {
+    "municipio": "Altos",
+    "estado": "PI",
+    "curiosidade": "Possui um dos carnavais mais animados do estado, atraindo visitantes de várias cidades vizinhas."
+  },
+  {
+    "municipio": "Alvorada do Gurguéia",
+    "estado": "PI",
+    "curiosidade": "Região marcada por paisagens naturais e agricultura familiar forte."
+  },
+  {
+    "municipio": "Amarante",
+    "estado": "PI",
+    "curiosidade": "Terra natal do poeta Da Costa e Silva, preserva um dos conjuntos históricos mais bonitos do Piauí."
+  },
+  {
+    "municipio": "Angical do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade com forte identidade religiosa e festas culturais tradicionais."
+  },
+  {
+    "municipio": "Anísio de Abreu",
+    "estado": "PI",
+    "curiosidade": "Localizada próxima à Serra da Capivara, área arqueológica reconhecida mundialmente."
+  },
+  {
+    "municipio": "Antônio Almeida",
+    "estado": "PI",
+    "curiosidade": "Município de economia agropecuária e de festas populares que mantêm viva a tradição local."
+  },
+  {
+    "municipio": "Aroazes",
+    "estado": "PI",
+    "curiosidade": "Cidade conhecida por formações rochosas e sítios arqueológicos na zona rural."
+  },
+  {
+    "municipio": "Arraial",
+    "estado": "PI",
+    "curiosidade": "Famosa pelo 'Arraiá do Arraial', um dos festejos juninos mais tradicionais do Piauí."
+  },
+  {
+    "municipio": "Assunção do Piauí",
+    "estado": "PI",
+    "curiosidade": "Possui belezas naturais preservadas e manifestações culturais ligadas à música tradicional."
+  },
+  {
+    "municipio": "Avelino Lopes",
+    "estado": "PI",
+    "curiosidade": "Ponto de encontro entre tradições piauienses e baianas, refletido na música e culinária local."
+  },
+  {
+    "municipio": "Baixa Grande do Ribeiro",
+    "estado": "PI",
+    "curiosidade": "Um dos maiores produtores de soja do Nordeste, com agricultura altamente mecanizada."
+  },
+  {
+    "municipio": "Barra d’Alcântara",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela tranquilidade e por festas culturais que movimentam a cidade."
+  },
+  {
+    "municipio": "Barras",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica chamada de 'Terra dos Governadores' por ter sido berço de vários líderes políticos."
+  },
+  {
+    "municipio": "Barreiras do Piauí",
+    "estado": "PI",
+    "curiosidade": "Região de paisagens naturais amplas e tradições rurais fortes."
+  },
+  {
+    "municipio": "Barro Duro",
+    "estado": "PI",
+    "curiosidade": "Conhecida pelos eventos esportivos e pela produção agrícola familiar."
+  },
+  {
+    "municipio": "Batalha",
+    "estado": "PI",
+    "curiosidade": "Lar do tradicional festival de música 'Batalha do Brega', muito popular na região."
+  },
+  {
+    "municipio": "Bela Vista do Piauí",
+    "estado": "PI",
+    "curiosidade": "Pequena e acolhedora, mantém festas religiosas e tradições locais preservadas."
+  },
+  {
+    "municipio": "Belém do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade com forte identidade cultural, onde quadrilhas juninas têm grande destaque."
+  },
+  {
+    "municipio": "Beneditinos",
+    "estado": "PI",
+    "curiosidade": "Famosa por suas bandas de música e tradição religiosa marcada por grandes procissões."
+  },
+  {
+    "municipio": "Bertolínia",
+    "estado": "PI",
+    "curiosidade": "Cidade com tradição agropecuária e eventos que celebram a vida rural."
+  },
+  {
+    "municipio": "Betânia do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida pelo santuário de fé popular que atrai romeiros da região."
+  },
+  {
+    "municipio": "Boa Hora",
+    "estado": "PI",
+    "curiosidade": "Município marcado pela cultura sertaneja e comemorações comunitárias tradicionais."
+  },
+  {
+    "municipio": "Bocaina",
+    "estado": "PI",
+    "curiosidade": "Cidade que abriga açudes importantes para a região e festas de vaquejada tradicionais."
+  },
+  {
+    "municipio": "Bom Jesus",
+    "estado": "PI",
+    "curiosidade": "Importante polo agrícola do cerrado piauiense, com forte presença universitária."
+  },
+  {
+    "municipio": "Bom Princípio do Piauí",
+    "estado": "PI",
+    "curiosidade": "Local onde a pesca e o artesanato são pilares da identidade local."
+  },
+  {
+    "municipio": "Bonfim do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade próxima a áreas de proteção ambiental, com presença significativa de tradições rurais."
+  },
+  {
+    "municipio": "Boqueirão do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela hospitalidade de sua população e por manifestações culturais regionais."
+  },
+  {
+    "municipio": "Brasileira",
+    "estado": "PI",
+    "curiosidade": "Porta de entrada para o Parque Nacional de Sete Cidades, importante ponto turístico e arqueológico."
+  },
+  {
+    "municipio": "Brejo do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade pequena com tradições familiares fortes e eventos comunitários marcantes."
+  },
+  {
+    "municipio": "Buriti dos Lopes",
+    "estado": "PI",
+    "curiosidade": "Possui lagos, mangues e intensa atividade pesqueira, além de ser ponto turístico do litoral piauiense."
+  },
+  {
+    "municipio": "Buriti dos Montes",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela beleza das formações rochosas da Serra da Ibiapaba."
+  },
+  {
+    "municipio": "Cabeceiras do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte identidade cultural e festividades que reúnem moradores de toda a região."
+  },
+  {
+    "municipio": "Cajazeiras do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade marcada pela tradição de agricultura familiar e festas populares simples e acolhedoras."
+  },
+  {
+    "municipio": "Cajueiro da Praia",
+    "estado": "PI",
+    "curiosidade": "Abriga a famosa praia de Barra Grande, destino turístico internacional para kitesurf."
+  },
+  {
+    "municipio": "Caldeirão Grande do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade onde festas juninas e vaquejadas têm grande participação popular."
+  },
+  {
+    "municipio": "Campinas do Piauí",
+    "estado": "PI",
+    "curiosidade": "Região com forte memória histórica e manifestações culturais típicas do sertão."
+  },
+  {
+    "municipio": "Campo Alegre do Fidalgo",
+    "estado": "PI",
+    "curiosidade": "Local próximo a sítios arqueológicos com pinturas rupestres muito antigas."
+  },
+  {
+    "municipio": "Campo Grande do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida por festas religiosas e pela música popular sertaneja marcante na região."
+  },
+  {
+    "municipio": "Campo Largo do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade às margens do rio Longá, onde a pesca artesanal é parte importante da cultura local."
+  },
+  {
+    "municipio": "Campo Maior",
+    "estado": "PI",
+    "curiosidade": "Berço da maior batalha da história do estado e famosa pela tradicional Festa do Bode."
+  },
+  {
+    "municipio": "Canavieira",
+    "estado": "PI",
+    "curiosidade": "Cidade tranquila com festas rurais que preservam tradições sertanejas antigas."
+  },
+  {
+    "municipio": "Canto do Buriti",
+    "estado": "PI",
+    "curiosidade": "Possui grande extensão territorial e forte presença de cultura sertaneja e agropecuária."
+  },
+  {
+    "municipio": "Capitão de Campos",
+    "estado": "PI",
+    "curiosidade": "Cidade marcada pela música regional e pelas festas culturais que envolvem toda a comunidade."
+  },
+  {
+    "municipio": "Capitão Gervásio Oliveira",
+    "estado": "PI",
+    "curiosidade": "Município cercado de serras e histórias ligadas ao interior piauiense tradicional."
+  },
+  {
+    "municipio": "Caracol",
+    "estado": "PI",
+    "curiosidade": "Perto da Serra da Capivara, possui sítios arqueológicos com registros pré-históricos importantes."
+  },
+  {
+    "municipio": "Caraúbas do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade marcada pela pesca artesanal e pela cultura litorânea piauiense."
+  },
+  {
+    "municipio": "Caridade do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade jovem, conhecida por festas simples, acolhedoras e tradições religiosas."
+  },
+  {
+    "municipio": "Castelo do Piauí",
+    "estado": "PI",
+    "curiosidade": "Possui formações rochosas icônicas e é palco do tradicional Cachaça Fest."
+  },
+  {
+    "municipio": "Caxingó",
+    "estado": "PI",
+    "curiosidade": "Cidade com forte cultura ribeirinha e artesanato baseado em fibras naturais."
+  },
+  {
+    "municipio": "Cocal",
+    "estado": "PI",
+    "curiosidade": "Famosa pelas tradições religiosas e pela produção artesanal de redes e peças têxteis."
+  },
+  {
+    "municipio": "Cocal de Telha",
+    "estado": "PI",
+    "curiosidade": "Cidade tranquila, conhecida pela hospitalidade e pelos eventos culturais locais."
+  },
+  {
+    "municipio": "Cocal dos Alves",
+    "estado": "PI",
+    "curiosidade": "Famosa pela banda de música local, reconhecida nacionalmente pela excelência."
+  },
+  {
+    "municipio": "Coivaras",
+    "estado": "PI",
+    "curiosidade": "Região marcada por agricultura familiar e festas populares tradicionais."
+  },
+  {
+    "municipio": "Colônia do Gurguéia",
+    "estado": "PI",
+    "curiosidade": "Cidade formada por colonização agrícola, mantendo tradições de trabalho coletivo."
+  },
+  {
+    "municipio": "Colônia do Piauí",
+    "estado": "PI",
+    "curiosidade": "Abriga casarões históricos e manifestações culturais que preservam o passado da região."
+  },
+  {
+    "municipio": "Conceição do Canindé",
+    "estado": "PI",
+    "curiosidade": "Cidade marcada por tradições religiosas e pela vida rural em comunidade."
+  },
+  {
+    "municipio": "Coronel José Dias",
+    "estado": "PI",
+    "curiosidade": "Porta de entrada do Parque Nacional da Serra da Capivara, Patrimônio Mundial da UNESCO."
+  },
+  {
+    "municipio": "Corrente",
+    "estado": "PI",
+    "curiosidade": "Cidade que mistura cerrado e cultura sertaneja, com festas tradicionais muito fortes."
+  },
+  {
+    "municipio": "Cristalândia do Piauí",
+    "estado": "PI",
+    "curiosidade": "Local com paisagens naturais preservadas e forte presença de festas religiosas."
+  },
+  {
+    "municipio": "Cristino Castro",
+    "estado": "PI",
+    "curiosidade": "Cidade com tradição agropecuária e eventos culturais ligados à música sertaneja."
+  },
+  {
+    "municipio": "Curimatá",
+    "estado": "PI",
+    "curiosidade": "Cidade próxima a belas áreas naturais, com forte tradição sertaneja e eventos comunitários."
+  },
+  {
+    "municipio": "Currais",
+    "estado": "PI",
+    "curiosidade": "Importante produtor agrícola, especialmente soja, com agricultura em expansão."
+  },
+  {
+    "municipio": "Curral Novo do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade típica do sertão piauiense, marcada por vaquejadas e festas rurais."
+  },
+  {
+    "municipio": "Curralinhos",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela simplicidade e pela forte cultura interiorana, refletida nas festas comunitárias."
+  },
+  [
+  {
+    "municipio": "Demerval Lobão",
+    "estado": "PI",
+    "curiosidade": "Conhecida por seus balneários naturais e por eventos culturais que atraem moradores de Teresina e região."
+  },
+  {
+    "municipio": "Dirceu Arcoverde",
+    "estado": "PI",
+    "curiosidade": "Cidade próxima a áreas arqueológicas importantes, influenciada pela tradição sertaneja."
+  },
+  {
+    "municipio": "Dom Expedito Lopes",
+    "estado": "PI",
+    "curiosidade": "Região famosa pela música tradicional e pelas festas religiosas muito participativas."
+  },
+  {
+    "municipio": "Dom Inocêncio",
+    "estado": "PI",
+    "curiosidade": "Cercado por formações rochosas imponentes e comunidades que preservam cultura sertaneja antiga."
+  },
+  {
+    "municipio": "Domingos Mourão",
+    "estado": "PI",
+    "curiosidade": "Cidade tranquila, marcada por festividades locais e pela vida comunitária simples."
+  },
+  {
+    "municipio": "Elesbão Veloso",
+    "estado": "PI",
+    "curiosidade": "Famosa por seu carnaval animado e por bandas de música que destacam a identidade cultural da região."
+  },
+  {
+    "municipio": "Eliseu Martins",
+    "estado": "PI",
+    "curiosidade": "Importante entroncamento ferroviário ligado ao transporte de grãos do cerrado piauiense."
+  },
+  {
+    "municipio": "Esperantina",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela maior serpente sucuri já registrada no Brasil e pelos balneários do rio Longá."
+  },
+  {
+    "municipio": "Fartura do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade sertaneja que preserva tradições rurais e celebra festas culturais ao longo do ano."
+  },
+  {
+    "municipio": "Flores do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte presença de tradições familiares e festas religiosas antigas."
+  },
+  {
+    "municipio": "Floresta do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade pequena com eventos culturais que envolvem toda a comunidade local."
+  },
+  {
+    "municipio": "Floriano",
+    "estado": "PI",
+    "curiosidade": "Conhecida como 'Princesa do Sul', possui carnaval famoso e patrimônio histórico preservado."
+  },
+  {
+    "municipio": "Francinópolis",
+    "estado": "PI",
+    "curiosidade": "Cidade calma, marcada por tradições religiosas e eventos culturais simples e animados."
+  },
+  {
+    "municipio": "Francisco Ayres",
+    "estado": "PI",
+    "curiosidade": "Região onde festas rurais e tradições sertanejas são parte fundamental da cultura local."
+  },
+  {
+    "municipio": "Francisco Macedo",
+    "estado": "PI",
+    "curiosidade": "Cidade que preserva tradições familiares fortes e eventos culturais típicos do sertão."
+  },
+  {
+    "municipio": "Francisco Santos",
+    "estado": "PI",
+    "curiosidade": "Famosa pela produção de caju e eventos culturais que movimentam a região."
+  },
+  {
+    "municipio": "Fronteiras",
+    "estado": "PI",
+    "curiosidade": "Importante polo ceramista, reconhecida pela produção de telhas e tijolos."
+  },
+  {
+    "municipio": "Geminiano",
+    "estado": "PI",
+    "curiosidade": "Cidade tranquila com forte ligação com a agricultura familiar e festas comunitárias."
+  },
+  {
+    "municipio": "Gilbués",
+    "estado": "PI",
+    "curiosidade": "Conhecida pelo solo arenoso e paisagens únicas, sendo referência em pesquisas sobre desertificação."
+  },
+  {
+    "municipio": "Guadalupe",
+    "estado": "PI",
+    "curiosidade": "Famosa pela barragem de Boa Esperança, que formou um grande lago utilizado para lazer e pesca."
+  },
+  {
+    "municipio": "Guaribas",
+    "estado": "PI",
+    "curiosidade": "Ficou conhecida por ser município-símbolo do programa Bolsa Família e por sua cultura sertaneja forte."
+  },
+  {
+    "municipio": "Hugo Napoleão",
+    "estado": "PI",
+    "curiosidade": "Município pequeno com forte tradição religiosa e eventos culturais locais."
+  },
+  {
+    "municipio": "Ilha Grande",
+    "estado": "PI",
+    "curiosidade": "Destino turístico importante do litoral piauiense, com dunas, mangues e praias preservadas."
+  },
+  {
+    "municipio": "Inhuma",
+    "estado": "PI",
+    "curiosidade": "Famosa pela culinária regional, especialmente pratos feitos com carne de sol e macaxeira."
+  },
+  {
+    "municipio": "Ipiranga do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade de tradições populares fortes e eventos culturais que reúnem moradores de toda a região."
+  },
+  {
+    "municipio": "Isaías Coelho",
+    "estado": "PI",
+    "curiosidade": "Região marcada pela vida rural e por festas tradicionais com música sertaneja."
+  },
+  {
+    "municipio": "Itainópolis",
+    "estado": "PI",
+    "curiosidade": "Importante produtora de mel, sendo reconhecida por apicultores de todo o estado."
+  },
+  {
+    "municipio": "Itaueira",
+    "estado": "PI",
+    "curiosidade": "Cidade próxima ao rio Canindé e conhecida por celebrações religiosas tradicionais."
+  },
+  {
+    "municipio": "Jacobina do Piauí",
+    "estado": "PI",
+    "curiosidade": "Região rural marcada pela agricultura familiar e festas típicas do interior."
+  },
+  {
+    "municipio": "Jaicós",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica conhecida pela tradicional Festa do Vaqueiro e pelo trabalho artesanal."
+  },
+  {
+    "municipio": "Jardim do Mulato",
+    "estado": "PI",
+    "curiosidade": "Cidade tranquila com tradições religiosas preservadas e festas populares regionais."
+  },
+  {
+    "municipio": "Jatobá do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida por competições esportivas e eventos comunitários que animam o município."
+  },
+  {
+    "municipio": "Jerumenha",
+    "estado": "PI",
+    "curiosidade": "Um dos municípios mais antigos do estado, possui ruínas que contam parte da história colonial do Piauí."
+  },
+  {
+    "municipio": "João Costa",
+    "estado": "PI",
+    "curiosidade": "Localizado dentro da área da Serra da Capivara, guarda importantes sítios arqueológicos."
+  },
+  {
+    "municipio": "Joaquim Pires",
+    "estado": "PI",
+    "curiosidade": "Cidade cercada por lagoas e conhecida pela pesca artesanal e festas tradicionais."
+  },
+  {
+    "municipio": "Joca Marques",
+    "estado": "PI",
+    "curiosidade": "Município com forte cultura ribeirinha, marcada por pesca e por tradições locais."
+  },
+  {
+    "municipio": "José de Freitas",
+    "estado": "PI",
+    "curiosidade": "Cidade com lagoas muito visitadas e famosa por eventos esportivos e culturais."
+  },
+  {
+    "municipio": "Juazeiro do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecido pelo tradicional festejo de Nossa Senhora do Carmo e por sua cultura interiorana forte."
+  },
+  {
+    "municipio": "Júlio Borges",
+    "estado": "PI",
+    "curiosidade": "Município novo, com economia baseada em agricultura familiar e tradições sertanejas."
+  },
+  {
+    "municipio": "Jurema",
+    "estado": "PI",
+    "curiosidade": "Cidade marcada pela simplicidade e pelas festas populares tradicionais."
+  },
+  {
+    "municipio": "Lagoinha do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida como cidade-modelo do Piauí pela organização urbana e boa qualidade de vida."
+  },
+  {
+    "municipio": "Lagoa Alegre",
+    "estado": "PI",
+    "curiosidade": "Cidade rodeada de lagoas naturais e com forte presença de tradições culturais regionais."
+  },
+  {
+    "municipio": "Lagoa de São Francisco",
+    "estado": "PI",
+    "curiosidade": "Local com forte produção artesanal, especialmente trabalhos em palha e madeira."
+  },
+  {
+    "municipio": "Lagoa do Barro do Piauí",
+    "estado": "PI",
+    "curiosidade": "Famosa pelo complexo de energia eólica instalado na região, um dos maiores do Nordeste."
+  },
+  {
+    "municipio": "Lagoa do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade tranquila, conhecida pela hospitalidade e por eventos culturais locais."
+  },
+  {
+    "municipio": "Lagoa do Sítio",
+    "estado": "PI",
+    "curiosidade": "Município rural, marcado pela agricultura familiar e tradições religiosas."
+  },
+  {
+    "municipio": "Landri Sales",
+    "estado": "PI",
+    "curiosidade": "Cidade banhada pelo rio Parnaíba, com forte cultura ribeirinha e tradições locais."
+  },
+  {
+    "municipio": "Luís Correia",
+    "estado": "PI",
+    "curiosidade": "Principal destino de praia do estado, com dunas, falésias e pontos turísticos muito procurados."
+  },
+  {
+    "municipio": "Luzilândia",
+    "estado": "PI",
+    "curiosidade": "Conhecida por seu carnaval popular e pela produção de artesanato regional."
+  },
+  {
+    "municipio": "Madeiro",
+    "estado": "PI",
+    "curiosidade": "Cidade onde a pesca e a agricultura familiar formam a base da identidade local."
+  },
+  {
+    "municipio": "Manoel Emídio",
+    "estado": "PI",
+    "curiosidade": "Município rural com festas tradicionais ligadas à música sertaneja."
+  },
+  {
+    "municipio": "Marcolândia",
+    "estado": "PI",
+    "curiosidade": "Ganhou destaque com a implantação de parques eólicos e pela tradição cultural da região."
+  },
+  {
+    "municipio": "Marcos Parente",
+    "estado": "PI",
+    "curiosidade": "Cidade simples com forte senso comunitário e festas culturais animadas."
+  },
+  {
+    "municipio": "Massapê do Piauí",
+    "estado": "PI",
+    "curiosidade": "Local de festas que celebram a cultura sertaneja e a culinária típica do interior."
+  },
+  {
+    "municipio": "Matias Olímpio",
+    "estado": "PI",
+    "curiosidade": "Cidade banhada por rios, onde a pesca e o artesanato fazem parte do cotidiano."
+  },
+  {
+    "municipio": "Miguel Alves",
+    "estado": "PI",
+    "curiosidade": "Importante cidade ribeirinha, famosa pelo festival de quadrilhas juninas."
+  },
+  {
+    "municipio": "Miguel Leão",
+    "estado": "PI",
+    "curiosidade": "Um dos menores municípios do estado, conhecido por sua tranquilidade e vida comunitária forte."
+  },
+  {
+    "municipio": "Milton Brandão",
+    "estado": "PI",
+    "curiosidade": "Região com muitas formações rochosas e trilhas usadas para turismo ecológico."
+  },
+  {
+    "municipio": "Monsenhor Gil",
+    "estado": "PI",
+    "curiosidade": "Cidade muito visitada por seus balneários e festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Monsenhor Hipólito",
+    "estado": "PI",
+    "curiosidade": "Município marcado por tradições familiares e pela agricultura de subsistência."
+  },
+  {
+    "municipio": "Monte Alegre do Piauí",
+    "estado": "PI",
+    "curiosidade": "Região importante na produção agrícola do cerrado, com destaque para soja e milho."
+  },
+  {
+    "municipio": "Morro Cabeça no Tempo",
+    "estado": "PI",
+    "curiosidade": "Cidade com nome curioso e cultura sertaneja muito preservada."
+  },
+  {
+    "municipio": "Morro do Chapéu do Piauí",
+    "estado": "PI",
+    "curiosidade": "Possui paisagens naturais com morros e trilhas que atraem visitantes aventureiros."
+  },
+  {
+    "municipio": "Murici dos Portelas",
+    "estado": "PI",
+    "curiosidade": "Cidade conhecida por tradições ribeirinhas e pela tranquilidade típica do interior."
+  },
+  {
+    "municipio": "Nazaré do Piauí",
+    "estado": "PI",
+    "curiosidade": "Lar da 'Paixão de Cristo de Nazaré', uma das maiores encenações religiosas do Brasil."
+  },
+  {
+    "municipio": "Nossa Senhora de Nazaré",
+    "estado": "PI",
+    "curiosidade": "Município pequeno, famoso por seus festejos religiosos e culinária típica."
+  },
+  {
+    "municipio": "Nossa Senhora dos Remédios",
+    "estado": "PI",
+    "curiosidade": "Cidade onde tradições culturais e religiosas se misturam em festas muito participativas."
+  },
+  {
+    "municipio": "Nova Santa Rita",
+    "estado": "PI",
+    "curiosidade": "Município rural, com tradições sertanejas e vida comunitária bem preservadas."
+  },
+  {
+    "municipio": "Novo Oriente do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecido por sua forte cultura agrícola e festas populares tradicionais."
+  },
+  {
+    "municipio": "Novo Santo Antônio",
+    "estado": "PI",
+    "curiosidade": "Cidade próxima a áreas naturais preservadas, com forte identidade sertaneja."
+  },
+  {
+    "municipio": "Oeiras",
+    "estado": "PI",
+    "curiosidade": "Primeira capital do estado, famosa pela Semana Santa e por seu patrimônio histórico preservado."
+  },
+  {
+    "municipio": "Olho d’Água do Piauí",
+    "estado": "PI",
+    "curiosidade": "Pequeno município conhecido pela tranquilidade e por festividades locais simples e acolhedoras."
+  },
+  {
+    "municipio": "Padre Marcos",
+    "estado": "PI",
+    "curiosidade": "Município que preserva tradições sertanejas, especialmente nas festas religiosas."
+  },
+  {
+    "municipio": "Paes Landim",
+    "estado": "PI",
+    "curiosidade": "Cidade com forte identidade cultural ligada ao sertão e à vida rural."
+  },
+  {
+    "municipio": "Pajeú do Piauí",
+    "estado": "PI",
+    "curiosidade": "Região tranquila, marcada por tradições familiares e festas comunitárias."
+  },
+  {
+    "municipio": "Palmeira do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com presença crescente da agricultura moderna e tradições sertanejas preservadas."
+  },
+  {
+    "municipio": "Palmeirais",
+    "estado": "PI",
+    "curiosidade": "Cidade próxima ao rio Parnaíba, famosa por balneários naturais e por eventos culturais."
+  },
+  {
+    "municipio": "Paquetá",
+    "estado": "PI",
+    "curiosidade": "Cidade marcada pela tradição do artesanato e pela forte cultura interiorana."
+  },
+  {
+    "municipio": "Parnaguá",
+    "estado": "PI",
+    "curiosidade": "Abriga a Lagoa de Parnaguá, a maior lagoa natural do estado, importante para pesca e ecoturismo."
+  },
+  {
+    "municipio": "Parnaíba",
+    "estado": "PI",
+    "curiosidade": "Uma das cidades mais importantes do estado, famosa pelo Porto das Barcas e pelo Delta do Parnaíba."
+  },
+  {
+    "municipio": "Passagem Franca do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade que preserva tradições religiosas e festas populares típicas do interior."
+  },
+  {
+    "municipio": "Patos do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município rural com forte tradição sertaneja e eventos culturais comunitários."
+  },
+  {
+    "municipio": "Pau d’Arco do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade pequena conhecida pelas festas religiosas e pela culinária típica sertaneja."
+  },
+  {
+    "municipio": "Paulistana",
+    "estado": "PI",
+    "curiosidade": "Importante centro comercial do sul do estado e referência para cidades vizinhas."
+  },
+  {
+    "municipio": "Pavussu",
+    "estado": "PI",
+    "curiosidade": "Região rural com tradições sertanejas e eventos religiosos que reúnem a comunidade."
+  },
+  {
+    "municipio": "Pedro II",
+    "estado": "PI",
+    "curiosidade": "Conhecida como 'Terra da Opala', abriga a única mina de opala preciosa do Brasil e o famoso Festival de Inverno."
+  },
+  {
+    "municipio": "Pedro Laurentino",
+    "estado": "PI",
+    "curiosidade": "Cidade próxima à Serra da Capivara, com tradições sertanejas e vida comunitária preservada."
+  },
+  [
+  {
+    "municipio": "Queimada Nova",
+    "estado": "PI",
+    "curiosidade": "Cidade conhecida pelas formações rochosas peculiares e pelas tradições sertanejas preservadas."
+  },
+  {
+    "municipio": "Redenção do Gurguéia",
+    "estado": "PI",
+    "curiosidade": "Local com forte desenvolvimento agrícola e paisagens típicas do cerrado piauiense."
+  },
+  {
+    "municipio": "Regeneração",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica com casarões preservados e festividades que movimentam toda a região."
+  },
+  {
+    "municipio": "Riacho Frio",
+    "estado": "PI",
+    "curiosidade": "Município marcado pela simplicidade e pela vida rural, com áreas naturais preservadas."
+  },
+  {
+    "municipio": "Ribeira do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade banhada por rios locais, marcada por tradições de pesca e festas comunitárias."
+  },
+  {
+    "municipio": "Ribeiro Gonçalves",
+    "estado": "PI",
+    "curiosidade": "Forte polo agrícola, com grandes plantações de soja e milho."
+  },
+  {
+    "municipio": "Rio Grande do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela intensa participação comunitária em festas culturais e religiosas."
+  },
+  {
+    "municipio": "Santa Cruz do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com tradição em eventos religiosos e forte identidade comunitária."
+  },
+  {
+    "municipio": "Santa Cruz dos Milagres",
+    "estado": "PI",
+    "curiosidade": "Importante centro de romaria do estado, famoso pelo Santuário de Nossa Senhora dos Milagres."
+  },
+  {
+    "municipio": "Santa Filomena",
+    "estado": "PI",
+    "curiosidade": "Cidade da fronteira agrícola, conhecida pelas belas paisagens do cerrado e produção de grãos."
+  },
+  {
+    "municipio": "Santa Luz",
+    "estado": "PI",
+    "curiosidade": "Local marcado pela vida rural e tradições familiares preservadas."
+  },
+  {
+    "municipio": "Santa Rosa do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade pequena com eventos culturais animados e forte tradição religiosa."
+  },
+  {
+    "municipio": "Santana do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município jovem e acolhedor, com festas populares que valorizam a cultura sertaneja."
+  },
+  {
+    "municipio": "Santo Antônio de Lisboa",
+    "estado": "PI",
+    "curiosidade": "Conhecida pela produção de arte sacra e por eventos tradicionais da região."
+  },
+  {
+    "municipio": "Santo Antônio dos Milagres",
+    "estado": "PI",
+    "curiosidade": "Um dos menores municípios do estado, famoso por sua tranquilidade e festas simples."
+  },
+  {
+    "municipio": "Santo Inácio do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade marcada pela forte religiosidade e pela cultura do interior sertanejo."
+  },
+  {
+    "municipio": "São Braz do Piauí",
+    "estado": "PI",
+    "curiosidade": "Próxima a áreas arqueológicas da Serra da Capivara, preservando tradições antigas."
+  },
+  {
+    "municipio": "São Félix do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade rural com forte tradição religiosa e festividades comunitárias."
+  },
+  {
+    "municipio": "São Francisco de Assis do Piauí",
+    "estado": "PI",
+    "curiosidade": "Conhecido pela forte identidade sertaneja e pela cultura tradicional da região."
+  },
+  {
+    "municipio": "São Francisco do Piauí",
+    "estado": "PI",
+    "curiosidade": "Local banhado pelo rio Parnaíba e marcado por tradições ribeirinhas."
+  },
+  {
+    "municipio": "São Gonçalo do Gurguéia",
+    "estado": "PI",
+    "curiosidade": "Município agrícola situado em área de cerrado, com produção crescente."
+  },
+  {
+    "municipio": "São Gonçalo do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade com festas religiosas animadas e tradições culturais preservadas."
+  },
+  {
+    "municipio": "São João da Canabrava",
+    "estado": "PI",
+    "curiosidade": "Famosa por festividades populares e pelo forte senso de comunidade."
+  },
+  {
+    "municipio": "São João da Fronteira",
+    "estado": "PI",
+    "curiosidade": "Localizada na divisa com o Ceará, mistura influências culturais das duas regiões."
+  },
+  {
+    "municipio": "São João da Serra",
+    "estado": "PI",
+    "curiosidade": "Cercada por serras, é conhecida pelo artesanato e pela cultura sertaneja."
+  },
+  {
+    "municipio": "São João da Varjota",
+    "estado": "PI",
+    "curiosidade": "Cidade onde a agricultura familiar é base da economia e das tradições locais."
+  },
+  {
+    "municipio": "São João do Arraial",
+    "estado": "PI",
+    "curiosidade": "Reconhecida pelo artesanato em palha e pela cultura popular vibrante."
+  },
+  {
+    "municipio": "São João do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica próxima a importantes sítios arqueológicos da região."
+  },
+  {
+    "municipio": "São José do Divino",
+    "estado": "PI",
+    "curiosidade": "Cidade acolhedora, marcada pela agricultura e festas comunitárias."
+  },
+  {
+    "municipio": "São José do Peixe",
+    "estado": "PI",
+    "curiosidade": "Famosa pelo clima agradável e pela tranquilidade da vida interiorana."
+  },
+  {
+    "municipio": "São José do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade onde tradições religiosas e festas populares reúnem grande parte da população."
+  },
+  {
+    "municipio": "São Julião",
+    "estado": "PI",
+    "curiosidade": "Conhecida pelos festejos de Santo Antônio e pela música tradicional sertaneja."
+  },
+  {
+    "municipio": "São Lourenço do Piauí",
+    "estado": "PI",
+    "curiosidade": "Região de grande importância arqueológica, próxima à Serra da Capivara."
+  },
+  {
+    "municipio": "São Luís do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município jovem, com festas culturais e tradições fortes da vida rural."
+  },
+  {
+    "municipio": "São Miguel da Baixa Grande",
+    "estado": "PI",
+    "curiosidade": "Cidade pequena e tranquila, com tradições religiosas muito presentes."
+  },
+  {
+    "municipio": "São Miguel do Fidalgo",
+    "estado": "PI",
+    "curiosidade": "Região agrícola com forte presença de agricultura familiar e vida comunitária."
+  },
+  {
+    "municipio": "São Miguel do Tapuio",
+    "estado": "PI",
+    "curiosidade": "Conhecido por festividades tradicionais e eventos culturais que atraem cidades vizinhas."
+  },
+  {
+    "municipio": "São Pedro do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade com forte tradição esportiva e festas religiosas bastante participativas."
+  },
+  {
+    "municipio": "São Raimundo Nonato",
+    "estado": "PI",
+    "curiosidade": "Cidade-sede do Parque Nacional Serra da Capivara, um dos maiores tesouros arqueológicos do mundo."
+  },
+  {
+    "municipio": "Sebastião Barros",
+    "estado": "PI",
+    "curiosidade": "Local cercado por áreas naturais e tradições sertanejas preservadas."
+  },
+  {
+    "municipio": "Sebastião Leal",
+    "estado": "PI",
+    "curiosidade": "Município com crescente desenvolvimento agrícola e natureza preservada."
+  },
+  {
+    "municipio": "Sigefredo Pacheco",
+    "estado": "PI",
+    "curiosidade": "Famosa por suas festas culturais e pelo forte sentido de comunidade local."
+  },
+  {
+    "municipio": "Simões",
+    "estado": "PI",
+    "curiosidade": "Cidade marcada pelo artesanato e por festas tradicionais animadas."
+  },
+  {
+    "municipio": "Simplício Mendes",
+    "estado": "PI",
+    "curiosidade": "Importante polo cultural do sertão, famosa pelas vaquejadas e eventos tradicionais."
+  },
+  {
+    "municipio": "Socorro do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade tranquila com forte religiosidade e festas tradicionais comunitárias."
+  },
+  {
+    "municipio": "Sussuapara",
+    "estado": "PI",
+    "curiosidade": "Local com tradições fortes e eventos populares que envolvem música e culinária típica."
+  },
+  {
+    "municipio": "Tamboril do Piauí",
+    "estado": "PI",
+    "curiosidade": "Município com forte cultura sertaneja e paisagens naturais preservadas."
+  },
+  {
+    "municipio": "Tanque do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade pequena marcada por festas religiosas e pela vida comunitária simples."
+  },
+  {
+    "municipio": "Teresina",
+    "estado": "PI",
+    "curiosidade": "Única capital nordestina localizada no interior; famosa pelo calor intenso e pelo Encontro dos Rios."
+  },
+  {
+    "municipio": "União",
+    "estado": "PI",
+    "curiosidade": "Importante centro histórico e cultural, conhecida pela forte tradição musical."
+  },
+  {
+    "municipio": "Uruçuí",
+    "estado": "PI",
+    "curiosidade": "Maior município em território do estado e destaque no agronegócio do cerrado."
+  },
+  {
+    "municipio": "Valença do Piauí",
+    "estado": "PI",
+    "curiosidade": "Cidade histórica com festas tradicionais e arquitetura preservada."
+  },
+  {
+    "municipio": "Várzea Branca",
+    "estado": "PI",
+    "curiosidade": "Município próximo à Serra da Capivara, com forte cultura sertaneja."
+  },
+  {
+    "municipio": "Várzea Grande",
+    "estado": "PI",
+    "curiosidade": "Cidade rural com tradições antigas e forte senso de comunidade."
+  },
+  {
+    "municipio": "Vera Mendes",
+    "estado": "PI",
+    "curiosidade": "Município tranquilo, conhecido por festas populares e tradições religiosas."
+  },
+  {
+    "municipio": "Vila Nova do Piauí",
+    "estado": "PI",
+    "curiosidade": "Reconhecida como 'Cidade Poesia', com forte incentivo à cultura e eventos literários."
+  }
+]
+
+]
+
+]

@@ -1,0 +1,2092 @@
+[
+  {
+    "municipio": "Abaíra",
+    "estado": "BA",
+    "curiosidade": "Localizada na Chapada Diamantina, é famosa pela produção de cachaça artesanal de alta qualidade. Região cheia de serras, vales e trilhas ecológicas."
+  },
+  {
+    "municipio": "Abaré",
+    "estado": "BA",
+    "curiosidade": "Banho pelo Rio São Francisco, é ponto importante de pesca e agricultura irrigada. Possui cultura sertaneja forte e festas tradicionais."
+  },
+  {
+    "municipio": "Acajutiba",
+    "estado": "BA",
+    "curiosidade": "Cidade pequena do litoral norte, com economia baseada em agricultura e comércio. A cultura afro-baiana é muito presente no município."
+  },
+  {
+    "municipio": "Adustina",
+    "estado": "BA",
+    "curiosidade": "Localizada na divisa com Sergipe, tem economia voltada à pecuária e à agricultura familiar. Cresceu ao redor de antigas fazendas sertanejas."
+  },
+  {
+    "municipio": "Água Fria",
+    "estado": "BA",
+    "curiosidade": "Município do agreste baiano, conhecido por antigas rota de tropeiros. Comunidade com tradições culturais fortes."
+  },
+  {
+    "municipio": "Aiquara",
+    "estado": "BA",
+    "curiosidade": "Cidade pequena no sul da Bahia, com economia baseada em pecuária e agricultura. Possui clima agradável e vida pacata."
+  },
+  {
+    "municipio": "Alagoinhas",
+    "estado": "BA",
+    "curiosidade": "Importante polo urbano e industrial do estado, conhecida pela qualidade de sua água mineral. A cidade também se destaca pela produção de bebidas."
+  },
+  {
+    "municipio": "Alcobaça",
+    "estado": "BA",
+    "curiosidade": "Município litorâneo com praias tranquilas e águas claras. Porta de entrada para o Parque Nacional Marinho de Abrolhos."
+  },
+  {
+    "municipio": "Almadina",
+    "estado": "BA",
+    "curiosidade": "Conhecida pelo cultivo de cacau e pela vegetação de Mata Atlântica. Região rica em cachoeiras e reservas naturais."
+  },
+  {
+    "municipio": "Amargosa",
+    "estado": "BA",
+    "curiosidade": "Famosa pelo São João, considerado um dos melhores do estado. Cidade serrana com clima agradável e forte tradição cultural."
+  },
+  {
+    "municipio": "Amélia Rodrigues",
+    "estado": "BA",
+    "curiosidade": "Importante ponto de ligação entre Salvador e o interior. Região de forte agricultura e história ligada a antigos engenhos."
+  },
+  {
+    "municipio": "América Dourada",
+    "estado": "BA",
+    "curiosidade": "Município do centro-norte com economia rural. A cidade cresceu a partir de comunidades agrícolas tradicionais."
+  },
+  {
+    "municipio": "Anagé",
+    "estado": "BA",
+    "curiosidade": "Município do sudoeste com economia ligada à pecuária. Destaca-se pela represa de Anagé, que auxilia no abastecimento regional."
+  },
+  {
+    "municipio": "Andaraí",
+    "estado": "BA",
+    "curiosidade": "Cidade histórica da Chapada Diamantina, com antigas rotas de garimpo. Próxima a trilhas e cachoeiras muito procuradas."
+  },
+  {
+    "municipio": "Andorinha",
+    "estado": "BA",
+    "curiosidade": "Município do norte baiano com forte presença de mineração. Cultura sertaneja marcante e paisagens áridas predominam."
+  },
+  {
+    "municipio": "Angical",
+    "estado": "BA",
+    "curiosidade": "Situada no oeste, destaca-se pela produção de grãos e pecuária. Região marcada pela modernização agrícola."
+  },
+  {
+    "municipio": "Anguera",
+    "estado": "BA",
+    "curiosidade": "Município pequeno do agreste com forte ligação à agricultura familiar. Comunidade tradicional e muito religiosa."
+  },
+  {
+    "municipio": "Antas",
+    "estado": "BA",
+    "curiosidade": "Cidade do nordeste baiano conhecida por festas populares e cultura interiorana. Economia simples baseada em comércio e pecuária."
+  },
+  {
+    "municipio": "Antônio Cardoso",
+    "estado": "BA",
+    "curiosidade": "Próxima a Feira de Santana, tem forte agricultura e criação de gado. Região calma com tradições culturais preservadas."
+  },
+  {
+    "municipio": "Antônio Gonçalves",
+    "estado": "BA",
+    "curiosidade": "Município da região de Jacobina com economia baseada na mineração e agricultura. Possui serras e belas paisagens naturais."
+  },
+  {
+    "municipio": "Aporá",
+    "estado": "BA",
+    "curiosidade": "Município do litoral norte com fortes raízes indígenas e afrodescendentes. Economia baseada em agricultura."
+  },
+  {
+    "municipio": "Apuarema",
+    "estado": "BA",
+    "curiosidade": "Cidade pequena no sul baiano, com clima agradável e forte presença rural. Comunidade acolhedora e tradições antigas."
+  },
+  {
+    "municipio": "Aracatu",
+    "estado": "BA",
+    "curiosidade": "Conhecida por sítios arqueológicos e pinturas rupestres. Região com forte presença de comunidades tradicionais sertanejas."
+  },
+  {
+    "municipio": "Araças",
+    "estado": "BA",
+    "curiosidade": "Município próximo ao litoral com economia ligada ao petróleo e gás. Também se destaca pela agricultura."
+  },
+  {
+    "municipio": "Araci",
+    "estado": "BA",
+    "curiosidade": "Cidade do semiárido com forte tradição nordestina. Economia marcada pela pecuária e comércio regional."
+  },
+  {
+    "municipio": "Aramari",
+    "estado": "BA",
+    "curiosidade": "Município do agreste com atividades rurais intensas. Reconhecido pelo clima quente e paisagens naturais."
+  },
+  {
+    "municipio": "Arataca",
+    "estado": "BA",
+    "curiosidade": "Localizada na região cacaueira, próxima ao Parque Nacional de Una. Possui rica biodiversidade."
+  },
+  {
+    "municipio": "Aratuípe",
+    "estado": "BA",
+    "curiosidade": "Terra de engenhos tradicionais, próxima ao Recôncavo. Conhecida pelo cultivo de mandioca e cultura rural forte."
+  },
+  {
+    "municipio": "Aurelino Leal",
+    "estado": "BA",
+    "curiosidade": "Situada na região do cacau, possui clima úmido e vegetação densa. Economia ligada à agricultura e pesca."
+  },
+  {
+    "municipio": "Baianópolis",
+    "estado": "BA",
+    "curiosidade": "Município do oeste, parte da região agrícola mais moderna do estado. Forte produção de grãos."
+  },
+  {
+    "municipio": "Baixa Grande",
+    "estado": "BA",
+    "curiosidade": "Cidade do interior conhecida pela forte tradição religiosa e festas populares. Economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Banzaê",
+    "estado": "BA",
+    "curiosidade": "Possui aldeias indígenas da etnia Kiriri, preservando tradições ancestrais. Cultura local extremamente rica."
+  },
+  {
+    "municipio": "Barra",
+    "estado": "BA",
+    "curiosidade": "Localizada no encontro dos rios São Francisco e Grande. Rica em história e paisagens naturais impressionantes."
+  },
+  {
+    "municipio": "Barra da Estiva",
+    "estado": "BA",
+    "curiosidade": "Município serrano da Chapada Diamantina, com clima frio. Conhecida pela produção de café e pela natureza exuberante."
+  },
+  {
+    "municipio": "Barra do Choça",
+    "estado": "BA",
+    "curiosidade": "Importante produtora de café no sudoeste. Conhecida pelo clima ameno e agricultura forte."
+  },
+  {
+    "municipio": "Barra do Mendes",
+    "estado": "BA",
+    "curiosidade": "Cidade do semiárido com economia simples. Paisagens de caatinga predominam na região."
+  },
+  {
+    "municipio": "Barra do Rocha",
+    "estado": "BA",
+    "curiosidade": "Município do sul baiano com economia ligada ao cacau. Comunidade simples e clima úmido."
+  },
+  {
+    "municipio": "Barreiras",
+    "estado": "BA",
+    "curiosidade": "Principal cidade do oeste baiano, polo agrícola nacional. Região de grande desenvolvimento tecnológico no campo."
+  },
+  {
+    "municipio": "Barro Alto",
+    "estado": "BA",
+    "curiosidade": "Cidade do norte com forte agricultura e pecuária. Comunidade com tradição sertaneja marcada."
+  },
+  {
+    "municipio": "Barro Preto",
+    "estado": "BA",
+    "curiosidade": "Localizada na região do cacau. Possui clima úmido e rios que cortam o município."
+  },
+  {
+    "municipio": "Barrocas",
+    "estado": "BA",
+    "curiosidade": "Município jovem com economia baseada na mineração e comércio. Cultura interiorana preservada."
+  },
+  {
+    "municipio": "Belmonte",
+    "estado": "BA",
+    "curiosidade": "Cidade litorânea com praias preservadas e manguezais. Famosa pelo Rio Jequitinhonha e por sua beleza natural."
+  },
+  {
+    "municipio": "Belo Campo",
+    "estado": "BA",
+    "curiosidade": "Município do sudoeste, conhecido pela pecuária e clima seco. Região com forte tradição rural."
+  },
+  {
+    "municipio": "Biritinga",
+    "estado": "BA",
+    "curiosidade": "Cidade do agreste com economia agrícola e cultura sertaneja. Comunidade acolhedora e festas tradicionais."
+  },
+  {
+    "municipio": "Boa Nova",
+    "estado": "BA",
+    "curiosidade": "Famosa pela Reserva de Boa Nova, lar de espécies raras de aves. Região de transição entre caatinga e mata atlântica."
+  },
+  {
+    "municipio": "Boa Vista do Tupim",
+    "estado": "BA",
+    "curiosidade": "Portal para a Chapada Diamantina, com trilhas, rios e serras. Economia rural e paisagens belíssimas."
+  },
+  {
+    "municipio": "Bom Jesus da Lapa",
+    "estado": "BA",
+    "curiosidade": "Maior centro de romaria do norte-nordeste. A Gruta do Bom Jesus atrai milhões de fiéis todos os anos."
+  },
+  {
+    "municipio": "Bom Jesus da Serra",
+    "estado": "BA",
+    "curiosidade": "Município do sudoeste com economia rural. Comunidade com forte tradição religiosa e sertaneja."
+  },
+  {
+    "municipio": "Boninal",
+    "estado": "BA",
+    "curiosidade": "Cidade serrana da Chapada Diamantina com clima agradável. Economia voltada à agricultura familiar."
+  },
+  {
+    "municipio": "Bonito",
+    "estado": "BA",
+    "curiosidade": "Nomeado pela beleza das serras e rios da região. Município com tradição rural e ecoturismo."
+  },
+  {
+    "municipio": "Boquira",
+    "estado": "BA",
+    "curiosidade": "Cidade com passado ligado à mineração. Hoje, agricultura e comércio movimentam a região."
+  },
+  {
+    "municipio": "Botuporã",
+    "estado": "BA",
+    "curiosidade": "Município do sertão com economia rural. Comunidade voltada à agricultura e criação de animais."
+  },
+  {
+    "municipio": "Brejões",
+    "estado": "BA",
+    "curiosidade": "Próximo à Mata Atlântica, possui clima agradável e cachoeiras. Economia baseada na agricultura."
+  },
+  {
+    "municipio": "Brejolândia",
+    "estado": "BA",
+    "curiosidade": "Município do oeste com economia ligada à pecuária. Paisagens extensas e clima quente."
+  },
+  {
+    "municipio": "Brotas de Macaúbas",
+    "estado": "BA",
+    "curiosidade": "Cidade marcada por sítios arqueológicos e paisagens de cerrado. Clima seco e cultura sertaneja."
+  },
+  {
+    "municipio": "Brumado",
+    "estado": "BA",
+    "curiosidade": "Importante polo minerador e industrial do sudoeste baiano. Região rica em minério e com economia em expansão."
+  },
+  {
+    "municipio": "Buerarema",
+    "estado": "BA",
+    "curiosidade": "Localizada na região cacaueira. Famosa pela cultura afro-baiana e tradições locais."
+  },
+  {
+    "municipio": "Buritirama",
+    "estado": "BA",
+    "curiosidade": "Município do oeste com economia baseada em pecuária. Região quente com vegetação de cerrado."
+  },
+  {
+    "municipio": "Caatiba",
+    "estado": "BA",
+    "curiosidade": "Município do sudoeste com forte presença de pequenas fazendas. Cultura rural tradicional."
+  },
+  {
+    "municipio": "Cabaceiras do Paraguaçu",
+    "estado": "BA",
+    "curiosidade": "Região do Recôncavo com forte produção agrícola. Cultura influenciada por antigas fazendas coloniais."
+  },
+  {
+    "municipio": "Cachoeira",
+    "estado": "BA",
+    "curiosidade": "Cidade histórica tombada pelo IPHAN. Considerada berço da independência baiana e repleta de patrimônio cultural."
+  },
+  [
+  {
+    "municipio": "Caculé",
+    "estado": "BA",
+    "curiosidade": "Cidade do sudoeste conhecida por suas represas e clima agradável. Forte economia na agricultura e no comércio regional."
+  },
+  {
+    "municipio": "Caém",
+    "estado": "BA",
+    "curiosidade": "Localizada na Chapada Norte, tem forte tradição rural e clima serrano. A extração de minerais também compõe parte da economia."
+  },
+  {
+    "municipio": "Caetanos",
+    "estado": "BA",
+    "curiosidade": "Município do sudoeste, com economia baseada na agricultura familiar e pecuária. Conhecida pela tranquilidade e paisagens de serra."
+  },
+  {
+    "municipio": "Caetité",
+    "estado": "BA",
+    "curiosidade": "Berço do político Ruy Barbosa. Cidade histórica com forte economia ligada à mineração e à energia eólica."
+  },
+  {
+    "municipio": "Cafarnaum",
+    "estado": "BA",
+    "curiosidade": "Município do semiárido com economia baseada na agricultura resistente à seca. Festas religiosas são destaque local."
+  },
+  {
+    "municipio": "Cairu",
+    "estado": "BA",
+    "curiosidade": "Apenas três municípios brasileiros são arquipélagos, e Cairu é um deles. Abriga Morro de São Paulo e Boipeba, destinos turísticos famosos."
+  },
+  {
+    "municipio": "Caldeirão Grande",
+    "estado": "BA",
+    "curiosidade": "Cidade do norte baiano conhecida pela agricultura e clima semiárido. Região de serras e pequenas propriedades rurais."
+  },
+  {
+    "municipio": "Camacan",
+    "estado": "BA",
+    "curiosidade": "Localizada na região do cacau, com Mata Atlântica preservada. Próxima a reservas indígenas e áreas de biodiversidade."
+  },
+  {
+    "municipio": "Camaçari",
+    "estado": "BA",
+    "curiosidade": "Sede do maior complexo industrial integrado do Hemisfério Sul. Possui também belas praias no litoral norte."
+  },
+  {
+    "municipio": "Camamu",
+    "estado": "BA",
+    "curiosidade": "Banho pela Baía de Camamu, segunda maior baía do Brasil. Região com manguezais, ilhas e grande beleza natural."
+  },
+  {
+    "municipio": "Campo Alegre de Lourdes",
+    "estado": "BA",
+    "curiosidade": "Município de clima semiárido extremo. Faz divisa com o Piauí e possui forte tradição sertaneja."
+  },
+  {
+    "municipio": "Campo Formoso",
+    "estado": "BA",
+    "curiosidade": "Famosa por suas grutas, como a Toca da Boa Vista, uma das maiores cavernas do hemisfério. Também é polo produtor de flores."
+  },
+  {
+    "municipio": "Canápolis",
+    "estado": "BA",
+    "curiosidade": "Região agrícola do oeste baiano, com clima quente e terras férteis. Economia voltada ao cultivo de grãos."
+  },
+  {
+    "municipio": "Canarana",
+    "estado": "BA",
+    "curiosidade": "Município com forte produção agrícola e costumes tradicionais. Cresceu a partir de pequenos povoados rurais."
+  },
+  {
+    "municipio": "Canavieiras",
+    "estado": "BA",
+    "curiosidade": "Cidade litorânea com influência histórica do ciclo do cacau. Famosa por praias paradisíacas e gastronomia baseada em frutos do mar."
+  },
+  {
+    "municipio": "Candeal",
+    "estado": "BA",
+    "curiosidade": "Município do agreste conhecido pelo clima agradável e vida rural. Comunidade tradicional com festas populares marcantes."
+  },
+  {
+    "municipio": "Candeias",
+    "estado": "BA",
+    "curiosidade": "Importante polo industrial e petroquímico do estado. Economia forte e conexão estratégica com Salvador."
+  },
+  {
+    "municipio": "Candiba",
+    "estado": "BA",
+    "curiosidade": "Município do sudoeste com forte tradição sertaneja. Conhecido por festas rurais e paisagens de caatinga."
+  },
+  {
+    "municipio": "Cândido Sales",
+    "estado": "BA",
+    "curiosidade": "Cidade da divisa com Minas Gerais, muito influenciada pela cultura mineira. Forte economia no transporte e comércio."
+  },
+  {
+    "municipio": "Cansanção",
+    "estado": "BA",
+    "curiosidade": "Município do sertão com cultura profundamente nordestina. A pecuária e o comércio sustentam sua economia."
+  },
+  {
+    "municipio": "Canudos",
+    "estado": "BA",
+    "curiosidade": "Histórica pela Guerra de Canudos, liderada por Antônio Conselheiro. Abriga ruínas e memória preservada do conflito."
+  },
+  {
+    "municipio": "Capela do Alto Alegre",
+    "estado": "BA",
+    "curiosidade": "Município do interior com economia agrícola. Cultura sertaneja fortemente presente."
+  },
+  {
+    "municipio": "Capim Grosso",
+    "estado": "BA",
+    "curiosidade": "Ponto estratégico de ligação entre norte e sul da Bahia. Cidade comercial e em constante desenvolvimento."
+  },
+  {
+    "municipio": "Caraíbas",
+    "estado": "BA",
+    "curiosidade": "Cidade pequena do sudoeste com forte presença rural. Comunidade acolhedora e economia simples."
+  },
+  {
+    "municipio": "Caravelas",
+    "estado": "BA",
+    "curiosidade": "Porta de acesso ao Parque Marinho de Abrolhos, um dos mais belos do Brasil. Cidade histórica do litoral sul."
+  },
+  {
+    "municipio": "Cardeal da Silva",
+    "estado": "BA",
+    "curiosidade": "Município do litoral norte com economia agrícola e pequena produção pesqueira. Comunidade tranquila e tradicional."
+  },
+  {
+    "municipio": "Carinhanha",
+    "estado": "BA",
+    "curiosidade": "Beira do Rio São Francisco, com cultura ribeirinha forte. Cidade histórica ligada ao ciclo das navegações fluviais."
+  },
+  {
+    "municipio": "Casa Nova",
+    "estado": "BA",
+    "curiosidade": "Maior produtor de uvas do Nordeste e importante polo vinícola. Clima semiárido favorece vinhos únicos."
+  },
+  {
+    "municipio": "Castro Alves",
+    "estado": "BA",
+    "curiosidade": "Terra natal do poeta Castro Alves. Possui forte tradição literária e eventos culturais em homenagem ao autor."
+  },
+  {
+    "municipio": "Catolândia",
+    "estado": "BA",
+    "curiosidade": "Um dos menores municípios em população da Bahia. Região rural e altamente tranquila."
+  },
+  {
+    "municipio": "Catu",
+    "estado": "BA",
+    "curiosidade": "Cidade com forte ligação à indústria do petróleo. Também possui cultura afro-baiana muito presente."
+  },
+  {
+    "municipio": "Caturama",
+    "estado": "BA",
+    "curiosidade": "Município do sertão com economia baseada na caprinocultura. Comunidade tradicional e clima quente."
+  },
+  {
+    "municipio": "Central",
+    "estado": "BA",
+    "curiosidade": "Localizada na região norte, com forte agricultura e pecuária. Comunidade simples e cultura rural preservada."
+  },
+  {
+    "municipio": "Chorrochó",
+    "estado": "BA",
+    "curiosidade": "Cidade sertaneja às margens do Rio São Francisco. Região de clima árido e forte cultura ribeirinha."
+  },
+  {
+    "municipio": "Cícero Dantas",
+    "estado": "BA",
+    "curiosidade": "Importante polo comercial do nordeste baiano. História ligada a fazendas tradicionais e coronéis do sertão."
+  },
+  {
+    "municipio": "Cipó",
+    "estado": "BA",
+    "curiosidade": "Famosa por suas águas termais, usadas como tratamentos desde o período colonial. Cidade turística com grande valor histórico."
+  },
+  {
+    "municipio": "Coaraci",
+    "estado": "BA",
+    "curiosidade": "Município da região cacaueira. Possui forte tradição agrícola e cultural afro-baiana."
+  },
+  {
+    "municipio": "Cocos",
+    "estado": "BA",
+    "curiosidade": "Localizado no extremo oeste, com grandes fazendas e biodiversidade do cerrado. Próximo ao Parque Nacional Grande Sertão Veredas."
+  },
+  {
+    "municipio": "Conceição da Feira",
+    "estado": "BA",
+    "curiosidade": "Região histórica próxima ao Recôncavo. Possui festas religiosas tradicionais e agricultura forte."
+  },
+  {
+    "municipio": "Conceição do Almeida",
+    "estado": "BA",
+    "curiosidade": "Cidade agrícola com clima agradável. Conhecida pela hospitalidade e tradições rurais."
+  },
+  {
+    "municipio": "Conceição do Coité",
+    "estado": "BA",
+    "curiosidade": "Polo do sisal na Bahia. Cultura sertaneja forte e economia ligada à produção têxtil."
+  },
+  {
+    "municipio": "Conceição do Jacuípe",
+    "estado": "BA",
+    "curiosidade": "Importante cidade industrial e comercial próxima a Feira de Santana. Conhecida como 'Berimbau'."
+  },
+  {
+    "municipio": "Conde",
+    "estado": "BA",
+    "curiosidade": "Litoral norte com praias paradisíacas como Sítio do Conde. Região turística em crescimento."
+  },
+  {
+    "municipio": "Condeúba",
+    "estado": "BA",
+    "curiosidade": "Cidade histórica do sertão, com tradição religiosa e festas centenárias. Cultura sertaneja muito preservada."
+  },
+  {
+    "municipio": "Contendas do Sincorá",
+    "estado": "BA",
+    "curiosidade": "Município da Chapada com clima ameno e paisagens montanhosas. Região procurada para trilhas e observação de natureza."
+  },
+  {
+    "municipio": "Coração de Maria",
+    "estado": "BA",
+    "curiosidade": "Localizada no Recôncavo, conhecida por plantações de mandioca e cultura afro-brasileira. Comunidade muito tradicional."
+  },
+  {
+    "municipio": "Cordeiros",
+    "estado": "BA",
+    "curiosidade": "Município do sudoeste com forte presença rural. Cultura sertaneja e festividades tradicionais marcam o cotidiano."
+  },
+  {
+    "municipio": "Coribe",
+    "estado": "BA",
+    "curiosidade": "Cidade do oeste com agricultura moderna e grandes plantações. Região de cerrado e forte desenvolvimento agrícola."
+  },
+  {
+    "municipio": "Coronel João Sá",
+    "estado": "BA",
+    "curiosidade": "Município do nordeste baiano, com economia baseada na pecuária. Comunidade interiorana e clima semiárido."
+  },
+  {
+    "municipio": "Correntina",
+    "estado": "BA",
+    "curiosidade": "Famosa por rios de águas cristalinas, é destino de ecoturismo no oeste baiano. Forte presença de agricultura irrigada."
+  },
+  {
+    "municipio": "Cotegipe",
+    "estado": "BA",
+    "curiosidade": "Cidade rural com forte cultura sertaneja. Economia baseada na pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Cravolândia",
+    "estado": "BA",
+    "curiosidade": "Município pequeno do sul com forte cultura comunitária. Região com clima agradável e agricultura familiar."
+  },
+  {
+    "municipio": "Crisópolis",
+    "estado": "BA",
+    "curiosidade": "Cidade agrícola do agreste com clima quente. Cultura sertaneja forte e tradições bem preservadas."
+  },
+  {
+    "municipio": "Cristópolis",
+    "estado": "BA",
+    "curiosidade": "Município do oeste com economia baseada na pecuária. Região de clima seco e grandes extensões rurais."
+  },
+  {
+    "municipio": "Cruz das Almas",
+    "estado": "BA",
+    "curiosidade": "Cidade universitária e reconhecida pelo São João tradicional. Forte polo tecnológico e agrícola no Recôncavo."
+  },
+  {
+    "municipio": "Curaçá",
+    "estado": "BA",
+    "curiosidade": "Município do sertão do São Francisco, famoso por manifestações culturais como a dança do 'Samba de Véio'."
+  },
+  {
+    "municipio": "Dário Meira",
+    "estado": "BA",
+    "curiosidade": "Cidade do sul com economia agrícola e clima úmido. Próxima a áreas de Mata Atlântica preservada."
+  },
+  {
+    "municipio": "Dias d'Ávila",
+    "estado": "BA",
+    "curiosidade": "Polo industrial próximo de Salvador. Cidade moderna e com crescimento acelerado."
+  },
+  {
+    "municipio": "Dom Basílio",
+    "estado": "BA",
+    "curiosidade": "Produtora de hortaliças e frutas. Município serrano com clima mais ameno e agricultura forte."
+  },
+  {
+    "municipio": "Dom Macedo Costa",
+    "estado": "BA",
+    "curiosidade": "Município do Recôncavo com economia agrícola simples. Comunidade rural tranquila e tradicional."
+  },
+  {
+    "municipio": "Elísio Medrado",
+    "estado": "BA",
+    "curiosidade": "Cidade serrana com clima agradável e forte produção agrícola. Comunidade muito ligada a tradições religiosas."
+  },
+  {
+    "municipio": "Encruzilhada",
+    "estado": "BA",
+    "curiosidade": "Situada na divisa com Minas Gerais, com forte influência mineira. Economia baseada em pecuária e café."
+  },
+  {
+    "municipio": "Entre Rios",
+    "estado": "BA",
+    "curiosidade": "Cidade do litoral norte, com praias, rios e manguezais. Economia voltada ao turismo e agricultura."
+  },
+  {
+    "municipio": "Érico Cardoso",
+    "estado": "BA",
+    "curiosidade": "Município serrano conhecido por cachoeiras e trilhas. Região de grande beleza natural e clima agradável."
+  },
+  {
+    "municipio": "Esplanada",
+    "estado": "BA",
+    "curiosidade": "Município histórico do litoral norte. Possui praias, mangues e forte cultural afro-baiana."
+  },
+  {
+    "municipio": "Euclides da Cunha",
+    "estado": "BA",
+    "curiosidade": "Nomeado em homenagem ao escritor. Região marcada pela cultura sertaneja e por paisagens áridas."
+  },
+  {
+    "municipio": "Eunápolis",
+    "estado": "BA",
+    "curiosidade": "Importante cidade do extremo sul, próxima a Porto Seguro. Forte desenvolvimento urbano e polo industrial crescente."
+  },
+  {
+    "municipio": "Fátima",
+    "estado": "BA",
+    "curiosidade": "Cidade pequena do semiárido, conhecida pelas festas religiosas. Economia voltada à pecuária e agricultura."
+  },
+  {
+    "municipio": "Feira da Mata",
+    "estado": "BA",
+    "curiosidade": "Município novo localizado no oeste do estado. Economia rural e proximidade com o Rio Carinhanha."
+  },
+  {
+    "municipio": "Feira de Santana",
+    "estado": "BA",
+    "curiosidade": "Segunda maior cidade da Bahia e importante polo comercial do Nordeste. Grande centro universitário e cultural."
+  },
+  {
+    "municipio": "Filadélfia",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela produção de requeijão e festas tradicionais. Região sertaneja com clima quente."
+  },
+  {
+    "municipio": "Firmino Alves",
+    "estado": "BA",
+    "curiosidade": "Município do sul da Bahia com economia agrícola. Próximo a áreas de cacau e Mata Atlântica."
+  },
+  {
+    "municipio": "Floresta Azul",
+    "estado": "BA",
+    "curiosidade": "Região cacaueira com clima úmido. Conhecida pela produção agrícola e comunidades rurais."
+  },
+  [
+  {
+    "municipio": "Formosa do Rio Preto",
+    "estado": "BA",
+    "curiosidade": "Município mais ocidental da Bahia e um dos maiores produtores de grãos do Brasil. Extensas áreas de cerrado e agricultura de alta tecnologia."
+  },
+  {
+    "municipio": "Gandu",
+    "estado": "BA",
+    "curiosidade": "Cidade importante na região cacaueira. Conhecida pelo comércio forte e produção agrícola diversificada."
+  },
+  {
+    "municipio": "Gavião",
+    "estado": "BA",
+    "curiosidade": "Município pequeno do interior com forte cultura sertaneja. Economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Gentio do Ouro",
+    "estado": "BA",
+    "curiosidade": "Cidade com passado ligado à mineração de ouro. Possui paisagens de caatinga e comunidades tradicionais."
+  },
+  {
+    "municipio": "Glória",
+    "estado": "BA",
+    "curiosidade": "Banho pelo Rio São Francisco, possui forte cultura ribeirinha. Atrai visitantes pelas paisagens e pela pesca."
+  },
+  {
+    "municipio": "Gongogi",
+    "estado": "BA",
+    "curiosidade": "Situada na região cacaueira, cercada de Mata Atlântica. Economia voltada à agricultura e pecuária."
+  },
+  {
+    "municipio": "Governador Lomanto Júnior",
+    "estado": "BA",
+    "curiosidade": "Município do sul com economia agrícola. Comunidade tradicional e clima úmido caracterizam a região."
+  },
+  {
+    "municipio": "Governador Mangabeira",
+    "estado": "BA",
+    "curiosidade": "Próxima ao Recôncavo, com economia voltada ao cultivo de mandioca e fruticultura. Famosa por festas culturais."
+  },
+  {
+    "municipio": "Guajeru",
+    "estado": "BA",
+    "curiosidade": "Município pequeno do sudoeste com clima seco. Economia rural predominante e forte tradição comunitária."
+  },
+  {
+    "municipio": "Guanambi",
+    "estado": "BA",
+    "curiosidade": "Importante polo regional do sudoeste baiano. Economia forte, especialmente no comércio, energia eólica e agricultura."
+  },
+  {
+    "municipio": "Guaratinga",
+    "estado": "BA",
+    "curiosidade": "Cidade próxima à divisa com Minas Gerais e Espírito Santo. Região montanhosa com agricultura diversificada."
+  },
+  {
+    "municipio": "Heliópolis",
+    "estado": "BA",
+    "curiosidade": "Município do nordeste com forte economia agrícola. Cultura sertaneja marcante e vida rural ativa."
+  },
+  {
+    "municipio": "Iaçu",
+    "estado": "BA",
+    "curiosidade": "Localizado no centro do estado, possui sítios arqueológicos e trilhas naturais. Região de caatinga e vales."
+  },
+  {
+    "municipio": "Ibiassucê",
+    "estado": "BA",
+    "curiosidade": "Município do sudoeste com economia baseada em pecuária e agricultura. Comunidade tradicional e tranquila."
+  },
+  {
+    "municipio": "Ibicaraí",
+    "estado": "BA",
+    "curiosidade": "Conhecida pelas festas juninas e pela cultura cacaueira. Cidade com forte identidade interiorana."
+  },
+  {
+    "municipio": "Ibicoara",
+    "estado": "BA",
+    "curiosidade": "Município da Chapada Diamantina, conhecido pela Cachoeira do Buracão, uma das mais belíssimas do Brasil."
+  },
+  {
+    "municipio": "Ibicuí",
+    "estado": "BA",
+    "curiosidade": "Famosa pelo tradicional São João, que atrai turistas de vários estados. Economia ligada ao cacau e agricultura."
+  },
+  {
+    "municipio": "Ibipeba",
+    "estado": "BA",
+    "curiosidade": "Município do semiárido com economia rural. Comunidade simples e forte cultura sertaneja."
+  },
+  {
+    "municipio": "Ibipitanga",
+    "estado": "BA",
+    "curiosidade": "Situada na região sudoeste, com economia baseada na pecuária. Comunidade acolhedora e clima quente."
+  },
+  {
+    "municipio": "Ibiquera",
+    "estado": "BA",
+    "curiosidade": "Município pequeno com economia agrícola. Região com belas paisagens e clima interiorano."
+  },
+  {
+    "municipio": "Ibirapitanga",
+    "estado": "BA",
+    "curiosidade": "Município da região cacaueira com Mata Atlântica preservada. Comunidade rural forte e cultura afro-baiana."
+  },
+  {
+    "municipio": "Ibirapuã",
+    "estado": "BA",
+    "curiosidade": "Município do extremo sul com economia voltada à pecuária. Região de clima quente e paisagens naturais."
+  },
+  {
+    "municipio": "Ibititá",
+    "estado": "BA",
+    "curiosidade": "Cidade do semiárido com produção agrícola em crescimento. Comunidade interiorana e cultura tradicional."
+  },
+  {
+    "municipio": "Ibotirama",
+    "estado": "BA",
+    "curiosidade": "Importante cidade às margens do Rio São Francisco. Forte comércio e cultura ribeirinha."
+  },
+  {
+    "municipio": "Ichu",
+    "estado": "BA",
+    "curiosidade": "Município pequeno com economia rural e forte cultura comunitária. Região marcada pelo clima quente e seco."
+  },
+  {
+    "municipio": "Igaporã",
+    "estado": "BA",
+    "curiosidade": "Localizada no sudoeste, possui tradição sertaneja e economia agrícola. Região de serras e clima variado."
+  },
+  {
+    "municipio": "Igrapiúna",
+    "estado": "BA",
+    "curiosidade": "Município próximo a áreas de preservação ambiental. Rica biodiversidade e forte cultura tradicional."
+  },
+  {
+    "municipio": "Iguaí",
+    "estado": "BA",
+    "curiosidade": "Município do sul baiano com rios, cachoeiras e áreas de Mata Atlântica. Agricultura é base da economia."
+  },
+  {
+    "municipio": "Ilhéus",
+    "estado": "BA",
+    "curiosidade": "Famosa pela obra de Jorge Amado e pela história do cacau. Cidade litorânea com belas praias e grande importância cultural."
+  },
+  {
+    "municipio": "Inhambupe",
+    "estado": "BA",
+    "curiosidade": "Município histórico mencionado por Pero Vaz de Caminha. Região de agricultura, pecuária e tradições religiosas."
+  },
+  {
+    "municipio": "Ipecaetá",
+    "estado": "BA",
+    "curiosidade": "Município do Recôncavo com fortes raízes rurais. Economia simples e comunidade bastante tradicional."
+  },
+  {
+    "municipio": "Ipiaú",
+    "estado": "BA",
+    "curiosidade": "Importante cidade da região cacaueira. Forte polo comercial e conhecida pelos eventos culturais."
+  },
+  {
+    "municipio": "Ipirá",
+    "estado": "BA",
+    "curiosidade": "Cidade conhecida pela produção de couro e artefatos artesanais. Forte polo comercial da região."
+  },
+  {
+    "municipio": "Ipupiara",
+    "estado": "BA",
+    "curiosidade": "Município com paisagens de serras e vales. Economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Irajuba",
+    "estado": "BA",
+    "curiosidade": "Cidade pequena com cultura interiorana forte. Economia simples e vida rural predominante."
+  },
+  {
+    "municipio": "Iramaia",
+    "estado": "BA",
+    "curiosidade": "Localizado na Chapada, com clima serrano e belas paisagens. Agricultura e turismo ecológico são destaques."
+  },
+  {
+    "municipio": "Iraquara",
+    "estado": "BA",
+    "curiosidade": "Conhecida como 'Capital das Grutas', abriga cavernas famosas como Lapa Doce e Pratinha. Importante destino turístico da Chapada."
+  },
+  {
+    "municipio": "Irará",
+    "estado": "BA",
+    "curiosidade": "Cidade histórica do Recôncavo, terra do cantor Tom Zé. Rica em tradições culturais afro-baianas."
+  },
+  {
+    "municipio": "Irecê",
+    "estado": "BA",
+    "curiosidade": "Polo agrícola do centro-norte, conhecido principalmente pelo cultivo de feijão. Cidade moderna e em expansão."
+  },
+  {
+    "municipio": "Itabela",
+    "estado": "BA",
+    "curiosidade": "Região de grande produção de eucalipto e pecuária. Próxima a áreas turísticas como Porto Seguro."
+  },
+  {
+    "municipio": "Itaberaba",
+    "estado": "BA",
+    "curiosidade": "Considerada a 'Porta de Entrada da Chapada Diamantina'. Cidade com forte polo comercial e cultural."
+  },
+  {
+    "municipio": "Itabuna",
+    "estado": "BA",
+    "curiosidade": "Um dos maiores polos urbanos do sul da Bahia. Grande importância econômica e berço do escritor Jorge Amado."
+  },
+  {
+    "municipio": "Itacaré",
+    "estado": "BA",
+    "curiosidade": "Destino turístico internacional com praias paradisíacas e Mata Atlântica preservada. Conhecida por surf, trilhas e ecoturismo."
+  },
+  {
+    "municipio": "Itaeté",
+    "estado": "BA",
+    "curiosidade": "Cidade da Chapada com rios, serras e trilhas famosas. Próxima da Cachoeira do Herculano e outras belezas naturais."
+  },
+  {
+    "municipio": "Itagi",
+    "estado": "BA",
+    "curiosidade": "Município agrícola do sul baiano. Comunidade simples com tradições sertanejas e afro-baianas."
+  },
+  {
+    "municipio": "Itagibá",
+    "estado": "BA",
+    "curiosidade": "Cidade próxima à região cacaueira. Também possui atividades ligadas à mineração."
+  },
+  {
+    "municipio": "Itagimirim",
+    "estado": "BA",
+    "curiosidade": "Município do extremo sul com economia ligada à pecuária. Região de clima quente e vegetação de mata e cerrado."
+  },
+  {
+    "municipio": "Itaguaçu da Bahia",
+    "estado": "BA",
+    "curiosidade": "Município do semiárido, com grandes áreas rurais. Forte cultura sertaneja e economia agrícola."
+  },
+  {
+    "municipio": "Itaju do Colônia",
+    "estado": "BA",
+    "curiosidade": "Região cacaueira com forte tradição agrícola. Próxima a aldeias indígenas Pataxó Hã-Hã-Hãe."
+  },
+  {
+    "municipio": "Itajuípe",
+    "estado": "BA",
+    "curiosidade": "Cidade charmosa da região cacaueira. Clima úmido, rios e paisagens naturais são comuns na região."
+  },
+  {
+    "municipio": "Itamaraju",
+    "estado": "BA",
+    "curiosidade": "Importante polo urbano do extremo sul. Próxima ao Monte Pascoal, marco da chegada dos portugueses ao Brasil."
+  },
+  {
+    "municipio": "Itamari",
+    "estado": "BA",
+    "curiosidade": "Município agrícola do sul, com forte presença rural. Cultura interiorana preservada."
+  },
+  {
+    "municipio": "Itambé",
+    "estado": "BA",
+    "curiosidade": "Terra natal do cantor Edson Gomes. Importante cidade na divisa com Minas Gerais."
+  },
+  {
+    "municipio": "Itanagra",
+    "estado": "BA",
+    "curiosidade": "Cidade do litoral norte com economia rural e turismo de natureza. Região com rios e manguezais."
+  },
+  {
+    "municipio": "Itanhém",
+    "estado": "BA",
+    "curiosidade": "Município do extremo sul com tradição pecuária e festas sertanejas. Região de clima quente."
+  },
+  {
+    "municipio": "Itaparica",
+    "estado": "BA",
+    "curiosidade": "Localizada em uma ilha histórica, abriga fortaleza, praias e cultura afro-baiana. Cidade turística ligada à baía de Todos-os-Santos."
+  },
+  {
+    "municipio": "Itapé",
+    "estado": "BA",
+    "curiosidade": "Município do sul, próximo a rios e áreas preservadas. Economia rural e clima úmido predominam."
+  },
+  {
+    "municipio": "Itapebi",
+    "estado": "BA",
+    "curiosidade": "Cidade histórica próxima ao Rio Jequitinhonha. Região com tradições antigas e belezas naturais."
+  },
+  {
+    "municipio": "Itapetinga",
+    "estado": "BA",
+    "curiosidade": "Polo agropecuário importante do sudoeste baiano. Conhecida pela festa do boi e forte presença no setor industrial."
+  },
+  {
+    "municipio": "Itapicuru",
+    "estado": "BA",
+    "curiosidade": "Município histórico do nordeste, com economia rural. Próximo à divisa com Sergipe."
+  },
+  {
+    "municipio": "Itapitanga",
+    "estado": "BA",
+    "curiosidade": "Situada na região cacaueira com clima úmido. Comunidade com tradições afro-baianas."
+  },
+  {
+    "municipio": "Itaquara",
+    "estado": "BA",
+    "curiosidade": "Município do Vale do Jiquiriçá com cultura rural. Região com cachoeiras e clima ameno."
+  },
+  {
+    "municipio": "Itarantim",
+    "estado": "BA",
+    "curiosidade": "Município serrano com tradição pecuária. Paisagens de serra e clima agradável."
+  },
+  {
+    "municipio": "Itatim",
+    "estado": "BA",
+    "curiosidade": "Conhecida pelas formações rochosas e rotas de escalada. Um dos destinos de geoturismo mais interessantes do estado."
+  },
+  {
+    "municipio": "Itiruçu",
+    "estado": "BA",
+    "curiosidade": "Município serrano do Vale do Jiquiriçá com clima mais frio. Região com belas paisagens e fortes tradições culturais."
+  },
+  {
+    "municipio": "Itiúba",
+    "estado": "BA",
+    "curiosidade": "Situada no nordeste baiano, com economia rural e forte cultura sertaneja. Festas religiosas movimentam a cidade."
+  },
+  {
+    "municipio": "Itororó",
+    "estado": "BA",
+    "curiosidade": "Conhecida como 'Terra da Carne do Sol'. Forte tradição culinária e pecuária."
+  },
+  {
+    "municipio": "Ituaçu",
+    "estado": "BA",
+    "curiosidade": "Município da Chapada Diamantina, terra natal do cantor Moraes Moreira. Região serrana com clima agradável."
+  },
+  {
+    "municipio": "Ituberá",
+    "estado": "BA",
+    "curiosidade": "Localizada na Costa do Dendê, com manguezais e rios navegáveis. Produção agrícola forte em produtos tropicais."
+  },
+  [
+  {
+    "municipio": "Jaborandi",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela intensa produção de grãos em grandes propriedades mecanizadas. Também ficou famosa por projetos pioneiros de irrigação."
+  },
+  {
+    "municipio": "Jacaraci",
+    "estado": "BA",
+    "curiosidade": "Mantém viva a tradição do Reisado e de grupos culturais centenários. A cidade preserva construções antigas ligadas ao ciclo do couro."
+  },
+  {
+    "municipio": "Jacobina",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela mineração de ouro desde o século XVIII. Sedia o único 'MotoFest' em circuito urbano totalmente fechado do Brasil."
+  },
+  {
+    "municipio": "Jaguaquara",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela Festa de São João que atrai visitantes de várias regiões. Destaca-se pela produção de frutas e pela culinária local."
+  },
+  {
+    "municipio": "Jaguarari",
+    "estado": "BA",
+    "curiosidade": "A cidade tem águas termais de propriedades medicinais. Seu artesanato em couro é reconhecido em toda a Bahia."
+  },
+  {
+    "municipio": "Jaguaripe",
+    "estado": "BA",
+    "curiosidade": "Possui um dos municípios mais antigos da Colônia, com igrejas e sobrados seculares. Foi importante centro do açúcar no período colonial."
+  },
+  {
+    "municipio": "Jandaíra",
+    "estado": "BA",
+    "curiosidade": "Famosa pela produção de mel de abelha nativa, considerado um dos melhores do Nordeste. A cultura apícola é parte da identidade local."
+  },
+  {
+    "municipio": "Jequié",
+    "estado": "BA",
+    "curiosidade": "Conhecida como 'Cidade Sol' pela alta temperatura e luminosidade. Tem forte polo de confecções e comércio regional."
+  },
+  {
+    "municipio": "Jeremoabo",
+    "estado": "BA",
+    "curiosidade": "A cidade preserva lendas antigas e histórias populares, destacando-se pela música de viola e pela produção de queijos artesanais."
+  },
+  {
+    "municipio": "Jiquiriçá",
+    "estado": "BA",
+    "curiosidade": "A cidade é referência na produção de artesanato em madeira. Sua cultura mantém festas tradicionais com mais de 150 anos."
+  },
+  {
+    "municipio": "Jitaúna",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela produção de cacau e por eventos culturais ligados à poesia e à música regional. Mantém tradições rurais vivas."
+  },
+  {
+    "municipio": "João Dourado",
+    "estado": "BA",
+    "curiosidade": "É uma das maiores produtoras de cebola do país. A agricultura irrigada transformou a economia local nas últimas décadas."
+  },
+  {
+    "municipio": "Juazeiro",
+    "estado": "BA",
+    "curiosidade": "Grande expoente da fruticultura e vinicultura no Brasil. É a terra natal do cantor João Gilberto, ícone da Bossa Nova."
+  },
+  {
+    "municipio": "Jucuruçu",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela culinária de influência mineira com pratos tradicionais únicos. Pequenos produtores mantêm técnicas artesanais de agricultura."
+  },
+  {
+    "municipio": "Jussara",
+    "estado": "BA",
+    "curiosidade": "Destaca-se pelos projetos de piscicultura e pela criação de tilápia. A cidade apostou em técnicas modernas de cultivo."
+  },
+  {
+    "municipio": "Jussari",
+    "estado": "BA",
+    "curiosidade": "Abriga áreas remanescentes de Mata Atlântica e espécies raras. É vizinha de um dos maiores corredores ecológicos da região cacaueira."
+  },
+  {
+    "municipio": "Jussiape",
+    "estado": "BA",
+    "curiosidade": "Famosa por suas águas minerais e fontes naturais. Pequenos produtores mantêm tradições de queijos e doces artesanais."
+  },
+  {
+    "municipio": "Lafaiete Coutinho",
+    "estado": "BA",
+    "curiosidade": "Cidade marcada por festas espirituais e grupos de canto coral. Seu pequeno centro preserva construções antigas e tradições familiares."
+  },
+  {
+    "municipio": "Lagoa Real",
+    "estado": "BA",
+    "curiosidade": "A cidade tem forte ligação com o artesanato em palha e fibras naturais. A cultura popular inclui danças e celebrações tradicionais."
+  },
+  {
+    "municipio": "Laje",
+    "estado": "BA",
+    "curiosidade": "Muito conhecida pelas feiras agropecuárias. A música e os grupos de samba de roda têm presença marcante."
+  },
+  {
+    "municipio": "Lajedão",
+    "estado": "BA",
+    "curiosidade": "Possui tradições gastronômicas baseadas em receitas antigas de fazenda. Festas comunitárias mobilizam toda a população."
+  },
+  {
+    "municipio": "Lajedinho",
+    "estado": "BA",
+    "curiosidade": "A cidade mantém viva a tradição de tecelagem manual. Seu centro urbano se destaca pela arquitetura simples e harmônica."
+  },
+  {
+    "municipio": "Lajedo do Tabocal",
+    "estado": "BA",
+    "curiosidade": "Famosa pela produção de farinha artesanal. O município preserva danças folclóricas e celebrações religiosas antigas."
+  },
+  {
+    "municipio": "Lamarão",
+    "estado": "BA",
+    "curiosidade": "Cultura fortemente marcada por grupos de samba de roda e cantigas tradicionais. A economia local gira em torno da agricultura familiar."
+  },
+  {
+    "municipio": "Lapão",
+    "estado": "BA",
+    "curiosidade": "Considerada uma das potências baianas na produção de hortaliças irrigadas. Sua feira é uma das maiores da região."
+  },
+  {
+    "municipio": "Lauro de Freitas",
+    "estado": "BA",
+    "curiosidade": "Centro urbano em constante crescimento, famoso pela vida cultural e esportiva. Tem forte presença de artistas e atletas reconhecidos."
+  },
+  {
+    "municipio": "Lençóis",
+    "estado": "BA",
+    "curiosidade": "Porta de entrada do turismo da Chapada Diamantina. A cidade já foi um dos principais centros de garimpo de diamantes no Brasil."
+  },
+  {
+    "municipio": "Licínio de Almeida",
+    "estado": "BA",
+    "curiosidade": "A cidade mantém tradições religiosas fortes e eventos culturais anuais. Pequenos agricultores produzem alimentos típicos da região."
+  },
+  {
+    "municipio": "Livramento de Nossa Senhora",
+    "estado": "BA",
+    "curiosidade": "Conhecida por suas águas minerais e produção de frutas como o maracujá e a manga. Tem festas tradicionais que atraem visitantes."
+  },
+  {
+    "municipio": "Luís Eduardo Magalhães",
+    "estado": "BA",
+    "curiosidade": "Um dos municípios mais novos e que mais crescem no Brasil. Considerada capital do agronegócio do Oeste Baiano, com tecnologia avançada."
+  },
+  {
+    "municipio": "Macajuba",
+    "estado": "BA",
+    "curiosidade": "Cidade famosa por festivais culturais e pela hospitalidade. Eventos regionais movimentam o comércio e atraem visitantes."
+  },
+  {
+    "municipio": "Macarani",
+    "estado": "BA",
+    "curiosidade": "Possui forte tradição no futebol amador e em eventos esportivos. A cidade é conhecida pela produção de derivados do leite."
+  },
+  {
+    "municipio": "Macaúbas",
+    "estado": "BA",
+    "curiosidade": "Seu artesanato utiliza sementes e fibras nativas. A culinária destaca pratos sertanejos tradicionais."
+  },
+  {
+    "municipio": "Macururé",
+    "estado": "BA",
+    "curiosidade": "Conhecida por manter vivas tradições de cantigas e rezas antigas. Pequenos agricultores sustentam a economia local."
+  },
+  {
+    "municipio": "Madre de Deus",
+    "estado": "BA",
+    "curiosidade": "O menor município em área da Bahia. Reconhecido por eventos populares, praias e forte identidade cultural pesqueira."
+  },
+  {
+    "municipio": "Maetinga",
+    "estado": "BA",
+    "curiosidade": "A cidade preserva receitas antigas de doces e queijos artesanais. Festas comunitárias fortalecem o vínculo entre moradores."
+  },
+  {
+    "municipio": "Maiquinique",
+    "estado": "BA",
+    "curiosidade": "Conhecida por competições de cavalgadas e cultura sertaneja autêntica. A carne de sol local é muito apreciada."
+  },
+  {
+    "municipio": "Mairi",
+    "estado": "BA",
+    "curiosidade": "Sedia um dos maiores campeonatos de futebol amador da Bahia. Também é conhecida pela produção de artesanato."
+  },
+  {
+    "municipio": "Malhada",
+    "estado": "BA",
+    "curiosidade": "A música tradicional, como reisado e forró, tem forte presença. Comunidades locais cultivam técnicas rurais antigas."
+  },
+  {
+    "municipio": "Malhada de Pedras",
+    "estado": "BA",
+    "curiosidade": "Cidade reconhecida por festas religiosas e produção de queijos. A cultura sertaneja marca fortemente o cotidiano local."
+  },
+  {
+    "municipio": "Manoel Vitorino",
+    "estado": "BA",
+    "curiosidade": "Tem tradição na fabricação artesanal de rapaduras e doces. A vida comunitária gira em torno de feiras e celebrações."
+  },
+  {
+    "municipio": "Mansidão",
+    "estado": "BA",
+    "curiosidade": "A cidade é caracterizada por longas paisagens rurais e comunidades tradicionais. A pecuária tem forte presença."
+  },
+  {
+    "municipio": "Maracás",
+    "estado": "BA",
+    "curiosidade": "Famosa por seu clima agradável e pelo cultivo de flores ornamentais. Seu Festival de Inverno é referência cultural."
+  },
+  {
+    "municipio": "Maragogipe",
+    "estado": "BA",
+    "curiosidade": "Possui um dos carnavais mais antigos da Bahia, com tradições afro-baianas e máscaras típicas únicas."
+  },
+  {
+    "municipio": "Maraú",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela Península de Maraú, um dos destinos mais procurados da Bahia, com piscinas naturais e culinária marcante."
+  },
+  {
+    "municipio": "Marcionílio Souza",
+    "estado": "BA",
+    "curiosidade": "Cidade conhecida pela agricultura familiar e celebrações centenárias. A cultura popular é muito valorizada."
+  },
+  {
+    "municipio": "Mascote",
+    "estado": "BA",
+    "curiosidade": "A região abriga comunidades tradicionais que preservam técnicas de cultivo e culinária. Cultura rural forte."
+  },
+  {
+    "municipio": "Mata de São João",
+    "estado": "BA",
+    "curiosidade": "Abriga Praia do Forte e o Projeto Tamar, referência mundial na preservação das tartarugas marinhas."
+  },
+  [
+  {
+    "municipio": "Matina",
+    "estado": "BA",
+    "curiosidade": "Conhecida por tradições rurais e culinária típica baseada em receitas antigas. Suas festas comunitárias mantêm costumes centenários."
+  },
+  {
+    "municipio": "Medeiros Neto",
+    "estado": "BA",
+    "curiosidade": "Tem forte tradição na produção de derivados de couro e eventos sertanejos. Conhecida pela hospitalidade e cultura vibrante."
+  },
+  {
+    "municipio": "Miguel Calmon",
+    "estado": "BA",
+    "curiosidade": "Lar de grupos tradicionais de sanfoneiros e violeiros. A cidade preserva festas culturais antigas como o Pau de Sebo."
+  },
+  {
+    "municipio": "Milagres",
+    "estado": "BA",
+    "curiosidade": "Recebe romeiros há mais de um século devido ao Santuário local. Famosa também por doces artesanais e feiras tradicionais."
+  },
+  {
+    "municipio": "Mirangaba",
+    "estado": "BA",
+    "curiosidade": "A cidade mantém práticas agrícolas artesanais e festas populares ligadas à colheita. Também possui forte tradição em cantigas rurais."
+  },
+  {
+    "municipio": "Mirante",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela criação de caprinos e por festas sertanejas. Comunidades mantêm histórias orais passadas entre gerações."
+  },
+  {
+    "municipio": "Monte Santo",
+    "estado": "BA",
+    "curiosidade": "Possui uma das maiores rotas de peregrinação do Nordeste, inspirada no Caminho de Jerusalém. É tema de clássicos da literatura brasileira."
+  },
+  {
+    "municipio": "Morpará",
+    "estado": "BA",
+    "curiosidade": "A cidade valoriza tradições ribeirinhas e música local. Pequenos produtores mantêm receitas antigas de doces e farinha."
+  },
+  {
+    "municipio": "Morro do Chapéu",
+    "estado": "BA",
+    "curiosidade": "Famosa por cavernas, formações rochosas e pelo vinho local. Abriga uma das maiores tirolesas do Brasil."
+  },
+  {
+    "municipio": "Mortugaba",
+    "estado": "BA",
+    "curiosidade": "A culinária típica inclui receitas antigas de galinha caipira e feiras tradicionais. Sua cultura sertaneja é muito preservada."
+  },
+  {
+    "municipio": "Mucugê",
+    "estado": "BA",
+    "curiosidade": "A cidade histórica possui um cemitério bizantino único no país. É referência em ecoturismo e floricultura de sempre-vivas."
+  },
+  {
+    "municipio": "Mucuri",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela fabricação de papel e celulose e por praias extensas. O chocolate artesanal local é bastante apreciado."
+  },
+  {
+    "municipio": "Mulungu do Morro",
+    "estado": "BA",
+    "curiosidade": "A cidade mantém grupos tradicionais de reisado e festejos religiosos antigos. A agricultura familiar move a economia local."
+  },
+  {
+    "municipio": "Mundo Novo",
+    "estado": "BA",
+    "curiosidade": "Possui tradição musical forte, com bandas locais ativas há décadas. Feiras populares movimentam a cidade semanalmente."
+  },
+  {
+    "municipio": "Muniz Ferreira",
+    "estado": "BA",
+    "curiosidade": "Destaca-se pela produção artesanal de farinha e pela culinária caseira. Antigas tradições familiares ainda são muito respeitadas."
+  },
+  {
+    "municipio": "Muquém do São Francisco",
+    "estado": "BA",
+    "curiosidade": "A comunidade possui forte cultura ribeirinha, preservando lendas e práticas antigas relacionadas ao rio."
+  },
+  {
+    "municipio": "Muritiba",
+    "estado": "BA",
+    "curiosidade": "Conhecida por grupos artísticos tradicionais e por seu centro histórico preservado. A cerâmica local é muito valorizada."
+  },
+  {
+    "municipio": "Mutuípe",
+    "estado": "BA",
+    "curiosidade": "A cidade se destaca por festivais culturais e pela produção artesanal de doces e bolos, muito reconhecidos na região."
+  },
+  {
+    "municipio": "Nazaré",
+    "estado": "BA",
+    "curiosidade": "Famosa pela tradicional Feira de Caxixis, uma das maiores de artesanato do Nordeste. Conhecida pelos bordados e cerâmicas."
+  },
+  {
+    "municipio": "Nilo Peçanha",
+    "estado": "BA",
+    "curiosidade": "Maior produtora de dendê da Bahia. Mantém culinária tradicional com receitas seculares afro-baianas."
+  },
+  {
+    "municipio": "Nordestina",
+    "estado": "BA",
+    "curiosidade": "A cidade possui tradição forte na música de sanfona e em festas juninas históricas. Comunidade preserva artesanato regional."
+  },
+  {
+    "municipio": "Nova Canaã",
+    "estado": "BA",
+    "curiosidade": "Destaca-se pela criação de gado e produção de queijos artesanais. Suas festas comunitárias são muito valorizadas."
+  },
+  {
+    "municipio": "Nova Fátima",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pelo artesanato em sisal e pelas apresentações de quadrilhas juninas. A cultura sertaneja é muito forte."
+  },
+  {
+    "municipio": "Nova Ibiá",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela produção de cacau fino e por festas tradicionais que envolvem música regional e culinária."
+  },
+  {
+    "municipio": "Nova Itarana",
+    "estado": "BA",
+    "curiosidade": "A cidade organiza festas populares com danças antigas e conserva práticas agrícolas tradicionais em família."
+  },
+  {
+    "municipio": "Nova Redenção",
+    "estado": "BA",
+    "curiosidade": "Famosa pela produção de café artesanal. Também preserva lendas e cantigas transmitidas oralmente."
+  },
+  {
+    "municipio": "Nova Soure",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela música de viola e dança do samba de roda. O artesanato em barro é símbolo da cidade."
+  },
+  {
+    "municipio": "Nova Viçosa",
+    "estado": "BA",
+    "curiosidade": "Famosa pelo turismo e por ateliês de arte que produzem pinturas e esculturas reconhecidas nacionalmente."
+  },
+  {
+    "municipio": "Novo Horizonte",
+    "estado": "BA",
+    "curiosidade": "A cidade abriga grupos culturais antigos e mantém técnicas manuais de produção de farinha e queijos."
+  },
+  {
+    "municipio": "Novo Triunfo",
+    "estado": "BA",
+    "curiosidade": "Possui tradição na criação de cabras e na culinária sertaneja. Festas religiosas são grande marco local."
+  },
+  {
+    "municipio": "Olindina",
+    "estado": "BA",
+    "curiosidade": "A cidade é conhecida por seu artesanato em palha e madeira. Eventos populares movimentam a cultura local."
+  },
+  {
+    "municipio": "Oliveira dos Brejinhos",
+    "estado": "BA",
+    "curiosidade": "Possui tradições antigas em música e teatro comunitário. Pequenos produtores fabricam rapaduras muito apreciadas."
+  },
+  {
+    "municipio": "Ouriçangas",
+    "estado": "BA",
+    "curiosidade": "Famosa por seu samba de roda tradicional e por grupos culturais centenários. Festas locais atraem visitantes de várias regiões."
+  },
+  {
+    "municipio": "Ourolândia",
+    "estado": "BA",
+    "curiosidade": "Região com forte cultura de lapidação de pedras ornamentais. Seu artesanato é reconhecido em feiras estaduais."
+  },
+  {
+    "municipio": "Palmas de Monte Alto",
+    "estado": "BA",
+    "curiosidade": "Cidade conhecida por abrigar religiões tradicionais e grupos musicais históricos. O artesanato em couro é um dos destaques."
+  },
+  {
+    "municipio": "Palmeiras",
+    "estado": "BA",
+    "curiosidade": "Abriga o Vale do Capão, famoso mundialmente pela cultura alternativa, culinária vegetariana e retiros espirituais."
+  },
+  {
+    "municipio": "Paramirim",
+    "estado": "BA",
+    "curiosidade": "Conhecida por bandas filarmônicas centenárias. A cidade também preserva receitas de doces caseiros tradicionais."
+  },
+  {
+    "municipio": "Paratinga",
+    "estado": "BA",
+    "curiosidade": "Celebra a tradicional Lavagem do Senhor do Bonfim local. Seus grupos de samba e música popular são muito fortes."
+  },
+  {
+    "municipio": "Paripiranga",
+    "estado": "BA",
+    "curiosidade": "Tem tradições rurais marcantes, incluindo culinária típica e festas que preservam danças antigas do sertão."
+  },
+  {
+    "municipio": "Pau Brasil",
+    "estado": "BA",
+    "curiosidade": "Lar de comunidades indígenas Pataxó Hã-Hã-Hãe, que preservam idiomas, rituais e culinária tradicional."
+  },
+  {
+    "municipio": "Paulo Afonso",
+    "estado": "BA",
+    "curiosidade": "Cidade marcada pelas usinas hidrelétricas e pela história de Lampião. O turismo de aventura é muito forte."
+  },
+  {
+    "municipio": "Pé de Serra",
+    "estado": "BA",
+    "curiosidade": "Famosa por festas de vaquejada e música sertaneja. Pequenos agricultores mantêm tradições seculares."
+  },
+  {
+    "municipio": "Pedrão",
+    "estado": "BA",
+    "curiosidade": "Cidade reconhecida por apresentações de samba de roda autêntico. Também preserva artesanato em barro."
+  },
+  {
+    "municipio": "Pedro Alexandre",
+    "estado": "BA",
+    "curiosidade": "A cidade mantém tradições de cavalgadas e culinária sertaneja. É reconhecida por eventos comunitários históricos."
+  },
+  {
+    "municipio": "Piatã",
+    "estado": "BA",
+    "curiosidade": "Produz um dos cafés especiais mais premiados do Brasil. Também é famosa pela produção artesanal de queijos."
+  },
+  {
+    "municipio": "Pilão Arcado",
+    "estado": "BA",
+    "curiosidade": "Conhecida por lendas antigas e tradições sertanejas. Sua riqueza cultural inclui cantigas e narrativas seculares."
+  },
+  {
+    "municipio": "Pindaí",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela produção de manteigas e queijos artesanais. Festas populares animam a cidade anualmente."
+  },
+  {
+    "municipio": "Pindobaçu",
+    "estado": "BA",
+    "curiosidade": "Famosa pela extração de ametistas, possuindo uma das maiores minas do mundo. O artesanato com pedras é destaque."
+  },
+  {
+    "municipio": "Pintadas",
+    "estado": "BA",
+    "curiosidade": "Cidade valorizada pela cultura comunitária e produção rural sustentável. Projetos de cooperativas são referência."
+  },
+  {
+    "municipio": "Piraí do Norte",
+    "estado": "BA",
+    "curiosidade": "Reconhecida por festas religiosas e culinária caseira. A cultura local preserva histórias orais passadas por gerações."
+  },
+  {
+    "municipio": "Piripá",
+    "estado": "BA",
+    "curiosidade": "Famosa por eventos de cultura sertaneja e feiras rurais. A cidade mantém viva a tradição da música regional."
+  },
+  {
+    "municipio": "Piritiba",
+    "estado": "BA",
+    "curiosidade": "Muito conhecida por festivais culturais e bandas filarmônicas tradicionais. Tem forte identidade musical."
+  },
+  {
+    "municipio": "Planaltino",
+    "estado": "BA",
+    "curiosidade": "Local preserva culinária típica e técnicas manuais de produção de farinha. Festas populares movimentam o município."
+  },
+  {
+    "municipio": "Planalto",
+    "estado": "BA",
+    "curiosidade": "Tem grande tradição na pecuária e produção de queijos. Cavalgadas e festas rurais são muito comuns."
+  },
+  {
+    "municipio": "Poções",
+    "estado": "BA",
+    "curiosidade": "Cidade conhecida pela música e bandas de rock locais. Também é polo importante de comércio regional."
+  },
+  {
+    "municipio": "Pojuca",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela presença de grandes indústrias e por tradições culturais afro-baianas mantidas por gerações."
+  },
+  {
+    "municipio": "Ponto Novo",
+    "estado": "BA",
+    "curiosidade": "Destaca-se por projetos eficientes de irrigação e produção agrícola moderna. Festas juninas atraem visitantes."
+  },
+  {
+    "municipio": "Porto Seguro",
+    "estado": "BA",
+    "curiosidade": "Marco da chegada dos portugueses em 1500. Hoje é um dos maiores polos turísticos do Brasil."
+  },
+  {
+    "municipio": "Potiraguá",
+    "estado": "BA",
+    "curiosidade": "Cidade famosa por suas tradições sertanejas e festivais culturais. A culinária caseira atrai visitantes."
+  },
+  {
+    "municipio": "Prado",
+    "estado": "BA",
+    "curiosidade": "Conhecida por praias cinematográficas e avistamento de baleias. A cidade também preserva centro histórico colorido."
+  },
+  {
+    "municipio": "Presidente Dutra",
+    "estado": "BA",
+    "curiosidade": "Possui forte tradição de música instrumental e bandas locais. Feiras comunitárias são muito importantes."
+  },
+  {
+    "municipio": "Presidente Jânio Quadros",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela produção de mel artesanal e eventos culturais sertanejos. Pequenos produtores mantêm técnicas antigas."
+  },
+  {
+    "municipio": "Presidente Tancredo Neves",
+    "estado": "BA",
+    "curiosidade": "Grande produtor de cravo-da-índia e frutas tropicais. Suas festas populares envolvem ritmos afro-baianos."
+  },
+  {
+    "municipio": "Queimadas",
+    "estado": "BA",
+    "curiosidade": "Famosa por eventos esportivos e festas tradicionais. Tem forte cultura sertaneja e culinária marcante."
+  },
+  {
+    "municipio": "Quijingue",
+    "estado": "BA",
+    "curiosidade": "Conhecida pelo artesanato de couro e apresentações musicais. Tradições familiares são muito preservadas."
+  },
+  {
+    "municipio": "Quixabeira",
+    "estado": "BA",
+    "curiosidade": "Destaca-se por cooperativas agrícolas e iniciativas comunitárias. A música sertaneja tradicional é muito presente."
+  },
+  {
+    "municipio": "Rafael Jambeiro",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela produção agrícola e festas regionais. A culinária típica rural é muito valorizada."
+  },
+  {
+    "municipio": "Remanso",
+    "estado": "BA",
+    "curiosidade": "Berço do cantor João Gilberto. A cidade possui forte cultura ribeirinha e história musical marcante."
+  },
+  {
+    "municipio": "Retirolândia",
+    "estado": "BA",
+    "curiosidade": "Cidade com forte tradição têxtil ligada ao sisal. Suas festas e desfiles culturais são destaque anual."
+  },
+  {
+    "municipio": "Riachão das Neves",
+    "estado": "BA",
+    "curiosidade": "Possui grande importância no agronegócio baiano. Projetos de alta tecnologia transformaram a produção agrícola."
+  },
+  {
+    "municipio": "Riachão do Jacuípe",
+    "estado": "BA",
+    "curiosidade": "Conhecida por seu campeonato de futebol local e grupos culturais antigos. Também possui tradição forte na música."
+  },
+  {
+    "municipio": "Riacho de Santana",
+    "estado": "BA",
+    "curiosidade": "Famosa por suas filarmônicas centenárias. Também se destaca pela produção de queijos e receitas rurais tradicionais."
+  },
+  {
+    "municipio": "Ribeira do Amparo",
+    "estado": "BA",
+    "curiosidade": "Cidade conhecida por tradições religiosas muito antigas. A música e dança local preservam raízes afro-brasileiras."
+  },
+  {
+    "municipio": "Ribeira do Pombal",
+    "estado": "BA",
+    "curiosidade": "Centro regional muito ativo culturalmente. Reconhecida por eventos musicais e tradição sertaneja."
+  },
+  {
+    "municipio": "Ribeirão do Largo",
+    "estado": "BA",
+    "curiosidade": "A culinária local inclui pratos artesanais de influência mineira. Festas familiares atraem pessoas de cidades vizinhas."
+  },
+  {
+    "municipio": "Rio de Contas",
+    "estado": "BA",
+    "curiosidade": "Primeira cidade planejada do Brasil colônia. Tem um centro histórico impressionante e manifestações afro-brasileiras únicas."
+  },
+  {
+    "municipio": "Rio do Antônio",
+    "estado": "BA",
+    "curiosidade": "Cidade com tradições sertanejas profundamente preservadas. Festas agropecuárias são muito populares."
+  },
+  {
+    "municipio": "Rio do Pires",
+    "estado": "BA",
+    "curiosidade": "Conhecida pelo artesanato em bordados e culinária típica da serra. Pequenos produtores mantêm saberes tradicionais."
+  },
+  {
+    "municipio": "Rio Real",
+    "estado": "BA",
+    "curiosidade": "Centro produtor de laranja e frutas diversas. Possui tradições musicais e festas muito celebradas."
+  },
+  {
+    "municipio": "Rodelas",
+    "estado": "BA",
+    "curiosidade": "Importante área de cultura indígena Tuxá. Suas danças e rituais são conhecidos nacionalmente."
+  },
+  {
+    "municipio": "Ruy Barbosa",
+    "estado": "BA",
+    "curiosidade": "Famosa por grupos de teatro e dança. Também produz queijos e doces reconhecidos em feiras estaduais."
+  },
+  {
+    "municipio": "Salinas da Margarida",
+    "estado": "BA",
+    "curiosidade": "Famosa pela produção de mariscos e culinária baseada em frutos do mar. Suas festas populares são muito tradicionais."
+  },
+  {
+    "municipio": "Salvador",
+    "estado": "BA",
+    "curiosidade": "Capital da cultura afro-brasileira, berço do samba e da capoeira. Possui o maior Carnaval do mundo."
+  },
+  {
+    "municipio": "Santa Bárbara",
+    "estado": "BA",
+    "curiosidade": "Cidade com tradição forte em bandas marciais e grupos culturais. A produção de hortaliças é destaque local."
+  },
+  {
+    "municipio": "Santa Brígida",
+    "estado": "BA",
+    "curiosidade": "Conhecida pelo legado de 'Beato Pedro Batista' e suas romarias. A cidade ganhou fama por rituais e devoções populares."
+  },
+  {
+    "municipio": "Santa Cruz Cabrália",
+    "estado": "BA",
+    "curiosidade": "Local onde foi rezada a primeira missa no Brasil, em 1500. Rica em história, praias e tradições indígenas."
+  },
+  {
+    "municipio": "Santa Cruz da Vitória",
+    "estado": "BA",
+    "curiosidade": "Conhecida por sua cultura rural, culinária caseira e eventos comunitários que envolvem música e dança."
+  },
+  {
+    "municipio": "Santa Inês",
+    "estado": "BA",
+    "curiosidade": "Cidade marcada por tradições religiosas antigas e grupos de canto coral. A culinária local destaca doces e queijos."
+  },
+  {
+    "municipio": "Santa Luzia",
+    "estado": "BA",
+    "curiosidade": "Famosa pela produção de cacau e por suas festas de tradição afro-brasileira. A música popular é muito forte."
+  },
+  {
+    "municipio": "Santa Maria da Vitória",
+    "estado": "BA",
+    "curiosidade": "Centro cultural e comercial histórico do interior baiano. Destaca-se por festas tradicionais e culinária rica."
+  },
+  {
+    "municipio": "Santa Rita de Cássia",
+    "estado": "BA",
+    "curiosidade": "Possui forte identidade religiosa e abriga festas com mais de 100 anos. A arte em madeira também é tradicional."
+  },
+  {
+    "municipio": "Santa Teresinha",
+    "estado": "BA",
+    "curiosidade": "Cidade com tradição em grupos de samba de roda e canto popular. Receitas artesanais de bolos são reconhecidas."
+  },
+  {
+    "municipio": "Santaluz",
+    "estado": "BA",
+    "curiosidade": "Famosa pela extração de granitos preciosos. Seus bordados e artesanatos também são muito valorizados."
+  },
+  {
+    "municipio": "Santana",
+    "estado": "BA",
+    "curiosidade": "Mantém festas religiosas fortes e tradições relacionadas ao campo. A produção de queijos artesanais é frequente."
+  },
+  {
+    "municipio": "Santanópolis",
+    "estado": "BA",
+    "curiosidade": "Cidade com forte cena musical, especialmente bandas marciais. Suas festas atraem visitantes da região."
+  },
+  {
+    "municipio": "Santo Amaro",
+    "estado": "BA",
+    "curiosidade": "Berço de grandes nomes da música, como Caetano Veloso e Maria Bethânia. O samba de roda de Santo Amaro é Patrimônio da Humanidade."
+  },
+  {
+    "municipio": "Santo Antônio de Jesus",
+    "estado": "BA",
+    "curiosidade": "Considerada capital do Recôncavo. Possui um dos maiores e melhores São João da Bahia."
+  },
+  {
+    "municipio": "Santo Estêvão",
+    "estado": "BA",
+    "curiosidade": "Reconhecida por suas bandas filarmônicas centenárias. A culinária local inclui pratos tradicionais do Recôncavo."
+  },
+  [
+  {
+    "municipio": "São Desidério",
+    "estado": "BA",
+    "curiosidade": "É um dos maiores produtores de grãos do Brasil e abriga o famoso 'Buraco do Inferno', uma das grutas mais profundas do país."
+  },
+  {
+    "municipio": "São Domingos",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela produção artesanal de farinha e pelas festas tradicionais. A música sertaneja é forte na comunidade."
+  },
+  {
+    "municipio": "São Felipe",
+    "estado": "BA",
+    "curiosidade": "Cidade conhecida pelas celebrações da Irmandade do Rosário e tradições afro-brasileiras preservadas há séculos."
+  },
+  {
+    "municipio": "São Félix",
+    "estado": "BA",
+    "curiosidade": "Terra marcada pela força do samba de roda e pela presença histórica de fábricas de charuto. Tem ligação direta com Cachoeira em sua cultura."
+  },
+  {
+    "municipio": "São Félix do Coribe",
+    "estado": "BA",
+    "curiosidade": "Tem tradição em festas agropecuárias e produção de doces tradicionais. Seu artesanato é muito valorizado localmente."
+  },
+  {
+    "municipio": "São Francisco do Conde",
+    "estado": "BA",
+    "curiosidade": "É o município com maior PIB per capita do Brasil devido às indústrias locais. Tem forte herança afro-brasileira e tradições musicais vibrantes."
+  },
+  {
+    "municipio": "São Gabriel",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela produção agrícola e por feiras de grande movimento. Tradições culturais locais incluem música e dança."
+  },
+  {
+    "municipio": "São Gonçalo dos Campos",
+    "estado": "BA",
+    "curiosidade": "Famosa pela criação de cavalos Mangalarga e vaquejadas. A cidade mantém tradições seculares em eventos rurais."
+  },
+  {
+    "municipio": "São José da Vitória",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela produção de cacau e forte cultura comunitária. Festas de rua e música popular marcam o calendário anual."
+  },
+  {
+    "municipio": "São José do Jacuípe",
+    "estado": "BA",
+    "curiosidade": "Reconhecida por cooperativas agrícolas e forte espírito comunitário. A culinária sertaneja é destaque local."
+  },
+  {
+    "municipio": "São Miguel das Matas",
+    "estado": "BA",
+    "curiosidade": "Cidade com forte tradição em grupos de samba de roda e folguedos populares. O artesanato local é bastante procurado."
+  },
+  {
+    "municipio": "São Sebastião do Passé",
+    "estado": "BA",
+    "curiosidade": "Cidade histórica ligada à antiga rota do açúcar. Possui tradições religiosas e culturais muito preservadas."
+  },
+  {
+    "municipio": "Sapeaçu",
+    "estado": "BA",
+    "curiosidade": "Berço de grandes músicos e poetas regionais. A cidade celebra festas tradicionais animadas por filarmônicas."
+  },
+  {
+    "municipio": "Sátiro Dias",
+    "estado": "BA",
+    "curiosidade": "Conhecida pela produção de mel e pela tradição forte em vaquejadas. Seu artesanato rural é bastante valorizado."
+  },
+  {
+    "municipio": "Saubara",
+    "estado": "BA",
+    "curiosidade": "Famosa pela pesca artesanal e pela produção de mariscos. A cidade mantém técnicas tradicionais de culinária afro-baiana."
+  },
+  {
+    "municipio": "Saúde",
+    "estado": "BA",
+    "curiosidade": "Cidade que preserva cantigas e folguedos antigos. Sua culinária típica acompanha pratos rurais tradicionais."
+  },
+  {
+    "municipio": "Seabra",
+    "estado": "BA",
+    "curiosidade": "Ponto importante da cultura chapadeira, com mercados tradicionais e culinária regional rica. Tem forte vocação comercial."
+  },
+  {
+    "municipio": "Sebastião Laranjeiras",
+    "estado": "BA",
+    "curiosidade": "Famosa pelos vinhos e licores artesanais, além de festas seculares que reúnem moradores e visitantes."
+  },
+  {
+    "municipio": "Senhor do Bonfim",
+    "estado": "BA",
+    "curiosidade": "Conhecida por um dos maiores carnavais fora de época do interior baiano, além de rica tradição musical e cultural."
+  },
+  {
+    "municipio": "Sento Sé",
+    "estado": "BA",
+    "curiosidade": "A antiga cidade foi inundada para criação do Lago de Sobradinho, e a atual mantém histórias sobre esse raro deslocamento urbano."
+  },
+  {
+    "municipio": "Serra do Ramalho",
+    "estado": "BA",
+    "curiosidade": "Região com forte cultura ribeirinha e tradições sertanejas. A cidade abriga grupos tradicionais de música e dança."
+  },
+  {
+    "municipio": "Serra Dourada",
+    "estado": "BA",
+    "curiosidade": "Conhecida por manifestações culturais antigas e receitas herdadas de gerações, especialmente doces e pratos caseiros."
+  },
+  {
+    "municipio": "Serra Preta",
+    "estado": "BA",
+    "curiosidade": "Cidade com vida cultural intensa, marcada por festas religiosas e apresentações folclóricas preservadas por famílias locais."
+  },
+  {
+    "municipio": "Serrinha",
+    "estado": "BA",
+    "curiosidade": "Um dos maiores polos de vaquejada do Nordeste. Possui tradição musical e cultural muito forte."
+  },
+  {
+    "municipio": "Serrolândia",
+    "estado": "BA",
+    "curiosidade": "Referência na produção de chapéus de couro e artesanatos sertanejos. A cultura local celebra música e festas tradicionais."
+  },
+  {
+    "municipio": "Simões Filho",
+    "estado": "BA",
+    "curiosidade": "Cidade industrial com forte vida cultural, incluindo bandas locais e companhias de dança reconhecidas."
+  },
+  {
+    "municipio": "Sítio do Mato",
+    "estado": "BA",
+    "curiosidade": "Cultiva tradições sertanejas e culinária típica. Pequenas comunidades mantêm práticas antigas de artesanato."
+  },
+  {
+    "municipio": "Sítio do Quinto",
+    "estado": "BA",
+    "curiosidade": "É reconhecida por grupos de música tradicional e festas comunitárias que preservam o estilo de vida rural."
+  },
+  {
+    "municipio": "Sobradinho",
+    "estado": "BA",
+    "curiosidade": "A cidade surgiu após a construção da barragem de Sobradinho. Também se destaca pela produção de vinho no vale."
+  },
+  {
+    "municipio": "Souto Soares",
+    "estado": "BA",
+    "curiosidade": "Cidade com forte tradição em música e teatro comunitário. Feiras populares movem a economia local."
+  },
+  {
+    "municipio": "Tabocas do Brejo Velho",
+    "estado": "BA",
+    "curiosidade": "Conhecida por festas religiosas históricas e por manter viva uma tradição de produção artesanal de alimentos."
+  },
+  {
+    "municipio": "Tanhaçu",
+    "estado": "BA",
+    "curiosidade": "Celebra festivais de dança e música sertaneja. A cidade também preserva práticas tradicionais de agricultura familiar."
+  },
+  {
+    "municipio": "Tanque Novo",
+    "estado": "BA",
+    "curiosidade": "Tem forte cultura religiosa e celebrações antigas. A culinária local é bastante apreciada por visitantes."
+  },
+  {
+    "municipio": "Tanquinho",
+    "estado": "BA",
+    "curiosidade": "Conhecida por festas populares e por manter vivas técnicas artesanais de culinária e produção rural."
+  },
+  {
+    "municipio": "Taperoá",
+    "estado": "BA",
+    "curiosidade": "Cidade histórica com tradição em mariscagem e culinária afro-baiana. Também preserva grupos culturais antigos."
+  },
+  {
+    "municipio": "Tapiramutá",
+    "estado": "BA",
+    "curiosidade": "Famosa por quadrilhas juninas tradicionais e por doces caseiros. Sua comunidade preserva hábitos antigos do sertão."
+  },
+  {
+    "municipio": "Teixeira de Freitas",
+    "estado": "BA",
+    "curiosidade": "Importante centro regional, com vida cultural ativa. A cidade é referência em artes plásticas e eventos musicais."
+  },
+  {
+    "municipio": "Teodoro Sampaio",
+    "estado": "BA",
+    "curiosidade": "Celebrada por blocos de carnaval interiorano e grupos musicais tradicionais. A cidade tem forte identidade cultural."
+  },
+  {
+    "municipio": "Teofilândia",
+    "estado": "BA",
+    "curiosidade": "Cidade marcada pela vaquejada e pela música sertaneja. Suas festas culturais atraem visitantes todos os anos."
+  },
+  {
+    "municipio": "Teolândia",
+    "estado": "BA",
+    "curiosidade": "Famosa pelo 'Banana Fest', um dos festivais mais irreverentes da Bahia. Também possui forte tradição agrícola."
+  },
+  {
+    "municipio": "Terra Nova",
+    "estado": "BA",
+    "curiosidade": "Cultura local destaca grupos de samba e procissões antigas. Pequenos produtores preservam técnicas de cultivo tradicionais."
+  },
+  {
+    "municipio": "Tremedal",
+    "estado": "BA",
+    "curiosidade": "A cidade é marcada pelo artesanato de couro e pelas cavalgadas. Sua culinária sertaneja é bastante reconhecida."
+  },
+  {
+    "municipio": "Tucano",
+    "estado": "BA",
+    "curiosidade": "Conhecida por suas águas termais e tradições indígenas. As feiras livres são parte importante da cultura local."
+  },
+  {
+    "municipio": "Uauá",
+    "estado": "BA",
+    "curiosidade": "Capital do bode e referência nacional em caprinocultura. Também celebra festas sertanejas com grande público."
+  },
+  {
+    "municipio": "Ubaíra",
+    "estado": "BA",
+    "curiosidade": "Lugar onde o samba de roda é muito valorizado. Pequenos produtores fabricam doces tradicionais famosos."
+  },
+  {
+    "municipio": "Ubaitaba",
+    "estado": "BA",
+    "curiosidade": "Famosa pelas competições de canoagem que revelaram atletas olímpicos. Também tem forte cultura cacaueira."
+  },
+  {
+    "municipio": "Ubatã",
+    "estado": "BA",
+    "curiosidade": "Grande produtora de cacau e berço de escritores e músicos regionais. Sua vida cultural é muito ativa."
+  },
+  {
+    "municipio": "Uibaí",
+    "estado": "BA",
+    "curiosidade": "Comunidade conhecida por festas tradicionais e pela produção de queijos e pães caseiros."
+  },
+  {
+    "municipio": "Umburanas",
+    "estado": "BA",
+    "curiosidade": "A cidade destaca-se pela produção artesanal de renda e pela música sertaneja, muito presente no cotidiano."
+  },
+  {
+    "municipio": "Una",
+    "estado": "BA",
+    "curiosidade": "Reconhecida pela reserva biológica que protege espécies raras. Também possui forte produção de cacau."
+  },
+  {
+    "municipio": "Urandi",
+    "estado": "BA",
+    "curiosidade": "Cidade com tradição em festas religiosas e culinária típica. Grupos locais preservam cantos sertanejos antigos."
+  },
+  {
+    "municipio": "Uruçuca",
+    "estado": "BA",
+    "curiosidade": "Abriga Serra Grande, destino muito procurado por surfistas e mochileiros. A cidade tem rica cultura ligada ao cacau."
+  },
+  {
+    "municipio": "Utinga",
+    "estado": "BA",
+    "curiosidade": "Conhecida por suas padarias tradicionais e pela música regional. Suas festas populares envolvem toda a cidade."
+  },
+  {
+    "municipio": "Valença",
+    "estado": "BA",
+    "curiosidade": "Centro histórico importante e tradicional polo pesqueiro. Conhecida pela ligação com Morro de São Paulo."
+  },
+  {
+    "municipio": "Valente",
+    "estado": "BA",
+    "curiosidade": "Famosa por sua forte cadeia produtiva do sisal, sendo referência nacional em cooperativas e artesanato."
+  },
+  {
+    "municipio": "Várzea da Roça",
+    "estado": "BA",
+    "curiosidade": "Cidade com intensa tradição em festas juninas e artesanato. A culinária caseira é muito valorizada."
+  },
+  {
+    "municipio": "Várzea do Poço",
+    "estado": "BA",
+    "curiosidade": "Reconhecida por festivais musicais e pela produção de queijos artesanais. Suas feiras são muito tradicionais."
+  },
+  {
+    "municipio": "Várzea Nova",
+    "estado": "BA",
+    "curiosidade": "A cidade possui grupos folclóricos antigos e mantém receitas tradicionais de doces e pães caseiros."
+  },
+  {
+    "municipio": "Varzedo",
+    "estado": "BA",
+    "curiosidade": "Local valorizado por bandas marciais e pela culinária de tradição familiar. Suas festas culturais atraem visitantes."
+  },
+  {
+    "municipio": "Vera Cruz",
+    "estado": "BA",
+    "curiosidade": "Localizada na Ilha de Itaparica, conserva tradições afro-brasileiras e festas que remontam ao século XIX."
+  },
+  {
+    "municipio": "Vereda",
+    "estado": "BA",
+    "curiosidade": "Cidade com forte cultura comunitária e produção de artesanato rural. Festas religiosas são muito importantes."
+  },
+  {
+    "municipio": "Vitória da Conquista",
+    "estado": "BA",
+    "curiosidade": "Uma das maiores cidades da Bahia, centro cultural e musical. Conhecida por grandes artistas e seu clima diferenciado."
+  },
+  {
+    "municipio": "Wagner",
+    "estado": "BA",
+    "curiosidade": "Cidade conhecida por retiros espirituais e tradições religiosas antigas. Artesanato local é muito apreciado."
+  },
+  {
+    "municipio": "Wanderley",
+    "estado": "BA",
+    "curiosidade": "Possui cultura sertaneja forte e festas comunitárias marcantes. Pequenos agricultores mantêm técnicas tradicionais."
+  },
+  {
+    "municipio": "Wenceslau Guimarães",
+    "estado": "BA",
+    "curiosidade": "Referência na produção de cacau e frutas tropicais. Sua culinária caseira é muito valorizada pelos visitantes."
+  },
+  {
+    "municipio": "Xique-Xique",
+    "estado": "BA",
+    "curiosidade": "Cidade banhada por histórias centenárias e cultura ribeirinha forte. Conhecida pelos mercados tradicionais e artesanato único, famosa na internet lá em Xique-Xique Bahia"
+  }
+]
+
+]
+
+]
+
+]
+
+]
+
+]

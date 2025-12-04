@@ -1,0 +1,837 @@
+[
+  {
+    "municipio": "Acari",
+    "estado": "RN",
+    "curiosidade": "Conhecida pela organização exemplar e pela beleza do Açude Gargalheiras, um dos cartões-postais do Seridó. É referência em turismo ecológico e preservação do patrimônio histórico."
+  },
+  {
+    "municipio": "Açu",
+    "estado": "RN",
+    "curiosidade": "Um dos maiores municípios do RN, abriga o Vale do Açu e importantes polos agrícolas. É sede de eventos culturais tradicionais como a Festa de São João Batista."
+  },
+  {
+    "municipio": "Afonso Bezerra",
+    "estado": "RN",
+    "curiosidade": "Destaque na produção de mel e por abrigar grandes parques eólicos. É um município essencial no desenvolvimento de energia sustentável no estado."
+  },
+  {
+    "municipio": "Água Nova",
+    "estado": "RN",
+    "curiosidade": "Um dos menores municípios do estado, conhecido pela tranquilidade e vida comunitária forte. Suas paisagens representam bem o sertão potiguar."
+  },
+  {
+    "municipio": "Alexandria",
+    "estado": "RN",
+    "curiosidade": "Lar da famosa Pedra do Letreiro e da Serra Barriguda, formações naturais marcantes. Possui forte tradição cultural e paisagens de grande valor geológico."
+  },
+  {
+    "municipio": "Almino Afonso",
+    "estado": "RN",
+    "curiosidade": "Cidade marcada pela história política e pelo tradicional cultivo agrícola. É um importante ponto de ligação regional no Alto Oeste."
+  },
+  {
+    "municipio": "Alto do Rodrigues",
+    "estado": "RN",
+    "curiosidade": "Um dos maiores produtores de petróleo do RN, abriga instalações da Petrobras e projetos de energia eólica. Também possui forte atividade pesqueira no Vale do Açu."
+  },
+  {
+    "municipio": "Angicos",
+    "estado": "RN",
+    "curiosidade": "Foi palco da célebre experiência de Paulo Freire, que alfabetizou 300 trabalhadores em 40 horas. A cidade é historicamente importante para a educação brasileira."
+  },
+  {
+    "municipio": "Antônio Martins",
+    "estado": "RN",
+    "curiosidade": "Município serrano com clima agradável e vistas panorâmicas. Abriga manifestações culturais tradicionais e festas religiosas influentes na região."
+  },
+  {
+    "municipio": "Apodi",
+    "estado": "RN",
+    "curiosidade": "Conhecida pela Lagoa do Apodi e por sítios arqueológicos de grande importância. É um dos polos do agronegócio na região Oeste, com forte produção irrigada."
+  },
+  {
+    "municipio": "Areia Branca",
+    "estado": "RN",
+    "curiosidade": "Importante polo salineiro do Brasil e sede do Porto-Ilha, estrutura única de embarque de sal. Possui lindas praias como Ponta do Mel e Upanema."
+  },
+  {
+    "municipio": "Arês",
+    "estado": "RN",
+    "curiosidade": "Cidade histórica que preserva tradições religiosas fortes. No passado, abrigou aldeamentos indígenas e engenhos de açúcar que marcaram sua formação."
+  },
+  {
+    "municipio": "Augusto Severo (Campo Grande)",
+    "estado": "RN",
+    "curiosidade": "Nome atual: Campo Grande. Município tranquilo, marcado pela cultura sertaneja e por festividades tradicionais ligadas ao catolicismo."
+  },
+  {
+    "municipio": "Baía Formosa",
+    "estado": "RN",
+    "curiosidade": "Cidade natal do campeão mundial de surf Ítalo Ferreira. É destino turístico famoso por suas praias, falésias e natureza preservada."
+  },
+  {
+    "municipio": "Baraúna",
+    "estado": "RN",
+    "curiosidade": "Município de fronteira com forte produção agrícola e frutícola. Cresceu ao redor da antiga estação ferroviária e tornou-se um ponto comercial estratégico."
+  },
+  {
+    "municipio": "Barcelona",
+    "estado": "RN",
+    "curiosidade": "Recebeu esse nome por influência das linhas férreas e pela admiração dos moradores por cidades europeias. Mantém tradições culturais interioranas fortes."
+  },
+  {
+    "municipio": "Bento Fernandes",
+    "estado": "RN",
+    "curiosidade": "Cidade de economia baseada na agricultura familiar e pecuária. Possui vida comunitária simples e celebrações tradicionais do interior potiguar."
+  },
+  {
+    "municipio": "Bodó",
+    "estado": "RN",
+    "curiosidade": "Localizado na Serra de Santana, é conhecido pelo clima frio e pela mineração de scheelita. Também destaca-se pelos mirantes naturais e turismo ecológico."
+  },
+  {
+    "municipio": "Bom Jesus",
+    "estado": "RN",
+    "curiosidade": "Município próximo a Natal com forte religiosidade e festas tradicionais. A cidade combina características rurais com crescimento urbano recente."
+  },
+  {
+    "municipio": "Brejinho",
+    "estado": "RN",
+    "curiosidade": "Reconhecida pela produção agrícola e pelo cultivo de abacaxi. Suas raízes culturais são preservadas em festas e eventos tradicionais."
+  },
+  {
+    "municipio": "Caiçara do Norte",
+    "estado": "RN",
+    "curiosidade": "Vila pesqueira que mantém forte tradição marítima. É um dos principais pontos de apoio à pesca artesanal no litoral potiguar."
+  },
+  {
+    "municipio": "Caiçara do Rio do Vento",
+    "estado": "RN",
+    "curiosidade": "Abriga grandes complexos eólicos e é considerada símbolo da transição energética do RN. A economia local combina agricultura e energia renovável."
+  },
+  {
+    "municipio": "Caicó",
+    "estado": "RN",
+    "curiosidade": "Capital do Seridó, famosa pela Festa de Sant’Ana, patrimônio cultural do Brasil. Reconhecida também pela culinária única, como o carneiro e o queijo de manteiga."
+  },
+  {
+    "municipio": "Campo Redondo",
+    "estado": "RN",
+    "curiosidade": "Cresceu a partir de antigas fazendas de gado e mantém tradições sertanejas. É palco de festivais culturais e religiosos regionais."
+  },
+  {
+    "municipio": "Canguaretama",
+    "estado": "RN",
+    "curiosidade": "Importante polo histórico do RN; sua região costeira possui belas praias e marcos da colonização. Tem economia baseada na agricultura e pesca."
+  },
+  {
+    "municipio": "Caraúbas",
+    "estado": "RN",
+    "curiosidade": "Conhecida por seus eventos estudantis e pela forte atividade agropecuária. Possui sítios arqueológicos e formações geológicas marcantes."
+  },
+  {
+    "municipio": "Carnaúba dos Dantas",
+    "estado": "RN",
+    "curiosidade": "Abriga o Monte do Galo, destino de peregrinação com intensa tradição religiosa. O município também destaca-se por seu artesanato e música regional."
+  },
+  {
+    "municipio": "Carnaubais",
+    "estado": "RN",
+    "curiosidade": "Região marcada pelas carnaubeiras e pela economia ligada ao Vale do Açu. O nome remete à grande presença da palmeira da carnaúba."
+  },
+  {
+    "municipio": "Ceará-Mirim",
+    "estado": "RN",
+    "curiosidade": "Conhecida como 'Terra dos Engenhos', preserva casarões e memórias do ciclo da cana-de-açúcar. Integra a região metropolitana de Natal."
+  },
+  {
+    "municipio": "Cerro Corá",
+    "estado": "RN",
+    "curiosidade": "Município serrano famoso pela Batalha da Serra da Rajada, episódio da Coluna Prestes. Possui clima agradável e áreas de ecoturismo."
+  },
+  {
+    "municipio": "Coronel Ezequiel",
+    "estado": "RN",
+    "curiosidade": "Cidade pequena e acolhedora do Agreste. Suas festividades religiosas e a paisagem serrana fazem parte da identidade local."
+  },
+  {
+    "municipio": "Coronel João Pessoa",
+    "estado": "RN",
+    "curiosidade": "Localizado no Alto Oeste, possui áreas de mata preservada e mirantes naturais. É um reduto de tradições sertanejas e agricultura familiar."
+  },
+  {
+    "municipio": "Cruzeta",
+    "estado": "RN",
+    "curiosidade": "Reconhecida pela Filarmônica 24 de Outubro e pela irrigação agrícola no Seridó. Combina identidade cultural forte com produção agropecuária."
+  },
+  {
+    "municipio": "Currais Novos",
+    "estado": "RN",
+    "curiosidade": "Cidade marcada pela mineração de scheelita e pelo famoso Pico do Totoró. É polo comercial e cultural do Seridó, com festivais e eventos tradicionais."
+  },
+    {
+    "municipio": "Doutor Severiano",
+    "estado": "RN",
+    "curiosidade": "Cidade serrana localizada no Alto Oeste, com mirantes naturais e clima agradável. Destaca-se pela preservação de tradições sertanejas e festas religiosas."
+  },
+  {
+    "municipio": "Encanto",
+    "estado": "RN",
+    "curiosidade": "Famosa pelo Santuário de São João Batista, que atrai milhares de romeiros anualmente. Possui belas paisagens serranas e forte identidade religiosa."
+  },
+  {
+    "municipio": "Equador",
+    "estado": "RN",
+    "curiosidade": "Município mais ao sul do RN, fazendo divisa com a Paraíba. É conhecido por suas serras e pela tradição na agricultura e mineração artesanal."
+  },
+  {
+    "municipio": "Espírito Santo",
+    "estado": "RN",
+    "curiosidade": "Localizado no litoral sul, possui forte tradição católica e festas culturais marcantes. A economia se baseia em agricultura e pesca artesanal."
+  },
+  {
+    "municipio": "Extremoz",
+    "estado": "RN",
+    "curiosidade": "Abriga a histórica Lagoa de Extremoz, que abastece grande parte de Natal. É polo turístico com dunas, lagoas e parques eólicos modernos."
+  },
+  {
+    "municipio": "Felipe Guerra",
+    "estado": "RN",
+    "curiosidade": "Possui um dos maiores conjuntos de cavernas do Nordeste, com formações geológicas raras. É destino crescente para ecoturismo e estudos paleontológicos."
+  },
+  {
+    "municipio": "Fernando Pedroza",
+    "estado": "RN",
+    "curiosidade": "Município jovem, conhecido pelo clima seco e pela forte presença de parques eólicos. A vida comunitária é marcada por festas e eventos rurais."
+  },
+  {
+    "municipio": "Florânia",
+    "estado": "RN",
+    "curiosidade": "Localizada na Serra de Santana, tem clima agradável e paisagens de altitude. Abriga o Santuário de Nossa Senhora das Graças, importante ponto de fé regional."
+  },
+  {
+    "municipio": "Francisco Dantas",
+    "estado": "RN",
+    "curiosidade": "Um dos menores municípios do RN, mantém forte identidade rural. Destaca-se pela tranquilidade e preservação de tradições sertanejas."
+  },
+  {
+    "municipio": "Frutuoso Gomes",
+    "estado": "RN",
+    "curiosidade": "Situada em região de serra, apresenta clima mais ameno e belas paisagens naturais. A economia combina agricultura, artesanato e pequenas criações rurais."
+  },
+    {
+    "municipio": "Galinhos",
+    "estado": "RN",
+    "curiosidade": "Destino turístico isolado, acessível principalmente por barco ou 4x4. Famosa por suas dunas, farol e piscinas naturais, com paisagens intocadas."
+  },
+  {
+    "municipio": "Goianinha",
+    "estado": "RN",
+    "curiosidade": "Importante centro econômico do Agreste e porta de entrada para a Praia da Pipa. Tem forte produção de cana-de-açúcar e tradição cultural."
+  },
+  {
+    "municipio": "Governador Dix-Sept Rosado",
+    "estado": "RN",
+    "curiosidade": "Conhecida pela forte produção ceramista e agrícola. Sua economia também é impulsionada pela fruticultura irrigada e pela proximidade com Mossoró."
+  },
+  {
+    "municipio": "Grossos",
+    "estado": "RN",
+    "curiosidade": "Integrante do polo salineiro do Estado, é conhecida como 'Terra do Sal'. Suas praias e dunas atraem visitantes do RN e do Ceará."
+  },
+  {
+    "municipio": "Guamaré",
+    "estado": "RN",
+    "curiosidade": "Um dos maiores polos de petróleo e gás do Nordeste. A cidade combina riqueza energética com belezas naturais, como mangues e praias preservadas."
+  },
+  {
+    "municipio": "Ielmo Marinho",
+    "estado": "RN",
+    "curiosidade": "Reconhecida pela forte produção de abacaxi e agricultura familiar. Mantém tradições rurais e festas religiosas bem preservadas."
+  },
+  {
+    "municipio": "Ipanguaçu",
+    "estado": "RN",
+    "curiosidade": "Localizado no Vale do Açu, destaca-se pela agricultura irrigada. Possui rios e lagoas que favorecem a produção de frutas tropicais."
+  },
+  {
+    "municipio": "Ipueira",
+    "estado": "RN",
+    "curiosidade": "Município pequeno do Seridó, conhecido pela tranquilidade e preservação das tradições sertanejas. A cultura local é marcada por festas religiosas."
+  },
+  {
+    "municipio": "Itajá",
+    "estado": "RN",
+    "curiosidade": "Importante produtor de frutas irrigadas no Vale do Açu. Suas paisagens incluem lagoas, áreas de cultivo e natureza típica do semiárido potiguar."
+  },
+  {
+    "municipio": "Itaú",
+    "estado": "RN",
+    "curiosidade": "Cidade do Alto Oeste com forte identidade sertaneja. É ponto de ligação entre municípios da região, mantendo economia baseada em agricultura e comércio local."
+  },
+  {
+    "municipio": "Jaçanã",
+    "estado": "RN",
+    "curiosidade": "Município serrano famoso pelo clima mais frio e pela produção de frutas como o morango. Também é conhecido pela cultura agrícola familiar."
+  },
+  {
+    "municipio": "Jandaíra",
+    "estado": "RN",
+    "curiosidade": "Destaque nacional na produção de mel de abelha jandaíra, espécie nativa e sem ferrão. Também abriga parques eólicos e belezas naturais rurais."
+  },
+  {
+    "municipio": "Janduís",
+    "estado": "RN",
+    "curiosidade": "Reconhecida por seus grupos culturais e pela força do movimento comunitário. Tem tradição no teatro e em atividades sociais de impacto regional."
+  },
+  {
+    "municipio": "Januário Cicco (Boa Saúde)",
+    "estado": "RN",
+    "curiosidade": "Renomeada para Boa Saúde, possui economia agrícola e raízes históricas ligadas aos antigos engenhos. A fé e as festas religiosas mobilizam a região."
+  },
+  {
+    "municipio": "Japi",
+    "estado": "RN",
+    "curiosidade": "Município serrano com belas paisagens naturais. É procurado para trilhas, mirantes e festividades que preservam a cultura do Agreste."
+  },
+  {
+    "municipio": "Jardim de Angicos",
+    "estado": "RN",
+    "curiosidade": "Cidade com economia baseada na pecuária e agricultura. Sua localização estratégica favorece conexões com municípios do Agreste e Central."
+  },
+  {
+    "municipio": "Jardim de Piranhas",
+    "estado": "RN",
+    "curiosidade": "Famosa pela confecção de redes e rendas artesanais. Localizada às margens do Rio Piranhas-Açu, tem cultura profundamente ligada ao sertão."
+  },
+  {
+    "municipio": "Jardim do Seridó",
+    "estado": "RN",
+    "curiosidade": "Município histórico com tradições religiosas fortes e arquitetura preservada. É conhecido pelas festas culturais e pela música regional."
+  },
+  {
+    "municipio": "João Câmara",
+    "estado": "RN",
+    "curiosidade": "Maior cidade do Mato Grande, conhecida pela atividade sísmica registrada nas décadas de 1980. Hoje é importante polo agrícola e comercial da região."
+  },
+  {
+    "municipio": "João Dias",
+    "estado": "RN",
+    "curiosidade": "Cidade pequena do Alto Oeste, marcada por serras e vida rural. A cultura sertaneja é preservada através de festas e tradições locais."
+  },
+  {
+    "municipio": "José da Penha",
+    "estado": "RN",
+    "curiosidade": "Mantém forte tradição rural e festas culturais expressivas. É um dos municípios mais acolhedores do Alto Oeste potiguar."
+  },
+  {
+    "municipio": "Jucurutu",
+    "estado": "RN",
+    "curiosidade": "Importante município do Seridó, conhecido pela Barragem de Oiticica, uma das maiores obras hídricas do estado. Possui forte identidade sertaneja."
+  },
+  {
+    "municipio": "Jundiá",
+    "estado": "RN",
+    "curiosidade": "Município do Agreste com economia baseada na agricultura e pecuária. Suas tradições culturais incluem festas religiosas de grande participação."
+  },
+    {
+    "municipio": "Lagoa d'Anta",
+    "estado": "RN",
+    "curiosidade": "Município do Agreste com forte tradição agrícola e festas religiosas marcantes. Destaca-se pelo cultivo de milho e feijão."
+  },
+  {
+    "municipio": "Lagoa de Pedras",
+    "estado": "RN",
+    "curiosidade": "Conhecida pela agricultura familiar e artesanato local. Mantém cultura interiorana viva em festas e tradições religiosas."
+  },
+  {
+    "municipio": "Lagoa de Velhos",
+    "estado": "RN",
+    "curiosidade": "Cidade pequena do Agreste que preserva fortemente a identidade rural. Festas religiosas movimentam a comunidade."
+  },
+  {
+    "municipio": "Lagoa Nova",
+    "estado": "RN",
+    "curiosidade": "Localizada na Serra de Santana, é um dos municípios mais frios do RN. A região é forte no turismo ecológico e na agricultura."
+  },
+  {
+    "municipio": "Lagoa Salgada",
+    "estado": "RN",
+    "curiosidade": "Município tranquilo com economia baseada na fruticultura. Possui áreas de vegetação preservada e clima leve do Agreste."
+  },
+  {
+    "municipio": "Lajes",
+    "estado": "RN",
+    "curiosidade": "Considerada o centro geográfico do estado. Tem forte produção de energia eólica e importância histórica na ferrovia."
+  },
+  {
+    "municipio": "Lajes Pintadas",
+    "estado": "RN",
+    "curiosidade": "Cidade do Agreste que preserva tradições culturais populares. A agricultura familiar é base econômica do município."
+  },
+  {
+    "municipio": "Lucrécia",
+    "estado": "RN",
+    "curiosidade": "Localizada no Alto Oeste, apresenta clima ameno e vida pacata. A cidade é conhecida pela hospitalidade dos moradores."
+  },
+  {
+    "municipio": "Luís Gomes",
+    "estado": "RN",
+    "curiosidade": "Uma das cidades mais altas do estado, com clima frio e serras exuberantes. É polo cultural e histórico do Alto Oeste."
+  },
+  {
+    "municipio": "Macaíba",
+    "estado": "RN",
+    "curiosidade": "Importante município histórico, terra do aeronauta Augusto Severo. É parte da região metropolitana e forte polo educacional."
+  },
+  {
+    "municipio": "Macau",
+    "estado": "RN",
+    "curiosidade": "Um dos maiores produtores de sal do Brasil. Combina indústria salineira, petróleo e belezas naturais como mangues e praias."
+  },
+  {
+    "municipio": "Major Sales",
+    "estado": "RN",
+    "curiosidade": "Reconhecida nacionalmente pelos grupos de cultura popular, como caboclinhos e danças folclóricas. Cidade muito ativa culturalmente."
+  },
+  {
+    "municipio": "Marcelino Vieira",
+    "estado": "RN",
+    "curiosidade": "Município do Alto Oeste conhecido por eventos culturais e religiosos. Possui forte identidade rural e comunitária."
+  },
+  {
+    "municipio": "Martins",
+    "estado": "RN",
+    "curiosidade": "Cidade serrana turística, famosa pelos mirantes e clima frio. Suas cavernas e trilhas atraem visitantes de todo o Nordeste."
+  },
+  {
+    "municipio": "Maxaranguape",
+    "estado": "RN",
+    "curiosidade": "Abriga o Cabo de São Roque, ponto mais próximo da África no Brasil. É rota turística com praias e falésias impressionantes."
+  },
+  {
+    "municipio": "Messias Targino",
+    "estado": "RN",
+    "curiosidade": "Conhecida pela tradição de luta social e pelo artesanato. Economia baseada em agricultura e pequenas indústrias."
+  },
+  {
+    "municipio": "Montanhas",
+    "estado": "RN",
+    "curiosidade": "Nomeada pela geografia ondulada. Tem forte produção agrícola e preserva tradições culturais do Agreste."
+  },
+  {
+    "municipio": "Monte Alegre",
+    "estado": "RN",
+    "curiosidade": "Município da Grande Natal com intensa atividade agrícola. Tornou-se polo turístico de trilhas e serras."
+  },
+  {
+    "municipio": "Monte das Gameleiras",
+    "estado": "RN",
+    "curiosidade": "Cidade serrana com clima ameno e potencial turístico. É destino para quem busca ecoturismo e tranquilidade."
+  },
+  {
+    "municipio": "Mossoró",
+    "estado": "RN",
+    "curiosidade": "Segunda maior cidade do RN, pioneira ao libertar escravos antes da Lei Áurea. Grande produtora de petróleo, sal e cultura regional."
+  },
+  {
+    "municipio": "Natal",
+    "estado": "RN",
+    "curiosidade": "Capital conhecida como 'Cidade do Sol', com forte turismo internacional. Destaca-se por praias famosas, dunas e o maior cajueiro do mundo."
+  },
+  {
+    "municipio": "Nísia Floresta",
+    "estado": "RN",
+    "curiosidade": "Homenagem à escritora Nísia Floresta, pioneira do feminismo brasileiro. Destino turístico com lagoas e áreas ecológicas."
+  },
+  {
+    "municipio": "Nova Cruz",
+    "estado": "RN",
+    "curiosidade": "Importante centro urbano do Agreste, polo comercial e educacional. Possui rica tradição religiosa e histórica."
+  },
+  {
+    "municipio": "Olho-d'Água do Borges",
+    "estado": "RN",
+    "curiosidade": "Município pequeno do Alto Oeste, preserva tradições sertanejas. Economia baseada em agricultura e comércio local."
+  },
+  {
+    "municipio": "Ouro Branco",
+    "estado": "RN",
+    "curiosidade": "Destaca-se pela produção de algodão no passado e pelas tradições religiosas. Localizado no Seridó, com forte identidade cultural."
+  },
+  {
+    "municipio": "Paraná",
+    "estado": "RN",
+    "curiosidade": "Cidade do Alto Oeste que preserva costumes sertanejos. Economia voltada à pecuária e agricultura familiar."
+  },
+  {
+    "municipio": "Paraú",
+    "estado": "RN",
+    "curiosidade": "Município acolhedor do Vale do Açu, com economia agrícola e tradição cultural. A região possui paisagens de rios e açudes."
+  },
+  {
+    "municipio": "Parazinho",
+    "estado": "RN",
+    "curiosidade": "Um dos maiores polos eólicos do estado. É símbolo da energia renovável no RN, com dezenas de turbinas espalhadas por suas serras."
+  },
+  {
+    "municipio": "Parelhas",
+    "estado": "RN",
+    "curiosidade": "Conhecida como Capital da Telha e forte produtora de cerâmica. Cidade do Seridó com grande tradição cultural e eventos regionais."
+  },
+  {
+    "municipio": "Parnamirim",
+    "estado": "RN",
+    "curiosidade": "Sede da Base Aérea que atuou na Segunda Guerra. Conhecida como 'Trampolim da Vitória' e parte essencial da Grande Natal."
+  },
+  {
+    "municipio": "Passa e Fica",
+    "estado": "RN",
+    "curiosidade": "Destino famoso pela Pedra da Boca, área de escalada e ecoturismo. Cidade serrana com clima ameno e potencial turístico crescente."
+  },
+  {
+    "municipio": "Passagem",
+    "estado": "RN",
+    "curiosidade": "Um dos menores municípios do RN, preserva tradições rurais e religiosas. A economia gira em torno da agricultura familiar."
+  },
+  {
+    "municipio": "Patu",
+    "estado": "RN",
+    "curiosidade": "Abriga o Santuário do Lima e a famosa Rampa de Voo Livre. Um dos principais pontos de esportes radicais do Nordeste."
+  },
+  {
+    "municipio": "Pau dos Ferros",
+    "estado": "RN",
+    "curiosidade": "Principal cidade do Alto Oeste, polo universitário e comercial. Sediou batalhas históricas e hoje é referência regional."
+  },
+  {
+    "municipio": "Pedra Grande",
+    "estado": "RN",
+    "curiosidade": "Possui formações rochosas marcantes e é rota turística litorânea. Sua economia combina pesca com agricultura."
+  },
+  {
+    "municipio": "Pedra Preta",
+    "estado": "RN",
+    "curiosidade": "Região conhecida por registrar atividade sísmica. Cidade rural com forte presença agrícola."
+  },
+  {
+    "municipio": "Pedro Avelino",
+    "estado": "RN",
+    "curiosidade": "Um dos maiores polos de energia eólica do estado. Economia baseada na pecuária e agricultura."
+  },
+  {
+    "municipio": "Pedro Velho",
+    "estado": "RN",
+    "curiosidade": "Terra natal da poetisa Zila Mamede. Região marcada pela cana-de-açúcar e pela cultura histórica."
+  },
+  {
+    "municipio": "Pendências",
+    "estado": "RN",
+    "curiosidade": "Forte produtora de frutas irrigadas e melão. Situa-se no Vale do Açu e tem economia agrícola crescente."
+  },
+  {
+    "municipio": "Pilões",
+    "estado": "RN",
+    "curiosidade": "Município pequeno do Alto Oeste. Mantém tradições religiosas e forte identidade rural."
+  },
+  {
+    "municipio": "Poço Branco",
+    "estado": "RN",
+    "curiosidade": "Cidade planejada após a antiga localidade ser inundada por um açude. Hoje é polo agrícola e pesqueiro."
+  },
+  {
+    "municipio": "Portalegre",
+    "estado": "RN",
+    "curiosidade": "Cidade serrana famosa pelo clima frio, mirantes e cachoeiras. Muito procurada para turismo ecológico."
+  },
+  {
+    "municipio": "Porto do Mangue",
+    "estado": "RN",
+    "curiosidade": "Famosa pelas dunas e falésias coloridas. A economia envolve pesca e extração de sal."
+  },
+  {
+    "municipio": "Presidente Juscelino",
+    "estado": "RN",
+    "curiosidade": "Município pacato do Agreste, com economia baseada na agricultura familiar. Festas religiosas são destaque local."
+  },
+  {
+    "municipio": "Pureza",
+    "estado": "RN",
+    "curiosidade": "Conhecida por suas fontes naturais de água. Possui turismo voltado à natureza e balneários locais."
+  },
+  {
+    "municipio": "Rafael Fernandes",
+    "estado": "RN",
+    "curiosidade": "Cidade pequena do Alto Oeste, com forte cultura sertaneja. Economia baseada em agricultura e comércio local."
+  },
+  {
+    "municipio": "Rafael Godeiro",
+    "estado": "RN",
+    "curiosidade": "Município rural com tradições fortes e economia voltada à pecuária. Comunidade unida e festeira."
+  },
+  {
+    "municipio": "Riacho da Cruz",
+    "estado": "RN",
+    "curiosidade": "Reconhecida pela organização e qualidade de vida. Suas festas e decoração natalina atraem visitantes."
+  },
+  {
+    "municipio": "Riacho de Santana",
+    "estado": "RN",
+    "curiosidade": "Cidade do Alto Oeste com fortes tradições religiosas. Mantém cultura sertaneja viva no cotidiano."
+  },
+  {
+    "municipio": "Riachuelo",
+    "estado": "RN",
+    "curiosidade": "Município do Agreste que preserva tradição rural. Economia baseada em agricultura e pecuária."
+  },
+  {
+    "municipio": "Rio do Fogo",
+    "estado": "RN",
+    "curiosidade": "Turística, com praias de águas claras e recifes. Pesca e turismo movimentam a economia local."
+  },
+  {
+    "municipio": "Rodolfo Fernandes",
+    "estado": "RN",
+    "curiosidade": "Cidade pacata do Alto Oeste, com economia rural. Tradições religiosas são o centro da vida comunitária."
+  },
+  {
+    "municipio": "Ruy Barbosa",
+    "estado": "RN",
+    "curiosidade": "Homenagem ao jurista Ruy Barbosa. Região agrícola com forte presença de agricultura familiar."
+  },
+  {
+    "municipio": "Santa Cruz",
+    "estado": "RN",
+    "curiosidade": "Abriga a maior estátua de Santa Rita de Cássia no mundo. É destino religioso e turístico crescente."
+  },
+  {
+    "municipio": "Santa Maria",
+    "estado": "RN",
+    "curiosidade": "Município pequeno do Agreste, com economia agrícola. A comunidade é fortemente ligada às tradições religiosas."
+  },
+  {
+    "municipio": "Santana do Matos",
+    "estado": "RN",
+    "curiosidade": "Cidade histórica do sertão central, conhecida por suas serras. Economia ligada à pecuária e agricultura."
+  },
+  {
+    "municipio": "Santana do Seridó",
+    "estado": "RN",
+    "curiosidade": "Município pequeno e culturalmente rico. Festas religiosas e música regional são marcas fortes."
+  },
+  {
+    "municipio": "Santo Antônio",
+    "estado": "RN",
+    "curiosidade": "Conhecida como 'Terra da Onça'. Importante cidade do Agreste, com forte comércio e tradições."
+  },
+  {
+    "municipio": "São Bento do Norte",
+    "estado": "RN",
+    "curiosidade": "Município litorâneo com forte pesca. Dunas e mar calmo atraem visitantes."
+  },
+  {
+    "municipio": "São Bento do Trairi",
+    "estado": "RN",
+    "curiosidade": "Região serrana com formações rochosas. Economia rural e tradições culturais fortes."
+  },
+  {
+    "municipio": "São Fernando",
+    "estado": "RN",
+    "curiosidade": "Município do Seridó com forte identidade religiosa. A comunidade é marcada pela agricultura irrigada."
+  },
+  {
+    "municipio": "São Francisco do Oeste",
+    "estado": "RN",
+    "curiosidade": "Cidade pequena e acolhedora do Alto Oeste. Economia simples e baseada em agricultura familiar."
+  },
+  {
+    "municipio": "São Gonçalo do Amarante",
+    "estado": "RN",
+    "curiosidade": "Sede do Aeroporto Internacional de Natal. Cidade histórica ligada ao ciclo da cana e às tradições indígenas."
+  },
+  {
+    "municipio": "São João do Sabugi",
+    "estado": "RN",
+    "curiosidade": "Cidade do Seridó conhecida pelas vaquejadas e tradições rurais. Forte cultura sertaneja."
+  },
+  {
+    "municipio": "São José de Mipibu",
+    "estado": "RN",
+    "curiosidade": "Município histórico com casarões coloniais. Destaca-se pela fruticultura e tradições religiosas."
+  },
+  {
+    "municipio": "São José do Campestre",
+    "estado": "RN",
+    "curiosidade": "Cidade serrana do Agreste, com clima agradável e vida rural preservada."
+  },
+  {
+    "municipio": "São José do Seridó",
+    "estado": "RN",
+    "curiosidade": "Famosa pelo artesanato e pela qualidade de vida. Região de forte identidade cultural."
+  },
+  {
+    "municipio": "São Miguel",
+    "estado": "RN",
+    "curiosidade": "Cidade serrana com clima frio e belezas naturais. Conhecida como 'A Princesa Serrana'."
+  },
+  {
+    "municipio": "São Miguel do Gostoso",
+    "estado": "RN",
+    "curiosidade": "Destino turístico internacional famoso por kitesurf. Praia tranquila com vibe rústica e charmosa."
+  },
+  {
+    "municipio": "São Paulo do Potengi",
+    "estado": "RN",
+    "curiosidade": "Principal cidade do Potengi, polo comercial e educacional. Sedia grandes eventos religiosos e culturais."
+  },
+  {
+    "municipio": "São Pedro",
+    "estado": "RN",
+    "curiosidade": "Município do Agreste com economia agrícola. Mantém forte tradição comunitária e festas populares."
+  },
+  {
+    "municipio": "São Rafael",
+    "estado": "RN",
+    "curiosidade": "A antiga cidade foi inundada pela Barragem Armando Ribeiro. A atual é planejada e tem forte atividade pesqueira."
+  },
+  {
+    "municipio": "São Tomé",
+    "estado": "RN",
+    "curiosidade": "Próxima à famosa Pedra da Boca, destino de esportes radicais. Região montanhosa e tradicional."
+  },
+  {
+    "municipio": "São Vicente",
+    "estado": "RN",
+    "curiosidade": "Cidade serrana com paisagens naturais. Forte identidade rural e cultural."
+  },
+  {
+    "municipio": "Senador Elói de Souza",
+    "estado": "RN",
+    "curiosidade": "Município do Agreste com tradições religiosas marcantes. A economia gira em torno da agricultura familiar."
+  },
+  {
+    "municipio": "Senador Georgino Avelino",
+    "estado": "RN",
+    "curiosidade": "Município litorâneo calmo, com turismo ligado à natureza. Pesca artesanal é atividade importante."
+  },
+  {
+    "municipio": "Serra de São Bento",
+    "estado": "RN",
+    "curiosidade": "Um dos destinos serranos mais bonitos do estado. Clima frio e natureza exuberante atraem turistas."
+  },
+  {
+    "municipio": "Serra do Mel",
+    "estado": "RN",
+    "curiosidade": "Dividida em 23 vilas nomeadas com estados brasileiros. Produtora de castanha, mel e caju."
+  },
+  {
+    "municipio": "Serra Negra do Norte",
+    "estado": "RN",
+    "curiosidade": "Cidade do Seridó com forte tradição vaqueira. A proximidade com o rio traz paisagens marcantes."
+  },
+  {
+    "municipio": "Serrinha",
+    "estado": "RN",
+    "curiosidade": "Município do Agreste com tradições culturais vivas. Economia voltada à agricultura."
+  },
+  {
+    "municipio": "Serrinha dos Pintos",
+    "estado": "RN",
+    "curiosidade": "Cidade serrana do Alto Oeste, com clima ameno e paisagens naturais. Forte identidade rural."
+  },
+  {
+    "municipio": "Severiano Melo",
+    "estado": "RN",
+    "curiosidade": "Produtora de caju e castanha. Região rural marcada pela agricultura familiar."
+  },
+  {
+    "municipio": "Sítio Novo",
+    "estado": "RN",
+    "curiosidade": "Famosa pela Pedra da Boca e atividades de aventura. Forte apelo turístico natural."
+  },
+  {
+    "municipio": "Taboleiro Grande",
+    "estado": "RN",
+    "curiosidade": "Cidade pequena e pacata do Alto Oeste. Economia simples e vida comunitária unida."
+  },
+  {
+    "municipio": "Taipu",
+    "estado": "RN",
+    "curiosidade": "Produtora de abacaxi e agricultura diversificada. Município tradicional do Agreste."
+  },
+  {
+    "municipio": "Tangará",
+    "estado": "RN",
+    "curiosidade": "Famosa pela Festa do Padroeiro e pelo biscoito tradicional. Cidade histórica do Agreste."
+  },
+  {
+    "municipio": "Tenente Ananias",
+    "estado": "RN",
+    "curiosidade": "Município sertanejo com forte identidade cultural. A pecuária é base econômica."
+  },
+  {
+    "municipio": "Tenente Laurentino Cruz",
+    "estado": "RN",
+    "curiosidade": "Cidade serrana mais alta do estado, com clima frio. Paisagens naturais atraem visitantes."
+  },
+  {
+    "municipio": "Tibau",
+    "estado": "RN",
+    "curiosidade": "Praia visitada por mossoroenses, famosa por falésias e mar calmo. Pesca e turismo movimentam a região."
+  },
+  {
+    "municipio": "Tibau do Sul",
+    "estado": "RN",
+    "curiosidade": "Sede da famosa Praia da Pipa, destino internacional. Rica em natureza, falésias e golfinhos."
+  },
+  {
+    "municipio": "Timbaúba dos Batistas",
+    "estado": "RN",
+    "curiosidade": "Reconhecida pela fabricação artesanal de redes. Cidade marcada por cultura e tradição."
+  },
+  {
+    "municipio": "Touros",
+    "estado": "RN",
+    "curiosidade": "Marco Zero da BR-101. Destino turístico com praias extensas e rica história."
+  },
+  {
+    "municipio": "Triunfo Potiguar",
+    "estado": "RN",
+    "curiosidade": "Município jovem do Oeste, com economia rural. Comunidade pacata e acolhedora."
+  },
+  {
+    "municipio": "Umarizal",
+    "estado": "RN",
+    "curiosidade": "Cidade importante do Médio Oeste, com forte atividade comercial. Cultura sertaneja presente no cotidiano."
+  },
+  {
+    "municipio": "Upanema",
+    "estado": "RN",
+    "curiosidade": "Conhecida pela produção de leite e queijo. Região de agricultura e paisagens sertanejas."
+  },
+  {
+    "municipio": "Várzea",
+    "estado": "RN",
+    "curiosidade": "Município cercado por agricultura e fruticultura. A comunidade preserva tradições religiosas."
+  },
+  {
+    "municipio": "Venha-Ver",
+    "estado": "RN",
+    "curiosidade": "Ponto mais ocidental do RN, com mirantes belíssimos. Cidade pequena e acolhedora."
+  },
+  {
+    "municipio": "Vera Cruz",
+    "estado": "RN",
+    "curiosidade": "Parte da Grande Natal, combina vida rural e proximidade urbana. Economia agrícola forte."
+  },
+  {
+    "municipio": "Viçosa",
+    "estado": "RN",
+    "curiosidade": "Menor município do estado em população. Conhecido pela paz e forte senso comunitário."
+  },
+  {
+    "municipio": "Vila Flor",
+    "estado": "RN",
+    "curiosidade": "Um dos municípios mais antigos do RN, com raízes coloniais. Rica em história e tradições religiosas."
+  }
+]

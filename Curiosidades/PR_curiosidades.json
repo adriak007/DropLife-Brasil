@@ -1,0 +1,1811 @@
+[
+  {
+    "municipio": "Abatiá",
+    "estado": "PR",
+    "curiosidade": "O nome, de origem Tupi-Guarani, significa 'milho' ou 'folha de milho', refletindo sua forte tradição agrícola."
+  },
+  {
+    "municipio": "Adrianópolis",
+    "estado": "PR",
+    "curiosidade": "Famosa pela mineração, sendo conhecida por possuir a maior reserva de fosfato do sul do Brasil."
+  },
+  {
+    "municipio": "Agudos do Sul",
+    "estado": "PR",
+    "curiosidade": "A principal atração turística é a **Gruta Nossa Senhora de Fátima**, que atrai fiéis e visitantes por sua formação rochosa natural."
+  },
+  {
+    "municipio": "Almirante Tamandaré",
+    "estado": "PR",
+    "curiosidade": "Historicamente conhecida por suas vastas **jazidas de calcário** e pelo setor de extração mineral."
+  },
+  {
+    "municipio": "Altamira do Paraná",
+    "estado": "PR",
+    "curiosidade": "Sua economia baseia-se na agricultura familiar, sendo um grande produtor de milho e soja."
+  },
+  {
+    "municipio": "Alto Paraná",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela produção de **mandioca**, sendo um importante centro de farinheiras e agroindústria de fécula."
+  },
+  {
+    "municipio": "Alto Piquiri",
+    "estado": "PR",
+    "curiosidade": "Forte polo da agroindústria, com destaque para a produção de grãos e avicultura."
+  },
+  {
+    "municipio": "Alvorada do Sul",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens da **Represa de Capivara**, que a torna um importante ponto de turismo náutico e pesca esportiva."
+  },
+  {
+    "municipio": "Amaporã",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com forte tradição na cultura do **café**, que impulsionou seu desenvolvimento inicial."
+  },
+  {
+    "municipio": "Ampére",
+    "estado": "PR",
+    "curiosidade": "Seu nome é uma homenagem à unidade de medida de corrente elétrica (**Ampère**), devido à instalação de uma usina hidrelétrica na época de sua fundação."
+  },
+  {
+    "municipio": "Anahy",
+    "estado": "PR",
+    "curiosidade": "Município com economia fortemente agrícola, com destaque para o cultivo de soja e milho."
+  },
+  {
+    "municipio": "Andirá",
+    "estado": "PR",
+    "curiosidade": "Um dos principais centros da região na história do **ciclo do café** no Norte Pioneiro do Paraná."
+  },
+  {
+    "municipio": "Ângulo",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela agropecuária, com ênfase na produção de grãos e pecuária leiteira."
+  },
+  {
+    "municipio": "Antonina",
+    "estado": "PR",
+    "curiosidade": "Cidade histórica com casarios coloniais preservados e um porto secundário. É famosa por sediar o tradicional **Carnaval de Antonina**."
+  },
+  {
+    "municipio": "Antônio Olinto",
+    "estado": "PR",
+    "curiosidade": "Município conhecido pela forte presença da cultura e das tradições dos **imigrantes poloneses**."
+  },
+  {
+    "municipio": "Apucarana",
+    "estado": "PR",
+    "curiosidade": "Ostenta o título de **'Capital Nacional do Boné'**, sendo um dos maiores polos de produção e exportação de bonés e vestuário esportivo do país."
+  },
+  {
+    "municipio": "Arapongas",
+    "estado": "PR",
+    "curiosidade": "Considerada o **'Polo Moveleiro do Paraná'**, sendo um dos maiores centros de produção de móveis do Brasil."
+  },
+  {
+    "municipio": "Arapoti",
+    "estado": "PR",
+    "curiosidade": "Famosa pela forte influência da **colônia holandesa** na agricultura e na pecuária leiteira."
+  },
+  {
+    "municipio": "Arapuã",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na extração e beneficiamento de madeira."
+  },
+  {
+    "municipio": "Araruna",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela produção de **hortelã** e pelo seu potencial no agronegócio de grãos."
+  },
+  {
+    "municipio": "Araucária",
+    "estado": "PR",
+    "curiosidade": "Sede da **Refinaria Presidente Getúlio Vargas (REPAR)**, a maior refinaria do Paraná e um dos principais complexos petroquímicos do Sul do Brasil."
+  },
+  {
+    "municipio": "Ariranha do Ivaí",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e na preservação ambiental do Vale do Ivaí."
+  },
+  {
+    "municipio": "Assaí",
+    "estado": "PR",
+    "curiosidade": "Cidade com forte influência da **imigração japonesa**, que se destaca no cultivo de hortaliças e flores."
+  },
+  {
+    "municipio": "Assis Chateaubriand",
+    "estado": "PR",
+    "curiosidade": "Reconhecida por seu museu a céu aberto: o **Museu Histórico de Assis Chateaubriand**, que preserva equipamentos agrícolas antigos."
+  },
+  {
+    "municipio": "Astorga",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela produção de **manga** e pela agroindústria de beneficiamento de frutas."
+  },
+  {
+    "municipio": "Atalaia",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Bandeirantes",
+    "estado": "PR",
+    "curiosidade": "É um importante polo universitário e cultural, abrigando uma das mais tradicionais universidades do interior do estado."
+  },
+  {
+    "municipio": "Barbosa Ferraz",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela produção de **café** e pela agroindústria de grãos."
+  },
+  {
+    "municipio": "Barra do Jacaré",
+    "estado": "PR",
+    "curiosidade": "Pequeno município do Norte Pioneiro, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Barracão",
+    "estado": "PR",
+    "curiosidade": "Uma das poucas cidades brasileiras que faz parte de uma **tríplice fronteira terrestre** (Brasil, Argentina e Paraguai), compartilhando fronteiras urbanas."
+  },
+  {
+    "municipio": "Bela Vista da Caroba",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agricultura e na criação de gado de corte."
+  },
+  {
+    "municipio": "Bela Vista do Paraíso",
+    "estado": "PR",
+    "curiosidade": "Importante polo de produção de **cana-de-açúcar**, com usinas e agroindústria sucroalcooleira."
+  },
+  {
+    "municipio": "Bituruna",
+    "estado": "PR",
+    "curiosidade": "Conhecida como a **'Capital Paranaense do Vinho'**, devido à forte produção de vinhos de mesa e sucos de uva."
+  },
+  {
+    "municipio": "Boa Esperança",
+    "estado": "PR",
+    "curiosidade": "Forte centro agrícola, conhecido pela produção de **milho** e pela presença de cooperativas."
+  },
+  {
+    "municipio": "Boa Esperança do Iguaçu",
+    "estado": "PR",
+    "curiosidade": "Sua formação está ligada à construção da **Usina Hidrelétrica de Salto Santiago** no Rio Iguaçu."
+  },
+  {
+    "municipio": "Boa Ventura de São Roque",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com relevo acidentado, conhecido pela agricultura de subsistência e preservação da natureza."
+  },
+  {
+    "municipio": "Boa Vista da Aparecida",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Lago de Salto Caxias**, que proporciona turismo náutico e pesca."
+  },
+  {
+    "municipio": "Bocaiúva do Sul",
+    "estado": "PR",
+    "curiosidade": "Município com áreas de mata nativa preservada e atividades de turismo rural e ecoturismo."
+  },
+  {
+    "municipio": "Bom Jesus do Sul",
+    "estado": "PR",
+    "curiosidade": "Faz divisa seca com a Argentina, sendo um ponto de integração cultural e comercial com o país vizinho."
+  },
+  {
+    "municipio": "Bom Sucesso",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela produção de **uva** e pela vitivinicultura, em função de sua altitude e clima."
+  },
+  {
+    "municipio": "Bom Sucesso do Sul",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de leite e carne suína."
+  },
+  {
+    "municipio": "Borrazópolis",
+    "estado": "PR",
+    "curiosidade": "Sua economia foi historicamente marcada pelo ciclo do **café**, permanecendo como importante centro agrícola."
+  },
+  {
+    "municipio": "Braganey",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com forte vocação agrícola, destacando-se na produção de soja e milho."
+  },
+  {
+    "municipio": "Brasilândia do Sul",
+    "estado": "PR",
+    "curiosidade": "Município conhecido pela forte atuação de **cooperativas agrícolas** e produção de grãos."
+  },
+  {
+    "municipio": "Cafeara",
+    "estado": "PR",
+    "curiosidade": "Seu nome é uma referência direta à cultura do **café**, que foi a base de sua fundação e desenvolvimento."
+  },
+  {
+    "municipio": "Cafelandia",
+    "estado": "PR",
+    "curiosidade": "Um dos principais centros de produção de **soja e milho** do Oeste Paranaense, com intensa atividade agroindustrial."
+  },
+  {
+    "municipio": "Cafezal do Sul",
+    "estado": "PR",
+    "curiosidade": "Como o nome sugere, sua história está ligada à expansão das lavouras de **café** no interior do estado."
+  },
+  {
+    "municipio": "Califórnia",
+    "estado": "PR",
+    "curiosidade": "O nome foi inspirado no estado norte-americano, sugerindo a promessa de riqueza e prosperidade da época de sua fundação."
+  },
+  {
+    "municipio": "Cambará",
+    "estado": "PR",
+    "curiosidade": "Famosa pela tradição da cultura do **café**, com grandes fazendas históricas remanescentes da época de ouro."
+  },
+  {
+    "municipio": "Cambé",
+    "estado": "PR",
+    "curiosidade": "Município vizinho a Londrina, é um polo de agroindústria e serviços, com intensa atividade no setor de armazenagem de grãos."
+  },
+  {
+    "municipio": "Campina da Lagoa",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela sua grande área de produção de **soja** e pela criação de gado."
+  },
+  {
+    "municipio": "Campina do Simão",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com tradição na agricultura e extração de madeira."
+  },
+  {
+    "municipio": "Campina Grande do Sul",
+    "estado": "PR",
+    "curiosidade": "Abriga a maior unidade produtora de papel e celulose integrada da América Latina, pertencente à empresa **Klabin**."
+  },
+  {
+    "municipio": "Campo Bonito",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agropecuária e na criação de suínos."
+  },
+  {
+    "municipio": "Campo do Tenente",
+    "estado": "PR",
+    "curiosidade": "Famosa pela produção de **tabaco** e pelo cultivo de erva-mate."
+  },
+  {
+    "municipio": "Campo Largo",
+    "estado": "PR",
+    "curiosidade": "Conhecida como a **'Capital da Louça'** ou **'Capital da Porcelana'**, devido às suas tradicionais indústrias de cerâmica e vidro."
+  },
+  {
+    "municipio": "Campo Magro",
+    "estado": "PR",
+    "curiosidade": "O nome faz referência ao solo mais pobre (**magro**), porém é conhecido pela presença de chácaras e turismo rural."
+  },
+  {
+    "municipio": "Campo Mourão",
+    "estado": "PR",
+    "curiosidade": "Sede da **Coamo**, a maior cooperativa agroindustrial da América Latina, sendo um centro estratégico para a produção de grãos."
+  },
+  {
+    "municipio": "Cândido de Abreu",
+    "estado": "PR",
+    "curiosidade": "Município conhecido pelas suas paisagens naturais e pela agricultura diversificada, com destaque para o feijão."
+  },
+  {
+    "municipio": "Candoi",
+    "estado": "PR",
+    "curiosidade": "Sua economia foi impulsionada pela construção da **Usina Hidrelétrica de Salto Segredo** no Rio Iguaçu."
+  },
+  {
+    "municipio": "Cantagalo",
+    "estado": "PR",
+    "curiosidade": "Conhecida por suas paisagens com pinheirais e pela agricultura, com forte presença de cooperativas."
+  },
+  {
+    "municipio": "Capanema",
+    "estado": "PR",
+    "curiosidade": "Faz divisa com a Argentina pelo Rio Iguaçu e abriga o **Parque Nacional do Iguaçu** em seu território."
+  },
+  {
+    "municipio": "Capitão Leônidas Marques",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Lago de Salto Caxias**, que fomenta o turismo de pesca e lazer."
+  },
+  {
+    "municipio": "Carambeí",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte influência da **colônia holandesa** e por abrigar o maior museu histórico a céu aberto do Paraná."
+  },
+  {
+    "municipio": "Carlópolis",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens da **Represa de Xavantes**, que atrai turistas para a prática de esportes náuticos."
+  },
+  {
+    "municipio": "Cascavel",
+    "estado": "PR",
+    "curiosidade": "Importante hub do Oeste. É famosa por sua **velocidade e automobilismo**, abrigando um dos autódromos mais tradicionais do Sul do país."
+  },
+  {
+    "municipio": "Castro",
+    "estado": "PR",
+    "curiosidade": "É a **'Capital Nacional do Leite'**, com a maior bacia leiteira do Brasil e forte presença de laticínios de origem holandesa."
+  },
+  {
+    "municipio": "Catanduvas",
+    "estado": "PR",
+    "curiosidade": "Município com grande área de plantio de **pinus e eucalipto**, com forte economia madeireira e de celulose."
+  },
+  {
+    "municipio": "Centenário do Sul",
+    "estado": "PR",
+    "curiosidade": "Fundada em comemoração ao centenário da Independência do Brasil, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Chopinzinho",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **feijão** e pela agroindústria de alimentos."
+  },
+  {
+    "municipio": "Cianorte",
+    "estado": "PR",
+    "curiosidade": "É a **'Capital Nacional do Vestuário'**, sendo um grande polo da indústria de confecções e moda atacadista."
+  },
+  {
+    "municipio": "Cidade Gaúcha",
+    "estado": "PR",
+    "curiosidade": "O nome faz referência aos colonizadores vindos do Rio Grande do Sul, com forte influência da cultura gaúcha."
+  },
+  {
+    "municipio": "Clevelândia",
+    "estado": "PR",
+    "curiosidade": "Cidade histórica, seu nome é uma homenagem ao ex-presidente norte-americano **Grover Cleveland**."
+  },
+  {
+    "municipio": "Colombo",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte influência da **colônia italiana** e pela produção tradicional de **uva e vinho**."
+  },
+  {
+    "municipio": "Colorado",
+    "estado": "PR",
+    "curiosidade": "Famosa por sua tradicional **Festa do Peão de Boiadeiro**, um dos rodeios mais importantes do Sul do país."
+  },
+  {
+    "municipio": "Congonhinhas",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na criação de gado."
+  },
+  {
+    "municipio": "Conselheiro Mairinck",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela agropecuária e pelo clima ameno, ideal para o cultivo de café."
+  },
+  {
+    "municipio": "Contenda",
+    "estado": "PR",
+    "curiosidade": "É um importante centro de produção de **erva-mate**, matéria-prima do chimarrão, símbolo da cultura paranaense."
+  },
+  {
+    "municipio": "Corbélia",
+    "estado": "PR",
+    "curiosidade": "Município de forte vocação agrícola, destacando-se na produção de soja e milho."
+  },
+  {
+    "municipio": "Cornélio Procópio",
+    "estado": "PR",
+    "curiosidade": "Importante polo universitário e histórico, sendo um centro regional que se desenvolveu com o ciclo do **café**."
+  },
+  {
+    "municipio": "Coronel Domingos Soares",
+    "estado": "PR",
+    "curiosidade": "Município com grande área de florestas de pinus, com forte economia madeireira."
+  },
+  {
+    "municipio": "Coronel Vivida",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela agroindústria de alimentos e pela produção de aves e suínos."
+  },
+  {
+    "municipio": "Corumbataí do Sul",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na extração de madeira."
+  },
+  {
+    "municipio": "Cruz Machado",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte presença da **colônia ucraniana**, que preserva tradições, arte e gastronomia local."
+  },
+  {
+    "municipio": "Cruzeiro do Iguaçu",
+    "estado": "PR",
+    "curiosidade": "Abriga a **Usina Hidrelétrica de Salto Osório** no Rio Iguaçu, sendo um centro de geração de energia."
+  },
+  {
+    "municipio": "Cruzeiro do Oeste",
+    "estado": "PR",
+    "curiosidade": "Famosa por ser um dos principais sítios de **arqueologia e paleontologia** do estado, com descobertas importantes sobre dinossauros."
+  },
+  {
+    "municipio": "Cruzeiro do Sul",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de grãos."
+  },
+  {
+    "municipio": "Curitiba",
+    "estado": "PR",
+    "curiosidade": "A capital é mundialmente famosa por seu inovador **sistema de transporte público (BRT)**, que inspirou cidades como Nova York e Los Angeles."
+  },
+  {
+    "municipio": "Curiúva",
+    "estado": "PR",
+    "curiosidade": "Seu nome faz referência à **Araucária angustifolia** (Pinheiro-do-Paraná), espécie símbolo do estado."
+  },
+  {
+    "municipio": "Diamante do Norte",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paraná**, com potencial para turismo de pesca e lazer náutico."
+  },
+  {
+    "municipio": "Diamante d'Oeste",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agropecuária e na criação de suínos."
+  },
+  {
+    "municipio": "Diamante do Sul",
+    "estado": "PR",
+    "curiosidade": "Município conhecido pela agricultura diversificada, com destaque para a produção de leite."
+  },
+  {
+    "municipio": "Dois Vizinhos",
+    "estado": "PR",
+    "curiosidade": "Reconhecida como um polo de **tecnologia e inovação** no Sudoeste do Paraná, além de forte produção agroindustrial."
+  },
+  {
+    "municipio": "Douradina",
+    "estado": "PR",
+    "curiosidade": "O nome é uma homenagem ao peixe **Dourado**, abundante nos rios da região, e sua economia é baseada na agricultura."
+  },
+  {
+    "municipio": "Doutor Camargo",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de grãos."
+  },
+  [
+  {
+    "municipio": "Enéas Marques",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela sua forte economia na **avicultura e suinocultura**, com grandes cooperativas e frigoríficos na região."
+  },
+  {
+    "municipio": "Engenheiro Beltrão",
+    "estado": "PR",
+    "curiosidade": "Sua fundação está ligada à construção da estrada de ferro que cortava o estado, sendo um antigo centro de escoamento agrícola."
+  },
+  {
+    "municipio": "Entre Rios do Oeste",
+    "estado": "PR",
+    "curiosidade": "Localizada entre rios, é um importante ponto de turismo náutico e pesca às margens do **Lago de Itaipu**."
+  },
+  {
+    "municipio": "Esperança Nova",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e no cultivo de mandioca."
+  },
+  {
+    "municipio": "Espigão Alto do Iguaçu",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela beleza natural da região, com destaque para as paisagens do Rio Iguaçu."
+  },
+  {
+    "municipio": "Farol",
+    "estado": "PR",
+    "curiosidade": "Seu nome incomum foi dado devido à existência de uma casa alta que servia como ponto de referência (**farol**) para tropeiros e desbravadores na região."
+  },
+  {
+    "municipio": "Fátima do Sul",
+    "estado": "PR",
+    "curiosidade": "Município conhecido pela forte religiosidade e por abrigar a **Gruta Nossa Senhora de Fátima**."
+  },
+  {
+    "municipio": "Fernandes Pinheiro",
+    "estado": "PR",
+    "curiosidade": "Destaca-se pela produção de **batata-semente** e pela cultura eslava dos seus habitantes."
+  },
+  {
+    "municipio": "Figueira",
+    "estado": "PR",
+    "curiosidade": "Sua economia é historicamente ligada à **mineração de carvão** e à produção de energia termoelétrica."
+  },
+  {
+    "municipio": "Flor da Serra do Sul",
+    "estado": "PR",
+    "curiosidade": "Faz divisa com a Argentina e se destaca na produção de leite e produtos coloniais."
+  },
+  {
+    "municipio": "Floraí",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de café e algodão."
+  },
+  {
+    "municipio": "Formosa do Oeste",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **soja e milho**, sendo um importante celeiro do Oeste Paranaense."
+  },
+  {
+    "municipio": "Foz do Iguaçu",
+    "estado": "PR",
+    "curiosidade": "É o principal polo turístico do Sul do Brasil. Abriga as **Cataratas do Iguaçu** (uma das 7 Maravilhas Naturais do Mundo) e a **Usina Hidrelétrica de Itaipu**."
+  },
+  {
+    "municipio": "Foz do Jordão",
+    "estado": "PR",
+    "curiosidade": "Sua formação e economia estão diretamente ligadas à **Usina Hidrelétrica de Salto Osório**, construída no Rio Iguaçu."
+  },
+  {
+    "municipio": "Francisco Alves",
+    "estado": "PR",
+    "curiosidade": "Município de forte base agrícola, conhecido pela produção de grãos e pela pecuária."
+  },
+  {
+    "municipio": "Francisco Beltrão",
+    "estado": "PR",
+    "curiosidade": "Principal polo do Sudoeste do Paraná, destaca-se por ser um centro de **serviços, saúde e educação** para a região."
+  },
+  {
+    "municipio": "General Carneiro",
+    "estado": "PR",
+    "curiosidade": "O município é cortado pela linha imaginária do **Trópico de Capricórnio**, sendo um ponto de referência astronômica."
+  },
+  {
+    "municipio": "Godoy Moreira",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agropecuária e na produção de café."
+  },
+  {
+    "municipio": "Goioerê",
+    "estado": "PR",
+    "curiosidade": "Famosa por sediar a **Exposição Feira Agropecuária e Industrial de Goioerê (EXPO-GOIO)**, uma das maiores da região."
+  },
+  {
+    "municipio": "Grandes Rios",
+    "estado": "PR",
+    "curiosidade": "Localizada próxima à confluência de importantes rios, sua história está ligada aos caminhos fluviais."
+  },
+  {
+    "municipio": "Guaíra",
+    "estado": "PR",
+    "curiosidade": "Famosa por abrigar o que restou do complexo de cascatas das **Sete Quedas**, submerso pela Usina de Itaipu, e por sua ponte rodoferroviária."
+  },
+  {
+    "municipio": "Guairaçá",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, com destaque para a criação de gado."
+  },
+  {
+    "municipio": "Guamiranga",
+    "estado": "PR",
+    "curiosidade": "Conhecida pelas suas belezas naturais, incluindo quedas d'água e áreas de preservação."
+  },
+  {
+    "municipio": "Guapirama",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com economia baseada na agropecuária e na produção de café."
+  },
+  {
+    "municipio": "Guaporema",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e na produção de grãos."
+  },
+  {
+    "municipio": "Guaraci",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paranapanema**, com potencial para turismo de lazer e pesca."
+  },
+  {
+    "municipio": "Guaraniaçu",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **leite** e derivados, com relevante pecuária leiteira."
+  },
+  {
+    "municipio": "Guaratuba",
+    "estado": "PR",
+    "curiosidade": "Importante balneário do litoral paranaense. Possui uma **Baía** que é o principal ponto de atração, cercada por Mata Atlântica."
+  },
+  {
+    "municipio": "Honório Serpa",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, especialmente na produção de milho e trigo."
+  },
+  {
+    "municipio": "Ibaiti",
+    "estado": "PR",
+    "curiosidade": "Um dos principais polos da região na indústria de **madeira e reflorestamento**, com grande área de plantio de pinus."
+  },
+  {
+    "municipio": "Ibiporã",
+    "estado": "PR",
+    "curiosidade": "Conhecida pelo seu centro cultural ativo e pela proximidade com Londrina, sendo um importante polo industrial."
+  },
+  {
+    "municipio": "Icaraíma",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paraná**, atrai turistas pela pesca e pela beleza das suas praias fluviais."
+  },
+  {
+    "municipio": "Iguaraçu",
+    "estado": "PR",
+    "curiosidade": "Município com forte economia baseada na agropecuária, com destaque para a cultura de grãos."
+  },
+  {
+    "municipio": "Iguatu",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura e na criação de gado de corte."
+  },
+  {
+    "municipio": "Imbaú",
+    "estado": "PR",
+    "curiosidade": "Conhecida por sua relevância na exploração de **madeira e reflorestamento**, com indústrias de beneficiamento."
+  },
+  {
+    "municipio": "Imbituva",
+    "estado": "PR",
+    "curiosidade": "Destaca-se na produção de **mel** e seus derivados, sendo um importante centro apícola no estado."
+  },
+  {
+    "municipio": "Inácio Martins",
+    "estado": "PR",
+    "curiosidade": "Conhecida pelas baixas temperaturas e pelo cultivo de **erva-mate** e pinus."
+  },
+  {
+    "municipio": "Inajá",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Indianópolis",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela sua forte produção de **soja e milho**, sendo um celeiro agrícola na região."
+  },
+  {
+    "municipio": "Ipiranga",
+    "estado": "PR",
+    "curiosidade": "Cidade histórica da região dos Campos Gerais, famosa pelo patrimônio arquitetônico e pela criação de gado."
+  },
+  {
+    "municipio": "Iporã",
+    "estado": "PR",
+    "curiosidade": "Importante centro agrícola, conhecido por sua produção de **grãos** e pela pecuária."
+  },
+  {
+    "municipio": "Iracema do Oeste",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e na produção de mandioca."
+  },
+  {
+    "municipio": "Irati",
+    "estado": "PR",
+    "curiosidade": "Importante centro da **cultura ucraniana e polonesa** no Paraná, preservando tradições, danças e culinária."
+  },
+  {
+    "municipio": "Iretama",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agricultura, destacando-se na produção de soja e milho."
+  },
+  {
+    "municipio": "Itaguajé",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paranapanema**, com potencial para o turismo de pesca e lazer."
+  },
+  {
+    "municipio": "Itaipulândia",
+    "estado": "PR",
+    "curiosidade": "Seu nome deriva do **Lago de Itaipu**, que cobre parte de seu território, fomentando o turismo náutico e de lazer."
+  },
+  {
+    "municipio": "Itambaracá",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela sua forte produção de **cana-de-açúcar** e pela presença de usinas."
+  },
+  {
+    "municipio": "Itambé",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de café e grãos."
+  },
+  {
+    "municipio": "Itapejara d'Oeste",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **trigo** e pela agroindústria de alimentos."
+  },
+  {
+    "municipio": "Itaperuçu",
+    "estado": "PR",
+    "curiosidade": "Destaca-se pela extração de **calcário** e pela produção de cimento na região metropolitana."
+  },
+  {
+    "municipio": "Itaúna do Sul",
+    "estado": "PR",
+    "curiosidade": "Localizada na divisa com o Mato Grosso do Sul, conhecida pela agropecuária."
+  },
+  {
+    "municipio": "Ivaí",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na extração de madeira."
+  },
+  {
+    "municipio": "Ivaiporã",
+    "estado": "PR",
+    "curiosidade": "Principal centro regional do Vale do Ivaí. Conhecida pela **agroindústria de milho** e pela avicultura."
+  },
+  {
+    "municipio": "Ivaté",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agropecuária e na produção de grãos."
+  },
+  {
+    "municipio": "Ivatuba",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela produção de **mandioca** e pela agroindústria de fécula."
+  },
+  {
+    "municipio": "Jaboti",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com economia baseada na agropecuária e no café."
+  },
+  {
+    "municipio": "Jacarezinho",
+    "estado": "PR",
+    "curiosidade": "Importante polo universitário e histórico do Norte Pioneiro, com forte tradição no setor de serviços."
+  },
+  {
+    "municipio": "Jaguapitã",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Jaguariaíva",
+    "estado": "PR",
+    "curiosidade": "Cidade histórica nos Campos Gerais, com um rico patrimônio ferroviário e de estações antigas."
+  },
+  {
+    "municipio": "Jandaia do Sul",
+    "estado": "PR",
+    "curiosidade": "Importante centro agrícola, conhecido pela produção de **café** e pela agroindústria de alimentos."
+  },
+  {
+    "municipio": "Janiópolis",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de soja e milho."
+  },
+  {
+    "municipio": "Japira",
+    "estado": "PR",
+    "curiosidade": "Pequeno município do Norte Pioneiro, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Japurá",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela sua forte produção de **mandioca** e derivados."
+  },
+  {
+    "municipio": "Jardim Alegre",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de grãos."
+  },
+  {
+    "municipio": "Jardim Olinda",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura, conhecido por suas paisagens rurais."
+  },
+  {
+    "municipio": "Jataizinho",
+    "estado": "PR",
+    "curiosidade": "Cidade histórica, seu desenvolvimento está ligado à travessia de tropeiros e à navegação no Rio Tibagi."
+  },
+  {
+    "municipio": "Jesuítas",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte atuação de **cooperativas agroindustriais** e produção de aves e suínos."
+  },
+  {
+    "municipio": "Joaquim Távora",
+    "estado": "PR",
+    "curiosidade": "Importante centro do Norte Pioneiro, conhecido pela produção de **café** e pela agropecuária."
+  },
+  {
+    "municipio": "Jundiaí do Sul",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de café."
+  },
+  {
+    "municipio": "Juranda",
+    "estado": "PR",
+    "curiosidade": "Famosa pela presença de **usinas de açúcar e álcool**, com forte base na cana-de-açúcar."
+  },
+  {
+    "municipio": "Jussara",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na criação de gado."
+  },
+  {
+    "municipio": "Kaloré",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de café e grãos."
+  },
+  {
+    "municipio": "Lapa",
+    "estado": "PR",
+    "curiosidade": "Cidade **histórica e militar**, palco do **Cerco da Lapa** durante a Revolução Federalista. Possui um centro histórico tombado pelo IPHAN."
+  },
+  {
+    "municipio": "Laranjal",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e na produção de milho."
+  },
+  {
+    "municipio": "Laranjeiras do Sul",
+    "estado": "PR",
+    "curiosidade": "Importante centro regional, conhecido pela **produção de erva-mate** e pela tradição no agronegócio."
+  },
+  {
+    "municipio": "Leópolis",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para o cultivo de café."
+  },
+  {
+    "municipio": "Lidianópolis",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com forte vocação agrícola, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "Lindoeste",
+    "estado": "PR",
+    "curiosidade": "Município conhecido pela forte produção de **leite** e pela agroindústria de laticínios."
+  },
+  {
+    "municipio": "Loanda",
+    "estado": "PR",
+    "curiosidade": "É o principal polo da chamada 'Capital da Mandioca', com grande produção e beneficiamento de **fécula**."
+  },
+  {
+    "municipio": "Lobato",
+    "estado": "PR",
+    "curiosidade": "Seu nome é uma homenagem ao escritor brasileiro **Monteiro Lobato**. Sua economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Londrina",
+    "estado": "PR",
+    "curiosidade": "Considerada a **'Capital do Café'** no passado e hoje um grande polo de **ensino superior, tecnologia e serviços** no Norte do Paraná."
+  },
+  {
+    "municipio": "Luiziana",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte atuação de **cooperativas agrícolas** e pela produção de grãos."
+  },
+  {
+    "municipio": "Lunardelli",
+    "estado": "PR",
+    "curiosidade": "Conhecida por ser um centro de **turismo religioso**, devido à devoção a Nossa Senhora das Graças."
+  },
+  {
+    "municipio": "Mallet",
+    "estado": "PR",
+    "curiosidade": "Município com forte influência das **culturas ucraniana e polonesa**, preservando as tradições e a culinária eslava."
+  },
+  {
+    "municipio": "Mamborê",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **soja e milho**, sendo um importante celeiro na região."
+  },
+  {
+    "municipio": "Mandaguaçu",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Mandaguari",
+    "estado": "PR",
+    "curiosidade": "Importante centro agrícola e industrial, conhecido pela produção de **grãos** e agroindústria."
+  },
+  {
+    "municipio": "Mandirituba",
+    "estado": "PR",
+    "curiosidade": "Famosa pela produção de **cebola** e outros hortifrutigranjeiros, abastecendo a região metropolitana."
+  },
+  {
+    "municipio": "Manfrinópolis",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e na criação de gado."
+  },
+  {
+    "municipio": "Mangueirinha",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária e na extração de madeira, em uma região de clima frio."
+  },
+  {
+    "municipio": "Manoel Ribas",
+    "estado": "PR",
+    "curiosidade": "Conhecida por sua relevância na produção de **café** e pela agropecuária."
+  },
+  {
+    "municipio": "Marechal Cândido Rondon",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte **influência alemã** na colonização e por ser um polo de desenvolvimento do agronegócio e de cooperativas."
+  },
+  {
+    "municipio": "Maria Helena",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de grãos."
+  },
+  {
+    "municipio": "Marialva",
+    "estado": "PR",
+    "curiosidade": "Considerada a **'Capital da Uva Fina'**, sendo o maior produtor de uva de mesa do estado."
+  },
+  {
+    "municipio": "Marilândia do Sul",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de café e grãos."
+  },
+  {
+    "municipio": "Mariluz",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte atuação de **cooperativas agrícolas** e pela produção de grãos."
+  },
+  {
+    "municipio": "Maringá",
+    "estado": "PR",
+    "curiosidade": "Uma das cidades mais planejadas e arborizadas do Brasil. Famosa pela sua **Catedral Basílica Nossa Senhora da Glória** (em formato de cone) e alta qualidade de vida."
+  },
+  {
+    "municipio": "Maripá",
+    "estado": "PR",
+    "curiosidade": "Conhecida como a **'Capital da Tilápia'** no Paraná, destacando-se na piscicultura e na produção de peixes."
+  },
+  {
+    "municipio": "Marumbi",
+    "estado": "PR",
+    "curiosidade": "Seu nome é uma referência ao **Conjunto Marumbi**, uma importante formação de montanhas do Paraná."
+  },
+  {
+    "municipio": "Matelândia",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de aves e suínos."
+  },
+  {
+    "municipio": "Matinhos",
+    "estado": "PR",
+    "curiosidade": "Importante balneário do litoral, conhecido pelas suas praias e pela **Praia de Caiobá**, uma das mais movimentadas."
+  },
+  {
+    "municipio": "Mato Rico",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura de subsistência e extração de madeira."
+  },
+  {
+    "municipio": "Mauá da Serra",
+    "estado": "PR",
+    "curiosidade": "Conhecida pelas suas baixas temperaturas e pelo clima de serra, com produção agrícola diversificada."
+  },
+  {
+    "municipio": "Medianeira",
+    "estado": "PR",
+    "curiosidade": "Importante centro regional. Conhecida pela forte presença de **cooperativas** e pela agroindústria de alimentos."
+  },
+  {
+    "municipio": "Mercedes",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **leite** e por abrigar um importante centro de inseminação artificial de gado."
+  },
+  {
+    "municipio": "Mirador",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de grãos."
+  },
+  [
+  {
+    "municipio": "Nova Aliança do Ivaí",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e no cultivo de café."
+  },
+  {
+    "municipio": "Nova América da Colina",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de café e grãos."
+  },
+  {
+    "municipio": "Nova Aurora",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela atuação de grandes **cooperativas agroindustriais**, com foco na produção de aves, suínos e ovos."
+  },
+  {
+    "municipio": "Nova Cantu",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na extração de madeira, em uma área de relevo acidentado."
+  },
+  {
+    "municipio": "Nova Esperança",
+    "estado": "PR",
+    "curiosidade": "Importante centro produtor de **cana-de-açúcar**, com usinas e agroindústria sucroalcooleira."
+  },
+  {
+    "municipio": "Nova Fátima",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de café."
+  },
+  {
+    "municipio": "Nova Laranjeiras",
+    "estado": "PR",
+    "curiosidade": "Localizada em uma região de florestas, é conhecida por abrigar um dos maiores assentamentos da reforma agrária do Paraná."
+  },
+  {
+    "municipio": "Nova Londrina",
+    "estado": "PR",
+    "curiosidade": "É o principal polo da região conhecida como **'Capital da Mandioca'**, com alta produção e beneficiamento da raiz."
+  },
+  {
+    "municipio": "Nova Olímpia",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de grãos."
+  },
+  {
+    "municipio": "Nova Santa Bárbara",
+    "estado": "PR",
+    "curiosidade": "Pequeno município do Norte Pioneiro, com forte tradição no cultivo de café."
+  },
+  {
+    "municipio": "Nova Santa Rosa",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte **influência alemã** na colonização e pela alta produtividade na agropecuária."
+  },
+  {
+    "municipio": "Nova Tebas",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a criação de gado."
+  },
+  {
+    "municipio": "Novo Horizonte",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Novo Itacolomi",
+    "estado": "PR",
+    "curiosidade": "Localizado próximo ao **Pico Paraná** (Ponto mais alto do sul do Brasil), com paisagens de serra."
+  },
+  {
+    "municipio": "Ortigueira",
+    "estado": "PR",
+    "curiosidade": "Sede da maior fábrica de papel e celulose em linha única do mundo, da empresa **Klabin**, sendo um polo florestal."
+  },
+  {
+    "municipio": "Ourizona",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "Ouro Verde do Oeste",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela alta produtividade em **agropecuária** e pela qualidade de vida."
+  },
+  {
+    "municipio": "Paiçandu",
+    "estado": "PR",
+    "curiosidade": "Vizinha a Maringá, destaca-se como um polo de **serviços e logística** na região."
+  },
+  {
+    "municipio": "Palmas",
+    "estado": "PR",
+    "curiosidade": "É a **cidade mais fria do Paraná**, conhecida pelas geadas e pela forte produção de **maçã** e hortifrutigranjeiros."
+  },
+  {
+    "municipio": "Palmeira",
+    "estado": "PR",
+    "curiosidade": "Cidade histórica nos Campos Gerais, com forte influência da **colônia alemã e polonesa**, e patrimônio arquitetônico preservado."
+  },
+  {
+    "municipio": "Palmital",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de leite."
+  },
+  {
+    "municipio": "Palotina",
+    "estado": "PR",
+    "curiosidade": "Importante centro do Oeste, sede da **C.Vale**, uma das maiores cooperativas agroindustriais do Brasil, com forte produção de proteína animal."
+  },
+  {
+    "municipio": "Paraíso do Norte",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **cana-de-açúcar** e pela presença de usinas."
+  },
+  {
+    "municipio": "Paranacity",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "Paranaguá",
+    "estado": "PR",
+    "curiosidade": "Sede do **segundo maior porto do Brasil** em volume de movimentação, sendo a porta de entrada e saída de grande parte da safra de grãos do país."
+  },
+  {
+    "municipio": "Paranapoema",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paranapanema**, com potencial para turismo de pesca."
+  },
+  {
+    "municipio": "Pato Bragado",
+    "estado": "PR",
+    "curiosidade": "Conhecida pelo seu potencial de turismo náutico e pela participação no projeto de formação do **Lago de Itaipu**."
+  },
+  {
+    "municipio": "Pato Branco",
+    "estado": "PR",
+    "curiosidade": "Polo de **tecnologia e inovação** do Sudoeste do Paraná, com forte setor de TI e empresas de software."
+  },
+  {
+    "municipio": "Paula Freitas",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na produção de madeira."
+  },
+  {
+    "municipio": "Paulo Frontin",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte presença da **colônia ucraniana**, que preserva sua cultura e arquitetura tradicional."
+  },
+  {
+    "municipio": "Peabiru",
+    "estado": "PR",
+    "curiosidade": "Seu nome é uma referência ao **Caminho do Peabiru**, antiga trilha indígena que ligava o litoral ao interior da América do Sul."
+  },
+  {
+    "municipio": "Perobal",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de grãos."
+  },
+  {
+    "municipio": "Pérola",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **mandioca** e pela agroindústria de fécula."
+  },
+  {
+    "municipio": "Pérola d'Oeste",
+    "estado": "PR",
+    "curiosidade": "Faz divisa com a Argentina e se destaca na produção de leite e derivados."
+  },
+  {
+    "municipio": "Pien",
+    "estado": "PR",
+    "curiosidade": "Município conhecido pela forte **influência alemã** e pela produção de hortifrutigranjeiros."
+  },
+  {
+    "municipio": "Pinhais",
+    "estado": "PR",
+    "curiosidade": "Sede do **Autódromo Internacional de Curitiba**, um dos principais templos do automobilismo brasileiro."
+  },
+  {
+    "municipio": "Pinhal de São Bento",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com grande área de **reflorestamento** e economia madeireira."
+  },
+  {
+    "municipio": "Pinhalão",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com economia baseada na agropecuária e no café."
+  },
+  {
+    "municipio": "Pinhão",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela alta produção de **erva-mate** e por ser um dos maiores produtores de madeira de reflorestamento do estado."
+  },
+  {
+    "municipio": "Piraí do Sul",
+    "estado": "PR",
+    "curiosidade": "Cidade histórica com casarões antigos, conhecida pela sua forte tradição católica e festas religiosas."
+  },
+  {
+    "municipio": "Piraquara",
+    "estado": "PR",
+    "curiosidade": "Abriga importantes **mananciais** que fornecem grande parte da água potável para Curitiba e região metropolitana."
+  },
+  {
+    "municipio": "Pitanga",
+    "estado": "PR",
+    "curiosidade": "Importante centro regional do Centro-Sul do estado, conhecido pela agropecuária e pela indústria madeireira."
+  },
+  {
+    "municipio": "Pitangueiras",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de grãos."
+  },
+  {
+    "municipio": "Ponta Grossa",
+    "estado": "PR",
+    "curiosidade": "Importante **hub logístico e industrial** nos Campos Gerais. É famosa pelo **Parque Estadual de Vila Velha**, com formações rochosas milenares."
+  },
+  {
+    "municipio": "Pontal do Paraná",
+    "estado": "PR",
+    "curiosidade": "Município litorâneo que abriga o **Centro de Estudos do Mar da UFPR**, sendo um polo de pesquisa oceanográfica."
+  },
+  {
+    "municipio": "Porecatu",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens da **Represa de Capivara**, que impulsiona o turismo de pesca e lazer."
+  },
+  {
+    "municipio": "Porto Amazonas",
+    "estado": "PR",
+    "curiosidade": "Único porto fluvial do Paraná para o transporte de cargas, localizado às margens do Rio Iguaçu."
+  },
+  {
+    "municipio": "Porto Barreiro",
+    "estado": "PR",
+    "curiosidade": "Localizada no complexo de reservatórios do Rio Iguaçu, sendo um ponto de pesca e turismo náutico."
+  },
+  {
+    "municipio": "Porto Rico",
+    "estado": "PR",
+    "curiosidade": "Estância turística conhecida como o **'Caribe Paranaense'** devido às suas praias fluviais nas margens do Rio Paraná."
+  },
+  {
+    "municipio": "Porto Vitória",
+    "estado": "PR",
+    "curiosidade": "Município da região sul, com forte economia baseada na extração e beneficiamento de madeira."
+  },
+  {
+    "municipio": "Prado Ferreira",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Primeiro de Maio",
+    "estado": "PR",
+    "curiosidade": "Famosa por ser um dos maiores e mais antigos centros de **turismo de pesca** no Rio Paranapanema."
+  },
+  {
+    "municipio": "Prudentópolis",
+    "estado": "PR",
+    "curiosidade": "Considerada o **maior centro da cultura ucraniana** na América Latina, sendo conhecida pelos seus casarões e pelas **pisanky** (ovos pintados)."
+  },
+  {
+    "municipio": "Quatiguá",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com economia baseada na agropecuária e no café."
+  },
+  {
+    "municipio": "Quatro Barras",
+    "estado": "PR",
+    "curiosidade": "Localizada na Serra do Mar, é o portal de acesso à região da **Serra da Graciosa**, um importante ponto turístico e histórico."
+  },
+  {
+    "municipio": "Quatro Pontes",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela alta produtividade em agropecuária, com destaque para a criação de suínos e aves."
+  },
+  {
+    "municipio": "Quedas do Iguaçu",
+    "estado": "PR",
+    "curiosidade": "O nome faz referência às gigantescas cachoeiras de seu território, submersas pela construção da **Usina Hidrelétrica de Salto Osório**."
+  },
+  {
+    "municipio": "Querência do Norte",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paraná**, com potencial para turismo de pesca e lazer náutico."
+  },
+  {
+    "municipio": "Quinta do Sol",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e na produção de grãos."
+  },
+  {
+    "municipio": "Quitandinha",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, com destaque para a produção de hortifrutigranjeiros."
+  },
+  {
+    "municipio": "Ramilândia",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "Rancho Alegre",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, conhecido pela produção de café e agropecuária."
+  },
+  {
+    "municipio": "Rancho Alegre D'Oeste",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Realeza",
+    "estado": "PR",
+    "curiosidade": "Importante centro regional do Sudoeste. Conhecida pela forte produção de **leite** e por abrigar um campus da UFPR."
+  },
+  {
+    "municipio": "Rebouças",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte presença da **cultura polonesa** e pela produção de madeira de reflorestamento."
+  },
+  {
+    "municipio": "Renascença",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de leite e grãos."
+  },
+  {
+    "municipio": "Reserva",
+    "estado": "PR",
+    "curiosidade": "Conhecida por suas paisagens naturais e por ser a porta de entrada para a região do **Cânion do Rio Tibagi**."
+  },
+  {
+    "municipio": "Reserva do Iguaçu",
+    "estado": "PR",
+    "curiosidade": "Sua formação está ligada à construção da **Usina Hidrelétrica de Salto Santiago** no Rio Iguaçu."
+  },
+  {
+    "municipio": "Ribeirão Claro",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens da **Represa de Xavantes**, que atrai turistas para o lazer e esportes náuticos."
+  },
+  {
+    "municipio": "Ribeirão do Pinhal",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com forte tradição no cultivo de café e agropecuária."
+  },
+  {
+    "municipio": "Rio Azul",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte presença das **culturas ucraniana e polonesa** e pela produção de batata e mel."
+  },
+  {
+    "municipio": "Rio Bom",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agropecuária, com destaque para o café."
+  },
+  {
+    "municipio": "Rio Branco do Sul",
+    "estado": "PR",
+    "curiosidade": "Destaca-se pela extração de **calcário** e pela produção de cimento, sendo um polo mineral na região metropolitana."
+  },
+  {
+    "municipio": "Rio Negro",
+    "estado": "PR",
+    "curiosidade": "Faz divisa seca com a cidade catarinense de Mafra, sendo as **'Cidades-Gêmeas'** separadas apenas pela fronteira estadual."
+  },
+  {
+    "municipio": "Rolândia",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte **influência alemã** e pelo seu potencial agrícola, sendo um antigo polo da cultura do café."
+  },
+  {
+    "municipio": "Roncador",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "Rondon",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de mandioca."
+  },
+  {
+    "municipio": "Rosário do Ivaí",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agricultura familiar e na extração de madeira."
+  },
+  {
+    "municipio": "Sabáudia",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte atuação de **cooperativas agrícolas** e pela produção de grãos e café."
+  },
+  {
+    "municipio": "Salgado Filho",
+    "estado": "PR",
+    "curiosidade": "Faz divisa com a Argentina e se destaca na produção de leite e produtos coloniais."
+  },
+  {
+    "municipio": "Salto do Itararé",
+    "estado": "PR",
+    "curiosidade": "Localizada no Norte Pioneiro, conhecida pelas belas **quedas d'água** e pelo ecoturismo."
+  },
+  {
+    "municipio": "Salto do Lontra",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **leite** e pela agroindústria de laticínios."
+  },
+  {
+    "municipio": "Santa Amélia",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com economia baseada na agropecuária e no café."
+  },
+  {
+    "municipio": "Santa Cecília do Pavão",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de café."
+  },
+  {
+    "municipio": "Santa Cruz de Monte Castelo",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paraná**, com potencial para o turismo de pesca."
+  },
+  {
+    "municipio": "Santa Fé",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Santa Helena",
+    "estado": "PR",
+    "curiosidade": "Importante centro de turismo náutico e lazer às margens do **Lago de Itaipu**, conhecida pela sua praia artificial."
+  },
+  {
+    "municipio": "Santa Inês",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "Santa Isabel do Ivaí",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paraná**, é um importante ponto de pesca esportiva."
+  },
+  {
+    "municipio": "Santa Izabel do Oeste",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **leite** e pela agroindústria de laticínios."
+  },
+  {
+    "municipio": "Santa Lúcia",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agricultura familiar e na criação de gado."
+  },
+  {
+    "municipio": "Santa Maria do Oeste",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária e na extração de madeira."
+  },
+  {
+    "municipio": "Santa Mariana",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com forte tradição no cultivo de café."
+  },
+  {
+    "municipio": "Santa Mônica",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Santa Tereza do Oeste",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de grãos."
+  },
+  {
+    "municipio": "Santa Terezinha de Itaipu",
+    "estado": "PR",
+    "curiosidade": "Localizada no complexo do **Lago de Itaipu**, com forte foco no turismo náutico e pesca."
+  },
+  {
+    "municipio": "Santana do Itararé",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, conhecido pela agropecuária e pelo ecoturismo."
+  },
+  {
+    "municipio": "Santo Antônio da Platina",
+    "estado": "PR",
+    "curiosidade": "Principal polo comercial e de serviços do **Norte Pioneiro**, com forte movimento econômico regional."
+  },
+  {
+    "municipio": "Santo Antônio do Caiuá",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Santo Antônio do Paraíso",
+    "estado": "PR",
+    "curiosidade": "Pequeno município do Norte Pioneiro, com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Santo Antônio do Sudoeste",
+    "estado": "PR",
+    "curiosidade": "Faz **fronteira seca com a Argentina**, sendo um importante ponto de comércio e integração cultural."
+  },
+  {
+    "municipio": "Santo Inácio",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paranapanema**, conhecida pelo turismo de pesca e lazer."
+  },
+  {
+    "municipio": "São Carlos do Ivaí",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "São Jerônimo da Serra",
+    "estado": "PR",
+    "curiosidade": "Conhecida pelas suas paisagens de serra e pela forte tradição na cultura do **café**."
+  },
+  {
+    "municipio": "São João",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de leite e carne suína."
+  },
+  {
+    "municipio": "São João do Caiuá",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "São João do Ivaí",
+    "estado": "PR",
+    "curiosidade": "Município com forte economia baseada na agropecuária e na produção de grãos."
+  },
+  {
+    "municipio": "São João do Triunfo",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte influência da **colônia polonesa** e pela produção de erva-mate e mel."
+  },
+  {
+    "municipio": "São Jorge d'Oeste",
+    "estado": "PR",
+    "curiosidade": "Localizada no complexo de reservatórios do Rio Iguaçu, com potencial para o turismo náutico."
+  },
+  {
+    "municipio": "São Jorge do Ivaí",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "São Jorge do Patrocínio",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "São José da Boa Vista",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, conhecido pela agropecuária e pelo ecoturismo."
+  },
+  {
+    "municipio": "São José das Palmeiras",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de leite."
+  },
+  {
+    "municipio": "São José dos Pinhais",
+    "estado": "PR",
+    "curiosidade": "Sede do **Aeroporto Internacional Afonso Pena**, o principal portão de entrada do Paraná, e grande polo industrial e automotivo."
+  },
+  {
+    "municipio": "São Manoel do Paraná",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de grãos."
+  },
+  {
+    "municipio": "São Mateus do Sul",
+    "estado": "PR",
+    "curiosidade": "É a **'Capital Nacional da Erva-Mate'**, principal centro produtor e de beneficiamento da erva, com forte influência polonesa."
+  },
+  {
+    "municipio": "São Miguel do Iguaçu",
+    "estado": "PR",
+    "curiosidade": "Localizada na região de Foz do Iguaçu, conhecida por sua proximidade com o **Lago de Itaipu** e a agricultura."
+  },
+  {
+    "municipio": "São Pedro do Iguaçu",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na criação de gado."
+  },
+  {
+    "municipio": "São Pedro do Ivaí",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de grãos."
+  },
+  {
+    "municipio": "São Pedro do Paraná",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paraná**, com potencial para turismo de pesca."
+  },
+  {
+    "municipio": "São Sebastião da Amoreira",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com forte tradição no cultivo de café."
+  },
+  {
+    "municipio": "São Tomé",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "Sapopema",
+    "estado": "PR",
+    "curiosidade": "Conhecida pelas suas paisagens de serra e pelo ecoturismo, com muitas cachoeiras e trilhas."
+  },
+  {
+    "municipio": "Sarandi",
+    "estado": "PR",
+    "curiosidade": "Município vizinho a Maringá, conhecido pelo seu rápido crescimento populacional e forte setor de serviços e comércio."
+  },
+  {
+    "municipio": "Sengés",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela sua importância na **indústria madeireira** e pela extração de celulose e papel."
+  },
+  {
+    "municipio": "Serranópolis do Iguaçu",
+    "estado": "PR",
+    "curiosidade": "Localizada no complexo do **Lago de Itaipu**, com potencial para o turismo e a agropecuária."
+  },
+  {
+    "municipio": "Sertaneja",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com economia baseada na agropecuária e no café."
+  },
+  {
+    "municipio": "Sertanópolis",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens da **Represa de Capivara**, que atrai turistas para o lazer e esportes náuticos."
+  },
+  {
+    "municipio": "Siqueira Campos",
+    "estado": "PR",
+    "curiosidade": "Importante centro do Norte Pioneiro, com economia baseada na agropecuária e serviços."
+  },
+  {
+    "municipio": "Sulina",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e na criação de gado."
+  },
+  {
+    "municipio": "Tamarana",
+    "estado": "PR",
+    "curiosidade": "Município que abriga a maior parte das terras da **Reserva Indígena Apucarana**, da etnia Kaingang."
+  },
+  {
+    "municipio": "Tambara",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, com economia baseada na agropecuária e no café."
+  },
+  {
+    "municipio": "Tapejara",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte atuação de **cooperativas agrícolas** e pela produção de grãos."
+  },
+  {
+    "municipio": "Tapira",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de leite."
+  },
+  {
+    "municipio": "Teixeira Soares",
+    "estado": "PR",
+    "curiosidade": "Cidade histórica nos Campos Gerais, com um rico patrimônio arquitetônico e ferroviário."
+  },
+  {
+    "municipio": "Telêmaco Borba",
+    "estado": "PR",
+    "curiosidade": "Importante polo de **papel e celulose**, sendo um dos maiores centros florestais e industriais do estado."
+  },
+  {
+    "municipio": "Terra Boa",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "Terra Rica",
+    "estado": "PR",
+    "curiosidade": "Localizada às margens do **Rio Paraná**, com potencial para turismo de pesca e lazer."
+  },
+  {
+    "municipio": "Terra Roxa",
+    "estado": "PR",
+    "curiosidade": "Município conhecido como a **'Capital da Moda Bebê'**, com forte indústria de confecções infantis."
+  },
+  {
+    "municipio": "Tibagi",
+    "estado": "PR",
+    "curiosidade": "Estância turística, famosa pelo **Cânion do Guartelá**, o 6º maior cânion do mundo em extensão e único com mata nativa."
+  },
+  {
+    "municipio": "Tijucas do Sul",
+    "estado": "PR",
+    "curiosidade": "Conhecida pelas suas áreas de preservação ambiental e por abrigar a **Serra do Cadeado**."
+  },
+  {
+    "municipio": "Toledo",
+    "estado": "PR",
+    "curiosidade": "Um dos **maiores polos do agronegócio** brasileiro. Conhecida pela altíssima produtividade na avicultura, suinocultura e produção de grãos."
+  },
+  {
+    "municipio": "Tomazina",
+    "estado": "PR",
+    "curiosidade": "Município do Norte Pioneiro, conhecido pela agropecuária e pelo ecoturismo em rios e cachoeiras."
+  },
+  {
+    "municipio": "Três Barras do Paraná",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, com destaque para a produção de grãos."
+  },
+  {
+    "municipio": "Tunas do Paraná",
+    "estado": "PR",
+    "curiosidade": "Conhecida pelas suas belezas naturais e por abrigar cavernas e formações rochosas."
+  },
+  {
+    "municipio": "Tuneiras do Oeste",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de mandioca."
+  },
+  {
+    "municipio": "Tupãssi",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Turvo",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte presença da **colônia ucraniana** e pela produção de erva-mate."
+  },
+  {
+    "municipio": "Ubiratã",
+    "estado": "PR",
+    "curiosidade": "Município com forte atuação de **cooperativas agroindustriais** e produção de grãos."
+  },
+  {
+    "municipio": "Umuarama",
+    "estado": "PR",
+    "curiosidade": "Importante polo regional. Conhecida pelo seu forte **comércio e setor de serviços** e pela agropecuária."
+  },
+  {
+    "municipio": "União da Vitória",
+    "estado": "PR",
+    "curiosidade": "Cidade-gêmea com Porto União (SC), conhecida pelo seu patrimônio ferroviário e pela navegação no **Rio Iguaçu**."
+  },
+  {
+    "municipio": "Uniflor",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Uraí",
+    "estado": "PR",
+    "curiosidade": "Cidade com forte **influência japonesa** na colonização e na agricultura, com produção diversificada."
+  },
+  {
+    "municipio": "Ventania",
+    "estado": "PR",
+    "curiosidade": "Seu nome é uma característica do clima local. Destaca-se na produção de madeira de reflorestamento."
+  },
+  {
+    "municipio": "Vera Cruz do Oeste",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de grãos."
+  },
+  {
+    "municipio": "Verê",
+    "estado": "PR",
+    "curiosidade": "Conhecida pela forte produção de **leite** e pela agroindústria de laticínios."
+  },
+  {
+    "municipio": "Virmond",
+    "estado": "PR",
+    "curiosidade": "Pequeno município com economia baseada na agricultura familiar e na criação de gado."
+  },
+  {
+    "municipio": "Vitorino",
+    "estado": "PR",
+    "curiosidade": "Município com forte base na agropecuária, especialmente na produção de leite e grãos."
+  },
+  {
+    "municipio": "Wenceslau Braz",
+    "estado": "PR",
+    "curiosidade": "Importante centro do Norte Pioneiro, conhecido pela agropecuária e pelo ecoturismo."
+  },
+  {
+    "municipio": "Xambrê",
+    "estado": "PR",
+    "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  }
+]
+]
+]

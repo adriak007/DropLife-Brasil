@@ -1,0 +1,77 @@
+[
+  {
+    "municipio": "Alto Alegre",
+    "estado": "RR",
+    "curiosidade": "Famosa pelas cachoeiras do Funil e Miudinho. Sua economia tem base na agricultura e pecuária. É um destino procurado para o ecoturismo e a tranquilidade."
+  },
+  {
+    "municipio": "Amajari",
+    "estado": "RR",
+    "curiosidade": "Abriga a famosa **Serra de Tepequém**, um planalto com 1.200 metros de altitude conhecido pelas dezenas de cachoeiras, balneários e antigas ruínas de garimpo de diamante."
+  },
+  {
+    "municipio": "Boa Vista",
+    "estado": "RR",
+    "curiosidade": "Capital e única capital brasileira **inteiramente ao norte da Linha do Equador**. Seu centro foi planejado com um traçado radial (em forma de leque), semelhante ao urbanismo de Paris. É o centro da produção da **maior paçoca de carne do mundo** no festival Boa Vista Junina."
+  },
+  {
+    "municipio": "Bonfim",
+    "estado": "RR",
+    "curiosidade": "Faz fronteira com a Guiana (cidade de Lethem), sendo um importante corredor de comércio e intercâmbio. Abriga as ruínas do **Forte São Joaquim**, marco histórico do período colonial."
+  },
+  {
+    "municipio": "Cantá",
+    "estado": "RR",
+    "curiosidade": "Localizado próximo a Boa Vista, é um ponto de ecoturismo com rios e balneários. A **Ponte dos Macuxis** liga o município à capital, oferecendo uma vista espetacular do Rio Branco."
+  },
+  {
+    "municipio": "Caracaraí",
+    "estado": "RR",
+    "curiosidade": "Sedia o **Parque Nacional do Viruá**, uma vasta área de conservação com grande diversidade biológica. É o município que abriga o maior trecho navegável do Rio Branco."
+  },
+  {
+    "municipio": "Caroebe",
+    "estado": "RR",
+    "curiosidade": "Localizado no sul do estado, sua economia é baseada na agropecuária, especialmente na produção de arroz e soja. É um dos principais produtores agrícolas de Roraima."
+  },
+  {
+    "municipio": "Iracema",
+    "estado": "RR",
+    "curiosidade": "Junto com Mucajaí, faz parte da **Rota das Cachoeiras**, que atrai trilheiros e turistas. É conhecida por suas belezas naturais e áreas de lavrado."
+  },
+  {
+    "municipio": "Mucajaí",
+    "estado": "RR",
+    "curiosidade": "Localizada no centro-sul, é um polo agropecuário com destaque para o arroz e a pecuária. É um dos municípios com maior potencial para o ecoturismo na Rota das Cachoeiras."
+  },
+  {
+    "municipio": "Normandia",
+    "estado": "RR",
+    "curiosidade": "Localizada dentro da Terra Indígena Raposa Serra do Sol, possui atrações naturais como a **Serra do Cruzeiro** e uma forte presença da cultura indígena Macuxi."
+  },
+  {
+    "municipio": "Pacaraima",
+    "estado": "RR",
+    "curiosidade": "Município de fronteira com a Venezuela. É um ponto estratégico de migração e comércio, sendo o mais próximo da capital venezuelana (Caracas) e o mais frio do estado."
+  },
+  {
+    "municipio": "Rorainópolis",
+    "estado": "RR",
+    "curiosidade": "É o município **cortado pela Linha do Equador**, que demarca o Hemisfério Sul e o Hemisfério Norte no estado. É um importante centro de agropecuária no sul de Roraima."
+  },
+  {
+    "municipio": "São João da Baliza",
+    "estado": "RR",
+    "curiosidade": "Localizado no Sul do estado, é um município de vocação agrícola, destacando-se na produção de grãos e pecuária."
+  },
+  {
+    "municipio": "São Luís",
+    "estado": "RR",
+    "curiosidade": "O nome se refere ao padroeiro. Sua economia é rural, baseada na agricultura e pecuária. É o município com a menor área territorial do estado."
+  },
+  {
+    "municipio": "Uiramutã",
+    "estado": "RR",
+    "curiosidade": "Localizado no extremo norte, abriga o famoso **Monte Roraima** e o ponto mais setentrional do Brasil, o Monte Caburaí, com uma beleza natural ímpar de savana e serras."
+  }
+]

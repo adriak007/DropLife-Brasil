@@ -1,0 +1,372 @@
+[
+  {
+    "municipio": "Amparo de São Francisco",
+    "estado": "SE",
+    "curiosidade": "Localizada no Baixo São Francisco, é um pequeno município que tem sua economia ligada à pesca e às atividades ribeirinhas."
+  },
+  {
+    "municipio": "Aquidabã",
+    "estado": "SE",
+    "curiosidade": "Uma das cidades mais antigas, é um importante centro agropecuário no Agreste Sergipano, conhecida pela feira de gado e artesanato."
+  },
+  {
+    "municipio": "Aracaju",
+    "estado": "SE",
+    "curiosidade": "Capital do estado, é a única capital do Nordeste planejada no século XIX. É famosa pela Orla de Atalaia, pelo manguezal do Rio Sergipe e por ser a capital com o melhor índice de qualidade de vida da região."
+  },
+  {
+    "municipio": "Arauá",
+    "estado": "SE",
+    "curiosidade": "O nome, de origem indígena, remete a uma espécie de caracol. Sua economia é baseada na agricultura e pecuária, com potencial para o turismo rural."
+  },
+  {
+    "municipio": "Areia Branca",
+    "estado": "SE",
+    "curiosidade": "Conhecida pela mineração, principalmente a extração de calcário e cimento. O nome vem das dunas de areia clara que existiam na região."
+  },
+  {
+    "municipio": "Barra dos Coqueiros",
+    "estado": "SE",
+    "curiosidade": "Vizinha de Aracaju, é onde fica a Foz do Rio Sergipe. Abriga a Praia da Costa, famosa por sua beleza e por ter o maior manguezal urbano do Nordeste."
+  },
+  {
+    "municipio": "Boquim",
+    "estado": "SE",
+    "curiosidade": "Conhecida como a 'Capital Sergipana da Laranja', é o maior produtor dessa fruta no estado, com economia baseada na citricultura."
+  },
+  {
+    "municipio": "Brejo Grande",
+    "estado": "SE",
+    "curiosidade": "Localizada na foz do Rio São Francisco, é um ponto de acesso para as dunas e praias desertas da região, atraindo ecoturistas."
+  },
+  {
+    "municipio": "Campo do Brito",
+    "estado": "SE",
+    "curiosidade": "Município do Agreste, conhecido pela cultura do artesanato em renda e pelo cultivo de milho e feijão."
+  },
+  {
+    "municipio": "Canhoba",
+    "estado": "SE",
+    "curiosidade": "Fica no Sertão do São Francisco. Sua economia é ligada à agropecuária e às atividades ribeirinhas."
+  },
+  {
+    "municipio": "Canindé de São Francisco",
+    "estado": "SE",
+    "curiosidade": "Principal acesso aos Cânions do Xingó. É um dos maiores polos turísticos de Sergipe, famoso pelos passeios de catamarã pelo Rio São Francisco."
+  },
+  {
+    "municipio": "Capela",
+    "estado": "SE",
+    "curiosidade": "Famosa pela 'Festa do Mastro', um tradicional e polêmico evento folclórico que atrai grande público anualmente."
+  },
+  {
+    "municipio": "Carira",
+    "estado": "SE",
+    "curiosidade": "Conhecida como a 'Capital Sergipana do Leite', devido à forte atividade de pecuária leiteira e produção de laticínios."
+  },
+  {
+    "municipio": "Carmópolis",
+    "estado": "SE",
+    "curiosidade": "É o principal polo de exploração de petróleo e gás natural de Sergipe em terra, com uma economia fortemente ligada à Petrobras."
+  },
+  {
+    "municipio": "Cedro de São João",
+    "estado": "SE",
+    "curiosidade": "Localizada às margens do Rio São Francisco, sua economia é baseada na agricultura e pesca. O nome remete à árvore cedro, comum na região."
+  },
+  {
+    "municipio": "Cristinápolis",
+    "estado": "SE",
+    "curiosidade": "Município com forte vocação agropecuária, sendo um dos maiores produtores de milho e feijão do estado."
+  },
+  {
+    "municipio": "Cumbe",
+    "estado": "SE",
+    "curiosidade": "Pequeno município do Sertão, cuja economia é baseada na agricultura de subsistência e pecuária."
+  },
+  {
+    "municipio": "Divina Pastora",
+    "estado": "SE",
+    "curiosidade": "Famosa pelo seu centro histórico e pelo Santuário de Nossa Senhora Divina Pastora, que atrai milhares de peregrinos anualmente."
+  },
+  {
+    "municipio": "Estância",
+    "estado": "SE",
+    "curiosidade": "Conhecida como 'Cidade Jardim', é famosa pela produção de fogos de artifício e pela tradicional Guerra de Busca-Pé durante as festas juninas."
+  },
+  {
+    "municipio": "Feira Nova",
+    "estado": "SE",
+    "curiosidade": "Município com grande importância comercial para o Sertão, destacando-se pela feira de produtos agrícolas e pecuários."
+  },
+  {
+    "municipio": "Frei Paulo",
+    "estado": "SE",
+    "curiosidade": "Fica no Agreste e é conhecida pela produção de castanha de caju, sendo um polo regional de beneficiamento desse produto."
+  },
+  {
+    "municipio": "Gararu",
+    "estado": "SE",
+    "curiosidade": "Situada às margens do Rio São Francisco, é um ponto de interesse para o turismo ribeirinho e a pesca artesanal."
+  },
+  {
+    "municipio": "General Maynard",
+    "estado": "SE",
+    "curiosidade": "Um dos menores municípios do estado em área territorial. Sua economia é baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Graccho Cardoso",
+    "estado": "SE",
+    "curiosidade": "Homenagem ao político sergipano. É um município do Sertão com vocação agropecuária."
+  },
+  {
+    "municipio": "Ilha das Flores",
+    "estado": "SE",
+    "curiosidade": "Localizada na foz do Rio São Francisco, é famosa pela beleza de suas dunas e praias fluviais, sendo um ponto turístico em ascensão."
+  },
+  {
+    "municipio": "Indiaroba",
+    "estado": "SE",
+    "curiosidade": "Abriga a maior parte do manguezal do estado. É conhecida pela Praia do Saco, uma das mais belas e frequentadas de Sergipe, com dunas e coqueirais."
+  },
+  {
+    "municipio": "Itabaiana",
+    "estado": "SE",
+    "curiosidade": "Conhecida como a 'Capital Nacional do Caminhão' e 'Capital do Agreste'. É o centro comercial mais movimentado do interior e tem a maior feira livre de Sergipe."
+  },
+  {
+    "municipio": "Itabaianinha",
+    "estado": "SE",
+    "curiosidade": "Famosa pela 'Farra do Boi' (prática proibida e criticada, mas que ainda marca a cultura local) e pela forte produção de milho e feijão."
+  },
+  {
+    "municipio": "Itabi",
+    "estado": "SE",
+    "curiosidade": "Localizada no Sertão, sua economia é baseada na pecuária e agricultura. O nome é de origem indígena."
+  },
+  {
+    "municipio": "Itaporanga d'Ajuda",
+    "estado": "SE",
+    "curiosidade": "Município litorâneo, abriga a famosa Praia da Caueira e a Festa do Milho (em junho), sendo um grande produtor de milho."
+  },
+  {
+    "municipio": "Japaratuba",
+    "estado": "SE",
+    "curiosidade": "Conhecida pela 'Festa de Reis', uma das maiores e mais tradicionais manifestações culturais do estado. Sua economia é baseada na cana-de-açúcar."
+  },
+  {
+    "municipio": "Japoatã",
+    "estado": "SE",
+    "curiosidade": "Um dos mais antigos núcleos de povoamento. É conhecido por ter um importante acervo arqueológico, com vestígios da presença holandesa no Brasil."
+  },
+  {
+    "municipio": "Lagarto",
+    "estado": "SE",
+    "curiosidade": "O terceiro município mais populoso, é um importante polo de serviços, educação e saúde no Centro-Sul. É conhecido pela Feira de Couro e pela tradição agropecuária."
+  },
+  {
+    "municipio": "Laranjeiras",
+    "estado": "SE",
+    "curiosidade": "Considerada a capital sergipana da cultura e do folclore. Possui um valioso conjunto arquitetônico colonial tombado e sedia o Encontro Cultural de Laranjeiras."
+  },
+  {
+    "municipio": "Malhador",
+    "estado": "SE",
+    "curiosidade": "O nome remete à prática de 'malhar' (bater) o gado. É um município do Agreste com forte base na pecuária leiteira."
+  },
+  {
+    "municipio": "Maruim",
+    "estado": "SE",
+    "curiosidade": "Uma das cidades mais antigas, situada às margens do Rio Sergipe. Seu nome vem do mosquito 'maruim', abundante na região."
+  },
+  {
+    "municipio": "Moita Bonita",
+    "estado": "SE",
+    "curiosidade": "Conhecida pela produção de calçados e confecções. Sua economia é um polo industrial de pequeno porte no Agreste."
+  },
+  {
+    "municipio": "Monte Alegre de Sergipe",
+    "estado": "SE",
+    "curiosidade": "Um dos principais centros de pecuária do Sertão, sendo o maior produtor de queijo e leite da região."
+  },
+  {
+    "municipio": "Muribeca",
+    "estado": "SE",
+    "curiosidade": "O nome tem origem indígena. Sua economia é rural, baseada na pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Neópolis",
+    "estado": "SE",
+    "curiosidade": "Localizada às margens do Rio São Francisco, é conhecida por seu casario colonial português e pelas festividades de Carnaval e Réveillon, atraindo turistas."
+  },
+  {
+    "municipio": "Nossa Senhora Aparecida",
+    "estado": "SE",
+    "curiosidade": "O nome remete à padroeira do Brasil. É um município de vocação agropecuária no Agreste Sergipano."
+  },
+  {
+    "municipio": "Nossa Senhora da Glória",
+    "estado": "SE",
+    "curiosidade": "Principal polo do Sertão Sergipano. É o maior centro de produção de laticínios do estado e possui a maior feira de gado do Nordeste."
+  },
+  {
+    "municipio": "Nossa Senhora das Dores",
+    "estado": "SE",
+    "curiosidade": "Importante centro de pecuária. É conhecida por ter uma das mais antigas e tradicionais cavalhadas de Sergipe."
+  },
+  {
+    "municipio": "Nossa Senhora de Lourdes",
+    "estado": "SE",
+    "curiosidade": "O nome faz referência à santa católica. É um município de base agropecuária no Alto Sertão."
+  },
+  {
+    "municipio": "Nossa Senhora do Socorro",
+    "estado": "SE",
+    "curiosidade": "É o segundo município mais populoso de Sergipe, fazendo parte da Grande Aracaju. Possui um forte apelo industrial e residencial."
+  },
+  {
+    "municipio": "Pacatuba",
+    "estado": "SE",
+    "curiosidade": "Localizada no Litoral Norte, é famosa pela Praia de Ponta dos Mangues, com coqueirais e piscinas naturais."
+  },
+  {
+    "municipio": "Palmeira das Missões",
+    "estado": "SE",
+    "curiosidade": "Município rural do Sertão. Seu nome remete às palmeiras e às antigas missões religiosas na região."
+  },
+  {
+    "municipio": "Pedra Mole",
+    "estado": "SE",
+    "curiosidade": "O nome é uma alusão à geologia local. É um município do Agreste com economia voltada para a agropecuária."
+  },
+  {
+    "municipio": "Pedrinhas",
+    "estado": "SE",
+    "curiosidade": "Pequeno município do Sul Sergipano com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Pinhão",
+    "estado": "SE",
+    "curiosidade": "Um dos municípios mais recentes. Sua economia é baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Pirambu",
+    "estado": "SE",
+    "curiosidade": "Sua praia é um importante destino turístico. Abriga o Projeto Tamar (tartarugas marinhas), sendo um centro de preservação ambiental."
+  },
+  {
+    "municipio": "Poço Redondo",
+    "estado": "SE",
+    "curiosidade": "É o município mais próximo da Grota do Angico (onde Lampião e seu bando foram mortos), sendo um importante ponto de turismo histórico do Cangaço."
+  },
+  {
+    "municipio": "Poço Verde",
+    "estado": "SE",
+    "curiosidade": "Localizado na divisa com a Bahia, é um centro regional conhecido pela produção de carne e pecuária."
+  },
+  {
+    "municipio": "Porto da Folha",
+    "estado": "SE",
+    "curiosidade": "Uma das cidades mais antigas, com forte presença de cultura indígena e ribeirinha. É conhecida pelas fazendas de gado e pela paisagem do São Francisco."
+  },
+  {
+    "municipio": "Propriá",
+    "estado": "SE",
+    "curiosidade": "Um dos principais centros urbanos do Baixo São Francisco. É um polo de navegação e comércio, com destaque para a produção de arroz irrigado."
+  },
+  {
+    "municipio": "Riachão do Dantas",
+    "estado": "SE",
+    "curiosidade": "O nome remete a um riacho e à família Dantas. É um município de vocação agropecuária no Sul Sergipano."
+  },
+  {
+    "municipio": "Riachuelo",
+    "estado": "SE",
+    "curiosidade": "Município histórico, conhecido por ter sido uma importante rota de tropas e gado. Sua economia é baseada na agricultura."
+  },
+  {
+    "municipio": "Ribeirópolis",
+    "estado": "SE",
+    "curiosidade": "Um importante centro de confecções e artesanato no Agreste Sergipano, sendo um polo de desenvolvimento industrial de pequeno porte."
+  },
+  {
+    "municipio": "Rosário do Catete",
+    "estado": "SE",
+    "curiosidade": "Antiga vila de pescadores, é conhecida pela produção de cana-de-açúcar. Possui uma das mais antigas igrejas do estado."
+  },
+  {
+    "municipio": "Salgado",
+    "estado": "SE",
+    "curiosidade": "Conhecida pela feira de frutas e verduras e pela forte atividade agrícola, sendo um dos celeiros do estado."
+  },
+  {
+    "municipio": "Santa Luzia do Itanhy",
+    "estado": "SE",
+    "curiosidade": "Abriga uma das praias mais bonitas do estado, a Praia do Abais. O nome é uma homenagem à padroeira e ao Rio Itanhy."
+  },
+  {
+    "municipio": "Santa Rosa de Lima",
+    "estado": "SE",
+    "curiosidade": "Fica no Vale do Cotinguiba e tem uma economia tradicionalmente ligada à cana-de-açúcar."
+  },
+  {
+    "municipio": "Santana do São Francisco",
+    "estado": "SE",
+    "curiosidade": "É o principal centro de artesanato em cerâmica do Baixo São Francisco. Sua produção é famosa, destacando-se as réplicas de carrancas e animais."
+  },
+  {
+    "municipio": "Santo Amaro das Brotas",
+    "estado": "SE",
+    "curiosidade": "Uma das cidades mais antigas, é conhecida pela Festa de Reis e pelo Terno de Reis, manifestações culturais e folclóricas populares."
+  },
+  {
+    "municipio": "São Cristóvão",
+    "estado": "SE",
+    "curiosidade": "Foi a primeira capital de Sergipe e a quarta cidade mais antiga do Brasil (1590). Sua Praça São Francisco é Patrimônio Cultural da Humanidade pela UNESCO."
+  },
+  {
+    "municipio": "São Domingos",
+    "estado": "SE",
+    "curiosidade": "Município do Agreste com vocação agropecuária, conhecido pela produção de milho e feijão."
+  },
+  {
+    "municipio": "São Francisco",
+    "estado": "SE",
+    "curiosidade": "O nome remete ao Rio São Francisco. Sua economia é rural, baseada na agricultura ribeirinha."
+  },
+  {
+    "municipio": "São Miguel do Aleixo",
+    "estado": "SE",
+    "curiosidade": "Município pequeno, com economia baseada na agricultura e pecuária, conhecido por suas tradições rurais."
+  },
+  {
+    "municipio": "Simão Dias",
+    "estado": "SE",
+    "curiosidade": "Importante centro regional do Sul Sergipano. É famosa pela cultura do milho e pelas festividades juninas, sendo um polo de atração no interior."
+  },
+  {
+    "municipio": "Siriri",
+    "estado": "SE",
+    "curiosidade": "O nome vem do crustáceo 'siriri', abundante na região. Sua economia é baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Telha",
+    "estado": "SE",
+    "curiosidade": "Pequeno município do Baixo São Francisco. Sua economia é ligada à agricultura e à extração de argila."
+  },
+  {
+    "municipio": "Tobias Barreto",
+    "estado": "SE",
+    "curiosidade": "Homenageia o ilustre filósofo e jurista. É conhecida como a 'Capital Sergipana da Confecção', sendo um grande polo de produção de roupas."
+  },
+  {
+    "municipio": "Tomar do Geru",
+    "estado": "SE",
+    "curiosidade": "Localizada no Sul Sergipano, sua economia é rural, destacando-se a produção de milho e feijão."
+  },
+  {
+    "municipio": "Umbaúba",
+    "estado": "SE",
+    "curiosidade": "Conhecida pela exploração de gás natural e pela produção de camarão em cativeiro (carcinicultura) na sua área litorânea."
+  }
+]

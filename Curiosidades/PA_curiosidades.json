@@ -1,0 +1,727 @@
+[
+  {
+    "municipio": "Abaetetuba",
+    "estado": "PA",
+    "curiosidade": "Famosa pelos brinquedos artesanais de miriti, considerados patrimônio cultural e símbolos do Círio de Nazaré."
+  },
+  {
+    "municipio": "Abel Figueiredo",
+    "estado": "PA",
+    "curiosidade": "Conhecida pela força das tradições rurais e festivais comunitários que preservam danças e músicas regionais."
+  },
+  {
+    "municipio": "Acará",
+    "estado": "PA",
+    "curiosidade": "Terra do tacacá e de fartas produções de mandioca. Suas comunidades ribeirinhas mantêm saberes culinários únicos."
+  },
+  {
+    "municipio": "Afuá",
+    "estado": "PA",
+    "curiosidade": "A 'Veneza do Marajó', onde praticamente não existem carros — a locomoção é feita de bicicleta sobre passarelas suspensas."
+  },
+  {
+    "municipio": "Água Azul do Norte",
+    "estado": "PA",
+    "curiosidade": "A cidade ganhou nome devido às águas claras de suas nascentes. Possui forte cultura agroextrativista."
+  },
+  {
+    "municipio": "Alenquer",
+    "estado": "PA",
+    "curiosidade": "Conhecida como 'Princesa do Rio Surubiú’. Abriga paisagens lendárias que inspiraram histórias folclóricas amazônicas."
+  },
+  {
+    "municipio": "Almeirim",
+    "estado": "PA",
+    "curiosidade": "Abriga a usina hidrelétrica de Santo Antônio do Jari e tem forte tradição de comunidades ribeirinhas com saberes seculares."
+  },
+  {
+    "municipio": "Altamira",
+    "estado": "PA",
+    "curiosidade": "É um dos maiores municípios do mundo em extensão territorial. Destaca-se pela culinária baseada em peixes amazônicos."
+  },
+  {
+    "municipio": "Anajás",
+    "estado": "PA",
+    "curiosidade": "Cidade com forte ligação com o artesanato marajoara. Suas festas religiosas são muito tradicionais e coloridas."
+  },
+  {
+    "municipio": "Ananindeua",
+    "estado": "PA",
+    "curiosidade": "Um dos maiores centros urbanos da Amazônia. A cidade é referência cultural em música, dança e gastronomia paraense."
+  },
+  {
+    "municipio": "Anapu",
+    "estado": "PA",
+    "curiosidade": "Ficou conhecida internacionalmente por movimentos de defesa ambiental liderados pela missionária Dorothy Stang."
+  },
+  {
+    "municipio": "Augusto Corrêa",
+    "estado": "PA",
+    "curiosidade": "Destaca-se pela produção de camarão regional e por tradições culinárias ligadas aos frutos do mar."
+  },
+  {
+    "municipio": "Aurora do Pará",
+    "estado": "PA",
+    "curiosidade": "A cidade preserva danças e folguedos tradicionais e é conhecida pelos produtos agrícolas cultivados por cooperativas locais."
+  },
+  {
+    "municipio": "Aveiro",
+    "estado": "PA",
+    "curiosidade": "Famosa por praias de água doce e pela influência histórica de seringais antigos que moldaram a cultura local."
+  },
+  {
+    "municipio": "Bagre",
+    "estado": "PA",
+    "curiosidade": "Município essencialmente ribeirinho, conhecido pelo artesanato em madeira e pela culinária amazônica tradicional."
+  },
+  {
+    "municipio": "Baião",
+    "estado": "PA",
+    "curiosidade": "Terra de ritmos tradicionais e famosa por festivais de música que reúnem artistas da região amazônica."
+  },
+  {
+    "municipio": "Bannach",
+    "estado": "PA",
+    "curiosidade": "Cidade jovem, marcada por tradições rurais e festas comunitárias que reforçam o espírito interiorano."
+  },
+  {
+    "municipio": "Barcarena",
+    "estado": "PA",
+    "curiosidade": "Reconhecida pelos portos e pela produção industrial, mas também por festas culturais como a Folia de Reis e o Çairé."
+  },
+  {
+    "municipio": "Belém",
+    "estado": "PA",
+    "curiosidade": "Terra do Círio de Nazaré, um dos maiores eventos religiosos do mundo. Cidade com gastronomia premiada internacionalmente."
+  },
+  {
+    "municipio": "Belterra",
+    "estado": "PA",
+    "curiosidade": "Projetada pela Ford nos anos 1930 para cultivo de borracha. Hoje é exemplo de arquitetura histórica preservada na Amazônia."
+  },
+  {
+    "municipio": "Benevides",
+    "estado": "PA",
+    "curiosidade": "Reconhecida por suas indústrias alimentícias e por produzir o tradicional biscoito de castanha-do-Pará."
+  },
+  {
+    "municipio": "Bom Jesus do Tocantins",
+    "estado": "PA",
+    "curiosidade": "Guarda tradições de grupos indígenas e comunidades rurais. Festas de colheita reúnem moradores anualmente."
+  },
+  {
+    "municipio": "Bonito",
+    "estado": "PA",
+    "curiosidade": "Famosa pelo festival de melancia e por manter viva a cultura agrícola familiar com feiras muito populares."
+  },
+  {
+    "municipio": "Bragança",
+    "estado": "PA",
+    "curiosidade": "Sede da tradicional Festa de São Benedito, uma das mais antigas da Amazônia. A culinária bragantina é muito reconhecida."
+  },
+  {
+    "municipio": "Brasil Novo",
+    "estado": "PA",
+    "curiosidade": "A cidade cresceu a partir de movimentos de colonização agrícola. Mantém tradições sertanejas e amazônicas combinadas."
+  },
+  {
+    "municipio": "Brejo Grande do Araguaia",
+    "estado": "PA",
+    "curiosidade": "Conhecida pela criação de gado e pela forte cultura de festas rurais e rodeios."
+  },
+  {
+    "municipio": "Breu Branco",
+    "estado": "PA",
+    "curiosidade": "Possui comunidades tradicionais que preservam danças folclóricas e culinária típica amazônica."
+  },
+  {
+    "municipio": "Breves",
+    "estado": "PA",
+    "curiosidade": "Maior cidade do arquipélago do Marajó. A cultura ribeirinha é tão forte que embarcações funcionam como “ônibus aquáticos”."
+  },
+  {
+    "municipio": "Bujaru",
+    "estado": "PA",
+    "curiosidade": "Cidade com forte cultura agrícola e festas tradicionais conhecidas pelos pratos típicos de mandioca."
+  },
+  {
+    "municipio": "Cachoeira do Arari",
+    "estado": "PA",
+    "curiosidade": "Lar do Museu do Marajó, criado por Padre Giovanni Gallo, dedicado à arte e cultura marajoara."
+  },
+  {
+    "municipio": "Cachoeira do Piriá",
+    "estado": "PA",
+    "curiosidade": "Cidade com forte cultura rural e festas celebradas com música paraense tradicional e culinária local."
+  },
+  {
+    "municipio": "Cametá",
+    "estado": "PA",
+    "curiosidade": "Uma das cidades mais antigas da Amazônia e berço do carimbó. Celebrações tradicionais movimentam a região há séculos."
+  },
+  {
+    "municipio": "Canaã dos Carajás",
+    "estado": "PA",
+    "curiosidade": "Conhecida mundialmente pela produção mineral. A cidade também valoriza artesanato indígena e projetos culturais."
+  },
+  {
+    "municipio": "Capanema",
+    "estado": "PA",
+    "curiosidade": "Possui forte tradição no teatro e na música regional. Seus festivais atraem visitantes de todo o nordeste paraense."
+  },
+  {
+    "municipio": "Capitão Poço",
+    "estado": "PA",
+    "curiosidade": "Reconhecida como Terra da Laranja. Suas plantações transformaram a cidade em referência agrícola."
+  },
+  {
+    "municipio": "Castanhal",
+    "estado": "PA",
+    "curiosidade": "Grande centro urbano conhecido pelo carimbó, bandas filarmônicas e forte movimento cultural e artístico."
+  },
+  {
+    "municipio": "Chaves",
+    "estado": "PA",
+    "curiosidade": "Parte do arquipélago do Marajó, conhecida pela criação de búfalos e produção de queijo e carne de búfalo."
+  },
+  {
+    "municipio": "Colares",
+    "estado": "PA",
+    "curiosidade": "Ficou famosa pelo fenômeno ufológico 'Chupa-Chupa' nos anos 1970, atraindo pesquisadores do mundo todo."
+  },
+  {
+    "municipio": "Conceição do Araguaia",
+    "estado": "PA",
+    "curiosidade": "Cidade marcada por lendas do rio Araguaia e por festas tradicionais que misturam cultura sertaneja e amazônica."
+  },
+  {
+    "municipio": "Concórdia do Pará",
+    "estado": "PA",
+    "curiosidade": "Muito conhecida pela produção de farinha de mandioca, considerada uma das melhores da região."
+  },
+  {
+    "municipio": "Cumaru do Norte",
+    "estado": "PA",
+    "curiosidade": "Região com forte presença indígena e tradições rurais. Suas festas são marcadas por música e culinária típica."
+  },
+  {
+    "municipio": "Curionópolis",
+    "estado": "PA",
+    "curiosidade": "Associada à história da mineração e garimpos. Sua cultura mistura costumes nordestinos, indígenas e amazônicos."
+  },
+  {
+    "municipio": "Curralinho",
+    "estado": "PA",
+    "curiosidade": "Cidade ribeirinha onde a pesca artesanal e o artesanato em miriti fazem parte do cotidiano há gerações."
+  },
+  {
+    "municipio": "Curuá",
+    "estado": "PA",
+    "curiosidade": "Conhecida pela culinária baseada em peixes amazônicos e pela forte cultura de festivais religiosos."
+  },
+  {
+    "municipio": "Curuçá",
+    "estado": "PA",
+    "curiosidade": "Famosa pela lenda da Serpente Encantada e por pratos tradicionais como o caranguejo e o peixe ao tucupi."
+  },
+  [
+  {
+    "municipio": "Dom Eliseu",
+    "estado": "PA",
+    "curiosidade": "A cidade ficou conhecida pela força de suas feiras agrícolas e pela mistura cultural trazida por migrantes de várias partes do Brasil."
+  },
+  {
+    "municipio": "Eldorado do Carajás",
+    "estado": "PA",
+    "curiosidade": "Marcada por eventos históricos importantes que repercutiram no mundo. A cidade tem forte presença de movimentos culturais e sociais."
+  },
+  {
+    "municipio": "Faro",
+    "estado": "PA",
+    "curiosidade": "Reconhecida pela dança do Çairé e por tradições ribeirinhas seculares. Suas festas incluem cantos e rituais herdados dos povos amazônicos."
+  },
+  {
+    "municipio": "Floresta do Araguaia",
+    "estado": "PA",
+    "curiosidade": "Conhecida nacionalmente por sua produção de abacaxi, um dos mais doces do Brasil. O Festival do Abacaxi é um marco local."
+  },
+  {
+    "municipio": "Garrafão do Norte",
+    "estado": "PA",
+    "curiosidade": "Possui forte cultura agrícola e celebra festas tradicionais ligadas à colheita. A música regional está presente em eventos comunitários."
+  },
+  {
+    "municipio": "Goianésia do Pará",
+    "estado": "PA",
+    "curiosidade": "Famosa por suas cavalgadas e festas sertanejas. É um dos municípios que mais celebram tradições rurais no Pará."
+  },
+  {
+    "municipio": "Gurupá",
+    "estado": "PA",
+    "curiosidade": "Antiga fortificação portuguesa que já foi um dos principais entrepostos comerciais da Amazônia. A cidade preserva arquitetura histórica."
+  },
+  {
+    "municipio": "Igarapé-Açu",
+    "estado": "PA",
+    "curiosidade": "Conhecida pela força de suas bandas marciais e festivais culturais. A cidade produz doces e geleias muito apreciados."
+  },
+  {
+    "municipio": "Igarapé-Miri",
+    "estado": "PA",
+    "curiosidade": "Capital mundial do açaí, com produção que abastece diversos estados. Suas festas são marcadas por música e culinária amazônica."
+  },
+  {
+    "municipio": "Inhangapi",
+    "estado": "PA",
+    "curiosidade": "Guarda tradições indígenas e agrícolas. A cidade celebra festas comunitárias com danças e culinária típica."
+  },
+  {
+    "municipio": "Ipixuna do Pará",
+    "estado": "PA",
+    "curiosidade": "Local marcado pela cultura de migrantes nordestinos, resultando em uma culinária e festividades bem diversificadas."
+  },
+  {
+    "municipio": "Irituia",
+    "estado": "PA",
+    "curiosidade": "Terra da tradicional Festa da Melancia, conhecida em toda a região. Seu artesanato utiliza fibras e sementes amazônicas."
+  },
+  {
+    "municipio": "Itaituba",
+    "estado": "PA",
+    "curiosidade": "Cidade famosa pelos garimpos de ouro e pela vida comercial intensa. Também mantém fortes tradições culturais ribeirinhas."
+  },
+  {
+    "municipio": "Itupiranga",
+    "estado": "PA",
+    "curiosidade": "Conhecida por preservarem lendas e histórias antigas da região amazônica. A culinária local é baseada em peixes e frutas regionais."
+  },[
+  {
+    "municipio": "Jacareacanga",
+    "estado": "PA",
+    "curiosidade": "Importante território de povos indígenas Munduruku, conhecidos por suas tradições, rituais e artesanato emblemático."
+  },
+  {
+    "municipio": "Jacundá",
+    "estado": "PA",
+    "curiosidade": "Reconhecida por eventos culturais que misturam influências amazônicas e sertanejas. A pesca artesanal é parte do cotidiano local."
+  },
+  {
+    "municipio": "Juruti",
+    "estado": "PA",
+    "curiosidade": "Sede do Festival das Tribos, o 'Festribal', uma das maiores festas culturais da Amazônia, comparada ao Festival de Parintins."
+  },
+  {
+    "municipio": "Limoeiro do Ajuru",
+    "estado": "PA",
+    "curiosidade": "Famosa pelos círios e festas religiosas que reúnem milhares de devotos. O artesanato em miriti é muito valorizado."
+  },
+  {
+    "municipio": "Mãe do Rio",
+    "estado": "PA",
+    "curiosidade": "Cidade marcada pelas tradições nordestinas trazidas por migrantes. Suas festas juninas são referência regional."
+  },
+  {
+    "municipio": "Magalhães Barata",
+    "estado": "PA",
+    "curiosidade": "Celebra festas populares que mantêm viva a música tradicional paraense. Sua culinária destaca-se por pratos à base de mandioca."
+  },
+  {
+    "municipio": "Marabá",
+    "estado": "PA",
+    "curiosidade": "Ponto de encontro de várias culturas amazônicas. Conhecida por sua culinária, artesanato indígena e comércio histórico de castanha-do-pará."
+  },
+  {
+    "municipio": "Maracanã",
+    "estado": "PA",
+    "curiosidade": "Lar da famosa Praia de Maruda e de tradições religiosas fortes. A cultura litorânea marca sua identidade."
+  },
+  {
+    "municipio": "Marapanim",
+    "estado": "PA",
+    "curiosidade": "Terra do tradicional Çairé e de ritmos como o siriá. Suas comunidades litorâneas preservam festas centenárias."
+  },
+  {
+    "municipio": "Marituba",
+    "estado": "PA",
+    "curiosidade": "Cresceu com força cultural própria, marcada por música, gastronomia e movimentos comunitários muito atuantes."
+  },
+  {
+    "municipio": "Medicilândia",
+    "estado": "PA",
+    "curiosidade": "Conhecida nacionalmente por ser grande produtora de cacau fino, presente em chocolates premiados."
+  },
+  {
+    "municipio": "Melgaço",
+    "estado": "PA",
+    "curiosidade": "Um dos municípios mais isolados da Amazônia, preserva tradições ribeirinhas e costumes seculares transmitidos oralmente."
+  },
+  {
+    "municipio": "Mocajuba",
+    "estado": "PA",
+    "curiosidade": "Cidade famosa por suas canoas e embarcações artesanais. O artesanato naval é um símbolo cultural."
+  },
+  {
+    "municipio": "Moju",
+    "estado": "PA",
+    "curiosidade": "Conhecida pelo Festival da Pupunha e pela produção de farinha. Guardiã de tradições agrícolas e culinárias amazônicas."
+  },
+  {
+    "municipio": "Mojuí dos Campos",
+    "estado": "PA",
+    "curiosidade": "Município jovem conhecido por suas festas rurais e cultura comunitária forte. A agricultura familiar domina o cotidiano."
+  },
+  {
+    "municipio": "Monte Alegre",
+    "estado": "PA",
+    "curiosidade": "Abriga um dos mais importantes sítios arqueológicos do Brasil, com pinturas rupestres de milhares de anos."
+  },
+  {
+    "municipio": "Muaná",
+    "estado": "PA",
+    "curiosidade": "Conhecida pelo queijo de búfala e pelo artesanato marajoara. Seu festival de verão atrai visitantes de todo o estado."
+  },
+  {
+    "municipio": "Nova Esperança do Piriá",
+    "estado": "PA",
+    "curiosidade": "Cidade marcada pela integração de povos migrantes, com festas que misturam culturas amazônicas e nordestinas."
+  },
+  {
+    "municipio": "Nova Ipixuna",
+    "estado": "PA",
+    "curiosidade": "Reconhecida pelas tradições rurais, feiras e eventos comunitários que fortalecem a cultura local."
+  },
+  {
+    "municipio": "Nova Timboteua",
+    "estado": "PA",
+    "curiosidade": "Celebrada pela Festa da Farinha, que reúne música, dança e gastronomia típica da região."
+  },
+  {
+    "municipio": "Novo Progresso",
+    "estado": "PA",
+    "curiosidade": "Cidade fortemente ligada ao garimpo e a tradições sertanejas. Cresceu com influências culturais diversas."
+  },
+  {
+    "municipio": "Novo Repartimento",
+    "estado": "PA",
+    "curiosidade": "Nascida após a construção de Tucuruí, tornou-se um polo de migrantes de várias origens, criando forte diversidade cultural."
+  },
+  {
+    "municipio": "Óbidos",
+    "estado": "PA",
+    "curiosidade": "Conhecida pelo 'Carnapauxis', um dos carnavais mais diferenciados do Norte. Possui forte tradição histórica e folclórica."
+  },
+  {
+    "municipio": "Oeiras do Pará",
+    "estado": "PA",
+    "curiosidade": "Famosa pelo Festival do Mapará, prato típico da região. Comunidades ribeirinhas mantêm forte cultura pesqueira."
+  },
+  {
+    "municipio": "Oriximiná",
+    "estado": "PA",
+    "curiosidade": "Abriga quilombos históricos, muitos reconhecidos internacionalmente. Suas comunidades preservam tradições africanas."
+  },
+  {
+    "municipio": "Ourém",
+    "estado": "PA",
+    "curiosidade": "Terra do tradicional Festival de Música Popular Paraense, que revelou inúmeros artistas regionais."
+  },
+  {
+    "municipio": "Ourilândia do Norte",
+    "estado": "PA",
+    "curiosidade": "Região com grande influência indígena e presença forte de garimpo. Eventos sertanejos movimentam a cultura local."
+  },
+  {
+    "municipio": "Pacajá",
+    "estado": "PA",
+    "curiosidade": "Cidade com forte agricultura familiar e festas tradicionais que celebram colheitas e rituais amazônicos."
+  },
+  {
+    "municipio": "Palestina do Pará",
+    "estado": "PA",
+    "curiosidade": "Reconhecida pela culinária caseira e festivais comunitários. Famílias preservam técnicas tradicionais de cultivo."
+  },
+  {
+    "municipio": "Paragominas",
+    "estado": "PA",
+    "curiosidade": "Pioneira em projetos de sustentabilidade, recebeu destaque nacional por iniciativas ambientais inovadoras."
+  },
+  {
+    "municipio": "Parauapebas",
+    "estado": "PA",
+    "curiosidade": "Conhecida como 'Capital do Minério'. Próxima à Floresta Nacional de Carajás, abriga rica diversidade ecológica e cultural."
+  },
+  {
+    "municipio": "Pau D'Arco",
+    "estado": "PA",
+    "curiosidade": "Cidade marcada por tradições rurais e festas sertanejas. Sua culinária inclui pratos típicos amazônicos preparados de forma artesanal."
+  },
+  {
+    "municipio": "Peixe-Boi",
+    "estado": "PA",
+    "curiosidade": "Nomeada em homenagem ao animal amazônico. Suas festas populares mantêm ritmos e danças tradicionais."
+  },
+  {
+    "municipio": "Piçarra",
+    "estado": "PA",
+    "curiosidade": "Cidade que mistura tradições de migrantes com costumes amazônicos. Feiras e cavalgadas são muito populares."
+  },
+  {
+    "municipio": "Placas",
+    "estado": "PA",
+    "curiosidade": "Cresceu com a cultura da madeira e agricultura familiar. A música regional é bastante presente nas festas locais."
+  },
+  {
+    "municipio": "Ponta de Pedras",
+    "estado": "PA",
+    "curiosidade": "Uma das cidades mais antigas do Marajó. Famosa pelos pratos com peixe e camarão e pelo artesanato marajoara."
+  },
+  {
+    "municipio": "Portel",
+    "estado": "PA",
+    "curiosidade": "Cidade ribeirinha com forte tradição de barqueiros e navegadores. Suas festas incluem música indígena e amazônica."
+  },
+  {
+    "municipio": "Porto de Moz",
+    "estado": "PA",
+    "curiosidade": "Conhecida por praias de água doce e comunidades tradicionais que preservam cantos e danças antigas."
+  },
+  {
+    "municipio": "Prainha",
+    "estado": "PA",
+    "curiosidade": "Famosa por praias sazonais e festas folclóricas. A pesca artesanal é elemento central do estilo de vida local."
+  },
+  {
+    "municipio": "Primavera",
+    "estado": "PA",
+    "curiosidade": "Celebra festas comunitárias com música e pratos tradicionais. Suas famílias mantêm cultivo artesanal de frutas e mandioca."
+  },
+  {
+    "municipio": "Quatipuru",
+    "estado": "PA",
+    "curiosidade": "Conhecida pela culinária baseada em frutos do mar e por tradições religiosas celebradas com grande devoção."
+  },
+  {
+    "municipio": "Redenção",
+    "estado": "PA",
+    "curiosidade": "Foi um dos primeiros municípios do Brasil a abolir oficialmente o trabalho escravo em propriedades locais, um marco histórico importante."
+  },
+  {
+    "municipio": "Rio Maria",
+    "estado": "PA",
+    "curiosidade": "Tem forte tradição em eventos agropecuários e feiras rurais. A cultura sertaneja é muito presente."
+  },
+  {
+    "municipio": "Rondon do Pará",
+    "estado": "PA",
+    "curiosidade": "Cresceu com forte presença de colonos de várias regiões, criando uma identidade cultural bastante diversificada."
+  },
+  {
+    "municipio": "Rurópolis",
+    "estado": "PA",
+    "curiosidade": "Cidade conhecida por seus movimentos comunitários e festas culturais que reúnem música e gastronomia típica."
+  },
+  {
+    "municipio": "Salinópolis",
+    "estado": "PA",
+    "curiosidade": "Famosa pelas praias de Salinas e pelo veraneio. A vida noturna e os festivais de verão movimentam o turismo local."
+  },
+  {
+    "municipio": "Salvaterra",
+    "estado": "PA",
+    "curiosidade": "Local onde tradições marajoaras são muito preservadas, incluindo dança, cerâmica e culinária baseada em búfalo."
+  },
+  {
+    "municipio": "Santa Bárbara do Pará",
+    "estado": "PA",
+    "curiosidade": "Reconhecida por suas festas religiosas e pela culinária típica com pratos à base de peixe e tucupi."
+  },
+  {
+    "municipio": "Santa Cruz do Arari",
+    "estado": "PA",
+    "curiosidade": "Famosa pela tradicional 'Festa do Peixe', que reúne ribeirinhos e celebra costumes amazônicos."
+  },
+  {
+    "municipio": "Santa Isabel do Pará",
+    "estado": "PA",
+    "curiosidade": "Cidade famosa por seu Festival do Açaí, que celebra o fruto símbolo da culinária paraense."
+  },
+  {
+    "municipio": "Santa Luzia do Pará",
+    "estado": "PA",
+    "curiosidade": "Cultura marcada por festas de rua e música popular. A comunidade preserva práticas artesanais tradicionais."
+  },
+  {
+    "municipio": "Santa Maria das Barreiras",
+    "estado": "PA",
+    "curiosidade": "Conhecida pela produção agropecuária e pelas grandes cavalhadas que atraem visitantes de cidades vizinhas."
+  },
+  {
+    "municipio": "Santa Maria do Pará",
+    "estado": "PA",
+    "curiosidade": "Lar do famoso Festival do Cupuaçu, que celebra culinária, música e costumes tradicionais."
+  },
+  {
+    "municipio": "Santana do Araguaia",
+    "estado": "PA",
+    "curiosidade": "A cultura sertaneja é muito forte, com festas de rodeio e eventos de música country que mobilizam toda a população."
+  },
+  {
+    "municipio": "Santarém",
+    "estado": "PA",
+    "curiosidade": "Lar da bela Alter do Chão e do tradicional Çairé. Uma das cidades mais ricas culturalmente da Amazônia."
+  },
+  {
+    "municipio": "Santarém Novo",
+    "estado": "PA",
+    "curiosidade": "Conhecida por festivais e música regional. A tradição pesqueira molda boa parte de sua culinária local."
+  },
+  {
+    "municipio": "Santo Antônio do Tauá",
+    "estado": "PA",
+    "curiosidade": "Famosa pelas comidas típicas à base de mandioca e por festas populares animadas por bandas regionais."
+  },
+  {
+    "municipio": "São Caetano de Odivelas",
+    "estado": "PA",
+    "curiosidade": "Maior produtor de caranguejo do Pará. A culinária local é um espetáculo à parte, com pratos famosos entre turistas."
+  },
+  {
+    "municipio": "São Domingos do Araguaia",
+    "estado": "PA",
+    "curiosidade": "Cidade marcada por histórias de migrantes e tradições sertanejas que se misturaram à cultura amazônica."
+  },
+  {
+    "municipio": "São Domingos do Capim",
+    "estado": "PA",
+    "curiosidade": "Famoso pelo 'Pororoca Fest', evento ligado à onda gigante que se forma no Rio Guamá."
+  },
+  {
+    "municipio": "São Félix do Xingu",
+    "estado": "PA",
+    "curiosidade": "Possui um dos maiores rebanhos bovinos do planeta. A cultura local mistura costumes indígenas, rurais e amazônicos."
+  },
+  {
+    "municipio": "São Francisco do Pará",
+    "estado": "PA",
+    "curiosidade": "Reconhecida pelos doces caseiros e pela tradicional Festa de São Francisco, celebrada com música e danças."
+  },
+  {
+    "municipio": "São Geraldo do Araguaia",
+    "estado": "PA",
+    "curiosidade": "Conhecida pela forte presença de grupos indígenas e por tradições sertanejas trazidas por antigos migrantes."
+  },
+  {
+    "municipio": "São João da Ponta",
+    "estado": "PA",
+    "curiosidade": "Cidade ligada ao extrativismo do mangue e à culinária baseada em caranguejo e mariscos."
+  },
+  {
+    "municipio": "São João de Pirabas",
+    "estado": "PA",
+    "curiosidade": "Muito procurada por suas praias de água clara e culinária rica em peixes e frutos do mar."
+  },
+  {
+    "municipio": "São João do Araguaia",
+    "estado": "PA",
+    "curiosidade": "Cidade com tradições rurais e festas populares que reúnem música e gastronomia típica da região."
+  },
+  {
+    "municipio": "São Miguel do Guamá",
+    "estado": "PA",
+    "curiosidade": "Reconhecida pela fabricação do tradicional 'miraçu', bebida artesanal local. Suas festas populares são muito animadas."
+  },
+  {
+    "municipio": "São Sebastião da Boa Vista",
+    "estado": "PA",
+    "curiosidade": "Famosa pelos búfalos, pelo artesanato marajoara e pelas danças tradicionais de origem indígena."
+  },
+  {
+    "municipio": "Sapucaia",
+    "estado": "PA",
+    "curiosidade": "Cidade com forte presença rural e festivais sertanejos que atraem visitantes de toda a região."
+  },
+  {
+    "municipio": "Senador José Porfírio",
+    "estado": "PA",
+    "curiosidade": "Comunidades ribeirinhas mantêm tradições como pesca artesanal e danças populares transmitidas entre gerações."
+  },
+  {
+    "municipio": "Soure",
+    "estado": "PA",
+    "curiosidade": "Coração do artesanato marajoara, com cerâmica única no mundo. A culinária com búfalo é símbolo da cidade."
+  },
+  {
+    "municipio": "Tailândia",
+    "estado": "PA",
+    "curiosidade": "Cidade marcada por forte presença de migrantes, o que criou uma mistura cultural evidente nas festas e culinária."
+  },
+  {
+    "municipio": "Terra Alta",
+    "estado": "PA",
+    "curiosidade": "Cidade pequena com tradições fortes em música e culinária caseira. Festas religiosas são muito importantes."
+  },
+  {
+    "municipio": "Terra Santa",
+    "estado": "PA",
+    "curiosidade": "Conhecida pela produção de castanha-do-pará e artesanato em madeira. A cultura ribeirinha é muito marcante."
+  },
+  {
+    "municipio": "Tomé-Açu",
+    "estado": "PA",
+    "curiosidade": "Famosa pela presença japonesa que introduziu o cultivo de pimenta-do-reino e sistemas agrícolas inovadores."
+  },
+  {
+    "municipio": "Tracuateua",
+    "estado": "PA",
+    "curiosidade": "Reconhecida pelo artesanato de fibras naturais e pela gastronomia rica em pratos tradicionais amazônicos."
+  },
+  {
+    "municipio": "Trairão",
+    "estado": "PA",
+    "curiosidade": "Cidade com forte cultura de pesca e festivais populares animados. Sua população preserva tradições antigas da região."
+  },
+  {
+    "municipio": "Tucumã",
+    "estado": "PA",
+    "curiosidade": "Cresceu com influências de várias regiões do Brasil. A música sertaneja e as cavalgadas fazem parte da identidade local."
+  },
+  {
+    "municipio": "Tucuruí",
+    "estado": "PA",
+    "curiosidade": "Famosa mundialmente pela hidrelétrica que transformou a região. Sua cultura valoriza música, dança e gastronomia amazônica."
+  },
+  {
+    "municipio": "Ulianópolis",
+    "estado": "PA",
+    "curiosidade": "Cidade agrícola com fortes festas comunitárias. Migrantes ajudaram a moldar sua culinária e tradições."
+  },
+  {
+    "municipio": "Uruará",
+    "estado": "PA",
+    "curiosidade": "Cresceu com frentes de colonização e mantém forte cultura agrícola familiar. Suas festas destacam comida típica e música regional."
+  },
+  {
+    "municipio": "Vigia",
+    "estado": "PA",
+    "curiosidade": "Uma das cidades mais antigas do Pará, famosa pelos doces tradicionais e pela Festa de São Sebastião."
+  },
+  {
+    "municipio": "Viseu",
+    "estado": "PA",
+    "curiosidade": "Cidade marcada por lendas antigas e cultura pesqueira. Seu folclore é um dos mais ricos do nordeste paraense."
+  },
+  {
+    "municipio": "Vitória do Xingu",
+    "estado": "PA",
+    "curiosidade": "Surgiu com a construção da UHE Belo Monte e hoje tem forte diversidade cultural e crescimento rápido."
+  },
+  {
+    "municipio": "Xinguara",
+    "estado": "PA",
+    "curiosidade": "Tradicional nas festas de rodeio e eventos sertanejos. A cultura rural é muito presente no dia a dia da cidade."
+  }
+]
+
+]
+
+]

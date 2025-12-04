@@ -1,0 +1,1110 @@
+[
+  {
+    "municipio": "Água Branca",
+    "estado": "PB",
+    "curiosidade": "Localizada na região serrana do Sertão, possui clima mais ameno que o restante da região. Suas paisagens montanhosas atraem visitantes interessados em trilhas."
+  },
+  {
+    "municipio": "Aguiar",
+    "estado": "PB",
+    "curiosidade": "Conhecida pela forte produção de arroz irrigado às margens do Rio Piancó. A cidade mantém tradições sertanejas vivas em festas e eventos culturais."
+  },
+  {
+    "municipio": "Alagoa Grande",
+    "estado": "PB",
+    "curiosidade": "Terra natal de Jackson do Pandeiro, um dos maiores ritmistas do Brasil. O município preserva casarões históricos e engenhos tradicionais."
+  },
+  {
+    "municipio": "Alagoa Nova",
+    "estado": "PB",
+    "curiosidade": "Localizada no Brejo Paraibano, famosa pelo clima frio e pela produção agrícola. Suas festas tradicionais movimentam turismo regional."
+  },
+  {
+    "municipio": "Alagoinha",
+    "estado": "PB",
+    "curiosidade": "Abriga o sítio arqueológico da Pedra do Letreiro, com inscrições rupestres milenares. Conhecida também por cachoeiras e áreas naturais preservadas."
+  },
+  {
+    "municipio": "Alcantil",
+    "estado": "PB",
+    "curiosidade": "Município do Cariri com paisagens áridas e formações rochosas. A economia é sustentada pela pecuária e pela agricultura de subsistência."
+  },
+  {
+    "municipio": "Algodão de Jandaíra",
+    "estado": "PB",
+    "curiosidade": "Antiga Mazagão, renomeada em referência ao cultivo de algodão na região. Mantém tradições rurais e vida comunitária marcante."
+  },
+  {
+    "municipio": "Alhandra",
+    "estado": "PB",
+    "curiosidade": "Importante centro indígena dos potiguaras e polo industrial do Litoral Sul. Sua geografia inclui belas praias e áreas naturais protegidas."
+  },
+  {
+    "municipio": "Amparo",
+    "estado": "PB",
+    "curiosidade": "Um dos menores municípios da PB, com forte identidade rural. Conhecido pela tranquilidade e por festas religiosas tradicionais."
+  },
+  {
+    "municipio": "Aparecida",
+    "estado": "PB",
+    "curiosidade": "Cresceu devido ao fluxo da BR-230, tornando-se ponto comercial estratégico. Cultura sertaneja e vaquejadas são marcas fortes da região."
+  },
+  {
+    "municipio": "Araçagi",
+    "estado": "PB",
+    "curiosidade": "Famosa pela tradicional Festa do Caju, que movimenta todo o Brejo. Possui forte produção agrícola, especialmente de frutas regionais."
+  },
+  {
+    "municipio": "Arara",
+    "estado": "PB",
+    "curiosidade": "Localizada em área montanhosa do Brejo, com clima frio e belas vistas. Possui patrimônio histórico ligado à cultura religiosa."
+  },
+  {
+    "municipio": "Araruna",
+    "estado": "PB",
+    "curiosidade": "Sede do Parque Estadual Pedra da Boca, destino de ecoturismo e esportes radicais. Município com forte tradição cultural e natureza exuberante."
+  },
+  {
+    "municipio": "Areia",
+    "estado": "PB",
+    "curiosidade": "Cidade histórica tombada e berço de grandes artistas e movimentos culturais. Famosa pela produção de cachaça artesanal e pelo clima frio."
+  },
+  {
+    "municipio": "Areial",
+    "estado": "PB",
+    "curiosidade": "Destaca-se pela cultura agrícola e pela vida comunitária típica do Agreste. Conhecida também pela gastronomia regional."
+  },
+  {
+    "municipio": "Aroeiras",
+    "estado": "PB",
+    "curiosidade": "Município do Agreste com economia voltada à pecuária e agricultura. Festas religiosas atraem moradores de toda a região."
+  },
+  {
+    "municipio": "Assunção",
+    "estado": "PB",
+    "curiosidade": "Situada no Cariri, com forte identidade sertaneja. A pecuária de pequeno porte é fundamental para a economia local."
+  },
+  {
+    "municipio": "Baía da Traição",
+    "estado": "PB",
+    "curiosidade": "Um dos maiores territórios indígenas potiguaras. Suas praias preservadas são destaque do Litoral Norte paraibano."
+  },
+  {
+    "municipio": "Bananeiras",
+    "estado": "PB",
+    "curiosidade": "Clima frio de serra e construções coloniais tornam a cidade um dos principais destinos turísticos do Brejo. O São João local é um dos mais famosos da PB."
+  },
+  {
+    "municipio": "Baraúna",
+    "estado": "PB",
+    "curiosidade": "Município tradicional do Seridó paraibano. Destaca-se pela vida rural e festas religiosas que reúnem toda a comunidade."
+  },
+  {
+    "municipio": "Barra de Santa Rosa",
+    "estado": "PB",
+    "curiosidade": "Centro comercial do Curimataú, com feiras tradicionais e cultura sertaneja. A cidade é hub regional para serviços e comércio."
+  },
+  {
+    "municipio": "Barra de Santana",
+    "estado": "PB",
+    "curiosidade": "Formada por comunidades às margens do Rio Paraíba, possui forte ligação com a agricultura. A barragem de Campos movimenta a economia local."
+  },
+  {
+    "municipio": "Barra de São Miguel",
+    "estado": "PB",
+    "curiosidade": "Cidade tranquila do Cariri, com paisagens semiáridas marcantes. Suas tradições religiosas formam a base da cultura local."
+  },
+  {
+    "municipio": "Bayeux",
+    "estado": "PB",
+    "curiosidade": "Integrante da Grande João Pessoa, tem papel industrial e logístico. Cresceu devido à proximidade com o aeroporto e rodovias principais."
+  },
+  {
+    "municipio": "Belém",
+    "estado": "PB",
+    "curiosidade": "Conhecida pelo Arraiá do Brejo, um dos maiores festejos juninos da região. Possui economia baseada em agricultura e comércio."
+  },
+  {
+    "municipio": "Belém do Brejo do Cruz",
+    "estado": "PB",
+    "curiosidade": "Município sertanejo conhecido pelas vaquejadas e pela forte cultura agropecuária. Tradições rurais moldam a vida local."
+  },
+  {
+    "municipio": "Bernardino Batista",
+    "estado": "PB",
+    "curiosidade": "Cidade jovem no Alto Sertão, marcada pela agricultura familiar. Festas religiosas movimentam a economia local."
+  },
+  {
+    "municipio": "Boa Ventura",
+    "estado": "PB",
+    "curiosidade": "Conhecida pelas minas de pedras preciosas, como ametistas e quartzos. Um dos maiores polos de garimpo artesanal da região."
+  },
+  {
+    "municipio": "Boa Vista",
+    "estado": "PB",
+    "curiosidade": "Município de clima seco e paisagens de caatinga preservada. A cidade é passagem obrigatória para quem segue para o Cariri."
+  },
+  {
+    "municipio": "Bom Jesus",
+    "estado": "PB",
+    "curiosidade": "Um dos menores municípios paraibanos, com forte senso de comunidade. Economia baseada em agricultura e comércio local."
+  },
+  {
+    "municipio": "Bom Sucesso",
+    "estado": "PB",
+    "curiosidade": "Cidade sertaneja com raízes históricas ligadas a antigas fazendas. Mantém tradições culturais e religiosas fortes."
+  },
+  {
+    "municipio": "Bonito de Santa Fé",
+    "estado": "PB",
+    "curiosidade": "Localizado em área montanhosa do Alto Sertão. Tradições religiosas e festas populares moldam o cotidiano da cidade."
+  },
+  {
+    "municipio": "Boqueirão",
+    "estado": "PB",
+    "curiosidade": "Abriga o Açude Epitácio Pessoa, um dos maiores do Nordeste. Sua economia gira em torno da pesca, comércio e turismo regional."
+  },
+  {
+    "municipio": "Borborema",
+    "estado": "PB",
+    "curiosidade": "Cidade serrana com clima ameno e forte tradição católica. Suas festas atraem moradores de toda a região."
+  },
+  {
+    "municipio": "Brejo do Cruz",
+    "estado": "PB",
+    "curiosidade": "Terra natal de Zé Ramalho, ícone da música brasileira. Município forte na pecuária e na cultura popular."
+  },
+  {
+    "municipio": "Brejo dos Santos",
+    "estado": "PB",
+    "curiosidade": "Cidade rural com forte identidade sertaneja. O artesanato e a agricultura familiar são pilares da economia local."
+  },
+  {
+    "municipio": "Caaporã",
+    "estado": "PB",
+    "curiosidade": "Polo industrial com importante participação indígena. Possui litoral com praias preservadas próximas a Pernambuco."
+  },
+  {
+    "municipio": "Cabaceiras",
+    "estado": "PB",
+    "curiosidade": "Conhecida como 'Roliúde Nordestina', cenário de filmes como O Auto da Compadecida. É o município mais seco do Brasil, com paisagens icônicas."
+  },
+  {
+    "municipio": "Cabedelo",
+    "estado": "PB",
+    "curiosidade": "Abriga o famoso pôr do sol do Jacaré ao som de Bolero de Ravel. Importante polo portuário e turístico da Paraíba."
+  },
+  {
+    "municipio": "Cachoeira dos Índios",
+    "estado": "PB",
+    "curiosidade": "Região histórica ligada a aldeamentos indígenas. Mantém tradições culturais do Alto Sertão."
+  },
+  {
+    "municipio": "Cacimba de Areia",
+    "estado": "PB",
+    "curiosidade": "Município rural próximo a Patos, com economia baseada em pecuária. Suas festas religiosas fortalecem laços comunitários."
+  },
+  {
+    "municipio": "Cacimba de Dentro",
+    "estado": "PB",
+    "curiosidade": "Importante centro do Curimataú, com economia diversificada. Tradições culturais e políticas são fortes na região."
+  },
+  {
+    "municipio": "Cacimbas",
+    "estado": "PB",
+    "curiosidade": "Cidade jovem do sertão, marcada pela vida rural e cultura comunitária. Possui economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Caiçara",
+    "estado": "PB",
+    "curiosidade": "Município do Brejo com tradições culturais preservadas. Economia agrícola e clima agradável definem a cidade."
+  },
+  {
+    "municipio": "Cajazeiras",
+    "estado": "PB",
+    "curiosidade": "Conhecida como 'a cidade que ensinou a Paraíba a ler', devido ao pioneirismo educacional. Hoje é polo universitário e cultural do Sertão."
+  },
+  {
+    "municipio": "Cajazeirinhas",
+    "estado": "PB",
+    "curiosidade": "Município pequeno com identidade sertaneja forte. Depende da agricultura e pecuária de pequeno porte."
+  },
+  {
+    "municipio": "Caldas Brandão",
+    "estado": "PB",
+    "curiosidade": "Cidade histórica ligada aos engenhos e à produção agrícola. Possui comunidades tradicionais e forte religiosidade."
+  },
+  {
+    "municipio": "Camalaú",
+    "estado": "PB",
+    "curiosidade": "Município do Cariri com rios temporários e paisagens de caatinga. A agricultura e a pecuária sustentam a economia."
+  },
+  {
+    "municipio": "Campina Grande",
+    "estado": "PB",
+    "curiosidade": "Maior polo tecnológico do Nordeste e sede do 'Maior São João do Mundo'. Cidade estratégica entre litoral e sertão, referência educacional."
+  },
+  {
+    "municipio": "Campo de Santana (Tacima)",
+    "estado": "PB",
+    "curiosidade": "Renomeada como Tacima, é centro do Curimataú. A cultura agrícola e as tradições rurais são base da identidade local."
+  },
+  {
+    "municipio": "Capim",
+    "estado": "PB",
+    "curiosidade": "Município do Litoral Norte com forte produção agrícola. Áreas ribeirinhas favorecem o cultivo de frutas e hortaliças."
+  },
+  {
+    "municipio": "Caraúbas",
+    "estado": "PB",
+    "curiosidade": "Cidade do Cariri com paisagens áridas e cultura sertaneja forte. Economia baseada em pecuária e agricultura."
+  },
+  {
+    "municipio": "Carrapateira",
+    "estado": "PB",
+    "curiosidade": "Localizada entre serras do Alto Sertão, com belas vistas naturais. Mantém cultura rural intensa e festas tradicionais."
+  },
+  {
+    "municipio": "Casserengue",
+    "estado": "PB",
+    "curiosidade": "Cidade marcada por manifestações culturais fortes, como quadrilhas e festas religiosas. Economia baseada em agricultura familiar."
+  },
+  {
+    "municipio": "Catingueira",
+    "estado": "PB",
+    "curiosidade": "Terra de Inácio da Catingueira, figura histórica da poesia popular. Cidade com rica tradição sertaneja."
+  },
+  {
+    "municipio": "Catolé do Rocha",
+    "estado": "PB",
+    "curiosidade": "Centro político e cultural do Sertão. Reconhecida pela música, literatura regional e forte presença de universidades."
+  },
+  {
+    "municipio": "Caturité",
+    "estado": "PB",
+    "curiosidade": "Localizada entre serras do Cariri, com forte presença agrícola. Suas festas comunitárias refletem a cultura rural."
+  },
+  {
+    "municipio": "Conceição",
+    "estado": "PB",
+    "curiosidade": "Terra natal de Pinto do Acordeon e importante polo cultural do Vale do Piancó. Região marcada por serras e tradições sertanejas."
+  },
+  {
+    "municipio": "Condado",
+    "estado": "PB",
+    "curiosidade": "Município do Sertão com forte produção agropecuária. Suas festas religiosas são tradição centenária."
+  },
+  {
+    "municipio": "Conde",
+    "estado": "PB",
+    "curiosidade": "Destino turístico importante, com praias famosas como Tambaba e Coqueirinho. Cultura local mistura raízes indígenas e litorâneas."
+  },
+  {
+    "municipio": "Congo",
+    "estado": "PB",
+    "curiosidade": "Município do Cariri marcado por tradições religiosas e culturais. Economia baseada em agricultura e comércio regional."
+  },
+  {
+    "municipio": "Coremas",
+    "estado": "PB",
+    "curiosidade": "Sede do grande complexo de açudes Coremas-Mãe D'Água. Considerada um dos principais polos hídricos do Nordeste."
+  },
+  {
+    "municipio": "Coxixola",
+    "estado": "PB",
+    "curiosidade": "Um dos menores municípios do estado, com forte vida comunitária. Mantém tradições culturais do Cariri."
+  },
+  {
+    "municipio": "Cruz do Espírito Santo",
+    "estado": "PB",
+    "curiosidade": "Município do Litoral com história ligada aos engenhos e à agricultura. Cultura religiosa movimenta a cidade."
+  },
+  {
+    "municipio": "Cubati",
+    "estado": "PB",
+    "curiosidade": "Destaca-se pela extração de caulim e pelo motocross, recebendo eventos de grande porte. Comunidade vibrante e tradicional."
+  },
+  {
+    "municipio": "Cuité",
+    "estado": "PB",
+    "curiosidade": "Cidade serrana e polo universitário. O clima frio e o Festival de Inverno são marcas da região."
+  },
+  {
+    "municipio": "Cuité de Mamanguape",
+    "estado": "PB",
+    "curiosidade": "Parte do território indígena potiguara, com cultura nativa preservada. Economia baseada em agricultura e pesca."
+  },
+  {
+    "municipio": "Cuitegi",
+    "estado": "PB",
+    "curiosidade": "Produtora de cachaça artesanal e frutas tropicais. Região rural com tradições agrícolas fortes."
+  },
+  {
+    "municipio": "Curral de Cima",
+    "estado": "PB",
+    "curiosidade": "Município recente, com economia voltada à agricultura. Mantém vida comunitária simples e tradicional."
+  },
+  {
+    "municipio": "Curral Velho",
+    "estado": "PB",
+    "curiosidade": "Cidade pequena do Sertão, marcada pela pecuária e tradições populares. Paisagens típicas da caatinga."
+  },
+  {
+    "municipio": "Damião",
+    "estado": "PB",
+    "curiosidade": "Município do Curimataú com forte identidade rural. Festas comunitárias são o principal evento local."
+  },
+  {
+    "municipio": "Desterro",
+    "estado": "PB",
+    "curiosidade": "Localizado na Serra do Teixeira, com clima agradável e paisagens elevadas. Forte tradição religiosa e cultural."
+  },
+  {
+    "municipio": "Diamante",
+    "estado": "PB",
+    "curiosidade": "Município do Vale do Piancó, com história ligada a garimpos. Possui serras e trilhas naturais."
+  },
+  {
+    "municipio": "Dona Inês",
+    "estado": "PB",
+    "curiosidade": "Cidade serrana com clima frio e belas vistas. Mantém tradições culturais e religiosas fortes."
+  },
+  {
+    "municipio": "Duas Estradas",
+    "estado": "PB",
+    "curiosidade": "Nomeada por seu entroncamento histórico de rotas. Cultura agrícola e festejos tradicionais definem o município."
+  },
+  {
+    "municipio": "Emas",
+    "estado": "PB",
+    "curiosidade": "Município sertanejo com baixa densidade populacional. A economia gira em torno da pecuária e agricultura familiar."
+  },
+  {
+    "municipio": "Esperança",
+    "estado": "PB",
+    "curiosidade": "Importante polo comercial e cultural do Agreste. Conhecida por sua música, tradições religiosas e festas juninas."
+  },
+  {
+    "municipio": "Fagundes",
+    "estado": "PB",
+    "curiosidade": "Abriga a Pedra de Santo Antônio, ponto de peregrinação religiosa. A cidade preserva tradições rurais e festas seculares."
+  },
+  {
+    "municipio": "Frei Martinho",
+    "estado": "PB",
+    "curiosidade": "Cidade serrana com clima frio e potencial turístico. A agricultura familiar sustenta grande parte da economia."
+  },
+  {
+    "municipio": "Gado Bravo",
+    "estado": "PB",
+    "curiosidade": "Município rural com forte presença de agricultura familiar. A cidade mantém tradições sertanejas e festas comunitárias."
+  },
+  {
+    "municipio": "Guarabira",
+    "estado": "PB",
+    "curiosidade": "Capital do Brejo Paraibano, polo comercial e religioso. Sede da Diocese e centro de cultura regional."
+  },
+  {
+    "municipio": "Gurinhém",
+    "estado": "PB",
+    "curiosidade": "Cidade agrícola do Agreste, com destaque para o cultivo de cana e frutas. Cultura rural presente nas festas locais."
+  },
+  {
+    "municipio": "Gurjão",
+    "estado": "PB",
+    "curiosidade": "Sede do famoso Festival do Bode Rei, um dos maiores do Nordeste. A economia gira em torno da caprinocultura."
+  },
+  {
+    "municipio": "Ibiara",
+    "estado": "PB",
+    "curiosidade": "Município do Vale do Piancó cercado por serras. Cultura sertaneja presente em todo o cotidiano local."
+  },
+  {
+    "municipio": "Igaracy",
+    "estado": "PB",
+    "curiosidade": "Antiga Ipueiras, renomeada para valorizar sua identidade indígena. Localizada entre serras e açudes importantes."
+  },
+  {
+    "municipio": "Imaculada",
+    "estado": "PB",
+    "curiosidade": "Município serrano com forte religiosidade. Localizado na região da Serra do Teixeira, possui clima mais frio."
+  },
+  {
+    "municipio": "Ingá",
+    "estado": "PB",
+    "curiosidade": "Lar da Pedra do Ingá, enigma arqueológico com inscrições misteriosas. Um dos maiores patrimônios pré-históricos do Brasil."
+  },
+  {
+    "municipio": "Itabaiana",
+    "estado": "PB",
+    "curiosidade": "Cidade histórica às margens do Rio Paraíba. Destaque no passado pelos engenhos e hoje polo comercial regional."
+  },
+  {
+    "municipio": "Itaporanga",
+    "estado": "PB",
+    "curiosidade": "Conhecida pelo tradicional jogo do Dia de Finados, evento esportivo único. Fica no Vale do Piancó, com rica cultura sertaneja."
+  },
+  {
+    "municipio": "Itapororoca",
+    "estado": "PB",
+    "curiosidade": "Maior produtora de abacaxi da Paraíba. Possui forte agricultura familiar e tradições religiosas marcantes."
+  },
+  {
+    "municipio": "Itatuba",
+    "estado": "PB",
+    "curiosidade": "Município do Agreste com economia agrícola. Mantém festas populares e tradição católica intensa."
+  },
+  {
+    "municipio": "Jacaraú",
+    "estado": "PB",
+    "curiosidade": "Próximo a áreas indígenas potiguaras, preserva cultura nativa. A economia envolve agricultura, comércio e pesca."
+  },
+  {
+    "municipio": "Jericó",
+    "estado": "PB",
+    "curiosidade": "Cidade do Sertão com tradições religiosas fortes. A agricultura familiar sustenta grande parte da população."
+  },
+  {
+    "municipio": "João Pessoa",
+    "estado": "PB",
+    "curiosidade": "Capital reconhecida como a ‘cidade onde o sol nasce primeiro’. Combina patrimônio histórico, praias e qualidade de vida."
+  },
+  {
+    "municipio": "Juarez Távora",
+    "estado": "PB",
+    "curiosidade": "Nomeado em homenagem ao político paraibano Juarez Távora. Economia rural e tradição comunitária forte."
+  },
+  {
+    "municipio": "Juazeirinho",
+    "estado": "PB",
+    "curiosidade": "Ponto estratégico na BR-230, importante para o comércio regional. Possui cultura sertaneja marcada por eventos anuais."
+  },
+  {
+    "municipio": "Junco do Seridó",
+    "estado": "PB",
+    "curiosidade": "Cidade do Curimataú com forte tradição têxtil e sertaneja. População marcada pela cultura religiosa."
+  },
+  {
+    "municipio": "Juripiranga",
+    "estado": "PB",
+    "curiosidade": "Abriga parte da Reserva Biológica Guaribas, importante área ambiental. Economia voltada para agricultura e comércio local."
+  },
+  {
+    "municipio": "Juru",
+    "estado": "PB",
+    "curiosidade": "Município serrano do Vale do Piancó, com tradições culturais fortes. A música e a religião marcam o cotidiano."
+  },
+  {
+    "municipio": "Lagoa",
+    "estado": "PB",
+    "curiosidade": "Cidade tranquila do Alto Sertão, marcada pela pecuária e agricultura. Comunidade pequena e muito unida."
+  },
+  {
+    "municipio": "Lagoa de Dentro",
+    "estado": "PB",
+    "curiosidade": "Localizada no Brejo, com forte produção agrícola. Comunidade acolhedora e rica em tradições religiosas."
+  },
+  {
+    "municipio": "Lagoa Seca",
+    "estado": "PB",
+    "curiosidade": "Clima frio e forte produção de frutas e hortaliças. A cidade é polo agrícola e cultural do Agreste."
+  },
+  {
+    "municipio": "Lastro",
+    "estado": "PB",
+    "curiosidade": "Um dos menores municípios paraibanos, com forte identidade sertaneja. Vida comunitária simples e preservada."
+  },
+  {
+    "municipio": "Livramento",
+    "estado": "PB",
+    "curiosidade": "Município do Cariri com tradição sertaneja. Economia baseada em pecuária e agricultura familiar."
+  },
+  {
+    "municipio": "Logradouro",
+    "estado": "PB",
+    "curiosidade": "Cidade pequena do Agreste com cultura comunitária forte. Festas populares e religiosa movimentam a região."
+  },
+  {
+    "municipio": "Lucena",
+    "estado": "PB",
+    "curiosidade": "Famosa por praias tranquilas e histórica Igreja da Guia. Turismo e pesca são pilares da economia local."
+  },
+  {
+    "municipio": "Mãe d'Água",
+    "estado": "PB",
+    "curiosidade": "Município serrano com paisagens naturais e clima ameno. A economia se baseia em agricultura e pecuária."
+  },
+  {
+    "municipio": "Malta",
+    "estado": "PB",
+    "curiosidade": "Cidade do Sertão com grande participação religiosa. Eventos comunitários fortalecem a cultura local."
+  },
+  {
+    "municipio": "Mamanguape",
+    "estado": "PB",
+    "curiosidade": "Importante centro histórico do Litoral Norte. Possui forte presença indígena potiguara e rica tradição cultural."
+  },
+  {
+    "municipio": "Manaíra",
+    "estado": "PB",
+    "curiosidade": "Município sertanejo com economia baseada em pecuária. Seu artesanato e festas populares são marcantes."
+  },
+  {
+    "municipio": "Marcação",
+    "estado": "PB",
+    "curiosidade": "Município com grande presença indígena potiguara. Cultura nativa e artesanato são parte do cotidiano."
+  },
+  {
+    "municipio": "Mari",
+    "estado": "PB",
+    "curiosidade": "Forte produtora de cana-de-açúcar e frutas. A cidade mantém tradições rurais e festividades religiosas expressivas."
+  },
+  {
+    "municipio": "Marizópolis",
+    "estado": "PB",
+    "curiosidade": "Cidade jovem próxima a Sousa, com economia baseada no comércio. Cresce rapidamente devido à sua posição estratégica."
+  },
+  {
+    "municipio": "Massaranduba",
+    "estado": "PB",
+    "curiosidade": "Município do Agreste com forte produção agrícola. A comunidade preserva festas tradicionais e cultura rural."
+  },
+  {
+    "municipio": "Mataraca",
+    "estado": "PB",
+    "curiosidade": "Última cidade ao norte da PB, próxima ao RN. Possui áreas de mangue, praias preservadas e território indígena."
+  },
+  {
+    "municipio": "Matinhas",
+    "estado": "PB",
+    "curiosidade": "Conhecida nacionalmente pela produção de tangerina. Cidade do Brejo com clima agradável e agricultura forte."
+  },
+  {
+    "municipio": "Mato Grosso",
+    "estado": "PB",
+    "curiosidade": "Um dos menores municípios do Brasil em população. A vida local é tranquila, marcada pela agricultura familiar."
+  },
+  {
+    "municipio": "Maturéia",
+    "estado": "PB",
+    "curiosidade": "Localizada em altitude na Serra do Teixeira, tem um dos climas mais frios da PB. É destino conhecido para voos de paraglider."
+  },
+  {
+    "municipio": "Mogeiro",
+    "estado": "PB",
+    "curiosidade": "Cidade cortada por rios e rica em áreas verdes. Economicamente forte na agricultura e pecuária."
+  },
+  {
+    "municipio": "Montadas",
+    "estado": "PB",
+    "curiosidade": "Município pequeno do Agreste com tradições rurais vivas. Economia baseada em agricultura e comércio local."
+  },
+  {
+    "municipio": "Monte Horebe",
+    "estado": "PB",
+    "curiosidade": "Município serrano com clima frio no Alto Sertão. Suas paisagens atraem turistas interessados em trilhas e natureza."
+  },
+  {
+    "municipio": "Monteiro",
+    "estado": "PB",
+    "curiosidade": "Maior cidade do Cariri e polo cultural da região. Conhecida pela música nordestina e por abrigar campus universitário."
+  },
+  [
+  {
+    "municipio": "Mulungu",
+    "estado": "PB",
+    "curiosidade": "Cidade do Brejo com clima agradável e forte presença de agricultura familiar. Suas tradições religiosas atraem visitantes da região."
+  },
+  {
+    "municipio": "Natuba",
+    "estado": "PB",
+    "curiosidade": "Localizada na divisa com Pernambuco, possui serras e áreas de mata nativa. A economia é baseada em agricultura diversificada."
+  },
+  {
+    "municipio": "Nazarezinho",
+    "estado": "PB",
+    "curiosidade": "Município sertanejo próximo a Sousa, com forte cultura agropecuária. A vida comunitária é marcada por festas tradicionais."
+  },
+  {
+    "municipio": "Nova Floresta",
+    "estado": "PB",
+    "curiosidade": "Conhecida pela indústria têxtil e pelo famoso 'Maior São João do Curimataú'. Economia forte no setor industrial."
+  },
+  {
+    "municipio": "Nova Olinda",
+    "estado": "PB",
+    "curiosidade": "Município do Vale do Piancó com paisagens serranas. Tradições culturais e religiosas marcam o cotidiano local."
+  },
+  {
+    "municipio": "Nova Palmeira",
+    "estado": "PB",
+    "curiosidade": "Cidade do Curimataú conhecida pela mineração de caulim. Cultura sertaneja preservada em festas e celebrações."
+  },
+  {
+    "municipio": "Olho d'Água",
+    "estado": "PB",
+    "curiosidade": "Município rural com forte presença da agricultura e pecuária. Comunidade unida e tradições religiosas marcantes."
+  },
+  {
+    "municipio": "Olivedos",
+    "estado": "PB",
+    "curiosidade": "Cidade do Seridó paraibano com economia baseada na agricultura. Paisagens de caatinga e cultura rural forte."
+  },
+  {
+    "municipio": "Ouro Velho",
+    "estado": "PB",
+    "curiosidade": "Município pequeno do Cariri, com forte produção de artesanato e tradição sertaneja. Comunidade acolhedora e festiva."
+  },
+  {
+    "municipio": "Parari",
+    "estado": "PB",
+    "curiosidade": "Um dos menores municípios da Paraíba. A tranquilidade e a paisagem árida do Cariri marcam sua identidade."
+  },
+  {
+    "municipio": "Passagem",
+    "estado": "PB",
+    "curiosidade": "Cidade pequena do Vale do Sabugi com forte vínculo à pecuária. Tradições católicas moldam a vida comunitária."
+  },
+  {
+    "municipio": "Patos",
+    "estado": "PB",
+    "curiosidade": "Conhecida como 'Morada do Sol' pelo calor intenso. É o principal polo do Sertão, referência em comércio, educação e eventos como o São João de Patos."
+  },
+  {
+    "municipio": "Paulista",
+    "estado": "PB",
+    "curiosidade": "Município do Alto Sertão com forte cultura popular e vaquejadas. Economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Pedra Branca",
+    "estado": "PB",
+    "curiosidade": "Localizada em região serrana do Sertão, possui clima ameno e cultura rural preservada. Comunidade pequena e acolhedora."
+  },
+  {
+    "municipio": "Pedra Lavrada",
+    "estado": "PB",
+    "curiosidade": "Famosa pela mineração artesanal de quartzo e pedras preciosas. A cidade é marcada pela arte, música e tradições do Curimataú."
+  },
+  {
+    "municipio": "Pedras de Fogo",
+    "estado": "PB",
+    "curiosidade": "Cidade na divisa com Pernambuco, conhecida pela produção agrícola e por festividades culturais. Sua feira é uma das mais tradicionais da região."
+  },
+  {
+    "municipio": "Pedro Régis",
+    "estado": "PB",
+    "curiosidade": "Cidade jovem localizada em área indígena potiguara. Economia simples e cultura nativa presente no cotidiano."
+  },
+  {
+    "municipio": "Piancó",
+    "estado": "PB",
+    "curiosidade": "Um dos municípios mais antigos da PB, centro histórico do Vale do Piancó. Destaca-se pela cultura religiosa e pelas paisagens serranas."
+  },
+  {
+    "municipio": "Picuí",
+    "estado": "PB",
+    "curiosidade": "Conhecida como 'Terra do Queijo de Manteiga', destaque da culinária regional. É polo comercial do Seridó paraibano."
+  },
+  {
+    "municipio": "Pilar",
+    "estado": "PB",
+    "curiosidade": "Terra natal da poetisa Maria Firmina, possui forte tradição cultural. Região ligada historicamente aos engenhos de cana."
+  },
+  {
+    "municipio": "Pilões",
+    "estado": "PB",
+    "curiosidade": "Cidade serrana do Brejo com clima frio e arquitetura histórica. A produção de flores e café é destaque da economia local."
+  },
+  {
+    "municipio": "Pilõezinhos",
+    "estado": "PB",
+    "curiosidade": "Cidade com forte tradição agrícola e festas religiosas. Localizada entre morros do Brejo Paraibano."
+  },
+  {
+    "municipio": "Pirpirituba",
+    "estado": "PB",
+    "curiosidade": "Município do Brejo com cultura tradicional e economia agrícola. Comunidade ativa em celebrações religiosas."
+  },
+  {
+    "municipio": "Pitimbu",
+    "estado": "PB",
+    "curiosidade": "Cidade litorânea com belas praias e ambiente turístico. Abriga comunidades pesqueiras e áreas naturais preservadas."
+  },
+  {
+    "municipio": "Pocinhos",
+    "estado": "PB",
+    "curiosidade": "Cidade de clima semiárido com forte presença cultural. A feira local é uma das principais do Agreste."
+  },
+  {
+    "municipio": "Poço Dantas",
+    "estado": "PB",
+    "curiosidade": "Município do Alto Sertão com economia baseada em pecuária. A população mantém tradições religiosas fortes."
+  },
+  {
+    "municipio": "Poço de José de Moura",
+    "estado": "PB",
+    "curiosidade": "Cidade pequena e culturalmente ativa. Eventos comunitários e tradições religiosas marcam o município."
+  },
+  {
+    "municipio": "Pombal",
+    "estado": "PB",
+    "curiosidade": "Um dos municípios mais antigos do estado, com rica história colonial. Economia diversificada e forte tradição cultural."
+  },
+  {
+    "municipio": "Prata",
+    "estado": "PB",
+    "curiosidade": "Cidade rural do Cariri marcada por festas religiosas. Agricultura e pecuária sustentam a economia local."
+  },
+  {
+    "municipio": "Princesa Isabel",
+    "estado": "PB",
+    "curiosidade": "Conhecida pelo episódio histórico da Coluna Prestes. Cidade serrana com forte cultura política e regional."
+  },
+  {
+    "municipio": "Puxinanã",
+    "estado": "PB",
+    "curiosidade": "Município do Agreste com forte agricultura. Conhecido pela produção de frutas e eventos religiosos."
+  },
+  {
+    "municipio": "Queimadas",
+    "estado": "PB",
+    "curiosidade": "Via de ligação entre Campina Grande e o Cariri. Forte presença industrial e crescimento urbano acelerado."
+  },
+  {
+    "municipio": "Quixabá",
+    "estado": "PB",
+    "curiosidade": "Município pequeno do Sertão com economia rural. Vaquejadas e festas culturais são marcas locais."
+  },
+  {
+    "municipio": "Remígio",
+    "estado": "PB",
+    "curiosidade": "Cidade do Agreste com tradições culturais fortes. Agricultura e feiras regionais movimentam a economia."
+  },
+  {
+    "municipio": "Riachão",
+    "estado": "PB",
+    "curiosidade": "Cidade pequena do Brejo com clima agradável. Suas serras e áreas verdes atraem visitantes locais."
+  },
+  {
+    "municipio": "Riachão do Bacamarte",
+    "estado": "PB",
+    "curiosidade": "Município do Agreste com forte tradição religiosa. A vida comunitária é marcada por festas e eventos culturais."
+  },
+  {
+    "municipio": "Riachão do Poço",
+    "estado": "PB",
+    "curiosidade": "Cidade pacata do Litoral com economia agrícola. Mantém tradições familiares e religiosas."
+  },
+  {
+    "municipio": "Riacho de Santo Antônio",
+    "estado": "PB",
+    "curiosidade": "Município do Cariri com cultura sertaneja forte. Economia baseada em pecuária e agricultura familiar."
+  },
+  {
+    "municipio": "Riacho dos Cavalos",
+    "estado": "PB",
+    "curiosidade": "Cidade sertaneja com forte presença de pecuária. Festividades populares reúnem moradores de toda a região."
+  },
+  {
+    "municipio": "Rio Tinto",
+    "estado": "PB",
+    "curiosidade": "Forte influência indígena potiguara e patrimônio histórico dos antigos engenhos. Economia crescente ligada ao comércio e turismo."
+  },
+  {
+    "municipio": "Salgadinho",
+    "estado": "PB",
+    "curiosidade": "Município do Seridó paraibano, com economia rural e forte religiosidade. Paisagens secas e típicas do semiárido."
+  },
+  {
+    "municipio": "Salgado de São Félix",
+    "estado": "PB",
+    "curiosidade": "Cidade às margens do Rio Paraíba, ligada a antigos engenhos. Cultura agrícola e festividades tradicionais marcam o município."
+  },
+  {
+    "municipio": "Santa Cecília",
+    "estado": "PB",
+    "curiosidade": "Município do Agreste com economia baseada em comércio e agricultura. A cidade preserva cultura popular e religiosa."
+  },
+  {
+    "municipio": "Santa Cruz",
+    "estado": "PB",
+    "curiosidade": "Cidade do Sertão com forte tradição agrícola. Cultura sertaneja presente em festas e eventos religiosos."
+  },
+  {
+    "municipio": "Santa Helena",
+    "estado": "PB",
+    "curiosidade": "Cidade pequena do Vale do Rio do Peixe. Fortemente marcada pela pecuária e festas comunitárias."
+  },
+  {
+    "municipio": "Santa Inês",
+    "estado": "PB",
+    "curiosidade": "Município rural com paisagens serranas. Sua cultura religiosa é uma das mais fortes da região."
+  },
+  {
+    "municipio": "Santa Luzia",
+    "estado": "PB",
+    "curiosidade": "Conhecida pelo tradicional 'espanta zé', evento junino histórico. Região do Seridó com forte cultura sertaneja."
+  },
+  {
+    "municipio": "Santa Rita",
+    "estado": "PB",
+    "curiosidade": "Parte da Grande João Pessoa, grande polo industrial e agrícola. Abriga áreas históricas, praias e comunidades tradicionais."
+  },
+  {
+    "municipio": "Santa Teresinha",
+    "estado": "PB",
+    "curiosidade": "Município do Sertão com clima seco e forte vínculo religioso. A pecuária é a base da economia local."
+  },
+  {
+    "municipio": "Santana de Mangueira",
+    "estado": "PB",
+    "curiosidade": "Cidade serrana com paisagens impressionantes. Cultura sertaneja e eventos religiosos são muito presentes."
+  },
+  {
+    "municipio": "Santana dos Garrotes",
+    "estado": "PB",
+    "curiosidade": "Localizada no Vale do Piancó, com economia rural. O artesanato e as tradições religiosas marcam a cidade."
+  },
+  {
+    "municipio": "Santarém",
+    "estado": "PB",
+    "curiosidade": "Município do Sertão com forte presença agrícola. Comunidade simples, marcada pela vida rural."
+  },
+  {
+    "municipio": "Santo André",
+    "estado": "PB",
+    "curiosidade": "Município isolado do Cariri, com paisagens de caatinga preservada. Economia baseada em agricultura familiar."
+  },
+  {
+    "municipio": "São Bentinho",
+    "estado": "PB",
+    "curiosidade": "Cidade do Sertão com forte presença de caprinocultura. Festas religiosas unem a comunidade."
+  },
+  {
+    "municipio": "São Bento",
+    "estado": "PB",
+    "curiosidade": "Conhecida nacionalmente como a 'Capital das Redes'. Setor têxtil impulsiona o desenvolvimento e atrai compradores de todo o país."
+  },
+  {
+    "municipio": "São Domingos",
+    "estado": "PB",
+    "curiosidade": "Município pequeno do Cariri com cultura rural. Economia baseada em pecuária e agricultura familiar."
+  },
+  {
+    "municipio": "São Domingos do Cariri",
+    "estado": "PB",
+    "curiosidade": "Possui sítios arqueológicos com pinturas rupestres. Região valorizada por pesquisadores e ecoturistas."
+  },
+  {
+    "municipio": "São Francisco",
+    "estado": "PB",
+    "curiosidade": "Município do Sertão com economia simples e vida comunitária forte. Cultura religiosa organiza o calendário da cidade."
+  },
+  {
+    "municipio": "São João do Cariri",
+    "estado": "PB",
+    "curiosidade": "Um dos municípios mais antigos do estado, com importância histórica e cultural. Paisagens áridas características do Cariri."
+  },
+  {
+    "municipio": "São João do Rio do Peixe",
+    "estado": "PB",
+    "curiosidade": "Importante polo agropecuário e cultural do Alto Sertão. Abriga comunidades históricas e eventos tradicionais."
+  },
+  {
+    "municipio": "São João do Tigre",
+    "estado": "PB",
+    "curiosidade": "Município serrano próximo ao Parque Pedra da Boca. Cultura rural e festas religiosas são expressivas."
+  },
+  {
+    "municipio": "São José da Lagoa Tapada",
+    "estado": "PB",
+    "curiosidade": "Cidade do Alto Sertão com forte presença agropecuária. Vida simples e tradição católica."
+  },
+  {
+    "municipio": "São José de Caiana",
+    "estado": "PB",
+    "curiosidade": "Município serrano do Vale do Piancó, com vistas naturais marcantes. Cultura sertaneja forte."
+  },
+  {
+    "municipio": "São José de Espinharas",
+    "estado": "PB",
+    "curiosidade": "Município próximo a Patos, com economia baseada na pecuária. Celebrações religiosas são destaque local."
+  },
+  {
+    "municipio": "São José de Piranhas",
+    "estado": "PB",
+    "curiosidade": "Cidade histórica do Sertão e rota da transposição do Rio São Francisco. Forte polo comercial do Alto Sertão."
+  },
+  {
+    "municipio": "São José de Princesa",
+    "estado": "PB",
+    "curiosidade": "Município serrano com paisagens naturais e economia rural. Vida comunitária forte e tranquila."
+  },
+  {
+    "municipio": "São José do Bonfim",
+    "estado": "PB",
+    "curiosidade": "Vizinha de Patos, com cultura sertaneja forte. Economia baseada em agricultura, pecuária e pequenas indústrias."
+  },
+  {
+    "municipio": "São José do Brejo do Cruz",
+    "estado": "PB",
+    "curiosidade": "Município do Alto Sertão com economia rural. Festejos religiosos reúnem famílias de toda a região."
+  },
+  {
+    "municipio": "São José do Sabugi",
+    "estado": "PB",
+    "curiosidade": "Cidade do Seridó marcada pela pecuária e vida rural. Festas populares movimentam a comunidade."
+  },
+  {
+    "municipio": "São José dos Cordeiros",
+    "estado": "PB",
+    "curiosidade": "Município do Cariri conhecido pelo Festival do Mel. Cultura sertaneja preservada em festas comunitárias."
+  },
+  {
+    "municipio": "São Mamede",
+    "estado": "PB",
+    "curiosidade": "Cidade do Sertão ligada historicamente às fazendas de gado. A religiosidade marca o calendário local."
+  },
+  {
+    "municipio": "São Miguel de Taipu",
+    "estado": "PB",
+    "curiosidade": "Município agrícola do Litoral, com tradição na cana-de-açúcar. Comunidade com forte identidade cultural."
+  },
+  {
+    "municipio": "São Sebastião de Lagoa de Roça",
+    "estado": "PB",
+    "curiosidade": "Município do Brejo com produção agrícola forte. Tradições culturais e religiosas são muito presentes."
+  },
+  {
+    "municipio": "São Sebastião do Umbuzeiro",
+    "estado": "PB",
+    "curiosidade": "Cidade do Cariri com paisagens de caatinga e serras. A economia gira em torno da pecuária e agricultura."
+  },
+  {
+    "municipio": "Sapé",
+    "estado": "PB",
+    "curiosidade": "Terra de João Pedro Teixeira, símbolo das Ligas Camponesas. Município agrícola e com forte relevância histórica."
+  },
+  {
+    "municipio": "Serra Branca",
+    "estado": "PB",
+    "curiosidade": "Maior cidade do Cariri Ocidental. Conhecida por artistas regionais e festivais culturais tradicionais."
+  },
+  {
+    "municipio": "Serra da Raiz",
+    "estado": "PB",
+    "curiosidade": "Município pequeno do Brejo com tradição religiosa. Economia agrícola e vida comunitária forte."
+  },
+  {
+    "municipio": "Serra Grande",
+    "estado": "PB",
+    "curiosidade": "Localizado em área montanhosa com clima fresco. Forte identidade rural e festas tradicionais."
+  },
+  {
+    "municipio": "Serra Redonda",
+    "estado": "PB",
+    "curiosidade": "Cidade do Agreste com história ligada aos engenhos. Cultura religiosa e comércio movimentam a região."
+  },
+  {
+    "municipio": "Serraria",
+    "estado": "PB",
+    "curiosidade": "Cidade serrana com clima frio e arquitetura histórica. Região famosa por suas paisagens e tradições religiosas."
+  },
+  {
+    "municipio": "Sertãozinho",
+    "estado": "PB",
+    "curiosidade": "Município do Brejo com economia agrícola. Comunidade acolhedora e festas tradicionais preservadas."
+  },
+  {
+    "municipio": "Sobrado",
+    "estado": "PB",
+    "curiosidade": "Cidade do Litoral com agricultura diversificada. Vida simples e cultura religiosa forte."
+  },
+  {
+    "municipio": "Solânea",
+    "estado": "PB",
+    "curiosidade": "Polo comercial do Brejo, com forte presença de música e artes. Cidade universitária e culturalmente ativa."
+  },
+  {
+    "municipio": "Soledade",
+    "estado": "PB",
+    "curiosidade": "Porta de entrada para o Cariri, conhecida pelo artesanato em couro e madeira. Cultura sertaneja tradicional."
+  },
+  {
+    "municipio": "Sossêgo",
+    "estado": "PB",
+    "curiosidade": "Município jovem com economia rural. População acolhedora e marcada por tradições religiosas."
+  },
+  {
+    "municipio": "Sousa",
+    "estado": "PB",
+    "curiosidade": "Abriga o Vale dos Dinossauros, um dos mais importantes sítios paleontológicos do Brasil. Forte polo econômico do Sertão."
+  },
+  {
+    "municipio": "Sumé",
+    "estado": "PB",
+    "curiosidade": "Cidade do Cariri com importante campus universitário. Cultura sertaneja e eventos culturais movimentam o município."
+  },
+  {
+    "municipio": "Tacima",
+    "estado": "PB",
+    "curiosidade": "Conhecida por antigas tradições políticas e culturais do Curimataú. Seu artesanato e festas religiosas são muito presentes."
+  },
+  {
+    "municipio": "Taperoá",
+    "estado": "PB",
+    "curiosidade": "Terra de Ariano Suassuna. Cidade do Cariri com forte cultura literária e vínculos com o Movimento Armorial."
+  },
+  {
+    "municipio": "Tavares",
+    "estado": "PB",
+    "curiosidade": "Município serrano do Sertão, com clima mais frio. Forte presença de agricultura familiar."
+  },
+  {
+    "municipio": "Teixeira",
+    "estado": "PB",
+    "curiosidade": "Cidade serrana famosa pelo clima frio e pela cultura tradicional. A Serra do Teixeira é um dos pontos mais altos da PB."
+  },
+  {
+    "municipio": "Tenório",
+    "estado": "PB",
+    "curiosidade": "Município pequeno do Seridó paraibano. Vida comunitária baseada em tradições rurais e festas populares."
+  },
+  {
+    "municipio": "Triunfo",
+    "estado": "PB",
+    "curiosidade": "Município do Alto Sertão conhecido por eventos culturais e religiosos. Economia rural e comunitária."
+  },
+  {
+    "municipio": "Uiraúna",
+    "estado": "PB",
+    "curiosidade": "Terra de músicos famosos, como o sanfoneiro Zé do Norte. Um dos centros culturais mais ativos do Alto Sertão."
+  },
+  {
+    "municipio": "Umbuzeiro",
+    "estado": "PB",
+    "curiosidade": "Cidade histórica onde viveu Epitácio Pessoa, ex-presidente do Brasil. Patrimônio arquitetônico preservado."
+  },
+  {
+    "municipio": "Várzea",
+    "estado": "PB",
+    "curiosidade": "Localizada no Seridó, com economia rural e forte tradição comunitária. Paisagens características da caatinga."
+  },
+  {
+    "municipio": "Vieirópolis",
+    "estado": "PB",
+    "curiosidade": "Cidade jovem do Sertão, desmembrada de Sousa. Cultura rural preservada e economia em crescimento."
+  },
+  {
+    "municipio": "Vista Serrana",
+    "estado": "PB",
+    "curiosidade": "Município serrano com clima agradável. Tradições sertanejas e vida comunitária forte."
+  },
+  {
+    "municipio": "Zabelê",
+    "estado": "PB",
+    "curiosidade": "Município do Cariri conhecido pela tranquilidade e tradições rurais. Economia baseada em pecuária e agricultura."
+  }
+]
+
+]

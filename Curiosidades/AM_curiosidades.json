@@ -1,0 +1,172 @@
+[
+  {
+    "municipio": "Alvarães",
+    "estado": "AM",
+    "curiosidade": "Sua história está diretamente ligada a Tefé, município do qual se emancipou. Sua economia é fortemente baseada no setor primário, utilizando os rios para escoamento."
+  },
+  {
+    "municipio": "Amaturá",
+    "estado": "AM",
+    "curiosidade": "Localizada no Alto Solimões, é conhecida por sua culinária típica da região. A cidade preserva algumas construções históricas, como o antigo Seminário São Cristóvão."
+  },
+  {
+    "municipio": "Anamã",
+    "estado": "AM",
+    "curiosidade": "Fundada por seringueiros e aventureiros em busca de seringais e terras férteis. Possui lagos como o de Membeca e Patuá, excelentes para a pesca esportiva."
+  },
+  {
+    "municipio": "Anori",
+    "estado": "AM",
+    "curiosidade": "O nome vem da palavra indígena 'Uanuri', que significa 'Tracajá macho' (um quelônio de água doce), abundante na região. A cidade vem ganhando destaque pela produção de açaí."
+  },
+  {
+    "municipio": "Apuí",
+    "estado": "AM",
+    "curiosidade": "Município recente, criado no final dos anos 80, com grande atividade na extração madeireira e agropecuária, sendo um ponto de expansão da fronteira agrícola no sul do estado."
+  },
+  {
+    "municipio": "Atalaia do Norte",
+    "estado": "AM",
+    "curiosidade": "Localizado na tríplice fronteira (Brasil, Colômbia e Peru), é o principal acesso ao Vale do Javari, onde vivem diversos povos indígenas isolados."
+  },
+  {
+    "municipio": "Autazes",
+    "estado": "AM",
+    "curiosidade": "Famosa pela Festa do Leite, sendo um dos maiores produtores de gado e derivados do Amazonas. Acesso pela BR-319 (com trechos críticos) ou por via fluvial."
+  },
+  {
+    "municipio": "Barcelos",
+    "estado": "AM",
+    "curiosidade": "Foi a primeira capital do Amazonas. É mundialmente famosa como a 'Capital da Pesca Esportiva', sendo um dos melhores locais do mundo para a pesca do tucunaré."
+  },
+  {
+    "municipio": "Barreirinha",
+    "estado": "AM",
+    "curiosidade": "Localizada no Baixo Amazonas, é conhecida por suas lendas ribeirinhas e pelo potencial turístico de seus lagos e igarapés."
+  },
+  {
+    "municipio": "Benjamin Constant",
+    "estado": "AM",
+    "curiosidade": "Fica na tríplice fronteira, com forte intercâmbio comercial e cultural com as cidades de Leticia (Colômbia) e Santa Rosa (Peru)."
+  },
+  {
+    "municipio": "Beruri",
+    "estado": "AM",
+    "curiosidade": "Localizado próximo à confluência do Rio Purus e Solimões. Sua economia é baseada na pesca e na extração de borracha e castanha."
+  },
+  {
+    "municipio": "Boa Vista do Ramos",
+    "estado": "AM",
+    "curiosidade": "Município rural com forte presença de comunidades caboclas e tradição na agricultura familiar, como o cultivo de mandioca."
+  },
+  {
+    "municipio": "Boca do Acre",
+    "estado": "AM",
+    "curiosidade": "Situa-se na divisa com o Acre. É um importante polo comercial da região e um grande produtor de borracha e madeira."
+  },
+  {
+    "municipio": "Borba",
+    "estado": "AM",
+    "curiosidade": "Uma das cidades mais antigas, fundada no século XVII. Possui um importante patrimônio histórico e é conhecida pela produção de juta e malva."
+  },
+  {
+    "municipio": "Caapiranga",
+    "estado": "AM",
+    "curiosidade": "O nome vem do tupi e significa 'folha vermelha'. A cidade tem forte tradição na pesca artesanal e agricultura."
+  },
+  {
+    "municipio": "Canutama",
+    "estado": "AM",
+    "curiosidade": "Localizada às margens do Rio Purus. Sua economia está ligada à extração de borracha e castanha-do-pará."
+  },
+  {
+    "municipio": "Carauari",
+    "estado": "AM",
+    "curiosidade": "Importante centro regional do Médio Juruá. Abriga a Reserva Extrativista do Médio Juruá, conhecida pela preservação da biodiversidade."
+  },
+  {
+    "municipio": "Careiro",
+    "estado": "AM",
+    "curiosidade": "Localizado na área do Encontro das Águas dos rios Negro e Solimões. É um ponto estratégico para o transporte fluvial na rodovia BR-319."
+  },
+  {
+    "municipio": "Careiro da Várzea",
+    "estado": "AM",
+    "curiosidade": "Fica na Ilha do Careiro, uma das maiores ilhas fluviais da região. É o município mais próximo do Encontro das Águas, com uma economia baseada na pesca e agricultura de várzea."
+  },
+  {
+    "municipio": "Coari",
+    "estado": "AM",
+    "curiosidade": "Um dos principais polos de produção de petróleo e gás natural do Amazonas, sendo um município de grande importância econômica para o estado."
+  },
+  {
+    "municipio": "Codajás",
+    "estado": "AM",
+    "curiosidade": "Famosa pela Festa do Açaí, sendo o maior produtor do fruto no estado. É um município ribeirinho com forte tradição na pesca."
+  },
+  {
+    "municipio": "Eirunepé",
+    "estado": "AM",
+    "curiosidade": "Importante centro comercial e logístico no Alto Juruá, na fronteira com o Acre. O acesso se dá principalmente por via aérea ou fluvial."
+  },
+  {
+    "municipio": "Envira",
+    "estado": "AM",
+    "curiosidade": "Município do Alto Juruá, com economia baseada no extrativismo, agricultura e pecuária."
+  },
+  {
+    "municipio": "Fonte Boa",
+    "estado": "AM",
+    "curiosidade": "Localizada no Alto Solimões, possui uma rica cultura cabocla e indígena. É conhecida pela Festa do Padroeiro (São Francisco de Assis)."
+  },
+  {
+    "municipio": "Guajará",
+    "estado": "AM",
+    "curiosidade": "Município de fronteira, próximo ao Acre. Sua economia se baseia na extração de madeira e agricultura de subsistência."
+  },
+  {
+    "municipio": "Humaitá",
+    "estado": "AM",
+    "curiosidade": "Um dos poucos municípios com acesso rodoviário (BR-319). É um importante polo madeireiro e de agronegócio no sul do estado."
+  },
+  {
+    "municipio": "Ipixuna",
+    "estado": "AM",
+    "curiosidade": "Localizada no Alto Solimões. O nome é uma referência a um tipo de peixe. Possui forte presença de comunidades indígenas."
+  },
+  {
+    "municipio": "Iranduba",
+    "estado": "AM",
+    "curiosidade": "Fica na Região Metropolitana de Manaus. Abriga a Ponte Rio Negro, uma das maiores pontes fluviais do mundo, que liga o município à capital."
+  },
+  {
+    "municipio": "Itacoatiara",
+    "estado": "AM",
+    "curiosidade": "Um dos principais centros econômicos e logísticos após Manaus. Possui o segundo maior porto fluvial de cargas do Amazonas e é sede de grandes feiras agropecuárias."
+  },
+  {
+    "municipio": "Itamarati",
+    "estado": "AM",
+    "curiosidade": "Localizado no Juruá, é um município de difícil acesso, com economia baseada no extrativismo vegetal."
+  },
+  {
+    "municipio": "Itapiranga",
+    "estado": "AM",
+    "curiosidade": "O nome significa 'pedra vermelha' em tupi-guarani. É conhecido por suas belas praias de rio na época da seca e pelas paisagens do Rio Uatumã."
+  },
+  {
+    "municipio": "Japurá",
+    "estado": "AM",
+    "curiosidade": "O nome vem do rio que o banha. Localizado em uma área de difícil acesso, sua economia é baseada na pesca e extrativismo."
+  },
+  {
+    "municipio": "Juruá",
+    "estado": "AM",
+    "curiosidade": "Situado às margens do Rio Juruá, é um importante centro extrativista, com destaque para a borracha e o óleo de copaíba."
+  },
+  {
+    "municipio": "Jutaí",
+    "estado": "AM",
+    "curiosidade": "Município do Alto Solimões. Conhecido pela preservação ambiental e por suas comunidades ribeirinhas que vivem do extrativismo sustentável."
+  }
+]

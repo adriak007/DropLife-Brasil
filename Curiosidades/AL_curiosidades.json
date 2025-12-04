@@ -1,0 +1,504 @@
+[
+  {
+    "municipio": "Água Branca",
+    "estado": "AL",
+    "curiosidade": "Localizada no Alto Sertão, é famosa pelo cânion do Rio São Francisco e pela paisagem da Serra do Padre, onde se encontra a lenda da Pedra do Padre."
+  },
+  {
+    "municipio": "Anadia",
+    "estado": "AL",
+    "curiosidade": "Uma das cidades mais antigas de Alagoas, destaca-se por seu casario colonial preservado e por ter sido berço de personalidades históricas do estado."
+  },
+  {
+    "municipio": "Arapiraca",
+    "estado": "AL",
+    "curiosidade": "Conhecida como a 'Capital do Fumo', embora hoje a economia seja diversificada. É o segundo maior município do estado e o principal polo econômico do Agreste alagoano."
+  },
+  {
+    "municipio": "Atalaia",
+    "estado": "AL",
+    "curiosidade": "Sua história está ligada à produção de cana-de-açúcar. É conhecida pela Capela de São José, um marco de fé e patrimônio histórico."
+  },
+  {
+    "municipio": "Barra de Santo Antônio",
+    "estado": "AL",
+    "curiosidade": "Possui praias paradisíacas e abriga a Ilha da Croa. É um destino turístico popular devido às suas piscinas naturais e gastronomia litorânea."
+  },
+  {
+    "municipio": "Barra de São Miguel",
+    "estado": "AL",
+    "curiosidade": "Famosa pela Praia do Gunga, considerada uma das mais bonitas do Brasil. É um importante balneário turístico, com uma barreira de arrecifes que forma uma piscina natural."
+  },
+  {
+    "municipio": "Batalha",
+    "estado": "AL",
+    "curiosidade": "Reconhecida como um dos principais centros de pecuária leiteira do estado, sendo um polo agropecuário importante no Sertão."
+  },
+  {
+    "municipio": "Belém",
+    "estado": "AL",
+    "curiosidade": "Município rural com economia baseada na agricultura e pecuária. É conhecido por suas festas de padroeiro e tradições religiosas."
+  },
+  {
+    "municipio": "Belo Monte",
+    "estado": "AL",
+    "curiosidade": "Situada às margens do Rio São Francisco, possui sítios arqueológicos com pinturas rupestres na Serra de Nossa Senhora de Fátima."
+  },
+  {
+    "municipio": "Boca da Mata",
+    "estado": "AL",
+    "curiosidade": "O nome remete à sua localização em área de Mata Atlântica. Sua economia é forte na agricultura, especialmente na cana-de-açúcar."
+  },
+  {
+    "municipio": "Branquinha",
+    "estado": "AL",
+    "curiosidade": "Fica na região da Mata Alagoana. Foi uma das cidades mais afetadas por grandes inundações do Rio Mundaú, o que marcou sua história recente."
+  },
+  {
+    "municipio": "Cacimbinhas",
+    "estado": "AL",
+    "curiosidade": "Seu nome vem de 'cacimba' (poço). É uma cidade do Agreste com economia voltada para a pecuária e a agricultura de subsistência."
+  },
+  {
+    "municipio": "Cajueiro",
+    "estado": "AL",
+    "curiosidade": "A cidade é famosa pelo 'Cajueiro Gigante', uma árvore centenária que se destaca na paisagem e se tornou um ponto turístico local."
+  },
+  {
+    "municipio": "Campestre",
+    "estado": "AL",
+    "curiosidade": "Localizada no Litoral Norte, sua economia é baseada na cana-de-açúcar e na pecuária. É um município de paisagem rural."
+  },
+  {
+    "municipio": "Campo Alegre",
+    "estado": "AL",
+    "curiosidade": "Conhecida pela Usina Cansanção de Sinimbu, que possui um grande valor histórico para o desenvolvimento industrial da região."
+  },
+  {
+    "municipio": "Campo Grande",
+    "estado": "AL",
+    "curiosidade": "Município do Agreste com forte base na pecuária leiteira e de corte. É conhecido por suas festas tradicionais de gado."
+  },
+  {
+    "municipio": "Canapi",
+    "estado": "AL",
+    "curiosidade": "Fica no Sertão Alagoano. É um município conhecido por suas tradições culturais e por ter uma economia ligada à pecuária e agricultura de sequeiro."
+  },
+  {
+    "municipio": "Capela",
+    "estado": "AL",
+    "curiosidade": "Uma das cidades mais antigas, é famosa pela tradicional 'Festa do Mastro', um folguedo popular que atrai visitantes de todo o estado."
+  },
+  {
+    "municipio": "Carneiros",
+    "estado": "AL",
+    "curiosidade": "Localizada no Sertão, sua economia é baseada na agropecuária. O nome remete à criação de ovinos e caprinos."
+  },
+  {
+    "municipio": "Chã Preta",
+    "estado": "AL",
+    "curiosidade": "A cidade é conhecida pelo clima mais frio e por sua vegetação de Mata Atlântica, sendo um refúgio ecológico no interior do estado."
+  },
+  {
+    "municipio": "Coité do Nóia",
+    "estado": "AL",
+    "curiosidade": "Município do Agreste conhecido pela produção de cerâmica e artesanato local, com forte valor cultural e histórico."
+  },
+  {
+    "municipio": "Colônia Leopoldina",
+    "estado": "AL",
+    "curiosidade": "Fundada por imigrantes alemães, possui uma história ligada à imigração europeia no Brasil, diferenciando-se de muitas cidades da região."
+  },
+  {
+    "municipio": "Coqueiro Seco",
+    "estado": "AL",
+    "curiosidade": "Localizado próximo à Lagoa Mundaú, faz parte do complexo lagunar. É um município com forte vocação para a pesca artesanal e o turismo de lagoa."
+  },
+  {
+    "municipio": "Coruripe",
+    "estado": "AL",
+    "curiosidade": "Um dos mais importantes polos de produção de cana-de-açúcar do estado. Possui um litoral belíssimo, com praias de águas claras, como a Praia de Pontal de Coruripe."
+  },
+  {
+    "municipio": "Craíbas",
+    "estado": "AL",
+    "curiosidade": "Fica no Agreste e sua economia é baseada na agropecuária. É conhecida por ter uma das maiores jazidas de ferro do estado."
+  },
+  {
+    "municipio": "Delmiro Gouveia",
+    "estado": "AL",
+    "curiosidade": "Seu nome homenageia o empresário que construiu a primeira hidrelétrica do Nordeste, a Usina de Angiquinho, e revolucionou o Sertão Alagoano no início do século XX."
+  },
+  {
+    "municipio": "Dois Riachos",
+    "estado": "AL",
+    "curiosidade": "Cidade natal da jogadora de futebol Marta Vieira da Silva, a 'Rainha Marta', eleita seis vezes a melhor do mundo pela FIFA."
+  },
+  {
+    "municipio": "Estrela de Alagoas",
+    "estado": "AL",
+    "curiosidade": "O nome remete a uma formação geológica em forma de estrela. É um município do Agreste com forte atividade agropecuária."
+  },
+  {
+    "municipio": "Feira Grande",
+    "estado": "AL",
+    "curiosidade": "Conhecida por sediar grandes feiras de gado e produtos agrícolas. É um centro de comércio regional no Agreste."
+  },
+  {
+    "municipio": "Feliz Deserto",
+    "estado": "AL",
+    "curiosidade": "Apesar do nome, é um município litorâneo com praias tranquilas. É conhecido pela produção de camarão em cativeiro (carcinicultura)."
+  },
+  {
+    "municipio": "Flexeiras",
+    "estado": "AL",
+    "curiosidade": "Localizada na Zona da Mata, sua economia é baseada na cana-de-açúcar. O nome remete a um tipo de flecha ou vegetação nativa."
+  },
+  {
+    "municipio": "Girau do Ponciano",
+    "estado": "AL",
+    "curiosidade": "Fica no Agreste e sua economia é baseada na pecuária e no cultivo de milho e feijão. O nome é uma referência a um antigo curral."
+  },
+  {
+    "municipio": "Ibateguara",
+    "estado": "AL",
+    "curiosidade": "Localizada na Zona da Mata, sua economia está fortemente ligada à produção de cana-de-açúcar e à atividade industrial açucareira."
+  },
+  {
+    "municipio": "Igaci",
+    "estado": "AL",
+    "curiosidade": "Seu nome, de origem indígena, significa 'água da lagoa'. É um município do Agreste com vocação para a agricultura e pecuária."
+  },
+  {
+    "municipio": "Igreja Nova",
+    "estado": "AL",
+    "curiosidade": "Localizada às margens do Rio São Francisco, possui uma rica história e casarios antigos, além de ser um ponto de pesca e navegação."
+  },
+  {
+    "municipio": "Inhapi",
+    "estado": "AL",
+    "curiosidade": "Município do Alto Sertão. É um dos municípios com o menor Índice de Desenvolvimento Humano (IDH) do estado, mas com uma cultura sertaneja resiliente."
+  },
+  {
+    "municipio": "Jacaré dos Homens",
+    "estado": "AL",
+    "curiosidade": "O nome remete a uma lenda local de jacarés que habitavam um riacho. É um município do Sertão com economia baseada na pecuária."
+  },
+  {
+    "municipio": "Jacuípe",
+    "estado": "AL",
+    "curiosidade": "O nome vem do rio que corta a região. É um município de vocação agrícola, destacando-se a produção de abacaxi e cana-de-açúcar."
+  },
+  {
+    "municipio": "Japaratinga",
+    "estado": "AL",
+    "curiosidade": "Vizinha de Maragogi, faz parte da Costa dos Corais. É conhecida pelas praias calmas e piscinas naturais, sendo um destino em ascensão no turismo ecológico."
+  },
+  {
+    "municipio": "Jaramataia",
+    "estado": "AL",
+    "curiosidade": "Fica no Sertão Alagoano, com economia ligada à pecuária e agricultura. O nome é uma referência a uma palmeira nativa."
+  },
+  {
+    "municipio": "Jequiá da Praia",
+    "estado": "AL",
+    "curiosidade": "Município litorâneo, abriga a Lagoa Azeda, um local com rica fauna e flora. Sua economia é impulsionada pelo turismo e pela pesca."
+  },
+  {
+    "municipio": "Joaquim Gomes",
+    "estado": "AL",
+    "curiosidade": "Cidade da Zona da Mata com forte tradição na cultura da cana-de-açúcar e festas populares animadas."
+  },
+  {
+    "municipio": "Jundiá",
+    "estado": "AL",
+    "curiosidade": "O nome pode ser uma referência ao peixe Jundiá. É um município pequeno, com economia rural no interior do estado."
+  },
+  {
+    "municipio": "Junqueiro",
+    "estado": "AL",
+    "curiosidade": "Localizada no Agreste, é um polo de agricultura diversificada, além de ser um centro de serviços na região."
+  },
+  {
+    "municipio": "Lagoa da Canoa",
+    "estado": "AL",
+    "curiosidade": "Conhecida por ser a 'Terra do Artesanato da Fibra da Bananeira', uma tradição que gera renda e valoriza a cultura local."
+  },
+  {
+    "municipio": "Limoeiro de Anadia",
+    "estado": "AL",
+    "curiosidade": "Famosa por suas festividades juninas e pela cultura de vaquejada. Sua economia é baseada na agricultura e pecuária."
+  },
+  [
+  {
+    "municipio": "Maceió",
+    "estado": "AL",
+    "curiosidade": "Capital de Alagoas, é conhecida como a 'Cidade Sorriso' e 'Paraíso das Águas'. É famosa pelas praias urbanas (Pajuçara, Ponta Verde) e pelas piscinas naturais das suas barreiras de corais."
+  },
+  {
+    "municipio": "Major Isidoro",
+    "estado": "AL",
+    "curiosidade": "O nome homenageia o militar e político Major Firmino Teixeira de Vasconcelos. É um importante centro de comércio e serviços no Agreste."
+  },
+  {
+    "municipio": "Maragogi",
+    "estado": "AL",
+    "curiosidade": "Considerada o 'Caribe Brasileiro', é o principal destino turístico do Litoral Norte. É mundialmente famosa pelas suas 'Galés', grandes piscinas naturais repletas de vida marinha."
+  },
+  {
+    "municipio": "Maravilha",
+    "estado": "AL",
+    "curiosidade": "Situada no Sertão, seu nome inspira a beleza da paisagem. A economia é baseada na pecuária e no cultivo de frutas típicas do semiárido."
+  },
+  {
+    "municipio": "Marechal Deodoro",
+    "estado": "AL",
+    "curiosidade": "Antiga capital da Província de Alagoas, é a cidade natal do Proclamador da República, Marechal Deodoro da Fonseca. É rica em história e possui um charmoso centro histórico à beira da Lagoa Manguaba."
+  },
+  {
+    "municipio": "Maribondo",
+    "estado": "AL",
+    "curiosidade": "O nome remete a um tipo de vespa (maribondo). É um município do Agreste, conhecido por sua economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Mata Grande",
+    "estado": "AL",
+    "curiosidade": "Localizada no Alto Sertão, é famosa pelo clima ameno e pela Serra do Padre, onde há trilhas e cachoeiras, com forte potencial ecoturístico."
+  },
+  {
+    "municipio": "Matriz de Camaragibe",
+    "estado": "AL",
+    "curiosidade": "Uma das mais antigas freguesias do estado, tem sua história ligada aos engenhos de açúcar e ao período colonial."
+  },
+  {
+    "municipio": "Messias",
+    "estado": "AL",
+    "curiosidade": "Sua economia é fortemente influenciada pela Usina Santa Clotilde, com grande produção de cana-de-açúcar e derivados."
+  },
+  {
+    "municipio": "Minador do Negrão",
+    "estado": "AL",
+    "curiosidade": "Localizada em uma região de serra no Agreste, é conhecida pelas fontes de água mineral (minadores). Seu clima é mais frio que o da capital."
+  },
+  {
+    "municipio": "Monteiropolis",
+    "estado": "AL",
+    "curiosidade": "O nome é uma homenagem ao pioneiro da região, José Monteiro de Carvalho. Sua economia é baseada na pecuária leiteira."
+  },
+  {
+    "municipio": "Murici",
+    "estado": "AL",
+    "curiosidade": "Conhecida pela Usina Central de Sítio Grande. Abriga a Reserva Biológica de Pedra Talhada, uma das maiores áreas de Mata Atlântica preservada de Alagoas."
+  },
+  {
+    "municipio": "Novo Lino",
+    "estado": "AL",
+    "curiosidade": "Localizada na Zona da Mata, sua economia é baseada no cultivo da cana-de-açúcar, sendo um importante produtor agrícola."
+  },
+  {
+    "municipio": "Olho d'Água das Flores",
+    "estado": "AL",
+    "curiosidade": "O nome remete à nascente (olho d'água) em uma área florida. É um polo de desenvolvimento no Sertão, com forte pecuária."
+  },
+  {
+    "municipio": "Olho d'Água do Casado",
+    "estado": "AL",
+    "curiosidade": "Fica às margens do Rio São Francisco, na área dos Cânions do Xingó, sendo um ponto turístico para passeios de catamarã e contemplação do Velho Chico."
+  },
+  {
+    "municipio": "Olivença",
+    "estado": "AL",
+    "curiosidade": "Município do Sertão com vocação agropecuária. É conhecido por suas festas de padroeiro e tradições sertanejas."
+  },
+  {
+    "municipio": "Ouro Branco",
+    "estado": "AL",
+    "curiosidade": "Localizada no Sertão, sua economia é baseada na agropecuária. O nome sugere a riqueza das pastagens da região."
+  },
+  {
+    "municipio": "Palestina",
+    "estado": "AL",
+    "curiosidade": "Município às margens do Rio São Francisco, com uma economia voltada para a agricultura e pesca artesanal. Possui forte devoção religiosa."
+  },
+  {
+    "municipio": "Palmeira dos Índios",
+    "estado": "AL",
+    "curiosidade": "Importante centro regional do Agreste. Foi morada do escritor Graciliano Ramos (autor de 'Vidas Secas') e possui rica cultura indígena remanescente."
+  },
+  {
+    "municipio": "Pão de Açúcar",
+    "estado": "AL",
+    "curiosidade": "Situada às margens do Rio São Francisco, possui uma paisagem marcada pelo morro que deu nome à cidade. Tem um rico folclore ribeirinho."
+  },
+  {
+    "municipio": "Pariconha",
+    "estado": "AL",
+    "curiosidade": "Localizada no Sertão, possui terras indígenas. É conhecida por suas belezas naturais, incluindo a 'Grota do Angico', onde Lampião foi morto."
+  },
+  {
+    "municipio": "Paripueira",
+    "estado": "AL",
+    "curiosidade": "Praia de águas calmas e claras, famosa por suas piscinas naturais de corais, que são facilmente acessíveis e ideais para o mergulho."
+  },
+  {
+    "municipio": "Passo de Camaragibe",
+    "estado": "AL",
+    "curiosidade": "Faz parte da Rota Ecológica, conhecida por suas praias tranquilas e coqueirais. É um município de rica história colonial."
+  },
+  {
+    "municipio": "Paulo Jacinto",
+    "estado": "AL",
+    "curiosidade": "Homenagem ao empresário da Usina Utinga. Localizada na Zona da Mata, sua economia é dominada pela produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Penedo",
+    "estado": "AL",
+    "curiosidade": "Uma das cidades mais históricas e belas do Brasil, às margens do Rio São Francisco. Possui um conjunto arquitetônico colonial tombado, com igrejas e conventos barrocos."
+  },
+  {
+    "municipio": "Piaçabuçu",
+    "estado": "AL",
+    "curiosidade": "Onde o Rio São Francisco encontra o mar. É famosa pelo ecoturismo na foz do rio, com dunas e praias desertas, e pela rica culinária ribeirinha e litorânea."
+  },
+  {
+    "municipio": "Pilar",
+    "estado": "AL",
+    "curiosidade": "Situa-se às margens da Lagoa Manguaba. É um importante polo pesqueiro e conhecido por suas festas e pela lenda da sereia do Rio Mundaú."
+  },
+  {
+    "municipio": "Pindoba",
+    "estado": "AL",
+    "curiosidade": "O nome remete a um tipo de palmeira. É um município pequeno e rural, com economia baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Piranhas",
+    "estado": "AL",
+    "curiosidade": "Uma das cidades mais charmosas do Sertão, com casario colorido tombado. É um ponto turístico importante para o acesso aos Cânions do Xingó e à Rota do Cangaço."
+  },
+  {
+    "municipio": "Poço das Trincheiras",
+    "estado": "AL",
+    "curiosidade": "O nome remete às trincheiras usadas em conflitos históricos. É um município do Sertão, com forte atividade pecuária."
+  },
+  {
+    "municipio": "Porto Calvo",
+    "estado": "AL",
+    "curiosidade": "Cidade histórica, próxima ao Quilombo dos Palmares, e um dos primeiros núcleos de colonização de Alagoas. Possui importantes monumentos coloniais."
+  },
+  {
+    "municipio": "Porto de Pedras",
+    "estado": "AL",
+    "curiosidade": "Faz parte da Rota Ecológica. É famosa pelo Farol e pela proximidade com a Praia do Patacho e a área de preservação do peixe-boi marinho."
+  },
+  {
+    "municipio": "Porto Real do Colégio",
+    "estado": "AL",
+    "curiosidade": "Localizada no Baixo São Francisco, possui uma rica história de missões jesuítas. O nome 'Colégio' remete ao seminário fundado pelos religiosos."
+  },
+  {
+    "municipio": "Quebrangulo",
+    "estado": "AL",
+    "curiosidade": "Cidade natal do escritor Graciliano Ramos, onde ele passou parte da infância. Possui um casario antigo e uma paisagem serrana marcante."
+  },
+  {
+    "municipio": "Rio Largo",
+    "estado": "AL",
+    "curiosidade": "Localizada na Grande Maceió, é um importante polo industrial, especialmente do setor têxtil. Abriga o principal aeroporto do estado (Zumbi dos Palmares)."
+  },
+  {
+    "municipio": "Roteiro",
+    "estado": "AL",
+    "curiosidade": "Município litorâneo, vizinho da Praia do Gunga. Sua economia é impulsionada pelo turismo e pela pesca."
+  },
+  {
+    "municipio": "Santa Luzia do Norte",
+    "estado": "AL",
+    "curiosidade": "Possui uma das mais antigas capelas do estado, a Capela de Santa Luzia. Localizada na Região Metropolitana, é um município de vocação rural."
+  },
+  {
+    "municipio": "Santana do Ipanema",
+    "estado": "AL",
+    "curiosidade": "A principal cidade do Sertão Alagoano, servindo como polo de comércio, saúde e educação para toda a região. É famosa por suas festas e feiras de gado."
+  },
+  {
+    "municipio": "Santana do Mundaú",
+    "estado": "AL",
+    "curiosidade": "Situada na Serra do Mundaú, a cidade possui um clima de serra e uma vegetação de Mata Atlântica, sendo conhecida como 'Terra do Abacaxi'."
+  },
+  {
+    "municipio": "São Brás",
+    "estado": "AL",
+    "curiosidade": "Localizada às margens do Rio São Francisco, sua economia é baseada na pesca e na agricultura ribeirinha."
+  },
+  {
+    "municipio": "São José da Laje",
+    "estado": "AL",
+    "curiosidade": "Localizada na Zona da Mata, é um importante polo de cana-de-açúcar. Sua Usina Serra Grande é uma das mais tradicionais do estado."
+  },
+  {
+    "municipio": "São José da Tapera",
+    "estado": "AL",
+    "curiosidade": "Um dos principais centros agropecuários do Sertão Alagoano. Seu nome faz referência a uma antiga moradia rústica ('tapera')."
+  },
+  {
+    "municipio": "São Luís do Quitunde",
+    "estado": "AL",
+    "curiosidade": "Localizada no Litoral Norte, sua economia é baseada na cana-de-açúcar e possui uma importante área de manguezais."
+  },
+  {
+    "municipio": "São Miguel dos Campos",
+    "estado": "AL",
+    "curiosidade": "Um dos mais antigos e importantes centros urbanos do estado, com forte vocação para o agronegócio (cana-de-açúcar) e atividades industriais."
+  },
+  {
+    "municipio": "São Miguel dos Milagres",
+    "estado": "AL",
+    "curiosidade": "Parte da Rota Ecológica, é conhecida por suas praias quase desertas e piscinas naturais tranquilas, sendo um destino de alto padrão e preservação ambiental."
+  },
+  {
+    "municipio": "São Sebastião",
+    "estado": "AL",
+    "curiosidade": "Fica no Agreste e sua economia é diversificada, com destaque para a produção de feijão, milho e pecuária."
+  },
+  {
+    "municipio": "Satuba",
+    "estado": "AL",
+    "curiosidade": "Localizada na Região Metropolitana de Maceió, é um município de passagem com uma economia que atende ao fluxo de transporte e serviços da capital."
+  },
+  {
+    "municipio": "Senador Rui Palmeira",
+    "estado": "AL",
+    "curiosidade": "Homenageia o ex-governador de Alagoas. É um município do Sertão com economia baseada na pecuária."
+  },
+  {
+    "municipio": "Tanque d'Arca",
+    "estado": "AL",
+    "curiosidade": "O nome remete a um reservatório de água em forma de arca. Sua economia é rural, baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Taquarana",
+    "estado": "AL",
+    "curiosidade": "Localizada no Agreste, é conhecida pelas suas festas populares e pela tradição de vaquejada. O nome se refere a uma planta da região."
+  },
+  {
+    "municipio": "Teotônio Vilela",
+    "estado": "AL",
+    "curiosidade": "Homenagem ao 'Menestrel das Alagoas', político influente na redemocratização. O município é um grande produtor de cana-de-açúcar."
+  },
+  {
+    "municipio": "Traipu",
+    "estado": "AL",
+    "curiosidade": "Uma das mais antigas cidades ribeirinhas do estado, às margens do Rio São Francisco. Possui um rico centro histórico e uma paisagem natural impressionante."
+  },
+  {
+    "municipio": "União dos Palmares",
+    "estado": "AL",
+    "curiosidade": "Famosa por ser o lar da Serra da Barriga, onde existiu o Quilombo dos Palmares, liderado por Zumbi. É um símbolo da resistência negra no Brasil."
+  },
+  {
+    "municipio": "Viçosa",
+    "estado": "AL",
+    "curiosidade": "Conhecida como 'Princesa da Zona da Mata'. É uma cidade de clima ameno e paisagens serranas, com forte vocação para a agricultura e história."
+  }
+]
+]

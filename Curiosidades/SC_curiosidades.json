@@ -1,0 +1,1413 @@
+[
+  {
+    "municipio": "Abdon Batista",
+    "estado": "SC",
+    "curiosidade": "O nome é uma homenagem ao ex-governador. Sua economia é baseada na agropecuária e na produção de energia, devido à presença de usinas hidrelétricas."
+  },
+  {
+    "municipio": "Abelardo Luz",
+    "estado": "SC",
+    "curiosidade": "Localizada no Oeste catarinense, faz fronteira com o Paraná. É conhecida por suas belezas naturais, como cachoeiras e rios, e pela forte agricultura."
+  },
+  {
+    "municipio": "Agrolândia",
+    "estado": "SC",
+    "curiosidade": "O nome remete à sua vocação agrícola. Localizada no Alto Vale do Itajaí, tem forte influência de colonos alemães e italianos."
+  },
+  {
+    "municipio": "Agronômica",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Alto Vale do Itajaí. Sua economia é quase inteiramente baseada na agricultura e na produção de alimentos."
+  },
+  {
+    "municipio": "Água Doce",
+    "estado": "SC",
+    "curiosidade": "Famosa pela **produção de maçãs e vinhos de altitude**. Possui um clima frio e é um dos municípios que mais registram neve no inverno catarinense."
+  },
+  {
+    "municipio": "Águas de Chapecó",
+    "estado": "SC",
+    "curiosidade": "Conhecida pelas suas águas termais. É um destino de turismo de saúde e bem-estar no Oeste do estado."
+  },
+  {
+    "municipio": "Águas Frias",
+    "estado": "SC",
+    "curiosidade": "O nome se deve às baixas temperaturas registradas. É um município com forte influência da cultura italiana e polonesa, com economia agrícola."
+  },
+  {
+    "municipio": "Águas Mornas",
+    "estado": "SC",
+    "curiosidade": "Famosa pelas **fontes termais** e pelo potencial de turismo de saúde. O nome se refere à temperatura agradável de suas águas minerais."
+  },
+  {
+    "municipio": "Alfredo Wagner",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra Geral, conhecida como a **'Capital das Nascentes'**, pois abriga a nascente do Rio Cubatão, que abastece a Grande Florianópolis."
+  },
+  {
+    "municipio": "Alto Bela Vista",
+    "estado": "SC",
+    "curiosidade": "Localizada no Vale do Rio do Peixe, faz fronteira com o Rio Grande do Sul. É um município de paisagens montanhosas e forte colonização germânica."
+  },
+  {
+    "municipio": "Anchieta",
+    "estado": "SC",
+    "curiosidade": "Homenagem ao Padre José de Anchieta. Localizada no Oeste, tem uma forte base agropecuária."
+  },
+  {
+    "municipio": "Angelina",
+    "estado": "SC",
+    "curiosidade": "Local de peregrinação religiosa. Abriga o Santuário Nossa Senhora de Angelina, que atrai milhares de fiéis. O município é de forte colonização alemã."
+  },
+  {
+    "municipio": "Anita Garibaldi",
+    "estado": "SC",
+    "curiosidade": "Homenagem à heroína Anita Garibaldi. Sua economia é baseada na agropecuária e na exploração florestal."
+  },
+  {
+    "municipio": "Anitápolis",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra do Tabuleiro, com grande potencial ecoturístico. Possui uma rica área de Mata Atlântica e rios com corredeiras."
+  },
+  {
+    "municipio": "Antônio Carlos",
+    "estado": "SC",
+    "curiosidade": "Localizado na Grande Florianópolis. Sua economia é baseada na agricultura, com forte produção de hortifrutigranjeiros."
+  },
+  {
+    "municipio": "Apiúna",
+    "estado": "SC",
+    "curiosidade": "O nome, de origem Tupi, significa 'cabeça preta'. É um município da Região do Vale Europeu, famoso pela prática de esportes de aventura, como o **rafting** no Rio Itajaí-Açu."
+  },
+  {
+    "municipio": "Arabutã",
+    "estado": "SC",
+    "curiosidade": "O nome significa 'árvore dura'. Localizada no Oeste, tem forte influência da colonização alemã e base econômica agropecuária."
+  },
+  {
+    "municipio": "Araquari",
+    "estado": "SC",
+    "curiosidade": "Um dos mais antigos do estado, com forte presença da cultura açoriana. Possui praias, manguezais e a **Reserva Ecológica do Bracinho**."
+  },
+  {
+    "municipio": "Araranguá",
+    "estado": "SC",
+    "curiosidade": "Importante centro regional do Sul catarinense. Possui dunas e lagoas costeiras e um dos principais *campi* da Universidade Federal de Santa Catarina (UFSC)."
+  },
+  {
+    "municipio": "Armazém",
+    "estado": "SC",
+    "curiosidade": "Localizada no Sul, sua economia é baseada na agricultura e na presença de águas termais, que atraem visitantes."
+  },
+  {
+    "municipio": "Ascurra",
+    "estado": "SC",
+    "curiosidade": "Localizada no Vale Europeu, tem forte influência italiana, com tradição na agricultura e na produção de embutidos."
+  },
+  {
+    "municipio": "Atalanta",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Alto Vale do Itajaí. O nome foi inspirado na figura mitológica grega. Sua economia é agrícola."
+  },
+  {
+    "municipio": "Aurora",
+    "estado": "SC",
+    "curiosidade": "Localizada no Alto Vale do Itajaí, conhecida pela produção de carne suína e de aves. Abriga o **Rio Itajaí do Oeste**, importante na economia regional."
+  },
+  {
+    "municipio": "Balneário Arroio do Silva",
+    "estado": "SC",
+    "curiosidade": "Município litorâneo no Sul catarinense, conhecido por suas praias abertas e pela pesca artesanal. É um destino popular no verão."
+  },
+  {
+    "municipio": "Balneário Barra do Sul",
+    "estado": "SC",
+    "curiosidade": "Município costeiro conhecido pela barra do rio que se encontra com o mar. Possui praias calmas e é um importante polo de pesca e maricultura."
+  },
+  {
+    "municipio": "Balneário Camboriú",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Dubai Brasileira'**, famosa por seus edifícios altíssimos e luxuosos, praia central com alargamento de faixa de areia e vida noturna intensa. Abriga o **Cristo Luz**."
+  },
+  {
+    "municipio": "Balneário Gaivota",
+    "estado": "SC",
+    "curiosidade": "Município litorâneo na região Sul, conhecido por suas praias tranquilas e pela pesca de tainha."
+  },
+  {
+    "municipio": "Balneário Piçarras",
+    "estado": "SC",
+    "curiosidade": "Famosa pelas suas praias limpas (com certificação Bandeira Azul) e pelo **Museu Oceanográfico Univali**, um dos maiores da América Latina."
+  },
+  {
+    "municipio": "Balneário Rincão",
+    "estado": "SC",
+    "curiosidade": "Localizado no Sul, é um balneário com forte tradição na pesca e turismo de praia, especialmente na época de verão."
+  },
+  {
+    "municipio": "Bandeirante",
+    "estado": "SC",
+    "curiosidade": "Município do Oeste, com economia baseada na agropecuária e na forte influência da cultura gaúcha."
+  },
+  {
+    "municipio": "Barra Bonita",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Oeste catarinense, com economia baseada na agricultura e na pecuária."
+  },
+  {
+    "municipio": "Barra Velha",
+    "estado": "SC",
+    "curiosidade": "Litorâneo, famoso pela **Lagoa de Barra Velha**, um ponto de lazer e pesca. É um destino de veraneio com praias para diferentes públicos."
+  },
+  {
+    "municipio": "Bela Vista do Toldo",
+    "estado": "SC",
+    "curiosidade": "Localizada no Planalto Norte, o nome descreve a bela paisagem. Sua economia é baseada na agricultura e na criação de gado."
+  },
+  {
+    "municipio": "Benedito Novo",
+    "estado": "SC",
+    "curiosidade": "Localizada no Vale Europeu, possui forte colonização alemã. É conhecida pela prática de esportes de aventura e por suas cachoeiras."
+  },
+  {
+    "municipio": "Biguaçu",
+    "estado": "SC",
+    "curiosidade": "Município da Grande Florianópolis, com rica história açoriana. Possui importantes sítios arqueológicos e abriga parte da **Reserva Biológica Marinha do Arvoredo**."
+  },
+  {
+    "municipio": "Blumenau",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Cerveja'** e a **'Capital Brasileira da Cerveja'**. É famosa pela sua forte colonização alemã, arquitetura germânica e pela **Oktoberfest**, a segunda maior festa da cerveja do mundo."
+  },
+  {
+    "municipio": "Bocaina do Sul",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra Catarinense, conhecida pelo clima frio e pela produção de queijos e vinhos de altitude. Faz parte da Rota da Serra."
+  },
+  {
+    "municipio": "Bom Jardim da Serra",
+    "estado": "SC",
+    "curiosidade": "Abriga a famosa **Serra do Rio do Rastro**, uma das estradas mais espetaculares e desafiadoras do mundo, com vistas panorâmicas da serra."
+  },
+  {
+    "municipio": "Bom Jesus",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Oeste, com economia baseada na agricultura e na forte cultura italiana e alemã."
+  },
+  {
+    "municipio": "Bom Jesus do Oeste",
+    "estado": "SC",
+    "curiosidade": "Localizado no Extremo Oeste, sua economia é baseada na agropecuária, com destaque para a criação de suínos e aves."
+  },
+  {
+    "municipio": "Bom Retiro",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra Catarinense, com clima frio. É um importante centro de criação de gado e produção de mel."
+  },
+  {
+    "municipio": "Botuverá",
+    "estado": "SC",
+    "curiosidade": "Famosa pelas **Grutas de Botuverá**, um complexo de cavernas com formações rochosas impressionantes, resultado da colonização italiana."
+  },
+  {
+    "municipio": "Braço do Norte",
+    "estado": "SC",
+    "curiosidade": "Importante polo regional do Sul catarinense, conhecido pela sua forte pecuária leiteira e pela cultura açoriana."
+  },
+  {
+    "municipio": "Braço do Trombudo",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Alto Vale do Itajaí. Sua economia é baseada na agricultura familiar e na criação de animais."
+  },
+  {
+    "municipio": "Brunópolis",
+    "estado": "SC",
+    "curiosidade": "Localizada no Planalto Serrano, o nome é uma homenagem a um antigo morador. Sua economia é baseada na agropecuária e produção de grãos."
+  },
+  {
+    "municipio": "Brusque",
+    "estado": "SC",
+    "curiosidade": "Conhecida como o **'Berço da Fiação Catarinense'** e **'Capital da Pronta Entrega'**. É um forte polo industrial têxtil e de confecções, com uma das maiores vendas de atacado do país."
+  },
+  [
+  {
+    "municipio": "Caçador",
+    "estado": "SC",
+    "curiosidade": "Polo madeireiro e moveleiro no Meio-Oeste. É conhecida como a **'Capital Industrial do Meio-Oeste'** e tem forte base no reflorestamento e na indústria da madeira."
+  },
+  {
+    "municipio": "Caibi",
+    "estado": "SC",
+    "curiosidade": "Localizada no Oeste, tem forte influência da colonização italiana e alemã. Sua economia é agropecuária, com destaque para a criação de suínos e aves."
+  },
+  {
+    "municipio": "Calmon",
+    "estado": "SC",
+    "curiosidade": "Município do Meio-Oeste, com economia baseada na agricultura e na silvicultura (cultivo de árvores para a indústria madeireira)."
+  },
+  {
+    "municipio": "Camboriú",
+    "estado": "SC",
+    "curiosidade": "Vizinha de Balneário Camboriú, é conhecida por sua vocação religiosa, abrigando o **Santuário Santa Paulina**, local de peregrinação no Vale do Rio Camboriú."
+  },
+  {
+    "municipio": "Campo Alegre",
+    "estado": "SC",
+    "curiosidade": "Localizada no Planalto Norte, é conhecida como a **'Capital Catarinense da Ovelha'**. Possui paisagens rurais de forte colonização alemã."
+  },
+  {
+    "municipio": "Campo Belo do Sul",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra Catarinense, conhecida pela sua beleza cênica e pela economia baseada na pecuária e na agricultura (soja e milho)."
+  },
+  {
+    "municipio": "Campo Erê",
+    "estado": "SC",
+    "curiosidade": "Município do Extremo Oeste. O nome é de origem indígena. Sua economia é fortemente baseada na produção de grãos e na agroindústria."
+  },
+  {
+    "municipio": "Campos Novos",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Estadual do Milho'** e um dos maiores produtores de grãos e sementes do estado. É um centro regional importante no Planalto Serrano."
+  },
+  {
+    "municipio": "Canelinha",
+    "estado": "SC",
+    "curiosidade": "Famosa pela prática de **motocross**, sediando etapas de campeonatos nacionais. Sua economia é baseada na cerâmica e na agricultura."
+  },
+  {
+    "municipio": "Canoinhas",
+    "estado": "SC",
+    "curiosidade": "A **'Capital Mundial da Erva-Mate'**, principal produto agrícola da região do Planalto Norte. Também possui forte base na extração florestal e celulose."
+  },
+  {
+    "municipio": "Capão Alto",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra Catarinense, próxima a Lages. Sua economia é baseada na pecuária e na agricultura de altitude."
+  },
+  {
+    "municipio": "Capinzal",
+    "estado": "SC",
+    "curiosidade": "Importante centro do Meio-Oeste, com economia baseada na agroindústria (suínos e aves) e na produção de energia elétrica."
+  },
+  {
+    "municipio": "Capivari de Baixo",
+    "estado": "SC",
+    "curiosidade": "Conhecida por sediar a **Usina Termelétrica Jorge Lacerda (UTJL)**, um dos maiores complexos termelétricos a carvão do Brasil."
+  },
+  {
+    "municipio": "Catanduvas",
+    "estado": "SC",
+    "curiosidade": "Localizada no Meio-Oeste, o nome se deve à grande quantidade da árvore catanduva. Sua economia é baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Caxambu do Sul",
+    "estado": "SC",
+    "curiosidade": "Município do Oeste, conhecido pelas suas belezas naturais e pela forte cultura italiana, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Celso Ramos",
+    "estado": "SC",
+    "curiosidade": "Homenagem ao ex-governador. Sua economia está ligada à agropecuária e à hidroeletricidade."
+  },
+  {
+    "municipio": "Cerro Negro",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra Catarinense. Seu nome se deve a uma colina de cor escura. A economia é rural, baseada na pecuária."
+  },
+  {
+    "municipio": "Chapadão do Lageado",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Alto Vale do Itajaí. Sua economia é baseada na agricultura e na presença de pequenas cachoeiras."
+  },
+  {
+    "municipio": "Chapecó",
+    "estado": "SC",
+    "curiosidade": "A **'Capital do Oeste'** e um dos maiores polos agroindustriais do Brasil, especialmente em proteína animal (aves e suínos). É o berço da **Associação Chapecoense de Futebol**."
+  },
+  {
+    "municipio": "Cocal do Sul",
+    "estado": "SC",
+    "curiosidade": "Localizada no Sul, sua economia está ligada à produção de cerâmica, carvão mineral e à indústria de transformação."
+  },
+  {
+    "municipio": "Concórdia",
+    "estado": "SC",
+    "curiosidade": "Um dos principais centros agroindustriais do Meio-Oeste, com destaque para a produção de carnes e derivados. É o berço de uma das maiores cooperativas de alimentos do país."
+  },
+  {
+    "municipio": "Cordilheira Alta",
+    "estado": "SC",
+    "curiosidade": "Município do Oeste, de paisagem montanhosa, com economia baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Coronel Freitas",
+    "estado": "SC",
+    "curiosidade": "Localizada no Oeste, sua economia é agropecuária. O nome é uma homenagem ao militar que lutou na Guerra do Contestado."
+  },
+  {
+    "municipio": "Coronel Martins",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Oeste, com forte base na agricultura familiar e na produção de leite."
+  },
+  {
+    "municipio": "Correia Pinto",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra Catarinense, conhecida pelo clima frio e pela forte indústria madeireira e de papel e celulose."
+  },
+  {
+    "municipio": "Corupá",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Banana'**. Possui a **Rota das Cachoeiras**, um parque com 14 quedas d'água em plena Mata Atlântica."
+  },
+  {
+    "municipio": "Criciúma",
+    "estado": "SC",
+    "curiosidade": "A principal cidade do Sul catarinense. É um polo nacional de **extração de carvão mineral, cerâmica e confecções**. Sede do time de futebol **Criciúma E.C.**."
+  },
+  {
+    "municipio": "Cunha Porã",
+    "estado": "SC",
+    "curiosidade": "O nome, de origem Tupi, significa 'mulher bonita'. Localizada no Oeste, possui forte cultura alemã e base agroindustrial."
+  },
+  {
+    "municipio": "Cunhataí",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Oeste, com economia baseada na agricultura e na criação de animais."
+  },
+  {
+    "municipio": "Curitibanos",
+    "estado": "SC",
+    "curiosidade": "Importante centro regional do Planalto Serrano. É conhecido pela **Festa Nacional do Pinhão** e pela forte base na agricultura de grãos e pecuária."
+  },
+  {
+    "municipio": "Descanso",
+    "estado": "SC",
+    "curiosidade": "O nome remete à tranquilidade. Localizada no Extremo Oeste, possui forte base agropecuária, com destaque para a agroindústria familiar."
+  },
+  {
+    "municipio": "Dionísio Cerqueira",
+    "estado": "SC",
+    "curiosidade": "Município **trifronteiriço**, fazendo divisa com a Argentina (Bernardo de Irigoyen) e o Paraná (Barracão). É um importante ponto de comércio e turismo de fronteira."
+  },
+  {
+    "municipio": "Dona Emma",
+    "estado": "SC",
+    "curiosidade": "Homenagem a uma pioneira da região. Localizada no Alto Vale do Itajaí, sua economia é baseada na agricultura e no extrativismo."
+  },
+  {
+    "municipio": "Doutor Pedrinho",
+    "estado": "SC",
+    "curiosidade": "Localizado no Vale Europeu, possui grande potencial ecoturístico com diversas cachoeiras e paisagens de Mata Atlântica."
+  },
+  {
+    "municipio": "Entre Rios",
+    "estado": "SC",
+    "curiosidade": "O nome se deve à sua localização entre rios. É um município do Oeste com economia rural."
+  },
+  {
+    "municipio": "Ermo",
+    "estado": "SC",
+    "curiosidade": "O nome significa 'lugar isolado'. É um pequeno município do Sul catarinense com economia baseada na agricultura."
+  },
+  {
+    "municipio": "Erval Velho",
+    "estado": "SC",
+    "curiosidade": "Localizado no Meio-Oeste. Sua economia é baseada na agropecuária e no extrativismo da erva-mate."
+  },
+  {
+    "municipio": "Faxinal dos Guedes",
+    "estado": "SC",
+    "curiosidade": "Localizada no Oeste. O nome se deve aos faxinais (campos) e aos antigos tropeiros (Guedes). Sua economia é baseada na agricultura de grãos."
+  },
+  [
+  {
+    "municipio": "Formosa do Sul",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Oeste catarinense. Sua economia é baseada principalmente na agropecuária e na produção de leite."
+  },
+  {
+    "municipio": "Forquilhinha",
+    "estado": "SC",
+    "curiosidade": "Forte influência da colonização alemã. É um importante polo de **produção de cerâmica e tijolos** no Sul catarinense, com forte vocação industrial."
+  },
+  {
+    "municipio": "Fraiburgo",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Maçã'**, devido à grande produção da fruta. Possui um clima frio de altitude, ideal para o cultivo, e lagos artificiais."
+  },
+  {
+    "municipio": "Frei Rogério",
+    "estado": "SC",
+    "curiosidade": "Nome em homenagem ao Frei João Maria D’Agostini. Sua economia é rural, baseada na agropecuária e produção de grãos."
+  },
+  {
+    "municipio": "Galvão",
+    "estado": "SC",
+    "curiosidade": "Município do Oeste catarinense, com economia baseada na agricultura (soja, milho) e na criação de gado."
+  },
+  {
+    "municipio": "Garopaba",
+    "estado": "SC",
+    "curiosidade": "Famosa pela **Praia do Rosa** e por ser um importante santuário de **Baleias Francas** (que migram para a costa no inverno). É um polo de ecoturismo e surf."
+  },
+  {
+    "municipio": "Garuva",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a 'Porta de Entrada' de Santa Catarina pelo Norte, na divisa com o Paraná. Possui áreas de Mata Atlântica e cachoeiras para ecoturismo."
+  },
+  {
+    "municipio": "Gaspar",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Vestuário'**, com uma das maiores concentrações de indústrias de confecções e moda do Sul do Brasil."
+  },
+  {
+    "municipio": "Governador Celso Ramos",
+    "estado": "SC",
+    "curiosidade": "Município litorâneo na Grande Florianópolis. Famoso por suas belas praias (como Palmas e Calheiros) e por ser um importante centro de **maricultura** (cultivo de ostras e mariscos)."
+  },
+  {
+    "municipio": "Grão-Pará",
+    "estado": "SC",
+    "curiosidade": "Localizada no Sul, próxima à Serra Geral. É conhecida pela tranquilidade, belezas naturais e economia baseada na agricultura."
+  },
+  {
+    "municipio": "Gravatal",
+    "estado": "SC",
+    "curiosidade": "Famosa por suas **águas termais sulfurosas**, com propriedades medicinais comprovadas, sendo um destino de turismo de saúde e bem-estar."
+  },
+  {
+    "municipio": "Guabiruba",
+    "estado": "SC",
+    "curiosidade": "Município vizinho a Brusque, com forte colonização alemã. Mantém vivas as tradições germânicas, como a famosa 'Festa da Integração'."
+  },
+  {
+    "municipio": "Guaraciaba",
+    "estado": "SC",
+    "curiosidade": "Localizada no Extremo Oeste. Sua economia é forte em agroindústria, especialmente na criação e processamento de suínos e aves."
+  },
+  {
+    "municipio": "Guaramirim",
+    "estado": "SC",
+    "curiosidade": "Importante polo metal-mecânico e agrícola no Norte catarinense, com forte influência da cultura alemã e italiana."
+  },
+  {
+    "municipio": "Guarujá do Sul",
+    "estado": "SC",
+    "curiosidade": "Município do Extremo Oeste, fazendo fronteira com a Argentina. Sua economia é baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Guatambu",
+    "estado": "SC",
+    "curiosidade": "Localizada no Oeste, próxima a Chapecó. Sua economia é baseada na agropecuária e na produção de grãos."
+  },
+  {
+    "municipio": "Herval d'Oeste",
+    "estado": "SC",
+    "curiosidade": "Faz divisa com Joaçaba. É um importante polo industrial e agroindustrial no Meio-Oeste, com destaque para a produção de alimentos."
+  },
+  {
+    "municipio": "Ibiam",
+    "estado": "SC",
+    "curiosidade": "Município do Meio-Oeste, com clima frio de altitude e economia baseada na agricultura e na produção de maçãs."
+  },
+  {
+    "municipio": "Ibicaré",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Cidade das Neves'** por seu clima de montanha e frequentes registros de neve no inverno. Possui forte base agropecuária."
+  },
+  {
+    "municipio": "Ibirama",
+    "estado": "SC",
+    "curiosidade": "Localizada no Alto Vale do Itajaí. Famosa pelo ecoturismo e pela prática de esportes radicais, como o **rafting** nas corredeiras do Rio Hercílio."
+  },
+  {
+    "municipio": "Içara",
+    "estado": "SC",
+    "curiosidade": "Importante centro regional no Sul, com forte economia baseada na **extração de carvão mineral** e na produção de cerâmica."
+  },
+  {
+    "municipio": "Ilhota",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Catarinense da Moda Praia e Lingerie'**, sendo um grande polo de produção e atacado desses segmentos."
+  },
+  {
+    "municipio": "Imaruí",
+    "estado": "SC",
+    "curiosidade": "Famosa pela sua **Lagoa de Imaruí**, uma das maiores do estado, essencial para a pesca e o cultivo de mariscos."
+  },
+  {
+    "municipio": "Imbituba",
+    "estado": "SC",
+    "curiosidade": "Além de possuir um importante **porto marítimo**, é internacionalmente conhecida pela **Praia da Vila** (surf) e por ser um **Santuário de Baleias Francas**."
+  },
+  {
+    "municipio": "Imbuia",
+    "estado": "SC",
+    "curiosidade": "Localizada no Alto Vale do Itajaí. O nome remete à madeira nativa. Sua economia é baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Indaial",
+    "estado": "SC",
+    "curiosidade": "Vale Europeu. Forte colonização alemã. É um polo têxtil e de confecções, além de possuir um campus da Universidade Regional de Blumenau (FURB)."
+  },
+  {
+    "municipio": "Iomerê",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Meio-Oeste com clima de altitude. É um dos maiores produtores de **maçãs** da região."
+  },
+  {
+    "municipio": "Ipira",
+    "estado": "SC",
+    "curiosidade": "Famosa pelas suas **piscinas de águas termais**, que são um grande atrativo turístico na região do Alto Uruguai catarinense."
+  },
+  {
+    "municipio": "Iporã do Oeste",
+    "estado": "SC",
+    "curiosidade": "Município do Extremo Oeste com forte base agroindustrial e colonização alemã. O nome, em Tupi, significa 'água bonita'."
+  },
+  {
+    "municipio": "Ipuaçu",
+    "estado": "SC",
+    "curiosidade": "Conhecida pelos seus **sítios arqueológicos** com vestígios de casas subterrâneas dos índios Kaingang (chamadas 'Casas-fossa')."
+  },
+  {
+    "municipio": "Iraceminha",
+    "estado": "SC",
+    "curiosidade": "Oeste catarinense. Seu nome é uma homenagem à personagem de José de Alencar. Sua economia é rural."
+  },
+  {
+    "municipio": "Irani",
+    "estado": "SC",
+    "curiosidade": "Famosa por ter sido o palco de uma das primeiras e mais importantes batalhas da **Guerra do Contestado** (1912). Possui forte extrativismo da erva-mate."
+  },
+  {
+    "municipio": "Irineópolis",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. O nome homenageia um antigo coronel. Base econômica na exploração de madeira e na agropecuária."
+  },
+  {
+    "municipio": "Itá",
+    "estado": "SC",
+    "curiosidade": "A cidade foi **reconstruída em uma cota superior** devido à inundação para a formação do lago da Usina Hidrelétrica de Itá. Possui um parque aquático termal."
+  },
+  {
+    "municipio": "Itaiópolis",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. Forte colonização de imigrantes eslavos, especialmente **poloneses e ucranianos**, o que se reflete na arquitetura e cultura."
+  },
+  {
+    "municipio": "Itajaí",
+    "estado": "SC",
+    "curiosidade": "Sede de um dos **maiores portos de contêineres do Brasil** e grande polo náutico. Famosa pela **Praia de Cabeçudas** e por sediar grandes eventos náuticos internacionais."
+  },
+  {
+    "municipio": "Itapema",
+    "estado": "SC",
+    "curiosidade": "Município litorâneo com forte crescimento imobiliário e turístico no Litoral Norte. O nome significa 'pedra do rio' em Tupi."
+  },
+  {
+    "municipio": "Itapiranga",
+    "estado": "SC",
+    "curiosidade": "Localizada no Extremo Oeste. É reconhecida como o **'Berço Nacional da Cerveja'**, pois lá foi fundada a primeira cervejaria artesanal do país em 1928."
+  },
+  {
+    "municipio": "Itapoá",
+    "estado": "SC",
+    "curiosidade": "Ponto mais ao Norte do litoral catarinense. Abriga um importante porto. É conhecida por suas praias de areias brancas."
+  },
+  {
+    "municipio": "Jacinto Machado",
+    "estado": "SC",
+    "curiosidade": "Localizada no Sul, é um dos principais acessos ao **Parque Nacional da Serra Geral**, famoso por seus canyons e trilhas."
+  },
+  {
+    "municipio": "Jaguaruna",
+    "estado": "SC",
+    "curiosidade": "Famosa pela técnica ancestral da **Pesca com Auxílio de Botos**, onde os golfinhos auxiliam os pescadores a encurralar os cardumes."
+  },
+  {
+    "municipio": "Jaraguá do Sul",
+    "estado": "SC",
+    "curiosidade": "Forte polo metal-mecânico e têxtil. É a sede da **WEG**, uma das maiores fabricantes mundiais de motores elétricos, e da **Malwee**, gigante do vestuário."
+  },
+  {
+    "municipio": "Joaçaba",
+    "estado": "SC",
+    "curiosidade": "Importante centro do Meio-Oeste. É famosa pelo seu **Carnaval de rua**, considerado um dos melhores e mais tradicionais do Sul do Brasil."
+  },
+  {
+    "municipio": "Joinville",
+    "estado": "SC",
+    "curiosidade": "A cidade mais populosa de SC. Conhecida como a **'Capital Nacional da Dança'** e a **'Cidade dos Príncipes'**. Abriga a única filial da **Escola do Teatro Bolshoi** fora da Rússia."
+  },
+  {
+    "municipio": "José Boiteux",
+    "estado": "SC",
+    "curiosidade": "Localizada no Alto Vale do Itajaí. Abriga a **Barragem Norte**, a maior barragem de contenção de cheias do estado, fundamental para proteger a região de enchentes."
+  },
+  {
+    "municipio": "Jupiá",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Oeste. O nome tem origem tupi. Sua economia é baseada na agricultura e pecuária."
+  },
+  {
+    "municipio": "Lacerdópolis",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste catarinense. O nome homenageia o político Celso Ramos. Possui forte base agropecuária e industrial."
+  },
+  {
+    "municipio": "Lages",
+    "estado": "SC",
+    "curiosidade": "A **'Capital da Serra Catarinense'** e a maior cidade em área do estado. É famosa pela **Festa Nacional do Pinhão** e pela tradição do tropeirismo, herança da cultura gaúcha."
+  },
+  {
+    "municipio": "Laguna",
+    "estado": "SC",
+    "curiosidade": "Cidade histórica com forte influência açoriana. Foi a terra natal de **Anita Garibaldi**. Seu símbolo é o **Farol de Santa Marta** e a famosa Pesca com Botos."
+  },
+  {
+    "municipio": "Lajeado Grande",
+    "estado": "SC",
+    "curiosidade": "Município do Oeste catarinense. Sua economia é essencialmente agrícola, com destaque para a produção de grãos e pecuária."
+  },
+  {
+    "municipio": "Lauro Müller",
+    "estado": "SC",
+    "curiosidade": "Localizada no Sul, na subida da Serra do Rio do Rastro. Conhecida pela **mineração de carvão** e por sua história ligada à industrialização."
+  },
+  {
+    "municipio": "Lebon Régis",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. O nome homenageia um militar. Sua economia é baseada na agricultura e no extrativismo florestal."
+  },
+  {
+    "municipio": "Leoberto Leal",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Alto Vale do Itajaí. O nome homenageia um antigo político. Sua base econômica é a agricultura familiar."
+  },
+  {
+    "municipio": "Lindóia do Sul",
+    "estado": "SC",
+    "curiosidade": "Localizada no Alto Uruguai. É conhecida pela riqueza de suas **águas minerais** e pelo potencial de turismo hidromineral."
+  },
+  {
+    "municipio": "Lontras",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. Conhecida pela forte indústria têxtil e de confecções, sendo um polo regional de moda."
+  },
+  {
+    "municipio": "Luiz Alves",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Catarinense da Cachaça'**, devido à alta qualidade e grande produção da bebida, com tradição artesanal."
+  },
+  {
+    "municipio": "Luzerna",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. Famosa pela beleza da decoração de Natal, com a atração da **'Vila da Neve'**, e por sua forte base industrial."
+  },
+  {
+    "municipio": "Macieira",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Meio-Oeste. Seu nome remete à produção de **maçãs**, uma importante cultura de altitude na região."
+  },
+  {
+    "municipio": "Mafra",
+    "estado": "SC",
+    "curiosidade": "Localizada no Planalto Norte, faz divisa com o Paraná, formando o complexo urbano das 'Gêmeas do Iguaçu' com Rio Negro (PR). Forte tradição tropeira."
+  },
+  {
+    "municipio": "Major Gercino",
+    "estado": "SC",
+    "curiosidade": "Pequeno município da Grande Florianópolis. Sua economia é baseada na agricultura de subsistência e na produção de banana."
+  },
+  {
+    "municipio": "Major Vieira",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. O nome homenageia um militar. Sua economia é baseada na agricultura e extrativismo florestal."
+  },
+  {
+    "municipio": "Maracajá",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Conhecida pela produção de **arroz irrigado** e pela indústria de cerâmica."
+  },
+  {
+    "municipio": "Maravilha",
+    "estado": "SC",
+    "curiosidade": "Importante polo do Oeste. Conhecida como a **'Capital das Etnias'** pela diversidade de colonização (alemã, italiana, polonesa) e forte agroindústria."
+  },
+  {
+    "municipio": "Marema",
+    "estado": "SC",
+    "curiosidade": "Município do Oeste, com economia baseada na agropecuária e na produção de grãos."
+  },
+  {
+    "municipio": "Massaranduba",
+    "estado": "SC",
+    "curiosidade": "Vale do Itapocu. Famosa pela **Festa Nacional do Arroz (Fenarroz)**, sendo um grande produtor de arroz irrigado."
+  },
+  {
+    "municipio": "Matos Costa",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. Sua economia é baseada na agricultura e no extrativismo florestal."
+  },
+  {
+    "municipio": "Meleiro",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Importante produtor de **arroz**, sendo o segundo município de SC com maior área destinada à orizicultura."
+  },
+  {
+    "municipio": "Mirim Doce",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Alto Vale do Itajaí. O nome é uma referência a um rio local. Sua base é a agricultura familiar."
+  },
+  {
+    "municipio": "Modelo",
+    "estado": "SC",
+    "curiosidade": "Município do Oeste com forte base na agropecuária, especialmente na criação de suínos e aves."
+  },
+  {
+    "municipio": "Mondaí",
+    "estado": "SC",
+    "curiosidade": "Localizada no Extremo Oeste, próxima ao Rio Uruguai. Conhecida como a **'Cidade das Palmeiras'** e com forte potencial ecoturístico."
+  },
+  {
+    "municipio": "Monte Carlo",
+    "estado": "SC",
+    "curiosidade": "Planalto Serrano. É famosa pela **Barragem de Monte Carlo**, um lago artificial que atrai turistas e é usado para esportes náuticos."
+  },
+  {
+    "municipio": "Monte Castelo",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. O nome remete à montanha que domina a paisagem. Base econômica na exploração de madeira e na erva-mate."
+  },
+  {
+    "municipio": "Morro da Fumaça",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Conhecida como um dos importantes polos de **produção de cerâmica e telhas** do Sul do estado."
+  },
+  {
+    "municipio": "Morro Grande",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Sul catarinense. Sua economia é baseada na agricultura e na presença de pequenas quedas d'água."
+  },
+  {
+    "municipio": "Navegantes",
+    "estado": "SC",
+    "curiosidade": "Abriga o **Aeroporto Internacional de Navegantes**, o principal do Vale do Itajaí, e um importante porto. É um popular destino turístico de praia."
+  },
+  {
+    "municipio": "Nova Erechim",
+    "estado": "SC",
+    "curiosidade": "Oeste catarinense. Sua economia é baseada na agricultura e agroindústria, com destaque para a produção de leite."
+  },
+  {
+    "municipio": "Nova Itaberaba",
+    "estado": "SC",
+    "curiosidade": "Localizada no Oeste, próxima a Chapecó. Sua economia é agropecuária, com forte base na criação de gado e aves."
+  },
+  {
+    "municipio": "Nova Trento",
+    "estado": "SC",
+    "curiosidade": "Forte colonização italiana. Abriga o **Santuário Santa Paulina**, a primeira santa brasileira, sendo um dos maiores destinos de turismo religioso do país."
+  },
+  {
+    "municipio": "Nova Veneza",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Gastronomia Típica Italiana'**. É famosa pela réplica da **Gôndola Veneziana** e por manter fortes tradições culturais italianas."
+  },
+  {
+    "municipio": "Novo Horizonte",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Oeste catarinense. Sua economia é baseada na agricultura e na pecuária."
+  },
+  [
+  {
+    "municipio": "Orleans",
+    "estado": "SC",
+    "curiosidade": "Localizada no Sul, próxima à Serra Geral. Possui o **Museu ao Ar Livre Princesa Isabel**, que preserva a arquitetura e os costumes da colonização italiana e alemã."
+  },
+  {
+    "municipio": "Otacílio Costa",
+    "estado": "SC",
+    "curiosidade": "Importante polo de **produção de papel e celulose** na Serra Catarinense, sendo um centro industrial de base florestal."
+  },
+  {
+    "municipio": "Ouro",
+    "estado": "SC",
+    "curiosidade": "O nome remete à antiga busca por minerais. Faz parte da Rota do Vinho no Meio-Oeste. É conhecida pelas suas **águas termais**."
+  },
+  {
+    "municipio": "Ouro Verde",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Oeste. Sua economia é baseada na agricultura e pecuária, com foco na produção de grãos."
+  },
+  {
+    "municipio": "Paial",
+    "estado": "SC",
+    "curiosidade": "Localizada no Oeste, é banhada pelo Rio Uruguai. Sua economia é agropecuária."
+  },
+  {
+    "municipio": "Painel",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra Catarinense. É conhecida por ter a **sede do governo mais fria do Brasil**, e pela produção de queijos finos e vinhos de altitude."
+  },
+  {
+    "municipio": "Palhoça",
+    "estado": "SC",
+    "curiosidade": "Município da Grande Florianópolis. Possui praias famosas, como a **Guarda do Embaú** (capital mundial do surf). É um importante centro comercial e logístico."
+  },
+  {
+    "municipio": "Palma Sola",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. O nome refere-se a uma palmeira nativa. É um município agropecuário na fronteira com o Paraná."
+  },
+  {
+    "municipio": "Palmeira",
+    "estado": "SC",
+    "curiosidade": "Localizada na Serra Catarinense. Conhecida pela sua economia rural e pelo clima frio."
+  },
+  {
+    "municipio": "Palmitos",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. Famosa por sediar o **Complexo Termelétrico de Palmitos** e por suas águas termais."
+  },
+  {
+    "municipio": "Papanduva",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. Conhecida pela grande produção de **hortaliças** (especialmente repolho) e pela cultura eslava."
+  },
+  {
+    "municipio": "Paraíso",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. Município de fronteira com a Argentina. Base econômica na agricultura."
+  },
+  {
+    "municipio": "Passo de Torres",
+    "estado": "SC",
+    "curiosidade": "Município litorâneo que faz divisa com Torres (RS) pelo Rio Mampituba. É a porta de entrada para SC pelo Sul, com forte vocação turística."
+  },
+  {
+    "municipio": "Passos Maia",
+    "estado": "SC",
+    "curiosidade": "Oeste. O nome homenageia o político. Sua economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Paulo Lopes",
+    "estado": "SC",
+    "curiosidade": "Localizada na Grande Florianópolis. Conhecida pelas suas lagoas e pela rica área de Mata Atlântica."
+  },
+  {
+    "municipio": "Pedras Grandes",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. O nome se deve à presença de grandes rochas. Conhecida pela produção de vinhos de altitude e por abrigar a **primeira ferrovia de SC**."
+  },
+  {
+    "municipio": "Penha",
+    "estado": "SC",
+    "curiosidade": "Litoral Norte. Sede do **Beto Carrero World**, o maior parque temático da América Latina."
+  },
+  {
+    "municipio": "Peritiba",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. Forte influência da colonização alemã. O nome em tupi significa 'lugar de palmeiras'."
+  },
+  {
+    "municipio": "Petrolândia",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. Sua economia é baseada na agricultura e na presença de nascentes de rios."
+  },
+  {
+    "municipio": "Pinhalzinho",
+    "estado": "SC",
+    "curiosidade": "Oeste. Importante centro agroindustrial, conhecido pela produção de leite e derivados."
+  },
+  {
+    "municipio": "Pinheiro Preto",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. O nome remete à árvore nativa. É conhecida como a **'Terra da Uva e do Vinho'** na região."
+  },
+  {
+    "municipio": "Piratuba",
+    "estado": "SC",
+    "curiosidade": "Famosa pelas suas **Águas Termais**, um dos principais destinos de turismo de saúde e relaxamento do Sul do Brasil. É banhada pelo Rio do Peixe."
+  },
+  {
+    "municipio": "Planalto Alegre",
+    "estado": "SC",
+    "curiosidade": "Oeste. O nome descreve o relevo. Sua economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Pomerode",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Cidade Mais Alemã do Brasil'**. Preserva a arquitetura enxaimel, o dialeto alemão e realiza a tradicional **Festa Pomerana**."
+  },
+  {
+    "municipio": "Ponte Alta",
+    "estado": "SC",
+    "curiosidade": "Serra Catarinense. O nome remete à ponte ferroviária. Sua economia é baseada na pecuária e na agricultura."
+  },
+  {
+    "municipio": "Ponte Alta do Norte",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. O nome remete à sua localização. Sua economia é baseada na silvicultura (madeira)."
+  },
+  {
+    "municipio": "Ponte Serrada",
+    "estado": "SC",
+    "curiosidade": "Oeste. Conhecida pela **Guerra do Contestado**. Sua economia é baseada na agropecuária e na indústria madeireira."
+  },
+  {
+    "municipio": "Porto Belo",
+    "estado": "SC",
+    "curiosidade": "Litoral Norte. Única cidade de SC com porto de escala para **navios de cruzeiro internacionais**. Possui praias com águas calmas."
+  },
+  {
+    "municipio": "Porto União",
+    "estado": "SC",
+    "curiosidade": "Cidade gêmea de União da Vitória (PR), separada apenas pelo Rio Iguaçu. Foi ponto nevrálgico da **Guerra do Contestado**."
+  },
+  {
+    "municipio": "Pouso Redondo",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. Conhecida pela beleza natural da Serra Geral. Sua economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Praia Grande",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital dos Canyons'**, pois é o principal acesso aos grandes cânions dos Parques Nacionais Aparados da Serra e Serra Geral."
+  },
+  {
+    "municipio": "Presidente Castelo Branco",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. O nome homenageia o ex-presidente. Conhecido pela beleza do Rio do Peixe."
+  },
+  {
+    "municipio": "Presidente Getúlio",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. Conhecida pela forte colonização alemã e pelas indústrias de confecção e malhas."
+  },
+  {
+    "municipio": "Presidente Nereu",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. O nome homenageia o ex-presidente do Congresso. Sua economia é agrícola."
+  },
+  {
+    "municipio": "Princesa",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. É o ponto mais a oeste de Santa Catarina. Faz fronteira com a Argentina."
+  },
+  {
+    "municipio": "Quilombo",
+    "estado": "SC",
+    "curiosidade": "Oeste. O nome é uma homenagem aos antigos povoados de escravizados fugidos. Sua economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Rancho Queimado",
+    "estado": "SC",
+    "curiosidade": "Serra Catarinense. Conhecida pela produção de **morango** e pelo clima frio, sendo um popular destino de inverno da Grande Florianópolis."
+  },
+  {
+    "municipio": "Rio das Antas",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. O nome se deve à presença de antas no passado. Sua economia é baseada na madeira e na produção de vinhos."
+  },
+  {
+    "municipio": "Rio do Campo",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. O nome remete aos rios que cortam os campos de altitude. Sua economia é rural."
+  },
+  {
+    "municipio": "Rio do Oeste",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. Sua economia é baseada na agricultura e na indústria de transformação. Foi fortemente afetada por cheias históricas do Rio Itajaí-Açu."
+  },
+  {
+    "municipio": "Rio do Sul",
+    "estado": "SC",
+    "curiosidade": "A principal cidade e polo econômico do **Alto Vale do Itajaí**. Importante centro têxtil, de confecções e serviços."
+  },
+  {
+    "municipio": "Rio dos Cedros",
+    "estado": "SC",
+    "curiosidade": "Vale Europeu. Conhecida pela forte influência italiana e pelas represas que geram energia, usadas para ecoturismo."
+  },
+  {
+    "municipio": "Rio Fortuna",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Conhecida pela forte base agrícola e pela tranquilidade da vida no campo."
+  },
+  {
+    "municipio": "Rio Negrinho",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. Famosa pela **Maria Fumaça** (trem turístico) e por ser um importante polo **moveleiro**."
+  },
+  {
+    "municipio": "Rio Rufino",
+    "estado": "SC",
+    "curiosidade": "Serra Catarinense. É considerada a cidade mais fria de SC e uma das mais frias do Brasil, com frequência de neve no inverno."
+  },
+  {
+    "municipio": "Riqueza",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. O nome foi dado devido à fertilidade da terra. Sua economia é agropecuária."
+  },
+  {
+    "municipio": "Rodeio",
+    "estado": "SC",
+    "curiosidade": "Vale Europeu. Forte colonização italiana. Conhecida pela produção de vinhos e pela arquitetura típica."
+  },
+  {
+    "municipio": "Romelândia",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. Sua economia é baseada na agropecuária e na indústria de alimentos."
+  },
+  {
+    "municipio": "Salete",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. Conhecida pela devoção a Nossa Senhora da Salete. Sua economia é agrícola."
+  },
+  {
+    "municipio": "Saltinho",
+    "estado": "SC",
+    "curiosidade": "Oeste. Pequeno município. O nome remete a uma pequena queda d'água. Base econômica na agricultura."
+  },
+  {
+    "municipio": "Salto Veloso",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. Conhecida como a **'Terra da Uva e do Vinho'**. Possui forte colonização italiana."
+  },
+  {
+    "municipio": "Sangão",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Sua economia é baseada na agricultura (principalmente arroz) e na indústria de cerâmica."
+  },
+  {
+    "municipio": "Santa Cecília",
+    "estado": "SC",
+    "curiosidade": "Planalto Serrano. Famosa pela grande área de **reflorestamento (pinus e eucalipto)** e pela indústria madeireira."
+  },
+  {
+    "municipio": "Santa Helena",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. Faz fronteira com a Argentina. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "Santa Rosa de Lima",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Conhecida pela rica área de Mata Atlântica e pelo turismo rural e de aventura."
+  },
+  {
+    "municipio": "Santa Rosa do Sul",
+    "estado": "SC",
+    "curiosidade": "Extremo Sul. Sua economia é baseada na agropecuária e na pesca artesanal."
+  },
+  {
+    "municipio": "Santa Terezinha",
+    "estado": "SC",
+    "curiosidade": "Vale do Itajaí. Conhecida pela área de preservação da Mata Atlântica e pela agricultura."
+  },
+  {
+    "municipio": "Santa Terezinha do Progresso",
+    "estado": "SC",
+    "curiosidade": "Oeste. Base econômica na agricultura e pecuária."
+  },
+  {
+    "municipio": "Santiago do Sul",
+    "estado": "SC",
+    "curiosidade": "Oeste. O nome remete a São Tiago. Sua economia é agropecuária."
+  },
+  {
+    "municipio": "Santo Amaro da Imperatriz",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Catarinense das Águas Termais'**, por ser uma das primeiras estâncias hidrominerais do Brasil, frequentada por Dom Pedro II."
+  },
+  {
+    "municipio": "São Bento do Sul",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. Conhecida como a **'Capital Nacional dos Móveis'**, devido à grande concentração de indústrias moveleiras de alta qualidade."
+  },
+  {
+    "municipio": "São Bernardino",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. Base econômica na agropecuária e na produção de leite."
+  },
+  {
+    "municipio": "São Bonifácio",
+    "estado": "SC",
+    "curiosidade": "Serra do Tabuleiro. Conhecida por suas paisagens montanhosas e pela rica cultura alemã."
+  },
+  {
+    "municipio": "São Carlos",
+    "estado": "SC",
+    "curiosidade": "Oeste. Famosa pelas suas **águas termais** e pelo potencial de turismo de saúde e lazer."
+  },
+  {
+    "municipio": "São Cristóvão do Sul",
+    "estado": "SC",
+    "curiosidade": "Serra Catarinense. O nome homenageia o padroeiro. Sua economia é baseada na agricultura."
+  },
+  {
+    "municipio": "São Domingos",
+    "estado": "SC",
+    "curiosidade": "Oeste. O nome remete ao padroeiro. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "São Francisco do Sul",
+    "estado": "SC",
+    "curiosidade": "A **cidade mais antiga de Santa Catarina** (1641). Possui um porto importante e um centro histórico com arquitetura colonial preservada."
+  },
+  {
+    "municipio": "São João Batista",
+    "estado": "SC",
+    "curiosidade": "Vale do Rio Tijucas. Conhecida como a **'Capital Catarinense do Calçado'**, sendo um dos maiores polos produtores de sapatos do Sul do país."
+  },
+  {
+    "municipio": "São João do Itaperiú",
+    "estado": "SC",
+    "curiosidade": "Litoral Norte. Sua economia é baseada na agricultura e na extração de argila para cerâmica."
+  },
+  {
+    "municipio": "São João do Sul",
+    "estado": "SC",
+    "curiosidade": "Extremo Sul. O nome é uma homenagem ao padroeiro. Sua economia é agropecuária."
+  },
+  {
+    "municipio": "São Joaquim",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Neve'**. É o principal polo de produção de **vinhos de altitude** do Brasil e atrai turistas pelo clima frio."
+  },
+  {
+    "municipio": "São José",
+    "estado": "SC",
+    "curiosidade": "Município da Grande Florianópolis. É um importante centro comercial e industrial, com forte ligação histórica com a capital."
+  },
+  {
+    "municipio": "São José do Cedro",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. O nome remete à árvore cedro. Base econômica na agropecuária e indústria de alimentos."
+  },
+  {
+    "municipio": "São José do Cerrito",
+    "estado": "SC",
+    "curiosidade": "Serra Catarinense. O nome faz referência a um 'pequeno campo'. Sua economia é baseada na pecuária."
+  },
+  {
+    "municipio": "São Lourenço do Oeste",
+    "estado": "SC",
+    "curiosidade": "Oeste. Importante centro regional, com forte agroindústria (suínos, aves) e produção de laticínios."
+  },
+  {
+    "municipio": "São Ludgero",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Forte colonização alemã. É um polo de **produção de equipamentos hidráulicos** e agropecuária."
+  },
+  {
+    "municipio": "São Martinho",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Conhecida pela forte colonização alemã e pelas tradições culturais."
+  },
+  {
+    "municipio": "São Miguel da Boa Vista",
+    "estado": "SC",
+    "curiosidade": "Oeste. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "São Miguel do Oeste",
+    "estado": "SC",
+    "curiosidade": "O principal polo do Extremo Oeste catarinense. É um centro comercial e de serviços vital para a região de fronteira."
+  },
+  {
+    "municipio": "São Pedro de Alcântara",
+    "estado": "SC",
+    "curiosidade": "A **primeira colônia alemã em Santa Catarina** (1829). Preserva a arquitetura e a cultura germânica."
+  },
+  {
+    "municipio": "Saudades",
+    "estado": "SC",
+    "curiosidade": "Oeste. Conhecida pela forte colonização alemã. Possui o título de **'Capital Estadual da Dança'**, com um festival anual."
+  },
+  {
+    "municipio": "Schroeder",
+    "estado": "SC",
+    "curiosidade": "Vale do Itapocu. O nome homenageia o cônsul. Sua economia é baseada na agricultura e na indústria de pequeno porte."
+  },
+  {
+    "municipio": "Seara",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. Importante polo agroindustrial, sede de uma das maiores empresas de alimentos do país, a **Seara Alimentos**."
+  },
+  {
+    "municipio": "Serra Alta",
+    "estado": "SC",
+    "curiosidade": "Oeste. O nome remete ao relevo. Sua economia é agropecuária."
+  },
+  {
+    "municipio": "Siderópolis",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. O nome significa 'cidade do ferro'. Forte ligação com a mineração de carvão e a siderurgia."
+  },
+  {
+    "municipio": "Sombrio",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. O nome remete ao Rio Sombrio. Importante centro de confecções e indústria moveleira."
+  },
+  {
+    "municipio": "Sul Brasil",
+    "estado": "SC",
+    "curiosidade": "Oeste. Base econômica na agricultura familiar e na pecuária."
+  },
+  {
+    "municipio": "Taió",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. Abriga a **Barragem Oeste**, crucial para o controle de cheias na região."
+  },
+  {
+    "municipio": "Tangará",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. Conhecida como a **'Capital Catarinense do Vinho'**, com forte tradição na vitivinicultura."
+  },
+  {
+    "municipio": "Tigrinhos",
+    "estado": "SC",
+    "curiosidade": "Pequeno município do Oeste. O nome tem origem no Rio Tigre. Sua economia é agrícola."
+  },
+  {
+    "municipio": "Tijucas",
+    "estado": "SC",
+    "curiosidade": "Vale do Rio Tijucas. Conhecida pela **indústria cerâmica** (telhas e tijolos) e pela produção de arroz."
+  },
+  {
+    "municipio": "Timbé do Sul",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. O nome é de origem indígena. Famosa por suas cachoeiras e ecoturismo."
+  },
+  {
+    "municipio": "Timbó",
+    "estado": "SC",
+    "curiosidade": "Vale Europeu. Forte colonização alemã. Conhecida pela arquitetura, o **Jardim Botânico** e o grande número de bicicletas em circulação."
+  },
+  {
+    "municipio": "Timbó Grande",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. O nome remete à árvore Timbó. Base econômica na extração de madeira."
+  },
+  {
+    "municipio": "Três Barras",
+    "estado": "SC",
+    "curiosidade": "Planalto Norte. O nome remete à confluência de rios. Importante centro madeireiro."
+  },
+  {
+    "municipio": "Treviso",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Forte colonização italiana. O nome homenageia a província italiana. Base econômica na mineração e cerâmica."
+  },
+  {
+    "municipio": "Treze de Maio",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. O nome faz alusão à data da abolição da escravatura. Base econômica na agricultura."
+  },
+  {
+    "municipio": "Treze Tílias",
+    "estado": "SC",
+    "curiosidade": "Conhecida como a **'Capital Austríaca'** no Brasil. Único município com colonização predominantemente austríaca, com arquitetura alpina e dialeto preservado."
+  },
+  {
+    "municipio": "Trombudo Central",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. O nome remete à forma do morro local. Importante centro comercial e agrícola."
+  },
+  {
+    "municipio": "Tubarão",
+    "estado": "SC",
+    "curiosidade": "Principal polo do Sul catarinense. Conhecida pelo grande complexo termelétrico e pelas indústrias de confecção. Em 1974, foi devastada por uma enchente histórica."
+  },
+  {
+    "municipio": "Tunápolis",
+    "estado": "SC",
+    "curiosidade": "Extremo Oeste. O nome remete à tuna (fruto do cacto). Forte colonização alemã e base agropecuária."
+  },
+  {
+    "municipio": "Turvo",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Conhecida pela produção de **arroz** e pela indústria de laticínios."
+  },
+  {
+    "municipio": "União do Oeste",
+    "estado": "SC",
+    "curiosidade": "Oeste. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "Urubici",
+    "estado": "SC",
+    "curiosidade": "Serra Catarinense. Conhecida como a **'Capital do Frio'** e o principal destino de inverno de SC. Possui o **Morro da Igreja** e a **Pedra Furada**."
+  },
+  {
+    "municipio": "Urupema",
+    "estado": "SC",
+    "curiosidade": "Serra Catarinense. O município mais frio do Brasil, com frequência de geada e neve. Abriga o **Morro das Antenas**."
+  },
+  {
+    "municipio": "Urussanga",
+    "estado": "SC",
+    "curiosidade": "Sul catarinense. Forte colonização italiana. Conhecida como a **'Capital Catarinense do Vinho'**, com produção de vinho fino e a tradicional **Festa do Vinho**."
+  },
+  {
+    "municipio": "Vargeão",
+    "estado": "SC",
+    "curiosidade": "Oeste. Conhecida pela presença de uma **Cratera de Impacto de Meteoro** (Cráter Vargeão), um marco geológico."
+  },
+  {
+    "municipio": "Vargem",
+    "estado": "SC",
+    "curiosidade": "Serra Catarinense. O nome remete à planície. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "Vargem Bonita",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. Base econômica na agricultura e pecuária."
+  },
+  {
+    "municipio": "Vidal Ramos",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. O nome homenageia o ex-governador. Base econômica na agricultura."
+  },
+  {
+    "municipio": "Videira",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. Conhecida como a **'Capital da Uva e do Vinho'** e por sua agroindústria (Perdigão). É um importante centro de vitivinicultura."
+  },
+  {
+    "municipio": "Vitor Meireles",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. O nome homenageia o pintor. Base econômica na agricultura e extrativismo."
+  },
+  {
+    "municipio": "Witmarsum",
+    "estado": "SC",
+    "curiosidade": "Alto Vale do Itajaí. Forte colonização alemã. O nome é uma homenagem a uma cidade holandesa. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "Xanxerê",
+    "estado": "SC",
+    "curiosidade": "Importante centro regional do Oeste. O nome tem origem Kaingang. É um polo agroindustrial e de serviços."
+  },
+  {
+    "municipio": "Xavantina",
+    "estado": "SC",
+    "curiosidade": "Oeste. O nome remete à tribo Xavante. Base econômica na agropecuária."
+  },
+  {
+    "municipio": "Xaxim",
+    "estado": "SC",
+    "curiosidade": "Oeste. O nome é de origem Tupi (samambaia). É um importante centro agroindustrial, conhecido pela produção de aves e suínos."
+  },
+  {
+    "municipio": "Zortéa",
+    "estado": "SC",
+    "curiosidade": "Meio-Oeste. Conhecida pelas suas **águas termais** e por ser um importante destino de turismo de lazer na região."
+  }
+  ]
+]
+]
+]

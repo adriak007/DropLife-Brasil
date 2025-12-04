@@ -1,0 +1,930 @@
+[
+  {
+    "municipio": "Abreu e Lima",
+    "estado": "PE",
+    "curiosidade": "Cidade da Região Metropolitana do Recife, conhecida pelo forte polo industrial. Também preserva tradições culturais ligadas ao maracatu e cultura afro-brasileira."
+  },
+  {
+    "municipio": "Afogados da Ingazeira",
+    "estado": "PE",
+    "curiosidade": "Considerada a 'Capital do Sertão do Pajeú', com forte tradição poética. É um dos berços da poesia repentista nordestina."
+  },
+  {
+    "municipio": "Afrânio",
+    "estado": "PE",
+    "curiosidade": "Município do Sertão do São Francisco, conhecido pela produção de bode e caprinos. Faz parte do polo vinícola do Vale do São Francisco."
+  },
+  {
+    "municipio": "Agrestina",
+    "estado": "PE",
+    "curiosidade": "Importante centro do Agreste, com forte agricultura e eventos religiosos. Conhecida pela Festa de São José, que movimenta toda a região."
+  },
+  {
+    "municipio": "Água Preta",
+    "estado": "PE",
+    "curiosidade": "Cidade da Zona da Mata, marcada por engenhos históricos. Foi protagonista de conflitos durante a Guerra dos Cabanos."
+  },
+  {
+    "municipio": "Águas Belas",
+    "estado": "PE",
+    "curiosidade": "Terra do povo indígena Fulni-ô, único do Nordeste que preserva sua língua nativa, o Ia-tê. Cultura indígena é fortemente presente."
+  },
+  {
+    "municipio": "Alagoinha",
+    "estado": "PE",
+    "curiosidade": "Cidade serrana com clima ameno e forte produção de leite. Suas paisagens naturais atraem ecoturistas."
+  },
+  {
+    "municipio": "Aliança",
+    "estado": "PE",
+    "curiosidade": "Conhecida pela tradição do maracatu rural e engenhos de cana. Cultura afro-indígena muito preservada."
+  },
+  {
+    "municipio": "Altinho",
+    "estado": "PE",
+    "curiosidade": "Localizada no Agreste, com economia baseada na agricultura e pecuária. Tradições religiosas movimentam a cidade."
+  },
+  {
+    "municipio": "Amaraji",
+    "estado": "PE",
+    "curiosidade": "Cidade da Zona da Mata com produção expressiva de frutas e hortaliças. Possui clima agradável devido à altitude."
+  },
+  {
+    "municipio": "Angelim",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste conhecido pelo clima agradável e pelas tradições rurais. Sua economia gira em torno da agricultura familiar."
+  },
+  {
+    "municipio": "Araçoiaba",
+    "estado": "PE",
+    "curiosidade": "Integrante da Região Metropolitana do Recife, com destaque para áreas preservadas de mata atlântica. Economia crescente e proximidade com polos industriais."
+  },
+  {
+    "municipio": "Araripina",
+    "estado": "PE",
+    "curiosidade": "Principal cidade do Araripe pernambucano, famosa pela produção de gesso. É um dos maiores polos gesseiros do Brasil."
+  },
+  {
+    "municipio": "Arcoverde",
+    "estado": "PE",
+    "curiosidade": "Considerada a ‘Porta do Sertão’, é referência cultural e musical. Seu São João é um dos mais tradicionais do estado."
+  },
+  {
+    "municipio": "Barra de Guabiraba",
+    "estado": "PE",
+    "curiosidade": "Município cercado por serras e rios, com forte potencial ecoturístico. Agricultura é a base da economia local."
+  },
+  {
+    "municipio": "Barreiros",
+    "estado": "PE",
+    "curiosidade": "Cidade litorânea com belas praias e grande produção de coco. A cana-de-açúcar também teve papel histórico na região."
+  },
+  {
+    "municipio": "Belém de Maria",
+    "estado": "PE",
+    "curiosidade": "Cidade da Zona da Mata com cultura ligada a engenhos antigos. Possui rios e vegetação rica na região."
+  },
+  {
+    "municipio": "Belém de São Francisco",
+    "estado": "PE",
+    "curiosidade": "Famosa pela tradicional ‘Dança dos Caboclos’. Localizada às margens do São Francisco, tem forte cultura ribeirinha."
+  },
+  {
+    "municipio": "Belo Jardim",
+    "estado": "PE",
+    "curiosidade": "City natal do músico Dominguinhos e sede de um dos maiores parques industriais do Agreste. Destaca-se na educação e indústria alimentícia."
+  },
+  {
+    "municipio": "Betânia",
+    "estado": "PE",
+    "curiosidade": "Município sertanejo com forte tradição na caprinocultura. Paisagens áridas e cultura sertaneja muito preservada."
+  },
+  {
+    "municipio": "Bezerros",
+    "estado": "PE",
+    "curiosidade": "Conhecida pelos Papangus, atração tradicional do Carnaval pernambucano. Também possui áreas serranas com clima frio."
+  },
+  {
+    "municipio": "Bodocó",
+    "estado": "PE",
+    "curiosidade": "Localizado no Sertão do Araripe, destaca-se pela agricultura e cultura sertaneja. O Bodocó também é berço de violeiros famosos."
+  },
+  {
+    "municipio": "Bom Conselho",
+    "estado": "PE",
+    "curiosidade": "Cidade serrana conhecida como 'Terra de Papacaça'. Possui clima ameno e grande diversidade cultural."
+  },
+  {
+    "municipio": "Bom Jardim",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste famoso pelo tradicional Festival de Quadrilhas. Economia forte em comércio e agricultura."
+  },
+  {
+    "municipio": "Bonito",
+    "estado": "PE",
+    "curiosidade": "Conhecido por suas cachoeiras e ecoturismo. A Serra do Rodeador é um dos cartões-postais da cidade."
+  },
+  {
+    "municipio": "Brejão",
+    "estado": "PE",
+    "curiosidade": "Cidade natal da cantora Angela Maria. Local serrano com clima frio e agricultura diversificada."
+  },
+  {
+    "municipio": "Brejinho",
+    "estado": "PE",
+    "curiosidade": "Município do Sertão do Pajeú com forte tradição poética. Economia baseada em agricultura e pecuária."
+  },
+  {
+    "municipio": "Brejo da Madre de Deus",
+    "estado": "PE",
+    "curiosidade": "Abriga Nova Jerusalém, o maior teatro ao ar livre do mundo. Cidade de grande importância histórica e cultural."
+  },
+  {
+    "municipio": "Buenos Aires",
+    "estado": "PE",
+    "curiosidade": "Localizado na Zona da Mata, preserva tradições rurais e festas religiosas. Agricultura é fonte importante de renda."
+  },
+  {
+    "municipio": "Buíque",
+    "estado": "PE",
+    "curiosidade": "Abriga o Parque Nacional do Catimbau, segundo maior sítio arqueológico do Brasil. Destino muito procurado para trilhas e turismo ecológico."
+  },
+  {
+    "municipio": "Cabo de Santo Agostinho",
+    "estado": "PE",
+    "curiosidade": "Cidade histórica com praias famosas como Gaibu e Suape. Importante polo industrial e turístico da RMR."
+  },
+  {
+    "municipio": "Cabrobó",
+    "estado": "PE",
+    "curiosidade": "Terra da Ilha de Assunção, dos índios Truká. Forte produção de cebola e cultura ribeirinha do São Francisco."
+  },
+  {
+    "municipio": "Cachoeirinha",
+    "estado": "PE",
+    "curiosidade": "Conhecida pela fabricação de selas, arreios e artesanato em couro. A vaquejada é uma tradição marcante."
+  },
+  {
+    "municipio": "Caetés",
+    "estado": "PE",
+    "curiosidade": "Cidade natal do ex-presidente Lula. Município do Agreste com forte economia agrícola."
+  },
+  {
+    "municipio": "Calçado",
+    "estado": "PE",
+    "curiosidade": "Município rural do Agreste, com forte presença de pecuária e agricultura. Festas religiosas movimentam a cidade."
+  },
+  {
+    "municipio": "Calumbi",
+    "estado": "PE",
+    "curiosidade": "Município sertanejo com cultura tradicional ligada à poesia e música regional. Economia baseada na pecuária."
+  },
+  {
+    "municipio": "Camaragibe",
+    "estado": "PE",
+    "curiosidade": "Cidade da RMR com grande importância histórica desde o período dos engenhos. Hoje é polo urbano e comercial."
+  },
+  {
+    "municipio": "Camocim de São Félix",
+    "estado": "PE",
+    "curiosidade": "Localizado na serra, possui clima frio e produção de frutas. Suas festas religiosas atraem visitantes."
+  },
+  {
+    "municipio": "Camutanga",
+    "estado": "PE",
+    "curiosidade": "Município pequeno da Zona da Mata, com economia agrícola. Comunidade unida e tradições preservadas."
+  },
+  {
+    "municipio": "Canhotinho",
+    "estado": "PE",
+    "curiosidade": "Cidade rica em cultura, conhecida por artistas regionais. A agricultura é base da economia local."
+  },
+  {
+    "municipio": "Capoeiras",
+    "estado": "PE",
+    "curiosidade": "Município agrícola do Agreste, famoso por festividades religiosas. Cultura sertaneja é muito presente."
+  },
+  {
+    "municipio": "Carnaíba",
+    "estado": "PE",
+    "curiosidade": "Berço de grandes poetas e músicos do Pajeú. Forte tradição cultural ligada ao repente e à viola."
+  },
+  {
+    "municipio": "Carnaubeira da Penha",
+    "estado": "PE",
+    "curiosidade": "Possui parte significativa da população indígena Pankará. Cultura nativa forte e preservada."
+  },
+  {
+    "municipio": "Carpina",
+    "estado": "PE",
+    "curiosidade": "Um dos principais polos da Zona da Mata Norte. Conhecida pelo São João e comércio forte."
+  },
+  {
+    "municipio": "Caruaru",
+    "estado": "PE",
+    "curiosidade": "Conhecida como a ‘Capital do Agreste’ e dona do ‘Maior São João do Mundo’. Forte polo cultural, econômico e artístico."
+  },
+  {
+    "municipio": "Casinhas",
+    "estado": "PE",
+    "curiosidade": "Município rural, marcado por serras e agricultura. Tradições religiosas e culturais são muito fortes."
+  },
+  {
+    "municipio": "Catende",
+    "estado": "PE",
+    "curiosidade": "Importante cidade da Zona da Mata ligada ao ciclo da cana. Antiga sede de um dos maiores engenhos de açúcar do país."
+  },
+  {
+    "municipio": "Cedro",
+    "estado": "PE",
+    "curiosidade": "Município do Sertão Central com economia baseada na pecuária. Vida rural preservada e cultura forte."
+  },
+  {
+    "municipio": "Chã de Alegria",
+    "estado": "PE",
+    "curiosidade": "Cidade da Mata Norte com presença de artesanato e cultura rural. Festas religiosas movimentam o município."
+  },
+  {
+    "municipio": "Chã Grande",
+    "estado": "PE",
+    "curiosidade": "Localizada na serra com clima frio e produção agrícola forte. Turismo rural cresce na região."
+  },
+  {
+    "municipio": "Condado",
+    "estado": "PE",
+    "curiosidade": "Forte tradição do maracatu rural e cultura afro-brasileira. Economia rural e comunitária presente."
+  },
+  {
+    "municipio": "Correntes",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com história ligada ao ciclo do gado. Cultura sertaneja forte e preservada."
+  },
+  {
+    "municipio": "Cortês",
+    "estado": "PE",
+    "curiosidade": "Cidade da Zona da Mata com paisagens exuberantes, cachoeiras e engenhos históricos. Produção de cana é destaque."
+  },
+  {
+    "municipio": "Cumaru",
+    "estado": "PE",
+    "curiosidade": "Conhecida como 'Cidade das Cordilheiras', devido às suas serras. Município do Agreste com forte produção agrícola."
+  },
+  {
+    "municipio": "Cupira",
+    "estado": "PE",
+    "curiosidade": "Município comercial e agrícola do Agreste. Conhecido por eventos culturais e festas tradicionais."
+  },
+  {
+    "municipio": "Custódia",
+    "estado": "PE",
+    "curiosidade": "Município do Sertão do Moxotó, com tradição na pecuária. Cultura sertaneja muito presente."
+  },
+  {
+    "municipio": "Dormentes",
+    "estado": "PE",
+    "curiosidade": "Importante produtora de caprinos e ovinos. Sedia a famosa Expovinos, atraindo compradores de todo o país."
+  },
+  {
+    "municipio": "Escada",
+    "estado": "PE",
+    "curiosidade": "Cidade histórica da Mata Sul, ligada aos engenhos e à cultura afro. Importante polo agrícola e industrial."
+  },
+  {
+    "municipio": "Exu",
+    "estado": "PE",
+    "curiosidade": "Terra de Luiz Gonzaga, o Rei do Baião. Forte tradição musical e importante patrimônio cultural nordestino."
+  },
+  {
+    "municipio": "Feira Nova",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com economia baseada em feiras e agricultura. Vida comunitária bastante ativa."
+  },
+  {
+    "municipio": "Fernando de Noronha",
+    "estado": "PE",
+    "curiosidade": "Arquipélago mundialmente famoso por praias paradisíacas. Patrimônio Natural da Humanidade e referência em conservação ambiental."
+  },
+  {
+    "municipio": "Ferreiros",
+    "estado": "PE",
+    "curiosidade": "Cidade da Mata Norte com tradições rurais fortes. Economia baseada em cana e agricultura familiar."
+  },
+  {
+    "municipio": "Flores",
+    "estado": "PE",
+    "curiosidade": "Município do Sertão com rica história e cultura tradicional. Paisagens de caatinga predominam."
+  },
+  {
+    "municipio": "Floresta",
+    "estado": "PE",
+    "curiosidade": "Terra dos índios Pankararu e das tradicionais famílias sertanejas. Cultura indígena e sertaneja se misturam no cotidiano."
+  },
+  {
+    "municipio": "Frei Miguelinho",
+    "estado": "PE",
+    "curiosidade": "Município conhecido pela produção de feijão e milho. Forte tradição agrícola do Agreste."
+  },
+  {
+    "municipio": "Gameleira",
+    "estado": "PE",
+    "curiosidade": "Cidade da Mata Sul historicamente ligada aos engenhos. Forte influência afro-brasileira e cultura rural."
+  },
+  {
+    "municipio": "Garanhuns",
+    "estado": "PE",
+    "curiosidade": "Conhecida como a 'Suíça Pernambucana' pelo clima frio. Sede do FIG, um dos maiores festivais culturais do Brasil."
+  },
+  {
+    "municipio": "Glória do Goitá",
+    "estado": "PE",
+    "curiosidade": "Berço de mestres do maracatu rural. Cultura afro-indígena presente em festas e tradições."
+  },
+  {
+    "municipio": "Goiana",
+    "estado": "PE",
+    "curiosidade": "Cidade histórica com forte influência indígena e colonial. Hoje é importante polo industrial da Mata Norte."
+  },
+  {
+    "municipio": "Granito",
+    "estado": "PE",
+    "curiosidade": "Município sertanejo com paisagens rochosas. Cultura rural preservada e economia ligada à pecuária."
+  },
+  {
+    "municipio": "Gravatá",
+    "estado": "PE",
+    "curiosidade": "Destino turístico serrano com clima frio e gastronomia típica. Muito procurada para turismo rural e festivais."
+  },
+  {
+    "municipio": "Iati",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com cultura rural forte. Pecuária e agricultura sustentam a economia."
+  },
+  {
+    "municipio": "Ibimirim",
+    "estado": "PE",
+    "curiosidade": "Município do Sertão do Moxotó, próximo à transposição do São Francisco. Economia rural e tradições sertanejas marcantes."
+  },
+  {
+    "municipio": "Ibirajuba",
+    "estado": "PE",
+    "curiosidade": "Cidade pequena do Agreste com economia voltada à agricultura familiar. Comunidade acolhedora e tradicional."
+  },
+  {
+    "municipio": "Igarassu",
+    "estado": "PE",
+    "curiosidade": "Uma das cidades mais antigas do Brasil, fundada em 1535. Abriga a Igreja dos Santos Cosme e Damião, a mais antiga do país em funcionamento."
+  },
+  {
+    "municipio": "Iguaraci",
+    "estado": "PE",
+    "curiosidade": "Localizado no Sertão do Pajeú, próximo à barragem de Brotas. Forte cultura sertaneja e tradições familiares."
+  },
+  {
+    "municipio": "Ilha de Itamaracá",
+    "estado": "PE",
+    "curiosidade": "Ilha paradisíaca famosa pelo Forte Orange e pela Praia do Sossego. Importante destino turístico do litoral norte."
+  },
+  {
+    "municipio": "Inajá",
+    "estado": "PE",
+    "curiosidade": "Município do Sertão do Moxotó com paisagens áridas. Economia baseada na pecuária e agricultura de subsistência."
+  },
+  {
+    "municipio": "Ingazeira",
+    "estado": "PE",
+    "curiosidade": "Cidade pequena do Pajeú com forte tradição poética. Ambiente tranquilo e cultura sertaneja preservada."
+  },
+  {
+    "municipio": "Ipojuca",
+    "estado": "PE",
+    "curiosidade": "Sede de Porto de Galinhas, um dos destinos mais famosos do Brasil. Também abriga o complexo industrial portuário de Suape."
+  },
+  {
+    "municipio": "Ipubi",
+    "estado": "PE",
+    "curiosidade": "Município do Araripe com grande produção de gesso. Cidade de relevância econômica para a região."
+  },
+  {
+    "municipio": "Itacuruba",
+    "estado": "PE",
+    "curiosidade": "Cidade relocada devido à construção da Barragem de Itaparica. Forte presença ribeirinha e cultural."
+  },
+  {
+    "municipio": "Itaíba",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste e Sertão com forte agricultura e pecuária. Paisagens serranas marcam a região."
+  },
+  {
+    "municipio": "Itamaracá",
+    "estado": "PE",
+    "curiosidade": "Ilha turística conhecida por águas cristalinas e patrimônio histórico. Forte Orange é o cartão-postal local."
+  },
+  {
+    "municipio": "Itambé",
+    "estado": "PE",
+    "curiosidade": "Cidade da Mata Norte com economia agrícola. Tradicional na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "Itapetim",
+    "estado": "PE",
+    "curiosidade": "Conhecida como 'A Cidade dos Poetas', referência em poesia sertaneja. Berço de grandes repentistas."
+  },
+  {
+    "municipio": "Itapissuma",
+    "estado": "PE",
+    "curiosidade": "Cidade litorânea com forte produção de frutos do mar. Conhecida pelos viveiros de camarão e pela pesca artesanal."
+  },
+  {
+    "municipio": "Itaquitinga",
+    "estado": "PE",
+    "curiosidade": "Município da Mata Norte com economia agrícola. Cultura rural preservada nas festas locais."
+  },
+  {
+    "municipio": "Jaboatão dos Guararapes",
+    "estado": "PE",
+    "curiosidade": "Cena da histórica Batalha dos Guararapes, berço do Exército Brasileiro. Importante polo urbano da Região Metropolitana."
+  },
+  {
+    "municipio": "Jaqueira",
+    "estado": "PE",
+    "curiosidade": "Cidade da Zona da Mata com produção agrícola e patrimônio natural. Comunidade fortemente ligada à cultura rural."
+  },
+  {
+    "municipio": "Jataúba",
+    "estado": "PE",
+    "curiosidade": "Conhecida pela fabricação de roupas íntimas, sendo polo têxtil da região. Cultura sertaneja forte e preservada."
+  },
+  {
+    "municipio": "Jatobá",
+    "estado": "PE",
+    "curiosidade": "Município afetado pela Barragem de Itaparica. Forte presença de comunidades ribeirinhas e agricultura irrigada."
+  },
+  {
+    "municipio": "João Alfredo",
+    "estado": "PE",
+    "curiosidade": "Terra de artesãos e famosa pela produção de móveis rústicos. Cultura popular muito presente."
+  },
+  {
+    "municipio": "Joaquim Nabuco",
+    "estado": "PE",
+    "curiosidade": "Cidade com história ligada ao abolicionista Joaquim Nabuco. Região marcada pela cultura dos engenhos."
+  },
+  {
+    "municipio": "Jucati",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com economia agrícola. Festas e tradições culturais marcam o calendário local."
+  },
+  {
+    "municipio": "Jupi",
+    "estado": "PE",
+    "curiosidade": "Cidade do Agreste com forte tradição rural. Agricultura e pecuária sustentam a economia."
+  },
+  {
+    "municipio": "Jurema",
+    "estado": "PE",
+    "curiosidade": "Município da Mata Sul com presença de engenhos e produção agrícola. Tradições culturais presentes em festas locais."
+  },
+  {
+    "municipio": "Lagoa do Carro",
+    "estado": "PE",
+    "curiosidade": "Famosa por seu museu dedicado ao automóvel. Cidade da Mata Norte com economia agrícola e cultural."
+  },
+  {
+    "municipio": "Lagoa de Itaenga",
+    "estado": "PE",
+    "curiosidade": "Município agrícola da Mata Norte. Tradições religiosas e festas populares movem a cidade."
+  },
+  {
+    "municipio": "Lagoa do Ouro",
+    "estado": "PE",
+    "curiosidade": "Município serrano com clima frio e cultura rural. Forte presença de agricultura familiar."
+  },
+  {
+    "municipio": "Lagoa dos Gatos",
+    "estado": "PE",
+    "curiosidade": "Cidade da Zona da Mata conhecida pela Revolta dos Quebra-Quilos. Cultura histórica e rural muito forte."
+  },
+  {
+    "municipio": "Lagoa Grande",
+    "estado": "PE",
+    "curiosidade": "Polo vitivinícola do Vale do São Francisco. Produz vinhos premiados e sustenta forte economia frutícola."
+  },
+  {
+    "municipio": "Lajedo",
+    "estado": "PE",
+    "curiosidade": "Cidade do Agreste com forte polo comercial. Economia diversificada e cultura popular ativa."
+  },
+  {
+    "municipio": "Limoeiro",
+    "estado": "PE",
+    "curiosidade": "Conhecida como Princesa do Capibaribe, possui forte tradição educacional e cultural. Importante centro urbano do Agreste Setentrional."
+  },
+  {
+    "municipio": "Macaparana",
+    "estado": "PE",
+    "curiosidade": "Município da Mata Norte marcado pelos engenhos e pela cultura rural. Economia baseada em agricultura e comércio."
+  },
+  {
+    "municipio": "Machados",
+    "estado": "PE",
+    "curiosidade": "Capital da banana em Pernambuco, devido à produção expressiva. Cultura rural forte e clima agradável."
+  },
+  {
+    "municipio": "Manari",
+    "estado": "PE",
+    "curiosidade": "Município que já figurou entre os menores IDHs do Brasil, mas com grande resiliência cultural. Comunidade forte e muito unida."
+  },
+  {
+    "municipio": "Maraial",
+    "estado": "PE",
+    "curiosidade": "Cidade da Mata Sul com forte presença de engenhos e agricultura. Paisagens verdes e cultura rural destacada."
+  },
+  {
+    "municipio": "Mirandiba",
+    "estado": "PE",
+    "curiosidade": "Município do Sertão Central, com presença do povo indígena Pankará. Cultura sertaneja e indígena convivem diretamente."
+  },
+  {
+    "municipio": "Moreilândia",
+    "estado": "PE",
+    "curiosidade": "Cidade do Sertão do Araripe com tradição agrícola. Economia baseada em pequenas produções rurais."
+  },
+  {
+    "municipio": "Moreno",
+    "estado": "PE",
+    "curiosidade": "Integrante da RMR, com grande patrimônio natural. Cultura ligada aos engenhos e ao desenvolvimento industrial."
+  },
+  [
+  {
+    "municipio": "Nazaré da Mata",
+    "estado": "PE",
+    "curiosidade": "Considerada a 'Capital do Maracatu Rural', com forte tradição afro-indígena. Cidade histórica da Zona da Mata Norte."
+  },
+  {
+    "municipio": "Olinda",
+    "estado": "PE",
+    "curiosidade": "Patrimônio Histórico e Cultural da Humanidade. Seu Carnaval é um dos mais famosos do mundo, marcado pelos bonecos gigantes."
+  },
+  {
+    "municipio": "Orobó",
+    "estado": "PE",
+    "curiosidade": "Município serrano com clima frio e forte agricultura. Reconhecida pela tranquilidade e tradições religiosas."
+  },
+  {
+    "municipio": "Orocó",
+    "estado": "PE",
+    "curiosidade": "Localizada no Sertão do São Francisco, possui forte produção irrigada. Abriga comunidades indígenas Truká."
+  },
+  {
+    "municipio": "Ouricuri",
+    "estado": "PE",
+    "curiosidade": "Importante cidade do Araripe, famosa pela Festa do Grito. Economia baseada no comércio e agricultura."
+  },
+  {
+    "municipio": "Palmares",
+    "estado": "PE",
+    "curiosidade": "Nomeado em homenagem ao Quilombo dos Palmares. Forte tradição cultural e vínculos com a história afro-brasileira."
+  },
+  {
+    "municipio": "Palmeirina",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com clima serrano e economia voltada à agricultura. Conhecida pela tranquilidade."
+  },
+  {
+    "municipio": "Panelas",
+    "estado": "PE",
+    "curiosidade": "Famosa pela tradicional 'Corrida de Jericos'. Possui forte identidade cultural e economia rural."
+  },
+  {
+    "municipio": "Paranatama",
+    "estado": "PE",
+    "curiosidade": "Cidade serrana do Agreste, com clima ameno e economia rural. Paisagens naturais são atrativos locais."
+  },
+  {
+    "municipio": "Parnamirim",
+    "estado": "PE",
+    "curiosidade": "Município do Sertão Central conhecido pela caprinocultura. Forte tradição cultural e festas sertanejas."
+  },
+  {
+    "municipio": "Paudalho",
+    "estado": "PE",
+    "curiosidade": "Município histórico com engenhos seculares. Conhecido pelo carnaval tradicional e cultura afro-indígena."
+  },
+  {
+    "municipio": "Paulista",
+    "estado": "PE",
+    "curiosidade": "Cidade da RMR com belas praias como Maria Farinha. Importante polo industrial e turístico."
+  },
+  {
+    "municipio": "Pedra",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com forte tradição agrícola e pecuária. Paisagens de serras e cultura sertaneja marcante."
+  },
+  {
+    "municipio": "Pesqueira",
+    "estado": "PE",
+    "curiosidade": "Conhecida pelos doces e produção artesanal indígena Xukuru. Cidade serrana com clima agradável."
+  },
+  {
+    "municipio": "Petrolândia",
+    "estado": "PE",
+    "curiosidade": "Cidade submersa e reconstruída devido à Usina de Itaparica. Belas paisagens do lago atraem turistas."
+  },
+  {
+    "municipio": "Petrolina",
+    "estado": "PE",
+    "curiosidade": "Referência internacional em fruticultura irrigada e vinhos. Cidade moderna às margens do Rio São Francisco."
+  },
+  {
+    "municipio": "Poção",
+    "estado": "PE",
+    "curiosidade": "Município serrano com clima frio. Economia baseada em agricultura e artesanato local."
+  },
+  {
+    "municipio": "Pombos",
+    "estado": "PE",
+    "curiosidade": "Cidade da Mata Sul com forte produção agrícola. Importante área de cultivo de frutas."
+  },
+  {
+    "municipio": "Primavera",
+    "estado": "PE",
+    "curiosidade": "Conhecida por cachoeiras e belezas naturais. Economia rural forte e cultura ligada aos engenhos."
+  },
+  {
+    "municipio": "Quipapá",
+    "estado": "PE",
+    "curiosidade": "Município da Mata Sul com rica produção agrícola. Preserva tradições culturais ligadas ao interior."
+  },
+  {
+    "municipio": "Quixaba",
+    "estado": "PE",
+    "curiosidade": "Cidade do Sertão do Pajeú com forte tradição sertaneja. Pequena e acolhedora, preserva cultura rural."
+  },
+  {
+    "municipio": "Recife",
+    "estado": "PE",
+    "curiosidade": "Capital de Pernambuco, conhecida como 'Veneza Brasileira'. Destaca-se por sua rica cena cultural, praias e história marcada pelo ciclo do açúcar."
+  },
+  {
+    "municipio": "Riacho das Almas",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com forte produção têxtil. Cultura rural e economia diversificada."
+  },
+  {
+    "municipio": "Ribeirão",
+    "estado": "PE",
+    "curiosidade": "Conhecido pelos engenhos históricos da Zona da Mata. Forte influência afro-brasileira em sua cultura."
+  },
+  {
+    "municipio": "Rio Formoso",
+    "estado": "PE",
+    "curiosidade": "Cidade litorânea com manguezais e praias preservadas. Forte tradição ligada à pesca e agricultura."
+  },
+  {
+    "municipio": "Sairé",
+    "estado": "PE",
+    "curiosidade": "Famosa pelo Festival do Vinho e clima agradável. Turismo rural e serrano são destaques."
+  },
+  {
+    "municipio": "Salgadinho",
+    "estado": "PE",
+    "curiosidade": "Município pequeno do Agreste com tradição religiosa. Economia rural baseada em agricultura familiar."
+  },
+  {
+    "municipio": "Salgueiro",
+    "estado": "PE",
+    "curiosidade": "Importante polo do Sertão Central. Conhecida pelo time de futebol e por estar na 'encruzilhada' das grandes rodovias."
+  },
+  {
+    "municipio": "Saloá",
+    "estado": "PE",
+    "curiosidade": "Cidade serrana do Agreste com clima frio. Cultura rural e festas religiosas são marcantes."
+  },
+  {
+    "municipio": "Sanharó",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste conhecido pela produção de leite. Região de clima ameno e belas paisagens."
+  },
+  {
+    "municipio": "Santa Cruz",
+    "estado": "PE",
+    "curiosidade": "Sertaneja, localizada no Araripe. Economia baseada na agropecuária e pequenas indústrias."
+  },
+  {
+    "municipio": "Santa Cruz da Baixa Verde",
+    "estado": "PE",
+    "curiosidade": "Conhecida como 'Terra da Rapadura'. Pequenos produtores mantêm viva a tradição açucareira."
+  },
+  {
+    "municipio": "Santa Cruz do Capibaribe",
+    "estado": "PE",
+    "curiosidade": "Importante polo da moda do Nordeste, parte do Moda Center. Economia fortemente industrial e comercial."
+  },
+  {
+    "municipio": "Santa Filomena",
+    "estado": "PE",
+    "curiosidade": "Cidade do Sertão do Araripe com economia rural. Região marcada por serras e formações rochosas."
+  },
+  {
+    "municipio": "Santa Maria da Boa Vista",
+    "estado": "PE",
+    "curiosidade": "Cidade ribeirinha famosa pelas vaquejadas e pela cultura sertaneja. Integra o polo vinícola do São Francisco."
+  },
+  {
+    "municipio": "Santa Maria do Cambucá",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com economia baseada em agricultura familiar. Comunidade tradicional e acolhedora."
+  },
+  {
+    "municipio": "Santa Terezinha",
+    "estado": "PE",
+    "curiosidade": "Cidade do Sertão do Pajeú com forte cultura poética e rural. Economia simples, baseada na pecuária."
+  },
+  {
+    "municipio": "São Benedito do Sul",
+    "estado": "PE",
+    "curiosidade": "Município da Mata Sul com rios e cachoeiras. Forte tradição agrícola e natureza preservada."
+  },
+  {
+    "municipio": "São Bento do Una",
+    "estado": "PE",
+    "curiosidade": "Famosa pela Corrida da Galinha, atração única no Brasil. Forte produtora agrícola e de aves."
+  },
+  {
+    "municipio": "São Caitano",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com economia ligada ao comércio e agricultura. A BR-232 auxilia seu crescimento."
+  },
+  {
+    "municipio": "São João",
+    "estado": "PE",
+    "curiosidade": "Cidade do Agreste com forte produção rural. Comunidade marcada por tradições religiosas."
+  },
+  {
+    "municipio": "São Joaquim do Monte",
+    "estado": "PE",
+    "curiosidade": "Conhecida pela 'Romaria do Frei Damião'. Tradição religiosa atrai milhares de peregrinos."
+  },
+  {
+    "municipio": "São José da Coroa Grande",
+    "estado": "PE",
+    "curiosidade": "Destino turístico com piscinas naturais e praias paradisíacas. Forte vocação para o turismo litorâneo."
+  },
+  {
+    "municipio": "São José do Belmonte",
+    "estado": "PE",
+    "curiosidade": "Berço da Pedra do Reino, eternizada por Ariano Suassuna. Forte tradição sertaneja e misticismo histórico."
+  },
+  {
+    "municipio": "São José do Egito",
+    "estado": "PE",
+    "curiosidade": "Capital da poesia do Pajeú. Cidade natal de grandes poetas e repentistas."
+  },
+  {
+    "municipio": "São Lourenço da Mata",
+    "estado": "PE",
+    "curiosidade": "Sede da Arena de Pernambuco. Cidade histórica ligada aos engenhos e à cultura afro-brasileira."
+  },
+  {
+    "municipio": "São Vicente Ferrer",
+    "estado": "PE",
+    "curiosidade": "Município serrano da Mata Norte. Clima ameno e forte agricultura familiar."
+  },
+  {
+    "municipio": "Serra Talhada",
+    "estado": "PE",
+    "curiosidade": "Terra de Lampião, o Rei do Cangaço. Uma das cidades mais importantes do Sertão, com economia diversificada."
+  },
+  {
+    "municipio": "Serrita",
+    "estado": "PE",
+    "curiosidade": "Conhecida pela Missa do Vaqueiro, evento que celebra a cultura sertaneja. Forte tradição agropecuária."
+  },
+  {
+    "municipio": "Sertânia",
+    "estado": "PE",
+    "curiosidade": "Cidade estratégica entre Sertão e Agreste. Forte cultura rural e economia ligada à pecuária."
+  },
+  {
+    "municipio": "Sirinhaém",
+    "estado": "PE",
+    "curiosidade": "Município litorâneo histórico com belíssimas praias e manguezais. Turismo e pesca são pilares econômicos."
+  },
+  {
+    "municipio": "Solidão",
+    "estado": "PE",
+    "curiosidade": "Pequena cidade do Pajeú com forte tradição religiosa. Paisagens sertanejas e cultura comunitária marcante."
+  },
+  {
+    "municipio": "Surubim",
+    "estado": "PE",
+    "curiosidade": "Capital da Vaquejada em Pernambuco. Importante polo comercial do Agreste Setentrional."
+  },
+  {
+    "municipio": "Tabira",
+    "estado": "PE",
+    "curiosidade": "Cidade do Pajeú com forte tradição poética e cultural. Eventos literários movimentam o calendário local."
+  },
+  {
+    "municipio": "Tacaimbó",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com economia baseada em agricultura e comércio. Cultura sertaneja característica."
+  },
+  {
+    "municipio": "Tacaratu",
+    "estado": "PE",
+    "curiosidade": "Abriga parte do povo indígena Pankararu. Região rica em cultura e paisagens naturais."
+  },
+  {
+    "municipio": "Tamandaré",
+    "estado": "PE",
+    "curiosidade": "Famosa pela Praia dos Carneiros, uma das mais bonitas do Brasil. Forte vocação turística."
+  },
+  {
+    "municipio": "Taquaritinga do Norte",
+    "estado": "PE",
+    "curiosidade": "Conhecida como 'Dália da Serra', com clima frio e belas paisagens. Forte produção agrícola e de confecções."
+  },
+  {
+    "municipio": "Terezinha",
+    "estado": "PE",
+    "curiosidade": "Município do Agreste com economia rural. Comunidade conhecida pela tranquilidade e cultura tradicional."
+  },
+  {
+    "municipio": "Terra Nova",
+    "estado": "PE",
+    "curiosidade": "Cidade sertaneja com forte identidade rural. Economia ligada à pecuária e agricultura."
+  },
+  {
+    "municipio": "Timbaúba",
+    "estado": "PE",
+    "curiosidade": "Importante polo da Mata Norte com tradição em maracatu rural. Economia forte no comércio e agricultura."
+  },
+  {
+    "municipio": "Toritama",
+    "estado": "PE",
+    "curiosidade": "Capital do Jeans, referência nacional na produção de confecções. Cidade dinâmica do Agreste."
+  },
+  {
+    "municipio": "Tracunhaém",
+    "estado": "PE",
+    "curiosidade": "Famosa pelo artesanato em barro. É um dos maiores centros de cerâmica artística de Pernambuco."
+  },
+  {
+    "municipio": "Trindade",
+    "estado": "PE",
+    "curiosidade": "Município do Araripe com forte economia ligada ao polo gesseiro. Cultura sertaneja muito presente."
+  },
+  {
+    "municipio": "Triunfo",
+    "estado": "PE",
+    "curiosidade": "Conhecida como 'Oásis do Sertão' pelo clima frio e paisagens serranas. Um dos destinos turísticos mais charmosos do estado."
+  },
+  {
+    "municipio": "Tupanatinga",
+    "estado": "PE",
+    "curiosidade": "Cidade do Agreste com economia rural. Paisagens de transição entre agreste e sertão."
+  },
+  {
+    "municipio": "Tuparetama",
+    "estado": "PE",
+    "curiosidade": "Município do Pajeú com forte tradição cultural. Poesia e música sertaneja são muito presentes."
+  },
+  {
+    "municipio": "Venturosa",
+    "estado": "PE",
+    "curiosidade": "Cidade serrana com formações rochosas marcantes. Economia baseada em agricultura e pecuária."
+  },
+  {
+    "municipio": "Verdejante",
+    "estado": "PE",
+    "curiosidade": "Município sertanejo com cultura agropecuária. Paisagens típicas do semiárido."
+  },
+  {
+    "municipio": "Vertente do Lério",
+    "estado": "PE",
+    "curiosidade": "Município jovem com cultura mineira e pernambucana misturadas. Economia simples e comunidade acolhedora."
+  },
+  {
+    "municipio": "Vertentes",
+    "estado": "PE",
+    "curiosidade": "Cidade do Agreste, parte do polo têxtil. Forte identidade cultural e comercial."
+  },
+  {
+    "municipio": "Vicência",
+    "estado": "PE",
+    "curiosidade": "Município da Mata Norte com engenhos históricos. Cultura rural muito presente no cotidiano."
+  },
+  {
+    "municipio": "Vitória de Santo Antão",
+    "estado": "PE",
+    "curiosidade": "Grande polo urbano, industrial e educacional. Conhecida por sua cachaça e por batalhas históricas contra invasores holandeses."
+  },
+  {
+    "municipio": "Xexéu",
+    "estado": "PE",
+    "curiosidade": "Município da Mata Sul, com forte tradição agrícola. Cultura rural e proximidade com Alagoas influenciam o cotidiano."
+  }
+]
+
+]

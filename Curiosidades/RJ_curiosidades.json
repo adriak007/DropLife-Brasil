@@ -1,0 +1,468 @@
+[
+  {
+    "municipio": "Angra dos Reis",
+    "estado": "RJ",
+    "curiosidade": "Famosa pela sua baía com 365 ilhas (uma para cada dia do ano) e mais de 2.000 praias. É um importante polo turístico e naval, com intensa navegação de lazer e a presença de usinas nucleares."
+  },
+  {
+    "municipio": "Aperibé",
+    "estado": "RJ",
+    "curiosidade": "Pequeno município do Noroeste Fluminense, conhecido pela sua tranquilidade e pela economia baseada na agropecuária."
+  },
+  {
+    "municipio": "Araruama",
+    "estado": "RJ",
+    "curiosidade": "Localizada na Região dos Lagos, possui a maior laguna de água salgada hipersalina do mundo. É famosa pela prática de esportes náuticos, como *windsurf* e *kitesurf*."
+  },
+  {
+    "municipio": "Areal",
+    "estado": "RJ",
+    "curiosidade": "Município da Região Serrana, conhecido por suas fazendas históricas do ciclo do café. O nome remete aos depósitos de areia na margem do Rio Paraíba do Sul."
+  },
+  {
+    "municipio": "Armação dos Búzios",
+    "estado": "RJ",
+    "curiosidade": "Antiga vila de pescadores, ganhou fama internacional após a visita da atriz Brigitte Bardot nos anos 60. É conhecida por suas mais de 20 praias de beleza singular e sua vida noturna sofisticada."
+  },
+  {
+    "municipio": "Arraial do Cabo",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Capital do Mergulho'** do Rio de Janeiro, devido às suas águas cristalinas e frias (resultado da ressurgência), ricas em vida marinha. Abriga o **Farol Velho**, um marco histórico."
+  },
+  {
+    "municipio": "Barra do Piraí",
+    "estado": "RJ",
+    "curiosidade": "Antigo polo do ciclo do café, é um importante centro ferroviário e rodoviário no Vale do Paraíba. Possui um rico patrimônio histórico e casarões antigos."
+  },
+  {
+    "municipio": "Barra Mansa",
+    "estado": "RJ",
+    "curiosidade": "Um dos principais centros industriais do Sul Fluminense, com destaque para a metalurgia e a produção de derivados do aço. O nome remete à tranquilidade da barra do Rio Paraíba do Sul."
+  },
+  {
+    "municipio": "Belford Roxo",
+    "estado": "RJ",
+    "curiosidade": "Localizado na Baixada Fluminense, possui um grande adensamento populacional. Seu nome homenageia o engenheiro que resolveu problemas de abastecimento de água na região."
+  },
+  {
+    "municipio": "Bom Jardim",
+    "estado": "RJ",
+    "curiosidade": "Município da Região Serrana, conhecido pelo clima ameno e pela produção rural, com destaque para o cultivo de hortaliças e flores."
+  },
+  {
+    "municipio": "Bom Jesus do Itabapoana",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Noroeste Fluminense, faz fronteira com o Espírito Santo e Minas Gerais. É um importante centro comercial e agropecuário."
+  },
+  {
+    "municipio": "Cabo Frio",
+    "estado": "RJ",
+    "curiosidade": "A cidade mais antiga da Região dos Lagos, fundada em 1616. É famosa pela **Praia do Forte** (com areia muito branca e fina) e pelo turismo histórico, incluindo o **Forte São Mateus**."
+  },
+  {
+    "municipio": "Cachoeiras de Macacu",
+    "estado": "RJ",
+    "curiosidade": "Município da Região Serrana, conhecido por suas diversas cachoeiras e pelo potencial ecoturístico. Abriga o **Parque Estadual dos Três Picos**."
+  },
+  {
+    "municipio": "Cambuci",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Norte Fluminense, sua economia é baseada na agropecuária. É conhecida por suas festas de peão e rodeios."
+  },
+  {
+    "municipio": "Carapebus",
+    "estado": "RJ",
+    "curiosidade": "Município do Norte Fluminense, sua economia está ligada à exploração de petróleo e gás *offshore* da Bacia de Campos."
+  },
+  {
+    "municipio": "Comendador Levy Gasparian",
+    "estado": "RJ",
+    "curiosidade": "Um dos menores municípios do estado em território. Sua economia é baseada na agropecuária e serviços, próximo a Minas Gerais."
+  },
+  {
+    "municipio": "Conceição de Macabu",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Norte Fluminense, conhecida por sua produção de cana-de-açúcar. O nome remete a uma palmeira nativa (*Macabu*)."
+  },
+  {
+    "municipio": "Cordeiro",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Capital Nacional da Moda Íntima'** por sua forte indústria têxtil. Realiza a tradicional **Exposição de Cordeiro**, uma das maiores feiras agropecuárias do estado."
+  },
+  {
+    "municipio": "Duas Barras",
+    "estado": "RJ",
+    "curiosidade": "Cidade natal dos cantores Martinho da Vila e Roberto Carlos. Localizada na Região Serrana, é famosa por suas fazendas e sua tranquilidade."
+  },
+  {
+    "municipio": "Duque de Caxias",
+    "estado": "RJ",
+    "curiosidade": "Um dos principais centros industriais e logísticos do estado, na Baixada Fluminense. Abriga o **Polo Petroquímico de Duque de Caxias** (REDUC) e um importante centro comercial."
+  },
+  {
+    "municipio": "Engenheiro Paulo de Frontin",
+    "estado": "RJ",
+    "curiosidade": "Homenagem ao engenheiro que projetou obras hídricas no Rio de Janeiro. A cidade possui um grande potencial ecoturístico e um clima agradável de serra."
+  },
+  {
+    "municipio": "Guapimirim",
+    "estado": "RJ",
+    "curiosidade": "Faz parte da Área de Proteção Ambiental (APA) de Guapimirim, com uma rica área de manguezais e a vista da Serra dos Órgãos."
+  },
+  {
+    "municipio": "Iguaba Grande",
+    "estado": "RJ",
+    "curiosidade": "O nome significa 'lagoa grande' em Tupi. É um município da Região dos Lagos, famoso pela tranquilidade e por suas águas calmas, ideal para famílias."
+  },
+  {
+    "municipio": "Itaboraí",
+    "estado": "RJ",
+    "curiosidade": "Conhecida por abrigar o complexo petroquímico **COMPERJ**, um dos maiores projetos industriais da Petrobras, que transformou a economia da região."
+  },
+  {
+    "municipio": "Itaguaí",
+    "estado": "RJ",
+    "curiosidade": "Importante município portuário e industrial, com destaque para o **Porto de Itaguaí**, um dos maiores do país em movimentação de cargas."
+  },
+  {
+    "municipio": "Italva",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Norte Fluminense, sua economia é baseada na agropecuária, com destaque para a produção leiteira."
+  },
+  {
+    "municipio": "Itaocara",
+    "estado": "RJ",
+    "curiosidade": "O nome, de origem Tupi, significa 'casa de pedra'. É um município conhecido pelas pedreiras e pela tranquilidade do interior."
+  },
+  {
+    "municipio": "Itaperuna",
+    "estado": "RJ",
+    "curiosidade": "O principal polo regional do Noroeste Fluminense, centro de comércio, serviços, saúde e educação para diversas cidades vizinhas."
+  },
+  {
+    "municipio": "Itatiaia",
+    "estado": "RJ",
+    "curiosidade": "Abriga o **Parque Nacional do Itatiaia**, o primeiro parque nacional do Brasil (1937), conhecido por suas paisagens de montanha, o Pico das Agulhas Negras e a rica biodiversidade."
+  },
+  {
+    "municipio": "Japeri",
+    "estado": "RJ",
+    "curiosidade": "Localizada na Baixada Fluminense, é uma cidade de grande importância histórica no desenvolvimento ferroviário do estado."
+  },[
+  {
+    "municipio": "Laje do Muriaé",
+    "estado": "RJ",
+    "curiosidade": "Pequeno município do Noroeste Fluminense, conhecido por suas belezas naturais e pelas festas agropecuárias anuais."
+  },
+  {
+    "municipio": "Macaé",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Petróleo'** (offshore), por ser o principal polo de apoio às plataformas da Bacia de Campos. É um importante centro industrial e de serviços de alto nível."
+  },
+  {
+    "municipio": "Macuco",
+    "estado": "RJ",
+    "curiosidade": "Um dos menores municípios do estado em população, localizado na Região Serrana. Sua economia é baseada na agropecuária."
+  },
+  {
+    "municipio": "Magé",
+    "estado": "RJ",
+    "curiosidade": "Cidade histórica da Baixada Fluminense. Foi o berço de **Mané Garrincha**, um dos maiores jogadores de futebol de todos os tempos. Possui um rico patrimônio colonial."
+  },
+  {
+    "municipio": "Mangaratiba",
+    "estado": "RJ",
+    "curiosidade": "Município litorâneo na Costa Verde, famoso por suas ilhas e praias preservadas. É o local do **Porto de Itaguaí** (parte do complexo portuário), fundamental para a exportação de minério de ferro."
+  },
+  {
+    "municipio": "Maricá",
+    "estado": "RJ",
+    "curiosidade": "Famosa pelas suas lagoas (Maricá, Guarapina) e praias. Nos últimos anos, teve um grande *boom* econômico devido aos *royalties* da exploração de petróleo e gás."
+  },
+  {
+    "municipio": "Mendes",
+    "estado": "RJ",
+    "curiosidade": "Município da Região Serrana, conhecido pelo clima ameno e por ser uma área de turismo rural e de fazendas históricas."
+  },
+  {
+    "municipio": "Miguel Pereira",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Cidade do Clima'** por seu ar puro e clima de montanha (estância climática). Possui um importante lago artificial, o **Lago Javary**, e um **Trem do Forró** turístico."
+  },
+  {
+    "municipio": "Miracema",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Noroeste Fluminense, é um importante centro agropecuário, com destaque para a produção de café e leite."
+  },
+  {
+    "municipio": "Natividade",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Cidade do Artesanato'**, devido à forte tradição na produção de peças em cerâmica e outros materiais."
+  },
+  {
+    "municipio": "Nilópolis",
+    "estado": "RJ",
+    "curiosidade": "Localizada na Baixada Fluminense, é mundialmente famosa por ser a cidade-sede da **Escola de Samba Beija-Flor**, uma das maiores campeãs do Carnaval carioca."
+  },
+  {
+    "municipio": "Niterói",
+    "estado": "RJ",
+    "curiosidade": "Antiga capital do estado (até 1975). É famosa pela **Ponte Rio-Niterói** e pelo conjunto arquitetônico do **MAC** (Museu de Arte Contemporânea), projetado por Oscar Niemeyer."
+  },
+  {
+    "municipio": "Nova Friburgo",
+    "estado": "RJ",
+    "curiosidade": "Considerada a **'Capital da Moda Íntima'** e **'Capital da Cerveja Artesanal'**. É a cidade com maior altitude no estado (cerca de 846m) e possui forte influência da colonização suíça e alemã."
+  },
+  {
+    "municipio": "Nova Iguaçu",
+    "estado": "RJ",
+    "curiosidade": "O principal centro urbano, comercial e de serviços da Baixada Fluminense. É um polo de grande movimento econômico e possui áreas de Mata Atlântica preservada, como a Serra do Vulcão."
+  },
+  {
+    "municipio": "Paracambi",
+    "estado": "RJ",
+    "curiosidade": "Localizada na Região Metropolitana. Sua história está ligada à Fábrica Brasil Têxtil, que por muito tempo foi a base de sua economia."
+  },
+  {
+    "municipio": "Paraíba do Sul",
+    "estado": "RJ",
+    "curiosidade": "O nome vem do rio que corta o município. É conhecida pelas suas fazendas históricas e por abrigar o Santuário do Cristo Redentor."
+  },
+  {
+    "municipio": "Paraty",
+    "estado": "RJ",
+    "curiosidade": "Cidade histórica com arquitetura colonial preservada. É Patrimônio Mundial da UNESCO (cultura e biodiversidade), famosa pela **Festa Literária Internacional (FLIP)** e por suas cachaças artesanais."
+  },
+  {
+    "municipio": "Paty do Alferes",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Capital Estadual do Tomate'**. É um importante produtor agrícola e possui um rico patrimônio histórico, com museus e fazendas coloniais."
+  },
+  {
+    "municipio": "Petrópolis",
+    "estado": "RJ",
+    "curiosidade": "A **'Cidade Imperial'**, onde a Família Real brasileira passava os verões. Abriga o **Museu Imperial**, o Palácio de Cristal e a cervejaria Bohemia, a mais antiga do Brasil."
+  },
+  {
+    "municipio": "Pinheiral",
+    "estado": "RJ",
+    "curiosidade": "O nome remete à grande quantidade de pinheiros. Sua economia é baseada na agropecuária e na indústria de pequeno porte."
+  },
+  {
+    "municipio": "Piraí",
+    "estado": "RJ",
+    "curiosidade": "Município do Sul Fluminense, conhecido pela sua importância na geração de energia elétrica (Light) e pela **Cervejaria Piraí**, que produz a famosa cerveja Therezópolis."
+  },
+  {
+    "municipio": "Porciúncula",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Noroeste Fluminense, é a cidade mais próxima do ponto tríplice entre Rio de Janeiro, Minas Gerais e Espírito Santo."
+  },
+  {
+    "municipio": "Porto Real",
+    "estado": "RJ",
+    "curiosidade": "Município jovem, com forte vocação industrial, conhecido por abrigar a **fábrica da Peugeot/Citroën** e outras indústrias automotivas e de autopeças."
+  
+},
+[
+  {
+    "municipio": "Quatis",
+    "estado": "RJ",
+    "curiosidade": "Seu nome vem do quati, mamífero comum na região. Sua economia é baseada na agropecuária e na presença de pequenas indústrias."
+  },
+  {
+    "municipio": "Queimados",
+    "estado": "RJ",
+    "curiosidade": "Localizada na Baixada Fluminense, seu nome remete a um incêndio de grandes proporções no passado. É um município em expansão, com vocação industrial e logística."
+  },
+  {
+    "municipio": "Quissamã",
+    "estado": "RJ",
+    "curiosidade": "Município do Norte Fluminense, com economia ligada à exploração de petróleo e gás *offshore*. É conhecida pelas suas lagoas e pela rica culinária local."
+  },
+  {
+    "municipio": "Resende",
+    "estado": "RJ",
+    "curiosidade": "Um dos principais centros industriais do Sul Fluminense. Abriga a **AMAN** (Academia Militar das Agulhas Negras), principal escola de formação de oficiais do Exército Brasileiro."
+  },
+  {
+    "municipio": "Rio Bonito",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Leste Fluminense, sua economia é baseada na agropecuária e na exploração de basalto. É conhecida por seu clima agradável."
+  },
+  {
+    "municipio": "Rio Claro",
+    "estado": "RJ",
+    "curiosidade": "Município de forte vocação rural, conhecido pelas suas fazendas de gado e pela presença de trechos preservados de Mata Atlântica."
+  },
+  {
+    "municipio": "Rio das Flores",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Vale do Paraíba, é um dos principais roteiros de turismo rural e histórico do estado, com belíssimas fazendas do ciclo do café."
+  },
+  {
+    "municipio": "Rio das Ostras",
+    "estado": "RJ",
+    "curiosidade": "Famosa pelas suas praias, lagoas e pela intensa atividade de música e cultura (jazz e blues). Sua economia é impulsionada pelos *royalties* do petróleo."
+  },
+  {
+    "municipio": "Rio de Janeiro",
+    "estado": "RJ",
+    "curiosidade": "A **'Cidade Maravilhosa'** e capital do estado. Mundialmente famosa pelo **Cristo Redentor**, Pão de Açúcar, praias de Copacabana e Ipanema, e pelo seu Carnaval exuberante."
+  },
+  {
+    "municipio": "Santa Maria Madalena",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a 'Cidade da Serra', tem um clima frio e paisagens montanhosas. É a terra natal da atriz Dercy Gonçalves e possui um museu dedicado a ela."
+  },
+  {
+    "municipio": "Santo Antônio de Pádua",
+    "estado": "RJ",
+    "curiosidade": "Um importante centro regional do Noroeste Fluminense. É conhecida por suas festas religiosas e pelo comércio ativo."
+  },
+  {
+    "municipio": "São Fidélis",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Cidade Poema'** (pela beleza natural e literária) e também como a 'Capital Estadual do Açúcar', devido à sua forte tradição na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "São Francisco de Itabapoana",
+    "estado": "RJ",
+    "curiosidade": "O município com o litoral mais extenso do estado, famoso por suas praias quase desertas e pela atividade pesqueira."
+  },
+  {
+    "municipio": "São Gonçalo",
+    "estado": "RJ",
+    "curiosidade": "O segundo município mais populoso do estado, localizado na Região Metropolitana. É um grande centro industrial e comercial, com destaque para o setor de serviços."
+  },
+  {
+    "municipio": "São João da Barra",
+    "estado": "RJ",
+    "curiosidade": "Sede do **Porto do Açu**, um dos maiores e mais modernos complexos portuários e industriais do mundo, que transformou a economia do Norte Fluminense."
+  },
+  {
+    "municipio": "São João de Meriti",
+    "estado": "RJ",
+    "curiosidade": "Localizada na Baixada Fluminense, é conhecida como a 'Capital do Cheiro' devido à presença de indústrias de perfumes e cosméticos. É o município **mais densamente povoado** da América Latina."
+  },
+  {
+    "municipio": "São José de Ubá",
+    "estado": "RJ",
+    "curiosidade": "O nome remete à cana-de-açúcar ('ubá' em Tupi). É um município do Noroeste com economia rural."
+  },
+  {
+    "municipio": "São José do Vale do Rio Preto",
+    "estado": "RJ",
+    "curiosidade": "Localizada na Região Serrana, é conhecida pela agricultura (principalmente o tomate) e pelo clima ameno."
+  },
+  {
+    "municipio": "São Pedro da Aldeia",
+    "estado": "RJ",
+    "curiosidade": "Localizada na Região dos Lagos, abriga a **Base Aérea Naval (BAeNSPA)**, o que a torna um importante centro militar. É conhecida pela sua lagoa e tranquilidade."
+  },
+  {
+    "municipio": "São Sebastião do Alto",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Centro-Norte, sua economia é baseada na agropecuária e no turismo rural e de aventura."
+  },
+  {
+    "municipio": "Sapucaia",
+    "estado": "RJ",
+    "curiosidade": "Município de fronteira com Minas Gerais, conhecido pelas suas fazendas históricas e pelo potencial ecoturístico em rios e cachoeiras."
+  },
+  {
+    "municipio": "Saquarema",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Capital Nacional do Surf'**, devido às suas ondas fortes (Praia de Itaúna). Abriga a **Igreja de Nossa Senhora de Nazareth**, um marco no alto de um promontório."
+  },
+  {
+    "municipio": "Seropédica",
+    "estado": "RJ",
+    "curiosidade": "Abriga a sede da **UFRRJ** (Universidade Federal Rural do Rio de Janeiro), um dos maiores complexos universitários e de pesquisa do país."
+  },
+  {
+    "municipio": "Silva Jardim",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Leste Fluminense, abriga a **Reserva Biológica de Poço das Antas**, a primeira reserva biológica do país, dedicada à preservação do mico-leão-dourado."
+  },
+  {
+    "municipio": "Sumidouro",
+    "estado": "RJ",
+    "curiosidade": "O nome remete ao sumiço do Rio Paquequer. É um município da Região Serrana, com clima ameno e vocação agrícola."
+  },
+  {
+    "municipio": "Tanguá",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Leste Fluminense, é conhecida pela produção de laranja e por suas belezas naturais, como a Reserva Biológica de Tanguá."
+  },
+  {
+    "municipio": "Teresópolis",
+    "estado": "RJ",
+    "curiosidade": "A **'Cidade de Teresa'** (homenagem à Imperatriz Teresa Cristina). É o município mais alto do estado e abriga a **Granja Comary** (CT da Seleção Brasileira de Futebol) e o **Dedo de Deus** (pico famoso na Serra dos Órgãos)."
+  },
+  {
+    "municipio": "Trajano de Moraes",
+    "estado": "RJ",
+    "curiosidade": "Localizado na Região Serrana, é conhecida por sua produção de frutas e hortaliças, e pelo clima frio de montanha."
+  },
+  {
+    "municipio": "Três Rios",
+    "estado": "RJ",
+    "curiosidade": "Seu nome vem da confluência dos rios Paraíba do Sul, Paraibuna e Piabanha. É um importante centro industrial e logístico, cortado por grandes rodovias federais."
+  },
+  {
+    "municipio": "Valença",
+    "estado": "RJ",
+    "curiosidade": "Antiga cidade do ciclo do café, possui um rico patrimônio histórico e uma forte tradição agropecuária. Abriga o **Centro Universitário de Valença (UNIFAA)**."
+  },
+  {
+    "municipio": "Varre-Sai",
+    "estado": "RJ",
+    "curiosidade": "O único município do estado com forte influência da **imigração italiana**. É conhecido pela produção de café de alta qualidade e pelo clima de montanha no Noroeste Fluminense."
+  },
+  {
+    "municipio": "Vassouras",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Princesa do Vale do Paraíba'** e 'Cidade dos Barões'. É a cidade com o maior número de fazendas históricas do ciclo do café, muitas abertas à visitação."
+  },
+  {
+    "municipio": "Volta Redonda",
+    "estado": "RJ",
+    "curiosidade": "Sede da **CSN** (Companhia Siderúrgica Nacional), a maior usina siderúrgica da América Latina. É conhecida como a 'Cidade do Aço' e foi planejada urbanisticamente para abrigar a força de trabalho da CSN."
+  },
+  [
+  {
+    "municipio": "Cantagalo",
+    "estado": "RJ",
+    "curiosidade": "Famosa pelas pedras preciosas (topázios e ametistas) e pela rica história do ciclo do café na Região Serrana. É conhecida como a 'Cidade da Pedra'. Possui um Museu Histórico com acervo relevante."
+  },
+  {
+    "municipio": "Cardoso Moreira",
+    "estado": "RJ",
+    "curiosidade": "Localizada no Norte Fluminense, sua economia é baseada na agropecuária, com destaque para a produção leiteira e de cana-de-açúcar. Possui um importante sítio arqueológico, o **Sambaqui de Beirada**."
+  },
+  {
+    "municipio": "Casimiro de Abreu",
+    "estado": "RJ",
+    "curiosidade": "Homenagem ao poeta romântico Casimiro de Abreu. O município abriga a **Reserva Biológica União**, importante área de preservação do mico-leão-dourado."
+  },
+  {
+    "municipio": "Mesquita",
+    "estado": "RJ",
+    "curiosidade": "Um dos municípios mais recentes da Baixada Fluminense (emancipado em 1999). Sua economia é voltada para o comércio e serviços, e é cortado pela importante linha férrea da SuperVia."
+  },
+  {
+    "municipio": "São Fidélis",
+    "estado": "RJ",
+    "curiosidade": "Conhecida como a **'Cidade Poema'** (pela beleza natural e literária) e também como a 'Capital Estadual do Açúcar', devido à sua forte tradição na produção de cana-de-açúcar."
+  },
+  {
+    "municipio": "São Francisco de Itabapoana",
+    "estado": "RJ",
+    "curiosidade": "O município com o litoral mais extenso do estado, famoso por suas praias quase desertas e pela atividade pesqueira."
+  }
+]
+]
+]
+]

@@ -1,0 +1,392 @@
+[
+  {
+    "municipio": "Afonso Cláudio",
+    "estado": "ES",
+    "curiosidade": "Possui forte influência italiana nas festas típicas e na culinária, especialmente na produção de queijos artesanais."
+  },
+  {
+    "municipio": "Água Doce do Norte",
+    "estado": "ES",
+    "curiosidade": "Conhecida por suas formações rochosas e por festivais locais que preservam tradições antigas do interior capixaba."
+  },
+  {
+    "municipio": "Águia Branca",
+    "estado": "ES",
+    "curiosidade": "Cercada por paredões de granito que atraem escaladores de todo o país, especialmente a Pedra do Elefante."
+  },
+  {
+    "municipio": "Alegre",
+    "estado": "ES",
+    "curiosidade": "Cidade universitária famosa por eventos culturais e pela tradicional Festa de São João, uma das maiores do estado."
+  },
+  {
+    "municipio": "Alfredo Chaves",
+    "estado": "ES",
+    "curiosidade": "Lar de competições de voo livre no Morro do Alto, que atrai atletas nacionais e internacionais."
+  },
+  {
+    "municipio": "Alto Rio Novo",
+    "estado": "ES",
+    "curiosidade": "Rica em paisagens naturais e cachoeiras pouco exploradas; o turismo rural é muito valorizado."
+  },
+  {
+    "municipio": "Anchieta",
+    "estado": "ES",
+    "curiosidade": "Terra de Padre Anchieta, que viveu na cidade e deixou um dos legados históricos mais marcantes do estado."
+  },
+  {
+    "municipio": "Apiacá",
+    "estado": "ES",
+    "curiosidade": "Cidade pequena que preserva tradições sertanejas e festas rurais que remontam ao século XIX."
+  },
+  {
+    "municipio": "Aracruz",
+    "estado": "ES",
+    "curiosidade": "Único município capixaba com aldeias indígenas tupiniquins e guaranis oficialmente reconhecidas."
+  },
+  {
+    "municipio": "Atílio Vivacqua",
+    "estado": "ES",
+    "curiosidade": "Possui trilhas ecológicas e comunidades tradicionais que preservam receitas e modos de preparo antigos."
+  },
+  {
+    "municipio": "Baixo Guandu",
+    "estado": "ES",
+    "curiosidade": "Primeira cidade brasileira a gerar energia elétrica com uma usina hidrelétrica municipal, inaugurada em 1935."
+  },
+  {
+    "municipio": "Barra de São Francisco",
+    "estado": "ES",
+    "curiosidade": "Famosa pela produção de granito e por equipes esportivas tradicionais, especialmente no futsal."
+  },
+  {
+    "municipio": "Boa Esperança",
+    "estado": "ES",
+    "curiosidade": "Sede do 'Festival Nacional de Viola', um dos maiores eventos musicais dedicados à cultura caipira."
+  },
+  {
+    "municipio": "Bom Jesus do Norte",
+    "estado": "ES",
+    "curiosidade": "Cidade gêmea de Bom Jesus do Itabapoana (RJ), com tradições compartilhadas e festas comuns entre as duas."
+  },
+  {
+    "municipio": "Brejetuba",
+    "estado": "ES",
+    "curiosidade": "Reconhecida como uma das maiores produtoras de café arábica de qualidade do Brasil."
+  },
+  {
+    "municipio": "Cachoeiro de Itapemirim",
+    "estado": "ES",
+    "curiosidade": "Cidade natal de Roberto Carlos e Sandra de Sá, com forte presença musical e cultural."
+  },
+  {
+    "municipio": "Cariacica",
+    "estado": "ES",
+    "curiosidade": "Possui o tradicional Congo de Máscaras, manifestação folclórica rara e totalmente preservada."
+  },
+  {
+    "municipio": "Castelo",
+    "estado": "ES",
+    "curiosidade": "Destaca-se pela Festa do Imigrante Italiano e por cavernas como a Gruta do Limoeiro, uma das maiores do estado."
+  },
+  {
+    "municipio": "Colatina",
+    "estado": "ES",
+    "curiosidade": "Conhecida como 'Princesa do Norte', foi palco de um dos maiores crescimentos industriais do estado no século XX."
+  },
+  {
+    "municipio": "Conceição da Barra",
+    "estado": "ES",
+    "curiosidade": "Tem forte cultura quilombola e realiza o Ticumbi, uma das manifestações folclóricas mais antigas do Brasil."
+  },
+  {
+    "municipio": "Conceição do Castelo",
+    "estado": "ES",
+    "curiosidade": "Polo produtor de morango e famoso por festas agroalimentares realizadas em comunidades rurais."
+  },
+  {
+    "municipio": "Divino de São Lourenço",
+    "estado": "ES",
+    "curiosidade": "Abriga partes do Parque Nacional do Caparaó, com trilhas que levam a mirantes impressionantes."
+  },
+  {
+    "municipio": "Domingos Martins",
+    "estado": "ES",
+    "curiosidade": "Majoritariamente de colonização alemã, muita gente fala dialeto pomerano até hoje."
+  },
+  {
+    "municipio": "Dores do Rio Preto",
+    "estado": "ES",
+    "curiosidade": "Faz divisa com o Pico da Bandeira e preserva rotas antigas usadas por tropeiros."
+  },
+  {
+    "municipio": "Ecoporanga",
+    "estado": "ES",
+    "curiosidade": "Um dos municípios com maior diversidade de comunidades interioranas tradicionais."
+  },
+  {
+    "municipio": "Fundão",
+    "estado": "ES",
+    "curiosidade": "Conhecida por suas praias tranquilas e por técnicas antigas de pesca artesanal."
+  },
+  {
+    "municipio": "Governador Lindenberg",
+    "estado": "ES",
+    "curiosidade": "Cidade jovem onde o dialeto pomerano é preservado nas comunidades mais antigas."
+  },
+  {
+    "municipio": "Guaçuí",
+    "estado": "ES",
+    "curiosidade": "Possui forte cena musical e é referência no estado por festivais de arte e cultura."
+  },
+  {
+    "municipio": "Guarapari",
+    "estado": "ES",
+    "curiosidade": "Famosa mundialmente pelas areias monazíticas, consideradas terapeuticas desde o século passado."
+  },
+  {
+    "municipio": "Ibatiba",
+    "estado": "ES",
+    "curiosidade": "Conhecida como 'Portal Capixaba', é centro da imigração italiana e sede de grandes festas tradicionais."
+  },
+  {
+    "municipio": "Ibiraçu",
+    "estado": "ES",
+    "curiosidade": "Abriga o maior Buda da América Latina, um monumento de 33 metros no Mosteiro Zen Morro da Vargem."
+  },
+  {
+    "municipio": "Ibitirama",
+    "estado": "ES",
+    "curiosidade": "Possui comunidades rurais que preservam costumes da colonização europeia do século XIX."
+  },
+  {
+    "municipio": "Iconha",
+    "estado": "ES",
+    "curiosidade": "Tem tradições religiosas fortes e festas típicas que reúnem moradores das comunidades vizinhas."
+  },
+  {
+    "municipio": "Irupi",
+    "estado": "ES",
+    "curiosidade": "Cercada por montanhas e cachoeiras, é destino de ecoturismo e festivais rurais tradicionais."
+  },
+  {
+    "municipio": "Itaguaçu",
+    "estado": "ES",
+    "curiosidade": "Cidade com grande influência pomerana e festas típicas que celebram imigrantes alemães."
+  },
+  {
+    "municipio": "Itapemirim",
+    "estado": "ES",
+    "curiosidade": "Berço da banda Os Mamíferos e terra natal de Roberto Carlos antes de se mudar para Cachoeiro."
+  },
+  {
+    "municipio": "Itarana",
+    "estado": "ES",
+    "curiosidade": "Celebrada por festas rurais com músicas tradicionais pomeranas e pelas paisagens serranas."
+  },
+  {
+    "municipio": "Iúna",
+    "estado": "ES",
+    "curiosidade": "Ponto estratégico para trilhas do Caparaó, famoso pelo café de altitude e festas culturais."
+  },
+  {
+    "municipio": "Jaguaré",
+    "estado": "ES",
+    "curiosidade": "Um dos municípios que mais receberam imigrantes pomeranos, preservando língua e costumes."
+  },
+  {
+    "municipio": "Jerônimo Monteiro",
+    "estado": "ES",
+    "curiosidade": "Cidade tranquila com produção artesanal de queijos, doces e cachaças locais."
+  },
+  {
+    "municipio": "João Neiva",
+    "estado": "ES",
+    "curiosidade": "Cidade marcada pela colônia italiana e festivais que celebram música e culinária tradicional."
+  },
+  {
+    "municipio": "Laranja da Terra",
+    "estado": "ES",
+    "curiosidade": "Um dos municípios com maior número de falantes de pomerano no Brasil, preservando festas típicas."
+  },
+  {
+    "municipio": "Linhares",
+    "estado": "ES",
+    "curiosidade": "Possui mais de 60 lagoas catalogadas, sendo a região com maior concentração de lagoas do país."
+  },
+  {
+    "municipio": "Mantenópolis",
+    "estado": "ES",
+    "curiosidade": "Conhecida por montanhas e festivais regionais que preservam tradições caipiras."
+  },
+  {
+    "municipio": "Marataízes",
+    "estado": "ES",
+    "curiosidade": "Tem o maior balneário do estado e é muito procurada por surfistas e turistas."
+  },
+  {
+    "municipio": "Marechal Floriano",
+    "estado": "ES",
+    "curiosidade": "Chamada de 'Cidade das Orquídeas', por possuir inúmeras espécies nativas cultivadas localmente."
+  },
+  {
+    "municipio": "Marilândia",
+    "estado": "ES",
+    "curiosidade": "Destaca-se pela agricultura familiar e pela produção de café e frutas tropicais."
+  },
+  {
+    "municipio": "Mimoso do Sul",
+    "estado": "ES",
+    "curiosidade": "Foi residência da poetisa capixaba Marly de Oliveira e tem uma das arquiteturas mais preservadas do sul do estado."
+  },
+  {
+    "municipio": "Montanha",
+    "estado": "ES",
+    "curiosidade": "Região agrícola cercada por pequenas propriedades que preservam receitas centenárias."
+  },
+  {
+    "municipio": "Mucurici",
+    "estado": "ES",
+    "curiosidade": "Município mais ao norte do ES, conhecido pela preservação de tradições mineiras no artesanato e culinária."
+  },
+  {
+    "municipio": "Muniz Freire",
+    "estado": "ES",
+    "curiosidade": "Cidade serrana famosa por eventos rurais e pela produção artesanal de vinhos caseiros."
+  },
+  {
+    "municipio": "Muqui",
+    "estado": "ES",
+    "curiosidade": "Maior sítio histórico tombado do ES, com mais de 200 casarões preservados do ciclo do café."
+  },
+  {
+    "municipio": "Nova Venécia",
+    "estado": "ES",
+    "curiosidade": "Celebra a Festa da Tainha e tem forte presença italiana e pomerana em sua formação cultural."
+  },
+  {
+    "municipio": "Pancas",
+    "estado": "ES",
+    "curiosidade": "Possui um dos conjuntos de montanhas mais impressionantes do Brasil, apelidado de 'Monument Valley capixaba'."
+  },
+  {
+    "municipio": "Pedro Canário",
+    "estado": "ES",
+    "curiosidade": "Cidade de colonização recente, onde tradições rurais e festivais sertanejos são muito fortes."
+  },
+  {
+    "municipio": "Pinheiros",
+    "estado": "ES",
+    "curiosidade": "Conhecida pela produção agrícola e por festas que celebram culturas italianas e pomeranas."
+  },
+  {
+    "municipio": "Piúma",
+    "estado": "ES",
+    "curiosidade": "Reconhecida pela produção de artesanato em conchas e por ser um dos destinos litorâneos mais populares do estado."
+  },
+  {
+    "municipio": "Ponto Belo",
+    "estado": "ES",
+    "curiosidade": "Conhecida por comunidades rurais que preservam festas religiosas e culinária típica do norte capixaba."
+  },
+  {
+    "municipio": "Presidente Kennedy",
+    "estado": "ES",
+    "curiosidade": "Cidade com forte presença de comunidades de pescadores tradicionais, além de projetos energéticos modernos."
+  },
+  {
+    "municipio": "Rio Bananal",
+    "estado": "ES",
+    "curiosidade": "Possui colônias pomeranas que preservam o dialeto, as roupas típicas e festas tradicionais."
+  },
+  {
+    "municipio": "Rio Novo do Sul",
+    "estado": "ES",
+    "curiosidade": "Cidade marcada pela produção de bananas e por trilhas em montanhas preservadas."
+  },
+  {
+    "municipio": "Santa Leopoldina",
+    "estado": "ES",
+    "curiosidade": "Uma das primeiras cidades de imigração alemã do Brasil, com casarões históricos e rotas antigas de tropeiros."
+  },
+  {
+    "municipio": "Santa Maria de Jetibá",
+    "estado": "ES",
+    "curiosidade": "Maior comunidade pomerana fora da Europa; muitos moradores ainda falam o idioma no dia a dia."
+  },
+  {
+    "municipio": "Santa Teresa",
+    "estado": "ES",
+    "curiosidade": "Primeira cidade de colonização italiana no Brasil e berço do naturalista Augusto Ruschi."
+  },
+  {
+    "municipio": "São Domingos do Norte",
+    "estado": "ES",
+    "curiosidade": "Cidade agrícola com festas tradicionais do interior e produção artesanal de queijos."
+  },
+  {
+    "municipio": "São Gabriel da Palha",
+    "estado": "ES",
+    "curiosidade": "Considerada uma das capitais nacionais do café conilon, com produção de destaque internacional."
+  },
+  {
+    "municipio": "São José do Calçado",
+    "estado": "ES",
+    "curiosidade": "Celebra eventos tradicionais ligados ao campo e à cultura sertaneja."
+  },
+  {
+    "municipio": "São Mateus",
+    "estado": "ES",
+    "curiosidade": "Uma das cidades mais antigas do Brasil, com centro histórico preservado e forte cultura afro-brasileira."
+  },
+  {
+    "municipio": "São Roque do Canaã",
+    "estado": "ES",
+    "curiosidade": "Local de festas típicas italianas e grandes celebrações que reforçam tradições familiares."
+  },
+  {
+    "municipio": "Serra",
+    "estado": "ES",
+    "curiosidade": "Cidade multicultural e muito populosa, famosa pelos congos capixabas e festivais populares."
+  },
+  {
+    "municipio": "Sooretama",
+    "estado": "ES",
+    "curiosidade": "Abriga a Reserva Biológica de Sooretama, uma das áreas mais ricas em biodiversidade da Mata Atlântica."
+  },
+  {
+    "municipio": "Vargem Alta",
+    "estado": "ES",
+    "curiosidade": "Famosa pela produção de azulejos artesanais e pelo turismo rural forte em comunidades italianas."
+  },
+  {
+    "municipio": "Venda Nova do Imigrante",
+    "estado": "ES",
+    "curiosidade": "Capital Nacional do Agroturismo, famosa pela Festa da Polenta e tradição italiana muito forte."
+  },
+  {
+    "municipio": "Viana",
+    "estado": "ES",
+    "curiosidade": "Possui uma das estações ferroviárias mais antigas do país, além de tradições religiosas centenárias."
+  },
+  {
+    "municipio": "Vila Pavão",
+    "estado": "ES",
+    "curiosidade": "Cidade onde a cultura pomerana é tão forte que muitos moradores usam trajes típicos em festas comunitárias."
+  },
+  {
+    "municipio": "Vila Valério",
+    "estado": "ES",
+    "curiosidade": "Município agrícola marcado pela convivência entre pomeranos e italianos, com festas típicas preservadas."
+  },
+  {
+    "municipio": "Vila Velha",
+    "estado": "ES",
+    "curiosidade": "Cidade mais antiga do Espírito Santo, lar do Convento da Penha e de fábricas tradicionais como os chocolates Garoto."
+  },
+  {
+    "municipio": "Vitória",
+    "estado": "ES",
+    "curiosidade": "Capital-ilha com uma das melhores gastronomias de moqueca do Brasil e forte identidade cultural capixaba."
+  }
+]
