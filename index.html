@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mapa do Brasil</title>
   <style>
-    :root { color-scheme: light; }
+    :root {
+      color-scheme: light;
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --safe-side: env(safe-area-inset-left, 0px);
+    }
     body {
       margin:0;
       font-family: "Segoe UI", Arial, sans-serif;
@@ -64,7 +68,7 @@
       justify-content:center;
       align-items:center;
       gap:16px;
-      padding:14px 18px 16px;
+      padding:14px 18px calc(16px + var(--safe-bottom));
       background: rgba(0, 0, 0, 0.5);
       border-top:1px solid rgba(255,255,255,0.08);
       border-radius:0;
@@ -146,6 +150,51 @@
       z-index: 14;
     }
     .zoom-reset.zoom-reset--visible { display:inline-flex; }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 0 10px calc(110px + var(--safe-bottom));
+      }
+      .frame {
+        padding: 12px 10px calc(120px + var(--safe-bottom));
+      }
+      .controls {
+        left: 10px;
+        right: 10px;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 10px;
+        padding: 10px 12px calc(12px + var(--safe-bottom));
+        border-radius: 16px;
+        backdrop-filter: blur(12px);
+        justify-items: stretch;
+        align-items: center;
+      }
+      .nav-btn {
+        width: 100%;
+        font-size: 13px;
+        padding: 9px 12px;
+      }
+      #birthBtn {
+        --btn-size: 82px;
+        grid-column: 1 / -1;
+        justify-self: center;
+      }
+      .status-bar {
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: calc(100% - 24px);
+        padding: 10px 12px;
+      }
+      .map-wrap {
+        height: min(70vh, 560px);
+      }
+      .zoom-reset {
+        top: 12px;
+        right: 12px;
+      }
+    }
   </style>
 </head>
 <body>
