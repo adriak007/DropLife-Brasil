@@ -3,9 +3,18 @@
       const birthBtn = document.getElementById('birthBtn');
       const container = document.getElementById('mapContainer');
       const modal = document.getElementById('modal');
+      const modalTitle = document.getElementById('modalTitle');
       const modalMessage = document.getElementById('modalMessage');
+      const modalCity = document.getElementById('modalCity');
+      const modalCityMeta = document.getElementById('modalCityMeta');
+      const modalCityCuriosity = document.getElementById('modalCityCuriosity');
       const modalClose = document.getElementById('modalClose');
       const zoomReset = document.getElementById('zoomReset');
+      const tooltip = document.getElementById('cityTooltip');
+      const tooltipTitle = document.getElementById('tooltipTitle');
+      const tooltipSubtitle = document.getElementById('tooltipSubtitle');
+      const tooltipInfo = document.getElementById('tooltipInfo');
+      const tooltipClose = document.getElementById('tooltipClose');
       const mapUrl = 'MAPAESTADOS.svg';
       const municipiosUrl = 'municipios.json';
       const curiositySources = [
@@ -49,9 +58,34 @@
       let populationIndex = null;
       let missing = [];
       const curiosities = new Map();
+      const tooltipState = {
+        isPinned: false,
+        pinnedKey: null,
+        pinnedTarget: null,
+        pinnedData: null,
+        lastHoverKey: null,
+      };
+      const setStatus = (message) => {
+        if (!statusEl) return;
+        statusEl.textContent = message;
+      };
 
-      const openModal = (message) => {
+      const openModal = (message, title = 'Aviso') => {
+        modalTitle.textContent = title;
         modalMessage.textContent = message;
+        modalMessage.classList.remove('hidden');
+        modalCity.classList.add('hidden');
+        modal.classList.add('modal-backdrop--open');
+      };
+
+      const openCityModal = ({ city, state, population, curiosity }) => {
+        const popText = population ? `${formatPop(population)} habitantes` : 'Populacao indisponivel';
+        modalTitle.textContent = 'Detalhes do municipio';
+        modalMessage.textContent = '';
+        modalMessage.classList.add('hidden');
+        modalCity.classList.remove('hidden');
+        modalCityMeta.textContent = `${city || 'Municipio'}${state ? ` (${state})` : ''} • ${popText}`;
+        modalCityCuriosity.textContent = curiosity || 'Curiosidade nao disponivel.';
         modal.classList.add('modal-backdrop--open');
       };
 
@@ -60,10 +94,34 @@
       };
 
       modal.addEventListener('click', (evt) => {
+        evt.stopPropagation();
         if (!evt.target.closest('.modal-panel')) closeModal();
       });
       modalClose.addEventListener('click', closeModal);
       zoomReset.addEventListener('click', () => resetZoom());
+      tooltipInfo.addEventListener('click', (evt) => {
+        evt.stopPropagation();
+        if (!tooltipState.isPinned || !tooltipState.pinnedData) return;
+        const { city, state, population } = tooltipState.pinnedData;
+        const curiosity = curiosityFor(city, state);
+        clearPinnedTooltip();
+        openCityModal({ city, state, population, curiosity });
+      });
+      tooltipClose.addEventListener('click', (evt) => {
+        evt.stopPropagation();
+        clearPinnedTooltip();
+      });
+      tooltip.addEventListener('click', (evt) => {
+        if (tooltipState.isPinned) evt.stopPropagation();
+      });
+      document.addEventListener('pointerdown', (evt) => {
+        if (!tooltipState.isPinned) return;
+        if (tooltip.contains(evt.target)) return;
+        if (tooltipState.pinnedTarget && tooltipState.pinnedTarget.contains(evt.target)) return;
+        clearPinnedTooltip();
+      }, true);
+      window.addEventListener('resize', () => positionPinnedTooltip());
+      window.addEventListener('scroll', () => positionPinnedTooltip(), true);
 
       const ufToName = {
         AC: 'Acre', AL: 'Alagoas', AP: 'Amapa', AM: 'Amazonas', BA: 'Bahia', CE: 'Ceara',
@@ -256,6 +314,7 @@
         currentSvg.querySelectorAll('.region--hover').forEach((p) => p.classList.remove('region--hover'));
         currentSvg.classList.remove('svg--zoomed');
         zoomReset.classList.remove('zoom-reset--visible');
+        clearPinnedTooltip();
       };
 
       document.addEventListener('click', (evt) => {
@@ -287,6 +346,93 @@
       const formatPop = (num) => Number(num || 0).toLocaleString('pt-BR');
       const formatChance = (pop) =>
         ((Number(pop) || 0) / BRAZIL_TOTAL_POP * 100).toFixed(6).replace(/\.?0+$/, '');
+
+      const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+      const getPopulation = (state, city) => {
+        if (!populationIndex || !city) return null;
+        const directKey = keyFor(city, state || '');
+        const lookup =
+          populationIndex.get(directKey) ||
+          populationIndex.get(keyFor(city, ufToName[state] || '')) ||
+          populationIndex.get(keyFor(city, state || ''));
+        return lookup || null;
+      };
+
+      const setTooltipContent = ({ city, state, population }) => {
+        tooltipTitle.textContent = `${city || 'Municipio'}${state ? ` (${state})` : ''}`;
+        tooltipSubtitle.textContent = population
+          ? `${formatPop(population)} habitantes`
+          : 'Populacao indisponivel';
+      };
+
+      const setTooltipPosition = (x, y) => {
+        const rect = tooltip.getBoundingClientRect();
+        const pad = 12;
+        const maxX = window.innerWidth - rect.width - pad;
+        const maxY = window.innerHeight - rect.height - pad;
+        const clampedX = clamp(x, pad, Math.max(pad, maxX));
+        const clampedY = clamp(y, pad, Math.max(pad, maxY));
+        tooltip.style.left = `${clampedX}px`;
+        tooltip.style.top = `${clampedY}px`;
+      };
+
+      const showTooltip = () => {
+        tooltip.classList.remove('hidden');
+        tooltip.setAttribute('aria-hidden', 'false');
+      };
+
+      const hideTooltip = () => {
+        if (tooltipState.isPinned) return;
+        tooltip.classList.add('hidden');
+        tooltip.setAttribute('aria-hidden', 'true');
+        tooltipState.lastHoverKey = null;
+      };
+
+      const showTooltipHover = (data, mouseX, mouseY) => {
+        if (tooltipState.isPinned) {
+          if (tooltipState.pinnedKey !== data.key) return;
+          setTooltipContent(data);
+          showTooltip();
+          positionPinnedTooltip();
+          return;
+        }
+        tooltip.classList.remove('city-tooltip--pinned');
+        setTooltipContent(data);
+        showTooltip();
+        setTooltipPosition(mouseX + 14, mouseY + 14);
+        tooltipState.lastHoverKey = data.key;
+      };
+
+      const positionPinnedTooltip = () => {
+        if (!tooltipState.isPinned || !tooltipState.pinnedTarget) return;
+        const targetRect = tooltipState.pinnedTarget.getBoundingClientRect();
+        const tooltipRect = tooltip.getBoundingClientRect();
+        let x = targetRect.left + targetRect.width / 2 - tooltipRect.width / 2;
+        let y = targetRect.top - tooltipRect.height - 12;
+        if (y < 12) y = targetRect.bottom + 12;
+        setTooltipPosition(x, y);
+      };
+
+      const pinTooltip = (data, target) => {
+        tooltipState.isPinned = true;
+        tooltipState.pinnedKey = data.key;
+        tooltipState.pinnedTarget = target;
+        tooltipState.pinnedData = data;
+        tooltip.classList.add('city-tooltip--pinned');
+        setTooltipContent(data);
+        showTooltip();
+        positionPinnedTooltip();
+      };
+
+      const clearPinnedTooltip = () => {
+        tooltipState.isPinned = false;
+        tooltipState.pinnedKey = null;
+        tooltipState.pinnedTarget = null;
+        tooltipState.pinnedData = null;
+        tooltip.classList.remove('city-tooltip--pinned');
+        hideTooltip();
+      };
 
       const editDistanceCap = (a, b, cap = 2) => {
         // DistÃ¢ncia de ediÃ§Ã£o simples com limite para performance
@@ -490,6 +636,7 @@
           if (isZoomed) {
             const leaving = evt.target.closest('.region');
             if (leaving) leaving.classList.remove('region--hover');
+            if (!tooltipState.isPinned) hideTooltip();
             return;
           }
           if (!evt.relatedTarget || !svgEl.contains(evt.relatedTarget)) {
@@ -502,6 +649,32 @@
           setStateHover(entering?.dataset.state || null);
         });
 
+        svgEl.addEventListener('pointermove', (evt) => {
+          const region = evt.target.closest('.region');
+          if (!region || !svgEl.contains(region)) {
+            hideTooltip();
+            return;
+          }
+          if (!isZoomed || region.dataset.state !== zoomedState) {
+            hideTooltip();
+            return;
+          }
+          const city = region.dataset.city;
+          if (!city) {
+            hideTooltip();
+            return;
+          }
+          const population =
+            Number(region.dataset.population) || getPopulation(region.dataset.state, city);
+          const data = {
+            city,
+            state: region.dataset.state,
+            population,
+            key: region.dataset.key || keyFor(city, region.dataset.state),
+          };
+          showTooltipHover(data, evt.clientX, evt.clientY);
+        });
+
         svgEl.addEventListener('click', (evt) => {
           const region = evt.target.closest('.region');
           if (isZoomed && (!region || region.dataset.state !== zoomedState)) {
@@ -512,13 +685,22 @@
           evt.stopPropagation();
           const city = region.dataset.city;
           const stateKey = region.dataset.state;
-          const pop = region.dataset.population;
+          const pop = Number(region.dataset.population) || getPopulation(stateKey, city);
           const rawName = region.dataset.rawname;
+          if (isZoomed && city && region.dataset.state === zoomedState) {
+            const data = {
+              city,
+              state: stateKey,
+              population: pop,
+              key: region.dataset.key || keyFor(city, stateKey),
+            };
+            pinTooltip(data, region);
+          }
           if (city && pop) {
             const title = `${city}${stateKey ? ` (${stateKey})` : ''} - ${formatPop(pop)} habitantes`;
-            statusEl.textContent = title;
+            setStatus(title);
           } else {
-            statusEl.textContent = `Sem populacao encontrada para ${rawName || 'municipio'}.`;
+            setStatus(`Sem populacao encontrada para ${rawName || 'municipio'}.`);
           }
           if (!isZoomed) focusStateFn?.(stateKey);
         });
@@ -638,22 +820,22 @@
               }
             }
 
-            path.classList.add('region');
-            if (!cidade) return;
+          path.classList.add('region');
+          if (!cidade) return;
 
-            processed += 1;
-            if (populacao) {
-              matched += 1;
-              const title = `${cidade}${uf ? ` (${uf})` : ''} - ${formatPop(populacao)} habitantes`;
-              const uniqueKey = keyFor(cidade, stateKey);
-              path.dataset.population = populacao;
-              path.dataset.city = cidade;
-              path.dataset.key = uniqueKey;
-              path.setAttribute('title', title);
+          processed += 1;
+          const uniqueKey = keyFor(cidade, stateKey);
+          path.dataset.city = cidade;
+          path.dataset.key = uniqueKey;
+          if (populacao) {
+            matched += 1;
+            const title = `${cidade}${uf ? ` (${uf})` : ''} - ${formatPop(populacao)} habitantes`;
+            path.dataset.population = populacao;
+            path.setAttribute('title', title);
 
-              availableCities.push({
-                key: uniqueKey,
-                path,
+            availableCities.push({
+              key: uniqueKey,
+              path,
                 population: Number(populacao),
                 city: cidade,
                 state: stateKey,
@@ -670,13 +852,13 @@
           const missingMsg = missing.length
             ? `; faltando ${missing.length}. Veja o console para exemplos.`
             : '.';
-          statusEl.textContent = `Populacao vinculada para ${matched}/${processed} municipios${missingMsg}`;
+          setStatus(`Populacao vinculada para ${matched}/${processed} municipios${missingMsg}`);
           if (missing.length) {
             console.warn('Municipios sem correspondencia de populacao (amostra):', missing.slice(0, 30));
           }
           const pickRandomCity = () => {
             if (!availableCities.length) {
-              statusEl.textContent = 'Nenhum municipio restante para nascer.';
+              setStatus('Nenhum municipio restante para nascer.');
               openModal('Nao ha municipios restantes para nascer.');
               return;
             }
@@ -700,13 +882,13 @@
             const chance = formatChance(population);
             const curiosityText = curiosityFor(city, state);
             const message = `Voce nasceu em ${city} (${state}). (${formatPop(population)} Habitantes) Chance: ${chance}%. Curiosidade: ${curiosityText}`;
-            statusEl.textContent = message;
+            setStatus(message);
             openModal(message);
           };
 
           birthBtn.addEventListener('click', pickRandomCity);
         } catch (err) {
-          statusEl.textContent = 'Nao foi possivel carregar o mapa ou as populacoes.';
+          setStatus('Nao foi possivel carregar o mapa ou as populacoes.');
           console.error(err);
         }
       };

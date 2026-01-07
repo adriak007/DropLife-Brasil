@@ -18,14 +18,33 @@
       <button class="nav-btn" type="button">Estados</button>
       <button class="nav-btn" type="button">Conquistas</button>
     </div>
-    <div class="status-bar" id="status">Carregando mapa...</div>
     <div class="map-wrap" id="mapContainer"></div>
+  </div>
+  <div id="cityTooltip" class="city-tooltip hidden" aria-live="polite" aria-hidden="true">
+    <div class="city-tooltip__header">
+      <div class="city-tooltip__title" id="tooltipTitle"></div>
+      <div class="city-tooltip__actions">
+        <button class="city-tooltip__btn city-tooltip__btn--info" id="tooltipInfo" type="button" aria-label="Detalhes do municipio">i</button>
+        <button class="city-tooltip__btn city-tooltip__btn--close" id="tooltipClose" type="button" aria-label="Fechar">x</button>
+      </div>
+    </div>
+    <div class="city-tooltip__subtitle" id="tooltipSubtitle"></div>
   </div>
   <button id="zoomReset" class="zoom-reset" type="button">Voltar</button>
   <div class="modal-backdrop" id="modal">
     <div class="modal-panel">
-      <p id="modalMessage"></p>
-      <button id="modalClose">Fechar</button>
+      <div class="modal-header">
+        <h2 id="modalTitle">Detalhes do municipio</h2>
+        <button id="modalClose" class="modal-close" type="button">Fechar</button>
+      </div>
+      <div class="modal-body">
+        <p id="modalMessage" class="modal-message"></p>
+        <div class="modal-city hidden" id="modalCity">
+          <p class="modal-city__meta" id="modalCityMeta"></p>
+          <p class="modal-city__curiosity" id="modalCityCuriosity"></p>
+          <p class="modal-city__placeholder">Mais dados em breve...</p>
+        </div>
+      </div>
     </div>
   </div>
   <script src="app.js" defer></script>
