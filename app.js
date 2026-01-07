@@ -253,6 +253,7 @@
           paths.forEach((p) => p.classList.remove('region--state-hover'))
         );
         clearActiveState();
+        currentSvg.querySelectorAll('.region--hover').forEach((p) => p.classList.remove('region--hover'));
         currentSvg.classList.remove('svg--zoomed');
         zoomReset.classList.remove('zoom-reset--visible');
       };
@@ -478,10 +479,19 @@
         svgEl.addEventListener('pointerover', (evt) => {
           const region = evt.target.closest('.region');
           if (!region || !svgEl.contains(region)) return;
+          if (isZoomed) {
+            region.classList.add('region--hover');
+            return;
+          }
           setStateHover(region.dataset.state);
         });
 
         svgEl.addEventListener('pointerout', (evt) => {
+          if (isZoomed) {
+            const leaving = evt.target.closest('.region');
+            if (leaving) leaving.classList.remove('region--hover');
+            return;
+          }
           if (!evt.relatedTarget || !svgEl.contains(evt.relatedTarget)) {
             clearStateHover();
             return;
@@ -563,6 +573,7 @@
             .region.region--hover { fill: #4f6e56; }
             .region.region--selected { fill: #ef4444 !important; stroke: #991b1b; stroke-width: 0.85; }
             .region.region--state-hover { fill: #5f8a63; }
+            .region.region--state-hover.region--hover { fill: #4f6e56; }
             .svg--zoomed .region { stroke: transparent; }
             .svg--zoomed .region--active-state { stroke: rgba(15,23,42,0.45); stroke-width: 0.55; }
             .state-label { fill: #0b1224; font: 700 13px "Segoe UI", Arial, sans-serif; paint-order: stroke; stroke: rgba(255,255,255,0.8); stroke-width: 0.8; text-anchor: middle; dominant-baseline: middle; pointer-events: none; opacity: 0.92; }
@@ -702,4 +713,3 @@
 
       loadMap();
     });
-
