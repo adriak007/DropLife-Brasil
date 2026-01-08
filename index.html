@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -8,15 +8,25 @@
 </head>
 <body>
   <div class="frame">
+    <div class="game-logo">
+      <img src="Img/LOGO%201.png" alt="DropLife logo" />
+    </div>
     <div class="controls" role="navigation" aria-label="Menu principal">
-      <button class="nav-btn" type="button">Populacao</button>
-      <button class="nav-btn" type="button">Citydex</button>
+      <button class="nav-btn ui-btn" type="button">
+        <span class="btn-label">Populacao</span>
+      </button>
+      <button class="nav-btn ui-btn" type="button">
+        <span class="btn-label">Citydex</span>
+      </button>
       <button id="birthBtn" type="button">
-        <span class="btn-icon" aria-hidden="true"></span>
         <span class="btn-label">Nascer</span>
       </button>
-      <button class="nav-btn" type="button">Estados</button>
-      <button class="nav-btn" type="button">Conquistas</button>
+      <button class="nav-btn ui-btn" type="button">
+        <span class="btn-label">Estados</span>
+      </button>
+      <button class="nav-btn ui-btn" type="button">
+        <span class="btn-label">Conquistas</span>
+      </button>
     </div>
     <div class="map-wrap" id="mapContainer"></div>
   </div>
@@ -50,5 +60,6 @@
   <script src="app.js" defer></script>
 </body>
 </html>
+
 
 
