@@ -157,8 +157,8 @@
       cursor: pointer;
       box-sizing: border-box;
     }
-    .ui-btn:hover { background-image: url("Img/UI/grey_inlay.png"); }
-    .ui-btn:active { background-image: url("Img/UI/grey_pressed.png"); }
+    .ui-btn:hover { background-image: url("Img/UI/grey_pressed.png"); }
+    .ui-btn:active { background-image: url("Img/UI/grey_inlay.png"); }
     .btn-label {
       pointer-events: none;
       user-select: none;
