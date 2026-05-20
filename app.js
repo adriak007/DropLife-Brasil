@@ -7,6 +7,7 @@
       const modalMessage = document.getElementById('modalMessage');
       const modalCity = document.getElementById('modalCity');
       const modalCityMeta = document.getElementById('modalCityMeta');
+      const modalCityChance = document.getElementById('modalCityChance');
       const modalCityCuriosity = document.getElementById('modalCityCuriosity');
       const modalClose = document.getElementById('modalClose');
       const zoomReset = document.getElementById('zoomReset');
@@ -15,6 +16,8 @@
       const tooltipSubtitle = document.getElementById('tooltipSubtitle');
       const tooltipInfo = document.getElementById('tooltipInfo');
       const tooltipClose = document.getElementById('tooltipClose');
+      const loadingScreen = document.getElementById('loadingScreen');
+      const toastEl = document.getElementById('toast');
       const mapUrl = 'MAPAESTADOS.svg';
       const municipiosUrl = 'municipios.json';
       const curiositySources = [
@@ -70,6 +73,33 @@
         statusEl.textContent = message;
       };
 
+      const hideLoadingScreen = () => {
+        if (!loadingScreen) return;
+        loadingScreen.classList.add('hidden');
+      };
+
+      let toastTimer = null;
+      const showToast = (message, duration = 3500) => {
+        if (!toastEl) return;
+        toastEl.textContent = message;
+        toastEl.classList.add('toast--visible');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toastEl.classList.remove('toast--visible'), duration);
+      };
+
+      const addRipple = (btn) => {
+        btn.addEventListener('pointerdown', (evt) => {
+          const ripple = document.createElement('span');
+          ripple.classList.add('ripple');
+          const rect = btn.getBoundingClientRect();
+          const size = Math.max(rect.width, rect.height);
+          ripple.style.cssText = `width:${size}px;height:${size}px;left:${evt.clientX - rect.left - size / 2}px;top:${evt.clientY - rect.top - size / 2}px`;
+          btn.appendChild(ripple);
+          ripple.addEventListener('animationend', () => ripple.remove(), { once: true });
+        });
+      };
+      document.querySelectorAll('.ui-btn, #birthBtn').forEach(addRipple);
+
       const openModal = (message, title = 'Aviso') => {
         modalTitle.textContent = title;
         modalMessage.textContent = message;
@@ -78,13 +108,23 @@
         modal.classList.add('modal-backdrop--open');
       };
 
-      const openCityModal = ({ city, state, population, curiosity }) => {
+      const openCityModal = ({ city, state, population, curiosity, chance }) => {
         const popText = population ? `${formatPop(population)} habitantes` : 'Populacao indisponivel';
-        modalTitle.textContent = 'Detalhes do municipio';
+        modalTitle.textContent = chance
+          ? `Voce nasceu em ${city}!`
+          : 'Detalhes do municipio';
         modalMessage.textContent = '';
         modalMessage.classList.add('hidden');
         modalCity.classList.remove('hidden');
-        modalCityMeta.textContent = `${city || 'Municipio'}${state ? ` (${state})` : ''} • ${popText}`;
+        modalCityMeta.textContent = `${state ? `${state}` : ''} • ${popText}`;
+        if (modalCityChance) {
+          if (chance) {
+            modalCityChance.textContent = `Probabilidade de nascer aqui: ${chance}%`;
+            modalCityChance.classList.remove('hidden');
+          } else {
+            modalCityChance.classList.add('hidden');
+          }
+        }
         modalCityCuriosity.textContent = curiosity || 'Curiosidade nao disponivel.';
         modal.classList.add('modal-backdrop--open');
       };
@@ -751,15 +791,19 @@
 
           const styleEl = document.createElementNS('http://www.w3.org/2000/svg', 'style');
           styleEl.textContent = `
-            .region { fill: #6f9c76; cursor: pointer; transition: fill 160ms ease, opacity 160ms ease; stroke: transparent; }
-            .region.region--hover { fill: #4f6e56; }
-            .region.region--selected { fill: #ef4444 !important; stroke: #991b1b; stroke-width: 0.85; }
-            .region.region--state-hover { fill: #5f8a63; }
-            .region.region--state-hover.region--hover { fill: #4f6e56; }
+            .region { fill: #1b5438; cursor: pointer; transition: fill 160ms ease, filter 160ms ease; stroke: transparent; }
+            .region.region--hover { fill: #2b7350; filter: brightness(1.15); }
+            .region.region--selected { fill: #ef4444 !important; stroke: #991b1b; stroke-width: 0.85; animation: selectedGlow 1.8s ease-in-out infinite; }
+            .region.region--state-hover { fill: #235f40; }
+            .region.region--state-hover.region--hover { fill: #2b7350; }
             .svg--zoomed .region { stroke: transparent; }
-            .svg--zoomed .region--active-state { stroke: rgba(15,23,42,0.45); stroke-width: 0.55; }
-            .state-label { fill: #0b1224; font: 700 13px "Segoe UI", Arial, sans-serif; paint-order: stroke; stroke: rgba(255,255,255,0.8); stroke-width: 0.8; text-anchor: middle; dominant-baseline: middle; pointer-events: none; opacity: 0.92; }
-            .svg--zoomed .state-label { opacity: 0; }
+            .svg--zoomed .region--active-state { stroke: rgba(0,210,255,0.22); stroke-width: 0.6; }
+            .state-label { fill: rgba(190,240,210,0.9); font: 700 13px "Segoe UI", Arial, sans-serif; paint-order: stroke; stroke: rgba(0,0,0,0.55); stroke-width: 1.4; text-anchor: middle; dominant-baseline: middle; pointer-events: none; opacity: 0.85; }
+            .svg--zoomed .state-label { opacity: 0; transition: opacity 200ms ease; }
+            @keyframes selectedGlow {
+              0%,100% { filter: drop-shadow(0 0 6px rgba(239,68,68,0.7)); }
+              50%      { filter: drop-shadow(0 0 18px rgba(239,68,68,1)); }
+            }
           `;
           svg.appendChild(styleEl);
 
@@ -848,6 +892,7 @@
 
           renderStateLabels(svg);
           setupDelegatedEvents(svg, focusState);
+          hideLoadingScreen();
 
           const missingMsg = missing.length
             ? `; faltando ${missing.length}. Veja o console para exemplos.`
@@ -881,9 +926,8 @@
             path.classList.add('region--selected');
             const chance = formatChance(population);
             const curiosityText = curiosityFor(city, state);
-            const message = `Voce nasceu em ${city} (${state}). (${formatPop(population)} Habitantes) Chance: ${chance}%. Curiosidade: ${curiosityText}`;
-            setStatus(message);
-            openModal(message);
+            setStatus(`Nasceu em ${city} (${state}) — ${formatPop(population)} hab. — chance ${chance}%`);
+            openCityModal({ city, state, population, curiosity: curiosityText, chance });
           };
 
           birthBtn.addEventListener('click', pickRandomCity);
