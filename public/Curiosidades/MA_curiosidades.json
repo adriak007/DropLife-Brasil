@@ -319,7 +319,6 @@
     "estado": "MA",
     "curiosidade": "Conhecida por suas ilhas e pelo raro peixe-boi-marinho, protegido na região."
   },
-  [
   {
     "municipio": "Davinópolis",
     "estado": "MA",
@@ -635,8 +634,6 @@
     "estado": "MA",
     "curiosidade": "Cidade com grande produção de babaçu e cultura típica das quebradeiras de coco."
   },
-
-  [
   {
     "municipio": "Olho d’Água das Cunhãs",
     "estado": "MA",
@@ -1087,8 +1084,4 @@
     "estado": "MA",
     "curiosidade": "Cidade vibrante com forte influência cultural de migrantes de várias partes do Nordeste."
   }
-]
-
-]
-
 ]

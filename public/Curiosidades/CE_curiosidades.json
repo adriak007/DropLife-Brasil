@@ -599,7 +599,6 @@
     "estado": "CE",
     "curiosidade": "Município serrano no Maciço de Baturité. Conhecido pelo clima frio e natureza preservada."
   },
-  [
   {
     "municipio": "Nova Olinda",
     "estado": "CE",
@@ -622,7 +621,7 @@
   },
   {
     "municipio": "Orós",
-       "estado": "CE",
+    "estado": "CE",
     "curiosidade": "Abriga o Açude Orós, um dos maiores do estado. Cidade eternizada na música 'Oroz' de Luiz Gonzaga."
   },
   {
@@ -914,7 +913,10 @@
     "municipio": "Viçosa do Ceará",
     "estado": "CE",
     "curiosidade": "Cidade serrana histórica, com clima agradável e arquitetura colonial. Importante polo turístico da serra."
+  },
+  {
+    "municipio": "Itaiçaba",
+    "estado": "Ceará",
+    "curiosidade": "No baixo Jaguaribe, entre o rio e as dunas, é conhecida pela cajucultura e pela travessia de balsa que liga a cidade a Aracati."
   }
-]
-
 ]

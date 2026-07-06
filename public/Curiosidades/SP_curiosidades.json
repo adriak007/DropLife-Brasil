@@ -1514,7 +1514,6 @@
     "estado": "SP",
     "curiosidade": "Município da região de Araçatuba, com economia baseada na agropecuária."
   },
-  [
   {
     "municipio": "Macatuba",
     "estado": "SP",
@@ -2410,7 +2409,6 @@
     "estado": "SP",
     "curiosidade": "Localizada no Extremo Noroeste, às margens do Rio Paraná. Conhecida pelo turismo de pesca e lazer."
   },
-  [
   {
     "municipio": "Sabino",
     "estado": "SP",
@@ -3115,7 +3113,105 @@
     "municipio": "Zacarias",
     "estado": "SP",
     "curiosidade": "Pequeno município da região de São José do Rio Preto, com economia baseada na agropecuária."
+  },
+  {
+    "municipio": "São Vicente",
+    "estado": "São Paulo",
+    "curiosidade": "A primeira vila do Brasil: fundada em 1532 por Martim Afonso de Sousa, é chamada de Célula Mater da nacionalidade, berço do primeiro governo e da primeira câmara municipal das Américas."
+  },
+  {
+    "municipio": "Guaratinguetá",
+    "estado": "São Paulo",
+    "curiosidade": "Terra de Frei Galvão, o primeiro santo nascido no Brasil, canonizado em 2007. No Vale do Paraíba, vizinha de Aparecida, é parada tradicional dos romeiros."
+  },
+  {
+    "municipio": "Mongaguá",
+    "estado": "São Paulo",
+    "curiosidade": "No litoral sul paulista, é famosa pela Plataforma Marítima de pesca, que avança 400 metros mar adentro, e pelo Poço das Antas, área de mata atlântica aos pés da serra."
+  },
+  {
+    "municipio": "Guararema",
+    "estado": "São Paulo",
+    "curiosidade": "Às margens do rio Paraíba do Sul, virou cenário queridinho de filmes e novelas com seu centro histórico preservado e passeios de trem com locomotiva a vapor."
+  },
+  {
+    "municipio": "Guararapes",
+    "estado": "São Paulo",
+    "curiosidade": "No extremo oeste paulista, nasceu com a Estrada de Ferro Noroeste do Brasil e vive da cana, da pecuária e de frigoríficos."
+  },
+  {
+    "municipio": "Pariquera-Açu",
+    "estado": "São Paulo",
+    "curiosidade": "Polo de saúde do Vale do Ribeira, foi colônia de imigrantes fundada no século XIX; o nome tupi remete a uma palmeira da região."
+  },
+  {
+    "municipio": "Luiz Antônio",
+    "estado": "São Paulo",
+    "curiosidade": "Entre canaviais da região de Ribeirão Preto, abriga a Estação Ecológica de Jataí, um dos maiores remanescentes de cerrado do estado de São Paulo."
+  },
+  {
+    "municipio": "Pedro de Toledo",
+    "estado": "São Paulo",
+    "curiosidade": "No Vale do Ribeira, cercada de mata atlântica da Serra dos Itatins, vive da banana e da agricultura familiar."
+  },
+  {
+    "municipio": "Palmeira d’Oeste",
+    "estado": "São Paulo",
+    "curiosidade": "No extremo noroeste paulista, colonizada nos anos 1950, tem economia de gado leiteiro, cana e laranja."
+  },
+  {
+    "municipio": "Campos Novos Paulista",
+    "estado": "São Paulo",
+    "curiosidade": "Pequeno município do médio Paranapanema, de origem centenária, dedicado à pecuária e às lavouras de soja e milho."
+  },
+  {
+    "municipio": "Nova Independência",
+    "estado": "São Paulo",
+    "curiosidade": "Perto do rio Paraná, na região de Andradina, nasceu de patrimônio rural nos anos 1950 e vive da pecuária e da cana."
+  },
+  {
+    "municipio": "Indiaporã",
+    "estado": "São Paulo",
+    "curiosidade": "No extremo norte paulista, perto do encontro dos rios Grande e Paraná, tem nome tupi que significa \"terra bonita dos índios\"."
+  },
+  {
+    "municipio": "Lupércio",
+    "estado": "São Paulo",
+    "curiosidade": "Pequena cidade da região de Marília, no planalto ocidental paulista, com tradição no café e na agricultura familiar."
+  },
+  {
+    "municipio": "Sandovalina",
+    "estado": "São Paulo",
+    "curiosidade": "No Pontal do Paranapanema, tem nome derivado de Sandoval, filho do fundador; vive da cana, da pecuária e de assentamentos rurais."
+  },
+  {
+    "municipio": "Jumirim",
+    "estado": "São Paulo",
+    "curiosidade": "Um dos municípios mais jovens de São Paulo, emancipado de Tietê em 1993; o nome tupi significa \"jia pequena\", a rãzinha dos córregos locais."
+  },
+  {
+    "municipio": "Nova Luzitânia",
+    "estado": "São Paulo",
+    "curiosidade": "Micromunicípio do noroeste paulista fundado por colonos nos anos 1940, cujo nome homenageia Portugal, a antiga Lusitânia."
+  },
+  {
+    "municipio": "Borebi",
+    "estado": "São Paulo",
+    "curiosidade": "Pequeno município da região de Lençóis Paulista, entre canaviais e reflorestamentos de eucalipto, emancipado em 1991."
+  },
+  {
+    "municipio": "Pontes Gestal",
+    "estado": "São Paulo",
+    "curiosidade": "No norte paulista, perto do rio Grande, pequena cidade de pecuária e cana batizada em homenagem a um fazendeiro pioneiro."
+  },
+  {
+    "municipio": "Lucianópolis",
+    "estado": "São Paulo",
+    "curiosidade": "Na região de Bauru, pequeno município rural que preserva o ritmo do interior paulista, com café, milho e pecuária de leite."
+  },
+  {
+    "municipio": "Fernão",
+    "estado": "São Paulo",
+    "curiosidade": "Um dos menores municípios paulistas, na região de Gália; o nome curto homenageia Fernão Dias Paes, o bandeirante Caçador de Esmeraldas."
   }
-]
-]
 ]

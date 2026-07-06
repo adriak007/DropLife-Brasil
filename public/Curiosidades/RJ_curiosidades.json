@@ -148,7 +148,7 @@
     "municipio": "Japeri",
     "estado": "RJ",
     "curiosidade": "Localizada na Baixada Fluminense, é uma cidade de grande importância histórica no desenvolvimento ferroviário do estado."
-  },[
+  },
   {
     "municipio": "Laje do Muriaé",
     "estado": "RJ",
@@ -263,9 +263,7 @@
     "municipio": "Porto Real",
     "estado": "RJ",
     "curiosidade": "Município jovem, com forte vocação industrial, conhecido por abrigar a fábrica da Peugeot/Citroën e outras indústrias automotivas e de autopeças."
-  
-},
-[
+  },
   {
     "municipio": "Quatis",
     "estado": "RJ",
@@ -431,7 +429,6 @@
     "estado": "RJ",
     "curiosidade": "Sede da CSN (Companhia Siderúrgica Nacional), a maior usina siderúrgica da América Latina. É conhecida como a 'Cidade do Aço' e foi planejada urbanisticamente para abrigar a força de trabalho da CSN."
   },
-  [
   {
     "municipio": "Cantagalo",
     "estado": "RJ",
@@ -453,16 +450,13 @@
     "curiosidade": "Um dos municípios mais recentes da Baixada Fluminense (emancipado em 1999). Sua economia é voltada para o comércio e serviços, e é cortado pela importante linha férrea da SuperVia."
   },
   {
-    "municipio": "São Fidélis",
-    "estado": "RJ",
-    "curiosidade": "Conhecida como a 'Cidade Poema' (pela beleza natural e literária) e também como a 'Capital Estadual do Açúcar', devido à sua forte tradição na produção de cana-de-açúcar."
+    "municipio": "Campos dos Goytacazes",
+    "estado": "Rio de Janeiro",
+    "curiosidade": "Maior município do interior fluminense e historicamente o coração do açúcar no Norte Fluminense, tornou-se o principal polo dos royalties do petróleo da Bacia de Campos."
   },
   {
-    "municipio": "São Francisco de Itabapoana",
-    "estado": "RJ",
-    "curiosidade": "O município com o litoral mais extenso do estado, famoso por suas praias quase desertas e pela atividade pesqueira."
+    "municipio": "Carmo",
+    "estado": "Rio de Janeiro",
+    "curiosidade": "Na região serrana fluminense, na divisa com Minas, cresceu com o café do século XIX e preserva casarões e a estação ferroviária da época."
   }
-]
-]
-]
 ]

@@ -205,11 +205,6 @@
     "curiosidade": "O nome é uma referência às Cajazeiras. A economia é baseada na agricultura e pecuária."
   },
   {
-    "municipio": "Caldazinha",
-    "estado": "PI",
-    "curiosidade": "Pequeno município com economia baseada na agricultura."
-  },
-  {
     "municipio": "Campinas do Piauí",
     "estado": "PI",
     "curiosidade": "Município conhecido pela pecuária e agricultura."
@@ -409,7 +404,6 @@
     "estado": "PI",
     "curiosidade": "Faz parte da área de abrangência do Parque Nacional Serra da Capivara, com sítios arqueológicos em seu entorno."
   },
-  [
   {
     "municipio": "Ipiranga do Piauí",
     "estado": "PI",
@@ -729,7 +723,7 @@
     "municipio": "Queimada Nova",
     "estado": "PI",
     "curiosidade": "Conhecida por ser um importante polo de energia solar e eólica, aproveitando a alta incidência de sol e ventos da região."
-  },[
+  },
   {
     "municipio": "Redenção do Gurguéia",
     "estado": "PI",
@@ -1005,7 +999,6 @@
     "estado": "PI",
     "curiosidade": "O nome homenageia um ex-prefeito de Teresina. A economia é baseada na agricultura familiar."
   },
-  [
   {
     "municipio": "Damianópolis",
     "estado": "GO",
@@ -1406,7 +1399,6 @@
     "estado": "GO",
     "curiosidade": "Cidade banhada por rios e córregos, ideal para pesca e lazer no interior."
   },
-  [
   {
     "municipio": "Nazário",
     "estado": "GO",
@@ -1861,11 +1853,350 @@
     "municipio": "Vila Propício",
     "estado": "GO",
     "curiosidade": "Conhecida por cavernas, grutas e belezas naturais pouco exploradas."
+  },
+  {
+    "municipio": "Aparecida de Goiânia",
+    "estado": "Goiás",
+    "curiosidade": "Segunda cidade mais populosa de Goiás, cresceu colada à capital até formar uma única mancha urbana com Goiânia, tornando-se importante polo industrial e logístico."
+  },
+  {
+    "municipio": "Águas Lindas de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "No Entorno do Distrito Federal, foi uma das cidades que mais cresceram no Brasil nas últimas décadas: nasceu de loteamentos ao longo da BR-070 e emancipou-se apenas em 1995."
+  },
+  {
+    "municipio": "Catalão",
+    "estado": "Goiás",
+    "curiosidade": "Polo mineral e industrial do sudeste goiano, com grandes reservas de nióbio e fosfato, é também famosa pelas congadas da Festa de Nossa Senhora do Rosário, tradição de mais de um século."
+  },
+  {
+    "municipio": "Caldas Novas",
+    "estado": "Goiás",
+    "curiosidade": "Maior estância hidrotermal do mundo: suas águas quentes naturais, aquecidas em profundidade, abastecem dezenas de parques aquáticos e atraem milhões de turistas por ano."
+  },
+  {
+    "municipio": "Cidade Ocidental",
+    "estado": "Goiás",
+    "curiosidade": "Cidade-dormitório do Entorno do DF, nasceu de um grande loteamento planejado nos anos 1970 para abrigar trabalhadores de Brasília."
+  },
+  {
+    "municipio": "Cristalina",
+    "estado": "Goiás",
+    "curiosidade": "Famosa duas vezes: pelos cristais de quartzo que lhe deram o nome e por concentrar hoje a maior área de agricultura irrigada por pivôs centrais da América Latina."
+  },
+  {
+    "municipio": "Bela Vista de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Cidade centenária vizinha de Goiânia, tradicional na pecuária leiteira e conhecida pela produção artesanal de doces e queijos."
+  },
+  {
+    "municipio": "Alexânia",
+    "estado": "Goiás",
+    "curiosidade": "Entre Brasília e Anápolis, na BR-060, ficou conhecida pela Feira do Troca, tradição em que artesanato e produtos da roça eram trocados sem dinheiro."
+  },
+  {
+    "municipio": "Cocalzinho de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Aos pés da Serra dos Pireneus, tem vocação para o ecoturismo, com cachoeiras, grutas calcárias e trilhas entre Pirenópolis e o vale do Corumbá."
+  },
+  {
+    "municipio": "Bom Jesus de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "No sul goiano, é grande produtora de cana-de-açúcar e grãos, com economia puxada por usinas sucroenergéticas."
+  },
+  {
+    "municipio": "Ceres",
+    "estado": "Goiás",
+    "curiosidade": "Nasceu da Colônia Agrícola Nacional de Goiás (CANG), fundada nos anos 1940 sob a liderança do engenheiro Bernardo Sayão, e leva o nome da deusa romana da agricultura. Hoje é polo médico regional."
+  },
+  {
+    "municipio": "Acreúna",
+    "estado": "Goiás",
+    "curiosidade": "O nome homenageia migrantes vindos do Acre que se fixaram na região; a cidade cresceu à beira da BR-060, no sudoeste goiano, vivendo de grãos e cana."
+  },
+  {
+    "municipio": "Abadia de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Abriga o depósito definitivo dos rejeitos do acidente radiológico do césio-137 de Goiânia (1987), o mais grave do gênero no mundo, hoje monitorado em contêineres seguros pela CNEN."
+  },
+  {
+    "municipio": "Anicuns",
+    "estado": "Goiás",
+    "curiosidade": "Cidade histórica do oeste goiano nascida da mineração de ouro no século XVIII, depois transformada em polo açucareiro com uma das usinas mais antigas do estado."
+  },
+  {
+    "municipio": "Aragarças",
+    "estado": "Goiás",
+    "curiosidade": "Às margens do rio Araguaia, na divisa com o Mato Grosso, foi base da Fundação Brasil Central e da Expedição Roncador-Xingu, que abriu o interior do país nos anos 1940."
+  },
+  {
+    "municipio": "Campos Belos",
+    "estado": "Goiás",
+    "curiosidade": "No extremo nordeste goiano, na divisa com o Tocantins, é polo comercial da região e porta de acesso às serras e cachoeiras do vão do Paranã."
+  },
+  {
+    "municipio": "Abadiânia",
+    "estado": "Goiás",
+    "curiosidade": "Cidadezinha na BR-060 entre Anápolis e Brasília que ficou conhecida mundialmente pelo turismo religioso e de cura, recebendo por décadas visitantes de dezenas de países."
+  },
+  {
+    "municipio": "Crixás",
+    "estado": "Goiás",
+    "curiosidade": "Um dos mais antigos núcleos do ouro em Goiás, fundado no século XVIII: a mineração continua viva com uma das principais minas de ouro em operação no estado."
+  },
+  {
+    "municipio": "Caiapônia",
+    "estado": "Goiás",
+    "curiosidade": "O nome homenageia os indígenas Caiapó, que dominaram o sudoeste goiano; a cidade fica entre serras e nascentes do rio Caiapó."
+  },
+  {
+    "municipio": "Caçu",
+    "estado": "Goiás",
+    "curiosidade": "No sudoeste goiano, entre os rios Claro e Paranaíba, tem economia de grãos e energia, com usinas hidrelétricas instaladas na região."
+  },
+  {
+    "municipio": "Chapadão do Céu",
+    "estado": "Goiás",
+    "curiosidade": "Vizinho do Parque Nacional das Emas, patrimônio natural da humanidade, é um dos municípios de agricultura mais tecnificada do Brasil, com produtividades recordes de soja e milho."
+  },
+  {
+    "municipio": "Campinorte",
+    "estado": "Goiás",
+    "curiosidade": "No norte goiano, à beira da BR-153 (Belém-Brasília), nasceu como pouso de tropeiros e vive da pecuária e da mineração da região."
+  },
+  {
+    "municipio": "Aragoiânia",
+    "estado": "Goiás",
+    "curiosidade": "Pequeno município da região metropolitana de Goiânia, refúgio de chácaras e pesqueiros para os moradores da capital."
+  },
+  {
+    "municipio": "Cachoeira Alta",
+    "estado": "Goiás",
+    "curiosidade": "No sudoeste goiano, perto do rio Paranaíba, o nome vem das quedas d’água da região, hoje aproveitadas por usinas e balneários."
+  },
+  {
+    "municipio": "Corumbá de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Cidade colonial do século XVIII aos pés dos Pireneus, vizinha de Pirenópolis, famosa pelo Salto de Corumbá, cachoeira de mais de 25 metros."
+  },
+  {
+    "municipio": "Buriti Alegre",
+    "estado": "Goiás",
+    "curiosidade": "No sul goiano, à beira do lago da usina de Itumbiara, virou destino de pesca e náutica com suas praias artificiais de água doce."
+  },
+  {
+    "municipio": "Barro Alto",
+    "estado": "Goiás",
+    "curiosidade": "Abriga uma das maiores operações de mineração e metalurgia de níquel do Brasil, que transformou a economia da cidade nos anos 2000."
+  },
+  {
+    "municipio": "Alto Paraíso de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Coração da Chapada dos Veadeiros, cercada de cachoeiras e cânions de quartzito, é famosa também pelo misticismo e pela comunidade alternativa que atrai visitantes do mundo todo."
+  },
+  {
+    "municipio": "Bonfinópolis",
+    "estado": "Goiás",
+    "curiosidade": "Pequeno município da grande Goiânia, antigo povoado de Bonfim, com produção de hortifrúti que abastece a capital."
+  },
+  {
+    "municipio": "Carmo do Rio Verde",
+    "estado": "Goiás",
+    "curiosidade": "No vale do São Patrício, região da antiga colônia agrícola de Ceres, vive da cana-de-açúcar e da agricultura familiar."
+  },
+  {
+    "municipio": "Cavalcante",
+    "estado": "Goiás",
+    "curiosidade": "Na Chapada dos Veadeiros, abriga a maior parte do território Kalunga, maior comunidade quilombola do Brasil, e joias naturais como a cachoeira Santa Bárbara, de águas azul-turquesa."
+  },
+  {
+    "municipio": "Corumbaíba",
+    "estado": "Goiás",
+    "curiosidade": "No sudeste goiano, entre pastagens e o lago da usina de Corumbá IV, tem tradição na pecuária de corte."
+  },
+  {
+    "municipio": "Alvorada do Norte",
+    "estado": "Goiás",
+    "curiosidade": "No vão do Paranã, nordeste goiano, fica na rota da BR-020 entre Brasília e o oeste baiano, com economia de pecuária extensiva."
+  },
+  {
+    "municipio": "Cezarina",
+    "estado": "Goiás",
+    "curiosidade": "Cresceu em torno de uma grande fábrica de cimento instalada nos anos 1970, que segue como motor da economia local."
+  },
+  {
+    "municipio": "Campo Limpo de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Um dos municípios mais jovens de Goiás, emancipado de Anápolis nos anos 2000, mantém o ritmo tranquilo de cidade do interior."
+  },
+  {
+    "municipio": "Cabeceiras",
+    "estado": "Goiás",
+    "curiosidade": "O nome vem das cabeceiras do rio Preto, que nascem na região; faz divisa com o Distrito Federal e vive da agropecuária."
+  },
+  {
+    "municipio": "Campo Alegre de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "No sudeste goiano, na rota da antiga estrada real do ouro, é hoje grande produtora de grãos e batata em áreas de chapada."
+  },
+  {
+    "municipio": "Araguapaz",
+    "estado": "Goiás",
+    "curiosidade": "Próxima ao rio Araguaia, no vale do São Patrício, tem nome que celebra a paz do grande rio e vive da pecuária."
+  },
+  {
+    "municipio": "Alto Horizonte",
+    "estado": "Goiás",
+    "curiosidade": "Pequeno município do norte goiano transformado pela mineração de cobre e ouro da mina Chapada, uma das maiores do país."
+  },
+  {
+    "municipio": "Bom Jardim de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "No oeste goiano, na divisa com o Mato Grosso, guarda pinturas rupestres na Serra Azul e vive da pecuária de corte."
+  },
+  {
+    "municipio": "Cristianópolis",
+    "estado": "Goiás",
+    "curiosidade": "Pequena cidade do sudeste goiano, antiga Pouso Alto, com tradição religiosa que inspirou o próprio nome."
+  },
+  {
+    "municipio": "Colinas do Sul",
+    "estado": "Goiás",
+    "curiosidade": "Entre a Chapada dos Veadeiros e o lago da Serra da Mesa, o maior reservatório do Brasil em volume de água, é destino de ecoturismo ainda pouco explorado."
+  },
+  {
+    "municipio": "Campos Verdes",
+    "estado": "Goiás",
+    "curiosidade": "Autoproclamada Capital das Esmeraldas: a descoberta das gemas nos anos 1980 provocou uma corrida de garimpeiros que deu origem à cidade."
+  },
+  {
+    "municipio": "Brazabrantes",
+    "estado": "Goiás",
+    "curiosidade": "Pequeno município da grande Goiânia, cortado pela ferrovia que impulsionou o povoado no início do século XX."
+  },
+  {
+    "municipio": "Cromínia",
+    "estado": "Goiás",
+    "curiosidade": "O nome vem do cromo: acreditava-se que a região guardava jazidas do mineral, e o batismo científico ficou mesmo depois de a mineração não prosperar."
+  },
+  {
+    "municipio": "Campestre de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Pequena cidade rural a oeste de Goiânia, de pastagens e agricultura familiar, que preserva o clima pacato de interior."
+  },
+  {
+    "municipio": "Campinaçu",
+    "estado": "Goiás",
+    "curiosidade": "No norte goiano, às margens do lago da Serra da Mesa, tem nome tupi que significa \"campina grande\"."
+  },
+  {
+    "municipio": "Baliza",
+    "estado": "Goiás",
+    "curiosidade": "O nome vem de sua função histórica: servir de baliza, ou marco de divisa, entre Goiás e Mato Grosso, na região das nascentes do Araguaia."
+  },
+  {
+    "municipio": "Bonópolis",
+    "estado": "Goiás",
+    "curiosidade": "Município jovem do norte goiano, emancipado nos anos 1990, com vastas pastagens dedicadas à pecuária de corte."
+  },
+  {
+    "municipio": "Amaralina",
+    "estado": "Goiás",
+    "curiosidade": "Emancipada apenas nos anos 1990, no norte goiano, cresceu ao longo da estrada entre Uruaçu e o vale do rio Crixás-Açu."
+  },
+  {
+    "municipio": "Buritinópolis",
+    "estado": "Goiás",
+    "curiosidade": "Pequeno município do nordeste goiano, no vão do Paranã, batizado em homenagem aos buritis que marcam as veredas da região."
+  },
+  {
+    "municipio": "Amorinópolis",
+    "estado": "Goiás",
+    "curiosidade": "No oeste goiano, no vale do rio Claro, preserva o ritmo de cidade pequena com economia de gado de leite e lavouras familiares."
+  },
+  {
+    "municipio": "Castelândia",
+    "estado": "Goiás",
+    "curiosidade": "Pequeno município do sudoeste goiano desmembrado de Quirinópolis, cercado por canaviais que abastecem as usinas da região."
+  },
+  {
+    "municipio": "Cumari",
+    "estado": "Goiás",
+    "curiosidade": "Tem nome de pimenta: cumari é a pimentinha nativa do cerrado, ardida e valorizada, abundante na região quando o povoado surgiu junto à Estrada de Ferro Goiás."
+  },
+  {
+    "municipio": "Aparecida do Rio Doce",
+    "estado": "Goiás",
+    "curiosidade": "Município jovem do sudoeste goiano, emancipado nos anos 1990, com economia de grãos e pecuária em terras de chapada."
+  },
+  {
+    "municipio": "Avelinópolis",
+    "estado": "Goiás",
+    "curiosidade": "Pequena cidade a oeste de Goiânia, batizada em homenagem a Avelino de Camargo, doador das terras do povoado original."
+  },
+  {
+    "municipio": "Buriti de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Minúsculo município do oeste goiano cujo nome celebra o buriti, a palmeira símbolo das veredas do cerrado."
+  },
+  {
+    "municipio": "Córrego do Ouro",
+    "estado": "Goiás",
+    "curiosidade": "O nome não engana: o povoado nasceu de garimpos de ouro no córrego local durante o século XVIII, no oeste goiano."
+  },
+  {
+    "municipio": "Adelândia",
+    "estado": "Goiás",
+    "curiosidade": "Pequeno município do oeste goiano, emancipado nos anos 1980, com forte tradição religiosa e festas de folia de reis."
+  },
+  {
+    "municipio": "Aloândia",
+    "estado": "Goiás",
+    "curiosidade": "Um dos menores municípios de Goiás, no sul do estado, com pouco mais de dois mil habitantes e economia de cana e pastagens."
+  },
+  {
+    "municipio": "Água Fria de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Nas chapadas frias do entorno norte do DF, é grande produtora de grãos e sementes, com nascentes que alimentam o rio Maranhão."
+  },
+  {
+    "municipio": "Água Limpa",
+    "estado": "Goiás",
+    "curiosidade": "Pequenina cidade do sul goiano, de águas que batizaram o município, vive da pecuária e guarda festas tradicionais de cavalhadas."
+  },
+  {
+    "municipio": "Caldazinha",
+    "estado": "Goiás",
+    "curiosidade": "O nome diminutivo faz par com Caldas Novas: a região também tem nascentes, mas a cidade seguiu vocação rural, vizinha à capital Goiânia."
+  },
+  {
+    "municipio": "Cachoeira de Goiás",
+    "estado": "Goiás",
+    "curiosidade": "Micromunicípio do oeste goiano com cerca de 1,4 mil habitantes, nascido de garimpos de diamante no rio Claro."
+  },
+  {
+    "municipio": "Anhanguera",
+    "estado": "Goiás",
+    "curiosidade": "Menor município de Goiás em população, com menos de mil habitantes, leva o apelido do bandeirante Bartolomeu Bueno da Silva, o Anhanguera, \"diabo velho\" na língua indígena."
+  },
+  {
+    "municipio": "Americano do Brasil",
+    "estado": "Goiás",
+    "curiosidade": "Um dos nomes mais curiosos do país: homenageia o médico e historiador goiano Antônio Americano do Brasil, e não os Estados Unidos."
+  },
+  {
+    "municipio": "Caturaí",
+    "estado": "Goiás",
+    "curiosidade": "Pequeno município agrícola a noroeste de Goiânia, de nome tupi, dedicado ao tomate e ao leite que abastecem a capital."
+  },
+  {
+    "municipio": "Britânia",
+    "estado": "Goiás",
+    "curiosidade": "No oeste goiano, à beira do lago dos Tigres — um raro lago fluvial perene —, é destino de pesca esportiva e tem nome que homenageia a Grã-Bretanha."
+  },
+  {
+    "municipio": "Cachoeira Dourada",
+    "estado": "Goiás",
+    "curiosidade": "Abriga a usina hidrelétrica de Cachoeira Dourada, uma das pioneiras do rio Paranaíba, cuja construção nos anos 1950 deu origem à cidade."
   }
-]
-
-]
-
-]
-]
 ]

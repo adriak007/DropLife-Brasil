@@ -119,9 +119,144 @@
     "estado": "RO",
     "curiosidade": "Conhecida como o 'Coração de Rondônia', por sua localização central. É o segundo maior município e um grande polo econômico e logístico, cortado pelo Rio Machado (que deu nome ao município: 'grande rio dos machados' em Tupi)."
   },
-    {
+  {
     "municipio": "Porto Velho",
     "estado": "RO",
     "curiosidade": "Capital"
+  },
+  {
+    "municipio": "Vilhena",
+    "estado": "Rondônia",
+    "curiosidade": "Chamada de Portal da Amazônia, é a primeira cidade de Rondônia para quem chega pela BR-364 vinda do Mato Grosso, e uma das mais altas do estado — polo do agronegócio no Cone Sul rondoniense."
+  },
+  {
+    "municipio": "Rolim de Moura",
+    "estado": "Rondônia",
+    "curiosidade": "Polo regional da Zona da Mata rondoniense, nasceu da colonização agrícola dos anos 1980 e leva o nome de um antigo administrador colonial português."
+  },
+  {
+    "municipio": "Pimenta Bueno",
+    "estado": "Rondônia",
+    "curiosidade": "Cresceu no encontro dos rios Comemoração e Pimenta Bueno, que formam o rio Machado, e foi ponto de apoio da linha telegráfica construída pelo Marechal Rondon."
+  },
+  {
+    "municipio": "Ouro Preto do Oeste",
+    "estado": "Rondônia",
+    "curiosidade": "Sede do primeiro grande projeto de colonização do INCRA em Rondônia nos anos 1970, que atraiu milhares de famílias de todo o país para a Amazônia."
+  },
+  {
+    "municipio": "Machadinho d’Oeste",
+    "estado": "Rondônia",
+    "curiosidade": "Nascida de assentamentos do INCRA nos anos 1980, guarda reservas extrativistas de seringueiros e vive da agropecuária."
+  },
+  {
+    "municipio": "Nova Mamoré",
+    "estado": "Rondônia",
+    "curiosidade": "No vale do rio Mamoré, na fronteira com a Bolívia, próxima ao trecho histórico da Estrada de Ferro Madeira-Mamoré."
+  },
+  {
+    "municipio": "São Miguel do Guaporé",
+    "estado": "Rondônia",
+    "curiosidade": "Na região do vale do Guaporé, nasceu da colonização agrícola dos anos 1980 e vive da pecuária leiteira e do café."
+  },
+  {
+    "municipio": "Presidente Médici",
+    "estado": "Rondônia",
+    "curiosidade": "Ao longo da BR-364, no centro de Rondônia, nasceu como núcleo de colonização e homenageia o presidente que impulsionou a ocupação da região."
+  },
+  {
+    "municipio": "São Francisco do Guaporé",
+    "estado": "Rondônia",
+    "curiosidade": "Na região do vale do Guaporé, dá acesso ao rio de águas claras que faz fronteira com a Bolívia e abriga comunidades quilombolas históricas."
+  },
+  {
+    "municipio": "Nova Brasilândia d’Oeste",
+    "estado": "Rondônia",
+    "curiosidade": "Município agrícola da Zona da Mata de Rondônia, grande produtor de café robusta cultivado pela agricultura familiar."
+  },
+  {
+    "municipio": "Monte Negro",
+    "estado": "Rondônia",
+    "curiosidade": "Nascida do projeto de colonização de Ariquemes, emancipou-se nos anos 1990 e vive do café, do cacau e da pecuária leiteira."
+  },
+  {
+    "municipio": "Seringueiras",
+    "estado": "Rondônia",
+    "curiosidade": "O nome homenageia as seringueiras nativas que sustentaram o ciclo da borracha na região do Guaporé."
+  },
+  {
+    "municipio": "Urupá",
+    "estado": "Rondônia",
+    "curiosidade": "Pequeno município agrícola no centro de Rondônia, com nome de origem indígena, forte na pecuária leiteira."
+  },
+  {
+    "municipio": "Mirante da Serra",
+    "estado": "Rondônia",
+    "curiosidade": "O nome vem da vista para a Serra dos Pacaás Novos, cadeia que abriga o parque nacional homônimo, um dos maiores de Rondônia."
+  },
+  {
+    "municipio": "Theobroma",
+    "estado": "Rondônia",
+    "curiosidade": "Tem um dos nomes mais curiosos do Brasil: Theobroma é o gênero científico do cacaueiro — \"alimento dos deuses\" em grego — em referência às lavouras de cacau da região."
+  },
+  {
+    "municipio": "Vale do Anari",
+    "estado": "Rondônia",
+    "curiosidade": "Município jovem nascido de assentamentos rurais, no vale do rio Anari, com economia baseada na agricultura familiar."
+  },
+  {
+    "municipio": "Novo Horizonte do Oeste",
+    "estado": "Rondônia",
+    "curiosidade": "Emancipado nos anos 1990 na Zona da Mata rondoniense, vive do café e da pecuária de leite em pequenas propriedades."
+  },
+  {
+    "municipio": "Santa Luzia d’Oeste",
+    "estado": "Rondônia",
+    "curiosidade": "Pequeno município agrícola do interior de Rondônia, criado durante a grande onda de colonização da década de 1980."
+  },
+  {
+    "municipio": "Vale do Paraíso",
+    "estado": "Rondônia",
+    "curiosidade": "Município de nome otimista, típico da colonização rondoniense, dedicado ao café e à pecuária leiteira."
+  },
+  {
+    "municipio": "Ministro Andreazza",
+    "estado": "Rondônia",
+    "curiosidade": "Homenageia Mário Andreazza, ministro que comandou a abertura das grandes rodovias amazônicas nos anos 1970, época em que a região foi colonizada."
+  },
+  {
+    "municipio": "Nova União",
+    "estado": "Rondônia",
+    "curiosidade": "Pequeno município do centro de Rondônia, desmembrado de Ouro Preto do Oeste, com vida ligada à agricultura familiar."
+  },
+  {
+    "municipio": "Teixeirópolis",
+    "estado": "Rondônia",
+    "curiosidade": "Um dos menores municípios de Rondônia, emancipado nos anos 1990, com economia centrada no leite e na lavoura."
+  },
+  {
+    "municipio": "Rio Crespo",
+    "estado": "Rondônia",
+    "curiosidade": "Pequeno município do vale do Jamari, vizinho de Ariquemes, com economia agropecuária e nome herdado do rio local."
+  },
+  {
+    "municipio": "Pimenteiras do Oeste",
+    "estado": "Rondônia",
+    "curiosidade": "Às margens do rio Guaporé, na fronteira com a Bolívia, é paraíso da pesca esportiva e um dos municípios menos populosos do estado."
+  },
+  {
+    "municipio": "Primavera de Rondônia",
+    "estado": "Rondônia",
+    "curiosidade": "Um dos menores municípios rondonienses, emancipado em meados dos anos 1990, vive da pecuária leiteira familiar."
+  },
+  {
+    "municipio": "São Felipe d’Oeste",
+    "estado": "Rondônia",
+    "curiosidade": "Pequeno município agrícola emancipado nos anos 1990, com colonos vindos sobretudo do Sul do país."
+  },
+  {
+    "municipio": "Parecis",
+    "estado": "Rondônia",
+    "curiosidade": "Leva o nome do povo indígena Paresi, tradicional habitante do grande chapadão que se estende entre Rondônia e Mato Grosso."
   }
 ]

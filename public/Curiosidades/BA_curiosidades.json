@@ -304,7 +304,6 @@
     "estado": "BA",
     "curiosidade": "Cidade histórica tombada pelo IPHAN. Considerada berço da independência baiana e repleta de patrimônio cultural."
   },
-  [
   {
     "municipio": "Caculé",
     "estado": "BA",
@@ -670,7 +669,6 @@
     "estado": "BA",
     "curiosidade": "Região cacaueira com clima úmido. Conhecida pela produção agrícola e comunidades rurais."
   },
-  [
   {
     "municipio": "Formosa do Rio Preto",
     "estado": "BA",
@@ -1016,7 +1014,6 @@
     "estado": "BA",
     "curiosidade": "Localizada na Costa do Dendê, com manguezais e rios navegáveis. Produção agrícola forte em produtos tropicais."
   },
-  [
   {
     "municipio": "Jaborandi",
     "estado": "BA",
@@ -1257,7 +1254,6 @@
     "estado": "BA",
     "curiosidade": "Abriga Praia do Forte e o Projeto Tamar, referência mundial na preservação das tartarugas marinhas."
   },
-  [
   {
     "municipio": "Matina",
     "estado": "BA",
@@ -1748,7 +1744,6 @@
     "estado": "BA",
     "curiosidade": "Reconhecida por suas bandas filarmônicas centenárias. A culinária local inclui pratos tradicionais do Recôncavo."
   },
-  [
   {
     "municipio": "São Desidério",
     "estado": "BA",
@@ -2078,15 +2073,10 @@
     "municipio": "Xique-Xique",
     "estado": "BA",
     "curiosidade": "Cidade banhada por histórias centenárias e cultura ribeirinha forte. Conhecida pelos mercados tradicionais e artesanato único, famosa na internet lá em Xique-Xique Bahia"
+  },
+  {
+    "municipio": "Ibirataia",
+    "estado": "Bahia",
+    "curiosidade": "Na região cacaueira do sul baiano, o nome tupi significa \"árvore de folhas ardentes\"; viveu o auge e a crise do cacau e mantém a lavoura em sistema de cabruca."
   }
-]
-
-]
-
-]
-
-]
-
-]
-
 ]

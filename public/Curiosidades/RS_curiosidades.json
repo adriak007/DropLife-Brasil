@@ -604,7 +604,6 @@
     "estado": "RS",
     "curiosidade": "Município com forte base na agropecuária, especialmente na produção de grãos."
   },
-  [
   {
     "municipio": "Encantado",
     "estado": "RS",
@@ -995,7 +994,6 @@
     "estado": "RS",
     "curiosidade": "Conhecida por suas paisagens naturais e por abrigar a Usina Hidrelétrica de Machadinho no Rio Uruguai."
   },
-  [
   {
     "municipio": "Mampituba",
     "estado": "RS",
@@ -1411,7 +1409,6 @@
     "estado": "RS",
     "curiosidade": "O nome é uma alusão à Proclamação da República e o município se destaca na produção de grãos e leite."
   },
-  [
   {
     "municipio": "Redentora",
     "estado": "RS",
@@ -1528,9 +1525,9 @@
     "curiosidade": "Conhecida como a 'Capital Mundial dos Poetas', devido à alta concentração de escritores e poetas na cidade. É um centro regional de agropecuária."
   },
   {
-    "municipio": "Santo Ângelo",
+    "municipio": "Santo ngelo",
     "estado": "RS",
-    "curiosidade": "Considerada a 'Capital das Missões'. É a sede da Catedral Angelopolitana, construída sobre as ruínas da antiga redução jesuítica de Santo Ângelo Custódio."
+    "curiosidade": "Considerada a 'Capital das Misses'. a sede da Catedral Angelopolitana, construda sobre as runas da antiga reduo jesutica de Santo ngelo Custdio."
   },
   {
     "municipio": "Santo Antônio da Patrulha",
@@ -2056,8 +2053,450 @@
     "municipio": "Xangri-lá",
     "estado": "RS",
     "curiosidade": "Balneário de alto padrão do litoral norte gaúcho, conhecido por seus condomínios de luxo e infraestrutura de veraneio."
+  },
+  {
+    "municipio": "Eldorado do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na margem oposta do Guaíba em relação a Porto Alegre, cresceu como travessia obrigatória da capital para o sul e vive do arroz, da logística e das universidades vizinhas."
+  },
+  {
+    "municipio": "Rosário do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na fronteira oeste gaúcha, é famosa pela praia das Areias Brancas, praia fluvial de areias claras no rio Santa Maria, rara no meio do pampa."
+  },
+  {
+    "municipio": "Santa Vitória do Palmar",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Município mais meridional do Brasil: em seu território ficam a barra do Chuí, ponto extremo sul do país, e parte da imensa lagoa Mirim."
+  },
+  {
+    "municipio": "Lagoa Vermelha",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Nos campos de cima da serra gaúcha, é terra tradicional de pecuária e tropeirismo, conhecida pelo frio intenso e pelas festas campeiras."
+  },
+  {
+    "municipio": "Capão do Leão",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Vizinho de Pelotas, abriga o campus principal da Universidade Federal de Pelotas e grandes lavouras de arroz da zona sul gaúcha."
+  },
+  {
+    "municipio": "Tupanciretã",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "O nome guarani significa \"terra onde repousa a Mãe de Deus\"; no planalto médio gaúcho, é uma das maiores produtoras de soja do estado."
+  },
+  {
+    "municipio": "Não-Me-Toque",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Dona de um dos nomes mais curiosos do Brasil — herdado, diz a tradição, de uma planta espinhosa —, é a Capital Nacional da Agricultura de Precisão e sede da feira Expodireto."
+  },
+  {
+    "municipio": "Arroio dos Ratos",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Berço da mineração de carvão no Brasil: ali abriu, no século XIX, a primeira mina de carvão do país, história contada no Museu Estadual do Carvão."
+  },
+  {
+    "municipio": "Nonoai",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No norte gaúcho, abriga uma das maiores terras indígenas Kaingang do estado e foi palco de episódios marcantes da luta pela terra nos anos 1970."
+  },
+  {
+    "municipio": "Paverama",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No vale do Taquari, de colonização alemã, vive da agricultura familiar e da criação de aves e suínos."
+  },
+  {
+    "municipio": "Glorinha",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Município rural da região metropolitana de Porto Alegre, emancipado em 1988, que preserva o modo de vida campeiro a poucos quilômetros da capital."
+  },
+  {
+    "municipio": "Trindade do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No norte do estado, emancipada nos anos 1990, tem população ligada à agricultura familiar e forte presença de comunidades indígenas Kaingang."
+  },
+  {
+    "municipio": "Minas do Leão",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "O nome entrega a vocação: cresceu em torno das minas de carvão da região carbonífera gaúcha, exploradas desde o século XIX."
+  },
+  {
+    "municipio": "Guarani das Missões",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Chamada de Capital Polonesa dos Gaúchos: colonizada por imigrantes da Polônia na região das Missões, celebra a herança na festa Polfest."
+  },
+  {
+    "municipio": "Lavras do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Único município gaúcho nascido da mineração de ouro, no século XVIII; até hoje o distrito sede guarda o traçado dos tempos de garimpo, entre coxilhas do pampa."
+  },
+  {
+    "municipio": "Barão de Cotegipe",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No Alto Uruguai gaúcho, colonizada por imigrantes poloneses e italianos, vive da agricultura familiar e da erva-mate."
+  },
+  {
+    "municipio": "Salvador do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na encosta da serra gaúcha, de colonização alemã, destaca-se na avicultura e mantém vivos os costumes germânicos."
+  },
+  {
+    "municipio": "Roque Gonzales",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na região das Missões, homenageia o padre jesuíta São Roque González, um dos primeiros santos das Américas, morto na região no século XVII."
+  },
+  {
+    "municipio": "Barão do Triunfo",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na serra do Sudeste gaúcho, leva o título nobiliárquico do general Andrade Neves; é terra de pêssegos, melancias e tradição campeira."
+  },
+  {
+    "municipio": "Sertão Santana",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na serra do Sudeste, emancipado em 1988, de colonização alemã, vive do fumo, da acácia-negra e da agricultura familiar."
+  },
+  {
+    "municipio": "Estação",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Nasceu ao redor de uma estação ferroviária da linha que cruzava o norte gaúcho — e o nome ficou; hoje é polo de agroindústrias."
+  },
+  {
+    "municipio": "Tavares",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Entre o oceano e a lagoa dos Patos, abriga o Parque Nacional da Lagoa do Peixe, ponto de parada de milhares de aves migratórias como os flamingos."
+  },
+  {
+    "municipio": "Rondinha",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município do norte gaúcho, de colonização italiana, com economia de soja, trigo e leite em pequenas propriedades."
+  },
+  {
+    "municipio": "Liberato Salzano",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No Alto Uruguai, homenageia um engenheiro e político gaúcho; vive da agricultura familiar diversificada, com destaque para o fumo."
+  },
+  {
+    "municipio": "Humaitá",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "O nome relembra a batalha de Humaitá, da Guerra do Paraguai; é um pequeno município de colonização alemã no noroeste gaúcho."
+  },
+  {
+    "municipio": "Chuvisca",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "O nome curioso vem das chuvas finas constantes que os tropeiros enfrentavam na serra do Sudeste; é grande produtora de fumo em folha."
+  },
+  {
+    "municipio": "Doutor Maurício Cardoso",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No noroeste gaúcho, junto ao rio Uruguai, de colonização alemã, vive da soja, do leite e da suinocultura familiar."
+  },
+  {
+    "municipio": "David Canabarro",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Homenageia o general farroupilha David Canabarro; é um município de colonização italiana no nordeste do planalto gaúcho."
+  },
+  {
+    "municipio": "Fazenda Vilanova",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No vale do Taquari, à beira da BR-386, cresceu de uma antiga fazenda de criação e hoje atrai indústrias pela localização estratégica."
+  },
+  {
+    "municipio": "Barra do Quaraí",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Ponto extremo oeste do Rio Grande do Sul, na tríplice fronteira Brasil–Argentina–Uruguai, onde o rio Quaraí deságua no Uruguai, com o marco do Barão do Rio Branco."
+  },
+  {
+    "municipio": "Maximiliano de Almeida",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No Alto Uruguai, junto ao rio Apuaê, de colonização italiana, tem no lago da usina de Machadinho um convite à pesca e ao lazer."
+  },
+  {
+    "municipio": "Capivari do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No litoral norte gaúcho, é terra do arroz: as lavouras irrigadas dominam a planície entre lagoas que dá nome — \"rio das capivaras\" — ao município."
+  },
+  {
+    "municipio": "Putinga",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Em 1937 caiu ali o meteorito Putinga, um dos maiores já registrados no Brasil, com fragmentos estudados no mundo inteiro — orgulho da pequena cidade do vale do Taquari."
+  },
+  {
+    "municipio": "Ibirapuitã",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município do planalto gaúcho de nome tupi (\"árvore vermelha\"), com lavouras de soja e tradição colonial italiana."
+  },
+  {
+    "municipio": "Jaquirana",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Nos campos de cima da serra, entre canyons e araucárias, é um dos municípios mais frios do Brasil, com geadas e eventuais nevascas."
+  },
+  {
+    "municipio": "Campos Borges",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No alto Jacuí, pequeno município agrícola de soja e trigo, emancipado em 1982 e batizado em homenagem à família pioneira Borges."
+  },
+  {
+    "municipio": "Gramado Xavier",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No vale do Rio Pardo, entre vales e cascatas, é um dos grandes produtores de tabaco da região, cultivado pela agricultura familiar."
+  },
+  {
+    "municipio": "Tio Hugo",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Um dos nomes mais simpáticos do Brasil: homenageia \"tio Hugo\" Gerhardt, comerciante querido cuja venda na encruzilhada deu origem ao povoado."
+  },
+  {
+    "municipio": "Taquaruçu do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No Médio Alto Uruguai, de colonização italiana, pequeno município de agricultura diversificada em meio a vales do rio da Várzea."
+  },
+  {
+    "municipio": "Nova Candelária",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Micromunicípio do noroeste gaúcho, emancipado em 1992, de colonização alemã, com suinocultura e leite como carro-chefe."
+  },
+  {
+    "municipio": "São Martinho da Serra",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Abriga o Observatório Espacial do Sul, do INPE, que estuda ali o centro da Anomalia Magnética do Atlântico Sul — um dos melhores pontos do planeta para essa pesquisa."
+  },
+  {
+    "municipio": "Rio dos Índios",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No Alto Uruguai, o nome lembra os Kaingang que habitavam o vale; é um pequeno município rural com forte presença indígena até hoje."
+  },
+  {
+    "municipio": "Charrua",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Leva o nome do povo Charrua, os lendários cavaleiros do pampa; no norte gaúcho, abriga comunidades Kaingang na Terra Indígena Ligeiro."
+  },
+  {
+    "municipio": "São Domingos do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município de colonização italiana no nordeste do planalto, conhecido pela religiosidade e pela produção de uva, soja e leite."
+  },
+  {
+    "municipio": "Derrubadas",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Guarda o Parque Estadual do Turvo e o Salto do Yucumã: com quase dois quilômetros de extensão, é considerado o maior salto longitudinal do mundo, na fronteira com a Argentina."
+  },
+  {
+    "municipio": "Sede Nova",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município do noroeste gaúcho emancipado em 1988, de colonos alemães e italianos, dedicado ao leite e aos grãos."
+  },
+  {
+    "municipio": "Cristal do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No Médio Alto Uruguai, emancipado em 1992, tem nas pequenas propriedades de fumo e leite a base da economia."
+  },
+  {
+    "municipio": "Garruchos",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Às margens do rio Uruguai, na região das Missões, é ponto de travessia de balsa para a Argentina e terra de estâncias centenárias."
+  },
+  {
+    "municipio": "Coxilha",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "O nome celebra as coxilhas, as colinas suaves do pampa e do planalto; vizinho de Passo Fundo, vive do trigo e da soja."
+  },
+  {
+    "municipio": "Lajeado do Bugre",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Um dos menores municípios gaúchos, no noroeste do estado; o nome une o lajeado (arroio de pedras) à memória indígena da região."
+  },
+  {
+    "municipio": "Santa Margarida do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Emancipada apenas em 1996, na campanha gaúcha perto de São Gabriel, é terra de estâncias, ovinos e lavouras de soja."
+  },
+  {
+    "municipio": "Saldanha Marinho",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município do planalto gaúcho batizado em homenagem ao jurista e político abolicionista Joaquim Saldanha Marinho."
+  },
+  {
+    "municipio": "Monte Belo do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Encravado na região vinícola da serra gaúcha, vizinho de Bento Gonçalves, é um dos municípios com maior proporção de vinhedos do Brasil, com fortes raízes italianas."
+  },
+  {
+    "municipio": "Toropi",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No vale do rio Toropi, região central do estado, é vizinha de importantes sítios fossilíferos do Triássico que revelaram alguns dos répteis mais antigos do mundo."
+  },
+  {
+    "municipio": "Sagrada Família",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Micromunicípio do noroeste gaúcho de nome devoto, emancipado em 1992, com economia de leite e grãos em minifúndios."
+  },
+  {
+    "municipio": "São José do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Um dos municípios mais jovens do estado, emancipado em 1996, no vale do Caí, de colonização alemã e economia de aves e hortifrúti."
+  },
+  {
+    "municipio": "Santo Expedito do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município do nordeste do planalto gaúcho que adotou o santo das causas urgentes como padroeiro e nome."
+  },
+  {
+    "municipio": "Rolador",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na região das Missões, o nome vem do passo do Rolador, antiga travessia de carretas; é terra de estâncias e lavouras de soja."
+  },
+  {
+    "municipio": "Boa Vista do Incra",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "O nome oficial homenageia o INCRA: o município nasceu de assentamentos rurais do órgão na região de Cruz Alta e emancipou-se em 1996."
+  },
+  {
+    "municipio": "Pinhal da Serra",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No extremo nordeste gaúcho, entre araucárias que deram o nome, fica junto à usina hidrelétrica de Barra Grande, no rio Pelotas."
+  },
+  {
+    "municipio": "São Valentim do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na encosta do vale do Taquari, de colonização italiana, produz uvas e vinhos coloniais e adotou o santo dos namorados como padroeiro."
+  },
+  {
+    "municipio": "Travesseiro",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "O nome fofo, diz a tradição, vem de um viajante que dormiu tão bem na pousada local que comparou o lugar a um travesseiro; fica no vale do Taquari."
+  },
+  {
+    "municipio": "Bozano",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município do noroeste gaúcho, emancipado em 1996, homenageia a família Bozzano, pioneira da colonização italiana local."
+  },
+  {
+    "municipio": "Paulo Bento",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Micromunicípio do Alto Uruguai, emancipado em 1996, de colonização italiana e polonesa, com economia leiteira familiar."
+  },
+  {
+    "municipio": "Bom Progresso",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município do noroeste gaúcho de nome otimista, emancipado em 1988, dedicado à soja, ao trigo e ao leite."
+  },
+  {
+    "municipio": "Dois Irmãos das Missões",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No noroeste gaúcho, o nome vem de dois cerros gêmeos da paisagem missioneira; abriga parte da Terra Indígena Guarita."
+  },
+  {
+    "municipio": "Pedras Altas",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Célebre pelo castelo de Pedras Altas, residência de Assis Brasil onde foi assinado, em 1923, o pacto que encerrou a Revolução Libertadora gaúcha."
+  },
+  {
+    "municipio": "Jacuizinho",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Nas nascentes que alimentam o rio Jacuí, no centro do estado, é um município jovem, emancipado em 1996, de vida rural."
+  },
+  {
+    "municipio": "Protásio Alves",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na serra gaúcha rural, homenageia o médico e político que dá nome também a uma avenida famosa de Porto Alegre; vive da uva, do leite e da agricultura colonial."
+  },
+  {
+    "municipio": "Gramado dos Loureiros",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município do norte gaúcho cujo nome une os campos de gramado à família Loureiro, pioneira na região; tem forte presença Kaingang."
+  },
+  {
+    "municipio": "Almirante Tamandaré do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Emancipado em 2001 na região de Carazinho, homenageia o patrono da Marinha brasileira e vive das grandes lavouras de soja e trigo."
+  },
+  {
+    "municipio": "Nicolau Vergueiro",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Micromunicípio do planalto médio, perto de Passo Fundo, batizado em homenagem a um senador do Império; produz soja e trigo."
+  },
+  {
+    "municipio": "Doutor Ricardo",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No vale do Taquari, de colonização italiana, homenageia um médico pioneiro da região; produz uvas, citros e leite."
+  },
+  {
+    "municipio": "Sete de Setembro",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Batizado com a data da Independência, é um micromunicípio missioneiro de colonização alemã e italiana, emancipado em 1996."
+  },
+  {
+    "municipio": "Mato Queimado",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na região das Missões, o nome lembra uma antiga queimada que marcou a mata local; emancipou-se em 1996 e vive da agricultura familiar."
+  },
+  {
+    "municipio": "São Pedro das Missões",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Micromunicípio do noroeste gaúcho em plena região missioneira, emancipado em 1996, com economia agrícola familiar."
+  },
+  {
+    "municipio": "Capão Bonito do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Nos campos do nordeste gaúcho, perto de Lagoa Vermelha, é terra de pecuária de corte e capões de araucária que inspiraram o nome."
+  },
+  {
+    "municipio": "Muliterno",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequeno município do planalto, de colonização italiana, cujo nome vem da família Moliterno; vive da soja e da erva-mate."
+  },
+  {
+    "municipio": "Ipiranga do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Micromunicípio do Alto Uruguai que evoca o grito do Ipiranga no nome; emancipado em 1988, produz soja e milho em terras férteis."
+  },
+  {
+    "municipio": "Santa Cecília do Sul",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Pequena comunidade de origem italiana no planalto gaúcho, devota da padroeira da música, emancipada em 1996."
+  },
+  {
+    "municipio": "Floriano Peixoto",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Homenageia o Marechal de Ferro, segundo presidente do Brasil; é um município rural do Alto Uruguai, emancipado em 1996."
+  },
+  {
+    "municipio": "Cruzaltense",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "O nome gentílico lembra a origem: terras da antiga Cruz Alta; é um micromunicípio agrícola do Alto Uruguai emancipado em 1996."
+  },
+  {
+    "municipio": "Coronel Pilar",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Na serra gaúcha, entre parreirais da região de Garibaldi, é um dos municípios mais italianos do Brasil, com vinho colonial e talian falado nas famílias."
+  },
+  {
+    "municipio": "Ponte Preta",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Micromunicípio do Alto Uruguai batizado pela antiga ponte de madeira escura sobre o rio local; vive do leite e da agricultura familiar."
+  },
+  {
+    "municipio": "Quatro Irmãos",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Guarda uma história rara: foi núcleo da colonização judaica no Brasil, recebendo no início do século XX famílias trazidas pela Jewish Colonization Association para a Fazenda Quatro Irmãos."
+  },
+  {
+    "municipio": "Guabiju",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Tem nome de fruta nativa: o guabiju, de polpa doce e escura, típico dos campos e matas de araucária da serra gaúcha."
+  },
+  {
+    "municipio": "Engenho Velho",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Micromunicípio do norte gaúcho cujo nome lembra o velho engenho de erva-mate dos pioneiros; tem forte presença da comunidade Kaingang."
+  },
+  {
+    "municipio": "Coqueiro Baixo",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "No vale do Taquari, de colonização italiana, é um dos menores municípios do estado, com vales onde se produz vinho e leite."
+  },
+  {
+    "municipio": "União da Serra",
+    "estado": "Rio Grande do Sul",
+    "curiosidade": "Micromunicípio da serra gaúcha com pouco mais de mil habitantes, de origem italiana, entre parreirais e potreiros do vale do rio Carreiro."
   }
-]
-]
-]
 ]

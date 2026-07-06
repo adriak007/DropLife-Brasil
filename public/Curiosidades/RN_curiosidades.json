@@ -169,7 +169,7 @@
     "estado": "RN",
     "curiosidade": "Cidade marcada pela mineração de scheelita e pelo famoso Pico do Totoró. É polo comercial e cultural do Seridó, com festivais e eventos tradicionais."
   },
-    {
+  {
     "municipio": "Doutor Severiano",
     "estado": "RN",
     "curiosidade": "Cidade serrana localizada no Alto Oeste, com mirantes naturais e clima agradável. Destaca-se pela preservação de tradições sertanejas e festas religiosas."
@@ -219,7 +219,7 @@
     "estado": "RN",
     "curiosidade": "Situada em região de serra, apresenta clima mais ameno e belas paisagens naturais. A economia combina agricultura, artesanato e pequenas criações rurais."
   },
-    {
+  {
     "municipio": "Galinhos",
     "estado": "RN",
     "curiosidade": "Destino turístico isolado, acessível principalmente por barco ou 4x4. Famosa por suas dunas, farol e piscinas naturais, com paisagens intocadas."
@@ -334,7 +334,7 @@
     "estado": "RN",
     "curiosidade": "Município do Agreste com economia baseada na agricultura e pecuária. Suas tradições culturais incluem festas religiosas de grande participação."
   },
-    {
+  {
     "municipio": "Lagoa d'Anta",
     "estado": "RN",
     "curiosidade": "Município do Agreste com forte tradição agrícola e festas religiosas marcantes. Destaca-se pelo cultivo de milho e feijão."
@@ -833,5 +833,20 @@
     "municipio": "Vila Flor",
     "estado": "RN",
     "curiosidade": "Um dos municípios mais antigos do RN, com raízes coloniais. Rica em história e tradições religiosas."
+  },
+  {
+    "municipio": "Serra Caiada",
+    "estado": "Rio Grande do Norte",
+    "curiosidade": "Chamou-se Presidente Juscelino por décadas, mas voltou em 2013 ao nome original, da serra clara (\"caiada\") que marca a paisagem do agreste potiguar."
+  },
+  {
+    "municipio": "Campo Grande",
+    "estado": "Rio Grande do Norte",
+    "curiosidade": "Xará potiguar da capital sul-mato-grossense, já se chamou Augusto Severo, em homenagem ao pioneiro da aviação nascido na região."
+  },
+  {
+    "municipio": "Boa Saúde",
+    "estado": "Rio Grande do Norte",
+    "curiosidade": "Oficialmente chamada Januário Cicco por anos, readotou o nome popular Boa Saúde — herdado da capela de Nossa Senhora da Saúde que originou o povoado."
   }
 ]

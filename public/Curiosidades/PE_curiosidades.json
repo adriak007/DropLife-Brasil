@@ -300,11 +300,6 @@
     "curiosidade": "Município do Agreste com economia baseada em feiras e agricultura. Vida comunitária bastante ativa."
   },
   {
-    "municipio": "Fernando de Noronha",
-    "estado": "PE",
-    "curiosidade": "Arquipélago mundialmente famoso por praias paradisíacas. Patrimônio Natural da Humanidade e referência em conservação ambiental."
-  },
-  {
     "municipio": "Ferreiros",
     "estado": "PE",
     "curiosidade": "Cidade da Mata Norte com tradições rurais fortes. Economia baseada em cana e agricultura familiar."
@@ -554,7 +549,6 @@
     "estado": "PE",
     "curiosidade": "Integrante da RMR, com grande patrimônio natural. Cultura ligada aos engenhos e ao desenvolvimento industrial."
   },
-  [
   {
     "municipio": "Nazaré da Mata",
     "estado": "PE",
@@ -924,7 +918,15 @@
     "municipio": "Xexéu",
     "estado": "PE",
     "curiosidade": "Município da Mata Sul, com forte tradição agrícola. Cultura rural e proximidade com Alagoas influenciam o cotidiano."
+  },
+  {
+    "municipio": "Passira",
+    "estado": "Pernambuco",
+    "curiosidade": "Conhecida como a Capital do Bordado: no agreste pernambucano, gerações de bordadeiras produzem peças à mão vendidas para todo o Brasil."
+  },
+  {
+    "municipio": "Fernando de Noronha",
+    "estado": "Pernambuco",
+    "curiosidade": "O arquipélago paradisíaco é tecnicamente um distrito estadual de Pernambuco, não um município: suas praias, como a Baía do Sancho, aparecem entre as mais bonitas do mundo, e o parque marinho protege golfinhos e tartarugas."
   }
-]
-
 ]

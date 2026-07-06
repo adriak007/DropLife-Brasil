@@ -269,7 +269,6 @@
     "estado": "MT",
     "curiosidade": "Abriga o Salto de Itiquira, uma das maiores e mais belas quedas d'água do Cerrado, com cerca de 168 metros de altura."
   },
-  [
   {
     "municipio": "Jaciara",
     "estado": "MT",
@@ -490,7 +489,6 @@
     "estado": "MT",
     "curiosidade": "Um dos principais centros de agronegócio do Brasil, com alta tecnologia na produção de soja, milho e algodão. É conhecida por seu alto Índice de Desenvolvimento Humano (IDH)."
   },
-  [
   {
     "municipio": "Ribeirão Cascalheira",
     "estado": "MT",
@@ -660,7 +658,55 @@
     "municipio": "Vila Rica",
     "estado": "MT",
     "curiosidade": "Localizada no Nordeste, seu nome remete à antiga busca por minérios. Sua economia é baseada na pecuária e agricultura."
+  },
+  {
+    "municipio": "Querência",
+    "estado": "Mato Grosso",
+    "curiosidade": "Fronteira agrícola colonizada por gaúchos nos anos 1980 — querência é o lugar amado do pampa —, vizinha do Parque Indígena do Xingu, produz soja em larga escala."
+  },
+  {
+    "municipio": "São José dos Quatro Marcos",
+    "estado": "Mato Grosso",
+    "curiosidade": "No sudoeste mato-grossense, o nome vem dos quatro marcos de pedra que delimitavam as glebas da colonização; vive do leite e da agricultura familiar."
+  },
+  {
+    "municipio": "Nova Monte Verde",
+    "estado": "Mato Grosso",
+    "curiosidade": "No extremo norte de Mato Grosso, nasceu da colonização dos anos 1980 na Amazônia mato-grossense, com economia de pecuária e ouro."
+  },
+  {
+    "municipio": "Santa Terezinha",
+    "estado": "Mato Grosso",
+    "curiosidade": "Às margens do rio Araguaia, na divisa com o Pará, região marcada pela luta pela terra e pelas grandes fazendas do Araguaia."
+  },
+  {
+    "municipio": "Nova Maringá",
+    "estado": "Mato Grosso",
+    "curiosidade": "Fundada por colonizadores paranaenses que homenagearam Maringá, vive da soja e da madeira no médio-norte mato-grossense."
+  },
+  {
+    "municipio": "Nova Santa Helena",
+    "estado": "Mato Grosso",
+    "curiosidade": "Pequeno município na rodovia BR-163, emancipado nos anos 2000 durante a expansão da soja no norte de Mato Grosso."
+  },
+  {
+    "municipio": "Nova Nazaré",
+    "estado": "Mato Grosso",
+    "curiosidade": "Município jovem do leste mato-grossense, no vale do rio das Mortes, com pecuária extensiva e presença do povo Xavante."
+  },
+  {
+    "municipio": "Nova Marilândia",
+    "estado": "Mato Grosso",
+    "curiosidade": "Pequeno município da região de Diamantino, emancipado nos anos 1990, dedicado à pecuária e às lavouras da chapada."
+  },
+  {
+    "municipio": "Reserva do Cabaçal",
+    "estado": "Mato Grosso",
+    "curiosidade": "No vale do rio Cabaçal, sudoeste de Mato Grosso, pequena cidade cercada por nascentes que alimentam o Pantanal."
+  },
+  {
+    "municipio": "Novo Santo Antônio",
+    "estado": "Mato Grosso",
+    "curiosidade": "Um dos municípios menos populosos de Mato Grosso, às margens do rio das Mortes, próximo ao Parque Estadual do Araguaia."
   }
-]
-]
 ]

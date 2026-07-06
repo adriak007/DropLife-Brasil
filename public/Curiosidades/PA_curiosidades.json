@@ -224,7 +224,6 @@
     "estado": "PA",
     "curiosidade": "Famosa pela lenda da Serpente Encantada e por pratos tradicionais como o caranguejo e o peixe ao tucupi."
   },
-  [
   {
     "municipio": "Dom Eliseu",
     "estado": "PA",
@@ -294,7 +293,7 @@
     "municipio": "Itupiranga",
     "estado": "PA",
     "curiosidade": "Conhecida por preservarem lendas e histórias antigas da região amazônica. A culinária local é baseada em peixes e frutas regionais."
-  },[
+  },
   {
     "municipio": "Jacareacanga",
     "estado": "PA",
@@ -720,8 +719,4 @@
     "estado": "PA",
     "curiosidade": "Tradicional nas festas de rodeio e eventos sertanejos. A cultura rural é muito presente no dia a dia da cidade."
   }
-]
-
-]
-
 ]

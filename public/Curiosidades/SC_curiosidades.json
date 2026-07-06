@@ -229,7 +229,6 @@
     "estado": "SC",
     "curiosidade": "Conhecida como o 'Berço da Fiação Catarinense' e 'Capital da Pronta Entrega'. É um forte polo industrial têxtil e de confecções, com uma das maiores vendas de atacado do país."
   },
-  [
   {
     "municipio": "Caçador",
     "estado": "SC",
@@ -420,7 +419,6 @@
     "estado": "SC",
     "curiosidade": "Localizada no Oeste. O nome se deve aos faxinais (campos) e aos antigos tropeiros (Guedes). Sua economia é baseada na agricultura de grãos."
   },
-  [
   {
     "municipio": "Formosa do Sul",
     "estado": "SC",
@@ -821,7 +819,6 @@
     "estado": "SC",
     "curiosidade": "Pequeno município do Oeste catarinense. Sua economia é baseada na agricultura e na pecuária."
   },
-  [
   {
     "municipio": "Orleans",
     "estado": "SC",
@@ -1406,8 +1403,65 @@
     "municipio": "Zortéa",
     "estado": "SC",
     "curiosidade": "Meio-Oeste. Conhecida pelas suas águas termais e por ser um importante destino de turismo de lazer na região."
+  },
+  {
+    "municipio": "Florianópolis",
+    "estado": "Santa Catarina",
+    "curiosidade": "Capital catarinense espalhada por uma ilha com mais de 40 praias, apelidada de Ilha da Magia. A ponte Hercílio Luz, cartão-postal da cidade, é uma das maiores pontes pênseis do mundo."
+  },
+  {
+    "municipio": "Bombinhas",
+    "estado": "Santa Catarina",
+    "curiosidade": "Menor município de Santa Catarina em área, é a capital catarinense do mergulho: suas enseadas de águas claras ficam ao lado da Reserva Biológica Marinha do Arvoredo."
+  },
+  {
+    "municipio": "Pescaria Brava",
+    "estado": "Santa Catarina",
+    "curiosidade": "Um dos municípios mais jovens do Brasil, instalado em 2013 após emancipar-se de Laguna, preserva a cultura açoriana da pesca artesanal."
+  },
+  {
+    "municipio": "Laurentino",
+    "estado": "Santa Catarina",
+    "curiosidade": "No Alto Vale do Itajaí, colonizada por italianos, é conhecida como a Capital Catarinense do Ferro de Passar — sede de tradicional indústria do setor."
+  },
+  {
+    "municipio": "Ipumirim",
+    "estado": "Santa Catarina",
+    "curiosidade": "No oeste catarinense, de colonização italiana e alemã, vive da suinocultura e avicultura integradas às grandes agroindústrias da região."
+  },
+  {
+    "municipio": "São João do Oeste",
+    "estado": "Santa Catarina",
+    "curiosidade": "Considerado um dos municípios mais alemães do Brasil: a maioria dos moradores ainda fala o dialeto hunsriqueano no dia a dia, e a cidade celebra a cultura germânica em suas festas."
+  },
+  {
+    "municipio": "Jaborá",
+    "estado": "Santa Catarina",
+    "curiosidade": "Pequeno município do meio-oeste catarinense, de colonização italiana, forte na suinocultura e na produção de milho."
+  },
+  {
+    "municipio": "Arroio Trinta",
+    "estado": "Santa Catarina",
+    "curiosidade": "Colonizada por italianos vindos do Rio Grande do Sul, o nome vem do arroio que ficava a trinta quilômetros do marco da colonizadora; celebra a herança na Festa do Vinho."
+  },
+  {
+    "municipio": "Belmonte",
+    "estado": "Santa Catarina",
+    "curiosidade": "No extremo-oeste catarinense, na divisa com a Argentina, pequeno município agrícola de colonização gaúcha emancipado em 1992."
+  },
+  {
+    "municipio": "Arvoredo",
+    "estado": "Santa Catarina",
+    "curiosidade": "Pequeno município do oeste catarinense emancipado em 1991, com economia baseada na agricultura familiar e na criação de suínos."
+  },
+  {
+    "municipio": "Flor do Sertão",
+    "estado": "Santa Catarina",
+    "curiosidade": "Um dos menores municípios catarinenses, no extremo-oeste, emancipado em 1995, de nome poético e vida rural dedicada ao leite."
+  },
+  {
+    "municipio": "Jardinópolis",
+    "estado": "Santa Catarina",
+    "curiosidade": "Micromunicípio do oeste de Santa Catarina, emancipado em 1992, com menos de dois mil habitantes e economia agrícola familiar."
   }
-  ]
-]
-]
 ]

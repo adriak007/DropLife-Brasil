@@ -1159,7 +1159,6 @@
     "estado": "MG",
     "curiosidade": "Sede do tradicional 'Forró de Curvelo', um dos maiores eventos musicais do estado."
   },
-  [
   {
     "municipio": "Datas",
     "estado": "MG",
@@ -1655,7 +1654,6 @@
     "estado": "MG",
     "curiosidade": "Região marcada por tradições musicais e festas juninas antigas."
   },
-  [
   {
     "municipio": "Ibertioga",
     "estado": "MG",
@@ -2231,7 +2229,6 @@
     "estado": "MG",
     "curiosidade": "Cidade famosa por suas festas do Divino e por grupos de congado tradicionais."
   },
-  [
   {
     "municipio": "Machacalis",
     "estado": "MG",
@@ -2723,11 +2720,6 @@
     "curiosidade": "Cidade pequena com bandas musicais tradicionais e culinária típica."
   },
   {
-    "municipiculo": "Palma",
-    "estado": "MG",
-    "curiosidade": "Possui casarões históricos e fortes tradições religiosas preservadas há gerações."
-  },
-  {
     "municipio": "Palmópolis",
     "estado": "MG",
     "curiosidade": "Região marcada pela música sertaneja e por festas comunitárias animadas."
@@ -3102,7 +3094,6 @@
     "estado": "MG",
     "curiosidade": "Local com tradição em bandas de música e festas religiosas históricas."
   },
-  [
   {
     "municipio": "Quartel Geral",
     "estado": "MG",
@@ -4247,13 +4238,35 @@
     "municipio": "Wenceslau Braz",
     "estado": "MG",
     "curiosidade": "Cidade rural que preserva festas religiosas e culinária típica mineira."
+  },
+  {
+    "municipio": "Nova União",
+    "estado": "Minas Gerais",
+    "curiosidade": "Na borda da região metropolitana de Belo Horizonte, chamava-se Mendanha até os anos 1990 e preserva cachoeiras da Serra da Piedade."
+  },
+  {
+    "municipio": "Congonhas do Norte",
+    "estado": "Minas Gerais",
+    "curiosidade": "Aos pés da Serra do Espinhaço, perto da Serra do Cipó, pequena cidade histórica do ciclo do ouro que preserva capelas do século XVIII."
+  },
+  {
+    "municipio": "Cantagalo",
+    "estado": "Minas Gerais",
+    "curiosidade": "Pequeno município do leste mineiro, emancipado nos anos 1990, com nome herdado da fazenda onde, diz a tradição, um galo cantava ao amanhecer para os tropeiros."
+  },
+  {
+    "municipio": "Pedrinópolis",
+    "estado": "Minas Gerais",
+    "curiosidade": "No Triângulo Mineiro, entre lavouras de café e soja, pequena cidade que homenageia no nome o fundador Pedro Machado."
+  },
+  {
+    "municipio": "Passa Vinte",
+    "estado": "Minas Gerais",
+    "curiosidade": "Na serra da Mantiqueira, divisa com o Rio de Janeiro, tem um dos nomes mais curiosos de Minas: vem do córrego onde os tropeiros diziam que \"passavam vinte\" mulas por vez."
+  },
+  {
+    "municipio": "Mathias Lobato",
+    "estado": "Minas Gerais",
+    "curiosidade": "No vale do rio Doce, é famosa por trocar de nome várias vezes — já foi Vila Matias — e disputa histórica curiosa sobre qual denominação oficial vale."
   }
-]
-
-]
-
-]
-
-]
-
 ]

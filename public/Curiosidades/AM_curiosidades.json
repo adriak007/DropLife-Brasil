@@ -168,5 +168,145 @@
     "municipio": "Jutaí",
     "estado": "AM",
     "curiosidade": "Município do Alto Solimões. Conhecido pela preservação ambiental e por suas comunidades ribeirinhas que vivem do extrativismo sustentável."
+  },
+  {
+    "municipio": "Manaus",
+    "estado": "Amazonas",
+    "curiosidade": "Capital do Amazonas e maior cidade da Amazônia, famosa pelo Teatro Amazonas, erguido no auge do ciclo da borracha, e pelo encontro das águas dos rios Negro e Solimões, que correm lado a lado sem se misturar por quilômetros."
+  },
+  {
+    "municipio": "Manacapuru",
+    "estado": "Amazonas",
+    "curiosidade": "Conhecida como a Princesinha do Solimões, é famosa pelo Festival de Cirandas, uma das maiores festas folclóricas do Amazonas."
+  },
+  {
+    "municipio": "Parintins",
+    "estado": "Amazonas",
+    "curiosidade": "Sede do Festival Folclórico de Parintins, a disputa entre os bois Garantido (vermelho) e Caprichoso (azul) que lota o Bumbódromo todo mês de junho. A cidade ocupa a ilha Tupinambarana, no rio Amazonas."
+  },
+  {
+    "municipio": "Tefé",
+    "estado": "Amazonas",
+    "curiosidade": "Às margens do lago Tefé, no médio Solimões, é a principal porta de entrada para a Reserva Mamirauá, referência mundial em conservação de várzea amazônica."
+  },
+  {
+    "municipio": "Tabatinga",
+    "estado": "Amazonas",
+    "curiosidade": "Fica na tríplice fronteira entre Brasil, Colômbia e Peru, formando uma única mancha urbana com a cidade colombiana de Letícia — dá para atravessar de um país ao outro a pé."
+  },
+  {
+    "municipio": "Maués",
+    "estado": "Amazonas",
+    "curiosidade": "Conhecida como a Terra do Guaraná: o cultivo da planta foi dominado pelos indígenas Sateré-Mawé da região, e a cidade celebra a Festa do Guaraná todos os anos."
+  },
+  {
+    "municipio": "Manicoré",
+    "estado": "Amazonas",
+    "curiosidade": "Às margens do rio Madeira, no sul do Amazonas, destaca-se pela agricultura de várzea e é uma das principais produtoras de melancia e banana do estado."
+  },
+  {
+    "municipio": "São Gabriel da Cachoeira",
+    "estado": "Amazonas",
+    "curiosidade": "Município mais indígena do Brasil, com mais de 20 etnias, que tornou o nheengatu, o tukano e o baniwa línguas cooficiais. Em seu território fica o Pico da Neblina, o ponto mais alto do país."
+  },
+  {
+    "municipio": "Lábrea",
+    "estado": "Amazonas",
+    "curiosidade": "No extremo sul do Amazonas, às margens do rio Purus, nasceu no ciclo da borracha e ainda vive dos rios: é uma das principais portas de acesso à bacia do Purus."
+  },
+  {
+    "municipio": "São Paulo de Olivença",
+    "estado": "Amazonas",
+    "curiosidade": "Um dos povoados mais antigos do Alto Solimões, com origem em missões religiosas do século XVII na fronteira amazônica."
+  },
+  {
+    "municipio": "Santo Antônio do Içá",
+    "estado": "Amazonas",
+    "curiosidade": "Fica na confluência do rio Içá com o Solimões, no Alto Solimões, região de forte presença dos povos Tikuna."
+  },
+  {
+    "municipio": "Nova Olinda do Norte",
+    "estado": "Amazonas",
+    "curiosidade": "Às margens do rio Madeira, perto da foz, tem economia ligada à juta, à malva e à agricultura de várzea."
+  },
+  {
+    "municipio": "Presidente Figueiredo",
+    "estado": "Amazonas",
+    "curiosidade": "Chamada de Terra das Cachoeiras, reúne dezenas de quedas d’água, corredeiras e cavernas de arenito, como a gruta do Maroaga, a cerca de 100 km de Manaus."
+  },
+  {
+    "municipio": "Rio Preto da Eva",
+    "estado": "Amazonas",
+    "curiosidade": "Na região metropolitana de Manaus, ao longo da rodovia AM-010, é conhecida pela produção de frutas regionais e pelos balneários de águas escuras."
+  },
+  {
+    "municipio": "Urucurituba",
+    "estado": "Amazonas",
+    "curiosidade": "Município ribeirinho do baixo Amazonas, vizinho de Itacoatiara, com vida ligada à pesca e à agricultura de várzea."
+  },
+  {
+    "municipio": "Novo Aripuanã",
+    "estado": "Amazonas",
+    "curiosidade": "Fica na foz do rio Aripuanã, afluente do Madeira, em uma das regiões de floresta mais preservadas do sul do Amazonas."
+  },
+  {
+    "municipio": "Nhamundá",
+    "estado": "Amazonas",
+    "curiosidade": "Na divisa com o Pará, às margens do rio Nhamundá, região associada à lenda das icamiabas, as guerreiras que deram origem ao nome do rio Amazonas."
+  },
+  {
+    "municipio": "Tapauá",
+    "estado": "Amazonas",
+    "curiosidade": "Um dos municípios mais extensos do Brasil, atravessado pelo rio Purus, com vastas áreas de floresta praticamente intocada."
+  },
+  {
+    "municipio": "Pauini",
+    "estado": "Amazonas",
+    "curiosidade": "Município remoto do alto rio Purus, próximo à divisa com o Acre, acessível principalmente por barco ou avião."
+  },
+  {
+    "municipio": "Tonantins",
+    "estado": "Amazonas",
+    "curiosidade": "Pequeno município do Alto Solimões, na margem esquerda do rio, com forte presença indígena e economia ribeirinha."
+  },
+  {
+    "municipio": "Manaquiri",
+    "estado": "Amazonas",
+    "curiosidade": "Cercado de lagos na margem direita do Solimões, em frente à região de Manaus, é destino tradicional de pesca esportiva."
+  },
+  {
+    "municipio": "Novo Airão",
+    "estado": "Amazonas",
+    "curiosidade": "Porta de entrada do Parque Nacional de Anavilhanas, um dos maiores arquipélagos fluviais do mundo, no rio Negro — famosa pelos botos-vermelhos que se aproximam da orla."
+  },
+  {
+    "municipio": "Maraã",
+    "estado": "Amazonas",
+    "curiosidade": "Entre os rios Japurá e Solimões, dá acesso às reservas Mamirauá e Amanã e vive da pesca manejada do pirarucu."
+  },
+  {
+    "municipio": "Uarini",
+    "estado": "Amazonas",
+    "curiosidade": "Berço da famosa farinha de Uarini, a \"farinha ovinha\" de grãos amarelos e crocantes, uma das mais valorizadas da Amazônia."
+  },
+  {
+    "municipio": "Santa Isabel do Rio Negro",
+    "estado": "Amazonas",
+    "curiosidade": "No médio rio Negro, entre Barcelos e São Gabriel da Cachoeira, é tradicional produtora de fibra de piaçaba e tem população majoritariamente indígena."
+  },
+  {
+    "municipio": "São Sebastião do Uatumã",
+    "estado": "Amazonas",
+    "curiosidade": "Às margens do rio Uatumã, abriga parte da Reserva de Desenvolvimento Sustentável do Uatumã, refúgio de pesca esportiva do tucunaré-açu."
+  },
+  {
+    "municipio": "Silves",
+    "estado": "Amazonas",
+    "curiosidade": "Erguida sobre uma ilha entre lagos, é uma das povoações mais antigas do Amazonas, fundada no século XVII, e pioneira em turismo ecológico comunitário."
+  },
+  {
+    "municipio": "Urucará",
+    "estado": "Amazonas",
+    "curiosidade": "No baixo Amazonas, é conhecida pelo guaraná de alta qualidade cultivado na região serrana do Valério."
   }
 ]

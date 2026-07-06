@@ -349,7 +349,6 @@
     "estado": "PI",
     "curiosidade": "Conhecida pela simplicidade e pela forte cultura interiorana, refletida nas festas comunitárias."
   },
-  [
   {
     "municipio": "Demerval Lobão",
     "estado": "PI",
@@ -785,7 +784,6 @@
     "estado": "PI",
     "curiosidade": "Cidade próxima à Serra da Capivara, com tradições sertanejas e vida comunitária preservada."
   },
-  [
   {
     "municipio": "Queimada Nova",
     "estado": "PI",
@@ -1065,9 +1063,15 @@
     "municipio": "Vila Nova do Piauí",
     "estado": "PI",
     "curiosidade": "Reconhecida como 'Cidade Poesia', com forte incentivo à cultura e eventos literários."
+  },
+  {
+    "municipio": "Nazária",
+    "estado": "Piauí",
+    "curiosidade": "Município mais jovem do Piauí, instalado somente em 2009, vizinho de Teresina, às margens do rio Parnaíba."
+  },
+  {
+    "municipio": "Porto Alegre do Piauí",
+    "estado": "Piauí",
+    "curiosidade": "Xará nordestina da capital gaúcha, é uma pequena cidade do sertão piauiense com pouco mais de dois mil habitantes."
   }
-]
-
-]
-
 ]

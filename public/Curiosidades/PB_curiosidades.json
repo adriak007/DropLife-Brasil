@@ -609,7 +609,6 @@
     "estado": "PB",
     "curiosidade": "Maior cidade do Cariri e polo cultural da região. Conhecida pela música nordestina e por abrigar campus universitário."
   },
-  [
   {
     "municipio": "Mulungu",
     "estado": "PB",
@@ -1104,7 +1103,25 @@
     "municipio": "Zabelê",
     "estado": "PB",
     "curiosidade": "Município do Cariri conhecido pela tranquilidade e tradições rurais. Economia baseada em pecuária e agricultura."
+  },
+  {
+    "municipio": "São Vicente do Seridó",
+    "estado": "Paraíba",
+    "curiosidade": "No Seridó paraibano, terra de sol forte, vive da caprinocultura e da mineração de caulim e outros minerais da região."
+  },
+  {
+    "municipio": "São José dos Ramos",
+    "estado": "Paraíba",
+    "curiosidade": "Pequeno município do agreste paraibano, emancipado de Pilar em 1997, com vida rural às margens do rio Paraíba."
+  },
+  {
+    "municipio": "Areia de Baraúnas",
+    "estado": "Paraíba",
+    "curiosidade": "Um dos menores municípios da Paraíba, no sertão do Vale do Sabugi, batizado pelas areias claras e pelas baraúnas, árvores típicas da caatinga."
+  },
+  {
+    "municipio": "Joca Claudino",
+    "estado": "Paraíba",
+    "curiosidade": "Chamava-se Santarém até 2010, quando adotou o nome do fundador; fica no alto sertão paraibano, na divisa com o Rio Grande do Norte."
   }
-]
-
 ]

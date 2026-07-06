@@ -229,7 +229,6 @@
     "estado": "AL",
     "curiosidade": "Famosa por suas festividades juninas e pela cultura de vaquejada. Sua economia é baseada na agricultura e pecuária."
   },
-  [
   {
     "municipio": "Maceió",
     "estado": "AL",
@@ -499,6 +498,15 @@
     "municipio": "Viçosa",
     "estado": "AL",
     "curiosidade": "Conhecida como 'Princesa da Zona da Mata'. É uma cidade de clima ameno e paisagens serranas, com forte vocação para a agricultura e história."
+  },
+  {
+    "municipio": "Olho d’Água Grande",
+    "estado": "Alagoas",
+    "curiosidade": "Pequeno município alagoano perto do rio São Francisco, batizado pela grande nascente que abastecia os primeiros moradores."
+  },
+  {
+    "municipio": "Mar Vermelho",
+    "estado": "Alagoas",
+    "curiosidade": "No alto da serra alagoana, a mais de 600 metros, é um dos municípios mais frios do estado; o nome vem do barro avermelhado que cobria as ladeiras."
   }
-]
 ]

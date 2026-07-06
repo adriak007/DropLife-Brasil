@@ -303,7 +303,7 @@
     "municipio": "Itaporã do Tocantins",
     "estado": "TO",
     "curiosidade": "É conhecida pela paisagem composta por serras e pedreiras. O município está na região central, com economia focada no agronegócio."
-  },[
+  },
   {
     "municipio": "Jaú do Tocantins",
     "estado": "TO",
@@ -643,6 +643,55 @@
     "municipio": "Xambioá",
     "estado": "TO",
     "curiosidade": "É a cidade mais conhecida por ter sido palco da Guerrilha do Araguaia (anos 70). Está às margens do Rio Araguaia, sendo um ponto turístico e histórico."
+  },
+  {
+    "municipio": "São Miguel do Tocantins",
+    "estado": "Tocantins",
+    "curiosidade": "Na região do Bico do Papagaio, extremo norte do estado, perto do encontro dos rios Araguaia e Tocantins, vive do babaçu e da agricultura familiar."
+  },
+  {
+    "municipio": "Campos Lindos",
+    "estado": "Tocantins",
+    "curiosidade": "No nordeste do Tocantins, na serra do Centro, virou fronteira da soja nos anos 2000 com um grande projeto agrícola em terras de chapada."
+  },
+  {
+    "municipio": "Palmeirópolis",
+    "estado": "Tocantins",
+    "curiosidade": "No extremo sul do Tocantins, entre o rio Paranã e a divisa com Goiás, vive da pecuária e das lavouras do vale."
+  },
+  {
+    "municipio": "Palmeiras do Tocantins",
+    "estado": "Tocantins",
+    "curiosidade": "Pequeno município do norte tocantinense, na rota da Belém-Brasília, que já se chamou Mosquito antes de adotar o nome atual."
+  },
+  {
+    "municipio": "Palmeirante",
+    "estado": "Tocantins",
+    "curiosidade": "Às margens do rio Tocantins, emancipada nos anos 1990, tem nas palmeiras nativas a origem do nome."
+  },
+  {
+    "municipio": "Nazaré",
+    "estado": "Tocantins",
+    "curiosidade": "Pequena cidade centenária do norte do Tocantins, fundada às margens do córrego que os romeiros dedicaram a Nossa Senhora de Nazaré."
+  },
+  {
+    "municipio": "Fortaleza do Tabocão",
+    "estado": "Tocantins",
+    "curiosidade": "Conhecida hoje apenas como Tabocão, fica na rodovia Belém-Brasília; o nome vem das tabocas, os bambus nativos que cobriam a região."
+  },
+  {
+    "municipio": "São Valério da Natividade",
+    "estado": "Tocantins",
+    "curiosidade": "No sudeste do Tocantins, hoje chamada apenas São Valério, nasceu de fazendas de gado na região da histórica Natividade."
+  },
+  {
+    "municipio": "Porto Alegre do Tocantins",
+    "estado": "Tocantins",
+    "curiosidade": "Homônima da capital gaúcha, é uma pequena cidade do sudeste tocantinense, perto das serras e cachoeiras da região de Dianópolis."
+  },
+  {
+    "municipio": "Oliveira de Fátima",
+    "estado": "Tocantins",
+    "curiosidade": "Um dos menores municípios do Tocantins, com pouco mais de mil habitantes, emancipado em 1997 na região central do estado."
   }
-]
 ]

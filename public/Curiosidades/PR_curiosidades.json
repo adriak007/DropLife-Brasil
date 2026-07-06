@@ -60,7 +60,7 @@
     "curiosidade": "Um dos principais centros da região na história do ciclo do café no Norte Pioneiro do Paraná."
   },
   {
-    "municipio": "Ângulo",
+    "municipio": "ngulo",
     "estado": "PR",
     "curiosidade": "Conhecida pela agropecuária, com ênfase na produção de grãos e pecuária leiteira."
   },
@@ -474,7 +474,6 @@
     "estado": "PR",
     "curiosidade": "Município com economia baseada na agropecuária e na produção de grãos."
   },
-  [
   {
     "municipio": "Enéas Marques",
     "estado": "PR",
@@ -1005,7 +1004,6 @@
     "estado": "PR",
     "curiosidade": "Município com economia baseada na agropecuária e na produção de grãos."
   },
-  [
   {
     "municipio": "Nova Aliança do Ivaí",
     "estado": "PR",
@@ -1805,7 +1803,190 @@
     "municipio": "Xambrê",
     "estado": "PR",
     "curiosidade": "Município com economia baseada na agropecuária, destacando-se na produção de grãos."
+  },
+  {
+    "municipio": "Guarapuava",
+    "estado": "Paraná",
+    "curiosidade": "Maior município do Paraná em área, nos campos gerais de altitude, foi rota dos tropeiros no século XIX e hoje é polo universitário e da indústria madeireira e cervejeira do centro-sul do estado."
+  },
+  {
+    "municipio": "Fazenda Rio Grande",
+    "estado": "Paraná",
+    "curiosidade": "Uma das cidades que mais cresceram na região metropolitana de Curitiba: era área rural até os anos 1980 e emancipou-se em 1990, hoje com mais de 140 mil habitantes."
+  },
+  {
+    "municipio": "Paranavaí",
+    "estado": "Paraná",
+    "curiosidade": "Polo do noroeste paranaense nascido da expansão cafeeira nos anos 1940; com a geada de 1975, virou uma das maiores produtoras de laranja e mandioca do estado."
+  },
+  {
+    "municipio": "Morretes",
+    "estado": "Paraná",
+    "curiosidade": "Cidadezinha histórica aos pés da Serra do Mar, destino do famoso passeio de trem por entre a mata atlântica e berço do barreado, prato típico cozido por horas em panela de barro."
+  },
+  {
+    "municipio": "Faxinal",
+    "estado": "Paraná",
+    "curiosidade": "Entre serras e cachoeiras do vale do Ivaí, ficou conhecida pelas rampas de voo livre e pelo ecoturismo no centro-norte do Paraná."
+  },
+  {
+    "municipio": "Cerro Azul",
+    "estado": "Paraná",
+    "curiosidade": "No Vale do Ribeira paranaense, é a capital estadual da ponkan: suas tangerinas são famosas em todo o Sul do país."
+  },
+  {
+    "municipio": "Marmeleiro",
+    "estado": "Paraná",
+    "curiosidade": "No sudoeste do Paraná, colonizada por descendentes de italianos e alemães vindos do Rio Grande do Sul, vive da agricultura familiar e da agroindústria."
+  },
+  {
+    "municipio": "Planalto",
+    "estado": "Paraná",
+    "curiosidade": "No extremo sudoeste paranaense, perto do rio Iguaçu e da fronteira argentina, destaca-se na produção de leite e grãos em pequenas propriedades."
+  },
+  {
+    "municipio": "Rio Bonito do Iguaçu",
+    "estado": "Paraná",
+    "curiosidade": "Abriga um dos maiores assentamentos de reforma agrária da América Latina, o Ireno Alves dos Santos, criado nos anos 1990 nas terras da antiga fazenda Giacomet."
+  },
+  {
+    "municipio": "Balsa Nova",
+    "estado": "Paraná",
+    "curiosidade": "Na região metropolitana de Curitiba, o nome vem da balsa que atravessava o rio Iguaçu; guarda a histórica igreja jesuíta de Tamanduá e áreas de campos gerais."
+  },
+  {
+    "municipio": "Nova Prata do Iguaçu",
+    "estado": "Paraná",
+    "curiosidade": "No sudoeste do Paraná, próxima ao lago da usina de Salto Caxias, vive da soja, do leite e da criação de aves."
+  },
+  {
+    "municipio": "Florestópolis",
+    "estado": "Paraná",
+    "curiosidade": "No norte do Paraná, nasceu do café e hoje é cercada por canaviais que alimentam a usina de açúcar e álcool da região."
+  },
+  {
+    "municipio": "Moreira Sales",
+    "estado": "Paraná",
+    "curiosidade": "Na região de Goioerê, no noroeste paranaense, viveu o auge do algodão e hoje planta soja e milho; o nome homenageia o banqueiro que colonizou a gleba."
+  },
+  {
+    "municipio": "Céu Azul",
+    "estado": "Paraná",
+    "curiosidade": "Guarda o portão norte do Parque Nacional do Iguaçu: dois terços do território municipal ficam dentro da maior reserva de mata atlântica do interior do Brasil."
+  },
+  {
+    "municipio": "Missal",
+    "estado": "Paraná",
+    "curiosidade": "Colonizada nos anos 1960 por descendentes de alemães católicos, o nome vem do livro litúrgico da missa; celebra a cultura germânica na Deutsches Fest, às margens do lago de Itaipu."
+  },
+  {
+    "municipio": "Floresta",
+    "estado": "Paraná",
+    "curiosidade": "Pequeno município vizinho de Maringá, de solo roxo fértil, dedicado à soja, ao milho e à agroindústria avícola."
+  },
+  {
+    "municipio": "Guaraqueçaba",
+    "estado": "Paraná",
+    "curiosidade": "Isolada entre a baía e a Serra do Mar, guarda um dos trechos mais preservados de mata atlântica do Brasil, a cultura caiçara do fandango e o raro papagaio-de-cara-roxa."
+  },
+  {
+    "municipio": "Marilena",
+    "estado": "Paraná",
+    "curiosidade": "No extremo noroeste do Paraná, às margens do rio Paraná, vive da pecuária, da mandioca e da pesca no grande rio."
+  },
+  {
+    "municipio": "Goioxim",
+    "estado": "Paraná",
+    "curiosidade": "Município rural do centro do Paraná, de nome indígena ligado ao rio Goioxim, com comunidades faxinalenses que preservam o uso coletivo da terra."
+  },
+  {
+    "municipio": "Ibema",
+    "estado": "Paraná",
+    "curiosidade": "Pequeno município do oeste paranaense, nascido em torno de serrarias na época da extração da madeira, hoje dedicado à agricultura."
+  },
+  {
+    "municipio": "Saudade do Iguaçu",
+    "estado": "Paraná",
+    "curiosidade": "No sudoeste do Paraná, tem parte do lago da usina de Salto Santiago, uma das maiores hidrelétricas do rio Iguaçu, que rende royalties ao pequeno município."
+  },
+  {
+    "municipio": "Pranchita",
+    "estado": "Paraná",
+    "curiosidade": "Na fronteira com a Argentina, no sudoeste paranaense, foi colonizada por gaúchos e mantém forte tradição na produção de leite e grãos."
+  },
+  {
+    "municipio": "Doutor Ulysses",
+    "estado": "Paraná",
+    "curiosidade": "Município do Vale do Ribeira paranaense batizado em homenagem a Ulysses Guimarães, símbolo da redemocratização; é o município mais rural do estado."
+  },
+  {
+    "municipio": "Nova Esperança do Sudoeste",
+    "estado": "Paraná",
+    "curiosidade": "Pequeno município do sudoeste paranaense, emancipado nos anos 1990, com economia de leite e agricultura familiar em relevo de colinas."
+  },
+  {
+    "municipio": "Lupionópolis",
+    "estado": "Paraná",
+    "curiosidade": "No norte pioneiro do café, leva o nome de Moysés Lupion, governador do Paraná na época da colonização da região."
+  },
+  {
+    "municipio": "Marquinho",
+    "estado": "Paraná",
+    "curiosidade": "Um dos municípios mais jovens do centro do Paraná, emancipado em 1995, de população rural e forte presença de comunidades faxinalenses."
+  },
+  {
+    "municipio": "Fênix",
+    "estado": "Paraná",
+    "curiosidade": "Abriga as ruínas de Vila Rica do Espírito Santo, cidade espanhola do século XVII destruída pelos bandeirantes, preservadas no Parque Estadual Vila Rica — daí o nome Fênix, a que renasce."
+  },
+  {
+    "municipio": "Presidente Castelo Branco",
+    "estado": "Paraná",
+    "curiosidade": "Pequeno município do noroeste paranaense nascido da colonização cafeeira, rebatizado em homenagem ao primeiro presidente do regime militar."
+  },
+  {
+    "municipio": "Quarto Centenário",
+    "estado": "Paraná",
+    "curiosidade": "O nome vem da gleba Quarto Centenário, loteada em alusão aos 400 anos comemorados pela colonizadora; emancipou-se apenas em 1997."
+  },
+  {
+    "municipio": "Planaltina do Paraná",
+    "estado": "Paraná",
+    "curiosidade": "No noroeste do estado, região do arenito Caiuá, trocou o café dos tempos da colonização pela pecuária e pela mandioca."
+  },
+  {
+    "municipio": "Nossa Senhora das Graças",
+    "estado": "Paraná",
+    "curiosidade": "Pequena cidade do norte do Paraná nascida no auge do café nos anos 1950, hoje dedicada à cana e à pecuária leiteira."
+  },
+  {
+    "municipio": "Munhoz de Mello",
+    "estado": "Paraná",
+    "curiosidade": "Micromunicípio do norte paranaense batizado em homenagem a um desembargador; vive do café, da soja e do sossego do interior."
+  },
+  {
+    "municipio": "Rio Branco do Ivaí",
+    "estado": "Paraná",
+    "curiosidade": "No vale do rio Ivaí, emancipado nos anos 1990, tem população rural dedicada ao milho, ao feijão e à pecuária de leite."
+  },
+  {
+    "municipio": "Miraselva",
+    "estado": "Paraná",
+    "curiosidade": "Um dos menores municípios do Paraná, no norte cafeeiro: o nome poético significa \"olhar a selva\", da paisagem que os colonizadores encontraram."
+  },
+  {
+    "municipio": "Cruzmaltina",
+    "estado": "Paraná",
+    "curiosidade": "Emancipada nos anos 1990 no vale do Ivaí, tem nome inspirado na cruz de Malta e economia de agricultura familiar."
+  },
+  {
+    "municipio": "Flórida",
+    "estado": "Paraná",
+    "curiosidade": "Apesar do nome americano, é uma pacata cidadezinha do norte do Paraná, uma das menores do estado, fundada na era do café."
+  },
+  {
+    "municipio": "Alto Paraíso",
+    "estado": "Paraná",
+    "curiosidade": "No extremo noroeste paranaense, chamava-se Vila Alta até 2002; fica na região do Parque Nacional de Ilha Grande, no rio Paraná."
   }
-]
-]
 ]
