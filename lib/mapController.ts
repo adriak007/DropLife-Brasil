@@ -1,8 +1,9 @@
-import type { BBox, CityModalData, Municipio, StateEntry, ViewBox } from './types';
+import type { BBox, CityModalData, Municipio, PickedCity, StateEntry, StateStats, ViewBox } from './types';
 import { cityAliases, stateLabelOffsets, stateLabelText, ufToName } from './geo';
 import { clamp, cleanCity, formatChance, formatPop, keyFor } from './text';
 import { buildPopulationIndex, getPopulation, type PopulationIndex } from './population';
 import { curiosityFor, loadCuriosities, type CuriosityMap } from './curiosities';
+import { HEAT_BUCKETS, heatBucket } from './heatmap';
 
 const MAP_URL = '/MAPAESTADOS.svg';
 const MUNICIPIOS_URL = '/municipios.json';
@@ -32,7 +33,7 @@ export interface MapControllerOptions {
   setStatus: (message: string) => void;
   openMessageModal: (message: string, title?: string) => void;
   openCityModal: (data: CityModalData) => void;
-  onZoomChange: (zoomed: boolean) => void;
+  onZoomChange: (state: string | null) => void;
 }
 
 export class MapController {
@@ -45,10 +46,13 @@ export class MapController {
   private hoverState: string | null = null;
   private viewBoxAnimation: number | null = null;
   private availableCities: AvailableCity[] = [];
+  private allCities: AvailableCity[] = [];
+  private stateStats = new Map<string, StateStats>();
   private populationIndex: PopulationIndex | null = null;
   private curiosities: CuriosityMap = new Map();
   private missing: string[] = [];
   private destroyed = false;
+  private heatmapApplied = false;
 
   private tooltipState = {
     isPinned: false,
@@ -69,11 +73,20 @@ export class MapController {
   private docClick = (evt: MouseEvent) => {
     if (!this.isZoomed) return;
     const el = evt.target as Element | null;
-    // Cliques dentro do modal ou do tooltip fixado não devem resetar o zoom.
-    // (React delega eventos no document, então stopPropagation nos handlers
-    // não impede este listener — o filtro precisa ser feito aqui.)
-    if (el?.closest?.('.modal-backdrop') || el?.closest?.('.city-tooltip')) return;
-    const region = el?.closest?.('.region') as SVGPathElement | null;
+    // Cliques dentro de modais/paineis ou do tooltip fixado não devem resetar
+    // o zoom. (React delega eventos no document, então stopPropagation nos
+    // handlers não impede este listener — o filtro precisa ser feito aqui.)
+    // Se o alvo já foi removido do DOM (React fecha o painel antes de o evento
+    // chegar aqui), também não há como julgar o clique — ignora.
+    if (!el || !el.isConnected) return;
+    if (
+      el.closest('.modal-backdrop') ||
+      el.closest('.modal-panel') ||
+      el.closest('.city-tooltip')
+    ) {
+      return;
+    }
+    const region = el.closest('.region') as SVGPathElement | null;
     if (!region || region.dataset.state !== this.zoomedState) this.resetZoom();
   };
 
@@ -171,7 +184,7 @@ export class MapController {
       .querySelectorAll('.region--hover')
       .forEach((p) => p.classList.remove('region--hover'));
     this.currentSvg.classList.remove('svg--zoomed');
-    this.opts.onZoomChange(false);
+    this.opts.onZoomChange(null);
     this.clearPinnedTooltip();
   }
 
@@ -185,7 +198,7 @@ export class MapController {
     this.isZoomed = true;
     this.zoomedState = state;
     this.currentSvg.classList.add('svg--zoomed');
-    this.opts.onZoomChange(true);
+    this.opts.onZoomChange(state);
     this.clearStateHover();
     this.clearActiveState();
     entry.paths.forEach((p) => p.classList.add('region--active-state'));
@@ -432,24 +445,21 @@ export class MapController {
 
   // ── Sorteio ponderado por população ──
 
-  pickRandomCity(): void {
-    if (!this.availableCities.length) {
-      this.opts.setStatus('Nenhum municipio restante para nascer.');
-      this.opts.openMessageModal('Nao ha municipios restantes para nascer.');
-      return;
-    }
-
-    const totalWeight = this.availableCities.reduce((sum, city) => sum + city.population, 0);
-    let r = Math.random() * totalWeight;
-    let selected = this.availableCities[this.availableCities.length - 1];
-    for (const city of this.availableCities) {
+  private weightedPick(list: AvailableCity[], rng: () => number): AvailableCity {
+    const totalWeight = list.reduce((sum, city) => sum + city.population, 0);
+    let r = rng() * totalWeight;
+    let selected = list[list.length - 1];
+    for (const city of list) {
       r -= city.population;
       if (r <= 0) {
         selected = city;
         break;
       }
     }
+    return selected;
+  }
 
+  private toPicked(selected: AvailableCity): PickedCity {
     const { key, path, population, city, state } = selected;
     const idx = this.availableCities.findIndex((c) => c.key === key);
     if (idx !== -1) this.availableCities.splice(idx, 1);
@@ -460,7 +470,61 @@ export class MapController {
     this.opts.setStatus(
       `Nasceu em ${city} (${state}) — ${formatPop(population)} hab. — chance ${chance}%`
     );
-    this.opts.openCityModal({ city, state, population, curiosity, chance });
+    return { key, city, state, population, chance, curiosity };
+  }
+
+  // Sorteio normal: só municípios ainda não capturados
+  pickBirth(): PickedCity | null {
+    if (!this.availableCities.length) {
+      this.opts.setStatus('Nenhum municipio restante para nascer.');
+      return null;
+    }
+    return this.toPicked(this.weightedPick(this.availableCities, Math.random));
+  }
+
+  // Desafio diário: sorteia sobre TODOS os municípios com o RNG semeado,
+  // para que todo jogador receba a mesma cidade no mesmo dia.
+  pickDaily(rng: () => number): PickedCity | null {
+    if (!this.allCities.length) return null;
+    return this.toPicked(this.weightedPick(this.allCities, rng));
+  }
+
+  // ── Coleção persistida ──
+
+  totalCities(): number {
+    return this.allCities.length;
+  }
+
+  // Pinta as cidades já capturadas e as remove do pool de sorteio
+  restoreCaptured(keys: Set<string>): void {
+    if (!keys.size) return;
+    this.allCities.forEach(({ key, path }) => {
+      if (keys.has(key)) path.classList.add('region--selected');
+    });
+    this.availableCities = this.availableCities.filter((c) => !keys.has(c.key));
+  }
+
+  // ── Heatmap de população ──
+
+  setHeatmap(enabled: boolean): void {
+    if (!this.currentSvg) return;
+    if (enabled && !this.heatmapApplied) {
+      this.allCities.forEach(({ path, population }) => {
+        path.dataset.heat = String(heatBucket(population));
+      });
+      this.heatmapApplied = true;
+    }
+    this.currentSvg.classList.toggle('svg--heatmap', enabled);
+  }
+
+  // ── Estatísticas por estado ──
+
+  getStateStats(): StateStats[] {
+    return [...this.stateStats.values()].sort((a, b) => a.uf.localeCompare(b.uf));
+  }
+
+  focusStateByKey(uf: string): void {
+    this.focusState(uf);
   }
 
   // ── Carga do mapa e dos dados ──
@@ -504,6 +568,9 @@ export class MapController {
         .region.region--state-hover.region--hover { fill: #2b7350; }
         .svg--zoomed .region { stroke: transparent; }
         .svg--zoomed .region--active-state { stroke: rgba(0,210,255,0.22); stroke-width: 0.6; }
+        ${HEAT_BUCKETS.map((b, i) => `.svg--heatmap .region[data-heat="${i}"] { fill: ${b.color}; }`).join('\n        ')}
+        .svg--heatmap .region.region--state-hover { filter: brightness(1.3); }
+        .svg--heatmap .region.region--hover { filter: brightness(1.5); }
         .state-label { fill: rgba(190,240,210,0.9); font: 700 13px "Segoe UI", Arial, sans-serif; paint-order: stroke; stroke: rgba(0,0,0,0.55); stroke-width: 1.4; text-anchor: middle; dominant-baseline: middle; pointer-events: none; opacity: 0.85; }
         .svg--zoomed .state-label { opacity: 0; transition: opacity 200ms ease; }
         @keyframes selectedGlow {
@@ -579,6 +646,15 @@ export class MapController {
         } else {
           this.missing.push(rawName || '(sem nome)');
         }
+      });
+
+      this.allCities = [...this.availableCities];
+      this.stateStats.clear();
+      this.allCities.forEach(({ state, population }) => {
+        const stats = this.stateStats.get(state) || { uf: state, municipios: 0, population: 0 };
+        stats.municipios += 1;
+        stats.population += population;
+        this.stateStats.set(state, stats);
       });
 
       this.renderStateLabels(svg);

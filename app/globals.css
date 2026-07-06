@@ -621,8 +621,8 @@ body::after {
 
 /* ── Mobile ── */
 @media (max-width: 640px) {
-  body { padding: 0 8px calc(110px + var(--safe-bottom)); }
-  .frame { padding: 12px 10px calc(120px + var(--safe-bottom)); }
+  body { padding: 0 8px calc(250px + var(--safe-bottom)); }
+  .frame { padding: 12px 10px calc(260px + var(--safe-bottom)); }
   .controls {
     left: 8px;
     right: 8px;
@@ -650,4 +650,360 @@ body::after {
   }
   .map-wrap { height: min(70vh, 560px); }
   .zoom-reset { top: 12px; right: 12px; }
+  .nav-btn--wide { grid-column: 1 / -1; order: 9; }
+  #birthBtn { order: 10; }
+  .state-panel { display: none; }
+  .heat-legend {
+    left: 8px;
+    right: 8px;
+    bottom: calc(270px + var(--safe-bottom));
+    justify-content: center;
+  }
+  .toast { bottom: calc(280px + var(--safe-bottom)); }
+  .modal-panel--wide { max-height: 82vh; }
 }
+
+/* ── Botao ativo (heatmap ligado) ── */
+.nav-btn--active {
+  background: rgba(0, 212, 255, 0.16);
+  border-color: var(--glass-border-hover);
+  color: var(--accent-cyan);
+  box-shadow: 0 0 18px rgba(0, 212, 255, 0.18);
+}
+
+/* ── Paineis largos (Citydex / Conquistas / Estados) ── */
+.modal-panel--wide {
+  max-width: 680px;
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+}
+.dex-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-left: 8px;
+  letter-spacing: 0.4px;
+}
+.overlay-list {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+  padding-right: 4px;
+  min-height: 120px;
+}
+.overlay-empty {
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-align: center;
+  padding: 28px 12px;
+  margin: 0;
+}
+
+/* ── Barra de progresso ── */
+.progress {
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(0, 212, 255, 0.1);
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.progress__fill {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--accent-teal), var(--accent-cyan));
+  transition: width 400ms var(--ease-out);
+}
+.progress--mini {
+  height: 4px;
+  margin-bottom: 0;
+  width: 90px;
+}
+
+/* ── Chips de raridade ── */
+.tier-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.tier-chip {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ── Controles do Citydex ── */
+.dex-controls {
+  display: flex;
+  gap: 8px;
+}
+.dex-input {
+  flex: 1;
+  background: rgba(0, 20, 40, 0.6);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 13px;
+  padding: 8px 12px;
+  outline: none;
+  transition: border-color 150ms ease;
+}
+.dex-input:focus { border-color: var(--glass-border-hover); }
+.dex-select { flex: 0 1 200px; }
+
+/* ── Linhas do Citydex / Estados ── */
+.dex-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: rgba(0, 212, 255, 0.04);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+.dex-row:hover {
+  background: rgba(0, 212, 255, 0.1);
+  border-color: var(--glass-border);
+}
+.rarity-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px currentColor;
+}
+.dex-row__city {
+  flex: 1;
+  font-weight: 600;
+  color: var(--text-bright);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dex-row__city em {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.dex-daily { margin-left: 6px; font-size: 11px; }
+.dex-row__meta {
+  color: var(--text-secondary);
+  font-size: 11px;
+  white-space: nowrap;
+}
+.dex-row__date {
+  color: var(--text-secondary);
+  font-size: 11px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Conquistas ── */
+.ach-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: rgba(245, 158, 11, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.12);
+}
+.ach-row--locked {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: transparent;
+  opacity: 0.55;
+  filter: grayscale(0.7);
+}
+.ach-row__emoji { font-size: 22px; flex-shrink: 0; width: 30px; text-align: center; }
+.ach-row__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.ach-row__text strong { color: var(--text-bright); font-size: 13px; }
+.ach-row__text small { color: var(--text-secondary); font-size: 11px; }
+
+/* ── Estados ── */
+.state-row__uf {
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--accent-cyan);
+  width: 30px;
+  flex-shrink: 0;
+}
+.state-row__sub {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 1px;
+}
+.state-row__progress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  flex-shrink: 0;
+}
+.state-row__progress small { color: var(--text-secondary); font-size: 10px; }
+
+/* ── Painel do estado em zoom ── */
+.state-panel {
+  position: fixed;
+  top: 130px;
+  left: 16px;
+  z-index: 13;
+  width: 210px;
+  padding: 14px 16px;
+  border-radius: var(--radius-base);
+  background: var(--glass-bright);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(18px) saturate(160%);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5);
+  animation: fadeSlideDown 250ms var(--ease-spring);
+}
+.state-panel h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: var(--text-bright);
+}
+.state-panel__uf {
+  font-size: 11px;
+  color: var(--accent-cyan);
+  font-weight: 700;
+  margin-left: 4px;
+}
+.state-panel dl {
+  margin: 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.state-panel dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.state-panel dt { color: var(--text-secondary); font-size: 11px; }
+.state-panel dd {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-bright);
+}
+.state-panel dd small { color: var(--text-secondary); font-weight: 500; }
+
+/* ── Legenda do heatmap ── */
+.heat-legend {
+  position: fixed;
+  right: 16px;
+  bottom: calc(96px + var(--safe-bottom));
+  z-index: 13;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-base);
+  background: var(--glass-bright);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  font-size: 11px;
+  color: var(--text-secondary);
+  max-width: min(520px, calc(100vw - 32px));
+  animation: fadeSlideDown 250ms var(--ease-spring);
+}
+.heat-legend__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 10px;
+  color: var(--text-primary);
+}
+.heat-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+.heat-legend__swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+/* ── Raridade e nova captura no modal ── */
+.rarity-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid;
+  margin-left: 8px;
+  vertical-align: 1px;
+}
+.new-capture {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+  color: #052012;
+  background: linear-gradient(135deg, #34d399, #10b981);
+  vertical-align: 1px;
+  animation: newCapturePop 400ms var(--ease-spring);
+}
+@keyframes newCapturePop {
+  from { transform: scale(0.4); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* ── Botao compartilhar (desafio diario) ── */
+.share-btn {
+  width: 100%;
+  margin-top: 4px;
+  padding: 11px 16px;
+  border-radius: var(--radius-base);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  background: rgba(0, 212, 255, 0.12);
+  color: var(--accent-cyan);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: background 160ms ease, transform 120ms ease, box-shadow 160ms ease;
+}
+.share-btn:hover {
+  background: rgba(0, 212, 255, 0.22);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.2);
+}
+.share-btn:active { transform: translateY(0); }

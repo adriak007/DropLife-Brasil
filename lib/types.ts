@@ -17,6 +17,24 @@ export interface CityModalData {
   population: number | null;
   curiosity: string;
   chance?: string;
+  key?: string;
+  daily?: string; // 'AAAA-MM-DD' quando veio do desafio diário
+  isNewCapture?: boolean;
+}
+
+export interface PickedCity {
+  key: string;
+  city: string;
+  state: string;
+  population: number;
+  chance: string;
+  curiosity: string;
+}
+
+export interface StateStats {
+  uf: string;
+  municipios: number;
+  population: number;
 }
 
 export type ModalState =
