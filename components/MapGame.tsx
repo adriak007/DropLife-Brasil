@@ -14,12 +14,7 @@ import StatesModal from '@/components/StatesModal';
 import StatePanel from '@/components/StatePanel';
 import HeatLegend from '@/components/HeatLegend';
 import RankingModal from '@/components/RankingModal';
-import {
-  getSessionProfile,
-  joinRanking,
-  recordBirth,
-  type OnlineProfile,
-} from '@/lib/online';
+import { getAuthState, onAuthChange, recordBirth, type AuthState } from '@/lib/online';
 
 const LOGO_SRC = '/Img/LOGO 1.png';
 const BIRTH_COOLDOWN_MS = 1500;
@@ -93,14 +88,20 @@ export default function MapGame() {
   const [heatmap, setHeatmap] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [cooldown, setCooldown] = useState(false);
-  const [profile, setProfile] = useState<OnlineProfile | null>(null);
+  const [auth, setAuth] = useState<AuthState>({ signedIn: false, profile: null });
   const sonarRef = useRef<HTMLSpanElement>(null);
 
-  // Recupera o perfil do ranking (conta anônima persistida no navegador)
+  const refreshAuth = async () => {
+    setAuth(await getAuthState());
+  };
+
+  // Recupera a sessão do ranking e escuta mudanças de login
   useEffect(() => {
-    getSessionProfile().then((p) => {
-      if (p) setProfile(p);
+    refreshAuth();
+    const unsubscribe = onAuthChange(() => {
+      refreshAuth();
     });
+    return unsubscribe;
   }, []);
 
   const saveRef = useRef(save);
@@ -222,9 +223,15 @@ export default function MapGame() {
     unlocked.forEach((a) => showToast(`🏆 Conquista desbloqueada: ${a.emoji} ${a.name}`));
 
     // Ranking global: registra o nascimento (o servidor valida e conta)
-    if (profile && !already) {
+    if (auth.profile && !already) {
       recordBirth(picked.key).then((ok) => {
-        if (ok) setProfile((p) => (p ? { ...p, total_births: p.total_births + 1 } : p));
+        if (ok) {
+          setAuth((a) =>
+            a.profile
+              ? { ...a, profile: { ...a.profile, total_births: a.profile.total_births + 1 } }
+              : a
+          );
+        }
       });
     }
 
@@ -309,16 +316,13 @@ export default function MapGame() {
     controllerRef.current?.focusStateByKey(uf);
   };
 
-  const handleJoinRanking = async (nickname: string): Promise<string | null> => {
-    const result = await joinRanking(nickname);
-    if (result.ok) {
-      const p = await getSessionProfile();
-      setProfile(p);
-      showToast(`🌍 Bem-vindo ao ranking, ${nickname.trim()}!`);
-      return null;
+  const handleAuthChanged = async () => {
+    const before = auth.profile?.nickname;
+    const next = await getAuthState();
+    setAuth(next);
+    if (!before && next.profile) {
+      showToast(`🌍 Bem-vindo ao ranking, ${next.profile.nickname}!`);
     }
-    if (result.error === 'apelido_em_uso') return 'Esse apelido já está em uso. Tente outro!';
-    return 'Não foi possível entrar no ranking agora. Tente de novo.';
   };
 
   const toggleHeatmap = () => {
@@ -562,9 +566,9 @@ export default function MapGame() {
         )}
         {panel === 'ranking' && (
           <RankingModal
-            profile={profile}
+            auth={auth}
             resolveCity={(key) => controllerRef.current?.getCityInfo(key) ?? null}
-            onJoin={handleJoinRanking}
+            onAuthChanged={handleAuthChanged}
             onClose={() => setPanel(null)}
           />
         )}
