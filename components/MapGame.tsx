@@ -13,11 +13,18 @@ import AchievementsModal from '@/components/AchievementsModal';
 import StatesModal from '@/components/StatesModal';
 import StatePanel from '@/components/StatePanel';
 import HeatLegend from '@/components/HeatLegend';
+import RankingModal from '@/components/RankingModal';
+import {
+  getSessionProfile,
+  joinRanking,
+  recordBirth,
+  type OnlineProfile,
+} from '@/lib/online';
 
 const LOGO_SRC = '/Img/LOGO 1.png';
 const BIRTH_COOLDOWN_MS = 1500;
 
-type PanelKind = 'citydex' | 'conquistas' | 'estados' | null;
+type PanelKind = 'citydex' | 'conquistas' | 'estados' | 'ranking' | null;
 
 const spawnRipple = (evt: React.PointerEvent<HTMLButtonElement>) => {
   const btn = evt.currentTarget;
@@ -86,7 +93,15 @@ export default function MapGame() {
   const [heatmap, setHeatmap] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [cooldown, setCooldown] = useState(false);
+  const [profile, setProfile] = useState<OnlineProfile | null>(null);
   const sonarRef = useRef<HTMLSpanElement>(null);
+
+  // Recupera o perfil do ranking (conta anônima persistida no navegador)
+  useEffect(() => {
+    getSessionProfile().then((p) => {
+      if (p) setProfile(p);
+    });
+  }, []);
 
   const saveRef = useRef(save);
   saveRef.current = save;
@@ -206,6 +221,13 @@ export default function MapGame() {
     setSave(next);
     unlocked.forEach((a) => showToast(`🏆 Conquista desbloqueada: ${a.emoji} ${a.name}`));
 
+    // Ranking global: registra o nascimento (o servidor valida e conta)
+    if (profile && !already) {
+      recordBirth(picked.key).then((ok) => {
+        if (ok) setProfile((p) => (p ? { ...p, total_births: p.total_births + 1 } : p));
+      });
+    }
+
     const data: CityModalData = {
       city: picked.city,
       state: picked.state,
@@ -287,6 +309,18 @@ export default function MapGame() {
     controllerRef.current?.focusStateByKey(uf);
   };
 
+  const handleJoinRanking = async (nickname: string): Promise<string | null> => {
+    const result = await joinRanking(nickname);
+    if (result.ok) {
+      const p = await getSessionProfile();
+      setProfile(p);
+      showToast(`🌍 Bem-vindo ao ranking, ${nickname.trim()}!`);
+      return null;
+    }
+    if (result.error === 'apelido_em_uso') return 'Esse apelido já está em uso. Tente outro!';
+    return 'Não foi possível entrar no ranking agora. Tente de novo.';
+  };
+
   const toggleHeatmap = () => {
     const next = !heatmap;
     setHeatmap(next);
@@ -341,6 +375,14 @@ export default function MapGame() {
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
           </NavButton>
 
+          <NavButton label="Ranking" onClick={() => setPanel('ranking')}>
+            <path d="M8 21h8" />
+            <path d="M12 17v4" />
+            <path d="M7 4h10v5a5 5 0 0 1-10 0z" />
+            <path d="M17 6h3a1 1 0 0 1 1 1c0 2-2 3-4 3" />
+            <path d="M7 6H4a1 1 0 0 0-1 1c0 2 2 3 4 3" />
+          </NavButton>
+
           <button
             id="birthBtn"
             className={cooldown ? 'birth-cooldown' : ''}
@@ -364,7 +406,7 @@ export default function MapGame() {
             <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
           </NavButton>
 
-          <NavButton label={dailyDone ? 'Desafio ✓' : 'Desafio'} wide onClick={handleDaily}>
+          <NavButton label={dailyDone ? 'Desafio ✓' : 'Desafio'} onClick={handleDaily}>
             <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
             <line x1="16" y1="2" x2="16" y2="6" />
             <line x1="8" y1="2" x2="8" y2="6" />
@@ -515,6 +557,14 @@ export default function MapGame() {
             save={save}
             stats={stateStats}
             onSelect={locateState}
+            onClose={() => setPanel(null)}
+          />
+        )}
+        {panel === 'ranking' && (
+          <RankingModal
+            profile={profile}
+            resolveCity={(key) => controllerRef.current?.getCityInfo(key) ?? null}
+            onJoin={handleJoinRanking}
             onClose={() => setPanel(null)}
           />
         )}

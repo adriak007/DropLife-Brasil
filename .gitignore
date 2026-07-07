@@ -10,3 +10,7 @@
 *.log
 next-env.d.ts
 *.tsbuildinfo
+
+# chaves locais (Supabase etc.)
+.env
+.env*.local

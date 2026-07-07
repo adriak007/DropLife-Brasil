@@ -523,6 +523,11 @@ export class MapController {
     return [...this.stateStats.values()].sort((a, b) => a.uf.localeCompare(b.uf));
   }
 
+  getCityInfo(key: string): { city: string; state: string } | null {
+    const hit = this.allCities.find((c) => c.key === key);
+    return hit ? { city: hit.city, state: hit.state } : null;
+  }
+
   focusStateByKey(uf: string): void {
     this.focusState(uf);
   }
