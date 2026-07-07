@@ -160,9 +160,14 @@ export const signIn = async (email: string, password: string): Promise<AuthResul
   }
 };
 
-// Preparado para quando o provedor Google for configurado no Supabase
+// Preparado para quando o provedor Google for configurado no Supabase.
+// Ligue com NEXT_PUBLIC_GOOGLE_LOGIN=1 (senão o botão avisa "em breve"
+// sem navegar para uma página de erro).
 export const signInWithGoogle = async (): Promise<{ ok: boolean; error?: AuthError }> => {
   if (!supabase) return { ok: false, error: 'offline' };
+  if (process.env.NEXT_PUBLIC_GOOGLE_LOGIN !== '1') {
+    return { ok: false, error: 'google_indisponivel' };
+  }
   try {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',

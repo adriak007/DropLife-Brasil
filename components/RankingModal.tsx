@@ -206,7 +206,7 @@ export default function RankingModal({ auth, resolveCity, onAuthChanged, onClose
               />
 
               <button
-                className="share-btn"
+                className="share-btn auth-submit"
                 type="button"
                 disabled={busy || !email.includes('@') || password.length < 6}
                 onClick={handleSubmit}
