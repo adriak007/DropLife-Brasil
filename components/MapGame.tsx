@@ -15,6 +15,7 @@ import StatePanel from '@/components/StatePanel';
 import HeatLegend from '@/components/HeatLegend';
 
 const LOGO_SRC = '/Img/LOGO 1.png';
+const BIRTH_COOLDOWN_MS = 1500;
 
 type PanelKind = 'citydex' | 'conquistas' | 'estados' | null;
 
@@ -84,9 +85,31 @@ export default function MapGame() {
   const [panel, setPanel] = useState<PanelKind>(null);
   const [heatmap, setHeatmap] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
+  const [cooldown, setCooldown] = useState(false);
+  const sonarRef = useRef<HTMLSpanElement>(null);
 
   const saveRef = useRef(save);
   saveRef.current = save;
+
+  // Varredura do sonar: preenche o "gráfico de pizza" de 0 a 360 graus
+  // durante o cooldown do botão Nascer.
+  useEffect(() => {
+    if (!cooldown) return;
+    const el = sonarRef.current;
+    const start = performance.now();
+    let raf = 0;
+    const step = (now: number) => {
+      const t = Math.min(1, (now - start) / BIRTH_COOLDOWN_MS);
+      el?.style.setProperty('--sweep', `${t * 360}deg`);
+      if (t < 1) raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    const timer = window.setTimeout(() => setCooldown(false), BIRTH_COOLDOWN_MS);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.clearTimeout(timer);
+    };
+  }, [cooldown]);
 
   // fila de toasts (conquistas podem desbloquear várias de uma vez)
   const toastQueue = useRef<string[]>([]);
@@ -198,7 +221,8 @@ export default function MapGame() {
 
   const handleBirth = () => {
     const controller = controllerRef.current;
-    if (!controller) return;
+    if (!controller || cooldown) return;
+    setCooldown(true);
     const picked = controller.pickBirth();
     if (!picked) {
       setModal({
@@ -248,6 +272,7 @@ export default function MapGame() {
       `🇧🇷 DropLife Brasil — Desafio Diário ${d}/${m}/${y}`,
       `👶 Nasci em ${data.city} (${data.state})`,
       `🎲 Chance: ${data.chance}% · ${tier.label}`,
+      `🎮 www.droplife.life`,
     ].join('\n');
     try {
       await navigator.clipboard.writeText(text);
@@ -316,7 +341,17 @@ export default function MapGame() {
             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
           </NavButton>
 
-          <button id="birthBtn" type="button" onPointerDown={spawnRipple} onClick={handleBirth}>
+          <button
+            id="birthBtn"
+            className={cooldown ? 'birth-cooldown' : ''}
+            type="button"
+            aria-disabled={cooldown}
+            onPointerDown={(evt) => {
+              if (!cooldown) spawnRipple(evt);
+            }}
+            onClick={handleBirth}
+          >
+            {cooldown && <span ref={sonarRef} className="sonar-sweep" aria-hidden="true"></span>}
             <span className="btn-label">Nascer</span>
           </button>
 

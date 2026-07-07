@@ -1007,3 +1007,88 @@ body::after {
   box-shadow: 0 6px 20px rgba(0, 212, 255, 0.2);
 }
 .share-btn:active { transform: translateY(0); }
+
+/* ── Cooldown sonar do botao Nascer ── */
+#birthBtn.birth-cooldown {
+  animation: none;
+  cursor: default;
+  background: radial-gradient(circle at 50% 45%, #0b4426 0%, #063018 55%, #021a0c 100%);
+  color: #a8ffd0;
+  box-shadow:
+    0 0 28px rgba(0, 230, 118, 0.35),
+    inset 0 0 20px rgba(0, 0, 0, 0.55);
+}
+#birthBtn.birth-cooldown:hover,
+#birthBtn.birth-cooldown:active {
+  transform: none;
+  box-shadow:
+    0 0 28px rgba(0, 230, 118, 0.35),
+    inset 0 0 20px rgba(0, 0, 0, 0.55);
+}
+#birthBtn.birth-cooldown::before {
+  background: conic-gradient(from 0deg, #00e676, #00c853, #00963f, #005f27, #00e676);
+  opacity: 0.35;
+}
+#birthBtn.birth-cooldown::after {
+  border-color: rgba(0, 230, 118, 0.35);
+}
+
+/* Tela do sonar: fundo de radar + aneis concentricos + mira */
+#birthBtn .sonar-sweep {
+  --sweep: 0deg;
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    /* preenchimento tipo grafico de pizza (progresso do cooldown) */
+    conic-gradient(rgba(0, 255, 140, 0.28) var(--sweep), transparent 0),
+    /* aneis concentricos do radar */
+    repeating-radial-gradient(
+      circle at 50% 50%,
+      transparent 0 22%,
+      rgba(0, 255, 140, 0.14) 22% 23.5%
+    ),
+    /* linhas de mira */
+    linear-gradient(rgba(0, 255, 140, 0.1), rgba(0, 255, 140, 0.1)) 50% 0 / 1px 100% no-repeat,
+    linear-gradient(rgba(0, 255, 140, 0.1), rgba(0, 255, 140, 0.1)) 0 50% / 100% 1px no-repeat,
+    radial-gradient(circle at 50% 50%, rgba(0, 70, 36, 0.95), rgba(1, 22, 11, 0.98));
+}
+
+/* Braco luminoso do sonar na borda do preenchimento, com rastro */
+#birthBtn .sonar-sweep::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from calc(var(--sweep) - 42deg),
+    transparent 0deg,
+    rgba(0, 255, 140, 0.08) 18deg,
+    rgba(120, 255, 190, 0.55) 40deg,
+    rgba(200, 255, 225, 0.95) 42deg,
+    transparent 43deg
+  );
+  filter: drop-shadow(0 0 6px rgba(0, 255, 140, 0.8));
+}
+
+/* Blip central pulsando */
+#birthBtn .sonar-sweep::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+  background: #7dffbe;
+  box-shadow: 0 0 10px rgba(0, 255, 140, 0.9);
+  animation: sonarBlip 750ms ease-in-out infinite;
+}
+@keyframes sonarBlip {
+  0%, 100% { opacity: 0.5; transform: scale(0.8); }
+  50%       { opacity: 1; transform: scale(1.3); }
+}
