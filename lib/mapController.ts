@@ -543,11 +543,20 @@ export class MapController {
   private async loadMap(): Promise<void> {
     const { container, setStatus } = this.opts;
     try {
-      const res = await fetch(MAP_URL);
-      if (!res.ok) throw new Error('Resposta HTTP nao OK ao carregar o mapa');
-      const svgText = await res.text();
-      const municipiosPromise = fetch(MUNICIPIOS_URL);
+      // As três cargas são independentes entre si — dispara todas de uma vez
+      // em vez de esperar uma para começar a próxima (antes era sequencial:
+      // mapa -> municipios -> curiosidades).
+      const svgPromise = fetch(MAP_URL).then((r) => {
+        if (!r.ok) throw new Error('Resposta HTTP nao OK ao carregar o mapa');
+        return r.text();
+      });
+      const municipiosPromise = fetch(MUNICIPIOS_URL).then((r) => {
+        if (!r.ok) throw new Error('Nao foi possivel carregar municipios.json');
+        return r.json() as Promise<Municipio[]>;
+      });
+      const curiositiesPromise = loadCuriosities();
 
+      const svgText = await svgPromise;
       if (this.destroyed) return;
       container.innerHTML = svgText;
       const svg = container.querySelector('svg');
@@ -585,11 +594,10 @@ export class MapController {
       `;
       svg.appendChild(styleEl);
 
-      const resMunicipios = await municipiosPromise;
-      if (!resMunicipios.ok) throw new Error('Nao foi possivel carregar municipios.json');
-      const municipios: Municipio[] = await resMunicipios.json();
+      const [municipios, curiosities] = await Promise.all([municipiosPromise, curiositiesPromise]);
+      if (this.destroyed) return;
       this.populationIndex = buildPopulationIndex(municipios);
-      this.curiosities = await loadCuriosities();
+      this.curiosities = curiosities;
       if (this.destroyed) return;
 
       const regions = svg.querySelectorAll<SVGPathElement>('path[data-name]');
