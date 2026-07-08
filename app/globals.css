@@ -32,6 +32,10 @@
 
 * { box-sizing: border-box; }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -466,7 +470,10 @@ body::after {
   justify-content: center;
   align-items: center;
   padding: 16px;
-  z-index: 10;
+  /* Acima de controls/zoom-reset/profile-chip/tooltip (12-20): um modal aberto
+     deve cobrir toda a interface, senao a barra inferior fica visivel por
+     cima do conteudo no mobile e ainda rouba o toque de quem tenta rolar. */
+  z-index: 21;
 }
 .modal-backdrop--open { display: flex; }
 
@@ -638,11 +645,16 @@ body::after {
   }
   .nav-btn {
     width: 100%;
-    height: 42px;
+    height: 44px;
     font-size: clamp(10px, 2.4vw, 12px);
     padding: 0 8px;
     min-width: unset;
   }
+  /* A logo original e uma faixa larga (proporcao ~3.8:1); nos 96px de altura
+     do desktop ela ultrapassa a largura de telas de celular e fica embaixo
+     do chip de perfil / botao Voltar. Reduzida, some a rolagem lateral e a
+     sobreposicao, sem mudar nada no desktop. */
+  .game-logo img { height: 52px; }
   #birthBtn {
     --btn-size: 80px;
     grid-column: 1 / -1;
@@ -659,7 +671,17 @@ body::after {
     bottom: calc(270px + var(--safe-bottom));
     justify-content: center;
   }
-  .toast { bottom: calc(280px + var(--safe-bottom)); }
+  /* Ancorado embaixo, o toast caia bem no meio do modal de nascimento
+     (que fica centralizado na tela e varia de altura). Ancorar no topo,
+     abaixo da logo/chip, evita colidir com qualquer modal centralizado. */
+  .toast {
+    top: calc(78px + env(safe-area-inset-top, 0px));
+    bottom: auto;
+    transform: translateX(-50%) translateY(-14px);
+  }
+  .toast.toast--visible {
+    transform: translateX(-50%) translateY(0);
+  }
   .modal-panel--wide { max-height: 82vh; }
 }
 
