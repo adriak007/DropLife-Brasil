@@ -529,9 +529,7 @@ export default function MapGame() {
                 <button className="share-btn" type="button" onClick={() => handleShare(cityData)}>
                   📋 Compartilhar resultado
                 </button>
-              ) : (
-                <p className="modal-city__placeholder">Mais dados em breve&hellip;</p>
-              )}
+              ) : null}
             </div>
           </div>
         </div>

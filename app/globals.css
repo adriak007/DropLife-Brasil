@@ -2,9 +2,9 @@
   color-scheme: light;
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-side: env(safe-area-inset-left, 0px);
-  --radius-sm: 8px;
-  --radius-base: 14px;
-  --radius-lg: 20px;
+  --radius-sm: 5px;
+  --radius-base: 8px;
+  --radius-lg: 10px;
   --nav-btn-height: 46px;
   --topnav-height: 72px;
   --mobile-topbar-height: 58px;
