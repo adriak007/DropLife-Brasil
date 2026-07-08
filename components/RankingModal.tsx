@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import {
   fetchCityRanking,
   fetchPlayerRanking,
@@ -234,6 +235,13 @@ export default function RankingModal({ auth, resolveCity, onAuthChanged, onClose
               <p className="guest-note">
                 Ou continue como <strong>visitante</strong> — o jogo funciona normalmente, só
                 não entra no ranking.
+              </p>
+              <p className="guest-note">
+                Ao criar uma conta você concorda com nossa{' '}
+                <Link href="/politica-de-privacidade" target="_blank">
+                  Política de Privacidade
+                </Link>
+                .
               </p>
             </div>
           )}

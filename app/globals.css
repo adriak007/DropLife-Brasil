@@ -1399,3 +1399,100 @@ body::after {
   .profile-chip__name { max-width: 68px; }
   .profile-chip__btn { padding: 6px 12px 6px 6px; font-size: 11px; }
 }
+
+/* ── Anuncio intersticial ── */
+.ad-interstitial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 380px;
+}
+.ad-interstitial__label {
+  align-self: flex-start;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+}
+.ad-interstitial__slot {
+  width: 100%;
+  min-height: 280px;
+  border-radius: var(--radius-base);
+  border: 1px dashed var(--glass-border-hover);
+  background: rgba(0, 212, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ad-interstitial__placeholder {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+.ad-interstitial__btn {
+  width: 100%;
+  margin-top: 0;
+}
+.ad-interstitial__btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* ── Paginas legais (Politica de Privacidade) ── */
+.legal-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+.legal-page__card {
+  max-width: 640px;
+  width: 100%;
+  background: rgba(3, 15, 32, 0.92);
+  border: 1px solid var(--glass-border-hover);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.65);
+  line-height: 1.7;
+}
+.legal-page__back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+.legal-page__back:hover { text-decoration: underline; }
+.legal-page h1 {
+  color: var(--text-bright);
+  font-size: 24px;
+  margin: 0 0 4px;
+}
+.legal-page__updated {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin: 0 0 24px;
+}
+.legal-page h2 {
+  color: var(--text-bright);
+  font-size: 16px;
+  margin: 24px 0 8px;
+}
+.legal-page p {
+  color: var(--text-primary);
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+.legal-page a { color: var(--accent-cyan); }
+.legal-page code {
+  background: rgba(0, 212, 255, 0.1);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+}

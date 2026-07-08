@@ -14,6 +14,8 @@ import StatesModal from '@/components/StatesModal';
 import StatePanel from '@/components/StatePanel';
 import HeatLegend from '@/components/HeatLegend';
 import RankingModal from '@/components/RankingModal';
+import AdInterstitial from '@/components/AdInterstitial';
+import { bumpBirthCounterAndCheckAd } from '@/lib/ads';
 import {
   getAuthState,
   onAuthChange,
@@ -96,6 +98,7 @@ export default function MapGame() {
   const [heatmap, setHeatmap] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [cooldown, setCooldown] = useState(false);
+  const [showAd, setShowAd] = useState(false);
   const [auth, setAuth] = useState<AuthState>({ signedIn: false, profile: null });
   const [profileMenuOpen, setProfileMenuOpen] = useState(false);
   const sonarRef = useRef<HTMLSpanElement>(null);
@@ -265,10 +268,9 @@ export default function MapGame() {
     setModal({ type: 'city', data });
   };
 
-  const handleBirth = () => {
+  const performBirth = () => {
     const controller = controllerRef.current;
-    if (!controller || cooldown) return;
-    setCooldown(true);
+    if (!controller) return;
     const picked = controller.pickBirth();
     if (!picked) {
       setModal({
@@ -279,6 +281,24 @@ export default function MapGame() {
       return;
     }
     registerBirth(picked);
+  };
+
+  const handleBirth = () => {
+    const controller = controllerRef.current;
+    if (!controller || cooldown) return;
+    setCooldown(true);
+    // A cada N nascimentos, mostra o anuncio intersticial antes de sortear —
+    // o sorteio em si so acontece quando o anuncio for fechado.
+    if (bumpBirthCounterAndCheckAd()) {
+      setShowAd(true);
+      return;
+    }
+    performBirth();
+  };
+
+  const handleAdContinue = () => {
+    setShowAd(false);
+    performBirth();
   };
 
   const handleDaily = () => {
@@ -668,6 +688,8 @@ export default function MapGame() {
           />
         )}
       </div>
+
+      {showAd && <AdInterstitial onContinue={handleAdContinue} />}
     </>
   );
 }
