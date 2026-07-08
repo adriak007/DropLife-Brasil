@@ -842,6 +842,47 @@ body::after {
 }
 .ach-row__text strong { color: var(--text-bright); font-size: 13px; }
 .ach-row__text small { color: var(--text-secondary); font-size: 11px; }
+.ach-row--platina {
+  background: rgba(0, 212, 255, 0.07);
+  border-color: rgba(0, 212, 255, 0.25);
+}
+.ach-row--platina.ach-row--locked {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(0, 212, 255, 0.12);
+}
+.ach-row__progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 3px;
+}
+.ach-row__progress small { color: var(--accent-cyan); font-size: 10px; white-space: nowrap; }
+
+.ach-category-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ach-category-group + .ach-category-group { margin-top: 4px; }
+.ach-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--glass-border);
+  margin-top: 6px;
+}
+.ach-category-group:first-child .ach-category {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+.ach-category__count { color: var(--accent-cyan); font-weight: 700; }
 
 /* ── Estados ── */
 .state-row__uf {

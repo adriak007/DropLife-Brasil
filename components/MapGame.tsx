@@ -5,7 +5,7 @@ import { MapController } from '@/lib/mapController';
 import { formatPop } from '@/lib/text';
 import type { CityModalData, ModalState, PickedCity, StateStats } from '@/lib/types';
 import { loadSave, persistSave, emptySave, type BirthRecord, type SaveData } from '@/lib/storage';
-import { newlyUnlocked } from '@/lib/achievements';
+import { newlyUnlocked, type AchievementContext } from '@/lib/achievements';
 import { rarityFor } from '@/lib/rarity';
 import { seededRng, todayKey } from '@/lib/daily';
 import CitydexModal from '@/components/CitydexModal';
@@ -99,6 +99,12 @@ export default function MapGame() {
   const [profileMenuOpen, setProfileMenuOpen] = useState(false);
   const sonarRef = useRef<HTMLSpanElement>(null);
   const profileChipRef = useRef<HTMLDivElement>(null);
+
+  // Totais reais (não hardcoded) usados pelas conquistas de estado/região/país
+  const achievementCtx: AchievementContext = {
+    totalCities,
+    stateTotals: Object.fromEntries(stateStats.map((s) => [s.uf, s.municipios])),
+  };
 
   const refreshAuth = async () => {
     setAuth(await getAuthState());
@@ -219,7 +225,7 @@ export default function MapGame() {
       births,
       ...(daily ? { lastDaily: daily, dailyResult: record } : {}),
     };
-    const unlocked = newlyUnlocked(births, next);
+    const unlocked = newlyUnlocked(births, next, achievementCtx);
     if (unlocked.length) {
       const stamp = new Date().toISOString();
       next.achievements = {
@@ -640,7 +646,9 @@ export default function MapGame() {
             onLocate={locateState}
           />
         )}
-        {panel === 'conquistas' && <AchievementsModal save={save} onClose={() => setPanel(null)} />}
+        {panel === 'conquistas' && (
+          <AchievementsModal save={save} ctx={achievementCtx} onClose={() => setPanel(null)} />
+        )}
         {panel === 'estados' && (
           <StatesModal
             save={save}
