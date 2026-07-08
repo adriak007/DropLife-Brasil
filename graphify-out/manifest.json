@@ -1,0 +1,297 @@
+{
+  "app/layout.tsx": {
+    "mtime": 1783392610.1329837,
+    "ast_hash": "2b0322edfd14931b15501b639836c6de",
+    "semantic_hash": "2b0322edfd14931b15501b639836c6de"
+  },
+  "app/page.tsx": {
+    "mtime": 1783392610.1340158,
+    "ast_hash": "ab81425ef2033e0162b392a86e9a51ef",
+    "semantic_hash": "ab81425ef2033e0162b392a86e9a51ef"
+  },
+  "components/AchievementsModal.tsx": {
+    "mtime": 1783392610.135024,
+    "ast_hash": "7d1afec8519490bd0495e05a84d0970a",
+    "semantic_hash": "7d1afec8519490bd0495e05a84d0970a"
+  },
+  "components/CitydexModal.tsx": {
+    "mtime": 1783392610.1360202,
+    "ast_hash": "fa3774e501964ea31d85e0099bcb234e",
+    "semantic_hash": "fa3774e501964ea31d85e0099bcb234e"
+  },
+  "components/HeatLegend.tsx": {
+    "mtime": 1783392610.1370215,
+    "ast_hash": "2c92920009feaca406e2a4faaeb54dcf",
+    "semantic_hash": "2c92920009feaca406e2a4faaeb54dcf"
+  },
+  "components/MapGame.tsx": {
+    "mtime": 1783433489.690626,
+    "ast_hash": "e33d79066e2eb175a9089b9860c432f1",
+    "semantic_hash": "e33d79066e2eb175a9089b9860c432f1"
+  },
+  "components/RankingModal.tsx": {
+    "mtime": 1783460855.1910086,
+    "ast_hash": "a2ee886ec0089cbc9425308b732cab7b",
+    "semantic_hash": "a2ee886ec0089cbc9425308b732cab7b"
+  },
+  "components/StatePanel.tsx": {
+    "mtime": 1783392610.1386392,
+    "ast_hash": "abb6750f5d5bcea17b568373dca3e1df",
+    "semantic_hash": "abb6750f5d5bcea17b568373dca3e1df"
+  },
+  "components/StatesModal.tsx": {
+    "mtime": 1783392610.139647,
+    "ast_hash": "d2bdf3819420090ee9765764d247a3d0",
+    "semantic_hash": "d2bdf3819420090ee9765764d247a3d0"
+  },
+  "lib/achievements.ts": {
+    "mtime": 1783392610.1416466,
+    "ast_hash": "09c625834dd8605e7f90b35f5e88ded5",
+    "semantic_hash": "09c625834dd8605e7f90b35f5e88ded5"
+  },
+  "lib/curiosities.ts": {
+    "mtime": 1783392610.1416466,
+    "ast_hash": "e86fda8708ec92d49828e40cba31f0a7",
+    "semantic_hash": "e86fda8708ec92d49828e40cba31f0a7"
+  },
+  "lib/daily.ts": {
+    "mtime": 1783392610.1431527,
+    "ast_hash": "008e8e3c3d65d9f1219e727e2ebb28a0",
+    "semantic_hash": "008e8e3c3d65d9f1219e727e2ebb28a0"
+  },
+  "lib/geo.ts": {
+    "mtime": 1783392610.1451623,
+    "ast_hash": "5b972f0b846f997398d26dccf251efda",
+    "semantic_hash": "5b972f0b846f997398d26dccf251efda"
+  },
+  "lib/heatmap.ts": {
+    "mtime": 1783392610.1461608,
+    "ast_hash": "0efd5cce20f269524408753c415e3199",
+    "semantic_hash": "0efd5cce20f269524408753c415e3199"
+  },
+  "lib/mapController.ts": {
+    "mtime": 1783433489.692647,
+    "ast_hash": "d30be4d27d9fb13e1f70a4264fabc889",
+    "semantic_hash": "d30be4d27d9fb13e1f70a4264fabc889"
+  },
+  "lib/online.ts": {
+    "mtime": 1783460855.1920109,
+    "ast_hash": "045d08908a96407233e17271a228a457",
+    "semantic_hash": "045d08908a96407233e17271a228a457"
+  },
+  "lib/population.ts": {
+    "mtime": 1783392610.1481626,
+    "ast_hash": "354e4bc68e32e20939421e6a79f43bd2",
+    "semantic_hash": "354e4bc68e32e20939421e6a79f43bd2"
+  },
+  "lib/rarity.ts": {
+    "mtime": 1783392610.1491635,
+    "ast_hash": "aa2233e5e8f8dffeaec2e879ab4e7c76",
+    "semantic_hash": "aa2233e5e8f8dffeaec2e879ab4e7c76"
+  },
+  "lib/storage.ts": {
+    "mtime": 1783392610.150161,
+    "ast_hash": "febb23c0265be97e20089402d60ada39",
+    "semantic_hash": "febb23c0265be97e20089402d60ada39"
+  },
+  "lib/supabaseClient.ts": {
+    "mtime": 1783433489.692647,
+    "ast_hash": "e583848b6353f36fc4385d69d1c3bf20",
+    "semantic_hash": "e583848b6353f36fc4385d69d1c3bf20"
+  },
+  "lib/text.ts": {
+    "mtime": 1783392610.1511598,
+    "ast_hash": "21c0484d9e35ec5a6ff143ef4bc1536b",
+    "semantic_hash": "21c0484d9e35ec5a6ff143ef4bc1536b"
+  },
+  "lib/types.ts": {
+    "mtime": 1783392610.1511598,
+    "ast_hash": "91caaf0830e687b810d07dac2399fb55",
+    "semantic_hash": "91caaf0830e687b810d07dac2399fb55"
+  },
+  "next.config.ts": {
+    "mtime": 1783392610.1521618,
+    "ast_hash": "293828f36ebd88d5e79ea7fa5b11d4c3",
+    "semantic_hash": "293828f36ebd88d5e79ea7fa5b11d4c3"
+  },
+  "package.json": {
+    "mtime": 1783433489.692647,
+    "ast_hash": "d65df0e2e5e90dca7c67bf8da30b0557",
+    "semantic_hash": "d65df0e2e5e90dca7c67bf8da30b0557"
+  },
+  "public/Curiosidades/AC_curiosidades.json": {
+    "mtime": 1783392610.1546767,
+    "ast_hash": "2ef8863919aca6f555cc0ff06e47b217",
+    "semantic_hash": "2ef8863919aca6f555cc0ff06e47b217"
+  },
+  "public/Curiosidades/AL_curiosidades.json": {
+    "mtime": 1783392610.1556828,
+    "ast_hash": "85014edbacc66b1d48e849492220eae6",
+    "semantic_hash": "85014edbacc66b1d48e849492220eae6"
+  },
+  "public/Curiosidades/AM_curiosidades.json": {
+    "mtime": 1783392610.1566825,
+    "ast_hash": "eb8de91dc6fac1d870c94837aae46701",
+    "semantic_hash": "eb8de91dc6fac1d870c94837aae46701"
+  },
+  "public/Curiosidades/AP_curiosidades.json": {
+    "mtime": 1783392610.1576824,
+    "ast_hash": "62683b8723dccf8ff4c58697caa4e6c4",
+    "semantic_hash": "62683b8723dccf8ff4c58697caa4e6c4"
+  },
+  "public/Curiosidades/BA_curiosidades.json": {
+    "mtime": 1783392610.1586826,
+    "ast_hash": "5d64a185a01d7dbcdd2adab703b1b565",
+    "semantic_hash": "5d64a185a01d7dbcdd2adab703b1b565"
+  },
+  "public/Curiosidades/CE_curiosidades.json": {
+    "mtime": 1783392610.1586826,
+    "ast_hash": "bde30597d713ad1db49525016be0abc9",
+    "semantic_hash": "bde30597d713ad1db49525016be0abc9"
+  },
+  "public/Curiosidades/DF_curiosidades.json": {
+    "mtime": 1783392610.159682,
+    "ast_hash": "d44aa4cc71159e7cc1f4b9db9104dfc4",
+    "semantic_hash": "d44aa4cc71159e7cc1f4b9db9104dfc4"
+  },
+  "public/Curiosidades/ES_curiosidades.json": {
+    "mtime": 1783392610.1606824,
+    "ast_hash": "4e7bcb197cb229bffedc5024d43dab4a",
+    "semantic_hash": "4e7bcb197cb229bffedc5024d43dab4a"
+  },
+  "public/Curiosidades/GO_curiosidades.json": {
+    "mtime": 1783392610.1616833,
+    "ast_hash": "6be9108695060991e18345f35e74803a",
+    "semantic_hash": "6be9108695060991e18345f35e74803a"
+  },
+  "public/Curiosidades/MA_curiosidades.json": {
+    "mtime": 1783392610.1616833,
+    "ast_hash": "8e0baf6dde01c79ef76f42c2443afef9",
+    "semantic_hash": "8e0baf6dde01c79ef76f42c2443afef9"
+  },
+  "public/Curiosidades/MG_curiosidades.json": {
+    "mtime": 1783392610.1626835,
+    "ast_hash": "152aafa300e80b7ec0080946246aca74",
+    "semantic_hash": "152aafa300e80b7ec0080946246aca74"
+  },
+  "public/Curiosidades/MS_curiosidades.json": {
+    "mtime": 1783392610.1638806,
+    "ast_hash": "58eb7c050b5e38e5f0de925cd0190868",
+    "semantic_hash": "58eb7c050b5e38e5f0de925cd0190868"
+  },
+  "public/Curiosidades/MT_curiosidades.json": {
+    "mtime": 1783392610.1648812,
+    "ast_hash": "81531dcc402232b4f902f78bef8b5881",
+    "semantic_hash": "81531dcc402232b4f902f78bef8b5881"
+  },
+  "public/Curiosidades/PA_curiosidades.json": {
+    "mtime": 1783392610.165881,
+    "ast_hash": "82d90e0c5ee4aa38d71343c1635858cd",
+    "semantic_hash": "82d90e0c5ee4aa38d71343c1635858cd"
+  },
+  "public/Curiosidades/PB_curiosidades.json": {
+    "mtime": 1783392610.165881,
+    "ast_hash": "7f8ccaf3880f49b322eb790fbab11e9f",
+    "semantic_hash": "7f8ccaf3880f49b322eb790fbab11e9f"
+  },
+  "public/Curiosidades/PE_curiosidades.json": {
+    "mtime": 1783392610.166881,
+    "ast_hash": "7ca5e23e02ce29a58cde6ed236065114",
+    "semantic_hash": "7ca5e23e02ce29a58cde6ed236065114"
+  },
+  "public/Curiosidades/PI_curiosidades.json": {
+    "mtime": 1783392610.1678803,
+    "ast_hash": "aefa83d01ff1f8b0f8346127bfaf8c38",
+    "semantic_hash": "aefa83d01ff1f8b0f8346127bfaf8c38"
+  },
+  "public/Curiosidades/PR_curiosidades.json": {
+    "mtime": 1783392610.168881,
+    "ast_hash": "b77d81a0ba9b95181438650731bdfba3",
+    "semantic_hash": "b77d81a0ba9b95181438650731bdfba3"
+  },
+  "public/Curiosidades/RJ_curiosidades.json": {
+    "mtime": 1783392610.1698823,
+    "ast_hash": "b65b23f9ad54aac20145df255baddd6b",
+    "semantic_hash": "b65b23f9ad54aac20145df255baddd6b"
+  },
+  "public/Curiosidades/RN_curiosidades.json": {
+    "mtime": 1783392610.1708827,
+    "ast_hash": "764dae3488e225a49d3f41b443be2677",
+    "semantic_hash": "764dae3488e225a49d3f41b443be2677"
+  },
+  "public/Curiosidades/RO_curiosidades.json": {
+    "mtime": 1783392610.1718814,
+    "ast_hash": "daebff35ae73c833e38fcadf5a58312d",
+    "semantic_hash": "daebff35ae73c833e38fcadf5a58312d"
+  },
+  "public/Curiosidades/RR_curiosidades.json": {
+    "mtime": 1783392610.1728806,
+    "ast_hash": "5542b98d7dd02b510cddfb00d27b6e66",
+    "semantic_hash": "5542b98d7dd02b510cddfb00d27b6e66"
+  },
+  "public/Curiosidades/RS_curiosidades.json": {
+    "mtime": 1783392610.1739967,
+    "ast_hash": "90f6ef55132c958f147a381534b96c7d",
+    "semantic_hash": "90f6ef55132c958f147a381534b96c7d"
+  },
+  "public/Curiosidades/SC_curiosidades.json": {
+    "mtime": 1783392610.1739967,
+    "ast_hash": "6b55b8073d62660f08bc5cda15d2e7e0",
+    "semantic_hash": "6b55b8073d62660f08bc5cda15d2e7e0"
+  },
+  "public/Curiosidades/SE_curiosidades.json": {
+    "mtime": 1783392610.1749966,
+    "ast_hash": "8672b34f8fbcad06343e6cc45235f8ed",
+    "semantic_hash": "8672b34f8fbcad06343e6cc45235f8ed"
+  },
+  "public/Curiosidades/SP_curiosidades.json": {
+    "mtime": 1783392610.1759963,
+    "ast_hash": "22dce44802d4d38e267492f8f266c3fe",
+    "semantic_hash": "22dce44802d4d38e267492f8f266c3fe"
+  },
+  "public/Curiosidades/TO_curiosidades.json": {
+    "mtime": 1783392610.1779966,
+    "ast_hash": "49ac0ed52855f7ae89922525685a12cc",
+    "semantic_hash": "49ac0ed52855f7ae89922525685a12cc"
+  },
+  "public/municipios.json": {
+    "mtime": 1783392610.2149463,
+    "ast_hash": "78ea6ad393d77aabea1467586385df7d",
+    "semantic_hash": "78ea6ad393d77aabea1467586385df7d"
+  },
+  "supabase/schema.sql": {
+    "mtime": 1783433489.692647,
+    "ast_hash": "2149ffa9bb886f354b10693c95a38d91",
+    "semantic_hash": "2149ffa9bb886f354b10693c95a38d91"
+  },
+  "tsconfig.json": {
+    "mtime": 1783392610.2159462,
+    "ast_hash": "4040d1a1a17763183a871218b9fcc816",
+    "semantic_hash": "4040d1a1a17763183a871218b9fcc816"
+  },
+  "app/icon.png": {
+    "mtime": 1783392610.1319828,
+    "ast_hash": "12942dbb1c1153c961178755713faaf0",
+    "semantic_hash": "12942dbb1c1153c961178755713faaf0"
+  },
+  "public/Img/Icon-Logo.png": {
+    "mtime": 1783467904.2037413,
+    "ast_hash": "3d837f6ce85802574fac513085d86f1d",
+    "semantic_hash": "3d837f6ce85802574fac513085d86f1d"
+  },
+  "public/Img/LOGO 1.png": {
+    "mtime": 1783392610.1799965,
+    "ast_hash": "12942dbb1c1153c961178755713faaf0",
+    "semantic_hash": "12942dbb1c1153c961178755713faaf0"
+  },
+  "public/MAPAESTADOS.svg": {
+    "mtime": 1783392610.2114294,
+    "ast_hash": "507cdaa87c996b2380c1bda6ebf0ed78",
+    "semantic_hash": "507cdaa87c996b2380c1bda6ebf0ed78"
+  },
+  "public/br.svg": {
+    "mtime": 1783392610.2129345,
+    "ast_hash": "92198648b685ee2843247f4b49d28b42",
+    "semantic_hash": "92198648b685ee2843247f4b49d28b42"
+  }
+}
