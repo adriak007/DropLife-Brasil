@@ -34,6 +34,9 @@ export interface MapControllerOptions {
   openMessageModal: (message: string, title?: string) => void;
   openCityModal: (data: CityModalData) => void;
   onZoomChange: (state: string | null) => void;
+  // Zoom manual (pinça com 2 dedos), independente de um estado especifico —
+  // controla so a visibilidade do botao "Voltar".
+  onManualZoomChange: (active: boolean) => void;
 }
 
 export class MapController {
@@ -43,8 +46,15 @@ export class MapController {
   private baseViewBox: ViewBox | null = null;
   private isZoomed = false;
   private zoomedState: string | null = null;
+  private manualZoomActive = false;
   private hoverState: string | null = null;
   private viewBoxAnimation: number | null = null;
+  // Zoom com dois dedos (pinça): so rastreia toques (nunca mouse), entao
+  // nao interfere em nada da interacao por clique existente.
+  private pinchPointers = new Map<number, { x: number; y: number }>();
+  private pinchStart: { dist: number; viewBox: ViewBox; svgMid: { x: number; y: number } } | null =
+    null;
+  private suppressNextClick = false;
   private availableCities: AvailableCity[] = [];
   private allCities: AvailableCity[] = [];
   private stateStats = new Map<string, StateStats>();
@@ -71,7 +81,9 @@ export class MapController {
   };
 
   private docClick = (evt: MouseEvent) => {
-    if (!this.isZoomed) return;
+    // Em zoom manual (pinça, sem estado especifico associado) nao existe
+    // "fora da area" — so o botao Voltar ou pinçar de volta encerram o zoom.
+    if (!this.isZoomed || this.zoomedState === null) return;
     const el = evt.target as Element | null;
     // Cliques dentro de modais/paineis ou do tooltip fixado não devem resetar
     // o zoom. (React delega eventos no document, então stopPropagation nos
@@ -175,6 +187,8 @@ export class MapController {
     this.animateViewBox(this.currentSvg, this.baseViewBox);
     this.isZoomed = false;
     this.zoomedState = null;
+    this.manualZoomActive = false;
+    this.pinchStart = null;
     this.clearStateHover();
     this.stateGroups.forEach(({ paths }) =>
       paths.forEach((p) => p.classList.remove('region--state-hover'))
@@ -185,6 +199,7 @@ export class MapController {
       .forEach((p) => p.classList.remove('region--hover'));
     this.currentSvg.classList.remove('svg--zoomed');
     this.opts.onZoomChange(null);
+    this.opts.onManualZoomChange(false);
     this.clearPinnedTooltip();
   }
 
@@ -363,6 +378,14 @@ export class MapController {
     const regionOf = (target: EventTarget | null): SVGPathElement | null =>
       ((target as Element | null)?.closest?.('.region') as SVGPathElement | null) || null;
 
+    // Reseta a cada novo toque (ou clique): garante que um clique "fantasma"
+    // gerado ao soltar os dois dedos de uma pinça nao seja confundido com
+    // uma interacao futura legitima — o pointerdown de qualquer nova
+    // interacao sempre chega antes do click correspondente a ela.
+    svgEl.addEventListener('pointerdown', () => {
+      this.suppressNextClick = false;
+    });
+
     svgEl.addEventListener('pointerover', (evt) => {
       const region = regionOf(evt.target);
       if (!region || !svgEl.contains(region)) return;
@@ -417,8 +440,18 @@ export class MapController {
     });
 
     svgEl.addEventListener('click', (evt) => {
+      // Engole o clique fantasma que alguns navegadores sinteizam ao soltar
+      // o segundo dedo de uma pinça, senao ele acabaria fixando um tooltip
+      // ou resetando o zoom sem o usuario ter realmente tocado ali.
+      if (this.suppressNextClick) {
+        this.suppressNextClick = false;
+        return;
+      }
       const region = regionOf(evt.target);
-      if (this.isZoomed && (!region || region.dataset.state !== this.zoomedState)) {
+      // So existe "fora da area" quando zoomado numa estado especifico via
+      // clique; em zoom manual (pinça) qualquer cidade pode ser tocada.
+      const inStateZoom = this.isZoomed && this.zoomedState !== null;
+      if (inStateZoom && (!region || region.dataset.state !== this.zoomedState)) {
         this.resetZoom();
         return;
       }
@@ -428,7 +461,7 @@ export class MapController {
       const stateKey = region.dataset.state || '';
       const pop = Number(region.dataset.population) || getPopulation(this.populationIndex, stateKey, city || '');
       const rawName = region.dataset.rawname;
-      if (this.isZoomed && city && region.dataset.state === this.zoomedState) {
+      if (this.isZoomed && city) {
         this.pinTooltip(
           { city, state: stateKey, population: pop, key: region.dataset.key || keyFor(city, stateKey) },
           region
@@ -441,6 +474,111 @@ export class MapController {
       }
       if (!this.isZoomed) this.focusState(stateKey);
     });
+  }
+
+  // ── Zoom com dois dedos (pinça livre no mapa) ──
+
+  private clientToSvgPoint(clientX: number, clientY: number): { x: number; y: number } {
+    const svg = this.currentSvg;
+    if (!svg) return { x: 0, y: 0 };
+    const pt = svg.createSVGPoint();
+    pt.x = clientX;
+    pt.y = clientY;
+    const ctm = svg.getScreenCTM();
+    if (!ctm) return { x: 0, y: 0 };
+    const transformed = pt.matrixTransform(ctm.inverse());
+    return { x: transformed.x, y: transformed.y };
+  }
+
+  // Se o usuario pinçou de volta perto do tamanho original, encaixa
+  // exatamente na vista completa em vez de deixar um zoom quase-1:1 torto.
+  private finishPinch(): void {
+    this.pinchStart = null;
+    if (!this.manualZoomActive || !this.currentSvg || !this.baseViewBox) return;
+    const current = this.parseViewBox(this.currentSvg.getAttribute('viewBox') || '');
+    if (current.w >= this.baseViewBox.w * 0.97 && current.h >= this.baseViewBox.h * 0.97) {
+      this.resetZoom();
+    }
+  }
+
+  private setupPinchZoom(svgEl: SVGSVGElement): void {
+    const MIN_SCALE = 0.1; // ate ~10x de zoom em relacao a vista completa
+
+    svgEl.addEventListener('pointerdown', (evt) => {
+      if (evt.pointerType !== 'touch') return;
+      this.pinchPointers.set(evt.pointerId, { x: evt.clientX, y: evt.clientY });
+      if (this.pinchPointers.size === 2 && this.currentSvg) {
+        const pts = [...this.pinchPointers.values()];
+        const dist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
+        const midClientX = (pts[0].x + pts[1].x) / 2;
+        const midClientY = (pts[0].y + pts[1].y) / 2;
+        this.pinchStart = {
+          dist,
+          viewBox: this.parseViewBox(this.currentSvg.getAttribute('viewBox') || ''),
+          svgMid: this.clientToSvgPoint(midClientX, midClientY),
+        };
+        // A partir daqui o zoom e livre — solta qualquer estado "clicado"
+        // especifico e qualquer tooltip fixado, que nao fazem mais sentido.
+        if (this.zoomedState !== null) {
+          this.zoomedState = null;
+          this.opts.onZoomChange(null);
+        }
+        this.clearPinnedTooltip();
+      }
+    });
+
+    svgEl.addEventListener(
+      'pointermove',
+      (evt) => {
+        if (evt.pointerType !== 'touch' || !this.pinchPointers.has(evt.pointerId)) return;
+        this.pinchPointers.set(evt.pointerId, { x: evt.clientX, y: evt.clientY });
+        if (this.pinchPointers.size !== 2 || !this.pinchStart || !this.currentSvg || !this.baseViewBox) {
+          return;
+        }
+        evt.preventDefault();
+        this.suppressNextClick = true;
+
+        const pts = [...this.pinchPointers.values()];
+        const dist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
+        const midClientX = (pts[0].x + pts[1].x) / 2;
+        const midClientY = (pts[0].y + pts[1].y) / 2;
+
+        const scale = this.pinchStart.dist / Math.max(dist, 1);
+        const maxW = this.baseViewBox.w;
+        const maxH = this.baseViewBox.h;
+        const newW = clamp(this.pinchStart.viewBox.w * scale, maxW * MIN_SCALE, maxW);
+        const newH = clamp(this.pinchStart.viewBox.h * scale, maxH * MIN_SCALE, maxH);
+
+        const svgRect = this.currentSvg.getBoundingClientRect();
+        const fracX = (midClientX - svgRect.left) / svgRect.width;
+        const fracY = (midClientY - svgRect.top) / svgRect.height;
+
+        let newX = this.pinchStart.svgMid.x - fracX * newW;
+        let newY = this.pinchStart.svgMid.y - fracY * newH;
+        // Nao deixa afastar o mapa inteiro pra fora da vista.
+        newX = clamp(newX, this.baseViewBox.x - newW * 0.4, this.baseViewBox.x + maxW - newW * 0.6);
+        newY = clamp(newY, this.baseViewBox.y - newH * 0.4, this.baseViewBox.y + maxH - newH * 0.6);
+
+        this.setViewBox(this.currentSvg, { x: newX, y: newY, w: newW, h: newH });
+
+        if (!this.manualZoomActive) {
+          this.manualZoomActive = true;
+          this.isZoomed = true;
+          this.currentSvg.classList.add('svg--zoomed');
+          this.opts.onManualZoomChange(true);
+        }
+      },
+      { passive: false }
+    );
+
+    const onPointerEnd = (evt: PointerEvent) => {
+      if (evt.pointerType !== 'touch') return;
+      this.pinchPointers.delete(evt.pointerId);
+      if (this.pinchPointers.size < 2 && this.pinchStart) this.finishPinch();
+    };
+    svgEl.addEventListener('pointerup', onPointerEnd);
+    svgEl.addEventListener('pointercancel', onPointerEnd);
+    svgEl.addEventListener('pointerleave', onPointerEnd);
   }
 
   // ── Sorteio ponderado por população ──
@@ -672,6 +810,7 @@ export class MapController {
 
       this.renderStateLabels(svg);
       this.setupDelegatedEvents(svg);
+      this.setupPinchZoom(svg);
 
       const missingMsg = this.missing.length
         ? `; faltando ${this.missing.length}. Veja o console para exemplos.`

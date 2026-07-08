@@ -88,6 +88,7 @@ export default function MapGame() {
   const [status, setStatus] = useState('');
   const [modal, setModal] = useState<ModalState>(null);
   const [zoomedState, setZoomedState] = useState<string | null>(null);
+  const [manualZoomActive, setManualZoomActive] = useState(false);
   const [save, setSave] = useState<SaveData>(emptySave);
   const [totalCities, setTotalCities] = useState(0);
   const [stateStats, setStateStats] = useState<StateStats[]>([]);
@@ -184,6 +185,7 @@ export default function MapGame() {
         setModal({ type: 'message', title, message }),
       openCityModal: (data) => setModal({ type: 'city', data }),
       onZoomChange: setZoomedState,
+      onManualZoomChange: setManualZoomActive,
     });
     controllerRef.current = controller;
 
@@ -568,7 +570,7 @@ export default function MapGame() {
       </div>
 
       <button
-        className={`zoom-reset${zoomedState ? ' zoom-reset--visible' : ''}`}
+        className={`zoom-reset${zoomedState || manualZoomActive ? ' zoom-reset--visible' : ''}`}
         type="button"
         onClick={() => controllerRef.current?.resetZoom()}
       >
