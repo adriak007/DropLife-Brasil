@@ -14,3 +14,5 @@ next-env.d.ts
 # chaves locais (Supabase etc.)
 .env
 .env*.local
+
+graphify-out/
