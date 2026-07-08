@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { MapController } from '@/lib/mapController';
 import { formatPop } from '@/lib/text';
-import type { CityModalData, ModalState, PickedCity, StateStats } from '@/lib/types';
+import type { CityModalData, ModalState, PanelKind, PickedCity, StateStats } from '@/lib/types';
 import { loadSave, persistSave, emptySave, type BirthRecord, type SaveData } from '@/lib/storage';
-import { newlyUnlocked, type AchievementContext } from '@/lib/achievements';
+import { ACHIEVEMENTS, newlyUnlocked, type AchievementContext } from '@/lib/achievements';
 import { rarityFor } from '@/lib/rarity';
 import { seededRng, todayKey } from '@/lib/daily';
 import CitydexModal from '@/components/CitydexModal';
@@ -14,7 +14,12 @@ import StatesModal from '@/components/StatesModal';
 import StatePanel from '@/components/StatePanel';
 import HeatLegend from '@/components/HeatLegend';
 import RankingModal from '@/components/RankingModal';
+import SettingsPanel from '@/components/SettingsPanel';
+import HomeDashboard from '@/components/HomeDashboard';
+import TopNav from '@/components/TopNav';
+import MobileNav from '@/components/MobileNav';
 import AdInterstitial from '@/components/AdInterstitial';
+import { spawnRipple } from '@/components/NavButton';
 import { bumpBirthCounterAndCheckAd } from '@/lib/ads';
 import {
   getAuthState,
@@ -27,57 +32,6 @@ import {
 
 const LOGO_SRC = '/Img/LOGO 1.png';
 const BIRTH_COOLDOWN_MS = 1500;
-
-type PanelKind = 'citydex' | 'conquistas' | 'estados' | 'ranking' | null;
-
-const spawnRipple = (evt: React.PointerEvent<HTMLButtonElement>) => {
-  const btn = evt.currentTarget;
-  const ripple = document.createElement('span');
-  ripple.classList.add('ripple');
-  const rect = btn.getBoundingClientRect();
-  const size = Math.max(rect.width, rect.height);
-  ripple.style.cssText = `width:${size}px;height:${size}px;left:${evt.clientX - rect.left - size / 2}px;top:${evt.clientY - rect.top - size / 2}px`;
-  btn.appendChild(ripple);
-  ripple.addEventListener('animationend', () => ripple.remove(), { once: true });
-};
-
-function NavButton({
-  label,
-  active,
-  wide,
-  onClick,
-  children,
-}: {
-  label: string;
-  active?: boolean;
-  wide?: boolean;
-  onClick?: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <button
-      className={`nav-btn ui-btn${active ? ' nav-btn--active' : ''}${wide ? ' nav-btn--wide' : ''}`}
-      type="button"
-      onPointerDown={spawnRipple}
-      onClick={onClick}
-    >
-      <svg
-        className="btn-icon"
-        width="13"
-        height="13"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        {children}
-      </svg>
-      <span className="btn-label">{label}</span>
-    </button>
-  );
-}
 
 export default function MapGame() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -100,9 +54,7 @@ export default function MapGame() {
   const [cooldown, setCooldown] = useState(false);
   const [showAd, setShowAd] = useState(false);
   const [auth, setAuth] = useState<AuthState>({ signedIn: false, profile: null });
-  const [profileMenuOpen, setProfileMenuOpen] = useState(false);
   const sonarRef = useRef<HTMLSpanElement>(null);
-  const profileChipRef = useRef<HTMLDivElement>(null);
 
   // Totais reais (não hardcoded) usados pelas conquistas de estado/região/país
   const achievementCtx: AchievementContext = {
@@ -363,21 +315,10 @@ export default function MapGame() {
   };
 
   const handleSignOut = async () => {
-    setProfileMenuOpen(false);
     await signOut();
     setAuth({ signedIn: false, profile: null });
     showToast('Você saiu da conta.');
   };
-
-  // Fecha o menu do perfil ao clicar fora dele
-  useEffect(() => {
-    if (!profileMenuOpen) return;
-    const handler = (evt: MouseEvent) => {
-      if (!profileChipRef.current?.contains(evt.target as Node)) setProfileMenuOpen(false);
-    };
-    document.addEventListener('pointerdown', handler);
-    return () => document.removeEventListener('pointerdown', handler);
-  }, [profileMenuOpen]);
 
   const toggleHeatmap = () => {
     const next = !heatmap;
@@ -405,6 +346,7 @@ export default function MapGame() {
     : 0;
 
   const dailyDone = save.lastDaily === todayKey();
+  const achCount = Object.keys(save.achievements).length;
 
   return (
     <>
@@ -415,124 +357,67 @@ export default function MapGame() {
         <span className="loading-text">Carregando Brasil&hellip;</span>
       </div>
 
+      <TopNav
+        auth={auth}
+        onlineEnabled={onlineEnabled()}
+        panel={panel}
+        heatmap={heatmap}
+        dailyDone={dailyDone}
+        citydexCount={save.births.length}
+        citydexTotal={totalCities}
+        achCount={achCount}
+        achTotal={ACHIEVEMENTS.length}
+        onNavigate={setPanel}
+        onToggleHeatmap={toggleHeatmap}
+        onDaily={handleDaily}
+        onSignOut={handleSignOut}
+      />
+      <MobileNav
+        auth={auth}
+        onlineEnabled={onlineEnabled()}
+        panel={panel}
+        heatmap={heatmap}
+        dailyDone={dailyDone}
+        citydexCount={save.births.length}
+        citydexTotal={totalCities}
+        achCount={achCount}
+        achTotal={ACHIEVEMENTS.length}
+        onNavigate={setPanel}
+        onToggleHeatmap={toggleHeatmap}
+        onDaily={handleDaily}
+        onSignOut={handleSignOut}
+      />
+
       <div className="frame">
-        <div className="game-logo">
-          <img src={LOGO_SRC} alt="DropLife logo" />
-        </div>
-
-        {onlineEnabled() && (
-          <div className="profile-chip" ref={profileChipRef}>
-            {auth.signedIn && auth.profile ? (
-              <>
-                <button
-                  className="profile-chip__btn"
-                  type="button"
-                  onClick={() => setProfileMenuOpen((v) => !v)}
-                >
-                  <span className="profile-chip__avatar">
-                    {auth.profile.nickname.charAt(0).toUpperCase()}
-                  </span>
-                  <span className="profile-chip__name">{auth.profile.nickname}</span>
-                </button>
-                {profileMenuOpen && (
-                  <div className="profile-chip__menu">
-                    <div className="profile-chip__stat">
-                      {formatPop(auth.profile.total_births)}{' '}
-                      {auth.profile.total_births === 1 ? 'cidade' : 'cidades'} no ranking
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setProfileMenuOpen(false);
-                        setPanel('ranking');
-                      }}
-                    >
-                      🌍 Ver ranking
-                    </button>
-                    <button
-                      className="profile-chip__signout"
-                      type="button"
-                      onClick={handleSignOut}
-                    >
-                      🚪 Sair
-                    </button>
-                  </div>
-                )}
-              </>
-            ) : auth.signedIn ? (
-              <button
-                className="profile-chip__btn profile-chip__btn--pending"
-                type="button"
-                onClick={() => setPanel('ranking')}
-              >
-                Finalizar perfil
-              </button>
-            ) : (
-              <button
-                className="profile-chip__btn profile-chip__btn--login"
-                type="button"
-                onClick={() => setPanel('ranking')}
-              >
-                Entrar
-              </button>
-            )}
-          </div>
-        )}
-
-        <div className="controls bottom-bar" role="navigation" aria-label="Menu principal">
-          <NavButton label="Populacao" active={heatmap} onClick={toggleHeatmap}>
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-            <circle cx="9" cy="7" r="4" />
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-          </NavButton>
-
-          <NavButton label="Citydex" onClick={() => setPanel('citydex')}>
-            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-          </NavButton>
-
-          <NavButton label="Ranking" onClick={() => setPanel('ranking')}>
-            <path d="M8 21h8" />
-            <path d="M12 17v4" />
-            <path d="M7 4h10v5a5 5 0 0 1-10 0z" />
-            <path d="M17 6h3a1 1 0 0 1 1 1c0 2-2 3-4 3" />
-            <path d="M7 6H4a1 1 0 0 0-1 1c0 2 2 3 4 3" />
-          </NavButton>
-
-          <button
-            id="birthBtn"
-            className={cooldown ? 'birth-cooldown' : ''}
-            type="button"
-            aria-disabled={cooldown}
-            onPointerDown={(evt) => {
-              if (!cooldown) spawnRipple(evt);
-            }}
-            onClick={handleBirth}
-          >
-            {cooldown && <span ref={sonarRef} className="sonar-sweep" aria-hidden="true"></span>}
-            <span className="btn-label">Nascer</span>
-          </button>
-
-          <NavButton label="Estados" onClick={() => setPanel('estados')}>
-            <polygon points="3 11 22 2 13 21 11 13 3 11" />
-          </NavButton>
-
-          <NavButton label="Conquistas" onClick={() => setPanel('conquistas')}>
-            <circle cx="12" cy="8" r="7" />
-            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
-          </NavButton>
-
-          <NavButton label={dailyDone ? 'Desafio ✓' : 'Desafio'} onClick={handleDaily}>
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-            <line x1="16" y1="2" x2="16" y2="6" />
-            <line x1="8" y1="2" x2="8" y2="6" />
-            <line x1="3" y1="10" x2="21" y2="10" />
-          </NavButton>
-        </div>
-
         <div className="map-wrap" ref={containerRef}></div>
       </div>
+
+      <div className="birth-dock">
+        <button
+          id="birthBtn"
+          className={cooldown ? 'birth-cooldown' : ''}
+          type="button"
+          aria-disabled={cooldown}
+          onPointerDown={(evt) => {
+            if (!cooldown) spawnRipple(evt);
+          }}
+          onClick={handleBirth}
+        >
+          {cooldown && <span ref={sonarRef} className="sonar-sweep" aria-hidden="true"></span>}
+          <span className="btn-label">Nascer</span>
+        </button>
+      </div>
+
+      {/* Home: cards de resumo (Citydex + Ranking), só quando nenhum painel está aberto */}
+      {!panel && !zoomedState && (
+        <HomeDashboard
+          save={save}
+          total={totalCities}
+          auth={auth}
+          onOpenCitydex={() => setPanel('citydex')}
+          onOpenRanking={() => setPanel('ranking')}
+        />
+      )}
 
       {/* Barra de status (oculta via CSS, mantida para leitores de tela) */}
       <p className="status-bar" role="status" aria-live="polite">
@@ -684,6 +569,15 @@ export default function MapGame() {
             auth={auth}
             resolveCity={(key) => controllerRef.current?.getCityInfo(key) ?? null}
             onAuthChanged={handleAuthChanged}
+            onClose={() => setPanel(null)}
+          />
+        )}
+        {panel === 'configuracoes' && (
+          <SettingsPanel
+            auth={auth}
+            onlineEnabled={onlineEnabled()}
+            onSignOut={handleSignOut}
+            onOpenRanking={() => setPanel('ranking')}
             onClose={() => setPanel(null)}
           />
         )}

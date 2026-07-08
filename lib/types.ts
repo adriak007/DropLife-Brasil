@@ -42,6 +42,14 @@ export type ModalState =
   | { type: 'city'; data: CityModalData }
   | null;
 
+export type PanelKind =
+  | 'citydex'
+  | 'conquistas'
+  | 'estados'
+  | 'ranking'
+  | 'configuracoes'
+  | null;
+
 export interface ViewBox {
   x: number;
   y: number;
