@@ -14,7 +14,14 @@ import StatesModal from '@/components/StatesModal';
 import StatePanel from '@/components/StatePanel';
 import HeatLegend from '@/components/HeatLegend';
 import RankingModal from '@/components/RankingModal';
-import { getAuthState, onAuthChange, recordBirth, type AuthState } from '@/lib/online';
+import {
+  getAuthState,
+  onAuthChange,
+  onlineEnabled,
+  recordBirth,
+  signOut,
+  type AuthState,
+} from '@/lib/online';
 
 const LOGO_SRC = '/Img/LOGO 1.png';
 const BIRTH_COOLDOWN_MS = 1500;
@@ -89,7 +96,9 @@ export default function MapGame() {
   const [toast, setToast] = useState<string | null>(null);
   const [cooldown, setCooldown] = useState(false);
   const [auth, setAuth] = useState<AuthState>({ signedIn: false, profile: null });
+  const [profileMenuOpen, setProfileMenuOpen] = useState(false);
   const sonarRef = useRef<HTMLSpanElement>(null);
+  const profileChipRef = useRef<HTMLDivElement>(null);
 
   const refreshAuth = async () => {
     setAuth(await getAuthState());
@@ -325,6 +334,23 @@ export default function MapGame() {
     }
   };
 
+  const handleSignOut = async () => {
+    setProfileMenuOpen(false);
+    await signOut();
+    setAuth({ signedIn: false, profile: null });
+    showToast('Você saiu da conta.');
+  };
+
+  // Fecha o menu do perfil ao clicar fora dele
+  useEffect(() => {
+    if (!profileMenuOpen) return;
+    const handler = (evt: MouseEvent) => {
+      if (!profileChipRef.current?.contains(evt.target as Node)) setProfileMenuOpen(false);
+    };
+    document.addEventListener('pointerdown', handler);
+    return () => document.removeEventListener('pointerdown', handler);
+  }, [profileMenuOpen]);
+
   const toggleHeatmap = () => {
     const next = !heatmap;
     setHeatmap(next);
@@ -365,6 +391,65 @@ export default function MapGame() {
         <div className="game-logo">
           <img src={LOGO_SRC} alt="DropLife logo" />
         </div>
+
+        {onlineEnabled() && (
+          <div className="profile-chip" ref={profileChipRef}>
+            {auth.signedIn && auth.profile ? (
+              <>
+                <button
+                  className="profile-chip__btn"
+                  type="button"
+                  onClick={() => setProfileMenuOpen((v) => !v)}
+                >
+                  <span className="profile-chip__avatar">
+                    {auth.profile.nickname.charAt(0).toUpperCase()}
+                  </span>
+                  <span className="profile-chip__name">{auth.profile.nickname}</span>
+                </button>
+                {profileMenuOpen && (
+                  <div className="profile-chip__menu">
+                    <div className="profile-chip__stat">
+                      {formatPop(auth.profile.total_births)}{' '}
+                      {auth.profile.total_births === 1 ? 'cidade' : 'cidades'} no ranking
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setProfileMenuOpen(false);
+                        setPanel('ranking');
+                      }}
+                    >
+                      🌍 Ver ranking
+                    </button>
+                    <button
+                      className="profile-chip__signout"
+                      type="button"
+                      onClick={handleSignOut}
+                    >
+                      🚪 Sair
+                    </button>
+                  </div>
+                )}
+              </>
+            ) : auth.signedIn ? (
+              <button
+                className="profile-chip__btn profile-chip__btn--pending"
+                type="button"
+                onClick={() => setPanel('ranking')}
+              >
+                Finalizar perfil
+              </button>
+            ) : (
+              <button
+                className="profile-chip__btn profile-chip__btn--login"
+                type="button"
+                onClick={() => setPanel('ranking')}
+              >
+                Entrar
+              </button>
+            )}
+          </div>
+        )}
 
         <div className="controls bottom-bar" role="navigation" aria-label="Menu principal">
           <NavButton label="Populacao" active={heatmap} onClick={toggleHeatmap}>
