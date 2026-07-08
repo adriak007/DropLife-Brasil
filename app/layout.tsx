@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next';
-import Script from 'next/script';
 import './globals.css';
 
 // Publisher ID do Google AdSense — necessario para o Google revisar e
@@ -26,11 +25,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <head>
-        <Script
+        {/* Tag literal, exatamente como o AdSense forneceu — nao usamos
+            next/script aqui porque a estrategia "afterInteractive" injeta
+            o <script> via JS apos a hidratacao, entao ele nao aparece
+            palavra-por-palavra no HTML estatico que o Google verifica. */}
+        <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body>{children}</body>
