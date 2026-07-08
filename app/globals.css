@@ -46,6 +46,10 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow-x: hidden;
+  /* Reforca o bloqueio do pinca-zoom/duplo-toque nativo (o meta viewport
+     sozinho nem sempre e suficiente em navegadores Android). O zoom do
+     jogo continua so o do mapa, feito por toque num estado. */
+  touch-action: pan-x pan-y;
 }
 
 /* ── Animated background ── */

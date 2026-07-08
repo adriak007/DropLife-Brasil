@@ -10,6 +10,10 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  // Desliga o pinca-para-zoom nativo do navegador: o "zoom" do jogo e o do
+  // mapa (tocar num estado), nao o da pagina inteira.
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
