@@ -137,7 +137,24 @@ export default function HomeDashboard({
 
       {next && (
         <button className="home-card next-ach" type="button" onClick={onOpenConquistas}>
-          <span className="next-ach__badge">{next.def.emoji}</span>
+          {/* Roseta no mesmo estilo flat das medalhas do Meu Citydex (sem emoji) */}
+          <span className="next-ach__badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M8.6 14 6.6 22.2l3.3-1.7 2.1 1.5 1-7.6Z" fill="#ff4b4b" />
+              <path d="M15.4 14l2 8.2-3.3-1.7-2.1 1.5-1-7.6Z" fill="#dd3a3a" />
+              <g fill="#ffc800">
+                <rect x="4.5" y="3" width="15" height="15" rx="3" />
+                <rect x="4.5" y="3" width="15" height="15" rx="3" transform="rotate(30 12 10.5)" />
+                <rect x="4.5" y="3" width="15" height="15" rx="3" transform="rotate(60 12 10.5)" />
+              </g>
+              <circle cx="12" cy="10.5" r="6" fill="#e6a500" />
+              <circle cx="12" cy="10.5" r="4.9" fill="#ffc800" />
+              <path
+                d="M12 6.9l1.15 2.3 2.5.37-1.8 1.75.42 2.5L12 12.65l-2.27 1.17.42-2.5-1.8-1.75 2.5-.37Z"
+                fill="#fff"
+              />
+            </svg>
+          </span>
           <span className="next-ach__info">
             <span className="next-ach__label">Próxima conquista:</span>
             <span className="next-ach__name">{next.def.name}</span>
