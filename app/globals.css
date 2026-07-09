@@ -708,6 +708,18 @@ body::before {
   opacity: 0.9;
 }
 .modal-city__chance.hidden { display: none; }
+.modal-city__img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-base);
+  object-fit: cover;
+  margin-bottom: 14px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
 .modal-city__curiosity {
   color: var(--text-primary);
   font-size: 14px;

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { MapController } from '@/lib/mapController';
-import { formatPop } from '@/lib/text';
+import { formatPop, normalize } from '@/lib/text';
 import type { CityModalData, ModalState, PanelKind, PickedCity, StateStats } from '@/lib/types';
 import {
   loadSave,
@@ -39,6 +39,34 @@ import {
   type AuthState,
   type ServerBirthRow,
 } from '@/lib/online';
+
+interface MunicipioWithIBGE {
+  codigo_ibge: string;
+  municipio: string;
+  estado: string;
+  populacao: number;
+}
+
+interface CidadeImagem {
+  img: string;
+  fonte: 'wikidata' | 'wikipedia';
+}
+
+// Carrega JSONs estáticos (gerados por npm run gerar-imagens)
+let municipiosData: MunicipioWithIBGE[] | null = null;
+let imagensData: Record<string, CidadeImagem> | null = null;
+
+try {
+  municipiosData = require('@/public/municipios.json');
+} catch {
+  // graceful degrade
+}
+
+try {
+  imagensData = require('@/public/cidade_imagens.json');
+} catch {
+  // graceful degrade
+}
 
 const LOGO_SRC = '/Img/LOGO 1.png';
 const BIRTH_COOLDOWN_MS = 1500;
@@ -448,6 +476,16 @@ export default function MapGame() {
     ? `${formatPop(cityData.population)} habitantes`
     : 'Populacao indisponivel';
 
+  // Busca imagem da cidade no modal de nascimento
+  const cityImage = cityData ? (() => {
+    if (!municipiosData || !imagensData) return null;
+    const municipio = municipiosData.find(
+      (m) => normalize(m.municipio) === normalize(cityData.city) && normalize(m.estado) === normalize(cityData.state)
+    );
+    if (!municipio) return null;
+    return imagensData[municipio.codigo_ibge]?.img ?? null;
+  })() : null;
+
   const capturedInZoomed = zoomedState
     ? save.births.filter((b) => b.state === zoomedState).length
     : 0;
@@ -617,6 +655,15 @@ export default function MapGame() {
               {modal?.type === 'message' ? modal.message : ''}
             </p>
             <div className={`modal-city${cityData ? '' : ' hidden'}`}>
+              {cityImage && (
+                <img
+                  className="modal-city__img"
+                  src={cityImage}
+                  alt={cityData?.city}
+                  loading="lazy"
+                  decoding="async"
+                />
+              )}
               <p className="modal-city__meta">
                 {cityData ? `${cityData.state} • ${popText}` : ''}
                 {cityTier && cityData?.chance ? (
