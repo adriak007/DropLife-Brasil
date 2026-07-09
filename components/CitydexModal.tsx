@@ -5,6 +5,7 @@ import type { SaveData } from '@/lib/storage';
 import { RARITY_TIERS, rarityFor } from '@/lib/rarity';
 import { formatPop, normalize } from '@/lib/text';
 import { ufToName } from '@/lib/geo';
+import RarityIcon from '@/components/RarityIcon';
 
 interface Props {
   save: SaveData;
@@ -16,6 +17,11 @@ interface Props {
 export default function CitydexModal({ save, total, onClose, onLocate }: Props) {
   const [search, setSearch] = useState('');
   const [ufFilter, setUfFilter] = useState('');
+  // Raridades selecionadas nos chips; vazio = mostra todas
+  const [tierFilter, setTierFilter] = useState<string[]>([]);
+
+  const toggleTier = (id: string) =>
+    setTierFilter((cur) => (cur.includes(id) ? cur.filter((t) => t !== id) : [...cur, id]));
 
   const births = useMemo(() => [...save.births].reverse(), [save.births]);
 
@@ -35,6 +41,7 @@ export default function CitydexModal({ save, total, onClose, onLocate }: Props) 
 
   const filtered = births.filter((b) => {
     if (ufFilter && b.state !== ufFilter) return false;
+    if (tierFilter.length && !tierFilter.includes(rarityFor(b.population).id)) return false;
     if (search && !normalize(b.city).includes(normalize(search))) return false;
     return true;
   });
@@ -57,11 +64,27 @@ export default function CitydexModal({ save, total, onClose, onLocate }: Props) 
       </div>
 
       <div className="tier-chips">
-        {RARITY_TIERS.map((t) => (
-          <span key={t.id} className="tier-chip" style={{ borderColor: t.color, color: t.color }}>
-            {t.label}: {tierCounts.get(t.id) || 0}
-          </span>
-        ))}
+        {RARITY_TIERS.map((t) => {
+          const active = tierFilter.includes(t.id);
+          return (
+            <button
+              key={t.id}
+              type="button"
+              className={`tier-chip${active ? ' tier-chip--active' : ''}`}
+              style={
+                active
+                  ? { background: t.color, borderColor: t.color, color: '#fff' }
+                  : { borderColor: t.color, color: t.color }
+              }
+              onClick={() => toggleTier(t.id)}
+              aria-pressed={active}
+              title={active ? `Remover filtro ${t.label}` : `Mostrar só ${t.label}`}
+            >
+              <RarityIcon tier={t.id} />
+              {t.label}: {tierCounts.get(t.id) || 0}
+            </button>
+          );
+        })}
       </div>
 
       <div className="dex-controls">
@@ -104,7 +127,7 @@ export default function CitydexModal({ save, total, onClose, onLocate }: Props) 
               title={`Ver ${ufToName[b.state] || b.state} no mapa`}
               onClick={() => onLocate(b.state)}
             >
-              <span className="rarity-dot" style={{ background: tier.color }}></span>
+              <RarityIcon tier={tier.id} className="rarity-icon--row" />
               <span className="dex-row__city">
                 {b.city} <em>({b.state})</em>
                 {b.daily ? <span className="dex-daily" title="Desafio diário">📅</span> : null}
