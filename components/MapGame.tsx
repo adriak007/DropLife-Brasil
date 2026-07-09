@@ -4,7 +4,15 @@ import { useEffect, useRef, useState } from 'react';
 import { MapController } from '@/lib/mapController';
 import { formatPop } from '@/lib/text';
 import type { CityModalData, ModalState, PanelKind, PickedCity, StateStats } from '@/lib/types';
-import { loadSave, persistSave, emptySave, type BirthRecord, type SaveData } from '@/lib/storage';
+import {
+  loadSave,
+  persistSave,
+  clearSave,
+  emptySave,
+  type BirthRecord,
+  type SaveData,
+  type SaveScope,
+} from '@/lib/storage';
 import { ACHIEVEMENTS, newlyUnlocked, type AchievementContext } from '@/lib/achievements';
 import { rarityFor } from '@/lib/rarity';
 import { seededRng, todayKey } from '@/lib/daily';
@@ -22,16 +30,48 @@ import AdInterstitial from '@/components/AdInterstitial';
 import { spawnRipple } from '@/components/NavButton';
 import { bumpBirthCounterAndCheckAd } from '@/lib/ads';
 import {
+  fetchMyBirths,
   getAuthState,
   onAuthChange,
   onlineEnabled,
   recordBirth,
   signOut,
   type AuthState,
+  type ServerBirthRow,
 } from '@/lib/online';
 
 const LOGO_SRC = '/Img/LOGO 1.png';
 const BIRTH_COOLDOWN_MS = 1500;
+
+// Reconstrói o save de uma conta SOMENTE com o que o servidor retornou:
+// as chaves viram registros completos via mapa e as conquistas são
+// recalculadas dos nascimentos. Nada de progresso local entra aqui.
+const buildAccountSave = (rows: ServerBirthRow[], controller: MapController): SaveData => {
+  const births: BirthRecord[] = [];
+  const seen = new Set<string>();
+  for (const row of rows) {
+    if (seen.has(row.city_key)) continue;
+    seen.add(row.city_key);
+    const info = controller.getCityByKey(row.city_key);
+    if (!info) continue; // chave antiga que não bate com o mapa atual
+    births.push({
+      key: row.city_key,
+      city: info.city,
+      state: info.state,
+      population: info.population,
+      chance: info.chance,
+      bornAt: row.created_at ?? new Date().toISOString(),
+    });
+  }
+  const save: SaveData = { version: 1, births, achievements: {} };
+  const ctx: AchievementContext = {
+    totalCities: controller.totalCities(),
+    stateTotals: Object.fromEntries(controller.getStateStats().map((s) => [s.uf, s.municipios])),
+  };
+  const stamp = new Date().toISOString();
+  save.achievements = Object.fromEntries(newlyUnlocked(births, save, ctx).map((a) => [a.id, stamp]));
+  return save;
+};
 
 export default function MapGame() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -53,8 +93,21 @@ export default function MapGame() {
   const [toast, setToast] = useState<string | null>(null);
   const [cooldown, setCooldown] = useState(false);
   const [showAd, setShowAd] = useState(false);
-  const [auth, setAuth] = useState<AuthState>({ signedIn: false, profile: null });
+  const [auth, setAuth] = useState<AuthState>({ signedIn: false, userId: null, profile: null });
+  const [mapReady, setMapReady] = useState(false);
+  // Só carregamos qualquer save depois de saber QUEM está na sessão — evita
+  // exibir progresso de visitante para uma conta (e vice-versa) no boot.
+  const [authResolved, setAuthResolved] = useState(!onlineEnabled());
   const sonarRef = useRef<HTMLSpanElement>(null);
+
+  // Escopo do save da sessão atual: sem backend -> 'local' (persistente);
+  // visitante -> 'guest' (temporário, sessionStorage); logado -> uid da conta.
+  const saveScope: SaveScope = !onlineEnabled()
+    ? 'local'
+    : auth.signedIn && auth.userId
+      ? auth.userId
+      : 'guest';
+  const scopeRef = useRef<SaveScope | null>(null);
 
   // Totais reais (não hardcoded) usados pelas conquistas de estado/região/país
   const achievementCtx: AchievementContext = {
@@ -64,6 +117,7 @@ export default function MapGame() {
 
   const refreshAuth = async () => {
     setAuth(await getAuthState());
+    setAuthResolved(true);
   };
 
   // Recupera a sessão do ranking e escuta mudanças de login
@@ -127,9 +181,6 @@ export default function MapGame() {
     const tooltipSubtitle = tooltipSubtitleRef.current;
     if (!container || !tooltip || !tooltipTitle || !tooltipSubtitle) return;
 
-    const loaded = loadSave();
-    setSave(loaded);
-
     const controller = new MapController({
       container,
       tooltip,
@@ -149,9 +200,11 @@ export default function MapGame() {
       .init()
       .then(() => {
         if (cancelled) return;
-        controller.restoreCaptured(new Set(loaded.births.map((b) => b.key)));
         setTotalCities(controller.totalCities());
         setStateStats(controller.getStateStats());
+        // O save do dono da sessão é carregado pelo efeito de identidade,
+        // que espera o mapa (aqui) e a autenticação (refreshAuth) resolverem.
+        setMapReady(true);
       })
       .finally(() => {
         if (!cancelled) setLoading(false);
@@ -163,6 +216,59 @@ export default function MapGame() {
       controllerRef.current = null;
     };
   }, []);
+
+  // ── Isolamento de progresso por identidade ──
+  // Sempre que o dono da sessão muda (visitante -> conta, conta -> visitante,
+  // conta A -> conta B), TODO o estado em memória e o mapa são zerados e
+  // recriados do zero para o novo dono:
+  //   - login: o progresso temporário de visitante é DESCARTADO e a conta é
+  //     populada somente com o que o servidor retornar;
+  //   - logout: o cache local da conta é apagado e o site volta ao estado de
+  //     visitante sem nenhuma cidade;
+  //   - troca de conta: nada da conta anterior sobrevive.
+  useEffect(() => {
+    if (!mapReady || !authResolved) return;
+    if (scopeRef.current === saveScope) return;
+    const previous = scopeRef.current;
+    scopeRef.current = saveScope;
+    const controller = controllerRef.current;
+    if (!controller) return;
+
+    // Zera memória, UI e mapa antes de carregar o novo dono da sessão
+    setSave(emptySave());
+    setPanel(null);
+    setModal(null);
+    setStatus('');
+    controller.resetCaptured();
+    controller.resetZoom();
+
+    if (saveScope === 'local' || saveScope === 'guest') {
+      // Logout: o cache local da conta anterior é removido por completo
+      if (previous && previous !== 'guest' && previous !== 'local') clearSave(previous);
+      const loaded = loadSave(saveScope);
+      setSave(loaded);
+      controller.restoreCaptured(new Set(loaded.births.map((b) => b.key)));
+      return;
+    }
+
+    // Login / troca de conta: o save de visitante é descartado de vez e a
+    // conta carrega exclusivamente o que está no banco.
+    clearSave('guest');
+    let cancelled = false;
+    (async () => {
+      const rows = await fetchMyBirths();
+      // Sem rede: cai no cache local EXCLUSIVO desta conta (nunca no de
+      // visitante nem no de outra conta).
+      const account = rows === null ? loadSave(saveScope) : buildAccountSave(rows, controller);
+      persistSave(saveScope, account);
+      if (cancelled || scopeRef.current !== saveScope) return;
+      setSave(account);
+      controller.restoreCaptured(new Set(account.births.map((b) => b.key)));
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [saveScope, mapReady, authResolved]);
 
   const registerBirth = (picked: PickedCity, daily?: string) => {
     const prev = saveRef.current;
@@ -190,7 +296,7 @@ export default function MapGame() {
         ...Object.fromEntries(unlocked.map((a) => [a.id, stamp])),
       };
     }
-    persistSave(next);
+    persistSave(scopeRef.current ?? saveScope, next);
     setSave(next);
     unlocked.forEach((a) => showToast(`🏆 Conquista desbloqueada: ${a.emoji} ${a.name}`));
 
@@ -316,7 +422,8 @@ export default function MapGame() {
 
   const handleSignOut = async () => {
     await signOut();
-    setAuth({ signedIn: false, profile: null });
+    // O efeito de identidade cuida da limpeza total (save, mapa, painéis)
+    setAuth({ signedIn: false, userId: null, profile: null });
     showToast('Você saiu da conta.');
   };
 

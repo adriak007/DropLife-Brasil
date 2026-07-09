@@ -642,6 +642,27 @@ export class MapController {
     this.availableCities = this.availableCities.filter((c) => !keys.has(c.key));
   }
 
+  // Desfaz TODAS as capturas no mapa e devolve o pool completo de sorteio.
+  // Usado na troca de identidade (login/logout/troca de conta) antes de
+  // restaurar o progresso do novo dono da sessão.
+  resetCaptured(): void {
+    this.allCities.forEach(({ path }) => path.classList.remove('region--selected'));
+    this.availableCities = [...this.allCities];
+  }
+
+  // Dados de exibição de um município a partir da chave persistida — permite
+  // reconstruir o Citydex de uma conta só com as chaves vindas do servidor.
+  getCityByKey(key: string): { city: string; state: string; population: number; chance: string } | null {
+    const found = this.allCities.find((c) => c.key === key);
+    if (!found) return null;
+    return {
+      city: found.city,
+      state: found.state,
+      population: found.population,
+      chance: formatChance(found.population),
+    };
+  }
+
   // ── Heatmap de população ──
 
   setHeatmap(enabled: boolean): void {

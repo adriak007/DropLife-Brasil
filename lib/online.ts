@@ -8,6 +8,7 @@ export interface OnlineProfile {
 
 export interface AuthState {
   signedIn: boolean;
+  userId: string | null; // id da sessão autenticada — chave do isolamento de progresso
   profile: OnlineProfile | null; // sessão pode existir sem perfil (ex.: pós-Google)
 }
 
@@ -43,16 +44,17 @@ const NICK_OK = /^.{2,20}$/;
 export const onlineEnabled = (): boolean => Boolean(supabase);
 
 export const getAuthState = async (): Promise<AuthState> => {
-  if (!supabase) return { signedIn: false, profile: null };
+  if (!supabase) return { signedIn: false, userId: null, profile: null };
   try {
     const { data: { session } } = await supabase.auth.getSession();
-    if (!session) return { signedIn: false, profile: null };
+    if (!session) return { signedIn: false, userId: null, profile: null };
+    const uid = session.user.id;
     const { data } = await supabase
       .from('profiles')
       .select('id,nickname,total_births')
-      .eq('id', session.user.id)
+      .eq('id', uid)
       .maybeSingle();
-    if (data) return { signedIn: true, profile: data };
+    if (data) return { signedIn: true, userId: uid, profile: data };
 
     // Sessão sem perfil (ex.: primeiro login após confirmar o e-mail):
     // cria o perfil com o apelido guardado nos metadados do cadastro.
@@ -63,14 +65,14 @@ export const getAuthState = async (): Promise<AuthState> => {
         const { data: fresh } = await supabase
           .from('profiles')
           .select('id,nickname,total_births')
-          .eq('id', session.user.id)
+          .eq('id', uid)
           .maybeSingle();
-        return { signedIn: true, profile: fresh ?? null };
+        return { signedIn: true, userId: uid, profile: fresh ?? null };
       }
     }
-    return { signedIn: true, profile: null };
+    return { signedIn: true, userId: uid, profile: null };
   } catch {
-    return { signedIn: false, profile: null };
+    return { signedIn: false, userId: null, profile: null };
   }
 };
 
@@ -204,6 +206,38 @@ export const recordBirth = async (cityKey: string): Promise<boolean> => {
     return !error;
   } catch {
     return false;
+  }
+};
+
+export interface ServerBirthRow {
+  city_key: string;
+  created_at: string | null;
+}
+
+// Busca TODOS os nascimentos salvos da conta logada — fonte da verdade do
+// progresso após o login. Retorna null em falha (para o caller decidir o
+// fallback) e [] quando a conta realmente não tem nascimentos.
+export const fetchMyBirths = async (): Promise<ServerBirthRow[] | null> => {
+  if (!supabase) return null;
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) return null;
+    const uid = session.user.id;
+    const { data, error } = await supabase
+      .from('births')
+      .select('city_key,created_at')
+      .eq('user_id', uid)
+      .order('created_at', { ascending: true });
+    if (!error) return data ?? [];
+    // Tabela sem a coluna created_at: busca só as chaves
+    const { data: plain, error: err2 } = await supabase
+      .from('births')
+      .select('city_key')
+      .eq('user_id', uid);
+    if (err2) return null;
+    return (plain ?? []).map((r) => ({ city_key: r.city_key, created_at: null }));
+  } catch {
+    return null;
   }
 };
 
