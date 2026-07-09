@@ -68,6 +68,7 @@ export default function TopNav({
           label="Citydex"
           active={panel === 'citydex'}
           badge={`${citydexCount}/${formatPop(citydexTotal)}`}
+          badgeTone="red"
           onClick={() => onNavigate('citydex')}
         >
           {ICONS.citydex}

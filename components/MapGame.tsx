@@ -413,9 +413,12 @@ export default function MapGame() {
         <HomeDashboard
           save={save}
           total={totalCities}
+          stateStats={stateStats}
+          achievementCtx={achievementCtx}
           auth={auth}
           onOpenCitydex={() => setPanel('citydex')}
           onOpenRanking={() => setPanel('ranking')}
+          onOpenConquistas={() => setPanel('conquistas')}
         />
       )}
 
