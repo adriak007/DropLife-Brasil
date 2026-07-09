@@ -18,3 +18,6 @@ next-env.d.ts
 graphify-out/
 .vercel
 .env*
+
+# Banco de imagens gerado pelo script npm run gerar-imagens
+/public/cidade_imagens.json

@@ -7,6 +7,47 @@ import { formatPop, normalize } from '@/lib/text';
 import { ufToName } from '@/lib/geo';
 import RarityIcon from '@/components/RarityIcon';
 
+interface MunicipioWithIBGE {
+  codigo_ibge: string;
+  municipio: string;
+  estado: string;
+  populacao: number;
+}
+
+interface CidadeImagem {
+  img: string;
+  fonte: 'wikidata' | 'wikipedia';
+}
+
+// Importa os JSONs estáticos gerados pelo script npm run gerar-imagens.
+// Se não existirem, gracefully degrade para sem imagens.
+let municipiosData: MunicipioWithIBGE[] | null = null;
+let imagensData: Record<string, CidadeImagem> | null = null;
+
+try {
+  municipiosData = require('@/public/municipios.json');
+} catch {
+  // municipios.json pode não estar acessível em alguns builds
+}
+
+try {
+  imagensData = require('@/public/cidade_imagens.json');
+} catch {
+  // cidade_imagens.json ainda não foi gerado ou não existe (não é erro crítico)
+}
+
+interface MunicipioWithIBGE {
+  codigo_ibge: string;
+  municipio: string;
+  estado: string;
+  populacao: number;
+}
+
+interface CidadeImagem {
+  img: string;
+  fonte: 'wikidata' | 'wikipedia';
+}
+
 interface Props {
   save: SaveData;
   total: number;
@@ -38,6 +79,40 @@ export default function CitydexModal({ save, total, onClose, onLocate }: Props) 
     });
     return counts;
   }, [save.births]);
+
+  // Mapa (city-state normalizado) → codigo_ibge, preenchido uma única vez.
+  // Permite lookup rápido de imagem pelo (city, state) que vem do save.
+  const municipioIndex = useMemo(() => {
+    const index = new Map<string, string>();
+    if (municipiosData) {
+      municipiosData.forEach(({ codigo_ibge, municipio, estado }) => {
+        const key = `${normalize(municipio)}-${normalize(estado)}`;
+        index.set(key, codigo_ibge);
+      });
+    }
+    return index;
+  }, []);
+
+  // Mapa codigo_ibge → imagem, carregado uma única vez.
+  // Preenchido pelo script npm run gerar-imagens.
+  const imagemMap = useMemo(() => {
+    const map = new Map<string, CidadeImagem>();
+    if (imagensData) {
+      Object.entries(imagensData).forEach(([codigoIBGE, info]) => {
+        if (info.img) map.set(codigoIBGE, info);
+      });
+    }
+    return map;
+  }, []);
+
+  // Busca imagem pelo (city, state) vindo do save local
+  const getImagemMunicipio = (city: string, state: string): string | null => {
+    const key = `${normalize(city)}-${normalize(state)}`;
+    const codigoIBGE = municipioIndex.get(key);
+    if (!codigoIBGE) return null;
+    const imagem = imagemMap.get(codigoIBGE);
+    return imagem?.img ?? null;
+  };
 
   const filtered = births.filter((b) => {
     if (ufFilter && b.state !== ufFilter) return false;
@@ -127,6 +202,22 @@ export default function CitydexModal({ save, total, onClose, onLocate }: Props) 
               title={`Ver ${ufToName[b.state] || b.state} no mapa`}
               onClick={() => onLocate(b.state)}
             >
+              {(() => {
+                const imgUrl = getImagemMunicipio(b.city, b.state);
+                if (imgUrl) {
+                  return (
+                    <img
+                      className="dex-row__img"
+                      src={imgUrl}
+                      alt={b.city}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  );
+                }
+                // Placeholder: mostrar ícone de raridade maior
+                return <div className="dex-row__placeholder" />;
+              })()}
               <RarityIcon tier={tier.id} className="rarity-icon--row" />
               <span className="dex-row__city">
                 {b.city} <em>({b.state})</em>
