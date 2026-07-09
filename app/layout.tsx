@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next';
-import { ADS_ENABLED } from '@/lib/ads';
 import './globals.css';
 
 // Publisher ID do Google AdSense — necessario para o Google revisar e
@@ -30,15 +29,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             next/script aqui porque a estrategia "afterInteractive" injeta
             o <script> via JS apos a hidratacao, entao ele nao aparece
             palavra-por-palavra no HTML estatico que o Google verifica.
-            Gated por ADS_ENABLED (lib/ads.ts): com a chave desligada o
-            script nem entra no HTML. */}
-        {ADS_ENABLED && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-            crossOrigin="anonymous"
-          />
-        )}
+            Fica sempre ligada (verificacao do AdSense); o que esta
+            desligado e so o modal intersticial (INTERSTITIAL_ENABLED
+            em lib/ads.ts). */}
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        />
       </head>
       <body>{children}</body>
     </html>

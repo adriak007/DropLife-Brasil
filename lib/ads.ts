@@ -13,9 +13,11 @@
 // Nunca clique nos proprios anuncios, nem para testar — isso viola a
 // politica do AdSense e pode banir a conta permanentemente.
 
-// Chave geral dos anuncios: false desliga o script do AdSense (layout) e o
-// intersticial, sem remover nada do codigo. Para religar, mude para true.
-export const ADS_ENABLED = false;
+// Chave do modal intersticial: false desliga so o modal de anuncio a cada N
+// nascimentos (sem bloco de anuncio aprovado ele apareceria vazio). O script
+// do AdSense em app/layout.tsx fica sempre ligado para a verificacao do
+// Google. Quando os blocos forem aprovados, mude para true.
+export const INTERSTITIAL_ENABLED = false;
 
 const AD_COUNTER_KEY = 'droplife-ad-counter';
 const AD_EVERY_N = 5;
@@ -23,7 +25,7 @@ const AD_EVERY_N = 5;
 // Incrementa o contador de nascimentos da sessao e diz se chegou a hora de
 // mostrar o anuncio (e ja reseta o contador nesse caso).
 export const bumpBirthCounterAndCheckAd = (): boolean => {
-  if (!ADS_ENABLED) return false;
+  if (!INTERSTITIAL_ENABLED) return false;
   if (typeof window === 'undefined') return false;
   try {
     const raw = sessionStorage.getItem(AD_COUNTER_KEY);
