@@ -6,10 +6,74 @@ import './globals.css';
 // components/AdInterstitial.tsx depois que a conta for aprovada.
 const ADSENSE_CLIENT = 'ca-pub-3958503944876278';
 
+const SITE_URL = 'https://droplife.life';
+const SITE_NAME = 'DropLife Brasil';
+const SITE_DESC =
+  'Jogo gratuito de geografia: nasça em um dos 5.570 municípios brasileiros sorteados por população, colecione cidades no Citydex, desbloqueie conquistas e dispute o ranking global.';
+
 export const metadata: Metadata = {
-  title: 'DropLife Brasil',
-  description:
-    'Nasça em um município brasileiro sorteado por população e descubra curiosidades sobre ele.',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'DropLife Brasil — Nasça em um município brasileiro',
+    template: '%s | DropLife Brasil',
+  },
+  description: SITE_DESC,
+  applicationName: SITE_NAME,
+  keywords: [
+    'droplife',
+    'droplife brasil',
+    'jogo de geografia',
+    'municípios do Brasil',
+    'jogo do brasil',
+    'mapa do brasil interativo',
+    'citydex',
+    'jogo de nascer em cidade',
+  ],
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: 'DropLife Brasil — Nasça em um município brasileiro',
+    description: SITE_DESC,
+    locale: 'pt_BR',
+    images: [{ url: '/Img/LOGO 1.png', width: 1200, height: 630, alt: 'DropLife Brasil' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DropLife Brasil — Nasça em um município brasileiro',
+    description: SITE_DESC,
+    images: ['/Img/LOGO 1.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  category: 'games',
+};
+
+// Dados estruturados (JSON-LD): ajudam o Google a entender que é um jogo
+// de navegador gratuito em pt-BR e a exibir rich results.
+const JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoGame',
+  name: SITE_NAME,
+  url: SITE_URL,
+  description: SITE_DESC,
+  inLanguage: 'pt-BR',
+  genre: ['Geografia', 'Casual', 'Colecionável'],
+  gamePlatform: 'Web Browser',
+  playMode: 'SinglePlayer',
+  isAccessibleForFree: true,
+  applicationCategory: 'Game',
+  image: `${SITE_URL}/Img/LOGO%201.png`,
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
 };
 
 export const viewport: Viewport = {
@@ -36,6 +100,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
         />
       </head>
       <body>{children}</body>
