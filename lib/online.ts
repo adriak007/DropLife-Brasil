@@ -258,13 +258,23 @@ export const fetchCityRanking = async (limit = 100): Promise<CityRankRow[]> => {
 export const fetchPlayerRanking = async (limit = 100): Promise<PlayerRankRow[]> => {
   if (!supabase) return [];
   try {
-    const { data } = await supabase
+    // banned exige a coluna criada no banco (migração de moderação); se ela
+    // ainda não existir, o fallback abaixo busca sem o filtro.
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('nickname,total_births')
+      .eq('banned', false)
+      .gt('total_births', 0)
+      .order('total_births', { ascending: false })
+      .limit(limit);
+    if (!error) return data ?? [];
+    const { data: plain } = await supabase
       .from('profiles')
       .select('nickname,total_births')
       .gt('total_births', 0)
       .order('total_births', { ascending: false })
       .limit(limit);
-    return data ?? [];
+    return plain ?? [];
   } catch {
     return [];
   }
