@@ -670,25 +670,6 @@ export class MapController {
     this.availableCities = [...this.allCities];
   }
 
-  // Pontinho dourado em cada capital: orienta no mapa e conversa com a
-  // conquista de capitais. São só 27 círculos — custo desprezível.
-  private renderCapitalDots(svg: SVGSVGElement): void {
-    const seen = new Set<string>();
-    const frag = document.createDocumentFragment();
-    for (const { key, path } of this.allCities) {
-      if (!CAPITAL_KEYS.has(key) || seen.has(key)) continue;
-      seen.add(key);
-      const b = path.getBBox();
-      const dot = document.createElementNS(SVG_NS, 'circle');
-      dot.setAttribute('cx', String(b.x + b.width / 2));
-      dot.setAttribute('cy', String(b.y + b.height / 2));
-      dot.setAttribute('r', '2.4');
-      dot.setAttribute('class', 'capital-dot');
-      frag.appendChild(dot);
-    }
-    svg.appendChild(frag);
-  }
-
   // ── Destaque visual de um município (pin estilo mapa + pulso) ──
 
   // Zoom no estado da cidade e, quando a animação de zoom termina (420ms),
@@ -845,9 +826,11 @@ export class MapController {
         .svg--heatmap .region.region--hover { filter: brightness(1.5); }
         .state-label { fill: rgba(190,240,210,0.9); font: 700 13px "Segoe UI", Arial, sans-serif; paint-order: stroke; stroke: rgba(0,0,0,0.55); stroke-width: 1.4; text-anchor: middle; dominant-baseline: middle; pointer-events: none; opacity: 0.85; }
         .svg--zoomed .state-label { opacity: 0; transition: opacity 200ms ease; }
-        .capital-dot { fill: #ffd66b; stroke: rgba(15, 30, 20, 0.55); stroke-width: 0.6; pointer-events: none; opacity: 0.9; }
-        .svg--zoomed .capital-dot { opacity: 0.45; }
-        .svg--heatmap .capital-dot { opacity: 0.55; }
+        /* Capitais pintadas de dourado no próprio mapa (a cor de raridade
+           da captura vence via !important; o heatmap também) */
+        .region.region--capital { fill: #dda824; }
+        .region.region--capital.region--state-hover { fill: #e7b73d; }
+        .region.region--capital.region--hover { fill: #f0c14b; }
         .region.region--pulse {
           fill: #ff4b4b !important;
           transform-box: fill-box;
@@ -918,6 +901,8 @@ export class MapController {
         const uniqueKey = keyFor(cidade, stateKey);
         path.dataset.city = cidade;
         path.dataset.key = uniqueKey;
+        // Capitais pintadas de dourado (a cor de raridade da captura vence)
+        if (CAPITAL_KEYS.has(uniqueKey)) path.classList.add('region--capital');
         if (populacao) {
           matched += 1;
           const title = `${cidade}${uf ? ` (${uf})` : ''} - ${formatPop(populacao)} habitantes`;
@@ -951,7 +936,6 @@ export class MapController {
       });
 
       this.renderStateLabels(svg);
-      this.renderCapitalDots(svg);
       this.setupDelegatedEvents(svg);
       this.setupPinchZoom(svg);
 
