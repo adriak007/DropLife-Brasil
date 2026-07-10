@@ -4,6 +4,8 @@ import { clamp, cleanCity, formatChance, formatPop, keyFor } from './text';
 import { buildPopulationIndex, getPopulation, type PopulationIndex } from './population';
 import { curiosityFor, loadCuriosities, type CuriosityMap } from './curiosities';
 import { HEAT_BUCKETS, heatBucket } from './heatmap';
+import { rarityFor } from './rarity';
+import { CAPITAL_KEYS } from './achievements';
 
 const MAP_URL = '/MAPAESTADOS.svg';
 const MUNICIPIOS_URL = '/municipios.json';
@@ -613,6 +615,7 @@ export class MapController {
     if (idx !== -1) this.availableCities.splice(idx, 1);
 
     path.classList.add('region--selected');
+    path.dataset.tier = rarityFor(population).id;
     const chance = formatChance(population);
     const curiosity = curiosityFor(this.curiosities, city, state);
     this.opts.setStatus(
@@ -643,11 +646,15 @@ export class MapController {
     return this.allCities.length;
   }
 
-  // Pinta as cidades já capturadas e as remove do pool de sorteio
+  // Pinta as cidades já capturadas (na cor da raridade de cada uma) e as
+  // remove do pool de sorteio
   restoreCaptured(keys: Set<string>): void {
     if (!keys.size) return;
-    this.allCities.forEach(({ key, path }) => {
-      if (keys.has(key)) path.classList.add('region--selected');
+    this.allCities.forEach(({ key, path, population }) => {
+      if (keys.has(key)) {
+        path.classList.add('region--selected');
+        path.dataset.tier = rarityFor(population).id;
+      }
     });
     this.availableCities = this.availableCities.filter((c) => !keys.has(c.key));
   }
@@ -656,8 +663,30 @@ export class MapController {
   // Usado na troca de identidade (login/logout/troca de conta) antes de
   // restaurar o progresso do novo dono da sessão.
   resetCaptured(): void {
-    this.allCities.forEach(({ path }) => path.classList.remove('region--selected'));
+    this.allCities.forEach(({ path }) => {
+      path.classList.remove('region--selected');
+      delete path.dataset.tier;
+    });
     this.availableCities = [...this.allCities];
+  }
+
+  // Pontinho dourado em cada capital: orienta no mapa e conversa com a
+  // conquista de capitais. São só 27 círculos — custo desprezível.
+  private renderCapitalDots(svg: SVGSVGElement): void {
+    const seen = new Set<string>();
+    const frag = document.createDocumentFragment();
+    for (const { key, path } of this.allCities) {
+      if (!CAPITAL_KEYS.has(key) || seen.has(key)) continue;
+      seen.add(key);
+      const b = path.getBBox();
+      const dot = document.createElementNS(SVG_NS, 'circle');
+      dot.setAttribute('cx', String(b.x + b.width / 2));
+      dot.setAttribute('cy', String(b.y + b.height / 2));
+      dot.setAttribute('r', '2.4');
+      dot.setAttribute('class', 'capital-dot');
+      frag.appendChild(dot);
+    }
+    svg.appendChild(frag);
   }
 
   // ── Destaque visual de um município (pin estilo mapa + pulso) ──
@@ -787,12 +816,27 @@ export class MapController {
         if (this.isZoomed && evt.target === svg) this.resetZoom();
       });
 
+      // Variação sutil de tom por estado (leitura de divisas estilo atlas,
+      // sem stroke pesado). Regras declaradas ANTES de hover/seleção, que
+      // vencem no empate de especificidade por virem depois.
+      const stateTones = ['#1b5438', '#20603f', '#16482c'];
+      const toneRules = Object.keys(ufToName)
+        .map((uf, i) => `.region[data-state="${uf}"] { fill: ${stateTones[i % 3]}; }`)
+        .join('\n        ');
+
       const styleEl = document.createElementNS(SVG_NS, 'style');
       styleEl.textContent = `
-        .region { fill: #1b5438; cursor: pointer; transition: fill 160ms ease, filter 160ms ease; stroke: transparent; }
+        .region { fill: #1b5438; cursor: pointer; transition: fill 160ms ease, filter 160ms ease, stroke 160ms ease; stroke: transparent; }
+        ${toneRules}
         .region.region--hover { fill: #2b7350; filter: brightness(1.15); }
-        .region.region--selected { fill: #ef4444 !important; stroke: #991b1b; stroke-width: 0.85; animation: selectedGlow 1.8s ease-in-out infinite; }
-        .region.region--state-hover { fill: #235f40; }
+        .region.region--selected { fill: #ef4444 !important; stroke: #991b1b; stroke-width: 0.85; }
+        /* Vitrine da coleção: capturada pinta na cor da raridade dela */
+        .region.region--selected[data-tier="lendario"] { fill: #f59e0b !important; stroke: #b45309; }
+        .region.region--selected[data-tier="epico"]    { fill: #a78bfa !important; stroke: #7c5cd6; }
+        .region.region--selected[data-tier="raro"]     { fill: #38bdf8 !important; stroke: #0d8fce; }
+        .region.region--selected[data-tier="incomum"]  { fill: #34d399 !important; stroke: #0fa571; }
+        .region.region--selected[data-tier="comum"]    { fill: #94a3b8 !important; stroke: #64748b; }
+        .region.region--state-hover { fill: #256647; stroke: rgba(214, 245, 224, 0.35); stroke-width: 0.45; }
         .region.region--state-hover.region--hover { fill: #2b7350; }
         .svg--zoomed .region { stroke: transparent; }
         .svg--zoomed .region--active-state { stroke: rgba(0,210,255,0.22); stroke-width: 0.6; }
@@ -801,10 +845,9 @@ export class MapController {
         .svg--heatmap .region.region--hover { filter: brightness(1.5); }
         .state-label { fill: rgba(190,240,210,0.9); font: 700 13px "Segoe UI", Arial, sans-serif; paint-order: stroke; stroke: rgba(0,0,0,0.55); stroke-width: 1.4; text-anchor: middle; dominant-baseline: middle; pointer-events: none; opacity: 0.85; }
         .svg--zoomed .state-label { opacity: 0; transition: opacity 200ms ease; }
-        @keyframes selectedGlow {
-          0%,100% { filter: drop-shadow(0 0 6px rgba(239,68,68,0.7)); }
-          50%      { filter: drop-shadow(0 0 18px rgba(239,68,68,1)); }
-        }
+        .capital-dot { fill: #ffd66b; stroke: rgba(15, 30, 20, 0.55); stroke-width: 0.6; pointer-events: none; opacity: 0.9; }
+        .svg--zoomed .capital-dot { opacity: 0.45; }
+        .svg--heatmap .capital-dot { opacity: 0.55; }
         .region.region--pulse {
           fill: #ff4b4b !important;
           transform-box: fill-box;
@@ -908,6 +951,7 @@ export class MapController {
       });
 
       this.renderStateLabels(svg);
+      this.renderCapitalDots(svg);
       this.setupDelegatedEvents(svg);
       this.setupPinchZoom(svg);
 
