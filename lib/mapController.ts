@@ -807,7 +807,9 @@ export class MapController {
 
       const styleEl = document.createElementNS(SVG_NS, 'style');
       styleEl.textContent = `
-        .region { fill: #1b5438; cursor: pointer; transition: fill 160ms ease, filter 160ms ease, stroke 160ms ease; stroke: transparent; }
+        /* Traço fino escuro: cobre as frestas claras entre municípios
+           (o fundo creme vazava) e desenha as divisas discretamente */
+        .region { fill: #1b5438; cursor: pointer; transition: fill 160ms ease, filter 160ms ease, stroke 160ms ease; stroke: rgba(8, 40, 24, 0.6); stroke-width: 0.3; }
         ${toneRules}
         .region.region--hover { fill: #2b7350; filter: brightness(1.15); }
         .region.region--selected { fill: #ef4444 !important; stroke: #991b1b; stroke-width: 0.85; }
@@ -819,7 +821,6 @@ export class MapController {
         .region.region--selected[data-tier="comum"]    { fill: #94a3b8 !important; stroke: #64748b; }
         .region.region--state-hover { fill: #256647; stroke: rgba(214, 245, 224, 0.35); stroke-width: 0.45; }
         .region.region--state-hover.region--hover { fill: #2b7350; }
-        .svg--zoomed .region { stroke: transparent; }
         .svg--zoomed .region--active-state { stroke: rgba(0,210,255,0.22); stroke-width: 0.6; }
         ${HEAT_BUCKETS.map((b, i) => `.svg--heatmap .region[data-heat="${i}"] { fill: ${b.color}; }`).join('\n        ')}
         .svg--heatmap .region.region--state-hover { filter: brightness(1.3); }
