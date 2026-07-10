@@ -326,13 +326,13 @@ export default function MapGame() {
     return () => window.removeEventListener('keydown', onKey);
   }, [modal, panel]);
 
-  // Ao fechar o modal de nascimento, dá zoom no estado e destaca a cidade
-  // onde o jogador acabou de nascer (pin + pulso), mostrando onde ela fica.
+  // Ao fechar o modal de nascimento, destaca a cidade onde o jogador acabou
+  // de nascer (pin + pulso) na view atual — sem mexer no zoom.
   useEffect(() => {
     if (modal || !pendingHighlightRef.current) return;
     const key = pendingHighlightRef.current;
     pendingHighlightRef.current = null;
-    controllerRef.current?.focusCity(key);
+    controllerRef.current?.highlightCity(key);
   }, [modal]);
 
   const registerBirth = (picked: PickedCity, daily?: string) => {
