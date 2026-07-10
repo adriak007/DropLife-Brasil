@@ -4,7 +4,21 @@ export interface OnlineProfile {
   id: string;
   nickname: string;
   total_births: number;
+  // Moderação: presentes só depois da migração (colunas em profiles)
+  banned?: boolean;
+  banned_until?: string | null;
 }
+
+// Ban ativo do perfil: null se não banido (ou ban já expirado).
+// until = null significa banimento permanente.
+export const activeBan = (
+  profile: OnlineProfile | null
+): { until: Date | null } | null => {
+  if (!profile?.banned) return null;
+  if (!profile.banned_until) return { until: null };
+  const until = new Date(profile.banned_until);
+  return until > new Date() ? { until } : null;
+};
 
 export interface AuthState {
   signedIn: boolean;
@@ -43,17 +57,31 @@ const NICK_OK = /^.{2,20}$/;
 
 export const onlineEnabled = (): boolean => Boolean(supabase);
 
+// Busca o perfil com as colunas de moderação; se a migração (banned /
+// banned_until) ainda não tiver sido aplicada, cai no select básico.
+const fetchProfile = async (uid: string): Promise<OnlineProfile | null> => {
+  if (!supabase) return null;
+  const { data, error } = await supabase
+    .from('profiles')
+    .select('id,nickname,total_births,banned,banned_until')
+    .eq('id', uid)
+    .maybeSingle();
+  if (!error) return data;
+  const { data: plain } = await supabase
+    .from('profiles')
+    .select('id,nickname,total_births')
+    .eq('id', uid)
+    .maybeSingle();
+  return plain;
+};
+
 export const getAuthState = async (): Promise<AuthState> => {
   if (!supabase) return { signedIn: false, userId: null, profile: null };
   try {
     const { data: { session } } = await supabase.auth.getSession();
     if (!session) return { signedIn: false, userId: null, profile: null };
     const uid = session.user.id;
-    const { data } = await supabase
-      .from('profiles')
-      .select('id,nickname,total_births')
-      .eq('id', uid)
-      .maybeSingle();
+    const data = await fetchProfile(uid);
     if (data) return { signedIn: true, userId: uid, profile: data };
 
     // Sessão sem perfil (ex.: primeiro login após confirmar o e-mail):
@@ -62,11 +90,7 @@ export const getAuthState = async (): Promise<AuthState> => {
     if (metaNick && metaNick.length >= 2) {
       const created = await saveNickname(metaNick);
       if (created.ok) {
-        const { data: fresh } = await supabase
-          .from('profiles')
-          .select('id,nickname,total_births')
-          .eq('id', uid)
-          .maybeSingle();
+        const fresh = await fetchProfile(uid);
         return { signedIn: true, userId: uid, profile: fresh ?? null };
       }
     }

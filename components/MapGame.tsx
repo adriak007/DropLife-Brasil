@@ -31,6 +31,7 @@ import AdInterstitial from '@/components/AdInterstitial';
 import { spawnRipple } from '@/components/NavButton';
 import { bumpBirthCounterAndCheckAd } from '@/lib/ads';
 import {
+  activeBan,
   fetchMyBirths,
   getAuthState,
   onAuthChange,
@@ -270,6 +271,23 @@ export default function MapGame() {
       cancelled = true;
     };
   }, [saveScope, mapReady, authResolved]);
+
+  // ── Aviso de banimento ──
+  // Se o perfil logado está banido (profiles.banned), mostra um modal com a
+  // data de término do ban — ou avisa que é permanente. Uma vez por conta
+  // por sessão. Declarado DEPOIS do efeito de identidade para o modal não
+  // ser apagado pela limpeza de troca de dono.
+  const banNotifiedRef = useRef<string | null>(null);
+  useEffect(() => {
+    const ban = activeBan(auth.profile);
+    if (!ban || !auth.userId) return;
+    if (banNotifiedRef.current === auth.userId) return;
+    banNotifiedRef.current = auth.userId;
+    const message = ban.until
+      ? `Sua conta está banida do ranking até ${ban.until.toLocaleDateString('pt-BR')} às ${ban.until.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}. Até lá, seus nascimentos não contam para o ranking global.`
+      : 'Sua conta está banida do ranking permanentemente. Seus nascimentos não contam para o ranking global.';
+    setModal({ type: 'message', title: '🚫 Conta banida', message });
+  }, [auth]);
 
   const registerBirth = (picked: PickedCity, daily?: string) => {
     const prev = saveRef.current;
