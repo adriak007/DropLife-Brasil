@@ -105,6 +105,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
         />
+        {/* Google tag (gtag.js) — Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MDPXZVTKL" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-3MDPXZVTKL');`,
+          }}
+        />
       </head>
       <body>{children}</body>
     </html>
