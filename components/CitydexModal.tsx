@@ -12,7 +12,7 @@ interface Props {
   save: SaveData;
   total: number;
   onClose: () => void;
-  onLocate: (uf: string) => void;
+  onLocate: (uf: string, key?: string) => void;
 }
 
 export default function CitydexModal({ save, total, onClose, onLocate }: Props) {
@@ -125,8 +125,8 @@ export default function CitydexModal({ save, total, onClose, onLocate }: Props) 
               key={b.key + b.bornAt}
               className="dex-row"
               type="button"
-              title={`Ver ${ufToName[b.state] || b.state} no mapa`}
-              onClick={() => onLocate(b.state)}
+              title={`Ver ${b.city} no mapa`}
+              onClick={() => onLocate(b.state, b.key)}
             >
               {(() => {
                 const imgUrl = cityImageFor(b.city, b.state);

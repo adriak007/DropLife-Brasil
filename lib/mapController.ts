@@ -57,6 +57,10 @@ export class MapController {
   private suppressNextClick = false;
   private availableCities: AvailableCity[] = [];
   private allCities: AvailableCity[] = [];
+  private pinEl: HTMLDivElement | null = null;
+  private pinTimer = 0;
+  private pulseTimer = 0;
+  private focusCityTimer = 0;
   private stateStats = new Map<string, StateStats>();
   private populationIndex: PopulationIndex | null = null;
   private curiosities: CuriosityMap = new Map();
@@ -121,6 +125,10 @@ export class MapController {
   destroy(): void {
     this.destroyed = true;
     if (this.viewBoxAnimation) cancelAnimationFrame(this.viewBoxAnimation);
+    window.clearTimeout(this.pinTimer);
+    window.clearTimeout(this.pulseTimer);
+    window.clearTimeout(this.focusCityTimer);
+    this.pinEl = null;
     document.removeEventListener('pointerdown', this.docPointerDown, true);
     document.removeEventListener('click', this.docClick);
     window.removeEventListener('resize', this.winReposition);
@@ -182,6 +190,7 @@ export class MapController {
   }
 
   resetZoom(): void {
+    this.removePin();
     if (!this.isZoomed || !this.baseViewBox || !this.currentSvg) return;
     if (this.viewBoxAnimation) cancelAnimationFrame(this.viewBoxAnimation);
     this.animateViewBox(this.currentSvg, this.baseViewBox);
@@ -204,6 +213,7 @@ export class MapController {
   }
 
   private focusState(state: string): void {
+    this.removePin(); // pin antigo fica em posição errada após mudar a view
     if (!state || !this.stateGroups.has(state) || !this.baseViewBox || !this.currentSvg) return;
     const entry = this.stateGroups.get(state);
     if (!entry || !entry.bbox) return;
@@ -650,6 +660,51 @@ export class MapController {
     this.availableCities = [...this.allCities];
   }
 
+  // ── Destaque visual de um município (pin estilo mapa + pulso) ──
+
+  // Zoom no estado da cidade e, quando a animação de zoom termina (420ms),
+  // dispara o pulso e o pin sobre o município.
+  focusCity(key: string): void {
+    const hit = this.allCities.find((c) => c.key === key);
+    if (!hit) return;
+    this.focusState(hit.state);
+    window.clearTimeout(this.focusCityTimer);
+    this.focusCityTimer = window.setTimeout(() => this.highlightCity(key), 460);
+  }
+
+  // A cidade cresce e volta (2 pulsos) e um pin vermelho estilo Google Maps
+  // cai sobre ela, sumindo sozinho depois de alguns segundos.
+  highlightCity(key: string): void {
+    const hit = this.allCities.find((c) => c.key === key);
+    if (!hit || !this.currentSvg) return;
+    const path = hit.path;
+
+    path.classList.remove('region--pulse');
+    void path.getBoundingClientRect(); // reflow: reinicia a animação se repetida
+    path.classList.add('region--pulse');
+    window.clearTimeout(this.pulseTimer);
+    this.pulseTimer = window.setTimeout(() => path.classList.remove('region--pulse'), 1400);
+
+    this.removePin();
+    const rect = path.getBoundingClientRect();
+    const crect = this.opts.container.getBoundingClientRect();
+    const pin = document.createElement('div');
+    pin.className = 'map-pin';
+    pin.style.left = `${rect.left + rect.width / 2 - crect.left}px`;
+    pin.style.top = `${rect.top + rect.height / 2 - crect.top}px`;
+    pin.innerHTML =
+      '<svg viewBox="0 0 24 24"><path d="M12 1.7c-4.4 0-7.9 3.5-7.9 7.8 0 5.7 6.7 12 7.4 12.7a.8.8 0 0 0 1 0c.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="#ff4b4b"/><path d="M12 1.7v20.7c.2 0 .4-.1.5-.2.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="#dd3a3a"/><circle cx="12" cy="9.4" r="3.3" fill="#fff"/></svg>';
+    this.opts.container.appendChild(pin);
+    this.pinEl = pin;
+    this.pinTimer = window.setTimeout(() => this.removePin(), 2800);
+  }
+
+  private removePin(): void {
+    window.clearTimeout(this.pinTimer);
+    this.pinEl?.remove();
+    this.pinEl = null;
+  }
+
   // Dados de exibição de um município a partir da chave persistida — permite
   // reconstruir o Citydex de uma conta só com as chaves vindas do servidor.
   getCityByKey(key: string): { city: string; state: string; population: number; chance: string } | null {
@@ -749,6 +804,17 @@ export class MapController {
         @keyframes selectedGlow {
           0%,100% { filter: drop-shadow(0 0 6px rgba(239,68,68,0.7)); }
           50%      { filter: drop-shadow(0 0 18px rgba(239,68,68,1)); }
+        }
+        .region.region--pulse {
+          fill: #ff4b4b !important;
+          transform-box: fill-box;
+          transform-origin: center;
+          animation: cityPulse 650ms cubic-bezier(0.34, 1.56, 0.64, 1) 2 !important;
+        }
+        @keyframes cityPulse {
+          0%   { transform: scale(1); }
+          45%  { transform: scale(2.3); }
+          100% { transform: scale(1); }
         }
       `;
       svg.appendChild(styleEl);

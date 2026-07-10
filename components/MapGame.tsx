@@ -114,6 +114,8 @@ export default function MapGame() {
       ? auth.userId
       : 'guest';
   const scopeRef = useRef<SaveScope | null>(null);
+  // Cidade a destacar no mapa (pin + pulso) quando o modal de nascimento fechar
+  const pendingHighlightRef = useRef<string | null>(null);
 
   // Totais reais (não hardcoded) usados pelas conquistas de estado/região/país
   const achievementCtx: AchievementContext = {
@@ -241,6 +243,7 @@ export default function MapGame() {
     if (!controller) return;
 
     // Zera memória, UI e mapa antes de carregar o novo dono da sessão
+    pendingHighlightRef.current = null;
     setSave(emptySave());
     setPanel(null);
     setModal(null);
@@ -323,6 +326,15 @@ export default function MapGame() {
     return () => window.removeEventListener('keydown', onKey);
   }, [modal, panel]);
 
+  // Ao fechar o modal de nascimento, dá zoom no estado e destaca a cidade
+  // onde o jogador acabou de nascer (pin + pulso), mostrando onde ela fica.
+  useEffect(() => {
+    if (modal || !pendingHighlightRef.current) return;
+    const key = pendingHighlightRef.current;
+    pendingHighlightRef.current = null;
+    controllerRef.current?.focusCity(key);
+  }, [modal]);
+
   const registerBirth = (picked: PickedCity, daily?: string) => {
     const prev = saveRef.current;
     const already = prev.births.some((b) => b.key === picked.key);
@@ -383,6 +395,8 @@ export default function MapGame() {
       daily,
       isNewCapture: !already,
     };
+    // Quando o jogador fechar o modal, o mapa mostra onde a cidade fica
+    pendingHighlightRef.current = picked.key;
     setModal({ type: 'city', data });
   };
 
@@ -469,6 +483,15 @@ export default function MapGame() {
   const locateState = (uf: string) => {
     setPanel(null);
     controllerRef.current?.focusStateByKey(uf);
+  };
+
+  // Citydex: fecha o painel, dá zoom no estado e destaca a cidade (pin + pulso)
+  const locateCity = (uf: string, key?: string) => {
+    setPanel(null);
+    const controller = controllerRef.current;
+    if (!controller) return;
+    if (key) controller.focusCity(key);
+    else controller.focusStateByKey(uf);
   };
 
   const handleAuthChanged = async () => {
@@ -730,7 +753,7 @@ export default function MapGame() {
             save={save}
             total={totalCities}
             onClose={() => setPanel(null)}
-            onLocate={locateState}
+            onLocate={locateCity}
           />
         )}
         {panel === 'conquistas' && (
