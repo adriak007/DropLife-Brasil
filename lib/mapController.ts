@@ -807,8 +807,9 @@ export class MapController {
 
       const styleEl = document.createElementNS(SVG_NS, 'style');
       styleEl.textContent = `
-        /* Traço fino escuro: cobre as frestas claras entre municípios
-           (o fundo creme vazava) e desenha as divisas discretamente */
+        /* Forro verde-escuro sob os municípios: furinhos entre polígonos
+           mostram verde, não o fundo claro da página */
+        .country-backing path { fill: #14432c !important; stroke: #14432c !important; stroke-width: 1 !important; pointer-events: none; }
         .region { fill: #1b5438; cursor: pointer; transition: fill 160ms ease, filter 160ms ease, stroke 160ms ease; stroke: rgba(8, 40, 24, 0.6); stroke-width: 0.3; }
         ${toneRules}
         .region.region--hover { fill: #2b7350; filter: brightness(1.15); }
@@ -845,6 +846,23 @@ export class MapController {
         }
       `;
       svg.appendChild(styleEl);
+
+      // Forro do país: clona os 27 contornos de estado preenchidos de verde
+      // escuro POR BAIXO dos municípios — os furinhos entre polígonos passam
+      // a mostrar verde em vez do fundo claro da página. Custo desprezível.
+      const borders = svg.querySelectorAll<SVGPathElement>('path[id^="state-border"]');
+      if (borders.length) {
+        const backing = document.createElementNS(SVG_NS, 'g');
+        backing.setAttribute('class', 'country-backing');
+        borders.forEach((b) => {
+          const clone = b.cloneNode(false) as SVGPathElement;
+          clone.removeAttribute('id');
+          clone.removeAttribute('class');
+          clone.removeAttribute('style');
+          backing.appendChild(clone);
+        });
+        svg.insertBefore(backing, svg.firstChild);
+      }
 
       const [municipios, curiosities] = await Promise.all([municipiosPromise, curiositiesPromise]);
       if (this.destroyed) return;
