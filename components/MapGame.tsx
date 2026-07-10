@@ -319,16 +319,23 @@ export default function MapGame() {
     setSave(next);
     unlocked.forEach((a) => showToast(`🏆 Conquista desbloqueada: ${a.emoji} ${a.name}`));
 
-    // Ranking global: registra o nascimento (o servidor valida e conta)
+    // Ranking global: registra o nascimento (o servidor valida cidade,
+    // duplicata, ban e rate limit). Se falhar (ex.: rate limit por jitter de
+    // rede), tenta uma única vez de novo após o intervalo mínimo do servidor.
     if (auth.profile && !already) {
+      const bumpProfile = () =>
+        setAuth((a) =>
+          a.profile
+            ? { ...a, profile: { ...a.profile, total_births: a.profile.total_births + 1 } }
+            : a
+        );
       recordBirth(picked.key).then((ok) => {
-        if (ok) {
-          setAuth((a) =>
-            a.profile
-              ? { ...a, profile: { ...a.profile, total_births: a.profile.total_births + 1 } }
-              : a
-          );
-        }
+        if (ok) return bumpProfile();
+        window.setTimeout(() => {
+          recordBirth(picked.key).then((ok2) => {
+            if (ok2) bumpProfile();
+          });
+        }, 2500);
       });
     }
 
