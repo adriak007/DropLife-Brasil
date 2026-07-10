@@ -825,13 +825,20 @@ export class MapController {
       this.curiosities = curiosities;
       if (this.destroyed) return;
 
-      const regions = svg.querySelectorAll<SVGPathElement>('path[data-name]');
+      const regions = Array.from(svg.querySelectorAll<SVGPathElement>('path[data-name]'));
       let matched = 0;
       let processed = 0;
       this.missing = [];
       this.availableCities = [];
 
-      regions.forEach((path) => {
+      // Lotes com yield entre eles: uma única tarefa longa (getBBox +
+      // strings dos 5.570 paths) vira várias tarefas curtas (<50ms), o que
+      // tira este loop do TBT. A loading screen cobre o período — nada
+      // muda visualmente.
+      const CHUNK_SIZE = 600;
+      for (let startIdx = 0; startIdx < regions.length; startIdx += CHUNK_SIZE) {
+        if (this.destroyed) return;
+        for (const path of regions.slice(startIdx, startIdx + CHUNK_SIZE)) {
         const rawName = path.getAttribute('data-name') || '';
         const [cidadeRaw = '', ufRaw = ''] = rawName.split(',').map((s) => s.trim());
         const cidade = cleanCity(cidadeRaw);
@@ -862,7 +869,7 @@ export class MapController {
         }
 
         path.classList.add('region');
-        if (!cidade) return;
+        if (!cidade) continue;
 
         processed += 1;
         const uniqueKey = keyFor(cidade, stateKey);
@@ -884,7 +891,12 @@ export class MapController {
         } else {
           this.missing.push(rawName || '(sem nome)');
         }
-      });
+        }
+        if (startIdx + CHUNK_SIZE < regions.length) {
+          await new Promise((resolve) => setTimeout(resolve, 0));
+        }
+      }
+      if (this.destroyed) return;
 
       this.allCities = [...this.availableCities];
       this.stateStats.clear();

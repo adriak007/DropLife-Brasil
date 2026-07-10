@@ -1,9 +1,19 @@
-export const normalize = (value = ''): string =>
-  value
+// Memoizado: normalize roda dezenas de milhares de vezes na carga do mapa
+// (chaves de 5.570 municípios) sobre um conjunto pequeno de strings que se
+// repetem — o cache corta esse custo da thread principal.
+const normalizeCache = new Map<string, string>();
+
+export const normalize = (value = ''): string => {
+  const hit = normalizeCache.get(value);
+  if (hit !== undefined) return hit;
+  const out = value
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
     .replace(/[^a-z0-9]/gi, '')
     .toLowerCase();
+  if (normalizeCache.size < 30000) normalizeCache.set(value, out);
+  return out;
+};
 
 // Repara strings com encoding quebrado (UTF-8 lido como Latin-1) presentes
 // em alguns JSONs de curiosidades.

@@ -105,14 +105,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
         />
-        {/* Google tag (gtag.js) — Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MDPXZVTKL" />
+        {/* Google tag (gtag.js) — Google Analytics.
+            O script remoto só é injetado após o load da página, fora do
+            caminho crítico (TBT); os eventos ficam na fila do dataLayer e
+            são processados quando ele chega — o pageview não se perde. */}
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-3MDPXZVTKL');`,
+gtag('config', 'G-3MDPXZVTKL');
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3MDPXZVTKL';
+    document.head.appendChild(s);
+  }, 1500);
+});`,
           }}
         />
       </head>
