@@ -29,7 +29,7 @@ export default function OnboardingModal({ onClose }: { onClose: () => void }) {
             <p>
               Cidade pequena = <strong>rara</strong>. Cada município tem uma raridade: Comum,
               Incomum, Raro, Épico e <strong>Lendário</strong> (menos de 1% de chance!). Colecione
-              todas no <strong>Citydex</strong>.
+              todas na sua <strong>Citydex</strong>.
             </p>
           </div>
           <div className="onboarding__step">
