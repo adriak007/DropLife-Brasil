@@ -7,11 +7,15 @@ export interface RarityTier {
   max: number; // população máxima (exclusiva) para cair neste tier
 }
 
+// Cortes calibrados pela PROBABILIDADE ponderada por população (não pelo
+// tamanho da cidade): Lendário ~0,9% (1/109), Épico ~4,7% (1/21),
+// Raro ~12% (1/8), Incomum ~23% (1/4), Comum ~60%. Antes, "Incomum" era o
+// resultado mais frequente do jogo e "Épico" saía 1 a cada 9 nascimentos.
 export const RARITY_TIERS: RarityTier[] = [
-  { id: 'lendario', label: 'Lendário', color: '#f59e0b', max: 3_000 },
-  { id: 'epico', label: 'Épico', color: '#a78bfa', max: 15_000 },
-  { id: 'raro', label: 'Raro', color: '#38bdf8', max: 80_000 },
-  { id: 'incomum', label: 'Incomum', color: '#34d399', max: 500_000 },
+  { id: 'lendario', label: 'Lendário', color: '#f59e0b', max: 3_500 },
+  { id: 'epico', label: 'Épico', color: '#a78bfa', max: 9_000 },
+  { id: 'raro', label: 'Raro', color: '#38bdf8', max: 23_000 },
+  { id: 'incomum', label: 'Incomum', color: '#34d399', max: 85_000 },
   { id: 'comum', label: 'Comum', color: '#94a3b8', max: Infinity },
 ];
 

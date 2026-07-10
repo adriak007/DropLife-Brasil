@@ -25,7 +25,7 @@ const USER_AGENT = 'DropLife-Brasil/1.0 (+https://github.com/adriak007/DropLife-
 
 // Controle de rate limiting
 const CONCURRENT = 3;
-const DELAY_MS = 500; // ms entre requisições
+const DELAY_MS = 150; // ms entre requisições (dentro do limite da Wikimedia)
 const MAX_RETRIES = 3;
 const BACKOFF_BASE = 1000; // 1s, 2s, 4s
 
@@ -46,7 +46,7 @@ class RateLimiter {
 
     const now = Date.now();
     const timeSinceLastRequest = now - this.lastRequestTime;
-    if (timeSinceLastRequest < this.DELAY_MS) {
+    if (timeSinceLastRequest < this.delayMs) {
       await new Promise((resolve) => setTimeout(resolve, this.delayMs - timeSinceLastRequest));
     }
     this.lastRequestTime = Date.now();
@@ -146,37 +146,53 @@ function formatWikimediaUrl(fileUrl, width) {
   return null;
 }
 
-// Busca imagem na Wikipedia PT
-async function getWikipediaImage(municipio) {
-  const slug = municipio.replace(/\s+/g, '_');
+// Consulta o summary de um título e devolve a thumbnail SOMENTE se o artigo
+// for de um município brasileiro (evita homônimos: "Piranhas" = peixe,
+// "Betânia" = cidade bíblica).
+async function getWikipediaSummary(titulo) {
+  const slug = titulo.replace(/\s+/g, '_');
   const url = `https://pt.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(slug)}`;
-
   try {
     const response = await fetchWithRetry(url);
     if (!response.ok) return null;
-    const data = await response.json();
-    if (data.thumbnail?.source) {
-      return data.thumbnail.source;
-    }
+    return await response.json();
   } catch {
-    // Ignorar erros (página não encontrada, etc.)
+    return null;
+  }
+}
+
+function isMunicipioArticle(summary) {
+  const texto = `${summary?.description || ''} ${summary?.extract || ''}`;
+  return /munic[ií]pio/i.test(texto);
+}
+
+// Busca imagem na Wikipedia PT: primeiro o título desambiguado
+// "Cidade (Estado)", depois "Cidade" simples — sempre validando que o
+// artigo fala de um município.
+async function getWikipediaImage(municipio, estado) {
+  const candidatos = [`${municipio} (${estado})`, municipio];
+  for (const titulo of candidatos) {
+    const summary = await limiter.run(() => getWikipediaSummary(titulo));
+    if (summary?.thumbnail?.source && isMunicipioArticle(summary)) {
+      return summary.thumbnail.source;
+    }
   }
   return null;
 }
 
 // Resolve imagem de um município
 async function resolveImagemMunicipio(municipio) {
-  const { codigo_ibge: codigoIBGE, municipio: nome } = municipio;
+  const { codigo_ibge: codigoIBGE, municipio: nome, estado } = municipio;
 
-  // 1º Wikidata
+  // 1º Wikidata (via código IBGE — sem risco de homônimo)
   const wikidataId = await limiter.run(() => findWikidataByIBGE(codigoIBGE));
   if (wikidataId) {
     const image = await limiter.run(() => getWikidataImage(wikidataId));
     if (image) return { img: image, fonte: 'wikidata' };
   }
 
-  // 2º Wikipedia PT
-  const wikipediaImage = await limiter.run(() => getWikipediaImage(nome));
+  // 2º Wikipedia PT (título desambiguado + validação de município)
+  const wikipediaImage = await getWikipediaImage(nome, estado);
   if (wikipediaImage) return { img: wikipediaImage, fonte: 'wikipedia' };
 
   // 3º Sem imagem
@@ -200,6 +216,19 @@ async function main() {
     console.log(`📂 Carregado cache anterior: ${Object.keys(resultado).length} cidades\n`);
   }
 
+  // --refazer-wikipedia: reprocessa as entradas vindas da Wikipedia (as do
+  // Wikidata vêm do código IBGE e não têm risco de homônimo).
+  if (process.argv.includes('--refazer-wikipedia')) {
+    let removidas = 0;
+    for (const [codigo, info] of Object.entries(resultado)) {
+      if (info.fonte === 'wikipedia') {
+        delete resultado[codigo];
+        removidas++;
+      }
+    }
+    console.log(`🔁 --refazer-wikipedia: ${removidas} entradas marcadas para reprocessar\n`);
+  }
+
   const startTime = Date.now();
   let resolvidas = 0;
   let semImagem = 0;
@@ -217,6 +246,11 @@ async function main() {
       resolvidas++;
     } else {
       semImagem++;
+    }
+
+    // Save incremental: interromper o script não perde o progresso
+    if ((i + 1) % 100 === 0) {
+      fs.writeFileSync(OUTPUT_FILE, JSON.stringify(resultado, null, 2));
     }
 
     const total = i + 1;

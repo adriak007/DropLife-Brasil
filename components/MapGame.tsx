@@ -28,7 +28,9 @@ import HomeDashboard from '@/components/HomeDashboard';
 import TopNav from '@/components/TopNav';
 import MobileNav from '@/components/MobileNav';
 import AdInterstitial from '@/components/AdInterstitial';
+import OnboardingModal from '@/components/OnboardingModal';
 import { spawnRipple } from '@/components/NavButton';
+import { shareDailyCard } from '@/lib/shareCard';
 import { bumpBirthCounterAndCheckAd } from '@/lib/ads';
 import {
   activeBan,
@@ -44,6 +46,7 @@ import {
 
 const LOGO_SRC = '/Img/LOGO 1.png';
 const BIRTH_COOLDOWN_MS = 1500;
+const ONBOARDING_KEY = 'droplife-onboarding-v1';
 
 // Reconstrói o save de uma conta SOMENTE com o que o servidor retornou:
 // as chaves viram registros completos via mapa e as conquistas são
@@ -97,6 +100,7 @@ export default function MapGame() {
   const [showAd, setShowAd] = useState(false);
   const [auth, setAuth] = useState<AuthState>({ signedIn: false, userId: null, profile: null });
   const [mapReady, setMapReady] = useState(false);
+  const [showOnboarding, setShowOnboarding] = useState(false);
   // Só carregamos qualquer save depois de saber QUEM está na sessão — evita
   // exibir progresso de visitante para uma conta (e vice-versa) no boot.
   const [authResolved, setAuthResolved] = useState(!onlineEnabled());
@@ -289,6 +293,36 @@ export default function MapGame() {
     setModal({ type: 'message', title: '🚫 Conta banida', message });
   }, [auth]);
 
+  // Onboarding: telinha de boas-vindas no primeiro acesso (uma vez por navegador)
+  useEffect(() => {
+    if (!mapReady) return;
+    try {
+      if (!localStorage.getItem(ONBOARDING_KEY)) setShowOnboarding(true);
+    } catch {
+      // storage bloqueado — segue sem onboarding
+    }
+  }, [mapReady]);
+
+  const dismissOnboarding = () => {
+    setShowOnboarding(false);
+    try {
+      localStorage.setItem(ONBOARDING_KEY, '1');
+    } catch {
+      // sem storage, o aviso volta na próxima visita — aceitável
+    }
+  };
+
+  // Esc fecha o que estiver aberto: primeiro o modal, depois o painel
+  useEffect(() => {
+    const onKey = (evt: KeyboardEvent) => {
+      if (evt.key !== 'Escape') return;
+      if (modal) setModal(null);
+      else if (panel) setPanel(null);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [modal, panel]);
+
   const registerBirth = (picked: PickedCity, daily?: string) => {
     const prev = saveRef.current;
     const already = prev.births.some((b) => b.key === picked.key);
@@ -416,20 +450,20 @@ export default function MapGame() {
   };
 
   const handleShare = async (data: CityModalData) => {
-    const [y, m, d] = (data.daily || todayKey()).split('-');
+    const date = data.daily || todayKey();
+    const [y, m, d] = date.split('-');
     const tier = rarityFor(data.population || 0);
+    // Texto sem o nome da cidade (estilo Wordle: sem spoiler do dia)
     const text = [
       `🇧🇷 DropLife Brasil — Desafio Diário ${d}/${m}/${y}`,
-      `👶 Nasci em ${data.city} (${data.state})`,
-      `🎲 Chance: ${data.chance}% · ${tier.label}`,
-      `🎮 www.droplife.life`,
+      `Tirei ${tier.label} · Chance: ${data.chance}%`,
+      `Onde você vai nascer? droplife.life`,
     ].join('\n');
-    try {
-      await navigator.clipboard.writeText(text);
-      showToast('Resultado copiado! Cole onde quiser. 📋');
-    } catch {
-      showToast('Nao foi possivel copiar o resultado.');
-    }
+    const feedback = await shareDailyCard(
+      { date, tier, chance: data.chance || '?', population: data.population || 0 },
+      text
+    );
+    showToast(feedback);
   };
 
   const locateState = (uf: string) => {
@@ -730,6 +764,8 @@ export default function MapGame() {
       </div>
 
       {showAd && <AdInterstitial onContinue={handleAdContinue} />}
+
+      {showOnboarding && <OnboardingModal onClose={dismissOnboarding} />}
     </>
   );
 }
