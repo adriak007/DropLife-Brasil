@@ -6,7 +6,7 @@ import type { AuthState } from '@/lib/online';
 import { formatPop } from '@/lib/text';
 import NavButton, { ICONS } from '@/components/NavButton';
 
-const LOGO_SRC = '/Img/LOGO 1.png';
+const LOGO_SRC = '/Img/logo-nav.png';
 
 interface Props {
   auth: AuthState;

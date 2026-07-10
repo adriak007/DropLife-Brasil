@@ -1,7 +1,12 @@
 // Imagens estáticas dos municípios, geradas por `npm run gerar-imagens`
-// (Wikidata + Wikipedia → public/cidade_imagens.json). Nenhuma requisição
-// externa acontece em runtime: os dois JSONs entram no bundle e o lookup é
-// feito em memória.
+// (Wikidata + Wikipedia → public/cidade_imagens.json).
+//
+// Performance: os JSONs NÃO entram no bundle JS (um require() aqui os
+// embutiria e somaria ~215 KB de parse na thread principal — foi o que
+// derrubou o TBT no Lighthouse). Eles são buscados via fetch dos arquivos
+// estáticos do próprio site, fora do caminho crítico (preloadCityImages é
+// chamado em idle), e ficam em cache do navegador. Nenhuma API externa é
+// consultada em runtime.
 import { keyFor, normalize } from './text';
 import { ufToName } from './geo';
 
@@ -17,44 +22,50 @@ interface CidadeImagem {
   fonte: string;
 }
 
-let municipios: MunicipioRow[] = [];
-let imagens: Record<string, CidadeImagem> = {};
-
-try {
-  municipios = require('@/public/municipios.json');
-} catch {
-  // municipios.json indisponível — segue sem imagens
-}
-
-try {
-  imagens = require('@/public/cidade_imagens.json');
-} catch {
-  // cidade_imagens.json ainda não foi gerado — segue sem imagens
-}
-
-// nome do estado por extenso (como vem no municipios.json) → sigla
-const nameToUf = new Map(Object.entries(ufToName).map(([uf, nome]) => [normalize(nome), uf]));
-
-// Índice (cidade-estado normalizado) → codigo_ibge, nas DUAS formas de
-// estado: por extenso ("belem-para") e sigla ("belem-pa") — o save do jogo
-// usa a sigla, o municipios.json usa o nome. Mesmo padrão de population.ts.
 let index: Map<string, string> | null = null;
+let imagens: Record<string, CidadeImagem> | null = null;
+let loading: Promise<void> | null = null;
 
-const buildIndex = (): Map<string, string> => {
-  const map = new Map<string, string>();
-  municipios.forEach(({ codigo_ibge, municipio, estado }) => {
-    const baseKey = keyFor(municipio, estado);
-    if (!map.has(baseKey)) map.set(baseKey, codigo_ibge);
-    const uf = nameToUf.get(normalize(estado));
-    if (uf && !map.has(keyFor(municipio, uf))) map.set(keyFor(municipio, uf), codigo_ibge);
-  });
-  return map;
+// Baixa os JSONs e monta o índice (cidade-estado normalizado) → codigo_ibge
+// nas DUAS formas de estado: por extenso ("belem-para") e sigla ("belem-pa").
+// O save do jogo usa a sigla, o municipios.json usa o nome (padrão de
+// population.ts). Idempotente: chamadas repetidas reusam a mesma promise.
+export const preloadCityImages = (): Promise<void> => {
+  if (loading) return loading;
+  loading = (async () => {
+    try {
+      const [munRes, imgRes] = await Promise.all([
+        fetch('/municipios.json'),
+        fetch('/cidade_imagens.json'),
+      ]);
+      if (!munRes.ok || !imgRes.ok) return;
+      const municipios = (await munRes.json()) as MunicipioRow[];
+      const imgs = (await imgRes.json()) as Record<string, CidadeImagem>;
+
+      const nameToUf = new Map(
+        Object.entries(ufToName).map(([uf, nome]) => [normalize(nome), uf])
+      );
+      const map = new Map<string, string>();
+      for (const { codigo_ibge, municipio, estado } of municipios) {
+        const baseKey = keyFor(municipio, estado);
+        if (!map.has(baseKey)) map.set(baseKey, codigo_ibge);
+        const uf = nameToUf.get(normalize(estado));
+        if (uf && !map.has(keyFor(municipio, uf))) map.set(keyFor(municipio, uf), codigo_ibge);
+      }
+      index = map;
+      imagens = imgs;
+    } catch {
+      // sem rede/arquivo — o jogo segue sem imagens nesta sessão
+    }
+  })();
+  return loading;
 };
 
-// Imagem do município ou null (o caller decide o placeholder). Aceita o
-// estado como sigla ou por extenso.
+// Imagem do município ou null (o caller decide o placeholder). Síncrono:
+// devolve null até o preload terminar. Aceita o estado como sigla ou por
+// extenso.
 export const cityImageFor = (city: string, state: string): string | null => {
-  if (!index) index = buildIndex();
+  if (!index || !imagens) return null;
   const code =
     index.get(keyFor(city, state || '')) || index.get(keyFor(city, ufToName[state] || ''));
   if (!code) return null;

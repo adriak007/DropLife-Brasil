@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { MapController } from '@/lib/mapController';
 import { formatPop } from '@/lib/text';
-import { cityImageFor } from '@/lib/cityImages';
+import { cityImageFor, preloadCityImages } from '@/lib/cityImages';
 import type { CityModalData, ModalState, PanelKind, PickedCity, StateStats } from '@/lib/types';
 import {
   loadSave,
@@ -44,7 +44,7 @@ import {
   type ServerBirthRow,
 } from '@/lib/online';
 
-const LOGO_SRC = '/Img/LOGO 1.png';
+const LOGO_SRC = '/Img/logo-nav.png';
 const BIRTH_COOLDOWN_MS = 1500;
 const ONBOARDING_KEY = 'droplife-onboarding-v1';
 
@@ -101,6 +101,7 @@ export default function MapGame() {
   const [auth, setAuth] = useState<AuthState>({ signedIn: false, userId: null, profile: null });
   const [mapReady, setMapReady] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(false);
+  const [imagesReady, setImagesReady] = useState(false);
   // Só carregamos qualquer save depois de saber QUEM está na sessão — evita
   // exibir progresso de visitante para uma conta (e vice-versa) no boot.
   const [authResolved, setAuthResolved] = useState(!onlineEnabled());
@@ -295,6 +296,25 @@ export default function MapGame() {
       : 'Sua conta está banida do ranking permanentemente. Seus nascimentos não contam para o ranking global.';
     setModal({ type: 'message', title: '🚫 Conta banida', message });
   }, [auth]);
+
+  // Imagens das cidades: JSONs (~1 MB brutos) baixados fora do caminho
+  // crítico, quando o navegador estiver ocioso — não bloqueia o load.
+  useEffect(() => {
+    let alive = true;
+    const start = () => {
+      preloadCityImages().then(() => {
+        if (alive) setImagesReady(true);
+      });
+    };
+    const hasIdle = typeof window.requestIdleCallback === 'function';
+    const idleId = hasIdle ? window.requestIdleCallback(start, { timeout: 4000 }) : 0;
+    const timerId = hasIdle ? 0 : window.setTimeout(start, 1500);
+    return () => {
+      alive = false;
+      if (idleId) window.cancelIdleCallback(idleId);
+      if (timerId) window.clearTimeout(timerId);
+    };
+  }, []);
 
   // Onboarding: telinha de boas-vindas no primeiro acesso (uma vez por navegador)
   useEffect(() => {
@@ -531,8 +551,9 @@ export default function MapGame() {
     ? `${formatPop(cityData.population)} habitantes`
     : 'Populacao indisponivel';
 
-  // Imagem estática da cidade para o modal de nascimento
-  const cityImage = cityData ? cityImageFor(cityData.city, cityData.state) : null;
+  // Imagem estática da cidade para o modal de nascimento (null até o
+  // preload em idle terminar; imagesReady re-renderiza quando fica pronto)
+  const cityImage = cityData && imagesReady ? cityImageFor(cityData.city, cityData.state) : null;
 
   const capturedInZoomed = zoomedState
     ? save.births.filter((b) => b.state === zoomedState).length
@@ -545,7 +566,14 @@ export default function MapGame() {
     <>
       {/* Loading screen */}
       <div className={`loading-screen${loading ? '' : ' hidden'}`}>
-        <img className="loading-logo" src={LOGO_SRC} alt="DropLife" />
+        <img
+          className="loading-logo"
+          src={LOGO_SRC}
+          alt="DropLife"
+          width={900}
+          height={236}
+          fetchPriority="high"
+        />
         <div className="loading-bar"></div>
         <span className="loading-text">Carregando Brasil&hellip;</span>
       </div>
