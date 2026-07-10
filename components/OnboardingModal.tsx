@@ -11,7 +11,6 @@ export default function OnboardingModal({ onClose }: { onClose: () => void }) {
     <div className="modal-backdrop modal-backdrop--open onboarding-backdrop">
       <div className="modal-panel onboarding">
         <h2 className="onboarding__title">Bem-vindo ao DropLife Brasil!</h2>
-        <p className="onboarding__sub">O jogo de nascer (de novo) pelo Brasil</p>
 
         <div className="onboarding__steps">
           <div className="onboarding__step">
