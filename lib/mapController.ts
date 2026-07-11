@@ -603,6 +603,20 @@ export class MapController {
     this.tooltipState.lastHoverKey = null;
   }
 
+  // Tooltip do ESTADO (vista completa): nome, sigla, municípios e população
+  private showStateTooltip(uf: string, mouseX: number, mouseY: number): void {
+    if (this.tooltipState.isPinned) return;
+    const stats = this.stateStats.get(uf);
+    this.opts.tooltipTitle.textContent = `${ufToName[uf] || uf} (${uf})`;
+    this.opts.tooltipSubtitle.textContent = stats
+      ? `${stats.municipios} municípios · ${formatPop(stats.population)} habitantes`
+      : 'Sem dados';
+    this.opts.tooltip.classList.remove('city-tooltip--pinned');
+    this.showTooltip();
+    this.setTooltipPosition(mouseX + 14, mouseY + 14);
+    this.tooltipState.lastHoverKey = `state:${uf}`;
+  }
+
   private showTooltipHover(data: TooltipData, mouseX: number, mouseY: number): void {
     if (this.tooltipState.isPinned) {
       if (this.tooltipState.pinnedCity?.key !== data.key) return;
@@ -754,25 +768,24 @@ export class MapController {
           }
         }
 
-        // hover (mouse)
+        // hover (mouse) em dois níveis:
+        // - mapa completo: destaca o estado e mostra a info DELE
+        // - com zoom (as siglas somem): destaca a cidade e mostra a info DELA
         if (evt.pointerType === 'mouse' && !this.pointerDownAt) {
           const hit = this.hitCity(evt.clientX, evt.clientY);
+          canvas.style.cursor = hit ? 'pointer' : 'default';
           if (!this.isZoomed) {
             this.setStateHover(hit?.state ?? null);
-            this.hideTooltip();
-            canvas.style.cursor = hit ? 'pointer' : 'default';
+            if (hit) this.showStateTooltip(hit.state, evt.clientX, evt.clientY);
+            else this.hideTooltip();
             return;
           }
-          // destaque de hover em qualquer zoom (como a engine SVG); tooltip
-          // só dentro do estado zoomado por clique
-          const inZoomedState = hit && this.zoomedState !== null && hit.state === this.zoomedState;
-          const nextHover = this.isZoomed && hit ? hit : null;
+          const nextHover = hit ?? null;
           if (nextHover !== this.hoverCity) {
             this.hoverCity = nextHover;
             this.requestDraw();
           }
-          canvas.style.cursor = hit ? 'pointer' : 'default';
-          if (inZoomedState && hit) {
+          if (hit) {
             this.showTooltipHover(
               { city: hit.city, state: hit.state, population: hit.population, key: hit.key },
               evt.clientX,
