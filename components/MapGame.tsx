@@ -49,10 +49,19 @@ const LOGO_SRC = '/Img/logo-nav.png';
 const BIRTH_COOLDOWN_MS = 1500;
 const ONBOARDING_KEY = 'droplife-onboarding-v1';
 
-// Reconstrói o save de uma conta SOMENTE com o que o servidor retornou:
-// as chaves viram registros completos via mapa e as conquistas são
-// recalculadas dos nascimentos. Nada de progresso local entra aqui.
-const buildAccountSave = (rows: ServerBirthRow[], controller: MapController): SaveData => {
+const achievementCtxOf = (controller: MapController): AchievementContext => ({
+  totalCities: controller.totalCities(),
+  stateTotals: Object.fromEntries(controller.getStateStats().map((s) => [s.uf, s.municipios])),
+});
+
+// Reconstrói o save de uma conta com o que o servidor retornou (fonte da
+// verdade), opcionalmente somando registros locais ainda não sincronizados
+// (uma migração/sync interrompida) — esses voltam para a fila de envio.
+const buildAccountSave = (
+  rows: ServerBirthRow[],
+  controller: MapController,
+  extras: BirthRecord[] = []
+): SaveData => {
   const births: BirthRecord[] = [];
   const seen = new Set<string>();
   for (const row of rows) {
@@ -69,13 +78,34 @@ const buildAccountSave = (rows: ServerBirthRow[], controller: MapController): Sa
       bornAt: row.created_at ?? new Date().toISOString(),
     });
   }
+  for (const b of extras) {
+    if (seen.has(b.key)) continue;
+    seen.add(b.key);
+    births.push(b);
+  }
   const save: SaveData = { version: 1, births, achievements: {} };
-  const ctx: AchievementContext = {
-    totalCities: controller.totalCities(),
-    stateTotals: Object.fromEntries(controller.getStateStats().map((s) => [s.uf, s.municipios])),
+  const stamp = new Date().toISOString();
+  save.achievements = Object.fromEntries(
+    newlyUnlocked(births, save, achievementCtxOf(controller)).map((a) => [a.id, stamp])
+  );
+  return save;
+};
+
+// Conta NOVA (zero nascimentos no servidor) + progresso de visitante: o save
+// do convidado vira o começo da conta — nascimentos, conquistas e desafio
+// diário — e os nascimentos entram na fila de sincronização com o servidor.
+const adoptGuestSave = (guest: SaveData, controller: MapController): SaveData => {
+  const save: SaveData = {
+    version: 1,
+    births: guest.births,
+    achievements: { ...guest.achievements },
+    ...(guest.lastDaily ? { lastDaily: guest.lastDaily } : {}),
+    ...(guest.dailyResult ? { dailyResult: guest.dailyResult } : {}),
   };
   const stamp = new Date().toISOString();
-  save.achievements = Object.fromEntries(newlyUnlocked(births, save, ctx).map((a) => [a.id, stamp]));
+  newlyUnlocked(save.births, save, achievementCtxOf(controller)).forEach((a) => {
+    save.achievements[a.id] = stamp;
+  });
   return save;
 };
 
@@ -118,6 +148,39 @@ export default function MapGame() {
   const scopeRef = useRef<SaveScope | null>(null);
   // Cidade a destacar no mapa (pin + pulso) quando o modal de nascimento fechar
   const pendingHighlightRef = useRef<string | null>(null);
+  // Fila de nascimentos a subir para o servidor (migração de visitante ou
+  // sync interrompida): drena 1 a cada ~1,7s respeitando o rate limit do banco
+  const syncQueueRef = useRef<string[]>([]);
+  const syncTriesRef = useRef(new Map<string, number>());
+  const syncTimerRef = useRef(0);
+
+  const drainSyncQueue = (uid: SaveScope) => {
+    window.clearTimeout(syncTimerRef.current);
+    const tick = () => {
+      if (scopeRef.current !== uid) return; // trocou de dono: fila morre
+      const key = syncQueueRef.current[0];
+      if (!key) return;
+      recordBirth(key).then((ok) => {
+        if (scopeRef.current !== uid) return;
+        if (ok) {
+          syncQueueRef.current.shift();
+          setAuth((a) =>
+            a.profile
+              ? { ...a, profile: { ...a.profile, total_births: a.profile.total_births + 1 } }
+              : a
+          );
+        } else {
+          // pode ser rate limit (tenta de novo) ou duplicata/rejeição (desiste
+          // após 3 tentativas — se for legítimo, volta na fila do próximo login)
+          const tries = (syncTriesRef.current.get(key) || 0) + 1;
+          syncTriesRef.current.set(key, tries);
+          if (tries >= 3) syncQueueRef.current.shift();
+        }
+        syncTimerRef.current = window.setTimeout(tick, 1700);
+      });
+    };
+    syncTimerRef.current = window.setTimeout(tick, 900);
+  };
 
   // Totais reais (não hardcoded) usados pelas conquistas de estado/região/país
   const achievementCtx: AchievementContext = {
@@ -231,8 +294,10 @@ export default function MapGame() {
   // Sempre que o dono da sessão muda (visitante -> conta, conta -> visitante,
   // conta A -> conta B), TODO o estado em memória e o mapa são zerados e
   // recriados do zero para o novo dono:
-  //   - login: o progresso temporário de visitante é DESCARTADO e a conta é
-  //     populada somente com o que o servidor retornar;
+  //   - login em conta EXISTENTE: visitante é descartado e a conta carrega
+  //     o que o servidor retornar (+ extras locais de sync interrompida);
+  //   - login em conta NOVA (zero nascimentos no banco): o progresso de
+  //     visitante é ADOTADO como início da conta e sobe em fila p/ o servidor;
   //   - logout: o cache local da conta é apagado e o site volta ao estado de
   //     visitante sem nenhuma cidade;
   //   - troca de conta: nada da conta anterior sobrevive.
@@ -244,8 +309,11 @@ export default function MapGame() {
     const controller = controllerRef.current;
     if (!controller) return;
 
-    // Zera memória, UI e mapa antes de carregar o novo dono da sessão
+    // Zera memória, UI, mapa e fila de sync antes do novo dono da sessão
     pendingHighlightRef.current = null;
+    syncQueueRef.current = [];
+    syncTriesRef.current = new Map();
+    window.clearTimeout(syncTimerRef.current);
     setSave(emptySave());
     setPanel(null);
     setModal(null);
@@ -262,19 +330,52 @@ export default function MapGame() {
       return;
     }
 
-    // Login / troca de conta: o save de visitante é descartado de vez e a
-    // conta carrega exclusivamente o que está no banco.
+    // Login / troca de conta
+    const guest = loadSave('guest');
     clearSave('guest');
     let cancelled = false;
     (async () => {
       const rows = await fetchMyBirths();
-      // Sem rede: cai no cache local EXCLUSIVO desta conta (nunca no de
-      // visitante nem no de outra conta).
-      const account = rows === null ? loadSave(saveScope) : buildAccountSave(rows, controller);
+      let account: SaveData;
+      const toSync: string[] = [];
+      let adopted = false;
+
+      if (rows === null) {
+        // Sem rede: cai no cache local EXCLUSIVO desta conta (nunca no de
+        // visitante nem no de outra conta).
+        account = loadSave(saveScope);
+      } else if (rows.length === 0 && guest.births.length > 0) {
+        // Conta nova + progresso de visitante: "login anônimo" — o que a
+        // pessoa jogou como convidada vira o começo da conta dela.
+        account = adoptGuestSave(guest, controller);
+        toSync.push(...guest.births.map((b) => b.key));
+        adopted = true;
+      } else {
+        // Conta existente: banco é a fonte da verdade. Extras do cache local
+        // DESTA conta (sync interrompida) entram e voltam para a fila.
+        const cached = loadSave(saveScope);
+        const serverKeys = new Set(rows.map((r) => r.city_key));
+        const extras = cached.births.filter(
+          (b) => !serverKeys.has(b.key) && controller.getCityByKey(b.key)
+        );
+        account = buildAccountSave(rows, controller, extras);
+        toSync.push(...extras.map((b) => b.key));
+      }
+
       persistSave(saveScope, account);
       if (cancelled || scopeRef.current !== saveScope) return;
       setSave(account);
       controller.restoreCaptured(new Set(account.births.map((b) => b.key)));
+      if (toSync.length) {
+        syncQueueRef.current = toSync;
+        syncTriesRef.current = new Map();
+        drainSyncQueue(saveScope);
+      }
+      if (adopted) {
+        showToast(
+          `🎉 Suas ${guest.births.length} cidades de visitante agora são da sua conta!`
+        );
+      }
     })();
     return () => {
       cancelled = true;
