@@ -14,9 +14,14 @@ interface PlayerRow {
   total_births: number;
   banned: boolean;
   banned_until: string | null;
+  warning: string | null;
 }
 
 type Gate = 'carregando' | 'login' | 'negado' | 'admin';
+type BanUnidade = 'minutos' | 'horas' | 'dias' | 'meses' | 'permanente';
+
+const AVISO_PADRAO =
+  '⚠️ Detectamos atividade suspeita na sua conta. O uso de programas, scripts ou qualquer manipulação do jogo viola as regras do DropLife Brasil. Se continuar, sua conta poderá ser banida permanentemente.';
 
 const banAtivo = (p: PlayerRow): boolean =>
   p.banned && (!p.banned_until || new Date(p.banned_until) > new Date());
@@ -31,6 +36,11 @@ export default function AdminPanel() {
   const [aviso, setAviso] = useState('');
   const [editando, setEditando] = useState<string | null>(null);
   const [novoTotal, setNovoTotal] = useState('');
+  const [banindo, setBanindo] = useState<string | null>(null);
+  const [banQtd, setBanQtd] = useState('24');
+  const [banUnidade, setBanUnidade] = useState<BanUnidade>('horas');
+  const [avisando, setAvisando] = useState<string | null>(null);
+  const [avisoTexto, setAvisoTexto] = useState(AVISO_PADRAO);
 
   const checarAcesso = async () => {
     if (!supabase) {
@@ -59,7 +69,7 @@ export default function AdminPanel() {
     if (!supabase) return;
     let query = supabase
       .from('profiles')
-      .select('id,nickname,total_births,banned,banned_until')
+      .select('id,nickname,total_births,banned,banned_until,warning')
       .order('total_births', { ascending: false })
       .limit(100);
     if (filtro.trim()) query = query.ilike('nickname', `%${filtro.trim()}%`);
@@ -98,19 +108,40 @@ export default function AdminPanel() {
     carregar(busca);
   };
 
-  const banir = (p: PlayerRow, horas?: number) =>
+  const aplicarBan = (p: PlayerRow) => {
+    let ate: string | null = null;
+    if (banUnidade !== 'permanente') {
+      const qtd = parseInt(banQtd, 10);
+      if (Number.isNaN(qtd) || qtd < 1) {
+        setAviso('❌ Quantidade inválida.');
+        return;
+      }
+      const d = new Date();
+      if (banUnidade === 'minutos') d.setMinutes(d.getMinutes() + qtd);
+      else if (banUnidade === 'horas') d.setHours(d.getHours() + qtd);
+      else if (banUnidade === 'dias') d.setDate(d.getDate() + qtd);
+      else d.setMonth(d.getMonth() + qtd);
+      ate = d.toISOString();
+    }
+    setBanindo(null);
     rpc(
       'admin_set_ban',
-      {
-        alvo: p.id,
-        banir: true,
-        ate: horas ? new Date(Date.now() + horas * 3600_000).toISOString() : null,
-      },
-      `${p.nickname} banido${horas ? ` por ${horas}h` : ' permanentemente'}`
+      { alvo: p.id, banir: true, ate },
+      `${p.nickname} banido ${banUnidade === 'permanente' ? 'permanentemente' : `por ${banQtd} ${banUnidade}`}`
     );
+  };
 
   const desbanir = (p: PlayerRow) =>
     rpc('admin_set_ban', { alvo: p.id, banir: false, ate: null }, `${p.nickname} desbanido`);
+
+  const enviarAviso = (p: PlayerRow) => {
+    setAvisando(null);
+    rpc(
+      'admin_set_warning',
+      { alvo: p.id, mensagem: avisoTexto },
+      avisoTexto.trim() ? `aviso enviado a ${p.nickname}` : `aviso de ${p.nickname} removido`
+    );
+  };
 
   const aplicarTotal = (p: PlayerRow) => {
     const n = parseInt(novoTotal, 10);
@@ -218,6 +249,7 @@ export default function AdminPanel() {
                   {formatPop(p.total_births)} cidades
                   {banAtivo(p) &&
                     ` · 🚫 banido${p.banned_until ? ` até ${new Date(p.banned_until).toLocaleString('pt-BR')}` : ' (permanente)'}`}
+                  {p.warning && ' · ⚠️ aviso pendente'}
                 </span>
               </div>
               <div className="admin__acoes">
@@ -239,6 +271,55 @@ export default function AdminPanel() {
                       ✕
                     </button>
                   </>
+                ) : banindo === p.id ? (
+                  <>
+                    {banUnidade !== 'permanente' && (
+                      <input
+                        className="dex-input admin__num"
+                        type="number"
+                        min={1}
+                        value={banQtd}
+                        onChange={(e) => setBanQtd(e.target.value)}
+                        autoFocus
+                      />
+                    )}
+                    <select
+                      className="dex-input admin__sel"
+                      value={banUnidade}
+                      onChange={(e) => setBanUnidade(e.target.value as BanUnidade)}
+                    >
+                      <option value="minutos">minutos</option>
+                      <option value="horas">horas</option>
+                      <option value="dias">dias</option>
+                      <option value="meses">meses</option>
+                      <option value="permanente">permanente</option>
+                    </select>
+                    <button className="admin__btn admin__btn--perigo" type="button" onClick={() => aplicarBan(p)}>
+                      Banir
+                    </button>
+                    <button className="admin__btn" type="button" onClick={() => setBanindo(null)}>
+                      ✕
+                    </button>
+                  </>
+                ) : avisando === p.id ? (
+                  <div className="admin__avisobox">
+                    <textarea
+                      className="dex-input admin__texto"
+                      value={avisoTexto}
+                      onChange={(e) => setAvisoTexto(e.target.value)}
+                      rows={3}
+                      autoFocus
+                    />
+                    <div className="admin__acoes">
+                      <button className="admin__btn admin__btn--principal" type="button" onClick={() => enviarAviso(p)}>
+                        Enviar aviso
+                      </button>
+                      <button className="admin__btn" type="button" onClick={() => setAvisando(null)}>
+                        ✕
+                      </button>
+                      <span className="admin__dica">enviar vazio remove o aviso</span>
+                    </div>
+                  </div>
                 ) : (
                   <>
                     <button
@@ -252,19 +333,33 @@ export default function AdminPanel() {
                     >
                       ✏️ cidades
                     </button>
+                    <button
+                      className="admin__btn"
+                      type="button"
+                      title="Enviar aviso de moderação"
+                      onClick={() => {
+                        setAvisando(p.id);
+                        setAvisoTexto(p.warning || AVISO_PADRAO);
+                      }}
+                    >
+                      ⚠️ aviso
+                    </button>
                     {banAtivo(p) ? (
                       <button className="admin__btn admin__btn--ok" type="button" onClick={() => desbanir(p)}>
                         Desbanir
                       </button>
                     ) : (
-                      <>
-                        <button className="admin__btn admin__btn--perigo" type="button" onClick={() => banir(p, 24)}>
-                          Ban 24h
-                        </button>
-                        <button className="admin__btn admin__btn--perigo" type="button" onClick={() => banir(p)}>
-                          Ban perm.
-                        </button>
-                      </>
+                      <button
+                        className="admin__btn admin__btn--perigo"
+                        type="button"
+                        onClick={() => {
+                          setBanindo(p.id);
+                          setBanQtd('24');
+                          setBanUnidade('horas');
+                        }}
+                      >
+                        🚫 banir…
+                      </button>
                     )}
                   </>
                 )}

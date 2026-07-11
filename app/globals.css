@@ -2040,6 +2040,10 @@ body::before {
 .admin__info span { color: var(--text-secondary); font-size: 11px; }
 .admin__acoes { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .admin__num { width: 88px; flex: none; }
+.admin__sel { width: auto; flex: none; padding: 7px 8px; font-size: 12px; }
+.admin__avisobox { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+.admin__texto { width: 100%; resize: vertical; font-size: 12px; line-height: 1.5; }
+.admin__dica { font-size: 10px; color: var(--text-secondary); }
 .admin__btn {
   padding: 7px 10px;
   border-radius: var(--radius-sm);

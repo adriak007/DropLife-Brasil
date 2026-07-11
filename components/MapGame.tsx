@@ -34,6 +34,7 @@ import { spawnRipple } from '@/components/NavButton';
 import { shareDailyCard } from '@/lib/shareCard';
 import { bumpBirthCounterAndCheckAd } from '@/lib/ads';
 import {
+  ackWarning,
   activeBan,
   fetchMyBirths,
   getAuthState,
@@ -397,6 +398,22 @@ export default function MapGame() {
       ? `Sua conta está banida do ranking até ${ban.until.toLocaleDateString('pt-BR')} às ${ban.until.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}. Até lá, seus nascimentos não contam para o ranking global.`
       : 'Sua conta está banida do ranking permanentemente. Seus nascimentos não contam para o ranking global.';
     setModal({ type: 'message', title: '🚫 Conta banida', message });
+  }, [auth]);
+
+  // ── Aviso da moderação ──
+  // Mensagem enviada pelo admin (ex.: "pare de usar scripts"): aparece uma
+  // vez num modal e é confirmada no servidor ao ser exibida. Ban tem
+  // prioridade — se os dois existirem, o aviso fica para a próxima sessão.
+  const warnNotifiedRef = useRef<string | null>(null);
+  useEffect(() => {
+    const p = auth.profile;
+    if (!p?.warning || !auth.userId) return;
+    if (activeBan(p)) return;
+    const marca = `${auth.userId}:${p.warning}`;
+    if (warnNotifiedRef.current === marca) return;
+    warnNotifiedRef.current = marca;
+    setModal({ type: 'message', title: '⚠️ Aviso da moderação', message: p.warning });
+    ackWarning();
   }, [auth]);
 
   // Imagens das cidades: JSONs (~1 MB brutos) baixados fora do caminho

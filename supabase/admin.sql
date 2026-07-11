@@ -71,11 +71,45 @@ begin
 end;
 $$;
 
+-- 5) Aviso de moderação: o jogador vê a mensagem num modal ao abrir o jogo
+--    (ex.: "pare de usar programas maliciosos ou será banido")
+alter table public.profiles add column if not exists warning text;
+
+create or replace function public.admin_set_warning(alvo uuid, mensagem text)
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  perform public.assert_admin();
+  -- mensagem vazia remove o aviso
+  update public.profiles set warning = nullif(trim(mensagem), '') where id = alvo;
+end;
+$$;
+
+-- O próprio jogador confirma que viu o aviso (o jogo chama ao exibir o
+-- modal) — só limpa o aviso DELE, nada mais.
+create or replace function public.ack_warning()
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  update public.profiles set warning = null where id = auth.uid();
+end;
+$$;
+
 revoke all on function public.assert_admin() from public;
 revoke all on function public.admin_set_ban(uuid, boolean, timestamptz) from public;
 revoke all on function public.admin_trim_births(uuid, int) from public;
+revoke all on function public.admin_set_warning(uuid, text) from public;
+revoke all on function public.ack_warning() from public;
 grant execute on function public.admin_set_ban(uuid, boolean, timestamptz) to authenticated;
 grant execute on function public.admin_trim_births(uuid, int) to authenticated;
+grant execute on function public.admin_set_warning(uuid, text) to authenticated;
+grant execute on function public.ack_warning() to authenticated;
 
--- 5) POR ÚLTIMO: torne a SUA conta admin (troque o apelido e descomente):
+-- 6) POR ÚLTIMO: torne a SUA conta admin (troque o apelido e descomente):
 -- update public.profiles set is_admin = true where nickname = 'SeuApelido';

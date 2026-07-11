@@ -7,6 +7,7 @@ export interface OnlineProfile {
   // Moderação: presentes só depois da migração (colunas em profiles)
   banned?: boolean;
   banned_until?: string | null;
+  warning?: string | null;
 }
 
 // Ban ativo do perfil: null se não banido (ou ban já expirado).
@@ -63,7 +64,7 @@ const fetchProfile = async (uid: string): Promise<OnlineProfile | null> => {
   if (!supabase) return null;
   const { data, error } = await supabase
     .from('profiles')
-    .select('id,nickname,total_births,banned,banned_until')
+    .select('id,nickname,total_births,banned,banned_until,warning')
     .eq('id', uid)
     .maybeSingle();
   if (!error) return data;
@@ -230,6 +231,16 @@ export const recordBirth = async (cityKey: string): Promise<boolean> => {
     return !error;
   } catch {
     return false;
+  }
+};
+
+// O jogador confirma que viu o aviso da moderação (limpa só o dele)
+export const ackWarning = async (): Promise<void> => {
+  if (!supabase) return;
+  try {
+    await supabase.rpc('ack_warning');
+  } catch {
+    // sem rede — o aviso reaparece na próxima sessão, sem problema
   }
 };
 
