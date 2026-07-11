@@ -2087,44 +2087,6 @@ body::before {
   font-variant-numeric: tabular-nums;
 }
 
-/* ── Anuncio intersticial ── */
-.ad-interstitial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  max-width: 380px;
-}
-.ad-interstitial__label {
-  align-self: flex-start;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  color: var(--text-secondary);
-  padding: 3px 9px;
-  border-radius: 999px;
-  border: 1px solid var(--card-border);
-}
-.ad-interstitial__slot {
-  width: 100%;
-  min-height: 280px;
-  border-radius: var(--radius-base);
-  border: 1px dashed var(--card-border-strong);
-  background: var(--card-tint);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.ad-interstitial__placeholder {
-  color: var(--text-secondary);
-  font-size: 13px;
-}
-.ad-interstitial__btn {
-  width: 100%;
-  margin-top: 0;
-}
-
 /* ── Paginas legais (Politica de Privacidade) ── */
 .legal-page {
   min-height: 100vh;

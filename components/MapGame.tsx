@@ -28,11 +28,9 @@ import SettingsPanel from '@/components/SettingsPanel';
 import HomeDashboard from '@/components/HomeDashboard';
 import TopNav from '@/components/TopNav';
 import MobileNav from '@/components/MobileNav';
-import AdInterstitial from '@/components/AdInterstitial';
 import OnboardingModal from '@/components/OnboardingModal';
 import { spawnRipple } from '@/components/NavButton';
 import { shareDailyCard } from '@/lib/shareCard';
-import { bumpBirthCounterAndCheckAd } from '@/lib/ads';
 import {
   ackWarning,
   activeBan,
@@ -129,7 +127,6 @@ export default function MapGame() {
   const [heatmap, setHeatmap] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [cooldown, setCooldown] = useState(false);
-  const [showAd, setShowAd] = useState(false);
   const [auth, setAuth] = useState<AuthState>({ signedIn: false, userId: null, profile: null });
   const [mapReady, setMapReady] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(false);
@@ -567,17 +564,6 @@ export default function MapGame() {
     const controller = controllerRef.current;
     if (!controller || cooldown) return;
     setCooldown(true);
-    // A cada N nascimentos, mostra o anuncio intersticial antes de sortear —
-    // o sorteio em si so acontece quando o anuncio for fechado.
-    if (bumpBirthCounterAndCheckAd()) {
-      setShowAd(true);
-      return;
-    }
-    performBirth();
-  };
-
-  const handleAdContinue = () => {
-    setShowAd(false);
     performBirth();
   };
 
@@ -941,8 +927,6 @@ export default function MapGame() {
           />
         )}
       </div>
-
-      {showAd && <AdInterstitial onContinue={handleAdContinue} />}
 
       {showOnboarding && <OnboardingModal onClose={dismissOnboarding} />}
     </>

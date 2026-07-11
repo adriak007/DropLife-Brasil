@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 // Publisher ID do Google AdSense — necessario para o Google revisar e
-// aprovar o site. O bloco de anuncio de verdade (data-ad-slot) so entra em
-// components/AdInterstitial.tsx depois que a conta for aprovada.
+// aprovar o site. Quando os blocos forem aprovados, o anuncio real (formato
+// oficial Vignette/Anchor do AdSense) entra aqui do zero.
 const ADSENSE_CLIENT = 'ca-pub-3958503944876278';
 
 const SITE_URL = 'https://droplife.life';
@@ -93,9 +93,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             next/script aqui porque a estrategia "afterInteractive" injeta
             o <script> via JS apos a hidratacao, entao ele nao aparece
             palavra-por-palavra no HTML estatico que o Google verifica.
-            Fica sempre ligada (verificacao do AdSense); o que esta
-            desligado e so o modal intersticial (INTERSTITIAL_ENABLED
-            em lib/ads.ts). */}
+            Fica sempre ligada, so para a verificacao/aprovacao do AdSense —
+            nenhum anuncio e exibido no site ainda. */}
         <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
