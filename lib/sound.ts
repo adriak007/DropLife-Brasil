@@ -96,7 +96,49 @@ const note = (
   osc.stop(when + dur + 0.05);
 };
 
-// ── Música de fundo (generativa) ──
+// ── Música de fundo ──
+//
+// Preferência: arquivo /musica-fundo.mp3 em loop perfeito (AudioBuffer, sem
+// a emenda audível do <audio loop>). Se o arquivo faltar ou falhar, cai no
+// gerador procedural abaixo como plano B.
+
+const MUSIC_URL = '/musica-fundo.mp3';
+const MUSIC_FILE_VOLUME = 0.4;
+
+let musicBuffer: AudioBuffer | null = null;
+let musicSource: AudioBufferSourceNode | null = null;
+let musicLoading: Promise<AudioBuffer | null> | null = null;
+
+const loadMusicBuffer = (): Promise<AudioBuffer | null> => {
+  if (musicLoading) return musicLoading;
+  musicLoading = (async () => {
+    try {
+      if (!ctx) return null;
+      const res = await fetch(MUSIC_URL);
+      if (!res.ok) return null;
+      const bytes = await res.arrayBuffer();
+      musicBuffer = await ctx.decodeAudioData(bytes);
+      return musicBuffer;
+    } catch {
+      return null; // sem arquivo — o gerador procedural assume
+    }
+  })();
+  return musicLoading;
+};
+
+const playMusicFile = (): void => {
+  if (!ctx || !musicGain || !musicBuffer || musicSource) return;
+  musicSource = ctx.createBufferSource();
+  musicSource.buffer = musicBuffer;
+  musicSource.loop = true;
+  const g = ctx.createGain();
+  g.gain.value = MUSIC_FILE_VOLUME;
+  musicSource.connect(g);
+  g.connect(musicGain);
+  musicSource.start();
+};
+
+// ── Fallback: música generativa ──
 
 // Pentatônica de dó (C4) — qualquer combinação soa bem
 const PENTA = [261.63, 293.66, 329.63, 392.0, 440.0, 523.25];
@@ -134,13 +176,31 @@ const startMusic = () => {
   if (musicPlaying || !prefs.music) return;
   if (!ensureCtx()) return;
   musicPlaying = true;
-  nextBarTime = 0;
-  scheduleBar();
+  loadMusicBuffer().then((buffer) => {
+    // usuário pode ter desligado durante o carregamento
+    if (!musicPlaying || !prefs.music) return;
+    if (buffer) {
+      playMusicFile();
+    } else {
+      // sem arquivo: gerador procedural
+      nextBarTime = 0;
+      scheduleBar();
+    }
+  });
 };
 
 const stopMusic = () => {
   musicPlaying = false;
   window.clearTimeout(musicTimer);
+  if (musicSource) {
+    try {
+      musicSource.stop();
+    } catch {
+      // já parado
+    }
+    musicSource.disconnect();
+    musicSource = null;
+  }
 };
 
 // ── API pública ──

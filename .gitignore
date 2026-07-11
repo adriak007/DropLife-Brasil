@@ -18,3 +18,6 @@ next-env.d.ts
 graphify-out/
 .vercel
 .env*
+
+# fonte bruta da musica (13 MB); o jogo usa a versao comprimida musica-fundo.mp3
+/public/sound.wav
