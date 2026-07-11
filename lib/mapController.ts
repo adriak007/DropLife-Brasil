@@ -1,7 +1,12 @@
-import type { BBox, CityModalData, Municipio, PickedCity, StateEntry, StateStats, ViewBox } from './types';
+// Engine Canvas do mapa: renderiza os 5.570 municípios num ÚNICO elemento
+// <canvas> (antes eram 5.598 nós SVG vivos no DOM). A geometria vira Path2D
+// agrupado em "mega-paths" por cor — o raster completo custa meia dúzia de
+// fills — e pan/zoom desliza um bitmap em cache, re-rasterizando só quando o
+// gesto assenta. A API pública é idêntica à da engine SVG anterior.
+import type { BBox, CityModalData, Municipio, PickedCity, StateStats, ViewBox } from './types';
 import { cityAliases, stateLabelOffsets, stateLabelText, ufToName } from './geo';
 import { clamp, cleanCity, formatChance, formatPop, keyFor } from './text';
-import { buildPopulationIndex, getPopulation, type PopulationIndex } from './population';
+import { buildPopulationIndex } from './population';
 import { curiosityFor, loadCuriosities, type CuriosityMap } from './curiosities';
 import { HEAT_BUCKETS, heatBucket } from './heatmap';
 import { rarityFor } from './rarity';
@@ -9,7 +14,28 @@ import { CAPITAL_KEYS } from './achievements';
 
 const MAP_URL = '/MAPAESTADOS.svg';
 const MUNICIPIOS_URL = '/municipios.json';
-const SVG_NS = 'http://www.w3.org/2000/svg';
+
+// Paleta (antes vivia no <style> injetado no SVG)
+const STATE_TONES = ['#1b5438', '#20603f', '#16482c'];
+const CAPITAL_FILL = '#dda824';
+const BACKING_FILL = '#14432c';
+const DIVISA_STROKE = 'rgba(8, 40, 24, 0.6)';
+const TIER_FILLS: Record<string, string> = {
+  lendario: '#f59e0b',
+  epico: '#a78bfa',
+  raro: '#38bdf8',
+  incomum: '#34d399',
+  comum: '#94a3b8',
+};
+const STATE_HOVER_FILL = 'rgba(230, 255, 240, 0.10)';
+const STATE_HOVER_STROKE = 'rgba(214, 245, 224, 0.35)';
+const ACTIVE_STATE_STROKE = 'rgba(0, 210, 255, 0.22)';
+const CITY_HOVER_FILL = 'rgba(255, 255, 255, 0.22)';
+const LABEL_FILL = 'rgba(190, 240, 210, 0.9)';
+const LABEL_HALO = 'rgba(0, 0, 0, 0.55)';
+const ZOOM_MS = 420;
+const MAX_ZOOM = 10; // vezes a vista completa
+const RERASTER_IDLE_MS = 140;
 
 interface TooltipData {
   city: string;
@@ -18,13 +44,22 @@ interface TooltipData {
   key: string;
 }
 
-interface AvailableCity {
+interface CityRec {
   key: string;
-  path: SVGPathElement;
-  population: number;
   city: string;
   state: string;
+  population: number | null;
   title: string;
+  path: Path2D;
+  bbox: BBox;
+  capital: boolean;
+  capturedTier: string | null;
+}
+
+interface Cam {
+  scale: number; // px CSS por unidade do mundo
+  tx: number;
+  ty: number;
 }
 
 export interface MapControllerOptions {
@@ -36,45 +71,118 @@ export interface MapControllerOptions {
   openMessageModal: (message: string, title?: string) => void;
   openCityModal: (data: CityModalData) => void;
   onZoomChange: (state: string | null) => void;
-  // Zoom manual (pinça com 2 dedos), independente de um estado especifico —
+  // Zoom manual (pinça/roda), independente de um estado especifico —
   // controla so a visibilidade do botao "Voltar".
   onManualZoomChange: (active: boolean) => void;
 }
 
+// BBox de um path SVG (m/l/h/v/z, absolutos e relativos) por matemática pura
+// — sem getBBox, que exige o path vivo no DOM e força reflow.
+const bboxOfPathD = (d: string): BBox => {
+  const tokens = d.match(/[a-zA-Z]|-?(?:\d+\.?\d*|\.\d+)/g) || [];
+  let x = 0, y = 0, sx = 0, sy = 0, cmd = '', i = 0;
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  const mark = () => {
+    if (x < minX) minX = x;
+    if (x > maxX) maxX = x;
+    if (y < minY) minY = y;
+    if (y > maxY) maxY = y;
+  };
+  const num = () => parseFloat(tokens[i++]);
+  while (i < tokens.length) {
+    const t = tokens[i];
+    if (/[a-zA-Z]/.test(t)) {
+      cmd = t;
+      i++;
+      if (cmd === 'z' || cmd === 'Z') { x = sx; y = sy; continue; }
+    }
+    switch (cmd) {
+      case 'm': x += num(); y += num(); sx = x; sy = y; mark(); cmd = 'l'; break;
+      case 'M': x = num(); y = num(); sx = x; sy = y; mark(); cmd = 'L'; break;
+      case 'l': x += num(); y += num(); mark(); break;
+      case 'L': x = num(); y = num(); mark(); break;
+      case 'h': x += num(); mark(); break;
+      case 'H': x = num(); mark(); break;
+      case 'v': y += num(); mark(); break;
+      case 'V': y = num(); mark(); break;
+      default: i++; // comando desconhecido: pula (não deve ocorrer no nosso mapa)
+    }
+  }
+  return { minX, minY, maxX, maxY };
+};
+
+const unionBBox = (a: BBox | null, b: BBox): BBox =>
+  !a
+    ? { ...b }
+    : {
+        minX: Math.min(a.minX, b.minX),
+        minY: Math.min(a.minY, b.minY),
+        maxX: Math.max(a.maxX, b.maxX),
+        maxY: Math.max(a.maxY, b.maxY),
+      };
+
 export class MapController {
   private opts: MapControllerOptions;
-  private stateGroups = new Map<string, StateEntry>();
-  private currentSvg: SVGSVGElement | null = null;
-  private baseViewBox: ViewBox | null = null;
+  private destroyed = false;
+
+  // canvas / câmera
+  private canvas: HTMLCanvasElement | null = null;
+  private ctx: CanvasRenderingContext2D | null = null;
+  private dpr = 1;
+  private cssW = 0;
+  private cssH = 0;
+  private world: ViewBox = { x: 0, y: 0, w: 680, h: 680 };
+  private cam: Cam = { scale: 1, tx: 0, ty: 0 };
   private isZoomed = false;
   private zoomedState: string | null = null;
   private manualZoomActive = false;
-  private hoverState: string | null = null;
-  private viewBoxAnimation: number | null = null;
-  // Zoom com dois dedos (pinça): so rastreia toques (nunca mouse), entao
-  // nao interfere em nada da interacao por clique existente.
-  private pinchPointers = new Map<number, { x: number; y: number }>();
-  private pinchStart: { dist: number; viewBox: ViewBox; svgMid: { x: number; y: number } } | null =
-    null;
-  private suppressNextClick = false;
-  private availableCities: AvailableCity[] = [];
-  private allCities: AvailableCity[] = [];
-  private pinEl: HTMLDivElement | null = null;
-  private pinTimer = 0;
-  private pulseTimer = 0;
-  private focusCityTimer = 0;
+
+  // dados
+  private cities: CityRec[] = [];
+  private byKey = new Map<string, CityRec>();
+  private availableCities: CityRec[] = [];
+  private allCities: CityRec[] = []; // só municípios com população (sorteáveis)
   private stateStats = new Map<string, StateStats>();
-  private populationIndex: PopulationIndex | null = null;
+  private stateBBoxes = new Map<string, BBox>();
+  private statePaths = new Map<string, Path2D>();
   private curiosities: CuriosityMap = new Map();
   private missing: string[] = [];
-  private destroyed = false;
-  private heatmapApplied = false;
 
+  // camadas de desenho
+  private borderPath = new Path2D();
+  private tonePaths: Path2D[] = [];
+  private capitalPath = new Path2D();
+  private strokeAll = new Path2D();
+  private capturedPaths = new Map<string, Path2D>();
+  private heatPaths: Path2D[] | null = null;
+  private heatmapOn = false;
+
+  // cache de raster (pan/zoom desliza este bitmap)
+  private cache: { bmp: HTMLCanvasElement | null; scale: number; tx: number; ty: number; stale: boolean } = {
+    bmp: null, scale: 1, tx: 0, ty: 0, stale: true,
+  };
+  private drawRaf = 0;
+  private rerasterTimer = 0;
+
+  // interação
+  private hoverState: string | null = null;
+  private hoverCity: CityRec | null = null;
+  private pointerDownAt: { x: number; y: number; id: number } | null = null;
+  private pointerMoved = false;
+  private suppressNextClick = false;
+  private pinchPointers = new Map<number, { x: number; y: number }>();
+  private pinchStart: { dist: number; cam: Cam; midWorld: { x: number; y: number } } | null = null;
+  private camAnim = 0;
+
+  // destaque (pin + pulso) e tooltip fixado
+  private pinEl: HTMLDivElement | null = null;
+  private pinTimer = 0;
+  private focusCityTimer = 0;
+  private pulse: { city: CityRec; start: number } | null = null;
+  private pulseRaf = 0;
   private tooltipState = {
     isPinned: false,
-    pinnedKey: null as string | null,
-    pinnedTarget: null as SVGPathElement | null,
-    pinnedData: null as TooltipData | null,
+    pinnedCity: null as CityRec | null,
     lastHoverKey: null as string | null,
   };
 
@@ -82,33 +190,25 @@ export class MapController {
     if (!this.tooltipState.isPinned) return;
     const target = evt.target as Node | null;
     if (target && this.opts.tooltip.contains(target)) return;
-    if (target && this.tooltipState.pinnedTarget?.contains(target)) return;
+    if (target && this.opts.container.contains(target)) return; // o canvas decide
     this.clearPinnedTooltip();
   };
 
   private docClick = (evt: MouseEvent) => {
-    // Em zoom manual (pinça, sem estado especifico associado) nao existe
-    // "fora da area" — so o botao Voltar ou pinçar de volta encerram o zoom.
+    // Em zoom manual (pinça/roda, sem estado especifico) nao existe "fora da
+    // area" — so o botao Voltar ou o gesto encerram o zoom.
     if (!this.isZoomed || this.zoomedState === null) return;
     const el = evt.target as Element | null;
-    // Cliques dentro de modais/paineis ou do tooltip fixado não devem resetar
-    // o zoom. (React delega eventos no document, então stopPropagation nos
-    // handlers não impede este listener — o filtro precisa ser feito aqui.)
-    // Se o alvo já foi removido do DOM (React fecha o painel antes de o evento
-    // chegar aqui), também não há como julgar o clique — ignora.
     if (!el || !el.isConnected) return;
-    if (
-      el.closest('.modal-backdrop') ||
-      el.closest('.modal-panel') ||
-      el.closest('.city-tooltip')
-    ) {
+    if (this.opts.container.contains(el)) return; // cliques no mapa: handleTap decide
+    if (el.closest('.modal-backdrop') || el.closest('.modal-panel') || el.closest('.city-tooltip')) {
       return;
     }
-    const region = el.closest('.region') as SVGPathElement | null;
-    if (!region || region.dataset.state !== this.zoomedState) this.resetZoom();
+    this.resetZoom();
   };
 
   private winReposition = () => this.positionPinnedTooltip();
+  private winResize = () => this.resizeCanvas();
 
   constructor(opts: MapControllerOptions) {
     this.opts = opts;
@@ -119,96 +219,119 @@ export class MapController {
   async init(): Promise<void> {
     document.addEventListener('pointerdown', this.docPointerDown, true);
     document.addEventListener('click', this.docClick);
-    window.addEventListener('resize', this.winReposition);
+    window.addEventListener('resize', this.winResize);
     window.addEventListener('scroll', this.winReposition, true);
     await this.loadMap();
   }
 
   destroy(): void {
     this.destroyed = true;
-    if (this.viewBoxAnimation) cancelAnimationFrame(this.viewBoxAnimation);
-    window.clearTimeout(this.pinTimer);
-    window.clearTimeout(this.pulseTimer);
-    window.clearTimeout(this.focusCityTimer);
-    this.pinEl = null;
     document.removeEventListener('pointerdown', this.docPointerDown, true);
     document.removeEventListener('click', this.docClick);
-    window.removeEventListener('resize', this.winReposition);
+    window.removeEventListener('resize', this.winResize);
     window.removeEventListener('scroll', this.winReposition, true);
+    cancelAnimationFrame(this.drawRaf);
+    cancelAnimationFrame(this.camAnim);
+    cancelAnimationFrame(this.pulseRaf);
+    window.clearTimeout(this.rerasterTimer);
+    window.clearTimeout(this.pinTimer);
+    window.clearTimeout(this.focusCityTimer);
+    this.removePin();
     this.opts.container.innerHTML = '';
-    this.currentSvg = null;
+    this.canvas = null;
+    this.ctx = null;
   }
 
-  // ── ViewBox / zoom ──
+  // ── Câmera ──
 
-  private parseViewBox(str = ''): ViewBox {
-    const [x = 0, y = 0, w = 1000, h = 1000] = String(str)
-      .split(/\s+/)
-      .map((n) => Number(n));
-    return { x, y, w, h };
+  private camForRect(b: BBox): Cam {
+    const bw = Math.max(b.maxX - b.minX, 1);
+    const bh = Math.max(b.maxY - b.minY, 1);
+    const scale = Math.min(this.cssW / bw, this.cssH / bh);
+    return {
+      scale,
+      tx: (this.cssW - bw * scale) / 2 - b.minX * scale,
+      ty: (this.cssH - bh * scale) / 2 - b.minY * scale,
+    };
   }
 
-  private setViewBox(svgEl: SVGSVGElement, vb: ViewBox): void {
-    svgEl.setAttribute('viewBox', `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+  private rectForCam(cam: Cam): BBox {
+    return {
+      minX: -cam.tx / cam.scale,
+      minY: -cam.ty / cam.scale,
+      maxX: (this.cssW - cam.tx) / cam.scale,
+      maxY: (this.cssH - cam.ty) / cam.scale,
+    };
   }
 
-  private animateViewBox(svgEl: SVGSVGElement, target: ViewBox, duration = 420): void {
-    if (this.viewBoxAnimation) cancelAnimationFrame(this.viewBoxAnimation);
-    const startBox = this.parseViewBox(svgEl.getAttribute('viewBox') || '');
+  private baseCam(): Cam {
+    return this.camForRect({
+      minX: this.world.x,
+      minY: this.world.y,
+      maxX: this.world.x + this.world.w,
+      maxY: this.world.y + this.world.h,
+    });
+  }
+
+  private expandBBox(b: BBox, pct: number): BBox {
+    const padX = (b.maxX - b.minX) * pct;
+    const padY = (b.maxY - b.minY) * pct;
+    return {
+      minX: Math.max(this.world.x, b.minX - padX),
+      minY: Math.max(this.world.y, b.minY - padY),
+      maxX: Math.min(this.world.x + this.world.w, b.maxX + padX),
+      maxY: Math.min(this.world.y + this.world.h, b.maxY + padY),
+    };
+  }
+
+  private worldToScreen(wx: number, wy: number): { x: number; y: number } {
+    return { x: wx * this.cam.scale + this.cam.tx, y: wy * this.cam.scale + this.cam.ty };
+  }
+
+  private screenToWorld(sx: number, sy: number): { x: number; y: number } {
+    return { x: (sx - this.cam.tx) / this.cam.scale, y: (sy - this.cam.ty) / this.cam.scale };
+  }
+
+  // Anima a câmera interpolando o retângulo visível (mesma sensação da
+  // animação de viewBox da engine SVG).
+  private animateCamTo(target: Cam, duration = ZOOM_MS): void {
+    cancelAnimationFrame(this.camAnim);
+    const from = this.rectForCam(this.cam);
+    const to = this.rectForCam(target);
     const start = performance.now();
     const step = (now: number) => {
       const t = Math.min(1, (now - start) / duration);
       const ease = t * t * (3 - 2 * t);
-      const mix = (a: number, b: number) => a + (b - a) * ease;
-      this.setViewBox(svgEl, {
-        x: mix(startBox.x, target.x),
-        y: mix(startBox.y, target.y),
-        w: mix(startBox.w, target.w),
-        h: mix(startBox.h, target.h),
+      const lerp = (a: number, b: number) => a + (b - a) * ease;
+      this.cam = this.camForRect({
+        minX: lerp(from.minX, to.minX),
+        minY: lerp(from.minY, to.minY),
+        maxX: lerp(from.maxX, to.maxX),
+        maxY: lerp(from.maxY, to.maxY),
       });
-      if (t < 1) this.viewBoxAnimation = requestAnimationFrame(step);
+      this.requestDraw();
+      if (t < 1) {
+        this.camAnim = requestAnimationFrame(step);
+      } else {
+        this.cam = target;
+        this.cache.stale = true;
+        this.requestDraw();
+        this.positionPinnedTooltip();
+      }
     };
-    this.viewBoxAnimation = requestAnimationFrame(step);
-  }
-
-  private expandBBox(bbox: BBox, paddingFactor = 0.15, bounds?: ViewBox | null): ViewBox {
-    const width = bbox.maxX - bbox.minX;
-    const height = bbox.maxY - bbox.minY;
-    const padX = width * paddingFactor;
-    const padY = height * paddingFactor;
-    const expanded = {
-      x: bbox.minX - padX,
-      y: bbox.minY - padY,
-      w: width + padX * 2,
-      h: height + padY * 2,
-    };
-    if (!bounds) return expanded;
-    return {
-      x: Math.max(bounds.x, expanded.x),
-      y: Math.max(bounds.y, expanded.y),
-      w: Math.min(bounds.w, expanded.w),
-      h: Math.min(bounds.h, expanded.h),
-    };
+    this.camAnim = requestAnimationFrame(step);
   }
 
   resetZoom(): void {
     this.removePin();
-    if (!this.isZoomed || !this.baseViewBox || !this.currentSvg) return;
-    if (this.viewBoxAnimation) cancelAnimationFrame(this.viewBoxAnimation);
-    this.animateViewBox(this.currentSvg, this.baseViewBox);
+    if (!this.isZoomed || !this.canvas) return;
     this.isZoomed = false;
     this.zoomedState = null;
     this.manualZoomActive = false;
     this.pinchStart = null;
+    this.hoverCity = null;
     this.clearStateHover();
-    this.stateGroups.forEach(({ paths }) =>
-      paths.forEach((p) => p.classList.remove('region--state-hover'))
-    );
-    this.clearActiveState();
-    this.currentSvg
-      .querySelectorAll('.region--hover')
-      .forEach((p) => p.classList.remove('region--hover'));
-    this.currentSvg.classList.remove('svg--zoomed');
+    this.animateCamTo(this.baseCam());
     this.opts.onZoomChange(null);
     this.opts.onManualZoomChange(false);
     this.clearPinnedTooltip();
@@ -216,66 +339,232 @@ export class MapController {
 
   private focusState(state: string): void {
     this.removePin(); // pin antigo fica em posição errada após mudar a view
-    if (!state || !this.stateGroups.has(state) || !this.baseViewBox || !this.currentSvg) return;
-    const entry = this.stateGroups.get(state);
-    if (!entry || !entry.bbox) return;
-    if (this.viewBoxAnimation) cancelAnimationFrame(this.viewBoxAnimation);
-    const target = this.expandBBox(entry.bbox, 0.2, this.baseViewBox);
-    this.animateViewBox(this.currentSvg, target);
+    const bbox = this.stateBBoxes.get(state);
+    if (!state || !bbox || !this.canvas) return;
     this.isZoomed = true;
     this.zoomedState = state;
-    this.currentSvg.classList.add('svg--zoomed');
-    this.opts.onZoomChange(state);
+    this.hoverCity = null;
     this.clearStateHover();
-    this.clearActiveState();
-    entry.paths.forEach((p) => p.classList.add('region--active-state'));
-    entry.paths.forEach((p) => p.classList.add('region--state-hover'));
+    this.animateCamTo(this.camForRect(this.expandBBox(bbox, 0.2)));
+    this.opts.onZoomChange(state);
+  }
+
+  focusStateByKey(uf: string): void {
+    this.focusState(uf);
+  }
+
+  // ── Render ──
+
+  private resizeCanvas(): void {
+    const canvas = this.canvas;
+    if (!canvas) return;
+    const keepRect = this.isZoomed ? this.rectForCam(this.cam) : null;
+    this.cssW = canvas.clientWidth;
+    this.cssH = canvas.clientHeight;
+    this.dpr = Math.min(2, window.devicePixelRatio || 1);
+    canvas.width = Math.max(1, Math.round(this.cssW * this.dpr));
+    canvas.height = Math.max(1, Math.round(this.cssH * this.dpr));
+    this.cam = keepRect ? this.camForRect(keepRect) : this.baseCam();
+    this.cache.stale = true;
+    this.requestDraw();
+    this.positionPinnedTooltip();
+  }
+
+  private applyCam(c: CanvasRenderingContext2D): void {
+    c.setTransform(
+      this.dpr * this.cam.scale, 0, 0, this.dpr * this.cam.scale,
+      this.dpr * this.cam.tx, this.dpr * this.cam.ty
+    );
+  }
+
+  private rasterFull(): void {
+    const canvas = this.canvas;
+    if (!canvas) return;
+    const off = this.cache.bmp && this.cache.bmp.width === canvas.width && this.cache.bmp.height === canvas.height
+      ? this.cache.bmp
+      : document.createElement('canvas');
+    off.width = canvas.width;
+    off.height = canvas.height;
+    const c = off.getContext('2d');
+    if (!c) return;
+    c.setTransform(1, 0, 0, 1, 0, 0);
+    c.clearRect(0, 0, off.width, off.height);
+    c.setTransform(
+      this.dpr * this.cam.scale, 0, 0, this.dpr * this.cam.scale,
+      this.dpr * this.cam.tx, this.dpr * this.cam.ty
+    );
+
+    // forro do país: furinhos entre municípios mostram verde, não o fundo
+    c.fillStyle = BACKING_FILL;
+    c.fill(this.borderPath);
+
+    if (this.heatmapOn && this.heatPaths) {
+      this.heatPaths.forEach((p, i) => {
+        c.fillStyle = HEAT_BUCKETS[i].color;
+        c.fill(p);
+      });
+    } else {
+      this.tonePaths.forEach((p, i) => {
+        c.fillStyle = STATE_TONES[i];
+        c.fill(p);
+      });
+      c.fillStyle = CAPITAL_FILL;
+      c.fill(this.capitalPath);
+    }
+
+    // capturadas na cor da raridade (vence o heatmap, como na engine SVG)
+    this.capturedPaths.forEach((p, tier) => {
+      c.fillStyle = TIER_FILLS[tier] || '#ef4444';
+      c.fill(p);
+    });
+
+    // divisas dos municípios (1 stroke só para o mapa inteiro)
+    c.strokeStyle = DIVISA_STROKE;
+    c.lineWidth = 0.3;
+    c.stroke(this.strokeAll);
+
+    // rótulos de estado (somem no zoom, como antes)
+    if (!this.isZoomed) {
+      c.font = `700 13px 'Segoe UI', Arial, sans-serif`;
+      c.textAlign = 'center';
+      c.textBaseline = 'middle';
+      c.lineWidth = 1.4;
+      c.globalAlpha = 0.85;
+      this.stateBBoxes.forEach((bbox, uf) => {
+        const offset = stateLabelOffsets[uf] || { x: 0, y: 0 };
+        const cx = (bbox.minX + bbox.maxX) / 2 + offset.x;
+        const cy = (bbox.minY + bbox.maxY) / 2 + offset.y;
+        const label = stateLabelText(uf);
+        c.strokeStyle = LABEL_HALO;
+        c.strokeText(label, cx, cy);
+        c.fillStyle = LABEL_FILL;
+        c.fillText(label, cx, cy);
+      });
+      c.globalAlpha = 1;
+    }
+
+    this.cache.bmp = off;
+    this.cache.scale = this.cam.scale;
+    this.cache.tx = this.cam.tx;
+    this.cache.ty = this.cam.ty;
+    this.cache.stale = false;
+  }
+
+  private requestDraw(): void {
+    if (this.drawRaf) return;
+    this.drawRaf = requestAnimationFrame(() => {
+      this.drawRaf = 0;
+      this.draw();
+    });
+  }
+
+  private draw(): void {
+    const canvas = this.canvas;
+    const ctx = this.ctx;
+    if (!canvas || !ctx) return;
+    if (this.cache.stale) this.rasterFull();
+    const bmp = this.cache.bmp;
+    if (!bmp) return;
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // bitmap reprojetado: pan/zoom desliza a imagem pronta
+    const k = this.cam.scale / this.cache.scale;
+    ctx.drawImage(
+      bmp,
+      (this.cam.tx - this.cache.tx * k) * this.dpr,
+      (this.cam.ty - this.cache.ty * k) * this.dpr,
+      canvas.width * k,
+      canvas.height * k
+    );
+
+    // overlays em espaço do mundo
+    this.applyCam(ctx);
+
+    if (!this.isZoomed && this.hoverState) {
+      const sp = this.statePaths.get(this.hoverState);
+      if (sp) {
+        ctx.fillStyle = STATE_HOVER_FILL;
+        ctx.fill(sp);
+        ctx.strokeStyle = STATE_HOVER_STROKE;
+        ctx.lineWidth = 0.45;
+        ctx.stroke(sp);
+      }
+    }
+
+    if (this.isZoomed && this.zoomedState) {
+      const sp = this.statePaths.get(this.zoomedState);
+      if (sp) {
+        ctx.strokeStyle = ACTIVE_STATE_STROKE;
+        ctx.lineWidth = 0.6;
+        ctx.stroke(sp);
+      }
+    }
+
+    if (this.hoverCity && this.isZoomed) {
+      ctx.fillStyle = CITY_HOVER_FILL;
+      ctx.fill(this.hoverCity.path);
+    }
+
+    // pulso do destaque: a cidade cresce e volta (2 ciclos)
+    if (this.pulse) {
+      const elapsed = performance.now() - this.pulse.start;
+      const t = Math.min(1, elapsed / 1300);
+      const amp = Math.sin(Math.PI * ((t * 2) % 1));
+      const s = 1 + 1.3 * amp;
+      const b = this.pulse.city.bbox;
+      const cx = (b.minX + b.maxX) / 2;
+      const cy = (b.minY + b.maxY) / 2;
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.scale(s, s);
+      ctx.translate(-cx, -cy);
+      ctx.fillStyle = this.pulse.city.capturedTier
+        ? TIER_FILLS[this.pulse.city.capturedTier] || '#ff4b4b'
+        : '#ff4b4b';
+      ctx.fill(this.pulse.city.path);
+      ctx.restore();
+    }
+  }
+
+  private scheduleReraster(): void {
+    window.clearTimeout(this.rerasterTimer);
+    this.rerasterTimer = window.setTimeout(() => {
+      this.cache.stale = true;
+      this.requestDraw();
+    }, RERASTER_IDLE_MS);
+  }
+
+  // ── Hit-test ──
+
+  private hitCity(clientX: number, clientY: number): CityRec | null {
+    const ctx = this.ctx;
+    const canvas = this.canvas;
+    if (!ctx || !canvas) return null;
+    const rect = canvas.getBoundingClientRect();
+    const { x, y } = this.screenToWorld(clientX - rect.left, clientY - rect.top);
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    for (const city of this.cities) {
+      const b = city.bbox;
+      if (x < b.minX || x > b.maxX || y < b.minY || y > b.maxY) continue;
+      if (ctx.isPointInPath(city.path, x, y)) return city;
+    }
+    return null;
   }
 
   // ── Hover de estado ──
 
-  private registerStatePath(state: string, path: SVGPathElement): void {
-    if (!state) return;
-    const bbox = path.getBBox();
-    const entry = this.stateGroups.get(state) || { paths: [], bbox: null };
-    const current = entry.bbox || {
-      minX: bbox.x,
-      minY: bbox.y,
-      maxX: bbox.x + bbox.width,
-      maxY: bbox.y + bbox.height,
-    };
-    entry.bbox = {
-      minX: Math.min(current.minX, bbox.x),
-      minY: Math.min(current.minY, bbox.y),
-      maxX: Math.max(current.maxX, bbox.x + bbox.width),
-      maxY: Math.max(current.maxY, bbox.y + bbox.height),
-    };
-    entry.paths.push(path);
-    this.stateGroups.set(state, entry);
-  }
-
   private clearStateHover(): void {
     if (!this.hoverState) return;
-    const entry = this.stateGroups.get(this.hoverState);
-    if (entry) entry.paths.forEach((p) => p.classList.remove('region--state-hover'));
     this.hoverState = null;
+    this.requestDraw();
   }
 
-  private clearActiveState(): void {
-    this.stateGroups.forEach(({ paths }) =>
-      paths.forEach((p) => p.classList.remove('region--active-state'))
-    );
-  }
-
-  private setStateHover(state: string | null | undefined): void {
-    if (!state) return;
+  private setStateHover(state: string | null): void {
     if (this.isZoomed) return;
     if (this.hoverState === state) return;
-    this.clearStateHover();
-    const entry = this.stateGroups.get(state);
-    if (!entry) return;
-    entry.paths.forEach((p) => p.classList.add('region--state-hover'));
     this.hoverState = state;
+    this.requestDraw();
   }
 
   // ── Tooltip ──
@@ -310,7 +599,7 @@ export class MapController {
 
   private showTooltipHover(data: TooltipData, mouseX: number, mouseY: number): void {
     if (this.tooltipState.isPinned) {
-      if (this.tooltipState.pinnedKey !== data.key) return;
+      if (this.tooltipState.pinnedCity?.key !== data.key) return;
       this.setTooltipContent(data);
       this.showTooltip();
       this.positionPinnedTooltip();
@@ -324,283 +613,299 @@ export class MapController {
   }
 
   private positionPinnedTooltip(): void {
-    if (!this.tooltipState.isPinned || !this.tooltipState.pinnedTarget) return;
-    const targetRect = this.tooltipState.pinnedTarget.getBoundingClientRect();
+    const city = this.tooltipState.pinnedCity;
+    const canvas = this.canvas;
+    if (!this.tooltipState.isPinned || !city || !canvas) return;
+    const rect = canvas.getBoundingClientRect();
+    const b = city.bbox;
+    const topLeft = this.worldToScreen(b.minX, b.minY);
+    const botRight = this.worldToScreen(b.maxX, b.maxY);
+    const cxViewport = rect.left + (topLeft.x + botRight.x) / 2;
+    const topViewport = rect.top + topLeft.y;
     const tooltipRect = this.opts.tooltip.getBoundingClientRect();
-    const x = targetRect.left + targetRect.width / 2 - tooltipRect.width / 2;
-    let y = targetRect.top - tooltipRect.height - 12;
-    if (y < 12) y = targetRect.bottom + 12;
+    const x = cxViewport - tooltipRect.width / 2;
+    let y = topViewport - tooltipRect.height - 12;
+    if (y < 12) y = rect.top + botRight.y + 12;
     this.setTooltipPosition(x, y);
   }
 
-  private pinTooltip(data: TooltipData, target: SVGPathElement): void {
+  private pinTooltip(city: CityRec): void {
     this.tooltipState.isPinned = true;
-    this.tooltipState.pinnedKey = data.key;
-    this.tooltipState.pinnedTarget = target;
-    this.tooltipState.pinnedData = data;
+    this.tooltipState.pinnedCity = city;
     this.opts.tooltip.classList.add('city-tooltip--pinned');
-    this.setTooltipContent(data);
+    this.setTooltipContent({ city: city.city, state: city.state, population: city.population, key: city.key });
     this.showTooltip();
     this.positionPinnedTooltip();
   }
 
   clearPinnedTooltip(): void {
     this.tooltipState.isPinned = false;
-    this.tooltipState.pinnedKey = null;
-    this.tooltipState.pinnedTarget = null;
-    this.tooltipState.pinnedData = null;
+    this.tooltipState.pinnedCity = null;
     this.opts.tooltip.classList.remove('city-tooltip--pinned');
     this.hideTooltip();
   }
 
   // Botão "i" do tooltip fixado: abre o modal de detalhes do município
   openPinnedCityDetails(): void {
-    if (!this.tooltipState.isPinned || !this.tooltipState.pinnedData) return;
-    const { city, state, population } = this.tooltipState.pinnedData;
-    const curiosity = curiosityFor(this.curiosities, city, state);
+    const city = this.tooltipState.pinnedCity;
+    if (!this.tooltipState.isPinned || !city) return;
+    const curiosity = curiosityFor(this.curiosities, city.city, city.state);
     this.clearPinnedTooltip();
-    this.opts.openCityModal({ city, state, population, curiosity });
-  }
-
-  // ── Rótulos de estado ──
-
-  private renderStateLabels(svgEl: SVGSVGElement): void {
-    const existing = svgEl.querySelector('.state-labels');
-    if (existing) existing.remove();
-    const g = document.createElementNS(SVG_NS, 'g');
-    g.classList.add('state-labels');
-    this.stateGroups.forEach((entry, stateKey) => {
-      if (!entry?.bbox) return;
-      const offset = stateLabelOffsets[stateKey] || { x: 0, y: 0 };
-      const cx = (entry.bbox.minX + entry.bbox.maxX) / 2 + offset.x;
-      const cy = (entry.bbox.minY + entry.bbox.maxY) / 2 + offset.y;
-      const text = document.createElementNS(SVG_NS, 'text');
-      text.classList.add('state-label');
-      text.setAttribute('x', String(cx));
-      text.setAttribute('y', String(cy));
-      text.textContent = stateLabelText(stateKey);
-      g.appendChild(text);
+    this.opts.openCityModal({
+      city: city.city,
+      state: city.state,
+      population: city.population,
+      curiosity,
     });
-    svgEl.appendChild(g);
   }
 
-  // ── Eventos delegados do SVG ──
+  // ── Interação (pointer/touch/roda) ──
 
-  private setupDelegatedEvents(svgEl: SVGSVGElement): void {
-    const regionOf = (target: EventTarget | null): SVGPathElement | null =>
-      ((target as Element | null)?.closest?.('.region') as SVGPathElement | null) || null;
-
-    // Reseta a cada novo toque (ou clique): garante que um clique "fantasma"
-    // gerado ao soltar os dois dedos de uma pinça nao seja confundido com
-    // uma interacao futura legitima — o pointerdown de qualquer nova
-    // interacao sempre chega antes do click correspondente a ela.
-    svgEl.addEventListener('pointerdown', () => {
+  private setupEvents(canvas: HTMLCanvasElement): void {
+    canvas.addEventListener('pointerdown', (evt) => {
       this.suppressNextClick = false;
-    });
+      this.pointerDownAt = { x: evt.clientX, y: evt.clientY, id: evt.pointerId };
+      this.pointerMoved = false;
 
-    svgEl.addEventListener('pointerover', (evt) => {
-      const region = regionOf(evt.target);
-      if (!region || !svgEl.contains(region)) return;
-      if (this.isZoomed) {
-        region.classList.add('region--hover');
-        return;
-      }
-      this.setStateHover(region.dataset.state);
-    });
-
-    svgEl.addEventListener('pointerout', (evt) => {
-      if (this.isZoomed) {
-        const leaving = regionOf(evt.target);
-        if (leaving) leaving.classList.remove('region--hover');
-        if (!this.tooltipState.isPinned) this.hideTooltip();
-        return;
-      }
-      const related = evt.relatedTarget as Node | null;
-      if (!related || !svgEl.contains(related)) {
-        this.clearStateHover();
-        return;
-      }
-      const leaving = regionOf(evt.target);
-      const entering = regionOf(related);
-      if (leaving && entering && leaving.dataset.state === entering.dataset.state) return;
-      this.setStateHover(entering?.dataset.state || null);
-    });
-
-    svgEl.addEventListener('pointermove', (evt) => {
-      const region = regionOf(evt.target);
-      if (!region || !svgEl.contains(region)) {
-        this.hideTooltip();
-        return;
-      }
-      if (!this.isZoomed || region.dataset.state !== this.zoomedState) {
-        this.hideTooltip();
-        return;
-      }
-      const city = region.dataset.city;
-      if (!city) {
-        this.hideTooltip();
-        return;
-      }
-      const state = region.dataset.state || '';
-      const population =
-        Number(region.dataset.population) || getPopulation(this.populationIndex, state, city);
-      this.showTooltipHover(
-        { city, state, population, key: region.dataset.key || keyFor(city, state) },
-        evt.clientX,
-        evt.clientY
-      );
-    });
-
-    svgEl.addEventListener('click', (evt) => {
-      // Engole o clique fantasma que alguns navegadores sinteizam ao soltar
-      // o segundo dedo de uma pinça, senao ele acabaria fixando um tooltip
-      // ou resetando o zoom sem o usuario ter realmente tocado ali.
-      if (this.suppressNextClick) {
-        this.suppressNextClick = false;
-        return;
-      }
-      const region = regionOf(evt.target);
-      // So existe "fora da area" quando zoomado numa estado especifico via
-      // clique; em zoom manual (pinça) qualquer cidade pode ser tocada.
-      const inStateZoom = this.isZoomed && this.zoomedState !== null;
-      if (inStateZoom && (!region || region.dataset.state !== this.zoomedState)) {
-        this.resetZoom();
-        return;
-      }
-      if (!region) return;
-      evt.stopPropagation();
-      const city = region.dataset.city;
-      const stateKey = region.dataset.state || '';
-      const pop = Number(region.dataset.population) || getPopulation(this.populationIndex, stateKey, city || '');
-      const rawName = region.dataset.rawname;
-      if (this.isZoomed && city) {
-        this.pinTooltip(
-          { city, state: stateKey, population: pop, key: region.dataset.key || keyFor(city, stateKey) },
-          region
-        );
-      }
-      if (city && pop) {
-        this.opts.setStatus(`${city}${stateKey ? ` (${stateKey})` : ''} - ${formatPop(pop)} habitantes`);
-      } else {
-        this.opts.setStatus(`Sem populacao encontrada para ${rawName || 'municipio'}.`);
-      }
-      if (!this.isZoomed) this.focusState(stateKey);
-    });
-  }
-
-  // ── Zoom com dois dedos (pinça livre no mapa) ──
-
-  private clientToSvgPoint(clientX: number, clientY: number): { x: number; y: number } {
-    const svg = this.currentSvg;
-    if (!svg) return { x: 0, y: 0 };
-    const pt = svg.createSVGPoint();
-    pt.x = clientX;
-    pt.y = clientY;
-    const ctm = svg.getScreenCTM();
-    if (!ctm) return { x: 0, y: 0 };
-    const transformed = pt.matrixTransform(ctm.inverse());
-    return { x: transformed.x, y: transformed.y };
-  }
-
-  // Se o usuario pinçou de volta perto do tamanho original, encaixa
-  // exatamente na vista completa em vez de deixar um zoom quase-1:1 torto.
-  private finishPinch(): void {
-    this.pinchStart = null;
-    if (!this.manualZoomActive || !this.currentSvg || !this.baseViewBox) return;
-    const current = this.parseViewBox(this.currentSvg.getAttribute('viewBox') || '');
-    if (current.w >= this.baseViewBox.w * 0.97 && current.h >= this.baseViewBox.h * 0.97) {
-      this.resetZoom();
-    }
-  }
-
-  private setupPinchZoom(svgEl: SVGSVGElement): void {
-    const MIN_SCALE = 0.1; // ate ~10x de zoom em relacao a vista completa
-
-    svgEl.addEventListener('pointerdown', (evt) => {
-      if (evt.pointerType !== 'touch') return;
-      this.pinchPointers.set(evt.pointerId, { x: evt.clientX, y: evt.clientY });
-      if (this.pinchPointers.size === 2 && this.currentSvg) {
-        const pts = [...this.pinchPointers.values()];
-        const dist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
-        const midClientX = (pts[0].x + pts[1].x) / 2;
-        const midClientY = (pts[0].y + pts[1].y) / 2;
-        this.pinchStart = {
-          dist,
-          viewBox: this.parseViewBox(this.currentSvg.getAttribute('viewBox') || ''),
-          svgMid: this.clientToSvgPoint(midClientX, midClientY),
-        };
-        // A partir daqui o zoom e livre — solta qualquer estado "clicado"
-        // especifico e qualquer tooltip fixado, que nao fazem mais sentido.
-        if (this.zoomedState !== null) {
-          this.zoomedState = null;
-          this.opts.onZoomChange(null);
+      if (evt.pointerType === 'touch') {
+        this.pinchPointers.set(evt.pointerId, { x: evt.clientX, y: evt.clientY });
+        if (this.pinchPointers.size === 2) {
+          const pts = [...this.pinchPointers.values()];
+          const rect = canvas.getBoundingClientRect();
+          const midX = (pts[0].x + pts[1].x) / 2 - rect.left;
+          const midY = (pts[0].y + pts[1].y) / 2 - rect.top;
+          this.pinchStart = {
+            dist: Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y),
+            cam: { ...this.cam },
+            midWorld: this.screenToWorld(midX, midY),
+          };
+          // A partir daqui o zoom é livre — solta o estado "clicado" e o
+          // tooltip fixado, que não fazem mais sentido.
+          if (this.zoomedState !== null) {
+            this.zoomedState = null;
+            this.opts.onZoomChange(null);
+          }
+          this.clearPinnedTooltip();
         }
-        this.clearPinnedTooltip();
+      }
+
+      // tocar noutra cidade solta o tooltip fixado (o tap decide o próximo)
+      if (this.tooltipState.isPinned) {
+        const hit = this.hitCity(evt.clientX, evt.clientY);
+        if (!hit || hit.key !== this.tooltipState.pinnedCity?.key) this.clearPinnedTooltip();
       }
     });
 
-    svgEl.addEventListener(
+    canvas.addEventListener(
       'pointermove',
       (evt) => {
-        if (evt.pointerType !== 'touch' || !this.pinchPointers.has(evt.pointerId)) return;
-        this.pinchPointers.set(evt.pointerId, { x: evt.clientX, y: evt.clientY });
-        if (this.pinchPointers.size !== 2 || !this.pinchStart || !this.currentSvg || !this.baseViewBox) {
-          return;
+        // pinça (2 dedos): zoom livre ancorado no ponto médio
+        if (evt.pointerType === 'touch' && this.pinchPointers.has(evt.pointerId)) {
+          this.pinchPointers.set(evt.pointerId, { x: evt.clientX, y: evt.clientY });
+          if (this.pinchPointers.size === 2 && this.pinchStart) {
+            evt.preventDefault();
+            this.suppressNextClick = true;
+            this.pointerMoved = true;
+            const pts = [...this.pinchPointers.values()];
+            const rect = canvas.getBoundingClientRect();
+            const dist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
+            const midX = (pts[0].x + pts[1].x) / 2 - rect.left;
+            const midY = (pts[0].y + pts[1].y) / 2 - rect.top;
+            const base = this.baseCam().scale;
+            const scale = clamp(
+              this.pinchStart.cam.scale * (dist / Math.max(this.pinchStart.dist, 1)),
+              base,
+              base * MAX_ZOOM
+            );
+            this.cam = {
+              scale,
+              tx: midX - this.pinchStart.midWorld.x * scale,
+              ty: midY - this.pinchStart.midWorld.y * scale,
+            };
+            this.clampPan();
+            if (!this.manualZoomActive) {
+              this.manualZoomActive = true;
+              this.isZoomed = true;
+              this.opts.onManualZoomChange(true);
+            }
+            this.cachePanDraw();
+            return;
+          }
         }
-        evt.preventDefault();
-        this.suppressNextClick = true;
 
-        const pts = [...this.pinchPointers.values()];
-        const dist = Math.hypot(pts[1].x - pts[0].x, pts[1].y - pts[0].y);
-        const midClientX = (pts[0].x + pts[1].x) / 2;
-        const midClientY = (pts[0].y + pts[1].y) / 2;
+        // arrasto (1 ponteiro) quando zoomado: pan
+        if (this.pointerDownAt && evt.pointerId === this.pointerDownAt.id && this.isZoomed && this.pinchPointers.size < 2) {
+          const dx = evt.clientX - this.pointerDownAt.x;
+          const dy = evt.clientY - this.pointerDownAt.y;
+          if (this.pointerMoved || Math.abs(dx) + Math.abs(dy) > 6) {
+            this.pointerMoved = true;
+            this.cam.tx += evt.clientX - this.pointerDownAt.x;
+            this.cam.ty += evt.clientY - this.pointerDownAt.y;
+            this.pointerDownAt = { x: evt.clientX, y: evt.clientY, id: evt.pointerId };
+            this.clampPan();
+            this.cachePanDraw();
+            return;
+          }
+        }
 
-        const scale = this.pinchStart.dist / Math.max(dist, 1);
-        const maxW = this.baseViewBox.w;
-        const maxH = this.baseViewBox.h;
-        const newW = clamp(this.pinchStart.viewBox.w * scale, maxW * MIN_SCALE, maxW);
-        const newH = clamp(this.pinchStart.viewBox.h * scale, maxH * MIN_SCALE, maxH);
-
-        const svgRect = this.currentSvg.getBoundingClientRect();
-        const fracX = (midClientX - svgRect.left) / svgRect.width;
-        const fracY = (midClientY - svgRect.top) / svgRect.height;
-
-        let newX = this.pinchStart.svgMid.x - fracX * newW;
-        let newY = this.pinchStart.svgMid.y - fracY * newH;
-        // Nao deixa afastar o mapa inteiro pra fora da vista.
-        newX = clamp(newX, this.baseViewBox.x - newW * 0.4, this.baseViewBox.x + maxW - newW * 0.6);
-        newY = clamp(newY, this.baseViewBox.y - newH * 0.4, this.baseViewBox.y + maxH - newH * 0.6);
-
-        this.setViewBox(this.currentSvg, { x: newX, y: newY, w: newW, h: newH });
-
-        if (!this.manualZoomActive) {
-          this.manualZoomActive = true;
-          this.isZoomed = true;
-          this.currentSvg.classList.add('svg--zoomed');
-          this.opts.onManualZoomChange(true);
+        // hover (mouse)
+        if (evt.pointerType === 'mouse' && !this.pointerDownAt) {
+          const hit = this.hitCity(evt.clientX, evt.clientY);
+          if (!this.isZoomed) {
+            this.setStateHover(hit?.state ?? null);
+            this.hideTooltip();
+            canvas.style.cursor = hit ? 'pointer' : 'default';
+            return;
+          }
+          // destaque de hover em qualquer zoom (como a engine SVG); tooltip
+          // só dentro do estado zoomado por clique
+          const inZoomedState = hit && this.zoomedState !== null && hit.state === this.zoomedState;
+          const nextHover = this.isZoomed && hit ? hit : null;
+          if (nextHover !== this.hoverCity) {
+            this.hoverCity = nextHover;
+            this.requestDraw();
+          }
+          canvas.style.cursor = hit ? 'pointer' : 'default';
+          if (inZoomedState && hit) {
+            this.showTooltipHover(
+              { city: hit.city, state: hit.state, population: hit.population, key: hit.key },
+              evt.clientX,
+              evt.clientY
+            );
+          } else {
+            this.hideTooltip();
+          }
         }
       },
       { passive: false }
     );
 
-    const onPointerEnd = (evt: PointerEvent) => {
-      if (evt.pointerType !== 'touch') return;
-      this.pinchPointers.delete(evt.pointerId);
-      if (this.pinchPointers.size < 2 && this.pinchStart) this.finishPinch();
+    const endPointer = (evt: PointerEvent) => {
+      if (evt.pointerType === 'touch') {
+        this.pinchPointers.delete(evt.pointerId);
+        if (this.pinchPointers.size < 2 && this.pinchStart) this.finishPinch();
+      }
+      if (this.pointerDownAt && evt.pointerId === this.pointerDownAt.id) {
+        const wasTap = !this.pointerMoved && !this.suppressNextClick;
+        this.pointerDownAt = null;
+        if (wasTap && evt.type === 'pointerup') this.handleTap(evt.clientX, evt.clientY);
+      }
     };
-    svgEl.addEventListener('pointerup', onPointerEnd);
-    svgEl.addEventListener('pointercancel', onPointerEnd);
-    svgEl.addEventListener('pointerleave', onPointerEnd);
+    canvas.addEventListener('pointerup', endPointer);
+    canvas.addEventListener('pointercancel', endPointer);
+    canvas.addEventListener('pointerleave', (evt) => {
+      endPointer(evt);
+      if (evt.pointerType === 'mouse') {
+        this.clearStateHover();
+        if (this.hoverCity) {
+          this.hoverCity = null;
+          this.requestDraw();
+        }
+        this.hideTooltip();
+      }
+    });
+
+    // roda do mouse: zoom manual ancorado no cursor (desktop)
+    canvas.addEventListener(
+      'wheel',
+      (evt) => {
+        evt.preventDefault();
+        const rect = canvas.getBoundingClientRect();
+        const mx = evt.clientX - rect.left;
+        const my = evt.clientY - rect.top;
+        const factor = evt.deltaY < 0 ? 1.15 : 1 / 1.15;
+        const base = this.baseCam().scale;
+        const next = clamp(this.cam.scale * factor, base, base * MAX_ZOOM);
+        if (next === this.cam.scale) return;
+        const world = this.screenToWorld(mx, my);
+        this.cam = { scale: next, tx: mx - world.x * next, ty: my - world.y * next };
+        this.clampPan();
+        if (next <= base * 1.02) {
+          // voltou ao tamanho original: encaixa na vista completa
+          this.cam = this.baseCam();
+          if (this.isZoomed) this.resetZoomStateOnly();
+        } else if (this.zoomedState !== null || !this.isZoomed) {
+          this.zoomedState = null;
+          this.isZoomed = true;
+          this.manualZoomActive = true;
+          this.opts.onZoomChange(null);
+          this.opts.onManualZoomChange(true);
+          this.clearPinnedTooltip();
+        }
+        this.cachePanDraw();
+        this.positionPinnedTooltip();
+      },
+      { passive: false }
+    );
+  }
+
+  // desenho rápido durante gesto + re-raster quando o gesto assenta
+  private cachePanDraw(): void {
+    this.requestDraw();
+    this.scheduleReraster();
+    this.positionPinnedTooltip();
+  }
+
+  // não deixa afastar o mapa inteiro pra fora da vista
+  private clampPan(): void {
+    const wpx = this.world.w * this.cam.scale;
+    const hpx = this.world.h * this.cam.scale;
+    this.cam.tx = clamp(this.cam.tx, this.cssW - wpx - wpx * 0.4 + this.world.x, wpx * 0.4 - this.world.x * this.cam.scale);
+    this.cam.ty = clamp(this.cam.ty, this.cssH - hpx - hpx * 0.4 + this.world.y, hpx * 0.4 - this.world.y * this.cam.scale);
+  }
+
+  private resetZoomStateOnly(): void {
+    this.isZoomed = false;
+    this.zoomedState = null;
+    this.manualZoomActive = false;
+    this.hoverCity = null;
+    this.opts.onZoomChange(null);
+    this.opts.onManualZoomChange(false);
+    this.cache.stale = true;
+    this.requestDraw();
+  }
+
+  // Se o usuário pinçou de volta perto do tamanho original, encaixa
+  // exatamente na vista completa em vez de deixar um zoom quase-1:1 torto.
+  private finishPinch(): void {
+    this.pinchStart = null;
+    if (!this.manualZoomActive) return;
+    if (this.cam.scale <= this.baseCam().scale * 1.03) this.resetZoom();
+  }
+
+  private handleTap(clientX: number, clientY: number): void {
+    if (this.suppressNextClick) {
+      this.suppressNextClick = false;
+      return;
+    }
+    const hit = this.hitCity(clientX, clientY);
+    // Só existe "fora da área" quando zoomado num estado específico via
+    // clique; em zoom manual (pinça/roda) qualquer cidade pode ser tocada.
+    const inStateZoom = this.isZoomed && this.zoomedState !== null;
+    if (inStateZoom && (!hit || hit.state !== this.zoomedState)) {
+      this.resetZoom();
+      return;
+    }
+    if (!hit) return;
+    if (this.isZoomed) this.pinTooltip(hit);
+    if (hit.population) {
+      this.opts.setStatus(
+        `${hit.city}${hit.state ? ` (${hit.state})` : ''} - ${formatPop(hit.population)} habitantes`
+      );
+    } else {
+      this.opts.setStatus(`Sem populacao encontrada para ${hit.city}.`);
+    }
+    if (!this.isZoomed) this.focusState(hit.state);
   }
 
   // ── Sorteio ponderado por população ──
 
-  private weightedPick(list: AvailableCity[], rng: () => number): AvailableCity {
-    const totalWeight = list.reduce((sum, city) => sum + city.population, 0);
+  private weightedPick(list: CityRec[], rng: () => number): CityRec {
+    const totalWeight = list.reduce((sum, city) => sum + (city.population || 0), 0);
     let r = rng() * totalWeight;
     let selected = list[list.length - 1];
     for (const city of list) {
-      r -= city.population;
+      r -= city.population || 0;
       if (r <= 0) {
         selected = city;
         break;
@@ -609,19 +914,42 @@ export class MapController {
     return selected;
   }
 
-  private toPicked(selected: AvailableCity): PickedCity {
-    const { key, path, population, city, state } = selected;
+  private rebuildCapturedPaths(): void {
+    this.capturedPaths = new Map();
+    for (const city of this.allCities) {
+      if (!city.capturedTier) continue;
+      let p = this.capturedPaths.get(city.capturedTier);
+      if (!p) {
+        p = new Path2D();
+        this.capturedPaths.set(city.capturedTier, p);
+      }
+      p.addPath(city.path);
+    }
+    this.cache.stale = true;
+    this.requestDraw();
+  }
+
+  private toPicked(selected: CityRec): PickedCity {
+    const { key, population, city, state } = selected;
     const idx = this.availableCities.findIndex((c) => c.key === key);
     if (idx !== -1) this.availableCities.splice(idx, 1);
 
-    path.classList.add('region--selected');
-    path.dataset.tier = rarityFor(population).id;
-    const chance = formatChance(population);
+    selected.capturedTier = rarityFor(population || 0).id;
+    let tierPath = this.capturedPaths.get(selected.capturedTier);
+    if (!tierPath) {
+      tierPath = new Path2D();
+      this.capturedPaths.set(selected.capturedTier, tierPath);
+    }
+    tierPath.addPath(selected.path);
+    this.cache.stale = true;
+    this.requestDraw();
+
+    const chance = formatChance(population || 0);
     const curiosity = curiosityFor(this.curiosities, city, state);
     this.opts.setStatus(
-      `Nasceu em ${city} (${state}) — ${formatPop(population)} hab. — chance ${chance}%`
+      `Nasceu em ${city} (${state}) — ${formatPop(population || 0)} hab. — chance ${chance}%`
     );
-    return { key, city, state, population, chance, curiosity };
+    return { key, city, state, population: population || 0, chance, curiosity };
   }
 
   // Sorteio normal: só municípios ainda não capturados
@@ -650,24 +978,22 @@ export class MapController {
   // remove do pool de sorteio
   restoreCaptured(keys: Set<string>): void {
     if (!keys.size) return;
-    this.allCities.forEach(({ key, path, population }) => {
-      if (keys.has(key)) {
-        path.classList.add('region--selected');
-        path.dataset.tier = rarityFor(population).id;
-      }
+    this.allCities.forEach((city) => {
+      if (keys.has(city.key)) city.capturedTier = rarityFor(city.population || 0).id;
     });
     this.availableCities = this.availableCities.filter((c) => !keys.has(c.key));
+    this.rebuildCapturedPaths();
   }
 
   // Desfaz TODAS as capturas no mapa e devolve o pool completo de sorteio.
   // Usado na troca de identidade (login/logout/troca de conta) antes de
   // restaurar o progresso do novo dono da sessão.
   resetCaptured(): void {
-    this.allCities.forEach(({ path }) => {
-      path.classList.remove('region--selected');
-      delete path.dataset.tier;
+    this.allCities.forEach((city) => {
+      city.capturedTier = null;
     });
     this.availableCities = [...this.allCities];
+    this.rebuildCapturedPaths();
   }
 
   // ── Destaque visual de um município (pin estilo mapa + pulso) ──
@@ -675,33 +1001,42 @@ export class MapController {
   // Zoom no estado da cidade e, quando a animação de zoom termina (420ms),
   // dispara o pulso e o pin sobre o município.
   focusCity(key: string): void {
-    const hit = this.allCities.find((c) => c.key === key);
+    const hit = this.byKey.get(key);
     if (!hit) return;
     this.focusState(hit.state);
     window.clearTimeout(this.focusCityTimer);
-    this.focusCityTimer = window.setTimeout(() => this.highlightCity(key), 460);
+    this.focusCityTimer = window.setTimeout(() => this.highlightCity(key), ZOOM_MS + 40);
   }
 
   // A cidade cresce e volta (2 pulsos) e um pin vermelho estilo Google Maps
   // cai sobre ela, sumindo sozinho depois de alguns segundos.
   highlightCity(key: string): void {
-    const hit = this.allCities.find((c) => c.key === key);
-    if (!hit || !this.currentSvg) return;
-    const path = hit.path;
+    const hit = this.byKey.get(key);
+    if (!hit || !this.canvas) return;
 
-    path.classList.remove('region--pulse');
-    void path.getBoundingClientRect(); // reflow: reinicia a animação se repetida
-    path.classList.add('region--pulse');
-    window.clearTimeout(this.pulseTimer);
-    this.pulseTimer = window.setTimeout(() => path.classList.remove('region--pulse'), 1400);
+    this.pulse = { city: hit, start: performance.now() };
+    cancelAnimationFrame(this.pulseRaf);
+    const tick = () => {
+      if (!this.pulse) return;
+      if (performance.now() - this.pulse.start >= 1300) {
+        this.pulse = null;
+        this.requestDraw();
+        return;
+      }
+      this.requestDraw();
+      this.pulseRaf = requestAnimationFrame(tick);
+    };
+    this.pulseRaf = requestAnimationFrame(tick);
 
     this.removePin();
-    const rect = path.getBoundingClientRect();
+    const rect = this.canvas.getBoundingClientRect();
     const crect = this.opts.container.getBoundingClientRect();
+    const b = hit.bbox;
+    const center = this.worldToScreen((b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2);
     const pin = document.createElement('div');
     pin.className = 'map-pin';
-    pin.style.left = `${rect.left + rect.width / 2 - crect.left}px`;
-    pin.style.top = `${rect.top + rect.height / 2 - crect.top}px`;
+    pin.style.left = `${rect.left - crect.left + center.x}px`;
+    pin.style.top = `${rect.top - crect.top + center.y}px`;
     pin.innerHTML =
       '<svg viewBox="0 0 24 24"><path d="M12 1.7c-4.4 0-7.9 3.5-7.9 7.8 0 5.7 6.7 12 7.4 12.7a.8.8 0 0 0 1 0c.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="#ff4b4b"/><path d="M12 1.7v20.7c.2 0 .4-.1.5-.2.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="#dd3a3a"/><circle cx="12" cy="9.4" r="3.3" fill="#fff"/></svg>';
     this.opts.container.appendChild(pin);
@@ -718,8 +1053,8 @@ export class MapController {
   // Dados de exibição de um município a partir da chave persistida — permite
   // reconstruir o Citydex de uma conta só com as chaves vindas do servidor.
   getCityByKey(key: string): { city: string; state: string; population: number; chance: string } | null {
-    const found = this.allCities.find((c) => c.key === key);
-    if (!found) return null;
+    const found = this.byKey.get(key);
+    if (!found || !found.population) return null;
     return {
       city: found.city,
       state: found.state,
@@ -731,14 +1066,15 @@ export class MapController {
   // ── Heatmap de população ──
 
   setHeatmap(enabled: boolean): void {
-    if (!this.currentSvg) return;
-    if (enabled && !this.heatmapApplied) {
-      this.allCities.forEach(({ path, population }) => {
-        path.dataset.heat = String(heatBucket(population));
+    if (enabled && !this.heatPaths) {
+      this.heatPaths = HEAT_BUCKETS.map(() => new Path2D());
+      this.allCities.forEach((city) => {
+        this.heatPaths![heatBucket(city.population || 0)].addPath(city.path);
       });
-      this.heatmapApplied = true;
     }
-    this.currentSvg.classList.toggle('svg--heatmap', enabled);
+    this.heatmapOn = enabled;
+    this.cache.stale = true;
+    this.requestDraw();
   }
 
   // ── Estatísticas por estado ──
@@ -748,28 +1084,16 @@ export class MapController {
   }
 
   getCityInfo(key: string): { city: string; state: string } | null {
-    const hit = this.allCities.find((c) => c.key === key);
+    const hit = this.byKey.get(key);
     return hit ? { city: hit.city, state: hit.state } : null;
-  }
-
-  focusStateByKey(uf: string): void {
-    this.focusState(uf);
   }
 
   // ── Carga do mapa e dos dados ──
 
-  private fallbackViewBox(svg: SVGSVGElement): string {
-    const w = parseFloat(svg.getAttribute('width') || '') || 1000;
-    const h = parseFloat(svg.getAttribute('height') || '') || 912;
-    return `0 0 ${w} ${h}`;
-  }
-
   private async loadMap(): Promise<void> {
     const { container, setStatus } = this.opts;
     try {
-      // As três cargas são independentes entre si — dispara todas de uma vez
-      // em vez de esperar uma para começar a próxima (antes era sequencial:
-      // mapa -> municipios -> curiosidades).
+      // As três cargas são independentes entre si — dispara todas de uma vez.
       const svgPromise = fetch(MAP_URL).then((r) => {
         if (!r.ok) throw new Error('Resposta HTTP nao OK ao carregar o mapa');
         return r.text();
@@ -782,162 +1106,111 @@ export class MapController {
 
       const svgText = await svgPromise;
       if (this.destroyed) return;
-      container.innerHTML = svgText;
-      const svg = container.querySelector('svg');
-      if (!svg) throw new Error('SVG nao encontrado');
-      this.currentSvg = svg;
 
-      const viewBoxAttr = svg.getAttribute('viewBox') || svg.getAttribute('viewbox');
-      const originalViewBox = viewBoxAttr || this.fallbackViewBox(svg);
-      svg.setAttribute('viewBox', originalViewBox);
-      svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-      this.baseViewBox = this.parseViewBox(originalViewBox);
+      // DOMParser: o SVG é lido como DADO, nunca entra no DOM da página
+      const doc = new DOMParser().parseFromString(svgText, 'image/svg+xml');
+      const svgRoot = doc.querySelector('svg');
+      if (!svgRoot) throw new Error('SVG nao encontrado');
 
-      svg.addEventListener('click', (evt) => {
-        if (this.isZoomed && evt.target === svg) this.resetZoom();
-      });
-
-      // Variação sutil de tom por estado (leitura de divisas estilo atlas,
-      // sem stroke pesado). Regras declaradas ANTES de hover/seleção, que
-      // vencem no empate de especificidade por virem depois.
-      const stateTones = ['#1b5438', '#20603f', '#16482c'];
-      const toneRules = Object.keys(ufToName)
-        .map((uf, i) => `.region[data-state="${uf}"] { fill: ${stateTones[i % 3]}; }`)
-        .join('\n        ');
-
-      const styleEl = document.createElementNS(SVG_NS, 'style');
-      styleEl.textContent = `
-        /* Forro verde-escuro sob os municípios: furinhos entre polígonos
-           mostram verde, não o fundo claro da página */
-        .country-backing path { fill: #14432c !important; stroke: #14432c !important; stroke-width: 1 !important; pointer-events: none; }
-        .region { fill: #1b5438; cursor: pointer; transition: fill 160ms ease, filter 160ms ease, stroke 160ms ease; stroke: rgba(8, 40, 24, 0.6); stroke-width: 0.3; }
-        ${toneRules}
-        .region.region--hover { fill: #2b7350; filter: brightness(1.15); }
-        .region.region--selected { fill: #ef4444 !important; stroke: #991b1b; stroke-width: 0.85; }
-        /* Vitrine da coleção: capturada pinta na cor da raridade dela */
-        .region.region--selected[data-tier="lendario"] { fill: #f59e0b !important; stroke: #b45309; }
-        .region.region--selected[data-tier="epico"]    { fill: #a78bfa !important; stroke: #7c5cd6; }
-        .region.region--selected[data-tier="raro"]     { fill: #38bdf8 !important; stroke: #0d8fce; }
-        .region.region--selected[data-tier="incomum"]  { fill: #34d399 !important; stroke: #0fa571; }
-        .region.region--selected[data-tier="comum"]    { fill: #94a3b8 !important; stroke: #64748b; }
-        .region.region--state-hover { fill: #256647; stroke: rgba(214, 245, 224, 0.35); stroke-width: 0.45; }
-        .region.region--state-hover.region--hover { fill: #2b7350; }
-        .svg--zoomed .region--active-state { stroke: rgba(0,210,255,0.22); stroke-width: 0.6; }
-        ${HEAT_BUCKETS.map((b, i) => `.svg--heatmap .region[data-heat="${i}"] { fill: ${b.color}; }`).join('\n        ')}
-        .svg--heatmap .region.region--state-hover { filter: brightness(1.3); }
-        .svg--heatmap .region.region--hover { filter: brightness(1.5); }
-        .state-label { fill: rgba(190,240,210,0.9); font: 700 13px "Segoe UI", Arial, sans-serif; paint-order: stroke; stroke: rgba(0,0,0,0.55); stroke-width: 1.4; text-anchor: middle; dominant-baseline: middle; pointer-events: none; opacity: 0.85; }
-        .svg--zoomed .state-label { opacity: 0; transition: opacity 200ms ease; }
-        /* Capitais pintadas de dourado no próprio mapa (a cor de raridade
-           da captura vence via !important; o heatmap também) */
-        .region.region--capital { fill: #dda824; }
-        .region.region--capital.region--state-hover { fill: #e7b73d; }
-        .region.region--capital.region--hover { fill: #f0c14b; }
-        .region.region--pulse {
-          fill: #ff4b4b !important;
-          transform-box: fill-box;
-          transform-origin: center;
-          animation: cityPulse 650ms cubic-bezier(0.34, 1.56, 0.64, 1) 2 !important;
-        }
-        @keyframes cityPulse {
-          0%   { transform: scale(1); }
-          45%  { transform: scale(2.3); }
-          100% { transform: scale(1); }
-        }
-      `;
-      svg.appendChild(styleEl);
-
-      // Forro do país: clona os 27 contornos de estado preenchidos de verde
-      // escuro POR BAIXO dos municípios — os furinhos entre polígonos passam
-      // a mostrar verde em vez do fundo claro da página. Custo desprezível.
-      const borders = svg.querySelectorAll<SVGPathElement>('path[id^="state-border"]');
-      if (borders.length) {
-        const backing = document.createElementNS(SVG_NS, 'g');
-        backing.setAttribute('class', 'country-backing');
-        borders.forEach((b) => {
-          const clone = b.cloneNode(false) as SVGPathElement;
-          clone.removeAttribute('id');
-          clone.removeAttribute('class');
-          clone.removeAttribute('style');
-          backing.appendChild(clone);
-        });
-        svg.insertBefore(backing, svg.firstChild);
+      const viewBoxAttr = svgRoot.getAttribute('viewBox') || svgRoot.getAttribute('viewbox');
+      if (viewBoxAttr) {
+        const [x, y, w, h] = viewBoxAttr.trim().split(/[\s,]+/).map(Number);
+        this.world = { x: x || 0, y: y || 0, w: w || 680, h: h || 680 };
+      } else {
+        const w = parseFloat(svgRoot.getAttribute('width') || '') || 680;
+        const h = parseFloat(svgRoot.getAttribute('height') || '') || 680;
+        this.world = { x: 0, y: 0, w, h };
       }
 
       const [municipios, curiosities] = await Promise.all([municipiosPromise, curiositiesPromise]);
       if (this.destroyed) return;
-      this.populationIndex = buildPopulationIndex(municipios);
+      const populationIndex = buildPopulationIndex(municipios);
       this.curiosities = curiosities;
-      if (this.destroyed) return;
 
-      const regions = Array.from(svg.querySelectorAll<SVGPathElement>('path[data-name]'));
+      // contorno dos estados: forro do país (e base das divisas estaduais)
+      doc.querySelectorAll('path[id^="state-border"]').forEach((b) => {
+        const d = b.getAttribute('d');
+        if (d) this.borderPath.addPath(new Path2D(d));
+      });
+
+      this.tonePaths = STATE_TONES.map(() => new Path2D());
+      const ufOrder = Object.keys(ufToName);
+
+      const regions = Array.from(doc.querySelectorAll('path[data-name]'));
       let matched = 0;
       let processed = 0;
       this.missing = [];
-      this.availableCities = [];
+      this.cities = [];
 
-      // Lotes com yield entre eles: uma única tarefa longa (getBBox +
-      // strings dos 5.570 paths) vira várias tarefas curtas (<50ms), o que
-      // tira este loop do TBT. A loading screen cobre o período — nada
-      // muda visualmente.
-      const CHUNK_SIZE = 600;
+      // Lotes com yield entre eles: mantém o custo de carga fora do TBT.
+      const CHUNK_SIZE = 800;
       for (let startIdx = 0; startIdx < regions.length; startIdx += CHUNK_SIZE) {
         if (this.destroyed) return;
-        for (const path of regions.slice(startIdx, startIdx + CHUNK_SIZE)) {
-        const rawName = path.getAttribute('data-name') || '';
-        const [cidadeRaw = '', ufRaw = ''] = rawName.split(',').map((s) => s.trim());
-        const cidade = cleanCity(cidadeRaw);
-        const uf = ufRaw.toUpperCase();
-        const estadoNome = ufToName[uf] || ufRaw;
-        const aliasCity =
-          cityAliases.get(keyFor(cidade, uf)) || cityAliases.get(keyFor(cidade, estadoNome));
-        const lookupCities = [cidade, aliasCity].filter((c): c is string => Boolean(c));
-        const stateKey = uf || estadoNome || '';
-        if (stateKey) path.dataset.state = stateKey;
-        path.dataset.rawname = rawName;
-        this.registerStatePath(stateKey, path);
+        for (const node of regions.slice(startIdx, startIdx + CHUNK_SIZE)) {
+          const rawName = node.getAttribute('data-name') || '';
+          const d = node.getAttribute('d') || '';
+          const [cidadeRaw = '', ufRaw = ''] = rawName.split(',').map((s) => s.trim());
+          const cidade = cleanCity(cidadeRaw);
+          const uf = ufRaw.toUpperCase();
+          const estadoNome = ufToName[uf] || ufRaw;
+          const aliasCity =
+            cityAliases.get(keyFor(cidade, uf)) || cityAliases.get(keyFor(cidade, estadoNome));
+          const lookupCities = [cidade, aliasCity].filter((c): c is string => Boolean(c));
+          const stateKey = uf || estadoNome || '';
+          if (!cidade || !d) continue;
 
-        const candidates: string[] = [];
-        lookupCities.forEach((cityName) => {
-          candidates.push(keyFor(cityName, uf));
-          candidates.push(keyFor(cityName, estadoNome));
-          candidates.push(keyFor(cityName, ufToName[uf] || ''));
-        });
-
-        let populacao: number | null = null;
-        for (const candidate of candidates) {
-          const found = this.populationIndex?.get(candidate);
-          if (found !== undefined) {
-            populacao = found;
-            break;
+          const candidates: string[] = [];
+          lookupCities.forEach((cityName) => {
+            candidates.push(keyFor(cityName, uf));
+            candidates.push(keyFor(cityName, estadoNome));
+            candidates.push(keyFor(cityName, ufToName[uf] || ''));
+          });
+          let populacao: number | null = null;
+          for (const candidate of candidates) {
+            const found = populationIndex.get(candidate);
+            if (found !== undefined) {
+              populacao = found;
+              break;
+            }
           }
-        }
 
-        path.classList.add('region');
-        if (!cidade) continue;
-
-        processed += 1;
-        const uniqueKey = keyFor(cidade, stateKey);
-        path.dataset.city = cidade;
-        path.dataset.key = uniqueKey;
-        // Capitais pintadas de dourado (a cor de raridade da captura vence)
-        if (CAPITAL_KEYS.has(uniqueKey)) path.classList.add('region--capital');
-        if (populacao) {
-          matched += 1;
-          const title = `${cidade}${uf ? ` (${uf})` : ''} - ${formatPop(populacao)} habitantes`;
-          path.dataset.population = String(populacao);
-          path.setAttribute('title', title);
-          this.availableCities.push({
+          processed += 1;
+          const uniqueKey = keyFor(cidade, stateKey);
+          const path = new Path2D(d);
+          const bbox = bboxOfPathD(d);
+          const capital = CAPITAL_KEYS.has(uniqueKey);
+          const rec: CityRec = {
             key: uniqueKey,
-            path,
-            population: Number(populacao),
             city: cidade,
             state: stateKey,
-            title,
-          });
-        } else {
-          this.missing.push(rawName || '(sem nome)');
-        }
+            population: populacao,
+            title: populacao
+              ? `${cidade}${uf ? ` (${uf})` : ''} - ${formatPop(populacao)} habitantes`
+              : cidade,
+            path,
+            bbox,
+            capital,
+            capturedTier: null,
+          };
+          this.cities.push(rec);
+          if (!this.byKey.has(uniqueKey)) this.byKey.set(uniqueKey, rec);
+
+          // camadas de cor
+          (capital ? this.capitalPath : this.tonePaths[Math.max(0, ufOrder.indexOf(stateKey)) % 3]).addPath(path);
+          this.strokeAll.addPath(path);
+          let sp = this.statePaths.get(stateKey);
+          if (!sp) {
+            sp = new Path2D();
+            this.statePaths.set(stateKey, sp);
+          }
+          sp.addPath(path);
+          this.stateBBoxes.set(stateKey, unionBBox(this.stateBBoxes.get(stateKey) || null, bbox));
+
+          if (populacao) {
+            matched += 1;
+          } else {
+            this.missing.push(rawName || '(sem nome)');
+          }
         }
         if (startIdx + CHUNK_SIZE < regions.length) {
           await new Promise((resolve) => setTimeout(resolve, 0));
@@ -945,18 +1218,25 @@ export class MapController {
       }
       if (this.destroyed) return;
 
-      this.allCities = [...this.availableCities];
+      this.allCities = this.cities.filter((c) => c.population);
+      this.availableCities = [...this.allCities];
       this.stateStats.clear();
       this.allCities.forEach(({ state, population }) => {
         const stats = this.stateStats.get(state) || { uf: state, municipios: 0, population: 0 };
         stats.municipios += 1;
-        stats.population += population;
+        stats.population += population || 0;
         this.stateStats.set(state, stats);
       });
 
-      this.renderStateLabels(svg);
-      this.setupDelegatedEvents(svg);
-      this.setupPinchZoom(svg);
+      // monta o canvas (único nó do mapa no DOM)
+      container.innerHTML = '';
+      const canvas = document.createElement('canvas');
+      canvas.className = 'map-canvas';
+      container.appendChild(canvas);
+      this.canvas = canvas;
+      this.ctx = canvas.getContext('2d');
+      this.setupEvents(canvas);
+      this.resizeCanvas();
 
       const missingMsg = this.missing.length
         ? `; faltando ${this.missing.length}. Veja o console para exemplos.`
@@ -971,7 +1251,10 @@ export class MapController {
     } catch (err) {
       setStatus('Nao foi possivel carregar o mapa ou as populacoes.');
       console.error(err);
-      throw err;
+      this.opts.openMessageModal(
+        'Nao foi possivel carregar o mapa do Brasil. Verifique a conexao e recarregue a pagina.',
+        'Erro ao carregar'
+      );
     }
   }
 }
