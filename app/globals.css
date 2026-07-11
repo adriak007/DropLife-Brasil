@@ -1997,6 +1997,65 @@ body::before {
 .toggle--on { background: var(--accent-green); }
 .toggle--on::after { transform: translateX(16px); }
 
+/* ── Painel /admin ── */
+.admin {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+  width: 100%;
+}
+.admin__card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 14px 36px rgba(60, 50, 20, 0.12);
+  padding: 22px;
+  width: 100%;
+  max-width: 640px;
+}
+.admin__card h1 { margin: 0 0 14px; font-size: 18px; color: var(--text-heading); }
+.admin__login { max-width: 340px; display: flex; flex-direction: column; gap: 10px; }
+.admin__topo { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.admin__topo h1 { margin: 0; }
+.admin__estado { color: var(--text-secondary); font-size: 13px; }
+.admin__erro { margin: 0; color: var(--accent-red); font-size: 12px; font-weight: 700; }
+.admin__aviso { margin: 10px 0 0; font-size: 12px; font-weight: 700; color: var(--text-heading); }
+.admin__lista { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+.admin__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  border-radius: var(--radius-base);
+  background: var(--card-tint);
+  border: 1px solid transparent;
+}
+.admin__row--banido { border-color: rgba(255, 75, 75, 0.35); background: rgba(255, 75, 75, 0.06); }
+.admin__info { display: flex; flex-direction: column; min-width: 0; }
+.admin__info strong { color: var(--text-heading); font-size: 14px; }
+.admin__info span { color: var(--text-secondary); font-size: 11px; }
+.admin__acoes { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.admin__num { width: 88px; flex: none; }
+.admin__btn {
+  padding: 7px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--text-heading);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.admin__btn:hover { border-color: var(--card-border-strong); }
+.admin__btn--principal { background: var(--accent-green); border-color: var(--accent-green); color: #fff; }
+.admin__btn--perigo { color: var(--accent-red); border-color: rgba(255, 75, 75, 0.35); background: rgba(255, 75, 75, 0.06); }
+.admin__btn--ok { color: var(--accent-green-dark); border-color: rgba(88, 204, 2, 0.4); background: rgba(88, 204, 2, 0.08); }
+
 /* ── Sliders de volume ── */
 .settings-slider {
   display: flex;

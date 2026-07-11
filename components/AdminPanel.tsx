@@ -1,0 +1,278 @@
+'use client';
+
+// Painel /admin: interface de moderação. Todo o poder está nas funções RPC
+// do Supabase (SECURITY DEFINER + is_admin) — sem a flag no perfil, cada
+// chamada volta "nao_autorizado", não importa o que o navegador tente.
+import { useEffect, useState } from 'react';
+import { supabase } from '@/lib/supabaseClient';
+import { signIn, signOut } from '@/lib/online';
+import { formatPop } from '@/lib/text';
+
+interface PlayerRow {
+  id: string;
+  nickname: string;
+  total_births: number;
+  banned: boolean;
+  banned_until: string | null;
+}
+
+type Gate = 'carregando' | 'login' | 'negado' | 'admin';
+
+const banAtivo = (p: PlayerRow): boolean =>
+  p.banned && (!p.banned_until || new Date(p.banned_until) > new Date());
+
+export default function AdminPanel() {
+  const [gate, setGate] = useState<Gate>('carregando');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [erro, setErro] = useState('');
+  const [busca, setBusca] = useState('');
+  const [players, setPlayers] = useState<PlayerRow[]>([]);
+  const [aviso, setAviso] = useState('');
+  const [editando, setEditando] = useState<string | null>(null);
+  const [novoTotal, setNovoTotal] = useState('');
+
+  const checarAcesso = async () => {
+    if (!supabase) {
+      setGate('negado');
+      return;
+    }
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) {
+      setGate('login');
+      return;
+    }
+    const { data } = await supabase
+      .from('profiles')
+      .select('is_admin')
+      .eq('id', session.user.id)
+      .maybeSingle();
+    setGate(data?.is_admin ? 'admin' : 'negado');
+  };
+
+  useEffect(() => {
+    checarAcesso();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const carregar = async (filtro: string) => {
+    if (!supabase) return;
+    let query = supabase
+      .from('profiles')
+      .select('id,nickname,total_births,banned,banned_until')
+      .order('total_births', { ascending: false })
+      .limit(100);
+    if (filtro.trim()) query = query.ilike('nickname', `%${filtro.trim()}%`);
+    const { data } = await query;
+    setPlayers((data as PlayerRow[]) ?? []);
+  };
+
+  useEffect(() => {
+    if (gate !== 'admin') return;
+    const t = window.setTimeout(() => carregar(busca), 250);
+    return () => window.clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gate, busca]);
+
+  const entrar = async (evt: React.FormEvent) => {
+    evt.preventDefault();
+    setErro('');
+    const r = await signIn(email, senha);
+    if (!r.ok) {
+      setErro('Login inválido.');
+      return;
+    }
+    setGate('carregando');
+    checarAcesso();
+  };
+
+  const rpc = async (fn: string, args: Record<string, unknown>, okMsg: string) => {
+    if (!supabase) return;
+    setAviso('');
+    const { error, data } = await supabase.rpc(fn, args);
+    if (error) {
+      setAviso(`❌ ${error.message}`);
+      return;
+    }
+    setAviso(`✅ ${okMsg}${typeof data === 'number' ? ` (${data} removidas)` : ''}`);
+    carregar(busca);
+  };
+
+  const banir = (p: PlayerRow, horas?: number) =>
+    rpc(
+      'admin_set_ban',
+      {
+        alvo: p.id,
+        banir: true,
+        ate: horas ? new Date(Date.now() + horas * 3600_000).toISOString() : null,
+      },
+      `${p.nickname} banido${horas ? ` por ${horas}h` : ' permanentemente'}`
+    );
+
+  const desbanir = (p: PlayerRow) =>
+    rpc('admin_set_ban', { alvo: p.id, banir: false, ate: null }, `${p.nickname} desbanido`);
+
+  const aplicarTotal = (p: PlayerRow) => {
+    const n = parseInt(novoTotal, 10);
+    if (Number.isNaN(n) || n < 0) {
+      setAviso('❌ Número inválido.');
+      return;
+    }
+    if (n >= p.total_births) {
+      setAviso('❌ Só é possível REDUZIR (inventar nascimento não existe nem para admin).');
+      return;
+    }
+    setEditando(null);
+    rpc('admin_trim_births', { alvo: p.id, manter: n }, `${p.nickname} ajustado para ${n} cidades`);
+  };
+
+  if (gate === 'carregando') {
+    return <main className="admin"><p className="admin__estado">Carregando…</p></main>;
+  }
+
+  if (gate === 'login') {
+    return (
+      <main className="admin">
+        <form className="admin__card admin__login" onSubmit={entrar}>
+          <h1>🛡️ DropLife Admin</h1>
+          <input
+            className="dex-input"
+            type="email"
+            placeholder="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            className="dex-input"
+            type="password"
+            placeholder="Senha"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+            required
+          />
+          {erro && <p className="admin__erro">{erro}</p>}
+          <button className="admin__btn admin__btn--principal" type="submit">
+            Entrar
+          </button>
+        </form>
+      </main>
+    );
+  }
+
+  if (gate === 'negado') {
+    return (
+      <main className="admin">
+        <div className="admin__card">
+          <h1>⛔ Acesso negado</h1>
+          <p className="admin__estado">Esta conta não tem permissão de administrador.</p>
+          <button
+            className="admin__btn"
+            type="button"
+            onClick={async () => {
+              await signOut();
+              setGate('login');
+            }}
+          >
+            Trocar de conta
+          </button>
+        </div>
+      </main>
+    );
+  }
+
+  return (
+    <main className="admin">
+      <div className="admin__card admin__painel">
+        <div className="admin__topo">
+          <h1>🛡️ DropLife Admin</h1>
+          <button
+            className="admin__btn"
+            type="button"
+            onClick={async () => {
+              await signOut();
+              setGate('login');
+            }}
+          >
+            Sair
+          </button>
+        </div>
+
+        <input
+          className="dex-input"
+          type="search"
+          placeholder="Buscar apelido…"
+          value={busca}
+          onChange={(e) => setBusca(e.target.value)}
+        />
+
+        {aviso && <p className="admin__aviso">{aviso}</p>}
+
+        <div className="admin__lista">
+          {players.length === 0 && <p className="admin__estado">Nenhum jogador encontrado.</p>}
+          {players.map((p) => (
+            <div key={p.id} className={`admin__row${banAtivo(p) ? ' admin__row--banido' : ''}`}>
+              <div className="admin__info">
+                <strong>{p.nickname}</strong>
+                <span>
+                  {formatPop(p.total_births)} cidades
+                  {banAtivo(p) &&
+                    ` · 🚫 banido${p.banned_until ? ` até ${new Date(p.banned_until).toLocaleString('pt-BR')}` : ' (permanente)'}`}
+                </span>
+              </div>
+              <div className="admin__acoes">
+                {editando === p.id ? (
+                  <>
+                    <input
+                      className="dex-input admin__num"
+                      type="number"
+                      min={0}
+                      max={p.total_births - 1}
+                      value={novoTotal}
+                      onChange={(e) => setNovoTotal(e.target.value)}
+                      autoFocus
+                    />
+                    <button className="admin__btn admin__btn--principal" type="button" onClick={() => aplicarTotal(p)}>
+                      OK
+                    </button>
+                    <button className="admin__btn" type="button" onClick={() => setEditando(null)}>
+                      ✕
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      className="admin__btn"
+                      type="button"
+                      title="Reduzir número de cidades"
+                      onClick={() => {
+                        setEditando(p.id);
+                        setNovoTotal(String(p.total_births));
+                      }}
+                    >
+                      ✏️ cidades
+                    </button>
+                    {banAtivo(p) ? (
+                      <button className="admin__btn admin__btn--ok" type="button" onClick={() => desbanir(p)}>
+                        Desbanir
+                      </button>
+                    ) : (
+                      <>
+                        <button className="admin__btn admin__btn--perigo" type="button" onClick={() => banir(p, 24)}>
+                          Ban 24h
+                        </button>
+                        <button className="admin__btn admin__btn--perigo" type="button" onClick={() => banir(p)}>
+                          Ban perm.
+                        </button>
+                      </>
+                    )}
+                  </>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}
