@@ -17,7 +17,7 @@ const MUNICIPIOS_URL = '/municipios.json';
 
 // Paleta (antes vivia no <style> injetado no SVG)
 const STATE_TONES = ['#1b5438', '#20603f', '#16482c'];
-const CAPITAL_FILL = '#dda824';
+const CAPITAL_FILL = '#e04343';
 const BACKING_FILL = '#14432c';
 const DIVISA_STROKE = 'rgba(8, 40, 24, 0.6)';
 const ESTADO_STROKE = 'rgba(4, 24, 14, 0.9)';
