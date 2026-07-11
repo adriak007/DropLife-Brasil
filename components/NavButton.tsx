@@ -1,6 +1,9 @@
 'use client';
 
+import { sfxTick } from '@/lib/sound';
+
 export const spawnRipple = (evt: React.PointerEvent<HTMLButtonElement>) => {
+  sfxTick();
   const btn = evt.currentTarget;
   const ripple = document.createElement('span');
   ripple.classList.add('ripple');

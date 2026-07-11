@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { MapController } from '@/lib/mapController';
 import { formatPop } from '@/lib/text';
 import { cityImageFor, preloadCityImages } from '@/lib/cityImages';
+import { sfxAchievement, sfxBirth, unlockAudio } from '@/lib/sound';
 import type { CityModalData, ModalState, PanelKind, PickedCity, StateStats } from '@/lib/types';
 import {
   loadSave,
@@ -316,6 +317,13 @@ export default function MapGame() {
     };
   }, []);
 
+  // Áudio: destrava no primeiro gesto (política de autoplay) e, se a música
+  // estiver habilitada, ela começa aí.
+  useEffect(() => {
+    window.addEventListener('pointerdown', unlockAudio, { once: true });
+    return () => window.removeEventListener('pointerdown', unlockAudio);
+  }, []);
+
   // Onboarding: telinha de boas-vindas no primeiro acesso (uma vez por navegador)
   useEffect(() => {
     if (!mapReady) return;
@@ -383,6 +391,8 @@ export default function MapGame() {
     }
     persistSave(scopeRef.current ?? saveScope, next);
     setSave(next);
+    sfxBirth(rarityFor(picked.population).id);
+    if (unlocked.length) window.setTimeout(sfxAchievement, 700);
     unlocked.forEach((a) => showToast(`🏆 Conquista desbloqueada: ${a.emoji} ${a.name}`));
 
     // Ranking global: registra o nascimento (o servidor valida cidade,

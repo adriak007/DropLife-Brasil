@@ -1,7 +1,9 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import type { AuthState } from '@/lib/online';
+import { getSoundPrefs, setMusicEnabled, setSfxEnabled } from '@/lib/sound';
 
 interface Props {
   auth: AuthState;
@@ -12,6 +14,20 @@ interface Props {
 }
 
 export default function SettingsPanel({ auth, onlineEnabled, onSignOut, onOpenRanking, onClose }: Props) {
+  const [sound, setSound] = useState(getSoundPrefs());
+
+  const toggleMusic = () => {
+    const on = !sound.music;
+    setMusicEnabled(on);
+    setSound((s) => ({ ...s, music: on }));
+  };
+
+  const toggleSfx = () => {
+    const on = !sound.sfx;
+    setSfxEnabled(on);
+    setSound((s) => ({ ...s, sfx: on }));
+  };
+
   return (
     <div className="modal-panel settings-panel">
       <div className="modal-header">
@@ -22,6 +38,27 @@ export default function SettingsPanel({ auth, onlineEnabled, onSignOut, onOpenRa
       </div>
 
       <div className="settings-list">
+        <button
+          className="settings-row settings-row--toggle"
+          type="button"
+          role="switch"
+          aria-checked={sound.music}
+          onClick={toggleMusic}
+        >
+          🎵 Música de fundo
+          <span className={`toggle${sound.music ? ' toggle--on' : ''}`} aria-hidden="true" />
+        </button>
+        <button
+          className="settings-row settings-row--toggle"
+          type="button"
+          role="switch"
+          aria-checked={sound.sfx}
+          onClick={toggleSfx}
+        >
+          🔔 Efeitos sonoros
+          <span className={`toggle${sound.sfx ? ' toggle--on' : ''}`} aria-hidden="true" />
+        </button>
+
         {onlineEnabled && auth.signedIn && auth.profile ? (
           <>
             <p className="settings-row__info">
