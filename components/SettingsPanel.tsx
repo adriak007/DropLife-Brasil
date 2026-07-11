@@ -3,7 +3,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import type { AuthState } from '@/lib/online';
-import { getSoundPrefs, setMusicEnabled, setSfxEnabled } from '@/lib/sound';
+import {
+  getSoundPrefs,
+  setMusicEnabled,
+  setMusicVolume,
+  setSfxEnabled,
+  setSfxVolume,
+  sfxTick,
+} from '@/lib/sound';
 
 interface Props {
   auth: AuthState;
@@ -48,6 +55,24 @@ export default function SettingsPanel({ auth, onlineEnabled, onSignOut, onOpenRa
           🎵 Música de fundo
           <span className={`toggle${sound.music ? ' toggle--on' : ''}`} aria-hidden="true" />
         </button>
+        <div className="settings-slider">
+          <span aria-hidden="true">🔉</span>
+          <input
+            type="range"
+            min={0}
+            max={100}
+            value={Math.round(sound.musicVol * 100)}
+            disabled={!sound.music}
+            aria-label="Volume da música"
+            onChange={(e) => {
+              const v = Number(e.target.value) / 100;
+              setMusicVolume(v);
+              setSound((s) => ({ ...s, musicVol: v }));
+            }}
+          />
+          <span className="settings-slider__val">{Math.round(sound.musicVol * 100)}%</span>
+        </div>
+
         <button
           className="settings-row settings-row--toggle"
           type="button"
@@ -58,6 +83,24 @@ export default function SettingsPanel({ auth, onlineEnabled, onSignOut, onOpenRa
           🔔 Efeitos sonoros
           <span className={`toggle${sound.sfx ? ' toggle--on' : ''}`} aria-hidden="true" />
         </button>
+        <div className="settings-slider">
+          <span aria-hidden="true">🔉</span>
+          <input
+            type="range"
+            min={0}
+            max={100}
+            value={Math.round(sound.sfxVol * 100)}
+            disabled={!sound.sfx}
+            aria-label="Volume dos efeitos"
+            onChange={(e) => {
+              const v = Number(e.target.value) / 100;
+              setSfxVolume(v);
+              setSound((s) => ({ ...s, sfxVol: v }));
+            }}
+            onPointerUp={() => sfxTick()}
+          />
+          <span className="settings-slider__val">{Math.round(sound.sfxVol * 100)}%</span>
+        </div>
 
         {onlineEnabled && auth.signedIn && auth.profile ? (
           <>

@@ -14,7 +14,13 @@ const PREFS_KEY = 'droplife-sound-v1';
 export interface SoundPrefs {
   music: boolean;
   sfx: boolean;
+  musicVol: number; // 0..1
+  sfxVol: number; // 0..1
 }
+
+const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
+const DEFAULT_MUSIC_VOL = 0.5;
+const DEFAULT_SFX_VOL = 0.9;
 
 let ctx: AudioContext | null = null;
 let musicGain: GainNode | null = null;
@@ -25,20 +31,32 @@ let musicTimer = 0;
 let nextBarTime = 0;
 let barIndex = 0;
 
+const DEFAULT_PREFS: SoundPrefs = {
+  music: true,
+  sfx: true,
+  musicVol: DEFAULT_MUSIC_VOL,
+  sfxVol: DEFAULT_SFX_VOL,
+};
+
 const loadPrefs = (): SoundPrefs => {
   try {
     const raw = localStorage.getItem(PREFS_KEY);
     if (raw) {
       const p = JSON.parse(raw) as Partial<SoundPrefs>;
-      return { music: p.music !== false, sfx: p.sfx !== false };
+      return {
+        music: p.music !== false,
+        sfx: p.sfx !== false,
+        musicVol: typeof p.musicVol === 'number' ? clamp01(p.musicVol) : DEFAULT_MUSIC_VOL,
+        sfxVol: typeof p.sfxVol === 'number' ? clamp01(p.sfxVol) : DEFAULT_SFX_VOL,
+      };
     }
   } catch {
     // storage indisponível — usa o padrão
   }
-  return { music: true, sfx: true };
+  return { ...DEFAULT_PREFS };
 };
 
-let prefs: SoundPrefs = typeof window === 'undefined' ? { music: true, sfx: true } : loadPrefs();
+let prefs: SoundPrefs = typeof window === 'undefined' ? { ...DEFAULT_PREFS } : loadPrefs();
 
 const savePrefs = () => {
   try {
@@ -57,10 +75,10 @@ const ensureCtx = (): AudioContext | null => {
     if (!AC) return null;
     ctx = new AC();
     musicGain = ctx.createGain();
-    musicGain.gain.value = 0.5;
+    musicGain.gain.value = prefs.musicVol;
     musicGain.connect(ctx.destination);
     sfxGain = ctx.createGain();
-    sfxGain.gain.value = 0.9;
+    sfxGain.gain.value = prefs.sfxVol;
     sfxGain.connect(ctx.destination);
     // pausa/retoma junto com a aba (não gastar bateria em segundo plano)
     document.addEventListener('visibilitychange', () => {
@@ -225,6 +243,19 @@ export const setMusicEnabled = (on: boolean): void => {
 export const setSfxEnabled = (on: boolean): void => {
   prefs = { ...prefs, sfx: on };
   savePrefs();
+};
+
+// Volumes (0..1) aplicados ao vivo, com rampa curta para não estalar
+export const setMusicVolume = (v: number): void => {
+  prefs = { ...prefs, musicVol: clamp01(v) };
+  savePrefs();
+  if (ctx && musicGain) musicGain.gain.setTargetAtTime(prefs.musicVol, ctx.currentTime, 0.04);
+};
+
+export const setSfxVolume = (v: number): void => {
+  prefs = { ...prefs, sfxVol: clamp01(v) };
+  savePrefs();
+  if (ctx && sfxGain) sfxGain.gain.setTargetAtTime(prefs.sfxVol, ctx.currentTime, 0.04);
 };
 
 const sfxReady = (): boolean => Boolean(prefs.sfx && unlocked && ensureCtx() && sfxGain);
