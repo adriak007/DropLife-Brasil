@@ -20,6 +20,7 @@ const STATE_TONES = ['#1b5438', '#20603f', '#16482c'];
 const CAPITAL_FILL = '#dda824';
 const BACKING_FILL = '#14432c';
 const DIVISA_STROKE = 'rgba(8, 40, 24, 0.6)';
+const ESTADO_STROKE = 'rgba(4, 24, 14, 0.9)';
 const TIER_FILLS: Record<string, string> = {
   lendario: '#f59e0b',
   epico: '#a78bfa',
@@ -422,6 +423,11 @@ export class MapController {
     c.strokeStyle = DIVISA_STROKE;
     c.lineWidth = 0.3;
     c.stroke(this.strokeAll);
+
+    // divisas ESTADUAIS bem marcadas por cima das municipais
+    c.strokeStyle = ESTADO_STROKE;
+    c.lineWidth = 0.8;
+    c.stroke(this.borderPath);
 
     // rótulos de estado (somem no zoom, como antes)
     if (!this.isZoomed) {
