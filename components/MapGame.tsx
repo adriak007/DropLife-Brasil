@@ -146,6 +146,9 @@ export default function MapGame() {
   const scopeRef = useRef<SaveScope | null>(null);
   // Cidade a destacar no mapa (pin + pulso) quando o modal de nascimento fechar
   const pendingHighlightRef = useRef<string | null>(null);
+  // Cidade sorteada do Desafio Diário aguardando o palpite do jogador (o
+  // mapa está em modo de adivinhação — ver startDailyGuess)
+  const dailyPendingRef = useRef<PickedCity | null>(null);
   // Fila de nascimentos a subir para o servidor (migração de visitante ou
   // sync interrompida): drena 1 a cada ~1,7s respeitando o rate limit do banco
   const syncQueueRef = useRef<string[]>([]);
@@ -309,6 +312,7 @@ export default function MapGame() {
 
     // Zera memória, UI, mapa e fila de sync antes do novo dono da sessão
     pendingHighlightRef.current = null;
+    dailyPendingRef.current = null; // cancela desafio em aberto (resetZoom já limpa o modo no controller)
     syncQueueRef.current = [];
     syncTriesRef.current = new Map();
     window.clearTimeout(syncTimerRef.current);
@@ -478,7 +482,11 @@ export default function MapGame() {
     controllerRef.current?.highlightCity(key);
   }, [modal]);
 
-  const registerBirth = (picked: PickedCity, daily?: string) => {
+  const registerBirth = (
+    picked: PickedCity,
+    daily?: string,
+    guess?: { correct: boolean; guessCity?: string; guessState?: string }
+  ) => {
     const prev = saveRef.current;
     const already = prev.births.some((b) => b.key === picked.key);
     const record: BirthRecord = {
@@ -489,6 +497,12 @@ export default function MapGame() {
       chance: picked.chance,
       bornAt: new Date().toISOString(),
       ...(daily ? { daily } : {}),
+      ...(daily && guess
+        ? {
+            dailyCorrect: guess.correct,
+            ...(guess.guessCity ? { dailyGuessCity: guess.guessCity, dailyGuessState: guess.guessState } : {}),
+          }
+        : {}),
     };
     const births = already ? prev.births : [...prev.births, record];
     const next: SaveData = {
@@ -539,6 +553,12 @@ export default function MapGame() {
       key: picked.key,
       daily,
       isNewCapture: !already,
+      ...(daily && guess
+        ? {
+            dailyCorrect: guess.correct,
+            ...(guess.guessCity ? { dailyGuessCity: guess.guessCity, dailyGuessState: guess.guessState } : {}),
+          }
+        : {}),
     };
     // Quando o jogador fechar o modal, o mapa mostra onde a cidade fica
     pendingHighlightRef.current = picked.key;
@@ -567,9 +587,15 @@ export default function MapGame() {
     performBirth();
   };
 
+  // Desafio Diário: sorteia a cidade do dia (mesma para todo mundo) e entra
+  // em modo de adivinhação — o mapa dá zoom no estado dela e o próximo
+  // clique em qualquer município é o palpite do jogador.
   const handleDaily = () => {
     const controller = controllerRef.current;
     if (!controller) return;
+    // O palpite exige ver o mapa — fecha qualquer painel (Citydex etc.) que
+    // esteja por cima dele.
+    setPanel(null);
     const today = todayKey();
     const current = saveRef.current;
     if (current.lastDaily === today) {
@@ -585,6 +611,13 @@ export default function MapGame() {
             chance: result.chance,
             key: result.key,
             daily: today,
+            ...(result.dailyCorrect !== undefined
+              ? {
+                  dailyCorrect: result.dailyCorrect,
+                  dailyGuessCity: result.dailyGuessCity,
+                  dailyGuessState: result.dailyGuessState,
+                }
+              : {}),
           },
         });
       } else {
@@ -594,7 +627,26 @@ export default function MapGame() {
     }
     const picked = controller.pickDaily(seededRng(`droplife-${today}`));
     if (!picked) return;
-    registerBirth(picked, today);
+    dailyPendingRef.current = picked;
+    controller.startDailyGuess(picked.key, (guessedKey) => handleDailyGuess(guessedKey));
+    showToast('🔎 Onde fica essa cidade? Clique no mapa para dar seu palpite!');
+  };
+
+  // Chamado pelo mapa quando o jogador toca uma cidade em modo de palpite.
+  const handleDailyGuess = (guessedKey: string) => {
+    const picked = dailyPendingRef.current;
+    const controller = controllerRef.current;
+    if (!picked || !controller) return;
+    dailyPendingRef.current = null;
+    const today = todayKey();
+    const correct = guessedKey === picked.key;
+    const guessedInfo = correct ? null : controller.getCityInfo(guessedKey);
+    controller.revealGuess(picked.key, guessedKey);
+    registerBirth(picked, today, {
+      correct,
+      guessCity: guessedInfo?.city,
+      guessState: guessedInfo?.state,
+    });
   };
 
   const handleShare = async (data: CityModalData) => {
@@ -604,11 +656,24 @@ export default function MapGame() {
     // Texto sem o nome da cidade (estilo Wordle: sem spoiler do dia)
     const text = [
       `🇧🇷 DropLife Brasil — Desafio Diário ${d}/${m}/${y}`,
+      data.dailyCorrect === true
+        ? '🎯 Acertei o palpite de primeira!'
+        : data.dailyCorrect === false
+          ? '❌ Não acertei o palpite dessa vez...'
+          : '',
       `Tirei ${tier.label} · Chance: ${data.chance}%`,
       `Onde você vai nascer? droplife.life`,
-    ].join('\n');
+    ]
+      .filter(Boolean)
+      .join('\n');
     const feedback = await shareDailyCard(
-      { date, tier, chance: data.chance || '?', population: data.population || 0 },
+      {
+        date,
+        tier,
+        chance: data.chance || '?',
+        population: data.population || 0,
+        correct: data.dailyCorrect,
+      },
       text
     );
     showToast(feedback);
@@ -654,7 +719,9 @@ export default function MapGame() {
     modal?.type === 'message'
       ? modal.title
       : modal?.type === 'city' && modal.data.daily
-        ? `Desafio Diário: ${modal.data.city}!`
+        ? modal.data.dailyCorrect === false
+          ? 'Desafio Diário: quase lá!'
+          : `Desafio Diário: ${modal.data.city}!`
         : modal?.type === 'city' && modal.data.chance
           ? `Voce nasceu em ${modal.data.city}!`
           : 'Detalhes do municipio';
@@ -845,6 +912,19 @@ export default function MapGame() {
               {modal?.type === 'message' ? modal.message : ''}
             </p>
             <div className={`modal-city${cityData ? '' : ' hidden'}`}>
+              {cityData?.daily && cityData.dailyCorrect !== undefined ? (
+                <p
+                  className={`modal-city__guess${
+                    cityData.dailyCorrect ? ' modal-city__guess--certo' : ' modal-city__guess--errado'
+                  }`}
+                >
+                  {cityData.dailyCorrect
+                    ? '✅ Você acertou de primeira!'
+                    : `❌ Você clicou em ${cityData.dailyGuessCity || 'outro lugar'}${
+                        cityData.dailyGuessState ? ` (${cityData.dailyGuessState})` : ''
+                      }. A cidade certa era esta:`}
+                </p>
+              ) : null}
               {cityImage && (
                 <img
                   className="modal-city__img"

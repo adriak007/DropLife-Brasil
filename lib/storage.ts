@@ -6,6 +6,10 @@ export interface BirthRecord {
   chance: string;
   bornAt: string; // ISO
   daily?: string; // 'AAAA-MM-DD' quando veio do desafio diário
+  // Resultado do palpite do Desafio Diário (só quando `daily` está presente)
+  dailyCorrect?: boolean;
+  dailyGuessCity?: string; // cidade em que o jogador clicou, quando errou
+  dailyGuessState?: string;
 }
 
 export interface SaveData {

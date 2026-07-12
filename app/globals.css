@@ -301,6 +301,24 @@ body::before {
   50%      { transform: translateX(-50%) scale(1.35); opacity: 0.45; }
 }
 
+/* ── Marcador de palpite errado (Desafio Diário) ── */
+.guess-wrong {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.35));
+  animation: guessWrongPop 420ms var(--ease-spring);
+}
+.guess-wrong svg { width: 100%; height: 100%; display: block; }
+@keyframes guessWrongPop {
+  0%   { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+  60%  { transform: translate(-50%, -50%) scale(1.25); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+
 /* ── UI buttons ── */
 .ui-btn {
   background: var(--card);
@@ -749,6 +767,24 @@ body::before {
   opacity: 0.9;
 }
 .modal-city__chance.hidden { display: none; }
+.modal-city__guess {
+  margin: 0 0 12px !important;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.modal-city__guess--certo {
+  background: rgba(88, 204, 2, 0.12);
+  color: var(--accent-green-dark);
+  border: 1px solid rgba(88, 204, 2, 0.3);
+}
+.modal-city__guess--errado {
+  background: rgba(255, 75, 75, 0.1);
+  color: var(--accent-red);
+  border: 1px solid rgba(255, 75, 75, 0.28);
+}
 .modal-city__img {
   width: 100%;
   max-width: 100%;

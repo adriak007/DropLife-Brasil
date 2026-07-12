@@ -20,6 +20,10 @@ export interface CityModalData {
   key?: string;
   daily?: string; // 'AAAA-MM-DD' quando veio do desafio diário
   isNewCapture?: boolean;
+  // Resultado do palpite do Desafio Diário (só quando `daily` está presente)
+  dailyCorrect?: boolean;
+  dailyGuessCity?: string;
+  dailyGuessState?: string;
 }
 
 export interface PickedCity {

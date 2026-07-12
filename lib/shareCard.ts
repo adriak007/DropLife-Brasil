@@ -9,6 +9,7 @@ export interface DailyCardData {
   tier: RarityTier;
   chance: string;
   population: number;
+  correct?: boolean; // resultado do palpite (sem nome de cidade: sem spoiler)
 }
 
 const W = 1080;
@@ -103,6 +104,13 @@ export const buildDailyCard = async (data: DailyCardData): Promise<Blob | null> 
     ctx.fillStyle = '#948d76';
     ctx.font = font(700, 40);
     ctx.fillText(`Desafio Diário • ${d}/${m}/${y}`, W / 2, 215);
+
+    // selo de acerto/erro do palpite (sem revelar a cidade)
+    if (data.correct !== undefined) {
+      ctx.fillStyle = data.correct ? '#3ca002' : '#dd3a3a';
+      ctx.font = font(800, 40);
+      ctx.fillText(data.correct ? '🎯 ACERTEI DE PRIMEIRA' : '❌ NÃO ACERTEI O PALPITE', W / 2, 270);
+    }
 
     // medalha central
     drawMedal(ctx, W / 2, 490, 420, data.tier.color, darkOf(data.tier.color));

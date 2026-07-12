@@ -181,6 +181,13 @@ export class MapController {
   private focusCityTimer = 0;
   private pulse: { city: CityRec; start: number } | null = null;
   private pulseRaf = 0;
+
+  // Desafio diário em modo "adivinhação": enquanto guessCallback existir, o
+  // próximo toque em qualquer município é interpretado como o palpite (não
+  // como navegação normal). guessMarkers guarda os pins de revelação
+  // (acerto em verde, palpite errado em vermelho).
+  private guessCallback: ((key: string) => void) | null = null;
+  private guessMarkers: HTMLDivElement[] = [];
   private tooltipState = {
     isPinned: false,
     pinnedCity: null as CityRec | null,
@@ -238,6 +245,7 @@ export class MapController {
     window.clearTimeout(this.pinTimer);
     window.clearTimeout(this.focusCityTimer);
     this.removePin();
+    this.clearGuessMarkers();
     this.opts.container.innerHTML = '';
     this.canvas = null;
     this.ctx = null;
@@ -325,6 +333,11 @@ export class MapController {
 
   resetZoom(): void {
     this.removePin();
+    this.clearGuessMarkers();
+    // Voltar sem ter palpitado cancela o desafio em aberto — o jogador pode
+    // clicar em "Desafio Diário" de novo para tentar (a mesma cidade, já
+    // que o sorteio do dia é determinístico).
+    this.guessCallback = null;
     if (!this.isZoomed || !this.canvas) return;
     this.isZoomed = false;
     this.zoomedState = null;
@@ -340,6 +353,7 @@ export class MapController {
 
   private focusState(state: string): void {
     this.removePin(); // pin antigo fica em posição errada após mudar a view
+    this.clearGuessMarkers();
     const bbox = this.stateBBoxes.get(state);
     if (!state || !bbox || !this.canvas) return;
     this.isZoomed = true;
@@ -898,6 +912,19 @@ export class MapController {
       return;
     }
     const hit = this.hitCity(clientX, clientY);
+
+    // Modo de palpite do Desafio Diário: QUALQUER município tocado (mesmo
+    // fora do estado originalmente zoomado, caso o jogador tenha panejado)
+    // é o palpite — navegação normal fica suspensa. Toque vazio (oceano)
+    // é ignorado, então errar o dedo não custa a tentativa.
+    if (this.guessCallback) {
+      if (!hit) return;
+      const onGuess = this.guessCallback;
+      this.guessCallback = null;
+      onGuess(hit.key);
+      return;
+    }
+
     // Só existe "fora da área" quando zoomado num estado específico via
     // clique; em zoom manual (pinça/roda) qualquer cidade pode ser tocada.
     const inStateZoom = this.isZoomed && this.zoomedState !== null;
@@ -1048,16 +1075,8 @@ export class MapController {
     this.pulseRaf = requestAnimationFrame(tick);
 
     this.removePin();
-    const rect = this.canvas.getBoundingClientRect();
-    const crect = this.opts.container.getBoundingClientRect();
-    const b = hit.bbox;
-    const center = this.worldToScreen((b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2);
-    const pin = document.createElement('div');
-    pin.className = 'map-pin';
-    pin.style.left = `${rect.left - crect.left + center.x}px`;
-    pin.style.top = `${rect.top - crect.top + center.y}px`;
-    pin.innerHTML =
-      '<svg viewBox="0 0 24 24"><path d="M12 1.7c-4.4 0-7.9 3.5-7.9 7.8 0 5.7 6.7 12 7.4 12.7a.8.8 0 0 0 1 0c.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="#ff4b4b"/><path d="M12 1.7v20.7c.2 0 .4-.1.5-.2.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="#dd3a3a"/><circle cx="12" cy="9.4" r="3.3" fill="#fff"/></svg>';
+    this.clearGuessMarkers();
+    const pin = this.createPin(hit, '#ff4b4b', '#dd3a3a');
     this.opts.container.appendChild(pin);
     this.pinEl = pin;
     this.pinTimer = window.setTimeout(() => this.removePin(), 2800);
@@ -1067,6 +1086,77 @@ export class MapController {
     window.clearTimeout(this.pinTimer);
     this.pinEl?.remove();
     this.pinEl = null;
+  }
+
+  // Elemento de pin estilo Google Maps (mesmo desenho, cor configurável) —
+  // usado tanto no destaque de nascimento (vermelho) quanto na revelação de
+  // acerto do Desafio Diário (verde).
+  private createPin(city: CityRec, colorMain: string, colorDark: string): HTMLDivElement {
+    const rect = this.canvas!.getBoundingClientRect();
+    const crect = this.opts.container.getBoundingClientRect();
+    const b = city.bbox;
+    const center = this.worldToScreen((b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2);
+    const pin = document.createElement('div');
+    pin.className = 'map-pin';
+    pin.style.left = `${rect.left - crect.left + center.x}px`;
+    pin.style.top = `${rect.top - crect.top + center.y}px`;
+    pin.innerHTML = `<svg viewBox="0 0 24 24"><path d="M12 1.7c-4.4 0-7.9 3.5-7.9 7.8 0 5.7 6.7 12 7.4 12.7a.8.8 0 0 0 1 0c.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="${colorMain}"/><path d="M12 1.7v20.7c.2 0 .4-.1.5-.2.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="${colorDark}"/><circle cx="12" cy="9.4" r="3.3" fill="#fff"/></svg>`;
+    return pin;
+  }
+
+  // Marcador de "palpite errado": um X vermelho centrado no município que o
+  // jogador clicou (distinto em forma do pin, não só na cor).
+  private createCross(city: CityRec): HTMLDivElement {
+    const rect = this.canvas!.getBoundingClientRect();
+    const crect = this.opts.container.getBoundingClientRect();
+    const b = city.bbox;
+    const center = this.worldToScreen((b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2);
+    const el = document.createElement('div');
+    el.className = 'guess-wrong';
+    el.style.left = `${rect.left - crect.left + center.x}px`;
+    el.style.top = `${rect.top - crect.top + center.y}px`;
+    el.innerHTML =
+      '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#ef4444" stroke="#fff" stroke-width="1.6"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>';
+    return el;
+  }
+
+  private clearGuessMarkers(): void {
+    this.guessMarkers.forEach((el) => el.remove());
+    this.guessMarkers = [];
+  }
+
+  // ── Desafio Diário: modo de palpite ──
+
+  // Dá zoom no estado da cidade sorteada e passa a interpretar o PRÓXIMO
+  // toque em qualquer município como o palpite do jogador — chama onGuess
+  // exatamente uma vez, com a chave da cidade tocada.
+  startDailyGuess(targetKey: string, onGuess: (guessedKey: string) => void): void {
+    const target = this.byKey.get(targetKey);
+    if (!target || !this.canvas) return;
+    this.clearGuessMarkers();
+    this.guessCallback = onGuess;
+    this.focusState(target.state);
+  }
+
+  // Cancela um palpite em aberto sem revelar nada (ex.: o jogador trocou de
+  // conta no meio do desafio).
+  cancelDailyGuess(): void {
+    this.guessCallback = null;
+    this.clearGuessMarkers();
+  }
+
+  // Revela o resultado: pin verde na cidade certa e, se o palpite foi
+  // diferente dela, um X vermelho na cidade em que o jogador clicou.
+  revealGuess(targetKey: string, guessedKey: string): void {
+    this.clearGuessMarkers();
+    if (!this.canvas) return;
+    const target = this.byKey.get(targetKey);
+    if (target) this.guessMarkers.push(this.createPin(target, '#22c55e', '#15803d'));
+    if (guessedKey !== targetKey) {
+      const guessed = this.byKey.get(guessedKey);
+      if (guessed) this.guessMarkers.push(this.createCross(guessed));
+    }
+    this.guessMarkers.forEach((el) => this.opts.container.appendChild(el));
   }
 
   // Dados de exibição de um município a partir da chave persistida — permite
