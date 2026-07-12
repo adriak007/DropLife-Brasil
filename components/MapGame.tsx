@@ -120,6 +120,9 @@ export default function MapGame() {
   const [modal, setModal] = useState<ModalState>(null);
   const [zoomedState, setZoomedState] = useState<string | null>(null);
   const [manualZoomActive, setManualZoomActive] = useState(false);
+  // Banner do Desafio Diário: nome + estado da cidade sorteada, visível
+  // enquanto o jogador procura ela no mapa (some ao palpitar ou desistir)
+  const [dailyBanner, setDailyBanner] = useState<{ city: string; state: string } | null>(null);
   const [save, setSave] = useState<SaveData>(emptySave);
   const [totalCities, setTotalCities] = useState(0);
   const [stateStats, setStateStats] = useState<StateStats[]>([]);
@@ -313,6 +316,7 @@ export default function MapGame() {
     // Zera memória, UI, mapa e fila de sync antes do novo dono da sessão
     pendingHighlightRef.current = null;
     dailyPendingRef.current = null; // cancela desafio em aberto (resetZoom já limpa o modo no controller)
+    setDailyBanner(null);
     syncQueueRef.current = [];
     syncTriesRef.current = new Map();
     window.clearTimeout(syncTimerRef.current);
@@ -482,6 +486,14 @@ export default function MapGame() {
     controllerRef.current?.highlightCity(key);
   }, [modal]);
 
+  // Se o jogador desistir do palpite (botão "Voltar" ou zoom para fora),
+  // zoomedState volta a null — cancela o desafio em aberto e some o banner.
+  useEffect(() => {
+    if (zoomedState !== null || !dailyPendingRef.current) return;
+    dailyPendingRef.current = null;
+    setDailyBanner(null);
+  }, [zoomedState]);
+
   const registerBirth = (
     picked: PickedCity,
     daily?: string,
@@ -628,8 +640,10 @@ export default function MapGame() {
     const picked = controller.pickDaily(seededRng(`droplife-${today}`));
     if (!picked) return;
     dailyPendingRef.current = picked;
+    // Mostra o nome e o estado da cidade sorteada — o palpite é ACHAR ela
+    // no mapa, não adivinhar qual é. O banner some quando o jogador clicar.
+    setDailyBanner({ city: picked.city, state: picked.state });
     controller.startDailyGuess(picked.key, (guessedKey) => handleDailyGuess(guessedKey));
-    showToast('🔎 Onde fica essa cidade? Clique no mapa para dar seu palpite!');
   };
 
   // Chamado pelo mapa quando o jogador toca uma cidade em modo de palpite.
@@ -638,6 +652,7 @@ export default function MapGame() {
     const controller = controllerRef.current;
     if (!picked || !controller) return;
     dailyPendingRef.current = null;
+    setDailyBanner(null);
     const today = todayKey();
     const correct = guessedKey === picked.key;
     const guessedInfo = correct ? null : controller.getCityInfo(guessedKey);
@@ -886,6 +901,15 @@ export default function MapGame() {
       >
         Voltar
       </button>
+
+      {/* Desafio Diário: nome + estado da cidade sorteada, enquanto o
+          jogador procura ela no mapa */}
+      {dailyBanner && (
+        <div className="daily-banner">
+          🎯 Desafio de hoje: <strong>{dailyBanner.city}</strong> ({dailyBanner.state}) — clique no
+          mapa onde ela fica!
+        </div>
+      )}
 
       {/* Toast */}
       <div className={`toast${toast ? ' toast--visible' : ''}`} role="status" aria-live="polite">

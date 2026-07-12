@@ -859,6 +859,26 @@ body::before {
   gap: 7px;
 }
 .zoom-reset.zoom-reset--visible { display: inline-flex; animation: fadeSlideDown 250ms var(--ease-spring); }
+
+.daily-banner {
+  position: fixed;
+  top: calc(var(--topnav-height) + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8;
+  background: var(--card);
+  border: 1px solid var(--card-border-strong);
+  border-radius: var(--radius-base);
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  box-shadow: 0 8px 24px rgba(60, 50, 20, 0.18);
+  text-align: center;
+  max-width: min(92vw, 440px);
+  animation: fadeSlideDown 300ms var(--ease-spring);
+}
+.daily-banner strong { color: var(--accent-green-dark); font-weight: 800; }
 @keyframes fadeSlideDown {
   from { opacity: 0; transform: translateY(-8px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -1103,6 +1123,7 @@ body::before {
   #birthBtn { --btn-size: 80px; }
   .map-wrap { height: min(70vh, 560px); }
   .zoom-reset { top: calc(var(--mobile-topbar-height) + 10px); right: 12px; }
+  .daily-banner { top: calc(var(--mobile-topbar-height) + 10px); font-size: 12px; padding: 8px 14px; }
   .state-panel { display: none; }
   .heat-legend {
     left: 8px;

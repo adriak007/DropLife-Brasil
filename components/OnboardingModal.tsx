@@ -35,9 +35,9 @@ export default function OnboardingModal({ onClose }: { onClose: () => void }) {
           <div className="onboarding__step">
             <span className="onboarding__icon">{ICONS.desafio}</span>
             <p>
-              No <strong>Desafio Diário</strong>, todo mundo recebe a mesma cidade sorteada. O mapa
-              dá zoom no estado dela e você <strong>clica onde acha que ela é</strong> — acertou ou
-              errou, compare o resultado com os amigos!
+              No <strong>Desafio Diário</strong>, todo mundo recebe a mesma cidade sorteada — o jogo
+              diz o <strong>nome e o estado</strong> dela e dá zoom lá. Você{' '}
+              <strong>clica no mapa onde acha que ela fica</strong> e descobre se acertou!
             </p>
           </div>
           <div className="onboarding__step">

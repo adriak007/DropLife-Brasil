@@ -892,6 +892,10 @@ export class MapController {
     this.zoomedState = null;
     this.manualZoomActive = false;
     this.hoverCity = null;
+    // Zoom voltando à vista completa (roda do mouse) também cancela um
+    // palpite do Desafio Diário em aberto, igual ao botão "Voltar".
+    this.guessCallback = null;
+    this.clearGuessMarkers();
     this.opts.onZoomChange(null);
     this.opts.onManualZoomChange(false);
     this.cache.stale = true;
