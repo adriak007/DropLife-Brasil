@@ -797,6 +797,13 @@ export class MapController {
         if (evt.pointerType === 'mouse' && !this.pointerDownAt) {
           const hit = this.hitCity(evt.clientX, evt.clientY);
           canvas.style.cursor = hit ? 'pointer' : 'default';
+          // Modo de palpite do Desafio Diário: sem tooltip de nome (nem de
+          // cidade, nem de estado) — senão o hover do mouse entregaria a
+          // resposta sem precisar clicar. Mantém só o cursor de "clicável".
+          if (this.guessCallback) {
+            this.hideTooltip();
+            return;
+          }
           if (!this.isZoomed) {
             this.setStateHover(hit?.state ?? null);
             if (hit) this.showStateTooltip(hit.state, evt.clientX, evt.clientY);
