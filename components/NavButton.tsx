@@ -3,23 +3,15 @@
 import { sfxTick } from '@/lib/sound';
 
 export const spawnRipple = (evt: React.PointerEvent<HTMLButtonElement>) => {
-  try {
-    sfxTick();
-  } catch (e) {
-    console.log('[DEBUG] sfxTick threw', e);
-  }
-  try {
-    const btn = evt.currentTarget;
-    const ripple = document.createElement('span');
-    ripple.classList.add('ripple');
-    const rect = btn.getBoundingClientRect();
-    const size = Math.max(rect.width, rect.height);
-    ripple.style.cssText = `width:${size}px;height:${size}px;left:${evt.clientX - rect.left - size / 2}px;top:${evt.clientY - rect.top - size / 2}px`;
-    btn.appendChild(ripple);
-    ripple.addEventListener('animationend', () => ripple.remove(), { once: true });
-  } catch (e) {
-    console.log('[DEBUG] ripple dom threw', e);
-  }
+  sfxTick();
+  const btn = evt.currentTarget;
+  const ripple = document.createElement('span');
+  ripple.classList.add('ripple');
+  const rect = btn.getBoundingClientRect();
+  const size = Math.max(rect.width, rect.height);
+  ripple.style.cssText = `width:${size}px;height:${size}px;left:${evt.clientX - rect.left - size / 2}px;top:${evt.clientY - rect.top - size / 2}px`;
+  btn.appendChild(ripple);
+  ripple.addEventListener('animationend', () => ripple.remove(), { once: true });
 };
 
 export default function NavButton({

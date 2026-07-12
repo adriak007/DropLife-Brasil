@@ -209,7 +209,16 @@ export class MapController {
     const el = evt.target as Element | null;
     if (!el || !el.isConnected) return;
     if (this.opts.container.contains(el)) return; // cliques no mapa: handleTap decide
-    if (el.closest('.modal-backdrop') || el.closest('.modal-panel') || el.closest('.city-tooltip')) {
+    if (
+      el.closest('.modal-backdrop') ||
+      el.closest('.modal-panel') ||
+      el.closest('.city-tooltip') ||
+      // Botões de navegação (nav bar, sidebar, "Voltar") ficam fora do mapa
+      // mas podem disparar um zoom como parte da própria ação (ex.: o
+      // Desafio Diário dá zoom ao ser clicado) — sem essa exceção, o MESMO
+      // clique que inicia o zoom borbulha até aqui e o desfaz na hora.
+      el.closest('.nav-btn')
+    ) {
       return;
     }
     this.resetZoom();
