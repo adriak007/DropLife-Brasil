@@ -603,13 +603,16 @@ export default function MapGame() {
   // em modo de adivinhação — o mapa dá zoom no estado dela e o próximo
   // clique em qualquer município é o palpite do jogador.
   const handleDaily = () => {
+    console.log('[DEBUG] handleDaily fired');
     const controller = controllerRef.current;
+    console.log('[DEBUG] controller?', !!controller, 'totalCities?', controller?.totalCities());
     if (!controller) return;
     // O palpite exige ver o mapa — fecha qualquer painel (Citydex etc.) que
     // esteja por cima dele.
     setPanel(null);
     const today = todayKey();
     const current = saveRef.current;
+    console.log('[DEBUG] today', today, 'lastDaily', current.lastDaily);
     if (current.lastDaily === today) {
       const result = current.dailyResult;
       if (result && result.daily === today) {
@@ -638,12 +641,15 @@ export default function MapGame() {
       return;
     }
     const picked = controller.pickDaily(seededRng(`droplife-${today}`));
+    console.log('[DEBUG] picked', picked);
     if (!picked) return;
     dailyPendingRef.current = picked;
     // Mostra o nome e o estado da cidade sorteada — o palpite é ACHAR ela
     // no mapa, não adivinhar qual é. O banner some quando o jogador clicar.
     setDailyBanner({ city: picked.city, state: picked.state });
+    console.log('[DEBUG] banner set, calling startDailyGuess');
     controller.startDailyGuess(picked.key, (guessedKey) => handleDailyGuess(guessedKey));
+    console.log('[DEBUG] startDailyGuess returned');
   };
 
   // Chamado pelo mapa quando o jogador toca uma cidade em modo de palpite.
