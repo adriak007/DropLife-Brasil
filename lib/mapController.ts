@@ -487,11 +487,33 @@ export class MapController {
     });
   }
 
+  // A blit do bitmap só é válida se a vista atual estiver CONTIDA na área
+  // que o bitmap cobre. Ao afastar o zoom, a vista alarga além do cache e
+  // apareceriam bordas em branco (o "mapa recortado" por um instante, até a
+  // re-raster de idle chegar). Nesses quadros, re-rasteriza na hora — os
+  // mega-paths tornam o raster completo barato o bastante para isso.
+  private cacheCovers(): boolean {
+    if (!this.cache.bmp) return false;
+    const eps = 0.5; // meia unidade do mundo de tolerância nas bordas
+    const cur = this.rectForCam(this.cam);
+    const cached = this.rectForCam({
+      scale: this.cache.scale,
+      tx: this.cache.tx,
+      ty: this.cache.ty,
+    });
+    return (
+      cur.minX >= cached.minX - eps &&
+      cur.minY >= cached.minY - eps &&
+      cur.maxX <= cached.maxX + eps &&
+      cur.maxY <= cached.maxY + eps
+    );
+  }
+
   private draw(): void {
     const canvas = this.canvas;
     const ctx = this.ctx;
     if (!canvas || !ctx) return;
-    if (this.cache.stale) this.rasterFull();
+    if (this.cache.stale || !this.cacheCovers()) this.rasterFull();
     const bmp = this.cache.bmp;
     if (!bmp) return;
 
