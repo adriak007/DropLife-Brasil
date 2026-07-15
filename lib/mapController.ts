@@ -164,6 +164,9 @@ export class MapController {
   };
   private drawRaf = 0;
   private rerasterTimer = 0;
+  // Snapshot da vista completa (fallback de desenho no zoom-out)
+  private baseSnap: { bmp: HTMLCanvasElement; scale: number; tx: number; ty: number } | null = null;
+  private baseSnapTimer = 0;
 
   // interação
   private hoverState: string | null = null;
@@ -251,6 +254,7 @@ export class MapController {
     cancelAnimationFrame(this.camAnim);
     cancelAnimationFrame(this.pulseRaf);
     window.clearTimeout(this.rerasterTimer);
+    window.clearTimeout(this.baseSnapTimer);
     window.clearTimeout(this.pinTimer);
     window.clearTimeout(this.focusCityTimer);
     this.removePin();
@@ -390,6 +394,7 @@ export class MapController {
     canvas.height = Math.max(1, Math.round(this.cssH * this.dpr));
     this.cam = keepRect ? this.camForRect(keepRect) : this.baseCam();
     this.cache.stale = true;
+    this.scheduleBaseSnap(); // o snapshot precisa acompanhar o novo tamanho
     this.requestDraw();
     this.positionPinnedTooltip();
   }
@@ -401,22 +406,13 @@ export class MapController {
     );
   }
 
-  private rasterFull(): void {
-    const canvas = this.canvas;
-    if (!canvas) return;
-    const off = this.cache.bmp && this.cache.bmp.width === canvas.width && this.cache.bmp.height === canvas.height
-      ? this.cache.bmp
-      : document.createElement('canvas');
-    off.width = canvas.width;
-    off.height = canvas.height;
-    const c = off.getContext('2d');
-    if (!c) return;
+  // Desenha a cena completa num contexto já dimensionado, com a câmera dada.
+  // Compartilhado entre o cache do gesto (rasterFull) e o snapshot da vista
+  // completa (renderBaseSnap).
+  private renderScene(c: CanvasRenderingContext2D, cam: Cam, showLabels: boolean): void {
     c.setTransform(1, 0, 0, 1, 0, 0);
-    c.clearRect(0, 0, off.width, off.height);
-    c.setTransform(
-      this.dpr * this.cam.scale, 0, 0, this.dpr * this.cam.scale,
-      this.dpr * this.cam.tx, this.dpr * this.cam.ty
-    );
+    c.clearRect(0, 0, c.canvas.width, c.canvas.height);
+    c.setTransform(this.dpr * cam.scale, 0, 0, this.dpr * cam.scale, this.dpr * cam.tx, this.dpr * cam.ty);
 
     // forro do país: furinhos entre municípios mostram verde, não o fundo
     c.fillStyle = BACKING_FILL;
@@ -453,7 +449,7 @@ export class MapController {
     c.stroke(this.borderPath);
 
     // rótulos de estado (somem no zoom, como antes)
-    if (!this.isZoomed) {
+    if (showLabels) {
       c.font = `700 13px 'Segoe UI', Arial, sans-serif`;
       c.textAlign = 'center';
       c.textBaseline = 'middle';
@@ -471,12 +467,50 @@ export class MapController {
       });
       c.globalAlpha = 1;
     }
+  }
+
+  private rasterFull(): void {
+    const canvas = this.canvas;
+    if (!canvas) return;
+    const off = this.cache.bmp && this.cache.bmp.width === canvas.width && this.cache.bmp.height === canvas.height
+      ? this.cache.bmp
+      : document.createElement('canvas');
+    off.width = canvas.width;
+    off.height = canvas.height;
+    const c = off.getContext('2d');
+    if (!c) return;
+    this.renderScene(c, this.cam, !this.isZoomed);
 
     this.cache.bmp = off;
     this.cache.scale = this.cam.scale;
     this.cache.tx = this.cam.tx;
     this.cache.ty = this.cam.ty;
     this.cache.stale = false;
+  }
+
+  // Snapshot permanente da vista COMPLETA: é o plano de fundo dos quadros em
+  // que o gesto sai da área coberta pelo cache (zoom afastando). Um único
+  // drawImage por quadro — nada de re-raster durante a animação. Re-tirado
+  // em segundo plano quando as cores do mapa mudam (captura, heatmap).
+  private renderBaseSnap(): void {
+    const canvas = this.canvas;
+    if (!canvas) return;
+    const base = this.baseCam();
+    const off =
+      this.baseSnap && this.baseSnap.bmp.width === canvas.width && this.baseSnap.bmp.height === canvas.height
+        ? this.baseSnap.bmp
+        : document.createElement('canvas');
+    off.width = canvas.width;
+    off.height = canvas.height;
+    const c = off.getContext('2d');
+    if (!c) return;
+    this.renderScene(c, base, true);
+    this.baseSnap = { bmp: off, scale: base.scale, tx: base.tx, ty: base.ty };
+  }
+
+  private scheduleBaseSnap(): void {
+    window.clearTimeout(this.baseSnapTimer);
+    this.baseSnapTimer = window.setTimeout(() => this.renderBaseSnap(), 250);
   }
 
   private requestDraw(): void {
@@ -513,21 +547,34 @@ export class MapController {
     const canvas = this.canvas;
     const ctx = this.ctx;
     if (!canvas || !ctx) return;
-    if (this.cache.stale || !this.cacheCovers()) this.rasterFull();
+    if (this.cache.stale) this.rasterFull();
     const bmp = this.cache.bmp;
     if (!bmp) return;
 
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    // bitmap reprojetado: pan/zoom desliza a imagem pronta
-    const k = this.cam.scale / this.cache.scale;
-    ctx.drawImage(
-      bmp,
-      (this.cam.tx - this.cache.tx * k) * this.dpr,
-      (this.cam.ty - this.cache.ty * k) * this.dpr,
-      canvas.width * k,
-      canvas.height * k
-    );
+    // bitmap reprojetado: pan/zoom desliza uma imagem pronta. Se a vista
+    // atual sai da área coberta pelo cache do gesto (zoom afastando), o
+    // snapshot da vista completa entra por baixo — cobre tudo por um único
+    // drawImage, sem re-raster no meio do gesto.
+    const blit = (b: HTMLCanvasElement, scale: number, tx: number, ty: number) => {
+      const k = this.cam.scale / scale;
+      ctx.drawImage(
+        b,
+        (this.cam.tx - tx * k) * this.dpr,
+        (this.cam.ty - ty * k) * this.dpr,
+        b.width * k,
+        b.height * k
+      );
+    };
+    if (this.cacheCovers()) {
+      blit(bmp, this.cache.scale, this.cache.tx, this.cache.ty);
+    } else if (this.baseSnap) {
+      blit(this.baseSnap.bmp, this.baseSnap.scale, this.baseSnap.tx, this.baseSnap.ty);
+    } else {
+      this.rasterFull();
+      blit(this.cache.bmp!, this.cache.scale, this.cache.tx, this.cache.ty);
+    }
 
     // overlays em espaço do mundo
     this.applyCam(ctx);
@@ -1014,6 +1061,7 @@ export class MapController {
       p.addPath(city.path);
     }
     this.cache.stale = true;
+    this.scheduleBaseSnap();
     this.requestDraw();
   }
 
@@ -1030,6 +1078,7 @@ export class MapController {
     }
     tierPath.addPath(selected.path);
     this.cache.stale = true;
+    this.scheduleBaseSnap();
     this.requestDraw();
 
     const chance = formatChance(population || 0);
@@ -1225,6 +1274,7 @@ export class MapController {
     }
     this.heatmapOn = enabled;
     this.cache.stale = true;
+    this.scheduleBaseSnap();
     this.requestDraw();
   }
 
