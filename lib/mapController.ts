@@ -11,6 +11,7 @@ import { curiosityFor, loadCuriosities, type CuriosityMap } from './curiosities'
 import { HEAT_BUCKETS, heatBucket } from './heatmap';
 import { rarityFor } from './rarity';
 import { CAPITAL_KEYS } from './achievements';
+import { sfxRouletteTick } from './sound';
 
 const MAP_URL = '/MAPAESTADOS.svg';
 const MUNICIPIOS_URL = '/municipios.json';
@@ -191,6 +192,14 @@ export class MapController {
   // (acerto em verde, palpite errado em vermelho).
   private guessCallback: ((key: string) => void) | null = null;
   private guessMarkers: HTMLDivElement[] = [];
+
+  // Roleta do sorteio (tec-tec-tec pelo mapa antes de revelar a cidade).
+  // pendingCapture segura a pintura da cidade sorteada até o pouso — senão
+  // a cor de raridade apareceria no mapa e entregaria o resultado.
+  private birthAnimActive = false;
+  private rouletteMarker: HTMLDivElement | null = null;
+  private rouletteTimer = 0;
+  private pendingCapture: CityRec | null = null;
   private tooltipState = {
     isPinned: false,
     pinnedCity: null as CityRec | null,
@@ -257,6 +266,7 @@ export class MapController {
     window.clearTimeout(this.baseSnapTimer);
     window.clearTimeout(this.pinTimer);
     window.clearTimeout(this.focusCityTimer);
+    this.cancelBirthRoulette();
     this.removePin();
     this.clearGuessMarkers();
     this.opts.container.innerHTML = '';
@@ -864,6 +874,7 @@ export class MapController {
         // - mapa completo: destaca o estado e mostra a info DELE
         // - com zoom (as siglas somem): destaca a cidade e mostra a info DELA
         if (evt.pointerType === 'mouse' && !this.pointerDownAt) {
+          if (this.birthAnimActive) return; // roleta dirige o destaque, não o mouse
           const hit = this.hitCity(evt.clientX, evt.clientY);
           canvas.style.cursor = hit ? 'pointer' : 'default';
           // Modo de palpite do Desafio Diário: sem tooltip de nome (nem de
@@ -1000,6 +1011,7 @@ export class MapController {
       this.suppressNextClick = false;
       return;
     }
+    if (this.birthAnimActive) return; // roleta rodando: mapa em modo cinema
     const hit = this.hitCity(clientX, clientY);
 
     // Modo de palpite do Desafio Diário: QUALQUER município tocado (mesmo
@@ -1065,11 +1077,10 @@ export class MapController {
     this.requestDraw();
   }
 
-  private toPicked(selected: CityRec): PickedCity {
-    const { key, population, city, state } = selected;
-    const idx = this.availableCities.findIndex((c) => c.key === key);
-    if (idx !== -1) this.availableCities.splice(idx, 1);
-
+  // Pinta a cidade sorteada (cor de raridade) e anuncia no status — a parte
+  // VISÍVEL da captura, separada para a roleta poder adiá-la até o pouso.
+  private commitCaptureVisual(selected: CityRec): void {
+    const { population, city, state } = selected;
     selected.capturedTier = rarityFor(population || 0).id;
     let tierPath = this.capturedPaths.get(selected.capturedTier);
     if (!tierPath) {
@@ -1080,29 +1091,41 @@ export class MapController {
     this.cache.stale = true;
     this.scheduleBaseSnap();
     this.requestDraw();
+    this.opts.setStatus(
+      `Nasceu em ${city} (${state}) — ${formatPop(population || 0)} hab. — chance ${formatChance(population || 0)}%`
+    );
+  }
+
+  private toPicked(selected: CityRec, deferVisual = false): PickedCity {
+    const { key, population, city, state } = selected;
+    const idx = this.availableCities.findIndex((c) => c.key === key);
+    if (idx !== -1) this.availableCities.splice(idx, 1);
+
+    if (deferVisual) this.pendingCapture = selected;
+    else this.commitCaptureVisual(selected);
 
     const chance = formatChance(population || 0);
     const curiosity = curiosityFor(this.curiosities, city, state);
-    this.opts.setStatus(
-      `Nasceu em ${city} (${state}) — ${formatPop(population || 0)} hab. — chance ${chance}%`
-    );
     return { key, city, state, population: population || 0, chance, curiosity };
   }
 
-  // Sorteio normal: só municípios ainda não capturados
-  pickBirth(): PickedCity | null {
+  // Sorteio normal: só municípios ainda não capturados. Com deferVisual, a
+  // pintura/status ficam pendentes até a roleta pousar (playBirthRoulette).
+  pickBirth(deferVisual = false): PickedCity | null {
     if (!this.availableCities.length) {
       this.opts.setStatus('Nenhum municipio restante para nascer.');
       return null;
     }
-    return this.toPicked(this.weightedPick(this.availableCities, Math.random));
+    return this.toPicked(this.weightedPick(this.availableCities, Math.random), deferVisual);
   }
 
   // Desafio diário: sorteia sobre TODOS os municípios com o RNG semeado,
-  // para que todo jogador receba a mesma cidade no mesmo dia.
-  pickDaily(rng: () => number): PickedCity | null {
+  // para que todo jogador receba a mesma cidade no mesmo dia. deferVisual
+  // evita pintar a cidade-alvo antes do palpite (entregaria a resposta a
+  // quem procurasse a mancha de cor nova no mapa).
+  pickDaily(rng: () => number, deferVisual = false): PickedCity | null {
     if (!this.allCities.length) return null;
-    return this.toPicked(this.weightedPick(this.allCities, rng));
+    return this.toPicked(this.weightedPick(this.allCities, rng), deferVisual);
   }
 
   // ── Coleção persistida ──
@@ -1126,6 +1149,9 @@ export class MapController {
   // Usado na troca de identidade (login/logout/troca de conta) antes de
   // restaurar o progresso do novo dono da sessão.
   resetCaptured(): void {
+    // troca de dono da sessão no meio da roleta: cancela sem aplicar nada
+    this.cancelBirthRoulette();
+    this.pendingCapture = null;
     this.allCities.forEach((city) => {
       city.capturedTier = null;
     });
@@ -1216,6 +1242,93 @@ export class MapController {
     this.guessMarkers = [];
   }
 
+  // ── Roleta do sorteio (tec-tec-tec) ──
+
+  // Salta um marcador por cidades aleatórias do mapa, desacelerando, e pousa
+  // na cidade sorteada: aplica a captura adiada, dispara o pin + pulso de
+  // sempre e chama onDone (~350ms depois, com a cidade ainda pulsando) para
+  // o card de resultado abrir. Total ~2s.
+  playBirthRoulette(targetKey: string, onDone: () => void): void {
+    const target = this.byKey.get(targetKey);
+    if (!target || !this.canvas || !this.allCities.length) {
+      this.applyPendingCapture();
+      onDone();
+      return;
+    }
+    this.cancelBirthRoulette();
+    this.birthAnimActive = true;
+    this.removePin();
+    this.hideTooltip();
+
+    const start = () => {
+      if (!this.birthAnimActive || this.destroyed) return;
+      const delays = [85, 85, 95, 105, 115, 135, 160, 190, 230, 280, 340];
+      const marker = document.createElement('div');
+      marker.className = 'map-pin map-pin--roleta';
+      marker.innerHTML =
+        '<svg viewBox="0 0 24 24"><path d="M12 1.7c-4.4 0-7.9 3.5-7.9 7.8 0 5.7 6.7 12 7.4 12.7a.8.8 0 0 0 1 0c.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="#f6b40e"/><circle cx="12" cy="9.4" r="3.3" fill="#fff"/></svg>';
+      this.opts.container.appendChild(marker);
+      this.rouletteMarker = marker;
+
+      const rect = this.canvas!.getBoundingClientRect();
+      const crect = this.opts.container.getBoundingClientRect();
+      const place = (c: CityRec) => {
+        const b = c.bbox;
+        const p = this.worldToScreen((b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2);
+        marker.style.left = `${rect.left - crect.left + p.x}px`;
+        marker.style.top = `${rect.top - crect.top + p.y}px`;
+      };
+
+      let i = 0;
+      const hop = () => {
+        if (!this.birthAnimActive || this.destroyed) {
+          marker.remove();
+          return;
+        }
+        if (i < delays.length) {
+          const c = this.allCities[Math.floor(Math.random() * this.allCities.length)];
+          place(c);
+          this.hoverCity = c; // acende o município do salto
+          this.requestDraw();
+          sfxRouletteTick(i);
+          this.rouletteTimer = window.setTimeout(hop, delays[i]);
+          i++;
+        } else {
+          marker.remove();
+          this.rouletteMarker = null;
+          this.hoverCity = null;
+          this.birthAnimActive = false;
+          // pouso: pinta a captura, pin + pulso de sempre, e card em seguida
+          this.applyPendingCapture();
+          this.highlightCity(targetKey);
+          this.rouletteTimer = window.setTimeout(onDone, 350);
+        }
+      };
+      hop();
+    };
+
+    // roleta pede a vista completa — se estiver com zoom, volta primeiro
+    if (this.isZoomed) {
+      this.resetZoom();
+      this.rouletteTimer = window.setTimeout(start, 440);
+    } else {
+      start();
+    }
+  }
+
+  private applyPendingCapture(): void {
+    if (!this.pendingCapture) return;
+    this.commitCaptureVisual(this.pendingCapture);
+    this.pendingCapture = null;
+  }
+
+  private cancelBirthRoulette(): void {
+    this.birthAnimActive = false;
+    window.clearTimeout(this.rouletteTimer);
+    this.rouletteMarker?.remove();
+    this.rouletteMarker = null;
+  }
+
   // ── Desafio Diário: modo de palpite ──
 
   // Dá zoom no estado da cidade sorteada e passa a interpretar o PRÓXIMO
@@ -1239,6 +1352,7 @@ export class MapController {
   // Revela o resultado: pin verde na cidade certa e, se o palpite foi
   // diferente dela, um X vermelho na cidade em que o jogador clicou.
   revealGuess(targetKey: string, guessedKey: string): void {
+    this.applyPendingCapture(); // pinta a cidade-alvo só agora, na revelação
     this.clearGuessMarkers();
     if (!this.canvas) return;
     const target = this.byKey.get(targetKey);

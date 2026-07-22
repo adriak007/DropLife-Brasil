@@ -301,6 +301,15 @@ body::before {
   50%      { transform: translateX(-50%) scale(1.35); opacity: 0.45; }
 }
 
+/* ── Marcador da roleta do sorteio (tec-tec-tec) ── */
+.map-pin--roleta {
+  width: 26px;
+  height: 26px;
+  /* teleporta de cidade em cidade — sem animação de queda nem transição */
+  animation: none;
+}
+.map-pin--roleta::after { display: none; }
+
 /* ── Marcador de palpite errado (Desafio Diário) ── */
 .guess-wrong {
   position: absolute;

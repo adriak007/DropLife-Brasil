@@ -266,6 +266,13 @@ export const sfxTick = (): void => {
   note(sfxGain, 1750, ctx.currentTime, 0.05, 0.04, 'triangle');
 };
 
+// Tec-tec-tec da roleta do sorteio: tique curto que sobe de tom a cada
+// salto, aumentando a expectativa conforme desacelera
+export const sfxRouletteTick = (step: number): void => {
+  if (!sfxReady() || !ctx || !sfxGain) return;
+  note(sfxGain, 850 + step * 65, ctx.currentTime, 0.055, 0.055, 'square');
+};
+
 // Nascimento: pop + arpejo ascendente — quanto mais rara a cidade, mais
 // notas e mais brilho (lendário ganha fanfarra com oitava extra)
 const TIER_NOTES: Record<string, number> = {

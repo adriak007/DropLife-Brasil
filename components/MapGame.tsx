@@ -45,7 +45,8 @@ import {
 } from '@/lib/online';
 
 const LOGO_SRC = '/Img/logo-nav.png';
-const BIRTH_COOLDOWN_MS = 1500;
+// Cobre a roleta do sorteio (~2s de tec-tec-tec + pouso) até o card abrir
+const BIRTH_COOLDOWN_MS = 2600;
 const ONBOARDING_KEY = 'droplife-onboarding-v1';
 
 const achievementCtxOf = (controller: MapController): AchievementContext => ({
@@ -580,7 +581,9 @@ export default function MapGame() {
   const performBirth = () => {
     const controller = controllerRef.current;
     if (!controller) return;
-    const picked = controller.pickBirth();
+    // deferVisual: a pintura da cidade fica pendente até a roleta pousar —
+    // senão a cor de raridade no mapa entregaria o resultado no 1º frame
+    const picked = controller.pickBirth(true);
     if (!picked) {
       setModal({
         type: 'message',
@@ -589,7 +592,8 @@ export default function MapGame() {
       });
       return;
     }
-    registerBirth(picked);
+    // tec-tec-tec pelo mapa → pouso com pin + pulso → card com a curiosidade
+    controller.playBirthRoulette(picked.key, () => registerBirth(picked));
   };
 
   const handleBirth = () => {
@@ -637,7 +641,8 @@ export default function MapGame() {
       }
       return;
     }
-    const picked = controller.pickDaily(seededRng(`droplife-${today}`));
+    // deferVisual: a cidade-alvo só é pintada na revelação do palpite
+    const picked = controller.pickDaily(seededRng(`droplife-${today}`), true);
     if (!picked) return;
     dailyPendingRef.current = picked;
     // Mostra o nome e o estado da cidade sorteada — o palpite é ACHAR ela
