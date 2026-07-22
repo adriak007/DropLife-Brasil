@@ -11,7 +11,7 @@ import { curiosityFor, loadCuriosities, type CuriosityMap } from './curiosities'
 import { HEAT_BUCKETS, heatBucket } from './heatmap';
 import { rarityFor } from './rarity';
 import { CAPITAL_KEYS } from './achievements';
-import { sfxRouletteTick } from './sound';
+import { sfxRouletteRiser, sfxRouletteTick } from './sound';
 
 const MAP_URL = '/MAPAESTADOS.svg';
 const MUNICIPIOS_URL = '/municipios.json';
@@ -1260,9 +1260,14 @@ export class MapController {
     this.removePin();
     this.hideTooltip();
 
+    // a raridade do alvo tempera os tiques (prévia sonora crescente) e, em
+    // Épico/Lendário, liga o riser que sobe até o pouso
+    const tierId = rarityFor(target.population || 0).id;
+
     const start = () => {
       if (!this.birthAnimActive || this.destroyed) return;
       const delays = [85, 85, 95, 105, 115, 135, 160, 190, 230, 280, 340];
+      sfxRouletteRiser(tierId, 1.85);
       const marker = document.createElement('div');
       marker.className = 'map-pin map-pin--roleta';
       marker.innerHTML =
@@ -1290,7 +1295,7 @@ export class MapController {
           place(c);
           this.hoverCity = c; // acende o município do salto
           this.requestDraw();
-          sfxRouletteTick(i);
+          sfxRouletteTick(i, tierId);
           this.rouletteTimer = window.setTimeout(hop, delays[i]);
           i++;
         } else {
