@@ -28,6 +28,8 @@ import SettingsPanel from '@/components/SettingsPanel';
 import HomeDashboard from '@/components/HomeDashboard';
 import TopNav from '@/components/TopNav';
 import MobileNav from '@/components/MobileNav';
+import ShareModal from '@/components/ShareModal';
+import FeedbackModal from '@/components/FeedbackModal';
 import OnboardingModal from '@/components/OnboardingModal';
 import { spawnRipple } from '@/components/NavButton';
 import { shareDailyCard } from '@/lib/shareCard';
@@ -1023,6 +1025,22 @@ export default function MapGame() {
             auth={auth}
             resolveCity={(key) => controllerRef.current?.getCityInfo(key) ?? null}
             onAuthChanged={handleAuthChanged}
+            onClose={() => setPanel(null)}
+          />
+        )}
+        {panel === 'compartilhar' && (
+          <ShareModal
+            nickname={auth.signedIn && auth.profile ? auth.profile.nickname : null}
+            citydexCount={save.births.length}
+            citydexTotal={totalCities}
+            achCount={achCount}
+            achTotal={ACHIEVEMENTS.length}
+            onClose={() => setPanel(null)}
+          />
+        )}
+        {panel === 'feedback' && (
+          <FeedbackModal
+            nickname={auth.signedIn && auth.profile ? auth.profile.nickname : null}
             onClose={() => setPanel(null)}
           />
         )}

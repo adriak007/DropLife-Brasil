@@ -135,6 +135,20 @@ export default function MobileNav({
               {ICONS.ranking}
             </NavButton>
             <NavButton
+              label="Compartilhar"
+              active={panel === 'compartilhar'}
+              onClick={() => go(() => onNavigate('compartilhar'))}
+            >
+              {ICONS.compartilhar}
+            </NavButton>
+            <NavButton
+              label="Feedback"
+              active={panel === 'feedback'}
+              onClick={() => go(() => onNavigate('feedback'))}
+            >
+              {ICONS.feedback}
+            </NavButton>
+            <NavButton
               label="Configurações"
               active={panel === 'configuracoes'}
               onClick={() => go(() => onNavigate('configuracoes'))}

@@ -51,6 +51,8 @@ export type PanelKind =
   | 'conquistas'
   | 'estados'
   | 'ranking'
+  | 'compartilhar'
+  | 'feedback'
   | 'configuracoes'
   | null;
 

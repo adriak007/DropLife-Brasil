@@ -91,6 +91,20 @@ export default function TopNav({
           {ICONS.ranking}
         </NavButton>
         <NavButton
+          label="Compartilhar"
+          active={panel === 'compartilhar'}
+          onClick={() => onNavigate('compartilhar')}
+        >
+          {ICONS.compartilhar}
+        </NavButton>
+        <NavButton
+          label="Feedback"
+          active={panel === 'feedback'}
+          onClick={() => onNavigate('feedback')}
+        >
+          {ICONS.feedback}
+        </NavButton>
+        <NavButton
           label="Config"
           active={panel === 'configuracoes'}
           onClick={() => onNavigate('configuracoes')}

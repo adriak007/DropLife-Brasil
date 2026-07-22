@@ -172,6 +172,37 @@ export const ICONS = {
       />
     </svg>
   ),
+  compartilhar: (
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M6.6 12 17 6.1M6.6 12 17 17.9"
+        fill="none"
+        stroke="#0d8fce"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+      <circle cx="17.4" cy="5.6" r="3.5" fill="#1cb0f6" />
+      <path d="M17.4 2.1a3.5 3.5 0 0 1 0 7Z" fill="#0d8fce" />
+      <circle cx="6.2" cy="12" r="3.5" fill="#1cb0f6" />
+      <path d="M6.2 8.5a3.5 3.5 0 0 1 0 7Z" fill="#0d8fce" />
+      <circle cx="17.4" cy="18.4" r="3.5" fill="#1cb0f6" />
+      <path d="M17.4 14.9a3.5 3.5 0 0 1 0 7Z" fill="#0d8fce" />
+    </svg>
+  ),
+  feedback: (
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M12 2.2c-5.4 0-9.7 3.6-9.7 8.1 0 2.6 1.4 4.9 3.7 6.4l-.9 4.1c-.1.6.5 1.1 1 .8l4.3-2.4c.5.1 1 .1 1.6.1 5.4 0 9.7-3.6 9.7-8.1S17.4 2.2 12 2.2Z"
+        fill="#ce82ff"
+      />
+      <path
+        d="M12 2.2v17.1c5.4 0 9.7-3.6 9.7-8.1S17.4 2.2 12 2.2Z"
+        fill="#a560e8"
+      />
+      <rect x="10.7" y="5.9" width="2.6" height="5.6" rx="1.3" fill="#fff" />
+      <circle cx="12" cy="14.3" r="1.5" fill="#fff" />
+    </svg>
+  ),
   configuracoes: (
     <svg viewBox="0 0 24 24">
       <g fill="#8f99a3">
