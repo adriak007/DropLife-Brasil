@@ -54,8 +54,11 @@ export default function NavButton({
 export const ICONS = {
   home: (
     <svg viewBox="0 0 24 24">
+      {/* corpo sobe 0,5un além da linha do telhado: o chevron cobre a
+          emenda e não sobra fresta (aparecia como risco verde no botão
+          ativo, quando o ícone fica branco sobre fundo verde) */}
       <path
-        d="M4.4 10.6 12 4.4l7.6 6.2V20a1.6 1.6 0 0 1-1.6 1.6H6A1.6 1.6 0 0 1 4.4 20Z"
+        d="M4.4 10.1 12 3.9l7.6 6.2V20a1.6 1.6 0 0 1-1.6 1.6H6A1.6 1.6 0 0 1 4.4 20Z"
         fill="#58cc02"
       />
       <path
