@@ -432,6 +432,9 @@ body::before {
   flex: 1;
   overflow-x: auto;
   scrollbar-width: none;
+  /* overflow-x:auto também corta o eixo vertical — sem esta folga, a
+     sombra 3D (0 3px) do botão ativo aparecia decepada embaixo */
+  padding: 4px 0 5px;
 }
 .top-nav__items::-webkit-scrollbar { display: none; }
 .top-nav .nav-btn {
