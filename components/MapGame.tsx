@@ -27,7 +27,6 @@ import RankingModal from '@/components/RankingModal';
 import SettingsPanel from '@/components/SettingsPanel';
 import HomeDashboard from '@/components/HomeDashboard';
 import TopNav from '@/components/TopNav';
-import MobileNav from '@/components/MobileNav';
 import ShareModal from '@/components/ShareModal';
 import FeedbackModal from '@/components/FeedbackModal';
 import OnboardingModal from '@/components/OnboardingModal';
@@ -796,22 +795,6 @@ export default function MapGame() {
         onDaily={handleDaily}
         onSignOut={handleSignOut}
       />
-      <MobileNav
-        auth={auth}
-        onlineEnabled={onlineEnabled()}
-        panel={panel}
-        heatmap={heatmap}
-        dailyDone={dailyDone}
-        citydexCount={save.births.length}
-        citydexTotal={totalCities}
-        achCount={achCount}
-        achTotal={ACHIEVEMENTS.length}
-        onNavigate={setPanel}
-        onToggleHeatmap={toggleHeatmap}
-        onDaily={handleDaily}
-        onSignOut={handleSignOut}
-      />
-
       <div className="frame">
         <div className="map-wrap" ref={containerRef}></div>
       </div>
