@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { MapController } from '@/lib/mapController';
 import { formatPop } from '@/lib/text';
 import { cityImageFor, preloadCityImages } from '@/lib/cityImages';
@@ -120,6 +120,11 @@ export default function MapGame() {
   const [loading, setLoading] = useState(true);
   const [status, setStatus] = useState('');
   const [modal, setModal] = useState<ModalState>(null);
+  // Ponto de origem (coordenadas de tela) de onde o modal de cidade deve
+  // "crescer" — o pin dela no mapa. Nulo cai no zoom padrão a partir do
+  // centro (ex.: modal aberto pelo tooltip, sem sorteio/roleta antes).
+  const [modalOrigin, setModalOrigin] = useState<{ x: number; y: number } | null>(null);
+  const modalPanelRef = useRef<HTMLDivElement>(null);
   const [zoomedState, setZoomedState] = useState<string | null>(null);
   const [manualZoomActive, setManualZoomActive] = useState(false);
   // Banner do Desafio Diário: nome + estado da cidade sorteada, visível
@@ -268,7 +273,12 @@ export default function MapGame() {
       setStatus,
       openMessageModal: (message, title = 'Aviso') =>
         setModal({ type: 'message', title, message }),
-      openCityModal: (data) => setModal({ type: 'city', data }),
+      openCityModal: (data) => {
+        // Aberto pelo botão "i" do tooltip, sem sorteio/roleta antes — usa o
+        // crescimento padrão a partir do centro.
+        setModalOrigin(null);
+        setModal({ type: 'city', data });
+      },
       onZoomChange: setZoomedState,
       onManualZoomChange: setManualZoomActive,
     });
@@ -576,6 +586,9 @@ export default function MapGame() {
     };
     // Quando o jogador fechar o modal, o mapa mostra onde a cidade fica
     pendingHighlightRef.current = picked.key;
+    // O pin já está pousado nela (roleta ou revelação do palpite) — o modal
+    // "nasce" crescendo a partir desse ponto na tela.
+    setModalOrigin(controllerRef.current?.getCityScreenPoint(picked.key) ?? null);
     setModal({ type: 'city', data });
   };
 
@@ -618,6 +631,9 @@ export default function MapGame() {
     if (current.lastDaily === today) {
       const result = current.dailyResult;
       if (result && result.daily === today) {
+        // Reabrindo um resultado antigo (não acabou de ser revelado agora)
+        // — sem pin fresco na tela, usa o crescimento padrão do centro.
+        setModalOrigin(null);
         setModal({
           type: 'city',
           data: {
@@ -769,6 +785,22 @@ export default function MapGame() {
     return () => window.clearTimeout(timeout);
   }, [cityImage]);
   const contentReady = !cityImage || imgLoaded;
+
+  // O modal "nasce" de onde o pin está no mapa (efeito de origem), em vez
+  // de sempre crescer do centro da tela — roda em layout effect (antes do
+  // browser pintar) pra a 1ª animação já sair com o transform-origin certo.
+  useLayoutEffect(() => {
+    const panelEl = modalPanelRef.current;
+    if (!panelEl) return;
+    if (modal?.type === 'city' && modalOrigin) {
+      const rect = panelEl.getBoundingClientRect();
+      panelEl.style.transformOrigin = `${modalOrigin.x - rect.left}px ${modalOrigin.y - rect.top}px`;
+      panelEl.classList.add('modal-panel--grow-from-pin');
+    } else {
+      panelEl.style.transformOrigin = '';
+      panelEl.classList.remove('modal-panel--grow-from-pin');
+    }
+  }, [modal, modalOrigin]);
 
   const capturedInZoomed = zoomedState
     ? save.births.filter((b) => b.state === zoomedState).length
@@ -927,7 +959,7 @@ export default function MapGame() {
           if (!(evt.target as Element).closest('.modal-panel')) setModal(null);
         }}
       >
-        <div className="modal-panel">
+        <div className="modal-panel" ref={modalPanelRef}>
           <div className="modal-header">
             <h2>{modalTitle}</h2>
             <button className="modal-close" type="button" onClick={() => setModal(null)}>

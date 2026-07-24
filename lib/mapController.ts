@@ -1438,6 +1438,18 @@ export class MapController {
     return hit ? { city: hit.city, state: hit.state } : null;
   }
 
+  // Ponto na tela (coordenadas de viewport, não relativas ao container) onde
+  // o pin da cidade está pousado agora — usado pelo modal de resultado para
+  // "crescer" a partir dali (efeito de origem), em vez de sempre do centro.
+  getCityScreenPoint(key: string): { x: number; y: number } | null {
+    const hit = this.byKey.get(key);
+    if (!hit || !this.canvas) return null;
+    const rect = this.canvas.getBoundingClientRect();
+    const b = hit.bbox;
+    const p = this.worldToScreen((b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2);
+    return { x: rect.left + p.x, y: rect.top + p.y };
+  }
+
   // ── Carga do mapa e dos dados ──
 
   private async loadMap(): Promise<void> {

@@ -683,6 +683,18 @@ body::before {
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
+/* Modal de resultado "nascendo" do pin no mapa: o transform-origin é
+   calculado em JS (posição do pin na tela) e injetado inline — aqui só a
+   curva de crescimento, bem pequena até o tamanho normal. */
+.modal-panel.modal-panel--grow-from-pin {
+  animation: modalGrowFromPin 420ms var(--ease-spring);
+}
+@keyframes modalGrowFromPin {
+  from { opacity: 0; transform: scale(0.05); }
+  45%  { opacity: 1; }
+  to   { opacity: 1; transform: scale(1); }
+}
+
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -761,8 +773,11 @@ body::before {
 .modal-city__img {
   width: 100%;
   max-width: 100%;
-  height: auto;
-  max-height: min(240px, 32dvh);
+  /* altura FIXA (não auto): reserva o espaço da foto desde o primeiro
+     quadro, antes mesmo dela terminar de baixar — sem isso o painel
+     crescia de altura no meio da animação de entrada (que "nasce" do pin
+     no mapa) e o ponto de origem calculado ficava levemente errado */
+  height: min(240px, 32dvh);
   border-radius: var(--radius-base);
   object-fit: cover;
   margin-bottom: 14px;
