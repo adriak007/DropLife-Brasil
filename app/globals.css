@@ -522,6 +522,27 @@ body::before {
   margin-left: auto;
 }
 
+/* Chip de perfil (login/avatar) migrado pra dentro do hamburguer, quando a
+   tela e estreita demais pra caber ele na faixa principal junto dos icones */
+.top-nav__overflow-chip {
+  position: relative;
+  padding: 0 0 2px;
+}
+.top-nav__overflow-chip .profile-chip__btn {
+  width: 100%;
+  justify-content: flex-start;
+}
+.top-nav__overflow-chip .profile-chip__name {
+  max-width: none;
+  flex: 1;
+  text-align: left;
+}
+.top-nav__overflow-divider {
+  height: 1px;
+  background: var(--card-border);
+  margin: 8px 2px;
+}
+
 .hamburger-btn {
   width: 40px;
   height: 40px;

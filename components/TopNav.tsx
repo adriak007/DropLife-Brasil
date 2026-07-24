@@ -56,10 +56,12 @@ export default function TopNav({
   const moreRef = useRef<HTMLDivElement>(null);
   const itemsRef = useRef<HTMLDivElement>(null);
   const ghostRef = useRef<HTMLDivElement>(null);
+  const chipGhostRef = useRef<HTMLDivElement>(null);
 
+  // Citydex antes de Populacao: em telas bem estreitas, quando só cabe 1-2
+  // itens além do Home, o Citydex é o mais importante pra aparecer primeiro.
   const items: NavItem[] = [
     { key: 'home', label: 'Home', icon: ICONS.home, active: !panel, onClick: () => onNavigate(null) },
-    { key: 'populacao', label: 'Populacao', icon: ICONS.populacao, active: heatmap, onClick: onToggleHeatmap },
     {
       key: 'citydex',
       label: 'Citydex',
@@ -69,6 +71,7 @@ export default function TopNav({
       badgeTone: 'red',
       onClick: () => onNavigate('citydex'),
     },
+    { key: 'populacao', label: 'Populacao', icon: ICONS.populacao, active: heatmap, onClick: onToggleHeatmap },
     { key: 'estados', label: 'Estados', icon: ICONS.estados, active: panel === 'estados', onClick: () => onNavigate('estados') },
     {
       key: 'conquistas',
@@ -98,11 +101,16 @@ export default function TopNav({
   ];
 
   const [visibleCount, setVisibleCount] = useState(items.length);
+  // Em telas bem estreitas (Mobile S, ~320px) o chip de login/nome sozinho
+  // já ocupava boa parte da faixa — quando não sobra espaço pra ele depois
+  // dos ícones de navegação, ele migra pra dentro do menu hambúrguer.
+  const [chipInline, setChipInline] = useState(true);
 
   // Priority+: a régua fantasma (cópia invisível de todos os botões) dá a
   // largura real de cada item; contamos quantos cabem na faixa disponível e
-  // o resto vai para o menu hambúrguer. Reobserva resize da faixa E da
-  // régua (badges como 0/5.567 mudam de largura durante o jogo).
+  // o resto vai para o menu hambúrguer. O chip de perfil entra por último
+  // nessa conta — ícones de navegação têm prioridade sobre ele. Reobserva
+  // resize da faixa E das réguas (badges/nome mudam de largura no jogo).
   const recompute = () => {
     const itemsEl = itemsRef.current;
     const ghost = ghostRef.current;
@@ -111,25 +119,34 @@ export default function TopNav({
     const GAP = 4;
     const HAMBURGER = 40 + GAP;
     const avail = itemsEl.clientWidth;
-    let used = 0;
-    let fitAll = 0;
+    const chipWidth = onlineEnabled ? (chipGhostRef.current?.offsetWidth ?? 0) : 0;
+
+    // 1) melhor caso: todos os icones + o chip cabem sem hamburguer nenhum
+    let usedNoHamb = 0;
+    let fitNoHamb = 0;
     for (let i = 0; i < widths.length; i++) {
-      used += widths[i] + (i > 0 ? GAP : 0);
-      if (used <= avail) fitAll = i + 1;
+      usedNoHamb += widths[i] + (i > 0 ? GAP : 0);
+      if (usedNoHamb <= avail) fitNoHamb = i + 1;
       else break;
     }
-    if (fitAll >= widths.length) {
+    const allNavFit = fitNoHamb >= widths.length;
+    if (allNavFit && avail - usedNoHamb >= chipWidth) {
       setVisibleCount(widths.length);
+      setChipInline(true);
       return;
     }
+
+    // 2) precisa de hamburguer (pra sobra de icones e/ou pro chip) — reserva
+    // a largura dele e recalcula quantos icones cabem com esse desconto
     let used2 = HAMBURGER;
-    let fit = 0;
+    let fit2 = 0;
     for (let i = 0; i < widths.length; i++) {
       used2 += widths[i] + (i > 0 ? GAP : 0);
-      if (used2 <= avail) fit = i + 1;
+      if (used2 <= avail) fit2 = i + 1;
       else break;
     }
-    setVisibleCount(fit);
+    setVisibleCount(fit2);
+    setChipInline(onlineEnabled && avail - used2 >= chipWidth);
   };
 
   useLayoutEffect(recompute);
@@ -154,6 +171,7 @@ export default function TopNav({
   }, [menuOpen, moreOpen]);
 
   const overflowItems = items.slice(visibleCount);
+  const showHamburger = overflowItems.length > 0 || (onlineEnabled && !chipInline);
 
   const renderItem = (it: NavItem, closeMore: boolean) => (
     <NavButton
@@ -171,6 +189,73 @@ export default function TopNav({
     </NavButton>
   );
 
+  // Conteúdo do chip de perfil (login / finalizar perfil / avatar+menu) —
+  // uma única fonte, reusada tanto na faixa principal quanto dentro do
+  // hambúrguer, pra nunca duplicar a lógica dos 3 estados de auth.
+  const profileChipContent = (
+    <>
+      {auth.signedIn && auth.profile ? (
+        <>
+          <button className="profile-chip__btn" type="button" onClick={() => setMenuOpen((v) => !v)}>
+            <span className="profile-chip__avatar">{auth.profile.nickname.charAt(0).toUpperCase()}</span>
+            <span className="profile-chip__name">{auth.profile.nickname}</span>
+          </button>
+          {menuOpen && (
+            <div className="profile-chip__menu">
+              <div className="profile-chip__stat">
+                {formatPop(auth.profile.total_births)}{' '}
+                {auth.profile.total_births === 1 ? 'cidade' : 'cidades'} no ranking
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setMoreOpen(false);
+                  onNavigate('ranking');
+                }}
+              >
+                🌍 Ver ranking
+              </button>
+              <button
+                className="profile-chip__signout"
+                type="button"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setMoreOpen(false);
+                  onSignOut();
+                }}
+              >
+                🚪 Sair
+              </button>
+            </div>
+          )}
+        </>
+      ) : auth.signedIn ? (
+        <button
+          className="profile-chip__btn profile-chip__btn--pending"
+          type="button"
+          onClick={() => {
+            setMoreOpen(false);
+            onNavigate('ranking');
+          }}
+        >
+          Finalizar perfil
+        </button>
+      ) : (
+        <button
+          className="profile-chip__btn profile-chip__btn--login"
+          type="button"
+          onClick={() => {
+            setMoreOpen(false);
+            onNavigate('ranking');
+          }}
+        >
+          Entrar
+        </button>
+      )}
+    </>
+  );
+
   return (
     <nav className="top-nav" aria-label="Menu principal">
       <div className="top-nav__brand">
@@ -180,7 +265,7 @@ export default function TopNav({
 
       <div className="top-nav__items" ref={itemsRef}>
         {items.slice(0, visibleCount).map((it) => renderItem(it, false))}
-        {overflowItems.length > 0 && (
+        {showHamburger && (
           <div className="top-nav__more" ref={moreRef}>
             <button
               className="hamburger-btn"
@@ -194,13 +279,23 @@ export default function TopNav({
               <span></span>
             </button>
             {moreOpen && (
-              <div className="top-nav__overflow">{overflowItems.map((it) => renderItem(it, true))}</div>
+              <div className="top-nav__overflow">
+                {onlineEnabled && !chipInline && (
+                  <>
+                    <div className="top-nav__overflow-chip" ref={chipRef}>
+                      {profileChipContent}
+                    </div>
+                    <div className="top-nav__overflow-divider" />
+                  </>
+                )}
+                {overflowItems.map((it) => renderItem(it, true))}
+              </div>
             )}
           </div>
         )}
       </div>
 
-      {/* Régua fantasma: mesma lista completa, invisível, só para medir */}
+      {/* Réguas fantasma: cópias invisíveis só para medir larguras reais */}
       <div className="top-nav__ghost" ref={ghostRef} aria-hidden="true">
         {items.map((it) => (
           <NavButton key={it.key} label={it.label} active={it.active} badge={it.badge} badgeTone={it.badgeTone}>
@@ -208,62 +303,19 @@ export default function TopNav({
           </NavButton>
         ))}
       </div>
-
       {onlineEnabled && (
+        <div className="top-nav__ghost" ref={chipGhostRef} aria-hidden="true">
+          {/* wrapper proprio (nao reusa a classe .profile-chip no MESMO nó):
+              essa classe define position:relative mais adiante no CSS e
+              sobrescreveria o position:absolute do ghost, vazando largura
+              de layout pra faixa de navegacao de verdade */}
+          <div className="profile-chip">{profileChipContent}</div>
+        </div>
+      )}
+
+      {onlineEnabled && chipInline && (
         <div className="profile-chip" ref={chipRef}>
-          {auth.signedIn && auth.profile ? (
-            <>
-              <button className="profile-chip__btn" type="button" onClick={() => setMenuOpen((v) => !v)}>
-                <span className="profile-chip__avatar">
-                  {auth.profile.nickname.charAt(0).toUpperCase()}
-                </span>
-                <span className="profile-chip__name">{auth.profile.nickname}</span>
-              </button>
-              {menuOpen && (
-                <div className="profile-chip__menu">
-                  <div className="profile-chip__stat">
-                    {formatPop(auth.profile.total_births)}{' '}
-                    {auth.profile.total_births === 1 ? 'cidade' : 'cidades'} no ranking
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setMenuOpen(false);
-                      onNavigate('ranking');
-                    }}
-                  >
-                    🌍 Ver ranking
-                  </button>
-                  <button
-                    className="profile-chip__signout"
-                    type="button"
-                    onClick={() => {
-                      setMenuOpen(false);
-                      onSignOut();
-                    }}
-                  >
-                    🚪 Sair
-                  </button>
-                </div>
-              )}
-            </>
-          ) : auth.signedIn ? (
-            <button
-              className="profile-chip__btn profile-chip__btn--pending"
-              type="button"
-              onClick={() => onNavigate('ranking')}
-            >
-              Finalizar perfil
-            </button>
-          ) : (
-            <button
-              className="profile-chip__btn profile-chip__btn--login"
-              type="button"
-              onClick={() => onNavigate('ranking')}
-            >
-              Entrar
-            </button>
-          )}
+          {profileChipContent}
         </div>
       )}
     </nav>
