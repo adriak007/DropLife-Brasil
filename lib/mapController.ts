@@ -181,6 +181,11 @@ export class MapController {
 
   // destaque (pin + pulso) e tooltip fixado
   private pinEl: HTMLDivElement | null = null;
+  // cidade "dona" de cada marcador flutuante (pin/cruz), para poder
+  // reposicioná-los em screen-space a cada frame — sem isso eles ficavam
+  // fixos no pixel onde nasceram, "flutuando" fora do lugar ao arrastar
+  // ou dar zoom no mapa depois de criados
+  private pinCity: CityRec | null = null;
   private pinTimer = 0;
   private focusCityTimer = 0;
   private pulse: { city: CityRec; start: number } | null = null;
@@ -189,9 +194,11 @@ export class MapController {
   // Desafio diário em modo "adivinhação": enquanto guessCallback existir, o
   // próximo toque em qualquer município é interpretado como o palpite (não
   // como navegação normal). guessMarkers guarda os pins de revelação
-  // (acerto em verde, palpite errado em vermelho).
+  // (acerto em verde, palpite errado em vermelho); guessMarkerCities guarda
+  // a cidade correspondente a cada um, na mesma ordem, para reposicionar.
   private guessCallback: ((key: string) => void) | null = null;
   private guessMarkers: HTMLDivElement[] = [];
+  private guessMarkerCities: CityRec[] = [];
 
   // Roleta do sorteio (tec-tec-tec pelo mapa antes de revelar a cidade).
   // pendingCapture segura a pintura da cidade sorteada até o pouso — senão
@@ -633,6 +640,8 @@ export class MapController {
       ctx.fill(this.pulse.city.path);
       ctx.restore();
     }
+
+    this.repositionMarkers();
   }
 
   private scheduleReraster(): void {
@@ -1196,6 +1205,7 @@ export class MapController {
     const pin = this.createPin(hit, '#ff4b4b', '#dd3a3a');
     this.opts.container.appendChild(pin);
     this.pinEl = pin;
+    this.pinCity = hit;
     this.pinTimer = window.setTimeout(() => this.removePin(), 2800);
   }
 
@@ -1203,20 +1213,38 @@ export class MapController {
     window.clearTimeout(this.pinTimer);
     this.pinEl?.remove();
     this.pinEl = null;
+    this.pinCity = null;
+  }
+
+  // Posiciona um marcador flutuante (pin/cruz) em screen-space a partir do
+  // centro da bbox da cidade e da câmera ATUAL — chamado tanto na criação
+  // quanto a cada frame (repositionMarkers), para acompanhar pan/zoom.
+  private positionMarker(el: HTMLDivElement, city: CityRec): void {
+    const rect = this.canvas!.getBoundingClientRect();
+    const crect = this.opts.container.getBoundingClientRect();
+    const b = city.bbox;
+    const center = this.worldToScreen((b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2);
+    el.style.left = `${rect.left - crect.left + center.x}px`;
+    el.style.top = `${rect.top - crect.top + center.y}px`;
+  }
+
+  // Reposiciona todos os marcadores flutuantes vivos (pin de destaque +
+  // pins/cruzes do Desafio Diário) na câmera atual — chamado a cada draw().
+  private repositionMarkers(): void {
+    if (this.pinEl && this.pinCity) this.positionMarker(this.pinEl, this.pinCity);
+    this.guessMarkers.forEach((el, i) => {
+      const city = this.guessMarkerCities[i];
+      if (city) this.positionMarker(el, city);
+    });
   }
 
   // Elemento de pin estilo Google Maps (mesmo desenho, cor configurável) —
   // usado tanto no destaque de nascimento (vermelho) quanto na revelação de
   // acerto do Desafio Diário (verde).
   private createPin(city: CityRec, colorMain: string, colorDark: string): HTMLDivElement {
-    const rect = this.canvas!.getBoundingClientRect();
-    const crect = this.opts.container.getBoundingClientRect();
-    const b = city.bbox;
-    const center = this.worldToScreen((b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2);
     const pin = document.createElement('div');
     pin.className = 'map-pin';
-    pin.style.left = `${rect.left - crect.left + center.x}px`;
-    pin.style.top = `${rect.top - crect.top + center.y}px`;
+    this.positionMarker(pin, city);
     pin.innerHTML = `<svg viewBox="0 0 24 24"><path d="M12 1.7c-4.4 0-7.9 3.5-7.9 7.8 0 5.7 6.7 12 7.4 12.7a.8.8 0 0 0 1 0c.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="${colorMain}"/><path d="M12 1.7v20.7c.2 0 .4-.1.5-.2.7-.7 7.4-7 7.4-12.7 0-4.3-3.5-7.8-7.9-7.8Z" fill="${colorDark}"/><circle cx="12" cy="9.4" r="3.3" fill="#fff"/></svg>`;
     return pin;
   }
@@ -1224,14 +1252,9 @@ export class MapController {
   // Marcador de "palpite errado": um X vermelho centrado no município que o
   // jogador clicou (distinto em forma do pin, não só na cor).
   private createCross(city: CityRec): HTMLDivElement {
-    const rect = this.canvas!.getBoundingClientRect();
-    const crect = this.opts.container.getBoundingClientRect();
-    const b = city.bbox;
-    const center = this.worldToScreen((b.minX + b.maxX) / 2, (b.minY + b.maxY) / 2);
     const el = document.createElement('div');
     el.className = 'guess-wrong';
-    el.style.left = `${rect.left - crect.left + center.x}px`;
-    el.style.top = `${rect.top - crect.top + center.y}px`;
+    this.positionMarker(el, city);
     el.innerHTML =
       '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#ef4444" stroke="#fff" stroke-width="1.6"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>';
     return el;
@@ -1240,6 +1263,7 @@ export class MapController {
   private clearGuessMarkers(): void {
     this.guessMarkers.forEach((el) => el.remove());
     this.guessMarkers = [];
+    this.guessMarkerCities = [];
   }
 
   // ── Roleta do sorteio (tec-tec-tec) ──
@@ -1361,10 +1385,16 @@ export class MapController {
     this.clearGuessMarkers();
     if (!this.canvas) return;
     const target = this.byKey.get(targetKey);
-    if (target) this.guessMarkers.push(this.createPin(target, '#22c55e', '#15803d'));
+    if (target) {
+      this.guessMarkers.push(this.createPin(target, '#22c55e', '#15803d'));
+      this.guessMarkerCities.push(target);
+    }
     if (guessedKey !== targetKey) {
       const guessed = this.byKey.get(guessedKey);
-      if (guessed) this.guessMarkers.push(this.createCross(guessed));
+      if (guessed) {
+        this.guessMarkers.push(this.createCross(guessed));
+        this.guessMarkerCities.push(guessed);
+      }
     }
     this.guessMarkers.forEach((el) => this.opts.container.appendChild(el));
   }
