@@ -757,6 +757,19 @@ export default function MapGame() {
   // preload em idle terminar; imagesReady re-renderiza quando fica pronto)
   const cityImage = cityData && imagesReady ? cityImageFor(cityData.city, cityData.state) : null;
 
+  // Em internet mais lenta a curiosidade (texto, já embutido) aparecia uns
+  // ms antes da foto terminar de baixar — sincroniza os dois: sem imagem
+  // pra essa cidade, mostra na hora; com imagem, espera o <img> onLoad (com
+  // um teto de 900ms pra não travar o texto se a foto falhar/demorar).
+  const [imgLoaded, setImgLoaded] = useState(false);
+  useEffect(() => {
+    setImgLoaded(false);
+    if (!cityImage) return;
+    const timeout = window.setTimeout(() => setImgLoaded(true), 900);
+    return () => window.clearTimeout(timeout);
+  }, [cityImage]);
+  const contentReady = !cityImage || imgLoaded;
+
   const capturedInZoomed = zoomedState
     ? save.births.filter((b) => b.state === zoomedState).length
     : 0;
@@ -944,8 +957,9 @@ export default function MapGame() {
                   className="modal-city__img"
                   src={cityImage}
                   alt={cityData?.city}
-                  loading="lazy"
                   decoding="async"
+                  onLoad={() => setImgLoaded(true)}
+                  onError={() => setImgLoaded(true)}
                 />
               )}
               <p className="modal-city__meta">
@@ -964,7 +978,9 @@ export default function MapGame() {
                 {cityData?.chance ? `Probabilidade de nascer aqui: ${cityData.chance}%` : ''}
               </p>
               {cityData?.curiosity ? (
-                <p className="modal-city__curiosity">{cityData.curiosity}</p>
+                <p className={`modal-city__curiosity${contentReady ? '' : ' modal-city__curiosity--wait'}`}>
+                  {cityData.curiosity}
+                </p>
               ) : null}
               {cityData?.daily ? (
                 <button className="share-btn" type="button" onClick={() => handleShare(cityData)}>

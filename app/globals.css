@@ -778,7 +778,13 @@ body::before {
   border-left: 3px solid var(--card-border-strong);
   padding-left: 12px;
   margin-bottom: 14px !important;
+  opacity: 1;
+  transition: opacity 220ms ease;
 }
+/* Enquanto a foto do município ainda está baixando, a curiosidade fica
+   invisível (mas já ocupando o espaço, sem pulo de layout) — as duas
+   aparecem juntas assim que a imagem termina de carregar. */
+.modal-city__curiosity--wait { opacity: 0; }
 .modal-city__placeholder { color: var(--text-secondary); font-size: 12px; margin-bottom: 0; }
 .modal-city.hidden { display: none; }
 
