@@ -2331,3 +2331,39 @@ body::before {
   color: var(--text-secondary);
   line-height: 1.5;
 }
+
+/* ── Formulario de contato (pagina /contato) ── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 22px;
+}
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+.contact-form__field input {
+  padding: 11px 14px;
+  border-radius: var(--radius-base);
+  border: 2px solid var(--card-border);
+  background: #fff;
+  color: var(--text-heading);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact-form__field input:focus,
+.contact-form .fb-textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+.contact-form .fb-send { align-self: flex-start; }
+.contact-done { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding: 24px 0; }
+.contact-done__emoji { font-size: 48px; }
+.contact-done__title { margin: 0; font-size: 18px; font-weight: 800; color: var(--text-heading); }
+.contact-done__sub { margin: 0; font-size: 14px; color: var(--text-secondary); line-height: 1.5; }

@@ -117,6 +117,12 @@ export default function SettingsPanel({ auth, onlineEnabled, onSignOut, onOpenRa
           </button>
         ) : null}
 
+        <Link className="settings-row" href="/faq" target="_blank">
+          ❓ Perguntas Frequentes
+        </Link>
+        <Link className="settings-row" href="/contato" target="_blank">
+          ✉️ Contato
+        </Link>
         <Link className="settings-row" href="/politica-de-privacidade" target="_blank">
           📄 Política de Privacidade
         </Link>
