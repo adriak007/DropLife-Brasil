@@ -687,11 +687,11 @@ body::before {
    calculado em JS (posição do pin na tela) e injetado inline — aqui só a
    curva de crescimento, bem pequena até o tamanho normal. */
 .modal-panel.modal-panel--grow-from-pin {
-  animation: modalGrowFromPin 420ms var(--ease-spring);
+  animation: modalGrowFromPin 750ms var(--ease-spring);
 }
 @keyframes modalGrowFromPin {
-  from { opacity: 0; transform: scale(0.05); }
-  45%  { opacity: 1; }
+  from { opacity: 0; transform: scale(0.02); }
+  35%  { opacity: 1; }
   to   { opacity: 1; transform: scale(1); }
 }
 
