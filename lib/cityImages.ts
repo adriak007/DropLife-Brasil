@@ -7,7 +7,7 @@
 // estáticos do próprio site, fora do caminho crítico (preloadCityImages é
 // chamado em idle), e ficam em cache do navegador. Nenhuma API externa é
 // consultada em runtime.
-import { keyFor, normalize } from './text';
+import { keyFor, normalize, stripNota } from './text';
 import { ufToName } from './geo';
 
 interface MunicipioRow {
@@ -47,10 +47,11 @@ export const preloadCityImages = (): Promise<void> => {
       );
       const map = new Map<string, string>();
       for (const { codigo_ibge, municipio, estado } of municipios) {
-        const baseKey = keyFor(municipio, estado);
+        const nome = stripNota(municipio);
+        const baseKey = keyFor(nome, estado);
         if (!map.has(baseKey)) map.set(baseKey, codigo_ibge);
         const uf = nameToUf.get(normalize(estado));
-        if (uf && !map.has(keyFor(municipio, uf))) map.set(keyFor(municipio, uf), codigo_ibge);
+        if (uf && !map.has(keyFor(nome, uf))) map.set(keyFor(nome, uf), codigo_ibge);
       }
       index = map;
       imagens = imgs;

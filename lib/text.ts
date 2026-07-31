@@ -45,6 +45,12 @@ export const keyFor = (city: string, state: string): string =>
 
 export const cleanCity = (city: string): string => city.replace(/\s+\d+$/, '').trim();
 
+// Remove marcador de nota de rodapé colado no nome pela fonte original
+// ("Fernando de Noronha[nota 1]"). Sem isso a chave vira
+// "fernandodenoronhanota1", não casa com o polígono do mapa e o município
+// fica sem população — logo, com peso zero, impossível de ser sorteado.
+export const stripNota = (name: string): string => name.replace(/\[[^\]]*\]/g, '').trim();
+
 export const formatPop = (num: number | null | undefined): string =>
   Number(num || 0).toLocaleString('pt-BR');
 

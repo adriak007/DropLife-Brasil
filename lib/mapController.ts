@@ -1541,21 +1541,37 @@ export class MapController {
           const path = new Path2D(d);
           const bbox = bboxOfPathD(d);
           const capital = CAPITAL_KEYS.has(uniqueKey);
-          const rec: CityRec = {
-            key: uniqueKey,
-            city: cidade,
-            state: stateKey,
-            population: populacao,
-            title: populacao
-              ? `${cidade}${uf ? ` (${uf})` : ''} - ${formatPop(populacao)} habitantes`
-              : cidade,
-            path,
-            bbox,
-            capital,
-            capturedTier: null,
-          };
-          this.cities.push(rec);
-          if (!this.byKey.has(uniqueKey)) this.byKey.set(uniqueKey, rec);
+
+          // Municípios desenhados em MAIS DE UM polígono (ilhas, exclaves —
+          // Floresta/PE, Mineiros/GO, Barra do Bugres/MT e Senador José
+          // Porfírio/PA) precisam virar UM único registro. Sem essa fusão o
+          // município entrava duas vezes em allCities: peso dobrado no
+          // sorteio, total inflado (o jogador nunca fechava 100%) e a captura
+          // pintava só a parte sorteada, deixando a outra verde para sempre —
+          // exatamente o "cidades impossíveis de pegar" relatado.
+          const existente = this.byKey.get(uniqueKey);
+          if (existente) {
+            existente.path.addPath(path);
+            existente.bbox = unionBBox(existente.bbox, bbox);
+          } else {
+            const rec: CityRec = {
+              key: uniqueKey,
+              city: cidade,
+              state: stateKey,
+              population: populacao,
+              title: populacao
+                ? `${cidade}${uf ? ` (${uf})` : ''} - ${formatPop(populacao)} habitantes`
+                : cidade,
+              path,
+              bbox,
+              capital,
+              capturedTier: null,
+            };
+            this.cities.push(rec);
+            this.byKey.set(uniqueKey, rec);
+            if (populacao) matched += 1;
+            else this.missing.push(rawName || '(sem nome)');
+          }
 
           // camadas de cor
           (capital ? this.capitalPath : this.tonePaths[Math.max(0, ufOrder.indexOf(stateKey)) % 3]).addPath(path);
@@ -1567,12 +1583,6 @@ export class MapController {
           }
           sp.addPath(path);
           this.stateBBoxes.set(stateKey, unionBBox(this.stateBBoxes.get(stateKey) || null, bbox));
-
-          if (populacao) {
-            matched += 1;
-          } else {
-            this.missing.push(rawName || '(sem nome)');
-          }
         }
         if (startIdx + CHUNK_SIZE < regions.length) {
           await new Promise((resolve) => setTimeout(resolve, 0));

@@ -1,5 +1,5 @@
 import type { Municipio } from './types';
-import { keyFor, normalize } from './text';
+import { keyFor, normalize, stripNota } from './text';
 import { ufToName } from './geo';
 
 export type PopulationIndex = Map<string, number>;
@@ -11,13 +11,14 @@ export const buildPopulationIndex = (municipios: Municipio[]): PopulationIndex =
   // aparecia no TBT do Lighthouse.
   const nameToUf = new Map(Object.entries(ufToName).map(([uf, nome]) => [normalize(nome), uf]));
   municipios.forEach(({ municipio, estado, populacao }) => {
-    const baseKey = keyFor(municipio, estado);
+    const nome = stripNota(municipio);
+    const baseKey = keyFor(nome, estado);
     if (!index.has(baseKey)) index.set(baseKey, populacao);
 
     const uf = nameToUf.get(normalize(estado));
     if (uf) {
-      index.set(keyFor(municipio, uf), populacao);
-      index.set(keyFor(municipio, ufToName[uf]), populacao);
+      index.set(keyFor(nome, uf), populacao);
+      index.set(keyFor(nome, ufToName[uf]), populacao);
     }
   });
   return index;

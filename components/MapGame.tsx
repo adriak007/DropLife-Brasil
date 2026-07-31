@@ -182,10 +182,11 @@ export default function MapGame() {
           );
         } else {
           // pode ser rate limit (tenta de novo) ou duplicata/rejeição (desiste
-          // após 3 tentativas — se for legítimo, volta na fila do próximo login)
+          // após algumas tentativas — se for legítimo, volta na fila do
+          // próximo carregamento, que reconcilia save local x servidor)
           const tries = (syncTriesRef.current.get(key) || 0) + 1;
           syncTriesRef.current.set(key, tries);
-          if (tries >= 3) syncQueueRef.current.shift();
+          if (tries >= 6) syncQueueRef.current.shift();
         }
         syncTimerRef.current = window.setTimeout(tick, 1700);
       });
@@ -552,19 +553,26 @@ export default function MapGame() {
     // duplicata, ban e rate limit). Se falhar (ex.: rate limit por jitter de
     // rede), tenta uma única vez de novo após o intervalo mínimo do servidor.
     if (auth.profile && !already) {
-      const bumpProfile = () =>
-        setAuth((a) =>
-          a.profile
-            ? { ...a, profile: { ...a.profile, total_births: a.profile.total_births + 1 } }
-            : a
-        );
       recordBirth(picked.key).then((ok) => {
-        if (ok) return bumpProfile();
-        window.setTimeout(() => {
-          recordBirth(picked.key).then((ok2) => {
-            if (ok2) bumpProfile();
-          });
-        }, 2500);
+        if (ok) {
+          setAuth((a) =>
+            a.profile
+              ? { ...a, profile: { ...a.profile, total_births: a.profile.total_births + 1 } }
+              : a
+          );
+          return;
+        }
+        // Falhou (rede instável no celular, rate limit em sequência rápida):
+        // antes tentava UMA vez e desistia calado, e o nascimento ficava só
+        // no aparelho — daí o "score dessincronizou" de quem joga muito.
+        // Agora entra na fila persistente, que repete respeitando o intervalo
+        // mínimo do banco; o que ainda escapar é reconciliado no próximo
+        // carregamento, que compara o save local com o servidor.
+        if (!syncQueueRef.current.includes(picked.key)) {
+          syncQueueRef.current.push(picked.key);
+          syncTriesRef.current.delete(picked.key);
+        }
+        drainSyncQueue(scopeRef.current ?? saveScope);
       });
     }
 
