@@ -37,6 +37,19 @@ export interface PlayerRankRow {
   total_births: number;
 }
 
+// Perfil público de um jogador do ranking. Só agregados — a lista de
+// cidades de outra pessoa é protegida por RLS e nunca chega ao cliente.
+export interface PublicProfile {
+  nickname: string;
+  total_births: number;
+  membro_desde: string | null;
+  posicao: number | null;
+  estados_distintos: number | null;
+  primeiro_nascimento: string | null;
+  ultimo_nascimento: string | null;
+  top_estados: { uf: string; n: number }[];
+}
+
 export type AuthError =
   | 'offline'
   | 'email_em_uso'
@@ -287,6 +300,42 @@ export const fetchCityRanking = async (limit = 100): Promise<CityRankRow[]> => {
     return data ?? [];
   } catch {
     return [];
+  }
+};
+
+// Perfil público de um jogador. Usa a RPC perfil_publico (supabase/
+// perfil-publico.sql), que é quem consegue agregar os nascimentos sem furar
+// a RLS. Se a função ainda não existir no banco, cai no que a tabela de
+// perfis já expõe publicamente — a tela continua funcionando, só com menos
+// estatísticas.
+export const fetchPublicProfile = async (nickname: string): Promise<PublicProfile | null> => {
+  if (!supabase) return null;
+  try {
+    const { data, error } = await supabase.rpc('perfil_publico', { p_nickname: nickname });
+    if (!error && data) return data as PublicProfile;
+  } catch {
+    // RPC ausente: segue para o modo reduzido
+  }
+  try {
+    const { data } = await supabase
+      .from('profiles')
+      .select('nickname,total_births,created_at')
+      .eq('nickname', nickname)
+      .limit(1)
+      .maybeSingle();
+    if (!data) return null;
+    return {
+      nickname: data.nickname,
+      total_births: data.total_births,
+      membro_desde: (data as { created_at?: string }).created_at ?? null,
+      posicao: null,
+      estados_distintos: null,
+      primeiro_nascimento: null,
+      ultimo_nascimento: null,
+      top_estados: [],
+    };
+  } catch {
+    return null;
   }
 };
 

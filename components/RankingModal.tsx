@@ -18,6 +18,7 @@ import {
   type PlayerRankRow,
 } from '@/lib/online';
 import { formatPop } from '@/lib/text';
+import PlayerProfile from '@/components/PlayerProfile';
 
 type Tab = 'cidades' | 'jogadores';
 type AuthMode = 'entrar' | 'criar';
@@ -38,13 +39,22 @@ const ERROR_MSG: Record<AuthError, string> = {
 
 interface Props {
   auth: AuthState;
+  totalCities: number;
   resolveCity: (key: string) => { city: string; state: string } | null;
   onAuthChanged: () => Promise<void>;
   onClose: () => void;
 }
 
-export default function RankingModal({ auth, resolveCity, onAuthChanged, onClose }: Props) {
+export default function RankingModal({
+  auth,
+  totalCities,
+  resolveCity,
+  onAuthChanged,
+  onClose,
+}: Props) {
   const [tab, setTab] = useState<Tab>('cidades');
+  // Apelido do jogador cujo perfil está aberto (null = lista do ranking)
+  const [vendoPerfil, setVendoPerfil] = useState<string | null>(null);
   const [cities, setCities] = useState<CityRankRow[] | null>(null);
   const [players, setPlayers] = useState<PlayerRankRow[] | null>(null);
 
@@ -109,6 +119,13 @@ export default function RankingModal({ auth, resolveCity, onAuthChanged, onClose
 
       {!onlineEnabled() ? (
         <p className="overlay-empty">O ranking global ainda não está disponível. Em breve!</p>
+      ) : vendoPerfil ? (
+        <PlayerProfile
+          nickname={vendoPerfil}
+          totalCities={totalCities}
+          isYou={Boolean(profile && profile.nickname === vendoPerfil)}
+          onBack={() => setVendoPerfil(null)}
+        />
       ) : (
         <>
           {signedIn && profile ? (
@@ -298,9 +315,11 @@ export default function RankingModal({ auth, resolveCity, onAuthChanged, onClose
               players?.map((row, i) => {
                 const isYou = profile && row.nickname === profile.nickname;
                 return (
-                  <div
+                  <button
                     key={row.nickname}
-                    className={`dex-row rank-row${isYou ? ' rank-row--you' : ''}`}
+                    className={`dex-row rank-row rank-row--click${isYou ? ' rank-row--you' : ''}`}
+                    type="button"
+                    onClick={() => setVendoPerfil(row.nickname)}
                   >
                     <span className="rank-pos">{MEDALS[i] || `${i + 1}º`}</span>
                     <span className="dex-row__city">
@@ -311,7 +330,8 @@ export default function RankingModal({ auth, resolveCity, onAuthChanged, onClose
                       {formatPop(row.total_births)}{' '}
                       {row.total_births === 1 ? 'cidade' : 'cidades'}
                     </span>
-                  </div>
+                    <span className="rank-row__seta" aria-hidden="true">›</span>
+                  </button>
                 );
               })}
 

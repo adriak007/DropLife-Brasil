@@ -1062,6 +1062,7 @@ export default function MapGame() {
         {panel === 'ranking' && (
           <RankingModal
             auth={auth}
+            totalCities={totalCities}
             resolveCity={(key) => controllerRef.current?.getCityInfo(key) ?? null}
             onAuthChanged={handleAuthChanged}
             onClose={() => setPanel(null)}
