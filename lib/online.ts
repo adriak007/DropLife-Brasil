@@ -227,23 +227,28 @@ export const signOut = async (): Promise<void> => {
   } catch {}
 };
 
+// 'duplicado' = a linha JÁ existe no servidor. Do ponto de vista do jogo
+// isso é sucesso (o objetivo é a cidade estar lá), só não deve incrementar
+// o contador de novo. Antes isso voltava como falha e a fila ficava
+// reinserindo eternamente algo que já estava salvo.
+export type RecordBirthResult = 'ok' | 'duplicado' | 'falha';
+
 // Registra um nascimento no ranking global (dispara e esquece).
 // O servidor garante: cidade real, 1x por jogador e rate-limit.
-export const recordBirth = async (cityKey: string): Promise<boolean> => {
-  if (!supabase) return false;
+export const recordBirth = async (cityKey: string): Promise<RecordBirthResult> => {
+  if (!supabase) return 'falha';
   try {
     const { data: { session } } = await supabase.auth.getSession();
-    if (!session) return false;
+    if (!session) return 'falha';
     const { error } = await supabase
       .from('births')
       .insert({ user_id: session.user.id, city_key: cityKey });
-    if (error && error.code !== '23505') {
-      console.warn('recordBirth:', error.message);
-      return false;
-    }
-    return !error;
+    if (!error) return 'ok';
+    if (error.code === '23505') return 'duplicado';
+    console.warn('recordBirth:', error.message);
+    return 'falha';
   } catch {
-    return false;
+    return 'falha';
   }
 };
 
@@ -267,23 +272,46 @@ export interface ServerBirthRow {
 // fallback) e [] quando a conta realmente não tem nascimentos.
 export const fetchMyBirths = async (): Promise<ServerBirthRow[] | null> => {
   if (!supabase) return null;
+  const cliente = supabase;
   try {
-    const { data: { session } } = await supabase.auth.getSession();
+    const { data: { session } } = await cliente.auth.getSession();
     if (!session) return null;
     const uid = session.user.id;
-    const { data, error } = await supabase
-      .from('births')
-      .select('city_key,created_at')
-      .eq('user_id', uid)
-      .order('created_at', { ascending: true });
-    if (!error) return data ?? [];
-    // Tabela sem a coluna created_at: busca só as chaves
-    const { data: plain, error: err2 } = await supabase
-      .from('births')
-      .select('city_key')
-      .eq('user_id', uid);
-    if (err2) return null;
-    return (plain ?? []).map((r) => ({ city_key: r.city_key, created_at: null }));
+
+    // PAGINAÇÃO OBRIGATÓRIA: o PostgREST corta a resposta num teto de linhas
+    // (1.000 por padrão no Supabase). Sem paginar, quem passa de mil cidades
+    // recebia só a primeira fatia, e o app concluía que TODO o resto estava
+    // faltando no servidor — reenfileirando milhares de nascimentos que já
+    // existiam lá. Cada um batia na constraint de duplicata, entupia a fila
+    // de sync por horas e deixava o contador do ranking parecendo travado.
+    const PAGINA = 1000;
+    const pedir = async (inicio: number, comData: boolean) => {
+      const base = cliente
+        .from('births')
+        .select(comData ? 'city_key,created_at' : 'city_key')
+        .eq('user_id', uid)
+        .range(inicio, inicio + PAGINA - 1);
+      return comData ? await base.order('created_at', { ascending: true }) : await base;
+    };
+
+    // Bancos antigos podem não ter a coluna created_at: descobre no 1º pedido
+    let comData = true;
+    let atual = await pedir(0, true);
+    if (atual.error) {
+      comData = false;
+      atual = await pedir(0, false);
+      if (atual.error) return null;
+    }
+
+    const todos: ServerBirthRow[] = [];
+    for (let inicio = 0; ; inicio += PAGINA) {
+      const { data, error } = inicio === 0 ? atual : await pedir(inicio, comData);
+      if (error) return todos.length ? todos : null;
+      const lote = (data ?? []) as unknown as { city_key: string; created_at?: string | null }[];
+      todos.push(...lote.map((r) => ({ city_key: r.city_key, created_at: r.created_at ?? null })));
+      if (lote.length < PAGINA) break;
+    }
+    return todos;
   } catch {
     return null;
   }

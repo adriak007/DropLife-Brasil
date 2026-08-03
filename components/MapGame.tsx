@@ -171,19 +171,20 @@ export default function MapGame() {
       if (scopeRef.current !== uid) return; // trocou de dono: fila morre
       const key = syncQueueRef.current[0];
       if (!key) return;
-      recordBirth(key).then((ok) => {
+      recordBirth(key).then((r) => {
         if (scopeRef.current !== uid) return;
-        if (ok) {
+        if (r === 'ok') {
           syncQueueRef.current.shift();
           setAuth((a) =>
             a.profile
               ? { ...a, profile: { ...a.profile, total_births: a.profile.total_births + 1 } }
               : a
           );
+        } else if (r === 'duplicado') {
+          // já estava no servidor: sai da fila sem recontar
+          syncQueueRef.current.shift();
         } else {
-          // pode ser rate limit (tenta de novo) ou duplicata/rejeição (desiste
-          // após algumas tentativas — se for legítimo, volta na fila do
-          // próximo carregamento, que reconcilia save local x servidor)
+          // falha de verdade (rede/rate limit): tenta de novo mais tarde
           const tries = (syncTriesRef.current.get(key) || 0) + 1;
           syncTriesRef.current.set(key, tries);
           if (tries >= 6) syncQueueRef.current.shift();
@@ -553,8 +554,8 @@ export default function MapGame() {
     // duplicata, ban e rate limit). Se falhar (ex.: rate limit por jitter de
     // rede), tenta uma única vez de novo após o intervalo mínimo do servidor.
     if (auth.profile && !already) {
-      recordBirth(picked.key).then((ok) => {
-        if (ok) {
+      recordBirth(picked.key).then((r) => {
+        if (r === 'ok') {
           setAuth((a) =>
             a.profile
               ? { ...a, profile: { ...a.profile, total_births: a.profile.total_births + 1 } }
@@ -562,6 +563,7 @@ export default function MapGame() {
           );
           return;
         }
+        if (r === 'duplicado') return; // já estava salvo: nada a fazer
         // Falhou (rede instável no celular, rate limit em sequência rápida):
         // antes tentava UMA vez e desistia calado, e o nascimento ficava só
         // no aparelho — daí o "score dessincronizou" de quem joga muito.
