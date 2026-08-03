@@ -57,6 +57,8 @@ export default function TopNav({
   const itemsRef = useRef<HTMLDivElement>(null);
   const ghostRef = useRef<HTMLDivElement>(null);
   const chipGhostRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLElement>(null);
+  const brandRef = useRef<HTMLDivElement>(null);
 
   // Citydex antes de Populacao: em telas bem estreitas, quando só cabe 1-2
   // itens além do Home, o Citydex é o mais importante pra aparecer primeiro.
@@ -112,48 +114,70 @@ export default function TopNav({
   // nessa conta — ícones de navegação têm prioridade sobre ele. Reobserva
   // resize da faixa E das réguas (badges/nome mudam de largura no jogo).
   const recompute = () => {
-    const itemsEl = itemsRef.current;
+    const navEl = navRef.current;
+    const brandEl = brandRef.current;
     const ghost = ghostRef.current;
-    if (!itemsEl || !ghost) return;
+    if (!navEl || !brandEl || !ghost) return;
     const widths = Array.from(ghost.children).map((c) => (c as HTMLElement).offsetWidth);
     const GAP = 4;
     const HAMBURGER = 40 + GAP;
-    const avail = itemsEl.clientWidth;
     const chipWidth = onlineEnabled ? (chipGhostRef.current?.offsetWidth ?? 0) : 0;
 
-    // 1) melhor caso: todos os icones + o chip cabem sem hamburguer nenhum
-    let usedNoHamb = 0;
-    let fitNoHamb = 0;
-    for (let i = 0; i < widths.length; i++) {
-      usedNoHamb += widths[i] + (i > 0 ? GAP : 0);
-      if (usedNoHamb <= avail) fitNoHamb = i + 1;
-      else break;
-    }
-    const allNavFit = fitNoHamb >= widths.length;
-    if (allNavFit && avail - usedNoHamb >= chipWidth) {
+    // O espaço precisa ser medido a partir da NAV, não da faixa de ícones.
+    // A faixa é flex:1 — ela encolhe quando o chip está nela e cresce quando
+    // o chip sai. Medir por ela fazia a decisão depender do próprio
+    // resultado: chip entra -> espaço diminui -> chip sai -> espaço aumenta
+    // -> chip entra... laço infinito de render (tela branca entre ~1150 e
+    // 1200px). Estes valores aqui não dependem do estado atual.
+    const est = getComputedStyle(navEl);
+    const padding = (parseFloat(est.paddingLeft) || 0) + (parseFloat(est.paddingRight) || 0);
+    const gapNav = parseFloat(est.columnGap) || parseFloat(est.gap) || 0;
+    const espaco = navEl.clientWidth - padding - brandEl.offsetWidth - gapNav * 2;
+
+    const somaItens = widths.reduce((s, w, i) => s + w + (i > 0 ? GAP : 0), 0);
+
+    // 1) tudo cabe junto com o chip: nem precisa de hambúrguer
+    if (somaItens + chipWidth <= espaco) {
       setVisibleCount(widths.length);
       setChipInline(true);
       return;
     }
 
-    // 2) precisa de hamburguer (pra sobra de icones e/ou pro chip) — reserva
-    // a largura dele e recalcula quantos icones cabem com esse desconto
-    let used2 = HAMBURGER;
-    let fit2 = 0;
-    for (let i = 0; i < widths.length; i++) {
-      used2 += widths[i] + (i > 0 ? GAP : 0);
-      if (used2 <= avail) fit2 = i + 1;
-      else break;
+    // 2) com hambúrguer: quantos ícones cabem, com e sem o chip na faixa
+    const cabem = (disponivel: number) => {
+      let usado = HAMBURGER;
+      let n = 0;
+      for (let i = 0; i < widths.length; i++) {
+        usado += widths[i] + (i > 0 ? GAP : 0);
+        if (usado <= disponivel) n = i + 1;
+        else break;
+      }
+      return n;
+    };
+    const comChip = cabem(espaco - chipWidth);
+    const semChip = cabem(espaco);
+
+    // Ícone tem prioridade sobre o chip: se tirar o chip da faixa faz caber
+    // mais ícone, ele migra para dentro do hambúrguer (era o pedido original
+    // para telas estreitas). Ambos os números vêm do MESMO espaço fixo, então
+    // a decisão é determinística e não oscila.
+    if (onlineEnabled && semChip > comChip) {
+      setVisibleCount(semChip);
+      setChipInline(false);
+    } else {
+      setVisibleCount(comChip);
+      setChipInline(true);
     }
-    setVisibleCount(fit2);
-    setChipInline(onlineEnabled && avail - used2 >= chipWidth);
   };
 
   useLayoutEffect(recompute);
 
   useEffect(() => {
+    // Observa a NAV (largura estável) e a régua fantasma (os badges mudam de
+    // tamanho durante o jogo). Observar a faixa de ícones realimentaria a
+    // medição com o próprio resultado.
     const ro = new ResizeObserver(recompute);
-    if (itemsRef.current) ro.observe(itemsRef.current);
+    if (navRef.current) ro.observe(navRef.current);
     if (ghostRef.current) ro.observe(ghostRef.current);
     return () => ro.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -257,8 +281,8 @@ export default function TopNav({
   );
 
   return (
-    <nav className="top-nav" aria-label="Menu principal">
-      <div className="top-nav__brand">
+    <nav className="top-nav" aria-label="Menu principal" ref={navRef}>
+      <div className="top-nav__brand" ref={brandRef}>
         <img src={LOGO_FULL} alt="DropLife logo" className="top-nav__logo-full" />
         <img src={LOGO_ICON} alt="DropLife logo" className="top-nav__logo-icon" />
       </div>
