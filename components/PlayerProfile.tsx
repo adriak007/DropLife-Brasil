@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { fetchPublicProfile, type PublicProfile } from '@/lib/online';
-import { ufToName } from '@/lib/geo';
+import { ufToLabel } from '@/lib/geo';
 import { formatPop } from '@/lib/text';
 
 const MEDALS = ['🥇', '🥈', '🥉'];
@@ -113,7 +113,7 @@ export default function PlayerProfile({ nickname, totalCities, isYou, onBack }: 
                     <span style={{ width: `${(e.n / maxEstado) * 100}%` }} />
                   </span>
                   <span className="perfil__estado-n">{formatPop(e.n)}</span>
-                  <span className="perfil__estado-nome">{ufToName[e.uf] || ''}</span>
+                  <span className="perfil__estado-nome">{ufToLabel[e.uf] || ''}</span>
                 </div>
               ))}
             </div>

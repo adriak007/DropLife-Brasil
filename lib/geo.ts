@@ -7,6 +7,18 @@ export const ufToName: Record<string, string> = {
   SC: 'Santa Catarina', SP: 'Sao Paulo', SE: 'Sergipe', TO: 'Tocantins',
 };
 
+// Mesmos estados, agora acentuados — SÓ para exibir na tela. O ufToName
+// acima participa do casamento de chaves e fica sem acento de propósito;
+// mudá-lo mexeria em comparações, então a grafia bonita mora aqui.
+export const ufToLabel: Record<string, string> = {
+  AC: 'Acre', AL: 'Alagoas', AP: 'Amapá', AM: 'Amazonas', BA: 'Bahia', CE: 'Ceará',
+  DF: 'Distrito Federal', ES: 'Espírito Santo', GO: 'Goiás', MA: 'Maranhão',
+  MT: 'Mato Grosso', MS: 'Mato Grosso do Sul', MG: 'Minas Gerais', PA: 'Pará',
+  PB: 'Paraíba', PR: 'Paraná', PE: 'Pernambuco', PI: 'Piauí', RJ: 'Rio de Janeiro',
+  RN: 'Rio Grande do Norte', RS: 'Rio Grande do Sul', RO: 'Rondônia', RR: 'Roraima',
+  SC: 'Santa Catarina', SP: 'São Paulo', SE: 'Sergipe', TO: 'Tocantins',
+};
+
 // Nomes no SVG que divergem do IBGE (renomeações, grafias antigas)
 export const cityAliases = new Map<string, string>([
   ['saoluiz-rr', 'Sao Luis'],
